@@ -123,17 +123,33 @@ foreach ($c in @('python3.13','python3.12','python3.11','python3','python')) {
     }
 }
 
-# Try py launcher with specific version flags
+# Try py launcher with specific version flags; resolve to the actual python.exe path
 if (-not $PythonCmd -and (Get-Command py -ErrorAction SilentlyContinue)) {
     foreach ($v in @('3.13','3.12','3.11')) {
         $ver = & py "-$v" -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")' 2>$null
         if ($ver -match '^3\.(\d+)$' -and [int]$Matches[1] -ge $MIN_PY_MINOR) {
-            $PythonCmd = "py -$v"
+            # Prefer the concrete executable so all later & $PythonCmd calls work without flags
+            $pyExePath = & py "-$v" -c 'import sys; print(sys.executable)' 2>$null
+            if ($pyExePath -and (Test-Path $pyExePath)) {
+                $PythonCmd = $pyExePath
+            } else {
+                # Fallback: py launcher is available but executable path unknown
+                # Create a wrapper scriptblock that injects the version flag
+                $script:PyLauncherVer = "-$v"
+                $PythonCmd = 'py'
+            }
             ok "Found via py launcher: Python $ver"
             break
         }
     }
 }
+# If py launcher fallback is in use, redefine all python invocations via a function
+if ($PythonCmd -eq 'py' -and $script:PyLauncherVer) {
+    function Invoke-Python { & py $script:PyLauncherVer @args }
+} else {
+    function Invoke-Python { & $script:PythonCmd @args }
+}
+$script:PythonCmd = $PythonCmd  # capture in script scope for the function
 
 if (-not $PythonCmd) {
     if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
@@ -151,7 +167,8 @@ if (-not $PythonCmd) {
         }
     }
     if (-not $PythonCmd) { die "Python installed but binary not found in PATH. Open a new terminal and re-run." }
-    ok "Installed: $(& $PythonCmd --version 2>&1)"
+    $script:PythonCmd = $PythonCmd  # Sync script scope so Invoke-Python uses the new path
+    ok "Installed: $(Invoke-Python --version 2>&1)"
 }
 
 # ── [2/8] Git ────────────────────────────────────────────────────────────────
@@ -212,8 +229,11 @@ foreach ($p in @(
 if (-not $PoetryCmd) {
     warn "Poetry not found — installing via official installer..."
     try {
-        $script = (Invoke-WebRequest -Uri 'https://install.python-poetry.org' -UseBasicParsing).Content
-        & $PythonCmd -c $script 2>&1 | ForEach-Object { info "  $_" }
+        $installerTmp = Join-Path $env:TEMP 'install-poetry.py'
+        Invoke-WebRequest -Uri 'https://install.python-poetry.org' `
+            -OutFile $installerTmp -UseBasicParsing
+        Invoke-Python $installerTmp 2>&1 | ForEach-Object { info "  $_" }
+        Remove-Item $installerTmp -Force -ErrorAction SilentlyContinue
     } catch {
         die "Poetry installer download failed: $_`nInstall manually: https://python-poetry.org/docs/"
     }
@@ -233,7 +253,7 @@ if (-not $PoetryCmd) {
 ok "$(& $PoetryCmd --version)"
 
 # Bind to the validated Python interpreter
-& $PoetryCmd env use $PythonCmd --no-interaction 2>&1 | Out-Null
+& $PoetryCmd env use $script:PythonCmd --no-interaction 2>&1 | Out-Null
 
 # ── [5/8] Dependencies ───────────────────────────────────────────────────────
 step "Python dependencies (mcp extras)"
@@ -254,10 +274,10 @@ if (-not (Test-Path (Join-Path $DataDir 'entities')) -and
 }
 
 info "Building graph.json..."
-& $PythonCmd $BuildPy $DataDir $SyncGraph 2>&1 | ForEach-Object { info "  $_" }
+Invoke-Python $BuildPy $DataDir $SyncGraph 2>&1 | ForEach-Object { info "  $_" }
 if ($LASTEXITCODE -ne 0) { die "kg-build.py failed." }
 
-$graphInfo = & $PythonCmd -c @"
+$graphInfo = Invoke-Python -c @"
 import json, sys
 try:
     d = json.load(open(r'$SyncGraph'))
@@ -276,7 +296,7 @@ step "Claude Desktop MCP registration"
 if (Test-Path $ClaudeConfig) {
     Write-Host ""
     info "Registered entry:"
-    & $PythonCmd -c @"
+    Invoke-Python -c @"
 import json, sys
 try:
     cfg = json.load(open(r'$ClaudeConfig'))
@@ -295,7 +315,8 @@ ok "MCP server registered"
 # ── [8/8] Task Scheduler (sync daemons) ──────────────────────────────────────
 step "Task Scheduler jobs"
 
-$bashExe = (Get-Command bash -ErrorAction SilentlyContinue)?.Source
+$_bashCmd = Get-Command bash -ErrorAction SilentlyContinue
+$bashExe  = if ($_bashCmd -and $_bashCmd.Source) { $_bashCmd.Source } else { $null }
 if (-not $bashExe -or -not (Test-Path $bashExe)) {
     $bashExe = 'C:\Program Files\Git\bin\bash.exe'
 }
@@ -332,7 +353,7 @@ $sharedEnv = @{
     HCKG_DATA_DIR  = $DataDir
     HCKG_GRAPH_SRC = $SyncGraph
     HCKG_GRAPH_OUT = $SyncGraph
-    PYTHON_CMD     = $PythonCmd
+    PYTHON_CMD     = $script:PythonCmd
 }
 
 try {
@@ -370,7 +391,8 @@ $MemberBranch = ''
 $PushReady   = $false
 
 info "Phase 1: ensuring data repo is current"
-$origBranch = (git -C $DataDir rev-parse --abbrev-ref HEAD 2>$null) ?? 'main'
+$_origBranchRaw = git -C $DataDir rev-parse --abbrev-ref HEAD 2>$null
+$origBranch = if ($_origBranchRaw) { $_origBranchRaw } else { 'main' }
 if ($origBranch -ne 'main') { git -C $DataDir checkout main --quiet 2>$null }
 git -C $DataDir fetch origin --quiet 2>$null
 git -C $DataDir merge --ff-only origin/main --quiet 2>$null
@@ -410,15 +432,17 @@ if ((Get-Command gh -ErrorAction SilentlyContinue) -and
 }
 
 if (Get-Command gh -ErrorAction SilentlyContinue) {
-    $GhUser = (gh api user --jq '.login' 2>$null) ?? ''
+    $_ghUserRaw = gh api user --jq '.login' 2>$null
+    $GhUser = if ($_ghUserRaw) { $_ghUserRaw } else { '' }
 }
 
 if ($GhUser) {
     ok "Authenticated as: $GhUser"
     $MemberBranch = "$GhUser/data"
 
-    $viewerPerm = (gh repo view $DATA_REPO_FULL --json viewerPermission `
-                    --jq '.viewerPermission' 2>$null) ?? 'NONE'
+    $_vpRaw = gh repo view $DATA_REPO_FULL --json viewerPermission `
+                --jq '.viewerPermission' 2>$null
+    $viewerPerm = if ($_vpRaw) { $_vpRaw } else { 'NONE' }
 
     if ($viewerPerm -in @('WRITE','MAINTAIN','ADMIN')) {
         $PushReady = $true
@@ -447,15 +471,17 @@ if ($PushReady -and $MemberBranch) {
     # Ensure git identity
     $gitEmail = git -C $DataDir config user.email 2>$null
     if (-not $gitEmail) {
-        $ghEmail = (gh api user --jq '.email // empty' 2>$null) ?? "$GhUser@users.noreply.github.com"
-        $ghName  = (gh api user --jq '.name // empty'  2>$null) ?? $GhUser
+        $_ghEmailRaw = gh api user --jq '.email // empty' 2>$null
+        $ghEmail = if ($_ghEmailRaw) { $_ghEmailRaw } else { "$GhUser@users.noreply.github.com" }
+        $_ghNameRaw = gh api user --jq '.name // empty' 2>$null
+        $ghName  = if ($_ghNameRaw) { $_ghNameRaw } else { $GhUser }
         git -C $DataDir config user.email $ghEmail
         git -C $DataDir config user.name  $ghName
     }
 
     $SplitPy = Join-Path $ScriptsDir 'lib\kg-split.py'
     if ((Test-Path $SplitPy) -and (Test-Path $SyncGraph)) {
-        & $PythonCmd $SplitPy $SyncGraph $DataDir 2>$null
+        Invoke-Python $SplitPy $SyncGraph $DataDir 2>$null
         git -C $DataDir add entities/ relationships/ 2>$null
         git -C $DataDir diff --cached --quiet 2>$null
         if ($LASTEXITCODE -ne 0) {
@@ -526,6 +552,8 @@ Write-Host "    `"What is the blast radius of the core firewall?`""
 Write-Host ""
 Write-Host "Useful commands:" -ForegroundColor White
 Write-Host "  Diagnose:    cd $InstallDir; poetry run hckg install doctor"
-Write-Host "  Manual sync: powershell -ExecutionPolicy Bypass -File $ScriptsDir\kg-sync.ps1"
-Write-Host "  Manual EOD:  powershell -ExecutionPolicy Bypass -File $ScriptsDir\kg-eod.ps1"
+Write-Host "  Manual sync: Run Task Scheduler task 'hckg-sync'  — or via Git Bash:"
+Write-Host "               bash '$($ScriptsDir -replace '\\','/')'/kg-sync.sh"
+Write-Host "  Manual EOD:  Run Task Scheduler task 'hckg-eod'   — or via Git Bash:"
+Write-Host "               bash '$($ScriptsDir -replace '\\','/')'/kg-eod.sh"
 Write-Host ""

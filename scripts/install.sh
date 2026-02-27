@@ -19,7 +19,7 @@
 #   [7/8] Build knowledge graph from per-type files
 #   [8/8] Claude Desktop MCP registration
 #   [+]   Sync branch setup (gh auth → personal branch → daemons)
-#   [+]   Claude Desktop restart (with your approval, if it's running)
+#   [+]   Claude Desktop restart (automatic, if it's running)
 # =============================================================================
 
 set -euo pipefail
@@ -131,6 +131,26 @@ info() { echo -e "    ${*}"; }
 die()  { _stop_spinner; echo -e "\n    ${RED}✗  ERROR: ${*}${RESET}\n" >&2; exit 1; }
 
 # ---------------------------------------------------------------------------
+# Git identity helper — sets user.name and user.email from gh API if unset
+# ---------------------------------------------------------------------------
+_ensure_git_identity() {
+  local repo_dir="${1:-}"
+  [[ -z "${repo_dir}" ]] && repo_dir="${_DATA_DIR:-${HOME}/hc-cdaio-kg}"
+  if [[ -z "$(git -C "${repo_dir}" config user.email 2>/dev/null || true)" ]]; then
+    if command -v gh &>/dev/null && gh auth status &>/dev/null 2>&1; then
+      local _gh_email _gh_name
+      _gh_email="$(gh api user --jq '.email // empty' 2>/dev/null | head -1 || true)"
+      _gh_name="$(gh api user  --jq '.name  // empty' 2>/dev/null | head -1 || true)"
+      [[ -z "${_gh_email}" ]] && _gh_email="${_GH_USER:-git}@users.noreply.github.com"
+      [[ -z "${_gh_name}"  ]] && _gh_name="${_GH_USER:-git}"
+      git -C "${repo_dir}" config user.email "${_gh_email}" 2>/dev/null || true
+      git -C "${repo_dir}" config user.name  "${_gh_name}"  2>/dev/null || true
+      info "  git identity set: ${_gh_name} <${_gh_email}>"
+    fi
+  fi
+}
+
+# ---------------------------------------------------------------------------
 # Usage / argument parsing
 # ---------------------------------------------------------------------------
 usage() {
@@ -169,7 +189,17 @@ echo ""
 info "Data repo    : ${_DATA_DIR}"
 info "Engine dir   : ${INSTALL_DIR}"
 info "Graph output : ${_SYNC_GRAPH}"
-info "Steps        : ${TOTAL_STEPS} (+ sync setup + optional Claude restart)"
+info "Steps        : ${TOTAL_STEPS} (+ sync setup + Claude restart)"
+
+# ---------------------------------------------------------------------------
+# Network pre-check
+# ---------------------------------------------------------------------------
+if command -v curl &>/dev/null; then
+  if ! curl -sf --max-time 8 --head "https://github.com" -o /dev/null 2>/dev/null; then
+    warn "Cannot reach https://github.com — network may be limited. Continuing..."
+    sleep 2
+  fi
+fi
 
 # ---------------------------------------------------------------------------
 # [1/8] OS detection
@@ -209,8 +239,21 @@ _APT=0
 _DNF=0
 
 if [[ "$PLATFORM" == "macos" ]]; then
-  command -v brew &>/dev/null || die \
-    "Homebrew is required on macOS.\nInstall it from https://brew.sh then re-run this script."
+  if ! command -v brew &>/dev/null; then
+    warn "Homebrew not found — installing automatically..."
+    NONINTERACTIVE=1 /bin/bash -c \
+      "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
+      2>&1 | sed 's/^/    /'
+    # Activate brew in the current shell session
+    if [[ -f /opt/homebrew/bin/brew ]]; then
+      eval "$(/opt/homebrew/bin/brew shellenv)"
+    elif [[ -f /usr/local/bin/brew ]]; then
+      eval "$(/usr/local/bin/brew shellenv)"
+    fi
+    command -v brew &>/dev/null \
+      || die "Homebrew install failed. Visit https://brew.sh and retry."
+    ok "Homebrew installed"
+  fi
   PKG_INSTALL_CMD=(brew install)
 elif [[ "$PLATFORM" == "linux" ]]; then
   if command -v apt-get &>/dev/null; then
@@ -243,7 +286,9 @@ for _cmd in python3.13 python3.12 python3.11 python3 python; do
       2>/dev/null || true)"
     _maj="${_ver%%.*}"
     _min="${_ver#*.}"
-    if [[ -n "$_ver" && "$_maj" -ge "$MIN_PYTHON_MAJOR" && "$_min" -ge "$MIN_PYTHON_MINOR" ]]; then
+    if [[ -n "$_ver" ]] && \
+       { [[ "$_maj" -gt "$MIN_PYTHON_MAJOR" ]] || \
+         [[ "$_maj" -eq "$MIN_PYTHON_MAJOR" && "$_min" -ge "$MIN_PYTHON_MINOR" ]]; }; then
       PYTHON_CMD="$_cmd"
       ok "Found: $("$_cmd" --version 2>&1)"
       break
@@ -255,7 +300,12 @@ if [[ -z "$PYTHON_CMD" ]]; then
   warn "No Python ≥${MIN_PYTHON_MAJOR}.${MIN_PYTHON_MINOR} found — installing Python 3.12..."
   if [[ "$PLATFORM" == "macos" ]]; then
     brew install python@3.12
-    PYTHON_CMD="python3.12"
+    _BREW_PY="$(brew --prefix python@3.12 2>/dev/null)/bin/python3.12"
+    if [[ -x "${_BREW_PY}" ]]; then
+      PYTHON_CMD="${_BREW_PY}"
+    else
+      PYTHON_CMD="python3.12"
+    fi
   elif [[ "$_APT" == "1" ]]; then
     _start_spinner "Updating package lists..."
     sudo apt-get update -q
@@ -318,6 +368,10 @@ if [[ -d "${INSTALL_DIR}/.git" ]]; then
     fi
   fi
 else
+  if [[ -e "${INSTALL_DIR}" ]]; then
+    warn "${INSTALL_DIR} exists but is not a git repo — removing stale directory..."
+    rm -rf "${INSTALL_DIR}"
+  fi
   info "Cloning ${ENGINE_REPO_URL}"
   info "→ ${INSTALL_DIR}"
   git clone "$ENGINE_REPO_URL" "$INSTALL_DIR"
@@ -362,11 +416,21 @@ if [[ -z "$POETRY_CMD" ]]; then
     pipx install poetry
     _stop_spinner
     export PATH="${HOME}/.local/bin:${PATH}"
-    POETRY_CMD="$(command -v poetry)" || \
-      die "Poetry installed but not found in PATH. Open a new terminal and re-run."
+    hash -r 2>/dev/null || true
+    # Probe absolute paths — PATH may not be refreshed in all shell configurations
+    for _p in poetry "${HOME}/.local/bin/poetry"; do
+      if command -v "$_p" &>/dev/null 2>/dev/null; then
+        POETRY_CMD="$_p"; break
+      fi
+    done
+    [[ -n "$POETRY_CMD" ]] \
+      || die "Poetry installed but binary not found. Check: ${HOME}/.local/bin/"
   fi
 fi
 ok "$($POETRY_CMD --version)"
+
+# Bind Poetry to the validated interpreter so virtual envs use the right Python
+"$POETRY_CMD" env use "$PYTHON_CMD" --no-interaction 2>/dev/null || true
 
 # ---------------------------------------------------------------------------
 # [6/8] Python dependencies
@@ -538,7 +602,14 @@ if ! command -v gh &>/dev/null; then
   fi
 fi
 
-# Authenticate
+# Non-interactive auth via GITHUB_TOKEN env var
+if command -v gh &>/dev/null && [[ -n "${GITHUB_TOKEN:-}" ]] && ! gh auth status &>/dev/null 2>&1; then
+  echo "${GITHUB_TOKEN}" | gh auth login --with-token \
+    && ok "gh authenticated via GITHUB_TOKEN" \
+    || warn "GITHUB_TOKEN auth failed — falling back to interactive login"
+fi
+
+# Interactive auth (only when stdin is a terminal)
 if command -v gh &>/dev/null && ! gh auth status &>/dev/null 2>&1; then
   echo ""
   echo -e "    ${BOLD}GitHub account needed to push your changes${RESET}"
@@ -650,6 +721,7 @@ if [[ "$_PUSH_READY" == "1" ]]; then
     "$PYTHON_CMD" "${_SPLIT_PY}" "${_SYNC_GRAPH}" "${_DATA_DIR}" 2>/dev/null || true
     git -C "${_DATA_DIR}" add entities/ relationships/ 2>/dev/null || true
     if ! git -C "${_DATA_DIR}" diff --cached --quiet; then
+      _ensure_git_identity "${_DATA_DIR}"
       git -C "${_DATA_DIR}" commit -m "feat: initial graph split from installer" --quiet
       git -C "${_DATA_DIR}" push origin "${_MEMBER_BRANCH}" --quiet 2>/dev/null \
         || warn "Push failed — will retry on first kg-sync.sh run"
@@ -659,6 +731,24 @@ if [[ "$_PUSH_READY" == "1" ]]; then
     fi
   fi
 fi
+
+# Build the daemon PATH — must include Homebrew, Python, Poetry, and ~/.local/bin
+# so that all scripts launched by LaunchAgents / systemd find their tools.
+_DAEMON_PATH="${HOME}/.local/bin"
+if [[ "$PLATFORM" == "macos" ]]; then
+  _DAEMON_PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:${_DAEMON_PATH}"
+fi
+_PY_DIR="$(dirname "$(command -v "${PYTHON_CMD}" 2>/dev/null || echo "/usr/bin/python3")" 2>/dev/null || true)"
+if [[ -n "${_PY_DIR}" && "${_PY_DIR}" != "." ]]; then
+  _DAEMON_PATH="${_PY_DIR}:${_DAEMON_PATH}"
+fi
+if [[ -n "${POETRY_CMD:-}" ]]; then
+  _POETRY_DIR="$(dirname "${POETRY_CMD}" 2>/dev/null || true)"
+  if [[ -n "${_POETRY_DIR}" && "${_POETRY_DIR}" != "." ]]; then
+    _DAEMON_PATH="${_POETRY_DIR}:${_DAEMON_PATH}"
+  fi
+fi
+_DAEMON_PATH="${_DAEMON_PATH}:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Install daemons
 if [[ "$_PUSH_READY" == "1" && -n "${_MEMBER_BRANCH}" ]]; then
@@ -686,7 +776,8 @@ if [[ "$_PUSH_READY" == "1" && -n "${_MEMBER_BRANCH}" ]]; then
         <key>HCKG_GRAPH_SRC</key>  <string>${_SYNC_GRAPH}</string>
         <key>HCKG_BRANCH</key>     <string>${_MEMBER_BRANCH}</string>
         <key>HOME</key>            <string>${HOME}</string>
-        <key>PATH</key>            <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+        <key>PATH</key>            <string>${_DAEMON_PATH}</string>
+        <key>PYTHON_CMD</key>      <string>${PYTHON_CMD}</string>
     </dict>
     <key>StartInterval</key>      <integer>1800</integer>
     <key>RunAtLoad</key>          <false/>
@@ -716,7 +807,8 @@ PLIST
         <key>HCKG_GRAPH_SRC</key>  <string>${_SYNC_GRAPH}</string>
         <key>HCKG_BRANCH</key>     <string>${_MEMBER_BRANCH}</string>
         <key>HOME</key>            <string>${HOME}</string>
-        <key>PATH</key>            <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+        <key>PATH</key>            <string>${_DAEMON_PATH}</string>
+        <key>PYTHON_CMD</key>      <string>${PYTHON_CMD}</string>
     </dict>
     <key>StartCalendarInterval</key>
     <dict>
@@ -783,7 +875,8 @@ PLIST
         <key>HCKG_DATA_DIR</key>  <string>${_DATA_DIR}</string>
         <key>HCKG_GRAPH_OUT</key> <string>${_SYNC_GRAPH}</string>
         <key>HOME</key>           <string>${HOME}</string>
-        <key>PATH</key>           <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+        <key>PATH</key>           <string>${_DAEMON_PATH}</string>
+        <key>PYTHON_CMD</key>     <string>${PYTHON_CMD}</string>
     </dict>
     <key>StartCalendarInterval</key>
     <dict>
@@ -825,6 +918,8 @@ ExecStart=/bin/bash ${_SCRIPTS_DIR}/kg-sync.sh
 Environment=HCKG_DATA_DIR=${_DATA_DIR}
 Environment=HCKG_GRAPH_SRC=${_SYNC_GRAPH}
 Environment=HCKG_BRANCH=${_MEMBER_BRANCH}
+Environment=PYTHON_CMD=${PYTHON_CMD}
+Environment=PATH=${_DAEMON_PATH}
 StandardOutput=append:${_DATA_DIR}/.kg-sync-systemd.log
 StandardError=append:${_DATA_DIR}/.kg-sync-systemd.log
 UNIT
@@ -852,6 +947,8 @@ ExecStart=/bin/bash ${_SCRIPTS_DIR}/kg-eod.sh
 Environment=HCKG_DATA_DIR=${_DATA_DIR}
 Environment=HCKG_GRAPH_SRC=${_SYNC_GRAPH}
 Environment=HCKG_BRANCH=${_MEMBER_BRANCH}
+Environment=PYTHON_CMD=${PYTHON_CMD}
+Environment=PATH=${_DAEMON_PATH}
 StandardOutput=append:${_DATA_DIR}/.kg-eod-systemd.log
 StandardError=append:${_DATA_DIR}/.kg-eod-systemd.log
 UNIT
@@ -905,6 +1002,8 @@ Type=oneshot
 ExecStart=/bin/bash ${_SCRIPTS_DIR}/kg-morning.sh
 Environment=HCKG_DATA_DIR=${_DATA_DIR}
 Environment=HCKG_GRAPH_OUT=${_SYNC_GRAPH}
+Environment=PYTHON_CMD=${PYTHON_CMD}
+Environment=PATH=${_DAEMON_PATH}
 StandardOutput=append:${_DATA_DIR}/.kg-morning-systemd.log
 StandardError=append:${_DATA_DIR}/.kg-morning-systemd.log
 UNIT
@@ -972,70 +1071,52 @@ if [[ -z "$CLAUDE_PIDS" ]]; then
   info "Claude Desktop is not running — open it manually after this script finishes."
 else
   echo ""
-  warn "Claude Desktop is running  (PID: ${CLAUDE_PIDS_DISPLAY})"
-  warn "It must be restarted to load the new MCP server registration."
-  echo ""
-
-  if [[ ! -t 0 ]]; then
-    warn "stdin is not a terminal — cannot prompt."
-    warn "Restart Claude Desktop manually to activate the MCP server."
+  info "Restarting Claude Desktop to load new MCP registration..."
+  info "Stopping Claude Desktop (PID: ${CLAUDE_PIDS_DISPLAY})..."
+  if [[ "$PLATFORM" == "macos" ]]; then
+    osascript -e 'quit app "Claude"' 2>/dev/null \
+      || kill -TERM $CLAUDE_PIDS 2>/dev/null || true  # SC2086: word-split intentional
   else
-    printf "    Restart Claude Desktop now? [y/N] "
-    read -r _REPLY
-    echo ""
+    kill -TERM $CLAUDE_PIDS 2>/dev/null || true       # SC2086: word-split intentional
+  fi
 
-    if [[ "$_REPLY" =~ ^[Yy]([Ee][Ss])?$ ]]; then
+  _waited=0
+  _start_spinner "Waiting for Claude Desktop to exit..."
+  while [[ $_waited -lt 5 ]] && [[ -n "$(_find_claude_pids)" ]]; do
+    sleep 1
+    _waited=$((_waited + 1))
+  done
+  _stop_spinner
 
-      info "Stopping Claude Desktop..."
-      if [[ "$PLATFORM" == "macos" ]]; then
-        osascript -e 'quit app "Claude"' 2>/dev/null \
-          || kill -TERM $CLAUDE_PIDS 2>/dev/null || true  # SC2086: word-split intentional
-      else
-        kill -TERM $CLAUDE_PIDS 2>/dev/null || true       # SC2086: word-split intentional
+  _LIVE_PIDS="$(_find_claude_pids)"
+  if [[ -n "$_LIVE_PIDS" ]]; then
+    warn "Still running after ${_waited}s — force stopping..."
+    kill -KILL $_LIVE_PIDS 2>/dev/null || true  # SC2086: word-split intentional
+    sleep 1
+  fi
+  ok "Claude Desktop stopped"
+
+  info "Relaunching Claude Desktop..."
+  if [[ "$PLATFORM" == "macos" ]]; then
+    open -a "Claude" 2>/dev/null \
+      && ok "Claude Desktop relaunched" \
+      || warn "Could not relaunch — open Claude Desktop manually."
+  else
+    _CLAUDE_BIN=""
+    for _b in claude-desktop claude /usr/bin/claude-desktop \
+               /opt/Claude/claude /usr/local/bin/claude-desktop \
+               /snap/bin/claude-desktop; do
+      if command -v "$_b" &>/dev/null 2>/dev/null; then
+        _CLAUDE_BIN="$_b"
+        break
       fi
-
-      _waited=0
-      _start_spinner "Waiting for Claude Desktop to exit..."
-      while [[ $_waited -lt 5 ]] && [[ -n "$(_find_claude_pids)" ]]; do
-        sleep 1
-        _waited=$((_waited + 1))
-      done
-      _stop_spinner
-
-      _LIVE_PIDS="$(_find_claude_pids)"
-      if [[ -n "$_LIVE_PIDS" ]]; then
-        warn "Still running after ${_waited}s — force stopping..."
-        kill -KILL $_LIVE_PIDS 2>/dev/null || true  # SC2086: word-split intentional
-        sleep 1
-      fi
-      ok "Claude Desktop stopped"
-
-      info "Relaunching Claude Desktop..."
-      if [[ "$PLATFORM" == "macos" ]]; then
-        open -a "Claude" 2>/dev/null \
-          && ok "Claude Desktop relaunched" \
-          || warn "Could not relaunch — open Claude Desktop manually."
-      else
-        _CLAUDE_BIN=""
-        for _b in claude-desktop claude /usr/bin/claude-desktop \
-                   /opt/Claude/claude /usr/local/bin/claude-desktop \
-                   /snap/bin/claude-desktop; do
-          if command -v "$_b" &>/dev/null 2>/dev/null; then
-            _CLAUDE_BIN="$_b"
-            break
-          fi
-        done
-        if [[ -n "$_CLAUDE_BIN" ]]; then
-          nohup "$_CLAUDE_BIN" &>/dev/null &
-          disown
-          ok "Claude Desktop relaunching (${_CLAUDE_BIN})"
-        else
-          warn "Could not find the Claude Desktop binary — open it manually."
-        fi
-      fi
-
+    done
+    if [[ -n "$_CLAUDE_BIN" ]]; then
+      nohup "$_CLAUDE_BIN" &>/dev/null &
+      disown
+      ok "Claude Desktop relaunching (${_CLAUDE_BIN})"
     else
-      warn "Skipped — open Claude Desktop manually to activate the MCP server."
+      warn "Could not find the Claude Desktop binary — open it manually."
     fi
   fi
 fi
@@ -1075,5 +1156,5 @@ echo "  Morning pull:  bash ${_SCRIPTS_DIR}/kg-morning.sh"
 echo "                 (pulls main → rebuilds graph.json — MCP auto-reloads)"
 echo "  Manual sync:   bash ${_SCRIPTS_DIR}/kg-sync.sh"
 echo "  Manual EOD:    bash ${_SCRIPTS_DIR}/kg-eod.sh"
-echo "  Run tests:     python3 ${_SCRIPTS_DIR}/test-mcp-integration.py"
+echo "  Run tests:     ${PYTHON_CMD} ${_SCRIPTS_DIR}/test-mcp-integration.py"
 echo ""
