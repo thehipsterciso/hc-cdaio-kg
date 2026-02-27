@@ -729,6 +729,40 @@ PLIST
 </plist>
 PLIST
 
+    # Late-night EOD PR at 23:00 — catches work done after the 5pm EOD
+    # (kg-eod.sh skips creation if an open PR already exists, so no duplicate)
+    _EOD_NIGHT_PLIST="${_LA_DIR}/com.hccdaio.kg-eod-night.plist"
+    cat > "${_EOD_NIGHT_PLIST}" <<PLIST
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>              <string>com.hccdaio.kg-eod-night</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>${_SCRIPTS_DIR}/kg-eod.sh</string>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>HCKG_DATA_DIR</key>   <string>${_DATA_DIR}</string>
+        <key>HCKG_GRAPH_SRC</key>  <string>${_SYNC_GRAPH}</string>
+        <key>HCKG_BRANCH</key>     <string>${_MEMBER_BRANCH}</string>
+        <key>HOME</key>            <string>${HOME}</string>
+        <key>PATH</key>            <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+    </dict>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>    <integer>23</integer>
+        <key>Minute</key>  <integer>0</integer>
+    </dict>
+    <key>StandardOutPath</key>    <string>${_DATA_DIR}/.kg-eod-launchd.log</string>
+    <key>StandardErrorPath</key>  <string>${_DATA_DIR}/.kg-eod-launchd.log</string>
+</dict>
+</plist>
+PLIST
+
     # Morning pull at 08:00 daily
     _MORNING_PLIST="${_LA_DIR}/com.hccdaio.kg-morning.plist"
     cat > "${_MORNING_PLIST}" <<PLIST
@@ -761,14 +795,14 @@ PLIST
 </plist>
 PLIST
 
-    for _plist in "${_SYNC_PLIST}" "${_EOD_PLIST}" "${_MORNING_PLIST}"; do
+    for _plist in "${_SYNC_PLIST}" "${_EOD_PLIST}" "${_EOD_NIGHT_PLIST}" "${_MORNING_PLIST}"; do
       _label="$(basename "${_plist}" .plist)"
       launchctl unload "${_plist}" 2>/dev/null || true
       launchctl load "${_plist}" 2>/dev/null \
         && info "  LaunchAgent loaded: ${_label}" \
         || warn "  Could not load ${_label} — check ${_plist}"
     done
-    ok "LaunchAgents installed (sync every 30 min, EOD at 5pm, morning pull at 8am)"
+    ok "LaunchAgents installed (sync every 30 min, EOD at 5pm + 11pm, morning pull at 8am)"
 
   elif [[ "$PLATFORM" == "linux" ]]; then
     _SYSTEMD_DIR="${HOME}/.config/systemd/user"
@@ -827,6 +861,32 @@ Persistent=true
 WantedBy=timers.target
 UNIT
 
+    cat > "${_SYSTEMD_DIR}/kg-eod-night.service" <<UNIT
+[Unit]
+Description=hc-cdaio-kg late-night EOD — catch after-hours work
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash ${_SCRIPTS_DIR}/kg-eod.sh
+Environment=HCKG_DATA_DIR=${_DATA_DIR}
+Environment=HCKG_GRAPH_SRC=${_SYNC_GRAPH}
+Environment=HCKG_BRANCH=${_MEMBER_BRANCH}
+StandardOutput=append:${_DATA_DIR}/.kg-eod-systemd.log
+StandardError=append:${_DATA_DIR}/.kg-eod-systemd.log
+UNIT
+
+    cat > "${_SYSTEMD_DIR}/kg-eod-night.timer" <<UNIT
+[Unit]
+Description=hc-cdaio-kg late-night EOD at 23:00 daily
+
+[Timer]
+OnCalendar=*-*-* 23:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+UNIT
+
     cat > "${_SYSTEMD_DIR}/kg-morning.service" <<UNIT
 [Unit]
 Description=hc-cdaio-kg morning pull — rebuild graph.json from main
@@ -854,19 +914,22 @@ UNIT
 
     systemctl --user daemon-reload 2>/dev/null \
       || warn "systemctl daemon-reload failed — may need: loginctl enable-linger ${USER}"
-    for _svc in kg-sync kg-eod kg-morning; do
+    for _svc in kg-sync kg-eod kg-eod-night kg-morning; do
       systemctl --user enable --now "${_svc}.timer" 2>/dev/null \
         && info "  systemd timer enabled: ${_svc}.timer" \
         || warn "  Could not enable ${_svc}.timer — check ~/.config/systemd/user/"
     done
-    ok "systemd timers installed (sync every 30 min, EOD at 5pm, morning pull at 8am)"
+    ok "systemd timers installed (sync every 30 min, EOD at 5pm + 11pm, morning pull at 8am)"
   fi
 
   echo ""
   info "Sync daemons active:"
   info "  8 am         : kg-morning.sh  — pull main → rebuild graph.json"
+  info "                                  + catch-up PR if overnight work found"
   info "  every 30 min : kg-sync.sh     — commit + push your changes"
   info "  5 pm         : kg-eod.sh      — open PR to main"
+  info "  11 pm        : kg-eod.sh      — re-check: open PR if after-hours work"
+  info "                                  (skipped if 5pm PR is still open)"
   info "  Logs : ${_DATA_DIR}/.kg-*.log"
 
 fi  # end daemon install

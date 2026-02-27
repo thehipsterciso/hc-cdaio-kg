@@ -17,7 +17,8 @@ IFS=$'\n\t'
 # ── Config ───────────────────────────────────────────────────────────────────
 DATA_DIR="${HCKG_DATA_DIR:-${HOME}/hc-cdaio-kg}"
 GRAPH_OUT="${HCKG_GRAPH_OUT:-${DATA_DIR}/graph.json}"
-LIB_DIR="$(cd "$(dirname "$0")/lib" && pwd)"
+SCRIPTS_DIR="$(cd "$(dirname "$0")" && pwd)"
+LIB_DIR="${SCRIPTS_DIR}/lib"
 PYTHON_CMD="${PYTHON_CMD:-python3}"
 LOG_FILE="${DATA_DIR}/.kg-morning.log"
 SKIP_PULL=0
@@ -78,7 +79,34 @@ if [[ "${ORIG_BRANCH}" != "main" ]]; then
   log "Restored branch: ${ORIG_BRANCH}"
 fi
 
-# ── 5. Update HCKG_DEFAULT_GRAPH symlink if needed ───────────────────────────
+# ── 5. Open catch-up PR for overnight / after-hours work ────────────────────
+# If someone worked after the 5pm EOD PR (and that PR was merged), their
+# branch has commits ahead of main with no open PR.  Detect this and create
+# a PR now so the admin finds it in the morning review queue.
+_CB="$(git -C "${DATA_DIR}" rev-parse --abbrev-ref HEAD 2>/dev/null || echo "")"
+if [[ -n "${_CB}" && "${_CB}" != "main" ]] \
+   && command -v gh &>/dev/null \
+   && gh auth status &>/dev/null 2>&1; then
+  git -C "${DATA_DIR}" fetch origin main --quiet 2>>"${LOG_FILE}" || true
+  _AHEAD="$(git -C "${DATA_DIR}" rev-list --count "origin/main..${_CB}" 2>/dev/null || echo "0")"
+  if [[ "${_AHEAD}" -gt 0 ]]; then
+    _OPEN_PR="$(gh pr list \
+      --repo "thehipsterciso/hc-cdaio-kg" \
+      --head "${_CB}" --base main --state open \
+      --json number --jq '.[0].number' 2>/dev/null || echo "")"
+    if [[ -z "${_OPEN_PR}" ]]; then
+      log "Overnight work detected: ${_AHEAD} commit(s) on ${_CB} with no open PR — creating catch-up PR"
+      bash "${SCRIPTS_DIR}/kg-eod.sh" 2>>"${LOG_FILE}" \
+        || log "WARN: catch-up PR creation had warnings (check kg-eod.log)"
+    else
+      log "Branch ${_CB} is ${_AHEAD} ahead of main — PR #${_OPEN_PR} already open"
+    fi
+  else
+    log "Branch ${_CB} is up to date with main — no catch-up PR needed"
+  fi
+fi
+
+# ── 6. Update HCKG_DEFAULT_GRAPH symlink if needed ───────────────────────────
 # If the install pointed HCKG_DEFAULT_GRAPH at graph.json in the data repo,
 # the MCP server will detect the new mtime and auto-reload — no restart needed.
 CLAUDE_CFG="${HOME}/Library/Application Support/Claude/claude_desktop_config.json"
@@ -100,7 +128,7 @@ except: pass
   fi
 fi
 
-# ── 6. Optional macOS notification ──────────────────────────────────────────
+# ── 7. Optional macOS notification ──────────────────────────────────────────
 if command -v osascript &>/dev/null; then
   ENTITY_COUNT="$(python3 -c "
 import json
