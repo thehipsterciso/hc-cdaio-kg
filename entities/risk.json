@@ -1,0 +1,2620 @@
+[
+  {
+    "created_at": "2026-02-25T21:14:48.307417Z",
+    "updated_at": "2026-02-25T21:14:48.307419Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "entity_type": "risk",
+    "name": "Ransomware Attack on Hosted Exchange Infrastructure",
+    "description": "Risk of ransomware attack against Rackspace-managed infrastructure causing customer data loss, service disruption, and litigation. This risk MATERIALIZED in November 2023 when the PLAY ransomware group compromised Rackspace's Hosted Exchange environment, causing complete service outage affecting thousands of customers. SEC 8-K disclosures documented the incident. Class action lawsuits filed by affected customers. Total cost estimated at $10.8M in direct incident response costs plus ongoing litigation. Hosted Exchange decommissioned (INIT-009) as remediation.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00001",
+    "risk_category": "Cybersecurity",
+    "risk_subcategory": "Ransomware / Destructive Malware",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Respond",
+    "risk_group": "",
+    "inherent_likelihood": "Likely",
+    "inherent_impact": "Catastrophic",
+    "inherent_risk_level": "Critical",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Possible",
+    "residual_impact": "Major",
+    "residual_risk_level": "High",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Instant",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "CISO",
+    "risk_status": "Mitigated",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Scenario Analysis",
+    "assessment_cadence": "Quarterly",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:14:51.494822Z",
+    "updated_at": "2026-02-25T21:14:51.494824Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d66e7e64-ef72-4a3a-8226-1c73fa45021c",
+    "entity_type": "risk",
+    "name": "Excessive Financial Leverage and Debt Covenant Risk",
+    "description": "Risk of financial distress from Rackspace's significant debt obligations inherited from the 2016 Apollo LBO and subsequent refinancings. Total debt exceeded $4.1B as of 2023. Rackspace completed out-of-court debt exchange in 2023 (INIT-005) converting FLSO term loans and 5.375% Senior Notes into new 3.50% FLSO Senior Secured Notes due 2028. Disclosed as primary going concern risk in 10-K risk factors. Covenant compliance requires maintaining minimum liquidity. Highly disclosed in SEC filings.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00002",
+    "risk_category": "Financial",
+    "risk_subcategory": "Leverage / Capital Structure",
+    "risk_source": "Internal",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Likely",
+    "inherent_impact": "Catastrophic",
+    "inherent_risk_level": "Critical",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Likely",
+    "residual_impact": "Major",
+    "residual_risk_level": "High",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "CFO",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Quarterly",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:14:54.297390Z",
+    "updated_at": "2026-02-25T21:14:54.297396Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6362fa99-cb66-4989-b471-f78c9d6a1207",
+    "entity_type": "risk",
+    "name": "Customer Revenue Attrition and Churn",
+    "description": "Risk of accelerating customer churn as enterprises build internal cloud capabilities, move workloads to hyperscaler native services, or switch to competing managed service providers. Rackspace 10-K discloses multi-year revenue decline in legacy managed hosting segments. Net Revenue Retention (NRR) below 100% disclosed in analyst coverage. INIT-011 (Customer Success Transformation) is primary mitigation. Risk amplified by post-breach reputation damage.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00003",
+    "risk_category": "Strategic",
+    "risk_subcategory": "Customer Retention / Revenue Concentration",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Likely",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Possible",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Increasing",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Conservative",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "CRO",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Quarterly",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:14:57.438620Z",
+    "updated_at": "2026-02-25T21:14:57.438622Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "1ca14fb2-9031-4165-9c6d-e0e6ad9b3cba",
+    "entity_type": "risk",
+    "name": "Hyperscaler Direct Competition and Margin Compression",
+    "description": "Risk that AWS, Microsoft Azure, and Google Cloud directly expand into managed services, displacing third-party MSPs including Rackspace. AWS has expanded Managed Operations, AWS Managed Services, and ProServe offerings that directly compete with Rackspace. Azure Expert MSP program creates dependency on Microsoft goodwill. Structural margin compression as hyperscaler prices decline and managed service fees face pressure. Rackspace's AWS SCA (ctr-022) partially mitigates through co-sell but does not eliminate competitive displacement risk.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00004",
+    "risk_category": "Strategic",
+    "risk_subcategory": "Competitive Displacement / Market Share Loss",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Almost Certain",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "Critical",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Likely",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "High",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Quarters",
+    "risk_trend": "Increasing",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Conservative",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "CEO",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Scenario Analysis",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:00.305374Z",
+    "updated_at": "2026-02-25T21:15:00.305376Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "09f89b5f-c272-4918-9722-4440e75f8de5",
+    "entity_type": "risk",
+    "name": "Cloud Engineering Talent Shortage and Attrition",
+    "description": "Risk of inability to attract and retain certified cloud engineers (AWS, Azure, GCP), AI/ML practitioners, and cybersecurity professionals in a highly competitive talent market. Rackspace 10-K discloses dependence on specialized cloud skills as a key risk. Compensation pressure from hyperscalers hiring directly. India (Gurgaon, Hyderabad, Bangalore) delivery centers are key retention risk given market competition. INIT-001 (Multi-Cloud Transformation) creates training demand exceeding supply.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00005",
+    "risk_category": "People",
+    "risk_subcategory": "Critical Skill Talent Acquisition and Retention",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Almost Certain",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Likely",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Conservative",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "CHRO",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:03.973837Z",
+    "updated_at": "2026-02-25T21:15:03.973840Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "0df1ebb1-da55-44d7-9c0d-a9eeba461111",
+    "entity_type": "risk",
+    "name": "Data Center Physical Security and Environmental Risk",
+    "description": "Risk of data center outage from physical events including power failure, HVAC failure, natural disaster, or physical intrusion. Rackspace San Antonio HQ region is exposed to Texas heat and storm events (Winter Storm Uri 2021 created grid stress). Disclosed in 10-K as a risk to service continuity. Multiple redundant DCs (IAD1/2/3 cluster, DFW1/DFW3 cluster) reduce single-point-of-failure exposure. Equinix IX facilities (site-050 through site-061) provide additional physical redundancy.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00006",
+    "risk_category": "Operational",
+    "risk_subcategory": "Physical Infrastructure / Environmental Hazard",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Protect",
+    "risk_group": "",
+    "inherent_likelihood": "Unlikely",
+    "inherent_impact": "Catastrophic",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Rare",
+    "residual_impact": "Major",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Instant",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": false,
+    "risk_owner": "VP Global Operations",
+    "risk_status": "Mitigated",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Scenario Analysis",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:08.074898Z",
+    "updated_at": "2026-02-25T21:15:08.074900Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "4fd5569a-4e3b-4cea-b060-85558976f69b",
+    "entity_type": "risk",
+    "name": "Third-Party Dependency Risk (Equinix, Hyperscalers)",
+    "description": "Risk arising from concentration of infrastructure dependencies on Equinix (colocation), AWS, Azure, and GCP (cloud delivery platforms), and Cisco/VMware (network and virtualization). Contract termination or service disruption by any of these parties could materially impact Rackspace's ability to deliver managed services. VMware-Broadcom acquisition (2024) introduces ELA renegotiation risk and price escalation risk (ctr-033). Equinix MSA (ctr-035) governs but does not eliminate concentration risk.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00007",
+    "risk_category": "Operational",
+    "risk_subcategory": "Supply Chain / Third-Party Concentration",
+    "risk_source": "Third Party",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Identify",
+    "risk_group": "",
+    "inherent_likelihood": "Possible",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Unlikely",
+    "residual_impact": "Major",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Weeks",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Conservative",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": false,
+    "risk_owner": "VP Global Operations",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:09.811212Z",
+    "updated_at": "2026-02-25T21:15:09.811215Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e661c520-8133-467b-863c-78e60a64b14e",
+    "entity_type": "risk",
+    "name": "GDPR and Global Data Privacy Regulatory Compliance",
+    "description": "Risk of non-compliance with GDPR (EU), CCPA (California), UK GDPR, PIPEDA (Canada), PDPA (Singapore/Thailand), and other global data protection regulations applicable to Rackspace's role as both a data processor and controller. Processing personal data for 100,000+ managed cloud customers globally. Rackspace 10-K explicitly cites global data privacy regulations as a material compliance risk. EU-US Data Privacy Framework transition adds complexity. Disclosed in annual SEC filings.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00008",
+    "risk_category": "Compliance",
+    "risk_subcategory": "Data Privacy Regulation",
+    "risk_source": "Regulatory",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Possible",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Unlikely",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Increasing",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "General Counsel / DPO",
+    "risk_status": "Mitigated",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:13.546740Z",
+    "updated_at": "2026-02-25T21:15:13.546745Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "3cc0f43a-6d2b-4232-8402-8a45eba29e0c",
+    "entity_type": "risk",
+    "name": "FedRAMP Authorization Lapse or Non-Renewal",
+    "description": "Risk of losing or failing to renew FedRAMP Provisional Authority to Operate (P-ATO) for Rackspace Government Cloud. FedRAMP authorization is a legal prerequisite for providing cloud services to federal agencies. Loss of authorization would immediately disqualify Rackspace from serving DoD, federal civilian, and FedRAMP-required contracts (GSA MAS ctr-026, SEWP ctr-027). Continuous monitoring obligations under FedRAMP 20x Rev. 5 are resource-intensive. Incident response records (post-PLAY breach) must be disclosed in ConMon reports.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00009",
+    "risk_category": "Compliance",
+    "risk_subcategory": "Federal Certification / Authorization",
+    "risk_source": "Regulatory",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Unlikely",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "Medium",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Rare",
+    "residual_impact": "Major",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "VP Federal Sales / Compliance",
+    "risk_status": "Mitigated",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:16.519846Z",
+    "updated_at": "2026-02-25T21:15:16.519849Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "88299209-bd79-4978-90a2-034f351e5c41",
+    "entity_type": "risk",
+    "name": "AI-Driven Automation Displacing Managed Services Labor",
+    "description": "Risk that AI-driven automation (AIOps, autonomous remediation, LLM-based NOC) reduces the labor content of managed cloud services, compressing Rackspace's differentiated value proposition and margin. Rackspace must automate faster than competitors to maintain margin, but the same automation that improves margins reduces switching costs for customers. INIT-003 (AI Services Launch) is both a risk response and source of the risk \u2014 Rackspace is building AI capabilities that will disrupt its own managed services model.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00010",
+    "risk_category": "Strategic",
+    "risk_subcategory": "Technology / AI Disruption",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Likely",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Possible",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Quarters",
+    "risk_trend": "Increasing",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Moderate",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "CTO",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Scenario Analysis",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:19.491225Z",
+    "updated_at": "2026-02-25T21:15:19.491228Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e8f01b8a-c059-43ae-8c6b-3156123bdd94",
+    "entity_type": "risk",
+    "name": "Interest Rate Risk on Variable Rate Debt Instruments",
+    "description": "Risk of increased interest expense from variable rate obligations on the FLFO Term Loan (ctr-009) and FLSO Term Loan (ctr-010) tied to SOFR + spread. Disclosed in Rackspace 10-K quantitative disclosures. At 2023 debt levels, a 100 bps increase in SOFR increases annual interest expense by approximately $10M. Interest rate swap agreements partially hedge this exposure. Fed rate environment through 2024-2025 creates favorable tailwind (rates declining).",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00011",
+    "risk_category": "Financial",
+    "risk_subcategory": "Interest Rate / Market Risk",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Likely",
+    "inherent_impact": "Moderate",
+    "inherent_risk_level": "Medium",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Possible",
+    "residual_impact": "Minor",
+    "residual_risk_level": "Low",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Decreasing",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Conservative",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": false,
+    "risk_owner": "CFO / Treasurer",
+    "risk_status": "Mitigated",
+    "risk_treatment": "Transfer",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Semi-Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:22.513213Z",
+    "updated_at": "2026-02-25T21:15:22.513216Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "5f85dfa6-340d-4e10-80b7-e3bb6ba4169e",
+    "entity_type": "risk",
+    "name": "Russia/CIS Geopolitical Sanctions and Market Exit Risk",
+    "description": "Risk of legal and reputational exposure from operating in Russia and CIS markets subject to OFAC sanctions following the 2022 Russia-Ukraine war. Rackspace operated MOW80 Moscow Data Center (site-046, loc-046) which has been historically closed. Rackspace disclosed Russia market exit in 2022 investor communications. OFAC compliance program ensures no re-entry. Residual risk from any remaining contractual obligations with Russia-linked entities requires ongoing counsel review.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00012",
+    "risk_category": "Geopolitical",
+    "risk_subcategory": "Sanctions / Political Risk",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Possible",
+    "inherent_impact": "Moderate",
+    "inherent_risk_level": "Medium",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Rare",
+    "residual_impact": "Minor",
+    "residual_risk_level": "Minimal",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Weeks",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": false,
+    "risk_owner": "General Counsel",
+    "risk_status": "Mitigated",
+    "risk_treatment": "Avoid",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:25.646472Z",
+    "updated_at": "2026-02-25T21:15:25.646475Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "61b280d9-51dc-4656-9496-e41023750567",
+    "entity_type": "risk",
+    "name": "APAC Regulatory and Geopolitical Risk (China/HK Operations)",
+    "description": "Risk of adverse regulatory actions, data localization requirements, or geopolitical escalation affecting Rackspace APAC operations in Hong Kong (HKG5, site-044), Shanghai (SHA3, site-045), and Singapore (SIN2, site-043). China's Cybersecurity Law, Data Security Law, and Personal Information Protection Law impose strict data residency and government access requirements. Hong Kong national security law creates additional compliance complexity. Disclosed in Rackspace 10-K as an APAC regulatory risk factor.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00013",
+    "risk_category": "Geopolitical",
+    "risk_subcategory": "China / APAC Political Risk",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Possible",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Possible",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Increasing",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Conservative",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "MD APJ",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Scenario Analysis",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:28.356886Z",
+    "updated_at": "2026-02-25T21:15:28.356888Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "01dc8b80-920d-45c7-b8d8-0c4933d5fec0",
+    "entity_type": "risk",
+    "name": "Reputational Damage Post-PLAY Ransomware Breach",
+    "description": "Risk of sustained brand and reputational damage from the November 2023 PLAY ransomware attack on Rackspace Hosted Exchange. Media coverage was extensive and sustained. Customer trust metrics (NPS, retention rates) were adversely affected. Class action lawsuits (multiple filed in 2023-2024) create ongoing media coverage risk. Rackspace 10-K discloses reputational risk explicitly. INIT-011 (Customer Success Transformation) and proactive communication strategy are primary mitigations.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00014",
+    "risk_category": "Reputational",
+    "risk_subcategory": "Brand / Customer Trust Erosion",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Recover",
+    "risk_group": "",
+    "inherent_likelihood": "Almost Certain",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Likely",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Instant",
+    "risk_trend": "Decreasing",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "CEO / CMO",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Quarterly",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:31.375574Z",
+    "updated_at": "2026-02-25T21:15:31.375579Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "545a3fd8-35bb-420c-b3f1-5d23bf1ac818",
+    "entity_type": "risk",
+    "name": "OpenStack Market Decline and Legacy Revenue Runoff",
+    "description": "Risk of continued decline in OpenStack managed services revenue as enterprise customers migrate to public cloud platforms and VMware private cloud. OpenStack market share has declined significantly since 2017 peak. Rackspace was the largest OpenStack operator but the community has fragmented. Revenue from OpenStack/Private Cloud constitutes a meaningful portion of total bookings that is structurally declining. INIT-006 (OpenStack Reinvention) is the primary mitigation, but structural decline risk remains material.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00015",
+    "risk_category": "Strategic",
+    "risk_subcategory": "Product Obsolescence / Portfolio Risk",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Almost Certain",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Likely",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Quarters",
+    "risk_trend": "Increasing",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Conservative",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "SVP & GM OpenStack",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:34.394114Z",
+    "updated_at": "2026-02-25T21:15:34.394117Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ca1305ee-6236-41f3-98b1-8c97704037e6",
+    "entity_type": "risk",
+    "name": "VMware Licensing Cost Escalation (Broadcom Acquisition)",
+    "description": "Risk of material increase in VMware licensing costs following Broadcom's acquisition of VMware in February 2024. Broadcom has publicly stated its intent to increase VMware pricing by 2-10x and shift to subscription-only licensing. Rackspace's private cloud business (INIT-006) is built on VMware vSphere/vSAN/NSX. VMware ELA (ctr-033) provides near-term protection but contract renewal (2027) creates significant cost risk. Disclosed by Rackspace as a financial risk factor in 2024 10-K.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00016",
+    "risk_category": "Financial",
+    "risk_subcategory": "Third-Party License Cost Escalation",
+    "risk_source": "Third Party",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Almost Certain",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Likely",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Increasing",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "CFO / CTO",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Quarterly",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:37.550010Z",
+    "updated_at": "2026-02-25T21:15:37.550012Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "97a1d0a6-b2b4-4f96-a80f-13e688e6a6c1",
+    "entity_type": "risk",
+    "name": "Multi-Tenant Data Isolation Failure",
+    "description": "Risk that a failure in multi-tenant cloud infrastructure isolation exposes one customer's data to another. Rackspace manages shared infrastructure for thousands of customers. A hypervisor escape, container breakout, or misconfiguration in shared networking could create cross-tenant data exposure. Particularly acute in OpenStack environments where tenant isolation relies on software-defined networking. Disclosed in Rackspace 10-K as a cybersecurity risk. Customer data handling obligations (GDPR, HIPAA, PCI DSS) amplify regulatory consequences of any isolation failure.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00017",
+    "risk_category": "Cybersecurity",
+    "risk_subcategory": "Data Segregation / Tenant Isolation Breach",
+    "risk_source": "Internal",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Protect",
+    "risk_group": "",
+    "inherent_likelihood": "Unlikely",
+    "inherent_impact": "Catastrophic",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Rare",
+    "residual_impact": "Major",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Instant",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "CISO",
+    "risk_status": "Mitigated",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Scenario Analysis",
+    "assessment_cadence": "Quarterly",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:40.453695Z",
+    "updated_at": "2026-02-25T21:15:40.453697Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "3dc73b52-975e-48ca-ba6b-322d549f2785",
+    "entity_type": "risk",
+    "name": "PCI DSS Compliance Certification Failure",
+    "description": "Risk of failing to maintain PCI DSS Level 1 Service Provider certification required for Rackspace's role in supporting retail and financial services customers processing payment card data. PCI DSS Level 1 certification applies to the highest tier of payment processors and service providers. Loss of certification would disqualify Rackspace from serving customers in Retail/E-Commerce (seg-007) and Financial Services (seg-006) segments. Annual QSA audit required. PCI DSS v4.0 transition (2024-2025) adds compliance complexity.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00018",
+    "risk_category": "Compliance",
+    "risk_subcategory": "Payment Card / PCI DSS Non-Compliance",
+    "risk_source": "Regulatory",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Unlikely",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "Medium",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Rare",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "Low",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": false,
+    "risk_owner": "CISO / Compliance",
+    "risk_status": "Mitigated",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:43.808144Z",
+    "updated_at": "2026-02-25T21:15:43.808148Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "010c600a-9c5e-42fe-9de6-2e4318c65ffb",
+    "entity_type": "risk",
+    "name": "Key Executive Departure and Leadership Continuity",
+    "description": "Risk of business disruption from departure of key executives including CEO (Amar Maletira), CTO (Subroto Mukerji), CFO (Mark Marino), or CRO (Angela Logothetis). Rackspace 10-K discloses key person dependency as a risk. Private equity ownership (Apollo) creates additional executive tenure uncertainty. Succession planning, employment agreements, and equity retention programs partially mitigate. Historical leadership turnover (multiple CEO changes 2017-2020) demonstrates this risk is not theoretical.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00019",
+    "risk_category": "People",
+    "risk_subcategory": "Key Person Dependency / Succession Risk",
+    "risk_source": "Internal",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Possible",
+    "inherent_impact": "Moderate",
+    "inherent_risk_level": "Medium",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Unlikely",
+    "residual_impact": "Minor",
+    "residual_risk_level": "Low",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Weeks",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Conservative",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "Board Compensation Committee",
+    "risk_status": "Assessed",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:46.536034Z",
+    "updated_at": "2026-02-25T21:15:46.536036Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "3a138867-02d7-4c61-85d8-5b03c5d7d4b0",
+    "entity_type": "risk",
+    "name": "Litigation and Class Action Exposure (Post-Breach)",
+    "description": "Risk of material financial loss and reputational damage from class action lawsuits filed by customers affected by the November 2023 PLAY ransomware attack. Multiple class action suits filed in 2023-2024 in federal courts. Rackspace disclosed ongoing litigation in 10-K and 10-Q filings with unquantified contingent liabilities. Cyber liability insurance (transfer mechanism) partially mitigates but coverage adequacy is uncertain. Defense costs are material even if cases are ultimately settled or dismissed.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00020",
+    "risk_category": "Legal",
+    "risk_subcategory": "Class Action Litigation / Legal Liability",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Recover",
+    "risk_group": "",
+    "inherent_likelihood": "Almost Certain",
+    "inherent_impact": "Major",
+    "inherent_risk_level": "High",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Likely",
+    "residual_impact": "Moderate",
+    "residual_risk_level": "Medium",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Averse",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": true,
+    "risk_owner": "General Counsel",
+    "risk_status": "Assessed",
+    "risk_treatment": "Transfer",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Scenario Analysis",
+    "assessment_cadence": "Quarterly",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:49.593650Z",
+    "updated_at": "2026-02-25T21:15:49.593652Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "49a79ff3-4fbf-4467-b440-7705603c45d0",
+    "entity_type": "risk",
+    "name": "Regulatory Scrutiny of AI Services and Data Processing",
+    "description": "Emerging risk from AI regulatory requirements including the EU AI Act (2024), NIST AI RMF, and sector-specific AI governance frameworks. Rackspace's AI services portfolio (INIT-003) processes customer data through AI/ML systems that may be subject to transparency, explainability, and prohibited use requirements under the EU AI Act. HIPAA-covered healthcare customers (CareFirst, Seattle Children's) face sector-specific AI governance requirements. Risk is emerging but trajectory is clearly increasing given global AI regulatory activity.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00021",
+    "risk_category": "Compliance",
+    "risk_subcategory": "AI Regulation / Algorithmic Accountability",
+    "risk_source": "Regulatory",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Possible",
+    "inherent_impact": "Moderate",
+    "inherent_risk_level": "Medium",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Unlikely",
+    "residual_impact": "Minor",
+    "residual_risk_level": "Low",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Increasing",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Conservative",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": false,
+    "risk_owner": "General Counsel / CTO",
+    "risk_status": "Identified",
+    "risk_treatment": "Mitigate",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:15:52.845460Z",
+    "updated_at": "2026-02-25T21:15:52.845464Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "75df8a92-5595-4fbc-a5ba-3d8ed58d9281",
+    "entity_type": "risk",
+    "name": "Foreign Exchange Risk on Global Revenue and Costs",
+    "description": "Risk of financial loss from adverse foreign exchange movements on Rackspace's non-USD revenues and costs. Rackspace generates significant revenue in GBP (UK operations - LON3/5/8 DCs, G-Cloud UK contract), EUR (Germany, Netherlands, France), AUD (Australia), SGD (Singapore), and INR (India delivery centers). Disclosed in Rackspace 10-K quantitative market risk disclosures. Natural hedging from matching revenue and cost currency exposures in major markets. Forward contracts and natural hedging partially mitigate but residual exposure remains material at global scale.",
+    "tags": [],
+    "metadata": {},
+    "risk_id": "RSK-00022",
+    "risk_category": "Financial",
+    "risk_subcategory": "Foreign Exchange / Currency Risk",
+    "risk_source": "External",
+    "risk_taxonomy_references": [],
+    "nist_csf_function": "Govern",
+    "risk_group": "",
+    "inherent_likelihood": "Almost Certain",
+    "inherent_impact": "Moderate",
+    "inherent_risk_level": "Medium",
+    "inherent_financial_impact": {
+      "estimated_loss_low": null,
+      "estimated_loss_high": null,
+      "currency": "USD",
+      "estimation_methodology": "",
+      "estimation_confidence": ""
+    },
+    "inherent_impact_dimensions": {
+      "financial": "",
+      "operational": "",
+      "reputational": "",
+      "regulatory": "",
+      "safety": ""
+    },
+    "residual_likelihood": "Likely",
+    "residual_impact": "Minor",
+    "residual_risk_level": "Low",
+    "control_effectiveness_on_risk": {
+      "risk_reduction_pct": null,
+      "control_count": null,
+      "weakest_control": ""
+    },
+    "risk_velocity": "Months",
+    "risk_trend": "Stable",
+    "risk_interconnections": [],
+    "emerging_risk_flag": false,
+    "risk_appetite": "Moderate",
+    "risk_tolerance": {
+      "tolerance_threshold": "",
+      "escalation_trigger": "",
+      "escalation_path": ""
+    },
+    "materiality_assessment": {
+      "pct_of_pretax_income": null,
+      "pct_of_total_assets": null,
+      "pct_of_total_equity": null,
+      "pct_of_total_revenue": null,
+      "materiality_conclusion": ""
+    },
+    "board_reportable": false,
+    "risk_owner": "CFO / Treasurer",
+    "risk_status": "Mitigated",
+    "risk_treatment": "Transfer",
+    "treatment_plan": {
+      "plan_description": "",
+      "target_residual_risk_level": "",
+      "actions": [],
+      "target_completion_date": null,
+      "investment_required": null,
+      "currency": "USD"
+    },
+    "acceptance_record": {
+      "accepted_by": "",
+      "acceptance_date": null,
+      "acceptance_rationale": "",
+      "acceptance_expiration": null,
+      "review_frequency": ""
+    },
+    "transfer_record": {
+      "transfer_mechanism": "",
+      "transfer_counterparty": "",
+      "coverage_limit": null,
+      "currency": "USD",
+      "policy_or_contract_reference": ""
+    },
+    "last_assessed": null,
+    "assessment_methodology": "Qualitative Matrix",
+    "assessment_cadence": "Semi-Annual",
+    "next_assessment": null,
+    "assessment_history": [],
+    "key_risk_indicators": [],
+    "risk_scenarios": [],
+    "loss_event_history": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  }
+]

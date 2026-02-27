@@ -1,0 +1,400 @@
+[
+  {
+    "created_at": "2026-02-25T21:33:43.821234Z",
+    "updated_at": "2026-02-25T21:33:43.821237Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "add76264-e435-4d08-bc42-31bebe189dbb",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-013",
+    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "CrowdStrike EDR is the primary endpoint control mitigating ransomware execution risk"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821314Z",
+    "updated_at": "2026-02-25T21:33:43.821314Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "35439ccd-71df-427b-bf1c-20672ac49ec1",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-016",
+    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "weight": 1.0,
+    "confidence": 0.93,
+    "properties": {
+      "rationale": "Anti-malware protection provides signature and behavioral detection against ransomware"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821347Z",
+    "updated_at": "2026-02-25T21:33:43.821347Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "600fbc81-7bc2-4cf1-8901-f096826ef725",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-051",
+    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "24x7 SOC provides continuous threat monitoring enabling rapid ransomware detection"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821711Z",
+    "updated_at": "2026-02-25T21:33:43.821711Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ae4feaee-e610-4caa-824b-f6d04598ce8b",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-052",
+    "target_id": "3a138867-02d7-4c61-85d8-5b03c5d7d4b0",
+    "weight": 1.0,
+    "confidence": 0.8,
+    "properties": {
+      "rationale": "Structured incident response reduces litigation exposure by demonstrating due care post-breach"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821478Z",
+    "updated_at": "2026-02-25T21:33:43.821478Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "5757a636-e94b-4f9e-a707-6ef4db152e9d",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-066",
+    "target_id": "97a1d0a6-b2b4-4f96-a80f-13e688e6a6c1",
+    "weight": 1.0,
+    "confidence": 0.98,
+    "properties": {
+      "rationale": "Customer environment tenant isolation is the primary architectural control preventing data leakage between tenants"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821561Z",
+    "updated_at": "2026-02-25T21:33:43.821561Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ed4fa52a-2e58-41ec-a93d-d4746e1f17d0",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-068",
+    "target_id": "3cc0f43a-6d2b-4232-8402-8a45eba29e0c",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "FedRAMP continuous monitoring program directly addresses authorization lapse risk"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821609Z",
+    "updated_at": "2026-02-25T21:33:43.821609Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d7fc01d8-9393-49ba-92c7-bfe881ffb0c1",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-073",
+    "target_id": "3dc73b52-975e-48ca-ba6b-322d549f2785",
+    "weight": 1.0,
+    "confidence": 0.8,
+    "properties": {
+      "rationale": "SOC 2 Type II testing provides continuous control evidence supporting PCI compliance posture"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821594Z",
+    "updated_at": "2026-02-25T21:33:43.821594Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "883ca1bd-865f-4da7-93a6-67e88a5ea579",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-074",
+    "target_id": "3dc73b52-975e-48ca-ba6b-322d549f2785",
+    "weight": 1.0,
+    "confidence": 0.96,
+    "properties": {
+      "rationale": "Annual PCI DSS Level 1 QSA validation is the definitive control preventing PCI certification failure"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821725Z",
+    "updated_at": "2026-02-25T21:33:43.821725Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "0db8c8dc-7c21-4826-91f6-5482fdc38ce0",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-076",
+    "target_id": "010c600a-9c5e-42fe-9de6-2e4318c65ffb",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "Annual risk assessment process identifies key person dependencies enabling succession planning"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821696Z",
+    "updated_at": "2026-02-25T21:33:43.821697Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "9a1cb675-6feb-4316-94d9-47c8191294fe",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-085",
+    "target_id": "6362fa99-cb66-4989-b471-f78c9d6a1207",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "SLA monitoring and credit process provides accountability that reduces customer churn from service failures"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821668Z",
+    "updated_at": "2026-02-25T21:33:43.821668Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "638ba92d-bce2-49d3-bced-ba093671880b",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-086",
+    "target_id": "0df1ebb1-da55-44d7-9c0d-a9eeba461111",
+    "weight": 1.0,
+    "confidence": 0.87,
+    "properties": {
+      "rationale": "Disaster recovery testing validates data center physical continuity procedures"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821682Z",
+    "updated_at": "2026-02-25T21:33:43.821682Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "eae3d8e2-44d5-4418-85e6-cf61871f3ad1",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-087",
+    "target_id": "0df1ebb1-da55-44d7-9c0d-a9eeba461111",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "Geographic redundancy across multiple data center regions mitigates single-site physical failure risk"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821458Z",
+    "updated_at": "2026-02-25T21:33:43.821458Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ed03079b-b258-4303-bfb3-250ed8e764a8",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-090",
+    "target_id": "01dc8b80-920d-45c7-b8d8-0c4933d5fec0",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Cybersecurity insurance partially mitigates financial and reputational exposure post-breach"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821526Z",
+    "updated_at": "2026-02-25T21:33:43.821526Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "821150c5-f311-4f09-910b-72467ece2318",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-091",
+    "target_id": "e661c520-8133-467b-863c-78e60a64b14e",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Privacy impact assessments identify and address GDPR compliance gaps before processing activities"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821541Z",
+    "updated_at": "2026-02-25T21:33:43.821541Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "93e6a672-12a7-460b-8a99-9fd259bf4aa3",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-094",
+    "target_id": "e661c520-8133-467b-863c-78e60a64b14e",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Supplier DPA and data processing controls ensure GDPR-compliant third-party data handling"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821441Z",
+    "updated_at": "2026-02-25T21:33:43.821442Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c1c61551-1a61-4e5c-b8eb-a63890b7f39f",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-095",
+    "target_id": "01dc8b80-920d-45c7-b8d8-0c4933d5fec0",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Breach notification process demonstrates regulatory compliance reducing reputational damage"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821645Z",
+    "updated_at": "2026-02-25T21:33:43.821645Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6f1f1a79-a9de-4b29-84d6-315f9a43cd43",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-104",
+    "target_id": "4fd5569a-4e3b-4cea-b060-85558976f69b",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Third-party risk assessment provides visibility into and management of critical vendor dependencies"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821626Z",
+    "updated_at": "2026-02-25T21:33:43.821626Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c4a1b9d7-03e1-42e8-88b2-ab677436abaf",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-120",
+    "target_id": "88299209-bd79-4978-90a2-034f351e5c41",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Responsible AI governance controls guide ethical AI deployment reducing uncontrolled displacement risk"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:40:24.626592Z",
+    "updated_at": "2026-02-25T21:40:24.626592Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7567feb4-47c8-4b6a-bed4-c49a18e99b4c",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-120",
+    "target_id": "49a79ff3-4fbf-4467-b440-7705603c45d0",
+    "weight": 1.0,
+    "confidence": 0.8,
+    "properties": {}
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821417Z",
+    "updated_at": "2026-02-25T21:33:43.821417Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "90107d9e-eb26-4dee-a206-59bdd80d0a2a",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-181",
+    "target_id": "01dc8b80-920d-45c7-b8d8-0c4933d5fec0",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Documented IR plan enables coordinated breach response reducing reputational impact duration"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821494Z",
+    "updated_at": "2026-02-25T21:33:43.821494Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d57918ba-61b6-4dac-ac57-34721a0b132a",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-319",
+    "target_id": "97a1d0a6-b2b4-4f96-a80f-13e688e6a6c1",
+    "weight": 1.0,
+    "confidence": 0.93,
+    "properties": {
+      "rationale": "Virtualization security controls enforce hypervisor-level isolation between tenant workloads"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821512Z",
+    "updated_at": "2026-02-25T21:33:43.821512Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "18aa7a4e-efc8-4240-a0a6-42474233cae7",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-320",
+    "target_id": "97a1d0a6-b2b4-4f96-a80f-13e688e6a6c1",
+    "weight": 1.0,
+    "confidence": 0.91,
+    "properties": {
+      "rationale": "Container security controls enforce namespace and network policy isolation in multi-tenant Kubernetes"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821579Z",
+    "updated_at": "2026-02-25T21:33:43.821579Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "5170209a-bc3a-4163-82fc-8346f3c7f99b",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-331",
+    "target_id": "3cc0f43a-6d2b-4232-8402-8a45eba29e0c",
+    "weight": 1.0,
+    "confidence": 0.93,
+    "properties": {
+      "rationale": "Monthly vulnerability scanning satisfies FedRAMP ConMon scanning frequency requirement"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821401Z",
+    "updated_at": "2026-02-25T21:33:43.821401Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "b58acfa0-1db2-4b3e-9fcc-90cc63f68b48",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-335",
+    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "SOC escalation and triage procedures enable rapid ransomware incident containment"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:33:43.821371Z",
+    "updated_at": "2026-02-25T21:33:43.821371Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "65429ab5-b666-4b87-8bb4-4a91ad125a92",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-337",
+    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "Malware analysis capability enables understanding and containment of ransomware variants"
+    }
+  }
+]

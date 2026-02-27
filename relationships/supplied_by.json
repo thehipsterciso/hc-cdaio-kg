@@ -1,0 +1,466 @@
+[
+  {
+    "created_at": "2026-02-25T19:27:34.136069Z",
+    "updated_at": "2026-02-25T19:27:34.136069Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2bc047da-64e2-4c11-85df-f85234cb2b4f",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-010",
+    "target_id": "93a06a5b-323c-4e10-a3ca-ddd8d3f3e25c",
+    "weight": 1.0,
+    "confidence": 1.0,
+    "properties": {
+      "source": "rackspace.com/managed-hosting/custom-networking/load-balancers/f5-networks; int-0310/0311/0312",
+      "date_discovered": "2026-02-25",
+      "rationale": "F5 BIG-IP is the underlying hardware for Cloud Load Balancers and Dedicated Load Balancer (DLBv3), confirmed by API integrations referencing F5 BIG-IP pool/virtual server management"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:47:15.578416Z",
+    "updated_at": "2026-02-25T19:47:15.578418Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "792778fd-ebca-47b8-804d-f1d2d90ebaeb",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-012",
+    "target_id": "95f4ea39-e18a-45ac-94ed-39801c208232",
+    "weight": 0.85,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "Rackspace Monitoring API alarm notifications route to PagerDuty via API integration (int-0098) for on-call incident creation",
+      "source": "int-0098"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:47:15.578517Z",
+    "updated_at": "2026-02-25T19:47:15.578517Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "90500df6-a1e4-490e-9197-1d23dd1f44d7",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-030",
+    "target_id": "ce30320e-d0b8-449b-8103-ebb65a37f4a4",
+    "weight": 0.9,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "Rackspace Infrastructure Automation Toolbox (sys-030) bundles Terraform among its tools per gcr.io/rs-public-containers/rackspace-toolbox description",
+      "source": "sys-030"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:27:34.136189Z",
+    "updated_at": "2026-02-25T19:27:34.136189Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "32c91add-9258-4664-b37d-392e5950b424",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-037",
+    "target_id": "vnd-026",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "source": "sys-037 description: Powered by Akamai CDN partnership",
+      "date_discovered": "2026-02-25",
+      "rationale": "Cloud Files CDN Edge Network (sys-037) explicitly documented as powered by Akamai CDN, making Akamai the supply-side technology vendor for this system"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:27:34.135988Z",
+    "updated_at": "2026-02-25T19:27:34.135989Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "deb3d0e5-bfd3-4ddc-a9a0-1dcb0e819afa",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-043",
+    "target_id": "d31d8a26-09ac-4021-be8d-c8095317739c",
+    "weight": 1.0,
+    "confidence": 1.0,
+    "properties": {
+      "source": "rDNS 72.3.128.0/24; int-0367",
+      "date_discovered": "2026-02-25",
+      "rationale": "Arbor Networks appliances are the DDoS scrubbing hardware in sys-043 DDoS Mitigation Cluster, confirmed by rDNS hostname arbor-dfw.dfw3.rackspace.net"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:27:34.136165Z",
+    "updated_at": "2026-02-25T19:27:34.136165Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "68a6f466-7bfd-4e9d-adbb-fdd40aefc4d1",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-043",
+    "target_id": "vnd-017",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "source": "rDNS 72.3.128.0/24: cisco-guard2-3.dfw1.rackspace.net; int-0367",
+      "date_discovered": "2026-02-25",
+      "rationale": "Cisco Guard appliances are the secondary DDoS mitigation platform in sys-043, confirmed by rDNS hostnames cisco-guard2-3.dfw1.rackspace.net alongside Arbor appliances"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:36:04.423168Z",
+    "updated_at": "2026-02-25T19:36:04.423168Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "f1e61a02-1769-4447-97c1-8494078c8855",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-054",
+    "target_id": "3fee8617-84c1-4b19-ad5b-91c1ee835d32",
+    "weight": 0.85,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Security Scanning Infrastructure (sys-054, seconly.rackspace.com) likely runs Qualys as the VM scanner given INT-0342 documents Qualys\u2192Splunk data flow"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:36:04.423215Z",
+    "updated_at": "2026-02-25T19:36:04.423215Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "114b5659-bdc8-4cba-a1b8-360e9c78c1d3",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-054",
+    "target_id": "01c01d95-dd25-48e8-b0eb-49a122f85514",
+    "weight": 0.8,
+    "confidence": 0.8,
+    "properties": {
+      "rationale": "Security Scanning Infrastructure also hosts Nessus/Tenable per INT-0343 (Nessus/Tenable\u2192Splunk integration); dual scanner deployment alongside Qualys is common for complementary coverage"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:47:15.578747Z",
+    "updated_at": "2026-02-25T19:47:15.578747Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d46ccdc1-e720-41ba-a965-bc3d435c5203",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-055",
+    "target_id": "ea1fa78a-b48f-47ff-a80f-83b3252cb9e7",
+    "weight": 0.75,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Site Firewall Clusters (sys-055) managed alongside Palo Alto and Cisco ASA; Fortinet confirmed as one of three firewall platforms in Rackspace network security role description",
+      "source": "L04-role.json role-061 description"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:52:44.772059Z",
+    "updated_at": "2026-02-25T19:52:44.772059Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "15165ba7-7f89-44f4-ae32-89c962bc085a",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-055",
+    "target_id": "17bb112e-eb96-4f8c-a041-155b98c660fa",
+    "weight": 0.9,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Site Firewall Clusters (sys-055) include Palo Alto NGFWs \u2014 role-061 Network Security Engineer explicitly names Palo Alto alongside Fortinet and Cisco ASA as firewall platforms. Source: role-061 job description"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:52:44.772109Z",
+    "updated_at": "2026-02-25T19:52:44.772109Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "b3708ef8-09a6-42b9-a608-b31ea8fd8d62",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-055",
+    "target_id": "2c80c3fd-ec2a-40a6-913e-e313d5af117a",
+    "weight": 0.9,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Site Firewall Clusters include Cisco ASA appliances \u2014 role-061 Network Security Engineer lists Cisco ASA explicitly; ctl-020 references Cisco ACS for TACACS network device access control. Source: role-061, ctl-020"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:32:26.969381Z",
+    "updated_at": "2026-02-25T19:32:26.969383Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2dc751d0-2549-4149-88af-5538ad25590f",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-061",
+    "target_id": "06f09685-4a72-412b-bbf2-3071986c2265",
+    "weight": 0.95,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "AI Business Platform built on NVIDIA AI Enterprise with H100/H200 GPUs + InfiniBand networking. Source: rackspace.com/newsroom Mar 2025"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:32:41.249436Z",
+    "updated_at": "2026-02-25T19:32:41.249440Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8a247861-b543-4508-937d-ad0910490eb8",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-061",
+    "target_id": "82ae1b55-80dc-4e1c-a187-ec663a0df68f",
+    "weight": 0.9,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "AI Business Platform runs on HPE ProLiant servers with NVIDIA GPUs. Source: rackspace.com/newsroom AI Business Mar 2025"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:52:44.771656Z",
+    "updated_at": "2026-02-25T19:52:44.771661Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "47e79bb3-b233-4f1c-8dad-4d3ab2885393",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-065",
+    "target_id": "90232f60-9561-4dfc-a2f6-18027f06350b",
+    "weight": 1.0,
+    "confidence": 0.98,
+    "properties": {
+      "rationale": "Splunk Enterprise Security SIEM (sys-065) is the Splunk product \u2014 explicit named product from vendor. Source: SOC 3 FY2024 SIEM reference, int-0337/0342/0343 Splunk ingestion integrations, ctl-050 Splunk SIEM control"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:36:04.423047Z",
+    "updated_at": "2026-02-25T19:36:04.423051Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "af6adc53-acd5-4b0c-acb9-d92656a1d139",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-082",
+    "target_id": "63bfcfe8-0b67-4052-a301-b7836539992e",
+    "weight": 0.85,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "sys-082 is the Email Security Gateway named as Proofpoint/Microsoft Defender for Office. Proofpoint named explicitly in Rackspace Cyber Defence L3 job posting. Source: sys-082 entity; ninjajobs.org job req"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:47:15.578488Z",
+    "updated_at": "2026-02-25T19:47:15.578488Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ce1dd39b-98f8-4ac1-a802-1e5080a92e7f",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-088",
+    "target_id": "ce30320e-d0b8-449b-8103-ebb65a37f4a4",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Terraform Enterprise (sys-088) is a HashiCorp product; confirmed as production IaC platform with published Rackspace Spot Terraform provider",
+      "source": "sys-088; github.com/rackerlabs/terraform-provider-spot"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:47:15.578648Z",
+    "updated_at": "2026-02-25T19:47:15.578648Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "b990c8cf-4882-48d6-b3f9-434bb5d2d248",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-090",
+    "target_id": "5a344d61-ef1a-42f3-bb64-b8d8fedde3bc",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "GitHub Actions CI/CD (sys-090) is a GitHub Inc. SaaS product confirmed in production for Genestack Terraform and engineering workflows",
+      "source": "sys-090"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:47:15.578667Z",
+    "updated_at": "2026-02-25T19:47:15.578667Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "1f8f00f3-4dd9-43a3-a3a7-4773b06d9806",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-091",
+    "target_id": "5a344d61-ef1a-42f3-bb64-b8d8fedde3bc",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "GitHub Container Registry (sys-091) is ghcr.io \u2014 GitHub Inc. product storing Genestack OpenStack service images",
+      "source": "sys-091"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:47:15.579068Z",
+    "updated_at": "2026-02-25T19:47:15.579069Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6fc2a50b-5695-42e3-b25a-14621324729a",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-096",
+    "target_id": "6d0ecaed-0cd7-4043-b8d8-a2592fbb25a8",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Grafana Dashboards (sys-096) is a Grafana Labs product; specific version v9.2.2 confirmed in Genestack helm-chart-versions.yaml",
+      "source": "docs.rackspacecloud.com/genestack-structure-and-files; sys-096"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:35:10.376202Z",
+    "updated_at": "2026-02-25T19:35:10.376205Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "efaced40-9b5f-440c-abf2-ede80ececc33",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-113",
+    "target_id": "42c68aa6-1068-4b25-bed4-66b0cc770a12",
+    "weight": 0.95,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Zerto IT Resilience Platform (sys-113) is Zerto software. Confirmed via docs.rackspace.com/docs/zerto-disaster-recovery"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:52:44.771842Z",
+    "updated_at": "2026-02-25T19:52:44.771842Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "94077845-4f86-476a-b70d-4fd1c28689ce",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-115",
+    "target_id": "6fdd5fc4-a0ec-4dd7-b599-372a6c1ac6fc",
+    "weight": 1.0,
+    "confidence": 0.98,
+    "properties": {
+      "rationale": "VMware vCenter Server is a VMware/Broadcom product. Source: docs.rackspace.com/docs/add-ons (VVD/WLD architecture)"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:52:44.771860Z",
+    "updated_at": "2026-02-25T19:52:44.771860Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "44259140-4a6d-4507-b246-51a3b56d8fa8",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-117",
+    "target_id": "6fdd5fc4-a0ec-4dd7-b599-372a6c1ac6fc",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "VMware vSphere Replication is a VMware/Broadcom product used in SDDC DR architecture. Source: docs.rackspace.com/docs/add-ons"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:52:44.771877Z",
+    "updated_at": "2026-02-25T19:52:44.771877Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "91506668-2970-4ee4-b665-66be1d9f75c5",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-120",
+    "target_id": "6fdd5fc4-a0ec-4dd7-b599-372a6c1ac6fc",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "VMware vRealize Operations is a VMware/Broadcom product for SDDC performance monitoring. Source: docs.rackspace.com SDDC product docs"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:52:44.771892Z",
+    "updated_at": "2026-02-25T19:52:44.771893Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "68444488-fd89-4a1b-bdc1-c7c6dd586d26",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-121",
+    "target_id": "6fdd5fc4-a0ec-4dd7-b599-372a6c1ac6fc",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "VMware vRealize Log Insight is a VMware/Broadcom log management product for SDDC. Source: docs.rackspace.com SDDC product docs"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:52:44.771908Z",
+    "updated_at": "2026-02-25T19:52:44.771908Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "31dc3416-e3d4-48ac-ad81-6e0e125f97f1",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-126",
+    "target_id": "6fdd5fc4-a0ec-4dd7-b599-372a6c1ac6fc",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "VMware NSX Network Virtualization is a VMware/Broadcom product \u2014 core to SDDC WLD architecture. Source: docs.rackspace.com/docs/add-ons"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:47:15.578911Z",
+    "updated_at": "2026-02-25T19:47:15.578911Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2b07ce6a-672c-43b0-92bc-fd36b6a7f742",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-129",
+    "target_id": "337b7c35-dda0-487f-a338-66b1c4ce547b",
+    "weight": 0.75,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "OpenStack Cinder Block Storage (sys-129) supports multiple backends including Pure Storage arrays used in Rackspace managed storage for Private Cloud customers",
+      "source": "L04-role.json block storage role description"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:35:10.376343Z",
+    "updated_at": "2026-02-25T19:35:10.376344Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "89bf7e62-8140-4ce2-a8c2-ffe79820ef47",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-132",
+    "target_id": "9e651731-012d-4d54-8937-2307a06cf294",
+    "weight": 0.8,
+    "confidence": 0.8,
+    "properties": {
+      "rationale": "OpenStack Horizon is an OpenStack upstream component; Red Hat OpenStack Platform is the enterprise distribution Rackspace has certified and deployed"
+    }
+  },
+  {
+    "created_at": "2026-02-25T19:32:26.969473Z",
+    "updated_at": "2026-02-25T19:32:26.969474Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "815bd284-2a16-4867-9673-383051c757c7",
+    "relationship_type": "supplied_by",
+    "source_id": "sys-144",
+    "target_id": "06f09685-4a72-412b-bbf2-3071986c2265",
+    "weight": 0.9,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "Run:AI GPU Orchestration acquired by NVIDIA in 2024; sys-144 is now an NVIDIA product deployed within Rackspace AI stack. Source: sys-144 description"
+    }
+  }
+]
