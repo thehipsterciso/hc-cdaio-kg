@@ -51,8 +51,11 @@ gh auth status &>/dev/null  || { log "ERROR: gh not authenticated"; exit 1; }
 # ── 1. Final sync ────────────────────────────────────────────────────────────
 log "Running final sync"
 if [[ $DRY_RUN -eq 0 ]]; then
-  bash "${SCRIPTS_DIR}/kg-sync.sh" --message "eod: end-of-day sync at $(_ts)" \
-    2>>"${LOG_FILE}" || log "WARN: sync had warnings (continuing)"
+  if ! bash "${SCRIPTS_DIR}/kg-sync.sh" --message "eod: end-of-day sync at $(_ts)" \
+       2>>"${LOG_FILE}"; then
+    log "ERROR: sync failed — aborting EOD to avoid PR from wrong branch"
+    exit 1
+  fi
 fi
 
 # ── 2. Detect branch ─────────────────────────────────────────────────────────

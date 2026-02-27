@@ -63,13 +63,21 @@ else
     # Switch to the member branch if it exists
     if git -C "${DATA_DIR}" ls-remote --exit-code --heads origin "${BRANCH}" &>/dev/null; then
       git -C "${DATA_DIR}" fetch origin "${BRANCH}" --quiet
-      git -C "${DATA_DIR}" checkout "${BRANCH}" --quiet 2>/dev/null \
-        || git -C "${DATA_DIR}" checkout -b "${BRANCH}" "origin/${BRANCH}" --quiet
+      git -C "${DATA_DIR}" checkout "${BRANCH}" --quiet 2>>"${LOG_FILE}" \
+        || git -C "${DATA_DIR}" checkout -b "${BRANCH}" "origin/${BRANCH}" --quiet 2>>"${LOG_FILE}" \
+        || { log "ERROR: could not checkout ${BRANCH} — aborting to avoid committing to wrong branch"; exit 1; }
     else
       log "WARN: branch ${BRANCH} not found on origin — committing to current branch"
       BRANCH="$(git -C "${DATA_DIR}" rev-parse --abbrev-ref HEAD)"
     fi
   fi
+fi
+
+# ── Verify we are on the intended branch (issue #21) ─────────────────────────
+_ACTUAL_BRANCH="$(git -C "${DATA_DIR}" rev-parse --abbrev-ref HEAD 2>/dev/null || echo "")"
+if [[ "${_ACTUAL_BRANCH}" != "${BRANCH}" ]]; then
+  log "ERROR: expected branch '${BRANCH}' but HEAD is '${_ACTUAL_BRANCH}' — aborting to avoid committing to wrong branch"
+  exit 1
 fi
 log "Branch: ${BRANCH}"
 
@@ -96,9 +104,9 @@ fi
 git -C "${DATA_DIR}" commit -m "${COMMIT_MSG}" --quiet
 log "Committed: ${COMMIT_MSG}"
 
-# ── Push ─────────────────────────────────────────────────────────────────────
-git -C "${DATA_DIR}" push origin "${BRANCH}" --quiet 2>>"${LOG_FILE}" \
-  || git -C "${DATA_DIR}" push origin "${BRANCH}" --set-upstream --quiet 2>>"${LOG_FILE}"
+# ── Push (HEAD:BRANCH to ensure we push what was actually committed) ─────────
+git -C "${DATA_DIR}" push origin "HEAD:${BRANCH}" --quiet 2>>"${LOG_FILE}" \
+  || git -C "${DATA_DIR}" push origin "HEAD:${BRANCH}" --set-upstream --quiet 2>>"${LOG_FILE}"
 log "Pushed to origin/${BRANCH}"
 
 log "kg-sync: done (${CHANGED} files)"

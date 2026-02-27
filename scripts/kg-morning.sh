@@ -75,7 +75,9 @@ log "graph.json rebuilt: ${GRAPH_OUT}"
 # ── 4. Restore original branch ───────────────────────────────────────────────
 if [[ "${ORIG_BRANCH}" != "main" ]]; then
   git -C "${DATA_DIR}" checkout "${ORIG_BRANCH}" --quiet 2>>"${LOG_FILE}"
-  git -C "${DATA_DIR}" stash pop --quiet 2>>"${LOG_FILE}" || true
+  if ! git -C "${DATA_DIR}" stash pop --quiet 2>>"${LOG_FILE}"; then
+    log "WARN: stash pop failed — working tree may have conflicts. Run: git -C ${DATA_DIR} stash show"
+  fi
   log "Restored branch: ${ORIG_BRANCH}"
 fi
 
