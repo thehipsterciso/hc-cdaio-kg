@@ -1,117 +1,5 @@
 [
   {
-    "created_at": "2026-02-25T21:34:08.471725Z",
-    "updated_at": "2026-02-25T21:34:08.471726Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "6df856f8-220e-48a8-ab6e-5b9131c96181",
-    "relationship_type": "impacted_by",
-    "source_id": "sys-002",
-    "target_id": "fb1efcd7-fdc7-4256-8ae8-ecaab4d808c5",
-    "weight": 1.0,
-    "confidence": 0.88,
-    "properties": {
-      "rationale": "Cloud Control Panel required emergency patching for Log4j vulnerability during Log4Shell incident"
-    }
-  },
-  {
-    "created_at": "2026-02-25T21:34:08.471527Z",
-    "updated_at": "2026-02-25T21:34:08.471528Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "7a5cebf5-2a13-4dde-a3c5-a5c773158f2c",
-    "relationship_type": "impacted_by",
-    "source_id": "sys-003",
-    "target_id": "de4f1c0f-e407-4528-a98d-4117fc5033be",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "rationale": "Cloud Office Control Panel disrupted as part of the Hosted Exchange ransomware impact"
-    }
-  },
-  {
-    "created_at": "2026-02-25T21:34:08.471461Z",
-    "updated_at": "2026-02-25T21:34:08.471463Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "e2aec89d-64ce-47e2-ac7c-6e99380c00df",
-    "relationship_type": "impacted_by",
-    "source_id": "sys-033",
-    "target_id": "de4f1c0f-e407-4528-a98d-4117fc5033be",
-    "weight": 1.0,
-    "confidence": 1.0,
-    "properties": {
-      "rationale": "Hosted Exchange email platform was the primary system taken offline during the PLAY ransomware attack (Nov 2023)"
-    }
-  },
-  {
-    "created_at": "2026-02-25T21:34:08.471548Z",
-    "updated_at": "2026-02-25T21:34:08.471548Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "5af1eaa2-c86b-48e1-9ea3-72183557805b",
-    "relationship_type": "impacted_by",
-    "source_id": "sys-033",
-    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "rationale": "Email hosting platform is the highest-risk surface for ransomware attack given its exposure and criticality"
-    }
-  },
-  {
-    "created_at": "2026-02-25T21:34:08.471742Z",
-    "updated_at": "2026-02-25T21:34:08.471742Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "6e85d749-e93e-4e4e-825d-d1f6b6de7c15",
-    "relationship_type": "impacted_by",
-    "source_id": "sys-058",
-    "target_id": "6362fa99-cb66-4989-b471-f78c9d6a1207",
-    "weight": 1.0,
-    "confidence": 0.82,
-    "properties": {
-      "rationale": "Managed Cloud Platform is the primary product surface through which customer churn risk manifests"
-    }
-  },
-  {
-    "created_at": "2026-02-25T21:34:08.471661Z",
-    "updated_at": "2026-02-25T21:34:08.471661Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "6e026f1b-6a91-4a13-80e1-f8eba6f02c54",
-    "relationship_type": "impacted_by",
-    "source_id": "sys-115",
-    "target_id": "ca1305ee-6236-41f3-98b1-8c97704037e6",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "rationale": "VMware vCenter licensing costs directly escalating under Broadcom acquisition pricing changes"
-    }
-  },
-  {
-    "created_at": "2026-02-25T21:34:08.471680Z",
-    "updated_at": "2026-02-25T21:34:08.471680Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "2a37774d-0c6c-4162-87ed-ace6b253b352",
-    "relationship_type": "impacted_by",
-    "source_id": "sys-126",
-    "target_id": "ca1305ee-6236-41f3-98b1-8c97704037e6",
-    "weight": 1.0,
-    "confidence": 0.93,
-    "properties": {
-      "rationale": "VMware NSX licensing costs escalating significantly under Broadcom's new subscription model"
-    }
-  },
-  {
     "created_at": "2026-02-25T21:34:08.471695Z",
     "updated_at": "2026-02-25T21:34:08.471695Z",
     "valid_from": null,
@@ -208,6 +96,54 @@
     }
   },
   {
+    "created_at": "2026-02-25T21:34:08.471527Z",
+    "updated_at": "2026-02-25T21:34:08.471528Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7a5cebf5-2a13-4dde-a3c5-a5c773158f2c",
+    "relationship_type": "impacted_by",
+    "source_id": "sys-003",
+    "target_id": "de4f1c0f-e407-4528-a98d-4117fc5033be",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Cloud Office Control Panel disrupted as part of the Hosted Exchange ransomware impact"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:34:08.471461Z",
+    "updated_at": "2026-02-25T21:34:08.471463Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e2aec89d-64ce-47e2-ac7c-6e99380c00df",
+    "relationship_type": "impacted_by",
+    "source_id": "sys-033",
+    "target_id": "de4f1c0f-e407-4528-a98d-4117fc5033be",
+    "weight": 1.0,
+    "confidence": 1.0,
+    "properties": {
+      "rationale": "Hosted Exchange email platform was the primary system taken offline during the PLAY ransomware attack (Nov 2023)"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:34:08.471725Z",
+    "updated_at": "2026-02-25T21:34:08.471726Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6df856f8-220e-48a8-ab6e-5b9131c96181",
+    "relationship_type": "impacted_by",
+    "source_id": "sys-002",
+    "target_id": "fb1efcd7-fdc7-4256-8ae8-ecaab4d808c5",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Cloud Control Panel required emergency patching for Log4j vulnerability during Log4Shell incident"
+    }
+  },
+  {
     "created_at": "2026-02-25T21:34:08.471611Z",
     "updated_at": "2026-02-25T21:34:08.471611Z",
     "valid_from": null,
@@ -237,6 +173,70 @@
     "confidence": 0.95,
     "properties": {
       "rationale": "OpenStack Flex product directly impacted by legacy OpenStack revenue runoff trend"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:34:08.471548Z",
+    "updated_at": "2026-02-25T21:34:08.471548Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "5af1eaa2-c86b-48e1-9ea3-72183557805b",
+    "relationship_type": "impacted_by",
+    "source_id": "sys-033",
+    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Email hosting platform is the highest-risk surface for ransomware attack given its exposure and criticality"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:34:08.471742Z",
+    "updated_at": "2026-02-25T21:34:08.471742Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6e85d749-e93e-4e4e-825d-d1f6b6de7c15",
+    "relationship_type": "impacted_by",
+    "source_id": "sys-058",
+    "target_id": "6362fa99-cb66-4989-b471-f78c9d6a1207",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Managed Cloud Platform is the primary product surface through which customer churn risk manifests"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:34:08.471661Z",
+    "updated_at": "2026-02-25T21:34:08.471661Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6e026f1b-6a91-4a13-80e1-f8eba6f02c54",
+    "relationship_type": "impacted_by",
+    "source_id": "sys-115",
+    "target_id": "ca1305ee-6236-41f3-98b1-8c97704037e6",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "VMware vCenter licensing costs directly escalating under Broadcom acquisition pricing changes"
+    }
+  },
+  {
+    "created_at": "2026-02-25T21:34:08.471680Z",
+    "updated_at": "2026-02-25T21:34:08.471680Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2a37774d-0c6c-4162-87ed-ace6b253b352",
+    "relationship_type": "impacted_by",
+    "source_id": "sys-126",
+    "target_id": "ca1305ee-6236-41f3-98b1-8c97704037e6",
+    "weight": 1.0,
+    "confidence": 0.93,
+    "properties": {
+      "rationale": "VMware NSX licensing costs escalating significantly under Broadcom's new subscription model"
     }
   }
 ]
