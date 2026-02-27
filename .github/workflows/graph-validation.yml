@@ -1,0 +1,36 @@
+name: Graph Quality Validation
+
+on:
+  pull_request:
+    paths:
+      - 'entities/**'
+      - 'relationships/**'
+      - 'graph.json'
+  push:
+    branches:
+      - main
+    paths:
+      - 'entities/**'
+      - 'relationships/**'
+      - 'graph.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: |
+          pip install rapidfuzz --quiet
+          
+      - name: Run validation
+        run: |
+          python scripts/sre/validate-commit.py
