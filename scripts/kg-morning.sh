@@ -111,7 +111,7 @@ fi
 # the MCP server will detect the new mtime and auto-reload — no restart needed.
 CLAUDE_CFG="${HOME}/Library/Application Support/Claude/claude_desktop_config.json"
 if [[ -f "${CLAUDE_CFG}" ]]; then
-  REGISTERED="$(python3 -c "
+  REGISTERED="$("${PYTHON_CMD}" -c "
 import json, sys
 try:
     cfg = json.load(open('${CLAUDE_CFG}'))
@@ -130,7 +130,7 @@ fi
 
 # ── 7. Optional macOS notification ──────────────────────────────────────────
 if command -v osascript &>/dev/null; then
-  ENTITY_COUNT="$(python3 -c "
+  ENTITY_COUNT="$("${PYTHON_CMD}" -c "
 import json
 try:
     g = json.load(open('${GRAPH_OUT}'))

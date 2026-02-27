@@ -750,7 +750,8 @@ PLIST
         <key>HCKG_GRAPH_SRC</key>  <string>${_SYNC_GRAPH}</string>
         <key>HCKG_BRANCH</key>     <string>${_MEMBER_BRANCH}</string>
         <key>HOME</key>            <string>${HOME}</string>
-        <key>PATH</key>            <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+        <key>PATH</key>            <string>${_DAEMON_PATH}</string>
+        <key>PYTHON_CMD</key>      <string>${PYTHON_CMD}</string>
     </dict>
     <key>StartCalendarInterval</key>
     <dict>
@@ -795,12 +796,18 @@ PLIST
 </plist>
 PLIST
 
+    _LAUNCHD_DOMAIN="gui/$(id -u)"
     for _plist in "${_SYNC_PLIST}" "${_EOD_PLIST}" "${_EOD_NIGHT_PLIST}" "${_MORNING_PLIST}"; do
       _label="$(basename "${_plist}" .plist)"
-      launchctl unload "${_plist}" 2>/dev/null || true
-      launchctl load "${_plist}" 2>/dev/null \
-        && info "  LaunchAgent loaded: ${_label}" \
-        || warn "  Could not load ${_label} — check ${_plist}"
+      launchctl bootout "${_LAUNCHD_DOMAIN}/${_label}" 2>/dev/null \
+        || launchctl unload "${_plist}" 2>/dev/null || true
+      if launchctl bootstrap "${_LAUNCHD_DOMAIN}" "${_plist}" 2>/dev/null; then
+        info "  LaunchAgent bootstrapped: ${_label}"
+      elif launchctl load "${_plist}" 2>/dev/null; then
+        info "  LaunchAgent loaded (legacy): ${_label}"
+      else
+        warn "  Could not load ${_label} — check ${_plist}"
+      fi
     done
     ok "LaunchAgents installed (sync every 30 min, EOD at 5pm + 11pm, morning pull at 8am)"
 
@@ -871,6 +878,8 @@ ExecStart=/bin/bash ${_SCRIPTS_DIR}/kg-eod.sh
 Environment=HCKG_DATA_DIR=${_DATA_DIR}
 Environment=HCKG_GRAPH_SRC=${_SYNC_GRAPH}
 Environment=HCKG_BRANCH=${_MEMBER_BRANCH}
+Environment=PYTHON_CMD=${PYTHON_CMD}
+Environment=PATH=${_DAEMON_PATH}
 StandardOutput=append:${_DATA_DIR}/.kg-eod-systemd.log
 StandardError=append:${_DATA_DIR}/.kg-eod-systemd.log
 UNIT
@@ -912,8 +921,11 @@ Persistent=true
 WantedBy=timers.target
 UNIT
 
+    loginctl enable-linger "$USER" 2>/dev/null \
+      && info "  loginctl linger enabled for ${USER}" \
+      || warn "  Could not enable loginctl linger — timers may stop at logout. Run: loginctl enable-linger ${USER}"
     systemctl --user daemon-reload 2>/dev/null \
-      || warn "systemctl daemon-reload failed — may need: loginctl enable-linger ${USER}"
+      || warn "systemctl daemon-reload failed"
     for _svc in kg-sync kg-eod kg-eod-night kg-morning; do
       systemctl --user enable --now "${_svc}.timer" 2>/dev/null \
         && info "  systemd timer enabled: ${_svc}.timer" \
