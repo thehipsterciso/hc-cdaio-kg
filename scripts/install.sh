@@ -89,7 +89,7 @@ _stop_spinner() {
     kill "$_SPINNER_PID" 2>/dev/null || true
     _SPINNER_PID=""
   fi
-  [[ "$_IS_TTY" == "1" ]] && printf "\r\033[2K"
+  [[ "$_IS_TTY" == "1" ]] && printf "\r\033[2K" || true
 }
 
 # ---------------------------------------------------------------------------
@@ -98,7 +98,7 @@ _stop_spinner() {
 _POETRY_TMPOUT=""
 _cleanup() {
   _stop_spinner
-  [[ -n "$_POETRY_TMPOUT" ]] && rm -f "$_POETRY_TMPOUT"
+  [[ -n "$_POETRY_TMPOUT" ]] && rm -f "$_POETRY_TMPOUT" || true
 }
 trap '_cleanup' EXIT
 trap '_cleanup; exit 130' INT
