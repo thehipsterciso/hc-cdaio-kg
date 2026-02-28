@@ -107,10 +107,10 @@ Developed as part of the **Carnegie Mellon University Heinz College Chief Data &
 
 | Name | Role |
 |------|------|
-| Thomas Jones | Project Lead, CDAIO Candidate |
-| *[Team Member]* | *[Role]* |
-| *[Team Member]* | *[Role]* |
-| *[Team Member]* | *[Role]* |
+| Thomas Jones | CDAIO Candidate |
+| *[Team Member]* | CDAIO Candidate |
+| *[Team Member]* | CDAIO Candidate |
+| *[Team Member]* | CDAIO Candidate |
 
 ### Acknowledgments
 
