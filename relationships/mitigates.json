@@ -32,6 +32,66 @@
     }
   },
   {
+    "created_at": "2026-02-27T22:17:40.154279Z",
+    "updated_at": "2026-02-27T22:17:40.154279Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c10e3ef7-08c2-4b73-b379-d88c43d0d206",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-019",
+    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "weight": 0.8,
+    "confidence": 0.8,
+    "properties": {
+      "rationale": "Network segmentation limits lateral movement of ransomware through the environment. VLAN isolation between customer environments and between infrastructure zones would limit blast radius if ransomware gains initial access. The PLAY group used lateral movement within the Hosted Exchange infrastructure.",
+      "assumption": "VLAN isolation applies to customer environments but internal Rackspace infrastructure segmentation (between management plane and customer workload) is not confirmed. Confidence 0.80 reflects this internal segmentation ambiguity.",
+      "attestation": "KG-Analysis-Inferred",
+      "source_document": "KG_Capability_Enablement_Analysis.docx",
+      "inferred_date": "2026-02-27"
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:17:40.154241Z",
+    "updated_at": "2026-02-27T22:17:40.154241Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "cc6ba348-288b-4274-9140-6874468df081",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-032",
+    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "weight": 0.7,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "DLP controls reduce ransomware exfiltration risk. PLAY ransomware group exfiltrated data before encrypting (double extortion). DLP covering email, web, and endpoint channels can detect and block data staging/exfiltration behavior.",
+      "assumption": "DLP effectiveness against double-extortion ransomware is moderate. The control definition does not specify coverage of SMB/Exchange exfiltration paths used by PLAY. Weight is 0.7 (partial mitigation) reflecting this scope uncertainty.",
+      "attestation": "KG-Analysis-Inferred",
+      "source_document": "KG_Capability_Enablement_Analysis.docx",
+      "inferred_date": "2026-02-27"
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:17:40.154069Z",
+    "updated_at": "2026-02-27T22:17:40.154089Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "add33bbe-17a7-459d-8c0a-4458852e4774",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-034",
+    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Backup and recovery is the primary control enabling restoration of customer data after a ransomware encryption event. The PLAY ransomware incident's $10.8M cost included data recovery costs. Immutable backups reduce ransomware impact from catastrophic to recoverable.",
+      "assumption": "Backup and recovery control is assumed to apply to Hosted Exchange environment that was compromised. Backup isolation from production (ransomware-proofing) is not confirmed in current control definition and represents a gap.",
+      "attestation": "KG-Analysis-Inferred",
+      "source_document": "KG_Capability_Enablement_Analysis.docx",
+      "inferred_date": "2026-02-27"
+    }
+  },
+  {
     "created_at": "2026-02-25T21:33:43.821347Z",
     "updated_at": "2026-02-25T21:33:43.821347Z",
     "valid_from": null,
@@ -315,6 +375,26 @@
     "confidence": 0.88,
     "properties": {
       "rationale": "Documented IR plan enables coordinated breach response reducing reputational impact duration"
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:17:59.201989Z",
+    "updated_at": "2026-02-27T22:17:59.201991Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "01e235d4-456f-40f5-8bdd-369a4a62d5c8",
+    "relationship_type": "mitigates",
+    "source_id": "ctl-267",
+    "target_id": "44081948-1d55-4490-b7b2-2d47b11389b9",
+    "weight": 0.85,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Email is the primary ransomware initial access vector. Email security (anti-phishing, attachment sandboxing, URL filtering) reduces the probability of successful initial ransomware delivery. The PLAY group used spear-phishing as a common initial access technique.",
+      "assumption": "Email security control is presumed to exist given Rackspace's security posture and FedRAMP compliance. If the control found covers Microsoft 365/Exchange email filtering, it is directly applicable to the Hosted Exchange environment that was compromised.",
+      "attestation": "KG-Analysis-Inferred",
+      "source_document": "KG_Capability_Enablement_Analysis.docx",
+      "inferred_date": "2026-02-27"
     }
   },
   {

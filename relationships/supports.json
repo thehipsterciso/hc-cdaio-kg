@@ -30,6 +30,27 @@
     "description": "Corporate Strategy & Planning supports the Executive Leadership Team organizational unit"
   },
   {
+    "created_at": "2026-02-28T00:59:12.599293Z",
+    "updated_at": "2026-02-28T00:59:12.599308Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "1e554026-9334-4e3c-8526-f7bdf31807a1",
+    "relationship_type": "supports",
+    "source_id": "sys-066",
+    "target_id": "bc-001",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "Corporate Strategy & Planning uses Salesforce CRM for pipeline and revenue data to inform enterprise-level strategic planning and initiative tracking",
+      "inference_method": "domain_knowledge",
+      "assumption": "CRM data feeds strategic reporting; dedicated strategy platform not confirmed",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320860Z",
     "updated_at": "2026-02-25T19:01:57.320860Z",
     "valid_from": null,
@@ -58,6 +79,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Business Transformation is an executive-led strategic capability"
+  },
+  {
+    "created_at": "2026-02-28T00:59:12.599600Z",
+    "updated_at": "2026-02-28T00:59:12.599600Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "07b6cec1-3e7f-4bfb-9f02-ea67914d767f",
+    "relationship_type": "supports",
+    "source_id": "sys-068",
+    "target_id": "bc-002",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Business Transformation program management relies on Microsoft 365 (Teams, SharePoint) for communication, project tracking and initiative documentation across two-segment reorganization",
+      "inference_method": "domain_knowledge",
+      "assumption": "M365 is primary collaboration tool; dedicated PMO platform not separately identified",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320868Z",
@@ -90,6 +132,27 @@
     "description": "Corporate Governance capability resides in the Board of Directors Office"
   },
   {
+    "created_at": "2026-02-28T00:59:12.599634Z",
+    "updated_at": "2026-02-28T00:59:12.599634Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2e77e4e3-7f2a-4d69-8126-eaf87d6c761c",
+    "relationship_type": "supports",
+    "source_id": "sys-100",
+    "target_id": "bc-003",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "ServiceNow supports GRC module for corporate governance workflow, policy approvals, and audit management",
+      "inference_method": "domain_knowledge",
+      "assumption": "ServiceNow GRC module deployed; not confirmed from public sources",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320873Z",
     "updated_at": "2026-02-25T19:01:57.320874Z",
     "valid_from": null,
@@ -118,6 +181,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Service Portfolio Management delivered through Product Management Department"
+  },
+  {
+    "created_at": "2026-02-28T00:59:12.599671Z",
+    "updated_at": "2026-02-28T00:59:12.599671Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "08e0f477-6aac-4d4a-b817-63776cd4e0bf",
+    "relationship_type": "supports",
+    "source_id": "sys-058",
+    "target_id": "bc-004",
+    "weight": 1.0,
+    "confidence": 0.8,
+    "properties": {
+      "rationale": "Service Portfolio Management depends on the Rackspace Managed Cloud Platform (RMC) as the unified framework for tracking and managing the service catalog across public and private cloud offerings",
+      "inference_method": "domain_knowledge",
+      "assumption": "RMC provides single-pane service catalog visibility used by portfolio managers",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320638Z",
@@ -240,6 +324,27 @@
     "description": "Sovereign Cloud Engineering capability supports UK Sovereign Cloud Services"
   },
   {
+    "created_at": "2026-02-28T00:59:12.599704Z",
+    "updated_at": "2026-02-28T00:59:12.599704Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "bf788241-ad44-49ee-b243-75de88ef15e3",
+    "relationship_type": "supports",
+    "source_id": "sys-058",
+    "target_id": "bc-007",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Sovereign Cloud Engineering is built on the Rackspace Managed Cloud Platform delivering data sovereignty, residency, and compliance-governed cloud operations for regulated government workloads",
+      "inference_method": "domain_knowledge",
+      "assumption": "RMC platform underpins sovereign cloud isolation controls",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320876Z",
     "updated_at": "2026-02-25T19:01:57.320876Z",
     "valid_from": null,
@@ -268,6 +373,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Market Intelligence supported by Field Marketing Department"
+  },
+  {
+    "created_at": "2026-02-28T00:59:12.599730Z",
+    "updated_at": "2026-02-28T00:59:12.599730Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "96c38dd9-e69e-45c9-ad98-4bb58b815f65",
+    "relationship_type": "supports",
+    "source_id": "sys-066",
+    "target_id": "bc-008",
+    "weight": 1.0,
+    "confidence": 0.7,
+    "properties": {
+      "rationale": "Market Intelligence & Analysis uses Salesforce CRM data on pipeline, win/loss, and competitive displacement to support market analysis",
+      "inference_method": "domain_knowledge",
+      "assumption": "CRM provides win/loss and deal data for market analysis; dedicated MI platform not confirmed",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320882Z",
@@ -315,6 +441,27 @@
     "description": "Marketing & Demand Generation supported by Demand Generation Department"
   },
   {
+    "created_at": "2026-02-28T00:59:12.599760Z",
+    "updated_at": "2026-02-28T00:59:12.599760Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d0b4d10d-45c8-455e-80b8-26b5bb5f34a3",
+    "relationship_type": "supports",
+    "source_id": "sys-066",
+    "target_id": "bc-009",
+    "weight": 1.0,
+    "confidence": 0.8,
+    "properties": {
+      "rationale": "Marketing & Demand Generation uses Salesforce CRM for lead capture, marketing attribution, campaign pipeline tracking, and demand management workflows",
+      "inference_method": "domain_knowledge",
+      "assumption": "Salesforce Marketing Cloud or Pardot likely integrated; specific instance not confirmed",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320902Z",
     "updated_at": "2026-02-25T19:01:57.320902Z",
     "valid_from": null,
@@ -343,6 +490,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Direct Sales supported by Enterprise Sales Department"
+  },
+  {
+    "created_at": "2026-02-28T00:59:12.599794Z",
+    "updated_at": "2026-02-28T00:59:12.599794Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c328e0a9-fe3f-4c77-95d8-cd331d47d3fe",
+    "relationship_type": "supports",
+    "source_id": "sys-066",
+    "target_id": "bc-010",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Direct Sales capability is primarily supported by Salesforce CRM for opportunity management, account records, quota tracking, and pipeline visibility across 400+ sales reps",
+      "inference_method": "description_match",
+      "assumption": "Standard CRM-to-sales capability mapping confirmed by RelationEdge acquisition and sales rep profile count in entity descriptions",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320908Z",
@@ -388,6 +556,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Channel & Partner Sales supported by Channel Sales Department"
+  },
+  {
+    "created_at": "2026-02-28T00:59:12.599816Z",
+    "updated_at": "2026-02-28T00:59:12.599816Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "312064ac-61f3-47a4-b04c-6f2c91c4ce81",
+    "relationship_type": "supports",
+    "source_id": "sys-066",
+    "target_id": "bc-011",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Channel & Partner Sales uses Salesforce CRM partner community portal for deal registration, co-sell pipeline tracking, and channel partner account management",
+      "inference_method": "domain_knowledge",
+      "assumption": "Salesforce Partner Community module deployed; standard for MSP channel programs",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320635Z",
@@ -463,6 +652,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Industry Vertical GTM supports Government Practice"
+  },
+  {
+    "created_at": "2026-02-28T00:59:12.599851Z",
+    "updated_at": "2026-02-28T00:59:12.599851Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2ebdebfd-125a-4320-9431-a255067ac3a0",
+    "relationship_type": "supports",
+    "source_id": "sys-066",
+    "target_id": "bc-013",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Industry Vertical Go-to-Market capability uses Salesforce CRM for vertical-specific account segmentation, healthcare/government/fintech industry tagging, and vertical pipeline analytics",
+      "inference_method": "domain_knowledge",
+      "assumption": "Salesforce industry vertical fields and segmentation in use",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320592Z",
@@ -1350,6 +1560,27 @@
     "description": "RackConnect Global delivers Network Engineering and Connectivity"
   },
   {
+    "created_at": "2026-02-28T00:59:38.903014Z",
+    "updated_at": "2026-02-28T00:59:38.903017Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "a4b751b4-25a0-4c13-8346-31b596e86fca",
+    "relationship_type": "supports",
+    "source_id": "sys-063",
+    "target_id": "bc-034",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Site Reliability Engineering uses Jira for incident tracking, post-mortems, change management workflows, and SRE sprint planning to improve system reliability",
+      "inference_method": "domain_knowledge",
+      "assumption": "Jira confirmed as project/incident tracking tool from job postings; SRE teams use Jira for reliability work",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.321646Z",
     "updated_at": "2026-02-25T19:01:57.321646Z",
     "valid_from": null,
@@ -1470,6 +1701,27 @@
     "description": "Hardware & Technology Procurement delivered through Global Sourcing & Procurement Department"
   },
   {
+    "created_at": "2026-02-28T00:59:38.903104Z",
+    "updated_at": "2026-02-28T00:59:38.903104Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "99bd5673-72b5-42ad-9572-8249c730d906",
+    "relationship_type": "supports",
+    "source_id": "sys-058",
+    "target_id": "bc-038",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "Hardware & Technology Procurement workflows are tracked through the Rackspace Managed Cloud Platform for capacity planning and asset commissioning across private cloud data centers",
+      "inference_method": "domain_knowledge",
+      "assumption": "RMC platform includes infrastructure asset tracking for procurement planning",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.321643Z",
     "updated_at": "2026-02-25T19:01:57.321643Z",
     "valid_from": null,
@@ -1498,6 +1750,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Global Technical Support capability supports Global Delivery Centers"
+  },
+  {
+    "created_at": "2026-02-28T00:59:38.903135Z",
+    "updated_at": "2026-02-28T00:59:38.903136Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "803104cb-c484-44c8-9b6e-4c7884fd7a4d",
+    "relationship_type": "supports",
+    "source_id": "sys-100",
+    "target_id": "bc-040",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Global Technical Support is built directly on ServiceNow as the core ticketing system (confirmed: depends_on relationship already exists; ServiceNow is the platform of record for all support ticket creation, routing, SLA management, and escalation for 81,000+ customers)",
+      "inference_method": "description_match",
+      "assumption": "ServiceNow is the Rackspace core ticketing system confirmed by entity description and live domain",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320930Z",
@@ -1530,6 +1803,27 @@
     "description": "Service Delivery Management supported by Engagement Management Department"
   },
   {
+    "created_at": "2026-02-28T00:59:38.903162Z",
+    "updated_at": "2026-02-28T00:59:38.903162Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "cf797dfa-8083-494d-92d7-c03774ad84af",
+    "relationship_type": "supports",
+    "source_id": "sys-100",
+    "target_id": "bc-041",
+    "weight": 1.0,
+    "confidence": 0.93,
+    "properties": {
+      "rationale": "Service Delivery Management depends on ServiceNow for ITSM workflow orchestration, change management, service request handling, and delivery SLA monitoring across managed cloud services",
+      "inference_method": "domain_knowledge",
+      "assumption": "ServiceNow is the ITSM platform for service delivery management workflows",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320938Z",
     "updated_at": "2026-02-25T19:01:57.320938Z",
     "valid_from": null,
@@ -1560,6 +1854,27 @@
     "description": "Talent Acquisition & Workforce Planning delivered through Talent Acquisition Department"
   },
   {
+    "created_at": "2026-02-28T00:59:38.903186Z",
+    "updated_at": "2026-02-28T00:59:38.903186Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "73048363-664f-4823-91d7-272b52563036",
+    "relationship_type": "supports",
+    "source_id": "sys-102",
+    "target_id": "bc-042",
+    "weight": 1.0,
+    "confidence": 0.93,
+    "properties": {
+      "rationale": "Talent Acquisition & Workforce Planning uses Workday HCM for requisition management, headcount planning, recruiting workflows, and workforce analytics for 7,200+ global employees",
+      "inference_method": "description_match",
+      "assumption": "Workday HCM confirmed as Rackspace HRIS with HR Technology job posting evidence including talent acquisition module",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320941Z",
     "updated_at": "2026-02-25T19:01:57.320941Z",
     "valid_from": null,
@@ -1588,6 +1903,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Learning & Certification supported by Cloud Certification & Training Department"
+  },
+  {
+    "created_at": "2026-02-28T00:59:38.903210Z",
+    "updated_at": "2026-02-28T00:59:38.903210Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e4bc415a-d38c-4250-bfef-022c9a63eaf9",
+    "relationship_type": "supports",
+    "source_id": "sys-068",
+    "target_id": "bc-043",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Learning & Certification capability uses Microsoft 365 (SharePoint, Teams) for knowledge sharing, training content hosting, and certification program coordination for 800+ security-certified engineers",
+      "inference_method": "domain_knowledge",
+      "assumption": "M365 is primary knowledge management platform; dedicated LMS not separately identified",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320951Z",
@@ -1635,6 +1971,27 @@
     "description": "Employee Experience supported by Total Rewards & Compensation Department"
   },
   {
+    "created_at": "2026-02-28T00:59:38.903233Z",
+    "updated_at": "2026-02-28T00:59:38.903233Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "725c4ed8-39f7-4e9f-892b-227d0e4a05de",
+    "relationship_type": "supports",
+    "source_id": "sys-102",
+    "target_id": "bc-044",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Employee Experience & Retention capability uses Workday HCM for performance management, benefits administration, employee self-service, and engagement analytics",
+      "inference_method": "domain_knowledge",
+      "assumption": "Workday Performance Management module deployed; standard HCM suite component",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320956Z",
     "updated_at": "2026-02-25T19:01:57.320956Z",
     "valid_from": null,
@@ -1665,6 +2022,48 @@
     "description": "HR Operations supported by Total Rewards & Compensation Department"
   },
   {
+    "created_at": "2026-02-28T00:59:38.903255Z",
+    "updated_at": "2026-02-28T00:59:38.903256Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "41a653e7-457d-4e6d-bf90-2b7584f85990",
+    "relationship_type": "supports",
+    "source_id": "sys-102",
+    "target_id": "bc-045",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "HR Operations & Administration is the primary operational domain of Workday HCM - confirmed as Rackspace global people system covering Core HR, Time and Absence, Benefits, Payroll, and HR Ticketing for 7,200+ employees",
+      "inference_method": "description_match",
+      "assumption": "Workday is Rackspace global HRIS per confirmed Lever job posting evidence",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-28T00:59:38.903278Z",
+    "updated_at": "2026-02-28T00:59:38.903278Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7bee73d6-6069-4c1a-86bc-03ac57ef34b7",
+    "relationship_type": "supports",
+    "source_id": "sys-068",
+    "target_id": "bc-046",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Internal IT Management relies on Microsoft 365 as the core enterprise productivity platform (email, Teams, SharePoint, OneDrive) for all internal IT service delivery to Rackspace employees",
+      "inference_method": "domain_knowledge",
+      "assumption": "M365 is the primary internal IT productivity platform per job postings and 25-year Microsoft partnership",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320653Z",
     "updated_at": "2026-02-25T19:01:57.320653Z",
     "valid_from": null,
@@ -1680,6 +2079,27 @@
     "description": "Enterprise Information Security capability supports Information Security Organization"
   },
   {
+    "created_at": "2026-02-28T00:59:38.903300Z",
+    "updated_at": "2026-02-28T00:59:38.903300Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "114d7a1b-7afd-41ad-81d8-c0d7f040f6d6",
+    "relationship_type": "supports",
+    "source_id": "sys-065",
+    "target_id": "bc-047",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Enterprise Information Security is directly supported by Splunk Enterprise Security SIEM as the primary threat detection and monitoring platform with 13-month log retention, correlation rules, and ingestion from AD, firewalls, IDS, and endpoints",
+      "inference_method": "description_match",
+      "assumption": "Splunk is primary SIEM per SOC 3 FY2024 evidence",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320962Z",
     "updated_at": "2026-02-25T19:01:57.320962Z",
     "valid_from": null,
@@ -1693,6 +2113,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Internal Data & Analytics capability delivered through Internal Data & Analytics Department"
+  },
+  {
+    "created_at": "2026-02-28T01:00:03.775535Z",
+    "updated_at": "2026-02-28T01:00:03.775537Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2c798cfa-6f95-4a9c-a948-820d727ad882",
+    "relationship_type": "supports",
+    "source_id": "sys-066",
+    "target_id": "bc-048",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Internal Data & Analytics capability uses Salesforce CRM as a primary operational data source for revenue analytics, pipeline reporting, and sales performance dashboards",
+      "inference_method": "domain_knowledge",
+      "assumption": "Salesforce data feeds BI/analytics layer; dedicated analytics platform not separately identified",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320967Z",
@@ -1725,6 +2166,48 @@
     "description": "Financial Planning & Analysis supports executive decision-making"
   },
   {
+    "created_at": "2026-02-28T01:00:03.775615Z",
+    "updated_at": "2026-02-28T01:00:03.775615Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "21c31a58-bb79-4b02-b507-33a915b3d866",
+    "relationship_type": "supports",
+    "source_id": "sys-107",
+    "target_id": "bc-049",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Financial Planning & Analysis uses the Billing & Revenue Management System as the primary source of $2.7B revenue actuals for budgeting, forecasting, and financial planning processes",
+      "inference_method": "domain_knowledge",
+      "assumption": "FP&A team consumes billing system revenue data for planning; ERP/EPM layer may sit above it",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-28T01:00:03.775649Z",
+    "updated_at": "2026-02-28T01:00:03.775649Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2e828cd7-4927-4b04-b065-f9f6ba503cfb",
+    "relationship_type": "supports",
+    "source_id": "sys-107",
+    "target_id": "bc-050",
+    "weight": 1.0,
+    "confidence": 0.93,
+    "properties": {
+      "rationale": "Financial Reporting & Accounting is directly supported by the Billing & Revenue Management System as the revenue recognition source for $2.7B in annual revenues, supporting SEC financial reporting requirements and SOX compliance",
+      "inference_method": "description_match",
+      "assumption": "Billing system is confirmed revenue recognition source from SOC 3 and 10-K analysis",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320979Z",
     "updated_at": "2026-02-25T19:01:57.320980Z",
     "valid_from": null,
@@ -1753,6 +2236,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Treasury & Capital Structure Management delivered through Treasury & Capital Markets Department"
+  },
+  {
+    "created_at": "2026-02-28T01:00:03.775675Z",
+    "updated_at": "2026-02-28T01:00:03.775675Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "4b198392-9b28-45b4-8088-05e88bcfdcc6",
+    "relationship_type": "supports",
+    "source_id": "sys-107",
+    "target_id": "bc-051",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Treasury & Capital Structure Management uses the Billing & Revenue Management System for cash flow forecasting, working capital analytics, and liquidity management tied to $2.7B revenue streams and $375M revolving credit facility",
+      "inference_method": "domain_knowledge",
+      "assumption": "Revenue management system feeds treasury cash flow models; dedicated TMS not separately identified",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320985Z",
@@ -1785,6 +2289,48 @@
     "description": "Tax Management delivered through Tax Department"
   },
   {
+    "created_at": "2026-02-28T01:00:03.775698Z",
+    "updated_at": "2026-02-28T01:00:03.775699Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c0e1008a-4f0f-4211-887d-c16e285af133",
+    "relationship_type": "supports",
+    "source_id": "sys-107",
+    "target_id": "bc-052",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Tax Management capability requires the Billing & Revenue Management System for multi-jurisdiction revenue data used in tax calculations, transfer pricing, and international tax compliance across 120+ countries",
+      "inference_method": "domain_knowledge",
+      "assumption": "Tax calculations derived from billing system revenue data; dedicated tax platform integration assumed",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-28T01:00:03.775721Z",
+    "updated_at": "2026-02-28T01:00:03.775721Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ffa94571-9f0d-4541-8432-1ccb5ea8fae8",
+    "relationship_type": "supports",
+    "source_id": "sys-100",
+    "target_id": "bc-053",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Internal Audit & Controls capability uses ServiceNow GRC for control testing workflows, audit findings tracking, risk register management, and remediation tracking under SOX Section 404",
+      "inference_method": "domain_knowledge",
+      "assumption": "ServiceNow GRC module used for internal audit management; standard ITSM platform capability",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320988Z",
     "updated_at": "2026-02-25T19:01:57.320988Z",
     "valid_from": null,
@@ -1813,6 +2359,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Revenue Operations supported by Billing & Order Management Department"
+  },
+  {
+    "created_at": "2026-02-28T01:00:03.775743Z",
+    "updated_at": "2026-02-28T01:00:03.775744Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "201e8914-f8c8-499e-8880-86fe44b8ab46",
+    "relationship_type": "supports",
+    "source_id": "sys-107",
+    "target_id": "bc-054",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Revenue Operations & Billing is the primary operational function of the Billing & Revenue Management System, which handles usage-based, subscription, and hybrid billing across the full $2.7B revenue base with PCI DSS Level 1 compliant payment processing",
+      "inference_method": "description_match",
+      "assumption": "Billing system is the direct operational platform for this capability per SOC 3 and 10-K evidence",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.320993Z",
@@ -1845,6 +2412,48 @@
     "description": "Facilities supported by Data Center Energy & Facilities Department"
   },
   {
+    "created_at": "2026-02-28T01:00:03.775765Z",
+    "updated_at": "2026-02-28T01:00:03.775766Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "fc086eec-0282-4276-981f-72844706b269",
+    "relationship_type": "supports",
+    "source_id": "sys-068",
+    "target_id": "bc-055",
+    "weight": 1.0,
+    "confidence": 0.68,
+    "properties": {
+      "rationale": "Facilities & Property Management uses Microsoft 365 for facilities team communication, maintenance request tracking, and property management documentation coordination",
+      "inference_method": "domain_knowledge",
+      "assumption": "M365 is the communication platform for facilities management; dedicated IWMS not identified",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-28T01:00:03.775787Z",
+    "updated_at": "2026-02-28T01:00:03.775787Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6e55ba16-8559-457d-81c2-303b3768438c",
+    "relationship_type": "supports",
+    "source_id": "sys-068",
+    "target_id": "bc-056",
+    "weight": 1.0,
+    "confidence": 0.68,
+    "properties": {
+      "rationale": "Sustainability & ESG capability uses Microsoft 365 (SharePoint, Teams) for ESG reporting data collection, sustainability program coordination, and investor disclosure preparation",
+      "inference_method": "domain_knowledge",
+      "assumption": "M365 is primary collaboration platform for ESG program management; dedicated ESG platform not confirmed",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.320998Z",
     "updated_at": "2026-02-25T19:01:57.320998Z",
     "valid_from": null,
@@ -1873,6 +2482,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Investor Relations supported by Investor Relations Department (secondary)"
+  },
+  {
+    "created_at": "2026-02-28T01:00:03.775809Z",
+    "updated_at": "2026-02-28T01:00:03.775809Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "0b93b010-8dd6-48f1-acf5-8fece0ae998a",
+    "relationship_type": "supports",
+    "source_id": "sys-066",
+    "target_id": "bc-057",
+    "weight": 1.0,
+    "confidence": 0.7,
+    "properties": {
+      "rationale": "Investor Relations uses Salesforce CRM for investor contact management, roadshow coordination, and shareholder communication tracking as part of Apollo governance relationship management",
+      "inference_method": "domain_knowledge",
+      "assumption": "Salesforce used for investor contact management; dedicated IR platform may supplement",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.321004Z",
@@ -1905,6 +2535,48 @@
     "description": "Legal supported by Office of General Counsel Department"
   },
   {
+    "created_at": "2026-02-28T01:00:19.723234Z",
+    "updated_at": "2026-02-28T01:00:19.723236Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "1b727256-8950-4b8f-8700-bf96e142aa07",
+    "relationship_type": "supports",
+    "source_id": "sys-068",
+    "target_id": "bc-058",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Legal & Corporate Affairs uses Microsoft 365 (SharePoint, Teams, Outlook) for contract management, legal document collaboration, SEC filing coordination, and matter management workflows",
+      "inference_method": "domain_knowledge",
+      "assumption": "M365 is primary collaboration and document management platform for legal team",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-28T01:00:19.723331Z",
+    "updated_at": "2026-02-28T01:00:19.723332Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "607c4c7e-6afd-4ec8-8dfd-9f242475fc6f",
+    "relationship_type": "supports",
+    "source_id": "sys-065",
+    "target_id": "bc-059",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Privacy & Data Protection capability uses Splunk Enterprise Security SIEM for data access monitoring, anomaly detection on personal data stores, and privacy breach detection across all data processing environments",
+      "inference_method": "domain_knowledge",
+      "assumption": "Splunk SIEM ingests data access logs for privacy monitoring; standard SIEM use case",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.321009Z",
     "updated_at": "2026-02-25T19:01:57.321009Z",
     "valid_from": null,
@@ -1935,6 +2607,27 @@
     "description": "Corporate Communications supported by Public Relations & Communications Department"
   },
   {
+    "created_at": "2026-02-28T01:00:19.723362Z",
+    "updated_at": "2026-02-28T01:00:19.723362Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "590fccb5-7f1d-4736-94e5-b8f25e1a2b9f",
+    "relationship_type": "supports",
+    "source_id": "sys-068",
+    "target_id": "bc-060",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Corporate Communications & PR capability uses Microsoft 365 (Teams, SharePoint, Outlook) as the primary platform for internal communications, press release coordination, and stakeholder engagement management",
+      "inference_method": "domain_knowledge",
+      "assumption": "M365 is the primary internal communication platform; PR-specific tools may supplement",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T19:01:57.321015Z",
     "updated_at": "2026-02-25T19:01:57.321015Z",
     "valid_from": null,
@@ -1948,6 +2641,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Community Investment & Philanthropy delivered through Rackspace Foundation Department"
+  },
+  {
+    "created_at": "2026-02-28T01:00:19.723386Z",
+    "updated_at": "2026-02-28T01:00:19.723387Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "70166cf8-5925-4b39-b92e-4ec930f8e016",
+    "relationship_type": "supports",
+    "source_id": "sys-068",
+    "target_id": "bc-061",
+    "weight": 1.0,
+    "confidence": 0.67,
+    "properties": {
+      "rationale": "Community Investment & Philanthropy program coordination uses Microsoft 365 for volunteer management, donation tracking coordination, and community engagement program administration",
+      "inference_method": "domain_knowledge",
+      "assumption": "M365 is the baseline collaboration tool; dedicated philanthropy platform not confirmed",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.321021Z",
@@ -1978,6 +2692,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Thought Leadership & Technology Evangelism delivered through Technology Evangelism Department"
+  },
+  {
+    "created_at": "2026-02-28T01:00:19.723409Z",
+    "updated_at": "2026-02-28T01:00:19.723409Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "17975f04-6b88-45a9-a9ad-7b454fb9e083",
+    "relationship_type": "supports",
+    "source_id": "sys-068",
+    "target_id": "bc-062",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Thought Leadership & Technology Evangelism capability uses Microsoft 365 (Teams, SharePoint) for content collaboration, webinar hosting via Teams, and technical blog coordination across Rackspace technology leaders",
+      "inference_method": "domain_knowledge",
+      "assumption": "M365 Teams used for webinars and content coordination; standard for enterprise evangelism programs",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.321640Z",
@@ -2023,6 +2758,27 @@
     "confidence": 1.0,
     "properties": {},
     "description": "Corporate Development & M&A supports executive leadership team"
+  },
+  {
+    "created_at": "2026-02-28T01:00:19.723430Z",
+    "updated_at": "2026-02-28T01:00:19.723431Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "64c1715b-aea6-466d-9820-15161b084aae",
+    "relationship_type": "supports",
+    "source_id": "sys-066",
+    "target_id": "bc-064",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Corporate Development & M&A uses Salesforce CRM for target company tracking, deal pipeline management, and integration milestone tracking following the Apollo LBO and subsequent acquisition integrations (RelationEdge, Onica)",
+      "inference_method": "domain_knowledge",
+      "assumption": "CRM is used for M&A target pipeline management; dedicated M&A tool may supplement",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.321464Z",

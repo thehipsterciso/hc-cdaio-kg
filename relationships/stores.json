@@ -1,5 +1,131 @@
 [
   {
+    "created_at": "2026-02-27T22:51:24.158114Z",
+    "updated_at": "2026-02-27T22:51:24.158125Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "1054c718-8bf4-42b2-b6cb-a255f7951a6d",
+    "relationship_type": "stores",
+    "source_id": "sys-065",
+    "target_id": "da-001",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset name contains 'Splunk Enterprise Security Index Cluster' and format is 'Splunk Index', mapping directly to sys-065 Splunk Enterprise Security SIEM",
+      "inference_method": "name_match",
+      "assumption": "Assumes the KG sys-065 entry covers the full Splunk indexer cluster described",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:24.158403Z",
+    "updated_at": "2026-02-27T22:51:24.158403Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d641af1b-d4ee-48d6-9975-8acf3ed0ff8d",
+    "relationship_type": "stores",
+    "source_id": "sys-065",
+    "target_id": "da-002",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset name is 'Splunk PCI Compliance Data Store' with format 'Splunk Index', directly maps to sys-065 Splunk Enterprise Security SIEM",
+      "inference_method": "name_match",
+      "assumption": "Assumes PCI compliance Splunk app runs on the same sys-065 Splunk platform",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:24.158437Z",
+    "updated_at": "2026-02-27T22:51:24.158437Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e856a75b-3f82-4c12-8bab-c2dc6d960e40",
+    "relationship_type": "stores",
+    "source_id": "sys-177",
+    "target_id": "da-003",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Feeds CADF Event Store' with format 'Atom/XML/JSON', directly maps to sys-177 Rackspace Cloud Feeds (Event Notification)",
+      "inference_method": "name_match",
+      "assumption": "sys-177 is the correct system; the live feed store resides in this platform",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:24.158465Z",
+    "updated_at": "2026-02-27T22:51:24.158465Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "87ee4e8d-202c-4beb-831a-6e9cd8a32a3a",
+    "relationship_type": "stores",
+    "source_id": "sys-007",
+    "target_id": "da-004",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Feeds Archive Container' with format 'Cloud Files Object', description explicitly states archives persisted to Cloud Files containers - sys-007 Cloud Files Object Storage (Swift)",
+      "inference_method": "format_match",
+      "assumption": "Archive containers are stored in sys-007 Swift; assumes no separate archival system",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:24.158490Z",
+    "updated_at": "2026-02-27T22:51:24.158490Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "66d5f7f9-20b9-4cab-af53-72fd7ed605f1",
+    "relationship_type": "stores",
+    "source_id": "sys-012",
+    "target_id": "da-005",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Monitoring Time-Series Database' and maps directly to sys-012 Rackspace Monitoring API which is the system behind Cloud Monitoring",
+      "inference_method": "name_match",
+      "assumption": "The Rackspace Monitoring API (sys-012) owns its own time-series data store",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:24.158513Z",
+    "updated_at": "2026-02-27T22:51:24.158513Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "4366ca41-0d6d-47b7-adad-1b3c01461de6",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-006",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Fabric Ticketing Database'; description states it is within the Rackspace Fabric platform and accessible via MyRackspace Portal. sys-001 is Rackspace Customer Portal (Fabric)",
+      "inference_method": "description_match",
+      "assumption": "Ticketing DB is owned by the Fabric platform (sys-001); could also be sys-101 Core Ticketing",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
     "created_at": "2026-02-25T21:40:24.626458Z",
     "updated_at": "2026-02-25T21:40:24.626458Z",
     "valid_from": null,
@@ -12,5 +138,2990 @@
     "weight": 1.0,
     "confidence": 0.88,
     "properties": {}
+  },
+  {
+    "created_at": "2026-02-27T22:51:24.158537Z",
+    "updated_at": "2026-02-27T22:51:24.158537Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8e4cbdf9-e4c0-4448-b33d-a112230d4f82",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-007",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Fabric Billing Data Store'; description explicitly states it is within the Rackspace Fabric platform. sys-001 is Rackspace Customer Portal (Fabric)",
+      "inference_method": "description_match",
+      "assumption": "Billing data is owned by Fabric platform (sys-001); Billing & Revenue Management (sys-107) may also be relevant",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:24.158558Z",
+    "updated_at": "2026-02-27T22:51:24.158558Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "eee007c4-8996-40d8-8e96-0d6c1aa610bf",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-008",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Fabric Automation State Store'; description explicitly states it is within the Rackspace Fabric platform. sys-001 is Rackspace Customer Portal (Fabric)",
+      "inference_method": "description_match",
+      "assumption": "Automation state is within the Fabric platform (sys-001)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:24.158579Z",
+    "updated_at": "2026-02-27T22:51:24.158579Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "a2172325-f59a-4c0d-86f9-898c7a9ec3e5",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-009",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Data asset is 'Moogsoft AIOps Event Correlation Store'; description states it is integrated into Rackspace Fabric. No dedicated Moogsoft system entity found; assigning to sys-001 Fabric as the host platform",
+      "inference_method": "description_match",
+      "assumption": "Moogsoft AIOps is integrated into Fabric (sys-001). If a dedicated Moogsoft system entity is added, this relationship should be moved",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:24.158599Z",
+    "updated_at": "2026-02-27T22:51:24.158600Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c69cd2ab-9851-4d17-9b69-7d351a8c2048",
+    "relationship_type": "stores",
+    "source_id": "sys-058",
+    "target_id": "da-010",
+    "weight": 1.0,
+    "confidence": 0.8,
+    "properties": {
+      "rationale": "Data asset is 'AWS Systems Manager VM Inventory'; format is 'AWS SSM Inventory'. sys-058 is Rackspace Managed Cloud Platform (RMC) which manages AWS infrastructure. No dedicated AWS SSM system entity found",
+      "inference_method": "description_match",
+      "assumption": "AWS SSM is managed within RMC (sys-058). Would be updated if a dedicated AWS SSM system entity is created",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:45.610567Z",
+    "updated_at": "2026-02-27T22:51:45.610570Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "b78d33c9-2615-44b5-a0c8-d653e5c25504",
+    "relationship_type": "stores",
+    "source_id": "sys-007",
+    "target_id": "da-011",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Data asset IS Cloud Files Object Store - name directly matches sys-007 Cloud Files Object Storage (Swift). Format is 'OpenStack Swift Object'",
+      "inference_method": "name_match",
+      "assumption": "sys-007 is the authoritative system for Cloud Files",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:45.610641Z",
+    "updated_at": "2026-02-27T22:51:45.610641Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2c7ef0b1-9f43-4eb4-b797-b0b3f7609388",
+    "relationship_type": "stores",
+    "source_id": "sys-007",
+    "target_id": "da-012",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Object Storage (Dell ECS)' with format 'S3-Compatible Object'. Description says it is S3-compatible unstructured data on Dell ECS. No dedicated Dell ECS system entity found; sys-007 is closest object storage system",
+      "inference_method": "description_match",
+      "assumption": "Dell ECS is the underlying hardware for sys-007; if a separate ECS system entity exists, update this",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:45.610668Z",
+    "updated_at": "2026-02-27T22:51:45.610669Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "bc472a75-3c2d-4112-809a-9a6a0802a80c",
+    "relationship_type": "stores",
+    "source_id": "sys-009",
+    "target_id": "da-013",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Databases Instance Store' with format 'MySQL/MariaDB/PostgreSQL'. sys-009 is Cloud Databases API supporting exactly these engines",
+      "inference_method": "name_match",
+      "assumption": "sys-009 Cloud Databases API manages the underlying instance storage",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:45.610691Z",
+    "updated_at": "2026-02-27T22:51:45.610691Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d491accf-2de1-444b-9676-9bcd1215ac23",
+    "relationship_type": "stores",
+    "source_id": "sys-006",
+    "target_id": "da-014",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Block Storage Volume Store' describing block volumes attached to Cloud Servers. sys-006 is Cloud Servers API (Nova) which manages compute and attached volumes",
+      "inference_method": "description_match",
+      "assumption": "Block storage volumes are managed under the Cloud Servers/Nova API (sys-006). A dedicated Cinder system entity would be more precise",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:45.610715Z",
+    "updated_at": "2026-02-27T22:51:45.610716Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "a58832d4-d9eb-49d6-94bc-603e57670c8c",
+    "relationship_type": "stores",
+    "source_id": "sys-007",
+    "target_id": "da-015",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Backup Vault' - description explicitly states backup containers stored in Cloud Files. sys-007 is Cloud Files Object Storage (Swift)",
+      "inference_method": "description_match",
+      "assumption": "Backup archives are persisted in Cloud Files (sys-007)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:45.610735Z",
+    "updated_at": "2026-02-27T22:51:45.610735Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2e364bdd-723d-46da-a06f-a065e4ad60b7",
+    "relationship_type": "stores",
+    "source_id": "sys-006",
+    "target_id": "da-016",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Queues Message Store' based on OpenStack Marconi. No dedicated Marconi/Queues system entity found. sys-006 is the closest Cloud infrastructure API system",
+      "inference_method": "description_match",
+      "assumption": "Cloud Queues is a Rackspace Cloud service managed under general cloud infrastructure. Would update if Cloud Queues gets its own system entity",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:45.610755Z",
+    "updated_at": "2026-02-27T22:51:45.610755Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "88b6b4a3-804d-4d3e-9b3b-6ba1cb723641",
+    "relationship_type": "stores",
+    "source_id": "sys-013",
+    "target_id": "da-017",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Mailgun Event Log Store' with format 'ElasticSearch Index'. sys-013 is Mailgun Transactional Email Platform. Name directly contains 'Mailgun'",
+      "inference_method": "name_match",
+      "assumption": "sys-013 Mailgun platform stores its own event logs",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:45.610775Z",
+    "updated_at": "2026-02-27T22:51:45.610775Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "11baaa98-1906-400b-a350-b5fb8f9fbfcd",
+    "relationship_type": "stores",
+    "source_id": "sys-013",
+    "target_id": "da-018",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Mailgun Metrics and Analytics Store'. sys-013 is Mailgun Transactional Email Platform. Name directly contains 'Mailgun'",
+      "inference_method": "name_match",
+      "assumption": "sys-013 Mailgun platform stores its own analytics data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:45.610794Z",
+    "updated_at": "2026-02-27T22:51:45.610794Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "fba1dbf1-2e8c-4d91-ace5-8dda4347cf10",
+    "relationship_type": "stores",
+    "source_id": "sys-119",
+    "target_id": "da-019",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Datadog Infrastructure Monitoring Data' - name contains 'Datadog'. sys-119 is Datadog Observability Platform",
+      "inference_method": "name_match",
+      "assumption": "sys-119 Datadog platform stores all monitoring telemetry",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:51:45.610817Z",
+    "updated_at": "2026-02-27T22:51:45.610818Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c681c4aa-ba9e-4550-9788-a0829b6413bc",
+    "relationship_type": "stores",
+    "source_id": "sys-005",
+    "target_id": "da-020",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Identity Token and Credential Store' with format 'Keystone Backend'. sys-005 is Cloud Identity Service (Keystone). Name and format match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-005 Keystone is the canonical store for identity and authentication data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:09.900259Z",
+    "updated_at": "2026-02-27T22:52:09.900261Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c0f97f80-90f8-41a4-856f-eea4a395461b",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-021",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'ServiceNow ITSM Data Store' with format 'ServiceNow CMDB'. sys-100 is ServiceNow ITSM Platform. Name matches exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-100 is the correct ServiceNow platform entity",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:09.900325Z",
+    "updated_at": "2026-02-27T22:52:09.900326Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "51bd0a09-cd37-4cee-9234-541397a6f398",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-022",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Data asset is 'RGC FedRAMP Continuous Monitoring Data Store' with format 'Xacta/OSCAL'. Description mentions Xacta-powered platform. No dedicated Xacta system found; ServiceNow (sys-100) mentioned as related ITSM but Xacta drives the FedRAMP data. Assigning to sys-100 as closest available platform",
+      "inference_method": "description_match",
+      "assumption": "Xacta is integrated into the ServiceNow/ITSM ecosystem. Would update if Xacta gets its own system entity (sys-186 is cert-manager, not Xacta)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:09.900355Z",
+    "updated_at": "2026-02-27T22:52:09.900355Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "cda13eee-5da8-4d05-a6bc-00997f844e42",
+    "relationship_type": "stores",
+    "source_id": "sys-014",
+    "target_id": "da-023",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'ObjectRocket Managed Database Store' - name contains 'ObjectRocket'. sys-014 is ObjectRocket DBaaS Platform",
+      "inference_method": "name_match",
+      "assumption": "sys-014 ObjectRocket is the hosting platform for all managed database instances",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:09.900379Z",
+    "updated_at": "2026-02-27T22:52:09.900379Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "27542e04-5c60-4afb-b10d-ba5bc73f3548",
+    "relationship_type": "stores",
+    "source_id": "sys-033",
+    "target_id": "da-024",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Email Mailbox Store' - description says it operates on emailsrvr.com infrastructure. sys-033 is Rackspace Email Hosting Platform (emailsrvr.com). Name and hostname match",
+      "inference_method": "name_match",
+      "assumption": "sys-033 is the hosting platform for customer email mailboxes",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:09.900401Z",
+    "updated_at": "2026-02-27T22:52:09.900402Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "69b91b62-4cd0-4db5-9c6f-7d37e90fa7c8",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-025",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'MyRackspace Portal Session and Account Store'. Description says it is the MyRackspace platform. sys-001 is Rackspace Customer Portal (Fabric) which IS the MyRackspace portal",
+      "inference_method": "name_match",
+      "assumption": "sys-001 Fabric portal stores session and account data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:09.900423Z",
+    "updated_at": "2026-02-27T22:52:09.900424Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c5fefbf7-c651-4583-bd85-34da2f91e73a",
+    "relationship_type": "stores",
+    "source_id": "sys-024",
+    "target_id": "da-026",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'RackConnect Network Configuration Store' - description mentions MPLS circuit parameters and Megaport/Equinix configurations. sys-024 is RackConnect Global MPLS Control Plane. Name contains 'RackConnect'",
+      "inference_method": "name_match",
+      "assumption": "sys-024 is the correct RackConnect system for network config storage",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:09.900445Z",
+    "updated_at": "2026-02-27T22:52:09.900445Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "72578128-54b0-45e6-8b92-355b6605c076",
+    "relationship_type": "stores",
+    "source_id": "sys-049",
+    "target_id": "da-027",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Corporate Syslog Aggregation Store' with format 'Syslog/CEF'. sys-049 is Corporate Syslog Aggregation. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-049 directly corresponds to this data asset",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:09.900472Z",
+    "updated_at": "2026-02-27T22:52:09.900473Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "5e0dca53-2f9a-4f93-98cd-fe9b22803f2d",
+    "relationship_type": "stores",
+    "source_id": "sys-006",
+    "target_id": "da-028",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Server Image Repository' for KVM on OpenStack Flex and XenServer. sys-006 is Cloud Servers API (Nova) which manages the image repository (Glance-backed)",
+      "inference_method": "description_match",
+      "assumption": "Cloud Servers API (sys-006) manages VM images via Glance. A dedicated Glance system entity would be more precise",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:09.900493Z",
+    "updated_at": "2026-02-27T22:52:09.900493Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2895ad43-3434-49de-b64b-8f1d36641b97",
+    "relationship_type": "stores",
+    "source_id": "sys-008",
+    "target_id": "da-029",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Cloud DNS Zone Database' - name contains 'Cloud DNS'. sys-008 is Cloud DNS API. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-008 Cloud DNS API manages all DNS zone data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:09.900517Z",
+    "updated_at": "2026-02-27T22:52:09.900517Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "38bdd34d-8000-4dd3-acb3-a267c8b5b735",
+    "relationship_type": "stores",
+    "source_id": "sys-006",
+    "target_id": "da-030",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Data asset is 'OpenStack Flex Metering and Billing Store' with format 'OpenStack Ceilometer'. Description mentions Genestack architecture. No dedicated Ceilometer/Gencstack metering system; sys-006 is the closest OpenStack Flex system. Could also map to sys-147 OpenStack Gnocchi",
+      "inference_method": "description_match",
+      "assumption": "OpenStack Flex metering is part of the Nova/compute domain; could be sys-147 Gnocchi if that is more appropriate",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:35.067860Z",
+    "updated_at": "2026-02-27T22:52:35.067862Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "eae6bcd2-1229-43fd-be12-c1a225563422",
+    "relationship_type": "stores",
+    "source_id": "sys-089",
+    "target_id": "da-031",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Data asset is 'Multicloud Build Document Repository' with format 'IaC Templates (YAML/JSON)'. Description mentions unified document structure for cloud builds. sys-089 is GitHub Enterprise/Organizations which is the likely SCM host for IaC templates",
+      "inference_method": "format_match",
+      "assumption": "IaC template repos are stored in GitHub Enterprise (sys-089). Could also be Terraform Enterprise (sys-088)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:35.067928Z",
+    "updated_at": "2026-02-27T22:52:35.067928Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "b32bdc58-0036-4492-9a1c-ed006e428e36",
+    "relationship_type": "stores",
+    "source_id": "sys-045",
+    "target_id": "da-032",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'TACACS+ Authentication Log Store' with format 'TACACS+ Accounting Log'. sys-045 is Network TACACS+ AAA Servers. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-045 TACACS+ servers store all AAA accounting logs",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:35.067956Z",
+    "updated_at": "2026-02-27T22:52:35.067956Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "0ae72d75-479b-4286-8556-f686480afe50",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-033",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Fabric Governance and Tagging Store' - description explicitly states it is within the Rackspace Fabric platform. sys-001 is Rackspace Customer Portal (Fabric)",
+      "inference_method": "description_match",
+      "assumption": "Governance metadata is part of the Fabric platform (sys-001)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:35.067979Z",
+    "updated_at": "2026-02-27T22:52:35.067980Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "29cb4c75-694c-4160-828e-f214d000c30f",
+    "relationship_type": "stores",
+    "source_id": "sys-033",
+    "target_id": "da-034",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Data asset is 'Hosted Exchange PST Archive (Breach Forensic Evidence)' - this was PST files from the discontinued Rackspace Hosted Exchange environment. sys-033 is Rackspace Email Hosting Platform (emailsrvr.com) which is the closest email system entity",
+      "inference_method": "description_match",
+      "assumption": "The discontinued Hosted Exchange was part of the Rackspace email hosting infrastructure (sys-033). PST files may now be retained as forensic evidence in a separate store",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:35.068002Z",
+    "updated_at": "2026-02-27T22:52:35.068002Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "9d46a647-7595-4a18-a315-a3ff923fbd3a",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-035",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Data asset is 'Customer Management Service Database' - description says it is accessed via Rackspace CMS API containing customer profiles and service entitlements. sys-001 is Rackspace Customer Portal (Fabric) which is the customer management platform",
+      "inference_method": "description_match",
+      "assumption": "CMS is part of the Fabric/portal ecosystem (sys-001)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:35.068030Z",
+    "updated_at": "2026-02-27T22:52:35.068030Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6eeabe73-84cb-47d8-baa9-ac9300f02ddf",
+    "relationship_type": "stores",
+    "source_id": "sys-058",
+    "target_id": "da-036",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Data asset is 'Logbook Audit Trail Store' with format 'CloudTrail JSON/Audit Log'. Description says it combines AWS CloudTrail, Control Portal actions, and Passport access records. sys-058 is Rackspace Managed Cloud Platform (RMC) which manages Fanatical Support for AWS",
+      "inference_method": "description_match",
+      "assumption": "Logbook aggregation is within the RMC platform (sys-058). Passport system entity exists as sys-072 (RSA), but Logbook is an RMC concept",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:35.068051Z",
+    "updated_at": "2026-02-27T22:52:35.068051Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "76a27d18-4855-4fb1-b46f-ed6d88fbc870",
+    "relationship_type": "stores",
+    "source_id": "sys-007",
+    "target_id": "da-037",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Load Balancer Access Log Archive' with format 'Apache Combined Log (Cloud Files Object)'. Format explicitly states Cloud Files Object - sys-007 is Cloud Files Object Storage (Swift)",
+      "inference_method": "format_match",
+      "assumption": "CLB access logs are archived in Cloud Files containers as stated in the format",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:35.068070Z",
+    "updated_at": "2026-02-27T22:52:35.068070Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c5f18f0a-8e9b-4e32-b4c0-4b0ba650aabf",
+    "relationship_type": "stores",
+    "source_id": "sys-178",
+    "target_id": "da-038",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace CDN Analytics Store' with format 'Time-Series (Rackspace Metrics)'. Description says data collected via Rackspace Metrics API. sys-178 is Rackspace Cloud Metrics platform",
+      "inference_method": "format_match",
+      "assumption": "CDN analytics are stored in Rackspace Metrics (sys-178)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:35.068090Z",
+    "updated_at": "2026-02-27T22:52:35.068090Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "b3a089ff-e80b-445c-9cff-53862f02d4dd",
+    "relationship_type": "stores",
+    "source_id": "sys-028",
+    "target_id": "da-039",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Physical Access Control Log Store' with format 'PACS Event Log'. sys-028 is Physical Security Systems (PACS). Names match exactly - biometric and badge access logs from PACS systems",
+      "inference_method": "name_match",
+      "assumption": "sys-028 PACS system stores all physical access control logs",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:35.068110Z",
+    "updated_at": "2026-02-27T22:52:35.068110Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "eb2a178f-d8f2-4a1b-9ce3-fff6baedafac",
+    "relationship_type": "stores",
+    "source_id": "sys-028",
+    "target_id": "da-040",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Data Center Surveillance Video Archive' with format 'Video (H.264/H.265)'. Description says CCTV across Rackspace data center facilities. sys-028 is Physical Security Systems (PACS) which includes CCTV per its description",
+      "inference_method": "description_match",
+      "assumption": "sys-028 PACS includes CCTV surveillance as part of physical security systems",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:56.145055Z",
+    "updated_at": "2026-02-27T22:52:56.145058Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "4d656ac7-7369-47b3-8c94-62567339828d",
+    "relationship_type": "stores",
+    "source_id": "sys-029",
+    "target_id": "da-041",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Building Management System Telemetry Store' with format 'BACnet/Modbus Time-Series'. sys-029 is Environmental Monitoring (BMS). Names match exactly - environmental sensor telemetry",
+      "inference_method": "name_match",
+      "assumption": "sys-029 BMS is the authoritative store for datacenter environmental telemetry",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:56.145130Z",
+    "updated_at": "2026-02-27T22:52:56.145130Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "1adba26a-22b7-4bb5-8deb-31a409a8e4da",
+    "relationship_type": "stores",
+    "source_id": "sys-027",
+    "target_id": "da-042",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'DCIM Asset and Capacity Database' with format 'DCIM Database'. sys-027 is DC Management Plane (DCIM/IPMI). Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-027 DCIM manages all physical asset and capacity data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:56.145162Z",
+    "updated_at": "2026-02-27T22:52:56.145163Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e7c5151f-be74-4cbe-874e-0305313b7f41",
+    "relationship_type": "stores",
+    "source_id": "sys-054",
+    "target_id": "da-043",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Vulnerability Scan Results Store' - description says it is from the security scanning infrastructure. sys-054 is Security Scanning Infrastructure. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-054 Security Scanning Infrastructure is the owner of scan results",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:56.145189Z",
+    "updated_at": "2026-02-27T22:52:56.145189Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "24bea2c1-91ef-4581-ada5-9b1bef16be39",
+    "relationship_type": "stores",
+    "source_id": "sys-043",
+    "target_id": "da-044",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'DDoS Mitigation Event and Flow Store' with format 'NetFlow/Arbor Event Log'. Description mentions Arbor Networks and Cisco Guard. sys-043 is DDoS Mitigation Cluster (Arbor/Cisco Guard). Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-043 is the authoritative store for DDoS mitigation events and NetFlow",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:56.145213Z",
+    "updated_at": "2026-02-27T22:52:56.145214Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ce792252-c382-49b1-ac7f-48a92be0ecd6",
+    "relationship_type": "stores",
+    "source_id": "sys-042",
+    "target_id": "da-045",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Bomgar Remote Support Session Archive' - name contains 'Bomgar'. sys-042 is Bomgar Remote Support Gateway. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-042 Bomgar gateway stores all session recordings and logs",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:56.145236Z",
+    "updated_at": "2026-02-27T22:52:56.145237Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "736899a3-36b3-4b6b-be4b-cc8b53cfbed7",
+    "relationship_type": "stores",
+    "source_id": "sys-044",
+    "target_id": "da-046",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Bastion Host Session Log Store' with format 'SSH Audit Log'. sys-044 is Bastion Host Cluster. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-044 Bastion Host Cluster stores all SSH session logs",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:56.145259Z",
+    "updated_at": "2026-02-27T22:52:56.145260Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "26295ee9-abd4-4fdf-b9c3-601ee2763e24",
+    "relationship_type": "stores",
+    "source_id": "sys-046",
+    "target_id": "da-047",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'VPN Gateway Connection Log Store' with format 'VPN Session Log'. sys-046 is VPN Gateway Cluster. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-046 VPN Gateway Cluster stores all VPN connection logs",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:56.145282Z",
+    "updated_at": "2026-02-27T22:52:56.145282Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "f12257af-e58b-4b35-8475-600f86b2ba32",
+    "relationship_type": "stores",
+    "source_id": "sys-055",
+    "target_id": "da-048",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Site Firewall Rule and Session Log Store' with format 'Firewall Syslog/Config'. sys-055 is Site Firewall Clusters. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-055 Site Firewall Clusters store all firewall rule configs and session logs",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:56.145304Z",
+    "updated_at": "2026-02-27T22:52:56.145304Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "0cb1a200-45e5-4930-80cb-b43ccccf29ab",
+    "relationship_type": "stores",
+    "source_id": "sys-050",
+    "target_id": "da-049",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'RackWatch Network Monitoring Data Store' - name contains 'RackWatch'. sys-050 is Network Monitoring Cluster (RackWatch/MRTG). Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-050 RackWatch stores all network monitoring RRD time-series data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:52:56.145326Z",
+    "updated_at": "2026-02-27T22:52:56.145326Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d2bec849-65b2-4dd5-bcc0-7ffb5e1de04d",
+    "relationship_type": "stores",
+    "source_id": "sys-051",
+    "target_id": "da-050",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Antivirus Detection and Quarantine Store' - description mentions eTrust antivirus server. sys-051 is eTrust Antivirus Server. Names match via description",
+      "inference_method": "description_match",
+      "assumption": "sys-051 eTrust Antivirus stores detection events and quarantine archives",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:21.750988Z",
+    "updated_at": "2026-02-27T22:53:21.750991Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6880a7fa-361a-43ab-9da4-417f4c118b86",
+    "relationship_type": "stores",
+    "source_id": "sys-052",
+    "target_id": "da-051",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Server Provisioning and Package Mirror Repository' - description mentions Red Hat Network satellite repository mirrors and Kickstart files. sys-052 is Infrastructure Provisioning (RHN/Kickstart/Mirror). Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-052 is the provisioning system that stores these package mirror repositories",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:21.751070Z",
+    "updated_at": "2026-02-27T22:53:21.751070Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c51642ea-c514-473a-9e94-07028180cfb7",
+    "relationship_type": "stores",
+    "source_id": "sys-053",
+    "target_id": "da-052",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'ObjectRocket IP Address Management Database' with format 'IPAM Database'. sys-053 is ObjectRocket IPAM (SJC). Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-053 ObjectRocket IPAM is the authoritative store for IP allocations",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:21.751100Z",
+    "updated_at": "2026-02-27T22:53:21.751100Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "bc9d6f5e-9543-4d77-a45c-90a0966c0da2",
+    "relationship_type": "stores",
+    "source_id": "sys-011",
+    "target_id": "da-053",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Networking SDN Configuration Store' with format 'Neutron Database (MySQL/MariaDB)'. sys-011 is Cloud Networking API (Neutron). Name and format match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-011 Neutron API manages and stores all SDN configuration state",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:21.751124Z",
+    "updated_at": "2026-02-27T22:53:21.751125Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "0eac061a-eb9d-4991-b77a-34d9d222a8f8",
+    "relationship_type": "stores",
+    "source_id": "sys-006",
+    "target_id": "da-054",
+    "weight": 1.0,
+    "confidence": 0.8,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Auto Scale Configuration Store' with format 'JSON Configuration'. Description says it manages Cloud Auto Scale service. No dedicated Auto Scale system entity found; sys-006 is the Cloud Servers/compute platform that Auto Scale extends",
+      "inference_method": "description_match",
+      "assumption": "Cloud Auto Scale is part of the Cloud Servers (Nova) ecosystem (sys-006). Would update if Auto Scale gets its own system entity",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:21.751147Z",
+    "updated_at": "2026-02-27T22:53:21.751147Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7d61c201-c711-4f76-abdb-b3c03af6c2d8",
+    "relationship_type": "stores",
+    "source_id": "sys-178",
+    "target_id": "da-055",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Metrics Time-Series Data Store' with format 'Blueflood Time-Series'. sys-178 is Rackspace Cloud Metrics. Description matches - centralized time-series metrics via Rackspace Metrics API",
+      "inference_method": "name_match",
+      "assumption": "sys-178 Rackspace Cloud Metrics stores all time-series data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:21.751169Z",
+    "updated_at": "2026-02-27T22:53:21.751169Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "5db4bd53-21a8-46f9-b919-2a5eadf08a15",
+    "relationship_type": "stores",
+    "source_id": "sys-006",
+    "target_id": "da-056",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Orchestration Stack and Template Store' with format 'HOT/YAML Templates'. Description says Cloud Orchestration service (OpenStack Heat-compatible). No dedicated Heat system entity found; sys-006 is the closest cloud infrastructure system",
+      "inference_method": "description_match",
+      "assumption": "Cloud Orchestration is managed within the Cloud Servers/infrastructure domain (sys-006). A dedicated Heat system entity would be more precise",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:21.751191Z",
+    "updated_at": "2026-02-27T22:53:21.751191Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8549ad3b-53a5-40fa-ac79-1c295efa2150",
+    "relationship_type": "stores",
+    "source_id": "sys-107",
+    "target_id": "da-057",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Data asset is 'SEC Financial Reporting Data Store' with format 'XBRL/ERP Export'. Description mentions consolidated financial statements and internal controls. sys-107 is Billing & Revenue Management System which manages financial data",
+      "inference_method": "description_match",
+      "assumption": "Financial reporting data resides in the ERP/Billing system (sys-107). Could also be an SAP instance not separately modeled",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:21.751221Z",
+    "updated_at": "2026-02-27T22:53:21.751221Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "74f8fe44-a7cc-4e67-8e48-2e07399a146b",
+    "relationship_type": "stores",
+    "source_id": "sys-003",
+    "target_id": "da-058",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Office Email Archiving Store' - description says Cloud Office email archiving service. sys-003 is Cloud Office Control Panel which manages Cloud Office email services",
+      "inference_method": "description_match",
+      "assumption": "Cloud Office archiving is under the Cloud Office platform (sys-003)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:21.751246Z",
+    "updated_at": "2026-02-27T22:53:21.751246Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2414ff25-fe5a-451e-909e-e763f860d26d",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-059",
+    "weight": 1.0,
+    "confidence": 0.68,
+    "properties": {
+      "rationale": "Data asset is 'Datapipe Federal Community Cloud Configuration Store' with format 'FedRAMP OSCAL/CMDB'. No dedicated Datapipe system entity. sys-100 ServiceNow ITSM is the CMDB platform Rackspace uses",
+      "inference_method": "format_match",
+      "assumption": "Datapipe FCC config data is maintained in the enterprise CMDB (ServiceNow sys-100). Confidence is lower as Datapipe legacy systems may not be integrated",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:14.496361Z",
+    "updated_at": "2026-02-27T22:58:14.496363Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6818ea5e-f2fd-4e27-998e-ae89ec90a651",
+    "relationship_type": "stores",
+    "source_id": "52689b4c-1e13-4305-bd64-0e86234f4009",
+    "target_id": "da-060",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "HashiCorp Vault Enterprise description explicitly states it 'Manages TLS certificates, API keys, database credentials, and PKI infrastructure' across Genestack Kubernetes clusters. TLS Certificate and Encryption Key Store (X.509/PKCS#12 format) aligns precisely with Vault's core certificate management function.",
+      "inference_method": "description_match",
+      "assumption": "Vault is confirmed for Genestack/internal mTLS certs; legacy OSPC TLS termination certs may also be in sys-136 (Barbican)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:21.751266Z",
+    "updated_at": "2026-02-27T22:53:21.751267Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "5f2aa9ac-4b34-44fe-abeb-df0a7d6c46bb",
+    "relationship_type": "stores",
+    "source_id": "sys-065",
+    "target_id": "da-061",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Splunk Machine Learning Model Repository' with format 'Splunk MLTK Model'. sys-065 is Splunk Enterprise Security SIEM. Name contains 'Splunk' and format explicitly says Splunk MLTK",
+      "inference_method": "name_match",
+      "assumption": "ML models are stored within the same Splunk platform (sys-065)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:48.614439Z",
+    "updated_at": "2026-02-27T22:53:48.614442Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "abc9d6ea-f664-4a47-bfd7-07ca768f11e8",
+    "relationship_type": "stores",
+    "source_id": "sys-040",
+    "target_id": "da-062",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'ObjectRocket Elasticsearch Index Store' with format 'Elasticsearch Index (Lucene)'. sys-040 is ObjectRocket Elasticsearch Service. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-040 ObjectRocket Elasticsearch stores all customer Elasticsearch indexes",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:48.614518Z",
+    "updated_at": "2026-02-27T22:53:48.614518Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "4299b833-dcb6-446a-9bac-ff43f0cfbc7a",
+    "relationship_type": "stores",
+    "source_id": "sys-177",
+    "target_id": "da-063",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Identity User Access Event Feed' with format 'CADF Atom/XML'. Description says it is a dedicated Cloud Feeds product feed. sys-177 is Rackspace Cloud Feeds (Event Notification). This is a specific feed within Cloud Feeds",
+      "inference_method": "name_match",
+      "assumption": "Cloud Identity event feed is stored and served by the Cloud Feeds system (sys-177)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:48.614550Z",
+    "updated_at": "2026-02-27T22:53:48.614550Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2a6f53c1-5b18-42a5-855f-c3e70ea32285",
+    "relationship_type": "stores",
+    "source_id": "sys-016",
+    "target_id": "da-064",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Data asset is 'BGP Routing Table and Peering State Store' with format 'BGP RIB/MRT'. Description mentions AS12200 as primary. sys-016 is AS12200 BGP Edge Router Cluster",
+      "inference_method": "description_match",
+      "assumption": "BGP RIB/FIB data is distributed across all edge routers; sys-016 is primary AS. Multiple ASN systems may co-store this data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:48.614577Z",
+    "updated_at": "2026-02-27T22:53:48.614577Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e757bd3a-a473-42a8-b09c-ab0cb339c9f6",
+    "relationship_type": "stores",
+    "source_id": "sys-066",
+    "target_id": "da-065",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Data asset IS 'Salesforce CRM Instance' with format 'Salesforce SOQL'. sys-066 is Salesforce CRM Platform. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-066 Salesforce is the canonical CRM instance",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:48.614601Z",
+    "updated_at": "2026-02-27T22:53:48.614601Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "4e745f24-452a-46e8-97db-e8b6d9465f23",
+    "relationship_type": "stores",
+    "source_id": "sys-063",
+    "target_id": "da-066",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Data asset is 'JIRA Project and Issue Tracking Store' with format 'Atlassian JIRA Database'. sys-063 is Atlassian Jira. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-063 Jira stores all project and issue tracking data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:48.614624Z",
+    "updated_at": "2026-02-27T22:53:48.614625Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6a58ce1c-c37d-4372-b5f8-7d52b6dc56fa",
+    "relationship_type": "stores",
+    "source_id": "sys-036",
+    "target_id": "da-067",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Corporate Website Analytics Data Store' - description says it is for rackspace.com hosted on AWS. sys-036 is Rackspace Corporate Website (AWS-hosted). Names match via description",
+      "inference_method": "description_match",
+      "assumption": "Corporate website analytics are stored in/by the AWS-hosted website system (sys-036)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:48.614653Z",
+    "updated_at": "2026-02-27T22:53:48.614653Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7cd761a6-93b1-4abc-b9c0-5977b157dc3f",
+    "relationship_type": "stores",
+    "source_id": "sys-057",
+    "target_id": "da-068",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Data asset is 'Managed Security Alert and Detection Store' - description mentions Rackspace PrevenTier, IDS devices, MDR case data. sys-057 is Rackspace AI Security Engine (RAISE) which manages security alerting and detection",
+      "inference_method": "description_match",
+      "assumption": "Security alert and MDR data is managed by RAISE (sys-057). Could also reside in CrowdStrike (sys-070)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:48.614678Z",
+    "updated_at": "2026-02-27T22:53:48.614678Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "f918415d-78bb-4afb-9c41-8048f93007ca",
+    "relationship_type": "stores",
+    "source_id": "sys-098",
+    "target_id": "da-069",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'OpenStack Flex Persistent Volume Store' with format 'Ceph RBD/RGW'. sys-098 is Rook Ceph Persistent Storage which provides Ceph RBD/RGW storage for Genestack/OpenStack Flex",
+      "inference_method": "format_match",
+      "assumption": "sys-098 Rook Ceph is the storage backend for OpenStack Flex persistent volumes",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:48.614703Z",
+    "updated_at": "2026-02-27T22:53:48.614703Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "019897c7-2508-40e9-8947-1117704bfcd2",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-070",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "Data asset is 'SOC 2 Attestation Evidence Repository' with format 'Audit Evidence Package (PDF/Excel)'. No dedicated GRC/audit system. sys-100 ServiceNow ITSM is used for control management at Rackspace",
+      "inference_method": "description_match",
+      "assumption": "SOC 2 evidence is managed via ITSM/GRC tooling. Could be stored in SharePoint/M365 (sys-068) or a dedicated audit platform not in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:53:48.614726Z",
+    "updated_at": "2026-02-27T22:53:48.614726Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "fd3c9b40-e067-40aa-beea-34961c3020f0",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-071",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Data asset is 'CloudHealth Cloud Cost Management Data Store' with format 'CloudHealth Analytics Database'. Description says VMware CloudHealth integrated into Rackspace Customer Portal via SSO. sys-001 is Rackspace Customer Portal (Fabric) which is the portal integration point",
+      "inference_method": "description_match",
+      "assumption": "CloudHealth data is surfaced through the portal (sys-001) but may be stored in the external CloudHealth SaaS. No dedicated CloudHealth system entity found",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:16.346130Z",
+    "updated_at": "2026-02-27T22:54:16.346133Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "117387c8-c1e6-4187-b85d-f9c27f8a5dba",
+    "relationship_type": "stores",
+    "source_id": "sys-073",
+    "target_id": "da-072",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Passport Access Management Log Store' with format 'Passport Audit Log'. Description says it is from the Passport server agent system. sys-073 is BeyondTrust Privileged Session Management which manages privileged access similar to Passport",
+      "inference_method": "description_match",
+      "assumption": "Passport is the Rackspace name for privileged access management, likely BeyondTrust/sys-073. If Passport has a separate system entity, update this",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:16.346213Z",
+    "updated_at": "2026-02-27T22:54:16.346214Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "b9aa85ec-1911-4729-8936-d750f4b124bc",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-073",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Spot Marketplace and Auction Data Store' with format 'Spot Platform Database'. Description says it is the Rackspace Spot platform providing Cluster-API Kubernetes. sys-001 is Rackspace Customer Portal (Fabric) which is the portal platform. No dedicated Rackspace Spot system entity found",
+      "inference_method": "description_match",
+      "assumption": "Spot marketplace is part of the broader Fabric/portal ecosystem. Would update if a Rackspace Spot system entity is created",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:16.346248Z",
+    "updated_at": "2026-02-27T22:54:16.346249Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "bfe75e4a-7302-4123-9c7a-e8d3a7c9117c",
+    "relationship_type": "stores",
+    "source_id": "sys-061",
+    "target_id": "da-074",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Data asset is 'Palantir Foundry and AIP Deployment Data Store'. Description says customer data ontologies and AI model configurations in Palantir Foundry instances deployed in Rackspace. sys-061 is Rackspace AI Business Platform which manages AI deployments",
+      "inference_method": "description_match",
+      "assumption": "Palantir deployments are managed under the FAIR AI Business Platform (sys-061). No dedicated Palantir system entity found",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:16.346276Z",
+    "updated_at": "2026-02-27T22:54:16.346277Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8c721958-f5c0-4f5e-806c-eb4c26bf2210",
+    "relationship_type": "stores",
+    "source_id": "sys-062",
+    "target_id": "da-075",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'FAIR AI Use Case and Model Repository'. sys-062 is FAIR MCP Enterprise Accelerator which is the Foundry for AI by Rackspace platform. Names contain FAIR and match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-062 FAIR MCP is the platform for AI use cases and model management",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:16.346305Z",
+    "updated_at": "2026-02-27T22:54:16.346305Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c5727b16-83c3-48f8-817c-028157ecea2b",
+    "relationship_type": "stores",
+    "source_id": "sys-102",
+    "target_id": "da-076",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "rationale": "Data asset is 'Workday Human Capital Management Instance' with format 'Workday HCM Database'. sys-102 is Workday HCM Platform (Global People System). Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-102 Workday is the canonical HCM platform",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:16.346328Z",
+    "updated_at": "2026-02-27T22:54:16.346329Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "60e5ecf7-838a-4669-950b-5b38fc25db20",
+    "relationship_type": "stores",
+    "source_id": "sys-088",
+    "target_id": "da-077",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Terraform State and Infrastructure-as-Code Module Repository' with format 'Terraform HCL/JSON State'. sys-088 is Terraform Enterprise which manages Terraform state files. Description mentions S3 and GitHub",
+      "inference_method": "name_match",
+      "assumption": "sys-088 Terraform Enterprise manages the Terraform state and IaC modules",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:16.346351Z",
+    "updated_at": "2026-02-27T22:54:16.346351Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6c930d36-2bbe-4e2f-ab47-6ce6e2ea8eca",
+    "relationship_type": "stores",
+    "source_id": "sys-089",
+    "target_id": "da-078",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'GitLab Source Code and CI/CD Pipeline Repository' with format 'Git Repository'. sys-089 is GitHub Enterprise/Organizations. Despite the name saying GitLab, the description says Rackspace-GitLab strategic alliance; however sys-089 GitHub is the actual SCM. Note: this should be reviewed as the data asset says GitLab but system is GitHub",
+      "inference_method": "name_match",
+      "assumption": "Rackspace uses both GitLab and GitHub Enterprise. The GitLab platform may be a separate system entity. Review required",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:16.346377Z",
+    "updated_at": "2026-02-27T22:54:16.346377Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "9486a7bb-0120-49d0-94db-8fcdfd1ee8a0",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-079",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Data asset is 'Optimizer+ Cost Optimization Recommendations Store' with format 'FinOps Report Database'. Description says it is generated by the Optimizer+ FinOps service. sys-001 is Rackspace Customer Portal (Fabric) where Optimizer+ is surfaced. No dedicated Optimizer+ system entity found",
+      "inference_method": "description_match",
+      "assumption": "Optimizer+ is a feature of the Fabric/portal platform (sys-001). Would update if Optimizer+ gets its own system entity",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:16.346399Z",
+    "updated_at": "2026-02-27T22:54:16.346399Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "fc542c28-4df8-4b0b-b7d7-acb52d9eaa57",
+    "relationship_type": "stores",
+    "source_id": "sys-179",
+    "target_id": "da-080",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Intelligence Dashboard Data Store' - name contains 'Rackspace Intelligence Dashboard'. sys-179 is Rackspace Intelligence Dashboard. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-179 Intelligence Dashboard stores its own visualization and metric data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:16.346422Z",
+    "updated_at": "2026-02-27T22:54:16.346422Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d8d223f6-9d3d-4645-a8bc-72003b105706",
+    "relationship_type": "stores",
+    "source_id": "sys-107",
+    "target_id": "da-081",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Data asset is 'Employee Stock Purchase Plan Transaction Store' with format 'ESPP Broker Database'. Description mentions payroll deduction elections and share transactions. sys-107 is Billing & Revenue Management System which handles financial transactions",
+      "inference_method": "description_match",
+      "assumption": "ESPP transactions may be managed in the ERP/billing system (sys-107) or a dedicated broker system not in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:43.761707Z",
+    "updated_at": "2026-02-27T22:54:43.761710Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "05a7adad-0520-436b-86d8-d53888fc233a",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-082",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "Data asset is 'Ethics and Compliance Reporting Case Store' with format 'Case Management Database'. Description says ethics hotline case records and investigation findings. sys-100 ServiceNow ITSM is used as a case management platform at Rackspace",
+      "inference_method": "description_match",
+      "assumption": "Ethics cases may use ServiceNow case management (sys-100) or a dedicated ethics platform (e.g., NAVEX, EthicsPoint) not in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:43.761780Z",
+    "updated_at": "2026-02-27T22:54:43.761780Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "0741d0d2-22ac-4a34-86d4-8decc67b9080",
+    "relationship_type": "stores",
+    "source_id": "sys-101",
+    "target_id": "da-083",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Core Ticketing System Data Store' with format 'Ticketing System Database'. sys-101 is Rackspace Core Ticketing System. Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-101 Core Ticketing System stores all customer support ticket records",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:43.761809Z",
+    "updated_at": "2026-02-27T22:54:43.761809Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7ca35d7b-eeae-4f53-b32c-5bbb3cb011ec",
+    "relationship_type": "stores",
+    "source_id": "sys-007",
+    "target_id": "da-084",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Load Balancer Access Log Archive' (da-084 is a duplicate of da-037) with format 'Apache Combined Log (Cloud Files Object)'. Format explicitly states Cloud Files Object - sys-007 is Cloud Files Object Storage (Swift)",
+      "inference_method": "format_match",
+      "assumption": "CLB access logs are archived in Cloud Files containers as stated in the format (da-084 duplicates da-037)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:43.761833Z",
+    "updated_at": "2026-02-27T22:54:43.761833Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "437f0c91-cc53-4697-b43b-e197f034892f",
+    "relationship_type": "stores",
+    "source_id": "sys-178",
+    "target_id": "da-085",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace CDN Analytics Data Store' with format 'Time-Series (Rackspace Metrics API)'. sys-178 is Rackspace Cloud Metrics. Format explicitly says Rackspace Metrics API (da-085 is a variant of da-038)",
+      "inference_method": "format_match",
+      "assumption": "CDN analytics stored in Rackspace Metrics (sys-178)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:43.761856Z",
+    "updated_at": "2026-02-27T22:54:43.761856Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "91cdccaa-0da2-4d22-bd85-d9d2b29a68bc",
+    "relationship_type": "stores",
+    "source_id": "sys-011",
+    "target_id": "da-086",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Cloud Networking SDN Configuration Store' (da-086 duplicates da-053) with format 'Neutron Database (MySQL/MariaDB)'. sys-011 is Cloud Networking API (Neutron). Names match exactly",
+      "inference_method": "name_match",
+      "assumption": "sys-011 Neutron API manages all SDN configuration state",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:43.761878Z",
+    "updated_at": "2026-02-27T22:54:43.761878Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "9e27ba09-fabe-4cc9-b7be-1986ecff7a06",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-087",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Data asset is 'Xacta FedRAMP Continuous Monitoring Data Store' with format 'OSCAL/Xacta Risk Database'. Description says Telos Xacta risk management platform. No dedicated Xacta system entity; sys-100 ServiceNow ITSM is the closest GRC platform at Rackspace",
+      "inference_method": "description_match",
+      "assumption": "Xacta data may be imported into or linked from ServiceNow (sys-100). If Xacta gets its own system entity, this should be updated",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:43.761899Z",
+    "updated_at": "2026-02-27T22:54:43.761899Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "bf53ec69-de85-4401-842d-ede9cf4bc052",
+    "relationship_type": "stores",
+    "source_id": "sys-101",
+    "target_id": "da-088",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Data asset is 'SmartTickets Automated Alert Resolution Store' with format 'Ticket Automation Database'. Description says Rackspace SmartTickets system processed Azure monitoring alerts. sys-101 is Rackspace Core Ticketing System where SmartTickets outputs are stored",
+      "inference_method": "description_match",
+      "assumption": "SmartTickets automation results are stored in the Core Ticketing System (sys-101)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:43.761925Z",
+    "updated_at": "2026-02-27T22:54:43.761925Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "bd2ad42b-2e45-4d66-828b-6a4bc22fce64",
+    "relationship_type": "stores",
+    "source_id": "sys-058",
+    "target_id": "da-089",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Logbook Aggregated Audit Trail Store' with format 'CloudTrail JSON/Audit Event Log'. Description combines AWS CloudTrail, Control Portal actions, Passport access records. sys-058 is Rackspace Managed Cloud Platform (RMC/Fanatical Support for AWS)",
+      "inference_method": "description_match",
+      "assumption": "Logbook is an RMC feature (sys-058), aggregating AWS CloudTrail and Passport logs",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:43.761946Z",
+    "updated_at": "2026-02-27T22:54:43.761946Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ffbf8942-61e9-4a7f-85c5-7d5ed541ccc7",
+    "relationship_type": "stores",
+    "source_id": "sys-008",
+    "target_id": "da-090",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Cloud DNS Zone and Record Store' with format 'DNS Zone Database / BIND9'. sys-008 is Cloud DNS API. Names match exactly (da-090 is a more detailed variant of da-029)",
+      "inference_method": "name_match",
+      "assumption": "sys-008 Cloud DNS API manages all DNS zone and record data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:54:43.761967Z",
+    "updated_at": "2026-02-27T22:54:43.761967Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "31a86546-6fdb-48e6-b421-9012ab268987",
+    "relationship_type": "stores",
+    "source_id": "sys-033",
+    "target_id": "da-091",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset is 'Rackspace Email Hosted Mailbox Store' with format 'Email Mailbox Store (IMAP/POP3)'. Description mentions Cloud Office admin at api.emailsrvr.com. sys-033 is Rackspace Email Hosting Platform (emailsrvr.com). Names and hostname match",
+      "inference_method": "name_match",
+      "assumption": "sys-033 emailsrvr.com platform stores all hosted email mailbox data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:14.496426Z",
+    "updated_at": "2026-02-27T22:58:14.496426Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2899a42a-44a0-44b8-974f-6ae430877e07",
+    "relationship_type": "stores",
+    "source_id": "sys-012",
+    "target_id": "da-092",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Data asset name 'Rackspace Monitoring Check, Alarm, and Metric Store' directly matches sys-012 (Rackspace Monitoring API), which is the cloud monitoring API managing checks, alarms, and metrics for infrastructure health.",
+      "inference_method": "name_match",
+      "assumption": "No alternative monitoring platform identified; sys-012 is the primary Rackspace monitoring system",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:14.496453Z",
+    "updated_at": "2026-02-27T22:58:14.496453Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "44f81a1d-3bb9-4fac-b65b-9dd82232ab77",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-093",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Customer Management Service Account Database is the backend datastore for the Rackspace Customer Management Service API; sys-001 (Rackspace Customer Portal Fabric) is the platform that hosts the Customer Management Service and manages account databases.",
+      "inference_method": "description_match",
+      "assumption": "Customer Management Service is a Fabric platform microservice; underlying DB may be a distinct PostgreSQL/MySQL instance managed by Fabric",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:14.496475Z",
+    "updated_at": "2026-02-27T22:58:14.496476Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "a3641be5-2815-4586-b594-793b6739be81",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-094",
+    "weight": 1.0,
+    "confidence": 0.8,
+    "properties": {
+      "rationale": "Offer Service Product Catalog and Pricing Store is the backend data for the Rackspace Offer/Offerings API. The Rackspace Customer Portal Fabric (sys-001) is the platform that integrates and hosts the Offer Service for product catalog and pricing management across the managed services portfolio.",
+      "inference_method": "description_match",
+      "assumption": "Offer Service is a Fabric microservice; could alternatively be co-located with sys-107 (Billing/Revenue) \u2014 Fabric is chosen as primary platform host",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:14.496497Z",
+    "updated_at": "2026-02-27T22:58:14.496497Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "1caf7816-c4c3-4e40-992c-da4310aaa5b8",
+    "relationship_type": "stores",
+    "source_id": "sys-003",
+    "target_id": "da-095",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "Cloud Office Email and Apps Administration Store directly corresponds to sys-003 (Cloud Office Control Panel), which is the system that administers Rackspace Email and Cloud Office apps (Exchange, Google Workspace). The administration data is stored and managed by this control panel.",
+      "inference_method": "name_match",
+      "assumption": "Administration metadata stored in Cloud Office Control Panel backend; actual email data stored separately in sys-033",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:14.496517Z",
+    "updated_at": "2026-02-27T22:58:14.496518Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "659c3759-3b7a-4ec5-8219-6b78904b3648",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-096",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "ServiceNow ITSM Incident and Change Management Store is a direct name match for sys-100 (ServiceNow ITSM Platform), which stores all incident and change management records.",
+      "inference_method": "name_match",
+      "assumption": "ServiceNow is the confirmed ITSM platform for incident and change management",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:14.496538Z",
+    "updated_at": "2026-02-27T22:58:14.496538Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "61d79b3d-49ec-43ac-8854-61ebbc1b830d",
+    "relationship_type": "stores",
+    "source_id": "sys-135",
+    "target_id": "da-097",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "Undercloud Bare Metal Provisioning Database directly matches sys-135 (OpenStack Ironic Bare Metal Provisioning), which is the OpenStack service that manages bare metal node state, hardware configuration, and provisioning workflows in the undercloud.",
+      "inference_method": "name_match",
+      "assumption": "Undercloud refers to the Ironic-based provisioning plane in the OpenStack/Genestack architecture",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:14.496565Z",
+    "updated_at": "2026-02-27T22:58:14.496565Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "4f1314ff-6043-42b1-b9a8-fbde77def920",
+    "relationship_type": "stores",
+    "source_id": "sys-002",
+    "target_id": "da-098",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Cloud Control Panel Session and Preference Store matches sys-002 (Cloud Control Panel at mycloud.rackspace.com), which manages user sessions, preferences, RBAC settings, and portal state for all cloud resource management.",
+      "inference_method": "name_match",
+      "assumption": "Session/preference data stored in Cloud Control Panel backend; may use Redis/Memcached for session store",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:14.496590Z",
+    "updated_at": "2026-02-27T22:58:14.496590Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "3ce59004-b0ac-4eb5-bd0b-882092f45498",
+    "relationship_type": "stores",
+    "source_id": "sys-066",
+    "target_id": "da-099",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Salesforce CRM Customer and Pipeline Data Store is a direct name match for sys-066 (Salesforce CRM Platform), which is the authoritative system for customer relationship management, pipeline, and sales data.",
+      "inference_method": "name_match",
+      "assumption": "Salesforce is confirmed as the CRM platform used by Rackspace for customer and pipeline data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:14.496610Z",
+    "updated_at": "2026-02-27T22:58:14.496611Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "271ceb02-55ac-48f2-a6f1-ef7df5947a10",
+    "relationship_type": "stores",
+    "source_id": "sys-003",
+    "target_id": "da-100",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Cloud Office Control Panel Administration Store is a direct name match for sys-003 (Cloud Office Control Panel), which is the administration system for all Cloud Office products and stores admin configurations, user settings, and domain management data.",
+      "inference_method": "name_match",
+      "assumption": "Cloud Office Control Panel backend database stores all administrative data",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:47.202543Z",
+    "updated_at": "2026-02-27T22:58:47.202545Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c9a6b339-8e28-436e-8036-94f7f96c240c",
+    "relationship_type": "stores",
+    "source_id": "sys-054",
+    "target_id": "da-101",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Security Vulnerability Disclosure and Bug Bounty Store is logically held within the security scanning and vulnerability management infrastructure (sys-054). No dedicated bug bounty platform (e.g., HackerOne) was found in the KG; sys-054 is the closest matching security tracking system.",
+      "inference_method": "description_match",
+      "assumption": "Bug bounty disclosures may be tracked externally (HackerOne) or in ServiceNow; sys-054 is a proxy assignment for the security scanning infrastructure",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:47.202619Z",
+    "updated_at": "2026-02-27T22:58:47.202620Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8d4c30b1-9d70-4b8b-a395-988304979f10",
+    "relationship_type": "stores",
+    "source_id": "sys-107",
+    "target_id": "da-102",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "General Ledger and Financial Reporting Data Store maps directly to sys-107 (Billing & Revenue Management System), which is the financial system of record for Rackspace billing, revenue, and financial reporting functions.",
+      "inference_method": "name_match",
+      "assumption": "ERP/GL system is the Billing & Revenue Management System; could also include Oracle ERP or SAP not separately identified in KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:47.202655Z",
+    "updated_at": "2026-02-27T22:58:47.202656Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "127cafaa-0803-4303-bfe0-429ae065447c",
+    "relationship_type": "stores",
+    "source_id": "sys-068",
+    "target_id": "da-103",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "Law Enforcement Request and Disclosure Report Store contains sensitive legal documents (law enforcement requests, disclosure reports). sys-068 (Microsoft 365 Suite / SharePoint) is the corporate document management platform used for legal and compliance document storage at Rackspace.",
+      "inference_method": "description_match",
+      "assumption": "Legal documents stored in SharePoint/OneDrive within M365; a dedicated legal matter management system may exist but is not in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:47.202682Z",
+    "updated_at": "2026-02-27T22:58:47.202683Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8bcc3dbb-9ea5-4cee-9e43-0c4712e026be",
+    "relationship_type": "stores",
+    "source_id": "sys-068",
+    "target_id": "da-104",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "Authorized Sub-Processor Registry and DPA Store contains legal/compliance documents (Data Processing Agreements, sub-processor lists). sys-068 (Microsoft 365 Suite / SharePoint) is the platform for corporate legal document management and compliance record-keeping at Rackspace.",
+      "inference_method": "description_match",
+      "assumption": "Sub-processor registry and DPAs stored in SharePoint/compliance management system within M365; a dedicated GRC tool may hold these records",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:47.202707Z",
+    "updated_at": "2026-02-27T22:58:47.202708Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "f5b9ba6e-12cc-4b4e-8e11-302323677d43",
+    "relationship_type": "stores",
+    "source_id": "sys-068",
+    "target_id": "da-105",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Board and Corporate Governance Document Repository contains board meeting minutes, governance documents, resolutions, and committee charters. sys-068 (Microsoft 365 Suite / SharePoint/OneDrive) is the enterprise document management platform at Rackspace for corporate governance records.",
+      "inference_method": "description_match",
+      "assumption": "Board documents may also use a dedicated board portal (e.g., Diligent Boards); M365/SharePoint is the most probable internal storage system in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:47.202732Z",
+    "updated_at": "2026-02-27T22:58:47.202732Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "213d0962-1086-4dd5-9ff2-f2c8232e9d09",
+    "relationship_type": "stores",
+    "source_id": "sys-016",
+    "target_id": "da-106",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "BGP Routing Table and Peering Configuration Store is a direct name match for sys-016 (AS12200 BGP Edge Router Cluster), which manages Rackspace's Border Gateway Protocol routing tables, peering relationships, and ASN configuration.",
+      "inference_method": "name_match",
+      "assumption": "BGP routing tables stored on the edge router cluster management plane",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:47.202756Z",
+    "updated_at": "2026-02-27T22:58:47.202756Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "31c386a9-d22a-494a-a3d2-464f2d9361e9",
+    "relationship_type": "stores",
+    "source_id": "sys-008",
+    "target_id": "da-107",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "rationale": "Cloud Office DNS Zone and Domain Registration Store contains DNS zones for Cloud Office domains (emailsrvr.com, rackspace.com). sys-008 (Cloud DNS API) is the Rackspace DNS system that hosts and manages authoritative DNS zones for customer and Rackspace-owned domains.",
+      "inference_method": "name_match",
+      "assumption": "Cloud Office DNS zones are managed within the Cloud DNS API platform; domain registration may additionally use an external registrar",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:47.202781Z",
+    "updated_at": "2026-02-27T22:58:47.202781Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "362d4fce-9087-47bb-badc-38585f3ee585",
+    "relationship_type": "stores",
+    "source_id": "sys-024",
+    "target_id": "da-108",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "RackConnect Global Virtual Circuit Configuration Store is a direct name match for sys-024 (RackConnect Global MPLS Control Plane), which manages virtual circuit definitions, MPLS configurations, and network topology state for RackConnect Global.",
+      "inference_method": "name_match",
+      "assumption": "Virtual circuit configuration data stored in the RackConnect Global MPLS Control Plane management database",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:47.202804Z",
+    "updated_at": "2026-02-27T22:58:47.202805Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "bf6e3e4f-fff5-46c1-a274-a0b9caaf7052",
+    "relationship_type": "stores",
+    "source_id": "sys-088",
+    "target_id": "da-109",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "rationale": "Infrastructure Automation Toolbox Terraform State Store directly names Terraform state as its content. sys-088 (Terraform Enterprise) is the Terraform platform that manages and stores Terraform state files for infrastructure-as-code deployments across Rackspace multi-cloud environments.",
+      "inference_method": "name_match",
+      "assumption": "Terraform state stored in Terraform Enterprise backend (S3-compatible or internal state store)",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:58:47.202829Z",
+    "updated_at": "2026-02-27T22:58:47.202829Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ec369eb1-2fe7-470a-9fe2-459e59f731c2",
+    "relationship_type": "stores",
+    "source_id": "sys-041",
+    "target_id": "da-110",
+    "weight": 1.0,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "ObjectRocket Platform Metadata and Container Image Store directly matches sys-041 (ObjectRocket Container Registry), which stores container images and platform metadata for the ObjectRocket managed database services.",
+      "inference_method": "name_match",
+      "assumption": "Container images stored in ObjectRocket Container Registry; platform metadata stored in associated MongoDB/PostgreSQL database",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:21.853674Z",
+    "updated_at": "2026-02-27T22:59:21.853677Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "53f06c7f-e42c-49fb-9898-0ab9fa00ed41",
+    "relationship_type": "stores",
+    "source_id": "sys-047",
+    "target_id": "da-111",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Recursive DNS Query Log and Cache Store directly names the Rackspace caching DNS resolver fleet as its source system. sys-047 (Caching DNS Resolver Fleet) is the system that generates and stores recursive DNS query logs and cache entries.",
+      "inference_method": "name_match",
+      "assumption": "Query logs stored locally on the resolver fleet nodes and/or forwarded to the corporate syslog aggregation system",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:21.853746Z",
+    "updated_at": "2026-02-27T22:59:21.853746Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "1a5837c4-c6a3-49d9-9e80-646d4ded7d8e",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-112",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "HIPAA Business Associate Agreement and PHI Processing Registry contains compliance contracts and PHI processing records. sys-100 (ServiceNow ITSM Platform) is the primary compliance and contract management system at Rackspace for tracking BAAs, compliance obligations, and regulatory records.",
+      "inference_method": "description_match",
+      "assumption": "BAAs and PHI registry may also be stored in a dedicated contract management or GRC system not in the KG; ServiceNow is the most likely platform given its role as the primary compliance tracking tool",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:21.853775Z",
+    "updated_at": "2026-02-27T22:59:21.853775Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "a4e0c3f7-e542-4b3f-a575-80fe218570a0",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-113",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "DFARS CUI Compliance and CDI Assessment Data Store contains government compliance assessment records. sys-100 (ServiceNow ITSM Platform) serves as the GRC and compliance tracking platform at Rackspace for regulatory frameworks including FedRAMP and DFARS.",
+      "inference_method": "description_match",
+      "assumption": "DFARS compliance assessments may also reside in a dedicated FedRAMP compliance management system; ServiceNow is the nearest matching platform in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:21.853799Z",
+    "updated_at": "2026-02-27T22:59:21.853799Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "023ef9d1-d70c-4389-a6b2-326ed0a0d7ad",
+    "relationship_type": "stores",
+    "source_id": "sys-068",
+    "target_id": "da-114",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "ESG Sustainability and Carbon Emissions Data Repository contains environmental reporting data used for SEC ESG disclosures. sys-068 (Microsoft 365 Suite / SharePoint/OneDrive) is the enterprise document and data management platform most likely hosting ESG data at Rackspace.",
+      "inference_method": "description_match",
+      "assumption": "ESG data may also reside in a dedicated sustainability reporting platform (e.g., Watershed, Salesforce Net Zero Cloud); M365/SharePoint is the most probable internal repository in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:21.853821Z",
+    "updated_at": "2026-02-27T22:59:21.853821Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8e929071-c1e2-403a-92fe-1bb550937569",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-115",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "IRAP Assessment and CCSL Certification Evidence Store contains Australian government certification evidence. sys-100 (ServiceNow ITSM Platform) is the compliance evidence management system at Rackspace for regulatory certifications including FedRAMP, IRAP, and ISO 27001.",
+      "inference_method": "description_match",
+      "assumption": "IRAP evidence may be managed in a dedicated audit management system; ServiceNow is the closest matching compliance platform in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:21.853842Z",
+    "updated_at": "2026-02-27T22:59:21.853842Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "bf025c43-dd9c-4153-a3fb-f5279b612c04",
+    "relationship_type": "stores",
+    "source_id": "sys-068",
+    "target_id": "da-116",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "Corporate Restructuring and Transformation Program Data contains program management documents and data related to Rackspace's restructuring initiatives. sys-068 (Microsoft 365 Suite / SharePoint/Teams) is the corporate collaboration and document management platform used for program management at Rackspace.",
+      "inference_method": "description_match",
+      "assumption": "Transformation program data may also reside in project management tools (e.g., Jira, MS Project); SharePoint/M365 is the most probable primary document repository in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:21.853870Z",
+    "updated_at": "2026-02-27T22:59:21.853871Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8a6bcb2c-852f-456e-bc8e-dca09f330388",
+    "relationship_type": "stores",
+    "source_id": "sys-001",
+    "target_id": "da-117",
+    "weight": 1.0,
+    "confidence": 0.75,
+    "properties": {
+      "rationale": "Managed Data Warehouse and Analytics Pipeline Metadata Store contains metadata for customer-managed analytics workflows. sys-001 (Rackspace Customer Portal Fabric) is the platform that hosts managed services metadata and customer analytics pipeline configurations as part of the Fabric service delivery platform.",
+      "inference_method": "description_match",
+      "assumption": "Analytics pipeline metadata could alternatively reside in a dedicated data catalog or MLflow/Airflow system; Fabric is assigned as the primary managed services platform in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:21.853897Z",
+    "updated_at": "2026-02-27T22:59:21.853897Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "98bf3152-4604-4113-a7e4-91f16be29cd1",
+    "relationship_type": "stores",
+    "source_id": "sys-114",
+    "target_id": "da-118",
+    "weight": 1.0,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Rackspace Cyber Recovery Cloud Backup and IRE Configuration Store directly names 'Rackspace Cyber Recovery Cloud powered by Rubrik' as the platform. sys-114 (Rubrik Cyber Recovery Cloud) is the exact matching system storing immutable backup replicas, IRE configurations, and recovery playbooks.",
+      "inference_method": "name_match",
+      "assumption": "Data asset explicitly references Rubrik CDM and Recovery Orchestration Database as its format, directly matching sys-114",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:21.853918Z",
+    "updated_at": "2026-02-27T22:59:21.853918Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e46dd4f7-bec3-4834-be0f-b71201a850eb",
+    "relationship_type": "stores",
+    "source_id": "sys-068",
+    "target_id": "da-119",
+    "weight": 1.0,
+    "confidence": 0.68,
+    "properties": {
+      "rationale": "Technology Market Research and Industry Survey Data Repository contains analyst reports, market research data, and survey results. sys-068 (Microsoft 365 Suite / SharePoint/OneDrive) is the most likely internal repository for market research documents at Rackspace.",
+      "inference_method": "description_match",
+      "assumption": "Market research data may be stored in dedicated research platforms (e.g., Gartner portal, IDC access) or shared drives; M365/SharePoint is assigned as the internal document repository proxy in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:21.853938Z",
+    "updated_at": "2026-02-27T22:59:21.853938Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "bbc47bdc-ff55-41fc-ac61-f0f0a32f3126",
+    "relationship_type": "stores",
+    "source_id": "sys-100",
+    "target_id": "da-120",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "Anti-Bribery and Trade Sanctions Compliance Records contain legal compliance records for FCPA, UK Bribery Act, and trade sanctions. sys-100 (ServiceNow ITSM Platform) is the compliance tracking and GRC platform at Rackspace most likely storing these compliance records.",
+      "inference_method": "description_match",
+      "assumption": "Anti-bribery and sanctions records may also reside in a dedicated compliance platform (e.g., NAVEX EthicsPoint, SAP GRC); ServiceNow is the nearest matching system in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:40.062007Z",
+    "updated_at": "2026-02-27T22:59:40.062009Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6d8d8fe4-9fb8-4a62-ae8e-cf932ee12910",
+    "relationship_type": "stores",
+    "source_id": "sys-061",
+    "target_id": "da-121",
+    "weight": 1.0,
+    "confidence": 0.78,
+    "properties": {
+      "rationale": "Churn Risk Prediction Model Data Store contains ML model training data, feature stores, and prediction outputs for customer churn risk. sys-061 (Rackspace AI Business Platform) is the AI/ML platform most likely hosting the churn prediction model data and associated feature engineering pipelines.",
+      "inference_method": "description_match",
+      "assumption": "Churn risk predictions may also be surfaced through sys-066 (Salesforce CRM) as the customer-facing system; sys-061 is assigned as the AI model training and serving platform",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:40.062078Z",
+    "updated_at": "2026-02-27T22:59:40.062079Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "adf35386-b4d8-40ca-b0d8-14f84de2e664",
+    "relationship_type": "stores",
+    "source_id": "sys-107",
+    "target_id": "da-122",
+    "weight": 1.0,
+    "confidence": 0.72,
+    "properties": {
+      "rationale": "Consolidated Enterprise Data Warehouse contains integrated financial, operational, and customer data consolidated from 70+ data warehouses (per Rackspace internal documentation). sys-107 (Billing & Revenue Management System) is the primary financial data platform and most likely foundation for the consolidated enterprise data warehouse.",
+      "inference_method": "description_match",
+      "assumption": "The consolidated EDW may be a separate Snowflake/Redshift/BigQuery instance not independently identified in the KG; sys-107 is assigned as the nearest financial data platform proxy",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-27T22:59:40.062109Z",
+    "updated_at": "2026-02-27T22:59:40.062110Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "92ebbfbd-c803-4478-ada7-a147f3dd7193",
+    "relationship_type": "stores",
+    "source_id": "sys-066",
+    "target_id": "da-123",
+    "weight": 1.0,
+    "confidence": 0.82,
+    "properties": {
+      "rationale": "Customer Success Analytics Dashboard Data contains customer health scores, engagement metrics, and NPS data surfaced to customer success teams. sys-066 (Salesforce CRM Platform) is the system of record for customer relationship data and the most likely host for customer success analytics dashboards at Rackspace.",
+      "inference_method": "description_match",
+      "assumption": "Dashboard data may also be stored in sys-061 (RAISE AI platform) or a dedicated BI tool (Tableau, Power BI); Salesforce is assigned as the primary customer success platform in the KG",
+      "attestation": "KG-Analysis-Inferred",
+      "inferred_date": "2026-02-27",
+      "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:47:24.305964Z",
+    "updated_at": "2026-02-28T17:47:24.305964Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "275f0555-0bb3-4f7c-aecd-a0bb3c27cfb6",
+    "relationship_type": "stores",
+    "source_id": "sys-061",
+    "target_id": "14f103f1-13be-49b3-a4da-150c1c94dfa8",
+    "weight": 1.0,
+    "confidence": 0.85,
+    "properties": {
+      "description": "AI Business Platform stores ICE impact calculation and scoring data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:49:57.496658Z",
+    "updated_at": "2026-02-28T17:49:57.496659Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "54da0bf2-284b-4a4e-bf6f-70377a8d6448",
+    "relationship_type": "stores",
+    "source_id": "sys-064",
+    "target_id": "e81dbc6d-fe4e-4009-af57-979491bda9c1",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Atlassian Confluence stores enterprise knowledge base content"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589767Z",
+    "updated_at": "2026-02-28T17:42:46.589767Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c41ec3a9-7b1f-43d3-9e10-56ab841307c5",
+    "relationship_type": "stores",
+    "source_id": "sys-070",
+    "target_id": "aa30ff88-bfe7-43b4-b565-4e9947aae6da",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "CrowdStrike Falcon stores EDR telemetry data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589787Z",
+    "updated_at": "2026-02-28T17:42:46.589787Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e2befc84-9362-46d8-8e27-a3e350602151",
+    "relationship_type": "stores",
+    "source_id": "sys-077",
+    "target_id": "bf0caba3-bfb8-4eaf-a021-578d5f379874",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Microsoft Defender VMDR stores vulnerability findings"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589821Z",
+    "updated_at": "2026-02-28T17:42:46.589822Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "9c5d1c76-8714-4211-a926-473b178ff098",
+    "relationship_type": "stores",
+    "source_id": "sys-081",
+    "target_id": "cf8bba21-7cf4-40e8-abb4-ee57685c4ee7",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Microsoft Purview DLP stores policy and violation data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:36:40.292787Z",
+    "updated_at": "2026-02-28T17:36:40.292787Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8e08f119-d6ee-446f-ae3e-0173d0e1ed00",
+    "relationship_type": "stores",
+    "source_id": "sys-092",
+    "target_id": "59d5d9df-4f2d-4a23-ae68-1940c6c37f45",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "Harbor Container Registry stores all container images and metadata"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589644Z",
+    "updated_at": "2026-02-28T17:42:46.589646Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "23f996d1-4f50-4fcc-964e-9e2af371adc5",
+    "relationship_type": "stores",
+    "source_id": "sys-095",
+    "target_id": "b81cde4c-7175-4419-a026-e24e7db87ce7",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Prometheus stores time-series metrics data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589727Z",
+    "updated_at": "2026-02-28T17:42:46.589728Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "088304b7-e629-434c-9663-2bc5c2d63363",
+    "relationship_type": "stores",
+    "source_id": "sys-096",
+    "target_id": "325bfbb1-49aa-4a20-ac80-39251ba294f4",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Grafana stores dashboard and alert state data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:29:29.340077Z",
+    "updated_at": "2026-02-28T17:29:29.340080Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "bebd70cc-695c-4202-a2ce-466f578af391",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "c18e5bc8-4bfb-4522-b474-4505c27b1781",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "MariaDB Galera hosts Keystone identity database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:29:29.340190Z",
+    "updated_at": "2026-02-28T17:29:29.340190Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2efeb8dc-06d4-440b-b853-8f0985d5aef8",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "aa2d5a79-0f31-4081-9fb7-34c69c00d199",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "MariaDB Galera hosts Nova compute database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:29:29.340239Z",
+    "updated_at": "2026-02-28T17:29:29.340239Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "4cdcce5e-e46d-4cab-88f2-96f2ce72cb0e",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "ae7bee31-cd82-4051-8484-79842f5750d9",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "MariaDB Galera hosts Neutron network database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:30:08.803044Z",
+    "updated_at": "2026-02-28T17:30:08.803051Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "4a75eb44-52a7-4b7d-9087-b643089cce3c",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "3f2590df-2086-4dd6-acbe-33ae75a8cfa6",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "MariaDB Galera hosts Cinder block storage database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:30:08.803199Z",
+    "updated_at": "2026-02-28T17:30:08.803200Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "59832aec-6682-4d0f-935d-b7d2c8873b11",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "1e34c71c-92a7-4c0f-96db-cbca4b88b247",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "MariaDB Galera hosts Glance image registry database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:30:08.803247Z",
+    "updated_at": "2026-02-28T17:30:08.803248Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7f7524c0-c4eb-46f3-be96-57e45bbacdfc",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "3bb6918b-2d69-4ebd-a588-51f1c1c9a56a",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "MariaDB Galera hosts Barbican secrets database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:30:41.079291Z",
+    "updated_at": "2026-02-28T17:30:41.079294Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "06429502-2c45-4344-8354-a7049b3b404e",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "1984ad21-9407-4ddd-8b32-36cf7f1c52ce",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "MariaDB Galera hosts Heat orchestration database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:30:41.079382Z",
+    "updated_at": "2026-02-28T17:30:41.079382Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "292ed21e-248d-40b3-aa3a-b2bff9c49196",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "2395cf41-e30e-41a1-a2df-3ea8c8a87ab9",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "MariaDB Galera hosts Octavia LB database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:30:41.079423Z",
+    "updated_at": "2026-02-28T17:30:41.079423Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "336f7dca-eef3-475d-89bc-23066f390e2b",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "489d9849-00a2-460b-bb92-f168bbd3d915",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "MariaDB Galera hosts Ironic bare metal database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:33:30.690700Z",
+    "updated_at": "2026-02-28T17:33:30.690702Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ef5b7493-5f67-4877-a6e7-9d3a7b34dfa7",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "bee58a84-5fd8-4cc4-9369-0f299d1e8754",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "MariaDB Galera hosts OpenStack Placement service database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:33:30.690845Z",
+    "updated_at": "2026-02-28T17:33:30.690846Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "143b6c76-9391-4e6b-81c3-c6e963f48183",
+    "relationship_type": "stores",
+    "source_id": "sys-141",
+    "target_id": "5fb1787a-a8e4-4905-81f1-5bfa1339416e",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "MariaDB Galera hosts OpenStack Skyline dashboard database"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:33:54.225165Z",
+    "updated_at": "2026-02-28T17:33:54.225172Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "49285e09-3b69-44f0-8539-e85089f7c127",
+    "relationship_type": "stores",
+    "source_id": "sys-142",
+    "target_id": "b193a147-033f-49a9-9ee4-6e75ed526c5f",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "RabbitMQ cluster hosts all OpenStack inter-service AMQP message queues"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:47:24.305823Z",
+    "updated_at": "2026-02-28T17:47:24.305826Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c00d8d50-2ac7-40b6-844e-9a3b7973d848",
+    "relationship_type": "stores",
+    "source_id": "sys-166",
+    "target_id": "4b1abd59-1ff6-4ac7-b292-b8fae933f3cf",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "AI Launchpad stores customer training datasets"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:47:24.305891Z",
+    "updated_at": "2026-02-28T17:47:24.305891Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "4ea11c9e-e0a8-494d-921a-d21456acb8f1",
+    "relationship_type": "stores",
+    "source_id": "sys-166",
+    "target_id": "b10cdd5b-4c5b-4d70-9076-e6a4812cbac1",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "AI Launchpad stores fine-tuned model artifacts"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:47:24.305931Z",
+    "updated_at": "2026-02-28T17:47:24.305931Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6b538d1e-19e3-429c-a1ec-5a380b90e9ed",
+    "relationship_type": "stores",
+    "source_id": "sys-166",
+    "target_id": "385c6745-312e-492b-915d-402c51e45efd",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "description": "AI Launchpad healthcare vertical stores HIPAA-regulated clinical datasets"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:47:24.305947Z",
+    "updated_at": "2026-02-28T17:47:24.305947Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "b51c87b6-39bc-4c9b-ae59-dfe02608eefe",
+    "relationship_type": "stores",
+    "source_id": "sys-170",
+    "target_id": "a64dc925-069e-460b-8569-2485dbbb9079",
+    "weight": 1.0,
+    "confidence": 0.9,
+    "properties": {
+      "description": "RITA stores responsible AI assessment and governance data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:47:24.305912Z",
+    "updated_at": "2026-02-28T17:47:24.305912Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "29f8438e-b1f5-45cb-af0f-ba2a1c961d41",
+    "relationship_type": "stores",
+    "source_id": "sys-180",
+    "target_id": "c75b22d3-9966-47e0-aec6-76b8f7e4de9d",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "AI Anywhere Private Cloud stores customer GPU workload data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589749Z",
+    "updated_at": "2026-02-28T17:42:46.589749Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "a8b3d01e-00a0-4e71-8e78-4988cd1cd1ce",
+    "relationship_type": "stores",
+    "source_id": "sys-181",
+    "target_id": "bbd79b19-31b0-42fc-b220-4ff2ae59c496",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Microsoft Sentinel stores SIEM data lake"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:33:30.690907Z",
+    "updated_at": "2026-02-28T17:33:30.690907Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "65780af5-e24a-47af-b755-f69e8ce2f211",
+    "relationship_type": "stores",
+    "source_id": "sys-183",
+    "target_id": "6df226e2-0940-42d6-ac9b-4d02c7e66c08",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "Memcached cluster stores Keystone token and session cache"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:36:40.292652Z",
+    "updated_at": "2026-02-28T17:36:40.292656Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e51fdeda-c1f5-407f-b988-662b4f35b4d8",
+    "relationship_type": "stores",
+    "source_id": "sys-185",
+    "target_id": "f7c5965f-325f-421c-98f4-210a79a92ece",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "Longhorn distributed storage manages all Kubernetes persistent volumes"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:36:40.292767Z",
+    "updated_at": "2026-02-28T17:36:40.292768Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2142d22d-fb49-47bc-9956-4fe92aea3747",
+    "relationship_type": "stores",
+    "source_id": "sys-186",
+    "target_id": "98a221b9-8930-4402-8210-a933e9255e7f",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "cert-manager manages TLS certificates stored as K8s Secrets"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589806Z",
+    "updated_at": "2026-02-28T17:42:46.589806Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "40fac3cf-c758-4362-be01-9f70410cdbee",
+    "relationship_type": "stores",
+    "source_id": "sys-187",
+    "target_id": "c19f3c7e-d008-429c-8d79-e8e61f727d03",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Prometheus AlertManager stores alert state data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:36:40.292733Z",
+    "updated_at": "2026-02-28T17:36:40.292734Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "905e35f7-6025-4833-b30a-8b3ec69631a0",
+    "relationship_type": "stores",
+    "source_id": "52689b4c-1e13-4305-bd64-0e86234f4009",
+    "target_id": "4e375ae8-6991-4ad1-bda2-c2d2d6406f16",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "Vault Enterprise stores and manages all secrets, PKI, and encryption keys"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:49:57.496636Z",
+    "updated_at": "2026-02-28T17:49:57.496637Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7f8216e2-8802-4f01-b117-89fc37d17c9e",
+    "relationship_type": "stores",
+    "source_id": "1731a51c-58b1-43d2-b3bd-8d7884cd10f9",
+    "target_id": "ff45a6ab-5064-4db9-b36f-2bdbf7b140c7",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "PagerDuty Operations Cloud stores incident and on-call operations data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:49:57.496578Z",
+    "updated_at": "2026-02-28T17:49:57.496580Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ff38d841-bf40-48a8-b54e-8badc109281e",
+    "relationship_type": "stores",
+    "source_id": "0a67c1bc-16e9-4de9-b758-e4d814d94c86",
+    "target_id": "a0d1ad38-5045-480c-b4be-35e306cbec7b",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Snowflake Data Cloud stores enterprise analytics data warehouse"
+    }
   }
 ]
