@@ -97,7 +97,7 @@ That matters for two reasons:
 
 **For executives and boards:** The cost of understanding your own enterprise just dropped by an order of magnitude. A rapid evaluation like this does not replace deep diligence with data room access, but it tells you whether the deep diligence is worth pursuing — and exactly where to focus it.
 
-**For the profession:** If a CISO with AI tools can produce this level of structural analysis from public sources in a fraction of the traditional timeline, then the advisory model that charges by the hour for opaque work product is on borrowed time. The barrier to enterprise intelligence should be expertise and rigor, not budget.
+**For the profession:** If a CDAIO/CISO with AI tools can produce this level of structural analysis from public sources in a fraction of the traditional timeline, then the advisory model that charges by the hour for opaque work product is on borrowed time. The barrier to enterprise intelligence should be expertise and rigor, not budget.
 
 ## Program & Attribution
 
