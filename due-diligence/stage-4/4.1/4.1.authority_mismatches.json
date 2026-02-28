@@ -1,0 +1,115 @@
+{
+  "sub_stage": "4.1",
+  "document_metadata": {
+    "title": "Authority/Accountability Mismatches - Rackspace Technology, Inc.",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09"
+  },
+  "authority_mismatches": [
+    {
+      "decision_type": "Business Unit Performance & Strategic Direction",
+      "where_authority_differs_from_accountability": "Business Unit Presidents (Private Cloud, Public Cloud) have title suggesting P&L accountability, but lack decision authority over pricing, resource allocation, or cross-functional issue resolution. Evidence: Private Cloud President Lillie departed Jan 2025, CEO assumed role directly rather than replacing—indicates role lacked sufficient authority to be viable. Public Cloud President not named in public disclosures—suggests low organizational authority.",
+      "execution_drag_created": "BU Presidents cannot resolve cross-functional conflicts (sales vs delivery, profitability vs growth) within their units. Issues escalate to CEO, creating bottleneck. BU strategy subordinate to corporate strategy with no evidence of autonomous BU decision-making. Customer escalations within BU cannot be resolved at BU level (per customer complaints about inability to reach senior management). Result: BU structure creates reporting clarity but not decision autonomy—CEO must adjudicate BU-level issues, limiting scalability.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Brian Lillie departure Jan 2025 (Private Cloud President)",
+        "CEO Amar Maletira assumed interim Private Cloud leadership (no replacement appointed)",
+        "Public Cloud President not identified in earnings calls or SEC filings",
+        "Customer complaints: cannot escalate to senior management within BU",
+        "CEO statements in earnings calls articulate strategy for both BUs—no BU President strategy ownership"
+      ]
+    },
+    {
+      "decision_type": "Sales Force Deal-Making vs Delivery Profitability",
+      "where_authority_differs_from_accountability": "Sales organization (400+ quota-bearing reps) has authority to negotiate and book deals, but delivery organization held accountable for profitability and customer satisfaction without authority to veto unprofitable deals pre-sale. Sales organization 'refreshed' Q3 2024—indicates prior sales team booked deals without accountability for delivery outcomes.",
+      "execution_drag_created": "Sales books deals, delivery cannot execute profitably, customers experience execution failures (per BBB/Trustpilot complaints), margin erodes (Private Cloud -13%, Public Cloud -3% YoY), CEO forced to announce 'walk away from unprofitable deals' policy Q4 2024. Authority (sales booking) separated from accountability (delivery profitability)—creates systematic margin erosion and customer churn. Sales incentives presumably weighted to bookings, not profitability or retention, creating unintended behavior.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Q4 2024 earnings: CEO 'walk away from unprofitable deals' statement",
+        "Q3 2024: sales organization refresh",
+        "Margin decline: Private Cloud -13% YoY, Public Cloud -3% YoY",
+        "Customer complaints: execution failures (BBB, Trustpilot)",
+        "400+ quota-bearing reps (SEC filings)"
+      ]
+    },
+    {
+      "decision_type": "Customer Support Issue Resolution",
+      "where_authority_differs_from_accountability": "Frontline support engineers and ticket handlers have accountability for resolving customer issues (measured by ticket closure, SLAs) but lack authority to make cross-functional decisions, allocate resources, or escalate to empowered decision-maker. Customer complaints indicate 'multiple tickets, dozens of engineers, no ownership'—support staff accountable but without authority.",
+      "execution_drag_created": "Customer issues that require cross-functional coordination (e.g., billing dispute + service quality + technical fix) cannot be resolved by support staff. Issues escalate through multiple tiers without reaching decision-maker with authority to resolve. Customers report 'inability to escalate to senior management.' Result: tickets remain open indefinitely, customers churn, SLA breaches likely. Support staff blamed for outcomes they lack authority to control.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "BBB complaints: 'multiple tickets, dozens of engineers, re-explanation required, no ownership'",
+        "Trustpilot: 'horrible customer support, nobody responds timely'",
+        "Gartner Peer Insights: conflicting advice across engineers, no single point of accountability",
+        "Customer statement: 'cannot escalate to senior management' (BBB)",
+        "No VP Customer Support or Chief Customer Officer disclosed"
+      ]
+    },
+    {
+      "decision_type": "Technology Investment vs Business Outcomes",
+      "where_authority_differs_from_accountability": "CEO and President of AI/Technology (Srini Koushik) accountable for technology strategy and competitive positioning, but lack authority to allocate capital required for execution (capital allocation controlled by CFO/Board under debt covenant constraints). AI strategy articulated Q3 2024 but execution capital-constrained.",
+      "execution_drag_created": "Technology leaders can articulate strategy but cannot fund execution at competitive pace. Hyperscalers (AWS, Azure, Google) and well-capitalized competitors invest in AI infrastructure, GPUs, data centers—Rackspace cannot match pace due to debt service requirements ($1.3B First Lien). Security incidents (ransomware 2022, zero-day 2024) force reactive spending, crowding out strategic technology investment. Authority (strategy articulation) separated from accountability (competitive outcomes)—technology leaders accountable for innovation without capital to execute.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Q3 2024: AI strategy with 50 customers, 250 opportunities, but capital allocation unclear",
+        "Debt service: $1.3B First Lien constrains free cash flow",
+        "Security incidents: Dec 2022 ransomware, Sept 2024 zero-day—forced reactive spending",
+        "Q4 2024: customer-funded CapEx model mentioned—indicates Rackspace cannot independently invest",
+        "Competitive pressure from hyperscalers (AWS, Azure, Google) with superior capital access"
+      ]
+    },
+    {
+      "decision_type": "Risk Management vs Operational Execution",
+      "where_authority_differs_from_accountability": "Operational teams (delivery, support, engineering) accountable for uptime, security, compliance, but lack authority to make risk acceptance decisions or invest in risk mitigation. Risk decisions escalate to CEO or CLO, but operational teams cannot wait for escalation during incidents. Result: operational teams make de facto risk decisions without formal authority.",
+      "execution_drag_created": "Security incidents (ransomware Dec 2022, zero-day Sept 2024) handled reactively without evidence of proactive risk governance enabling prevention or rapid response. Operational teams blamed for incidents but lack authority to invest in preventive controls (capital constrained) or make risk acceptance decisions. Customer complaints about security incidents receiving 'no apology, compensation, or solution'—indicates risk response authority unclear. Authority (risk acceptance) separated from accountability (operational outcomes).",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Dec 2022 ransomware attack on Hosted Exchange",
+        "Sept 2024 zero-day exploit (ScienceLogic EM7)",
+        "Customer complaint: 'no apology, compensation, or solution' (BBB)",
+        "No CRO or enterprise risk committee disclosed",
+        "Reactive spending on security after incidents (inference from incident timing and remediation)"
+      ]
+    },
+    {
+      "decision_type": "Public Shareholders vs Apollo Control",
+      "where_authority_differs_from_accountability": "Public shareholders (43-47% ownership) have economic accountability (share price exposure, financial outcomes) but zero decision authority. Apollo (57% ownership) has absolute decision authority through voting control but misaligned economic incentives (stranded capital: paid $4.3B 2016, current stake worth ~$68M at $120M market cap).",
+      "execution_drag_created": "Strategic decisions (go-private review 2022-2023, CEO appointments, operational turnaround vs growth strategy) made by Apollo to optimize Apollo's position (capital recovery, debt service), not public shareholders' interests (growth, market cap appreciation). Public shareholders cannot override Apollo decisions despite bearing 43-47% of economic consequences. Board independent directors consultative only—cannot override Apollo's 57% voting control. Authority (Apollo) separated from full economic accountability (public shareholders bear 43-47% of outcomes).",
+      "claim_type": "FACT + INFERENCE",
+      "evidence_sources": [
+        "Apollo 57% ownership (SEC filings)",
+        "Public shareholders 43-47% (calculated from Apollo stake)",
+        "Apollo acquisition 2016 at $4.3B valuation (Wikipedia, SEC filings)",
+        "Current market cap ~$120M, Apollo stake value ~$68M (Yahoo Finance, calculation)",
+        "Strategic review 2022-2023 abandoned (Apollo-controlled board decision)",
+        "Independent Chairman Jeffrey Benjamin appointed Jan 2025 but Apollo maintains board representation"
+      ]
+    },
+    {
+      "decision_type": "Geographic Business Unit Isolation vs Operational Efficiency",
+      "where_authority_differs_from_accountability": "Per Stage 1 analysis: Rackspace Government Solutions (FedRAMP), UK Sovereign Services (isolated infrastructure), China entity (Cybersecurity Law compliance) are STRUCTURALLY REQUIRED to remain separate. However, CFO/CEO accountable for cost structure optimization and operational efficiency—goals that require consolidation PROHIBITED by regulatory constraints.",
+      "execution_drag_created": "Cost structure persistently high due to multi-jurisdictional fragmentation: separate infrastructure, support teams, compliance functions for US Government, UK Sovereign, China, commercial segments. Repeated layoffs (2021, 2023) address symptoms but cannot resolve root cause—regulatory constraints prevent entity consolidation. CFO/CEO accountable for cost efficiency but lack authority to consolidate (regulatory veto per Stage 1). Authority (consolidation decisions) vetoed by external regulators, accountability (cost targets) remains with management.",
+      "claim_type": "STRUCTURAL_INFERENCE",
+      "evidence_sources": [
+        "Stage 1 analysis: FedRAMP authorizations invalidated on change of control",
+        "Stage 1 analysis: UK Sovereign Services architecturally isolated by design",
+        "Stage 1 analysis: China Cybersecurity Law requires in-country entity",
+        "Repeated layoffs: 2021 (10% workforce), 2023 (275 employees, 4%)",
+        "Cost structure persistently high despite layoffs (inference from recurring restructuring)"
+      ]
+    },
+    {
+      "decision_type": "CEO Strategic Authority vs Apollo/Debt Constraints",
+      "where_authority_differs_from_accountability": "CEO formally owns operational strategy, accountable for business performance and competitive positioning, but lacks authority over capital structure (debt holders veto via covenants), strategic direction (Apollo veto via 57% control), or major capital allocation (Board/Apollo approval required). CEO accountable for outcomes constrained by decisions made above CEO level.",
+      "execution_drag_created": "CEO can articulate strategy (services-led, vertical focus, AI positioning) but cannot fund strategy without Apollo/debt holder approval. CEO replaced when strategic review failed (Jones exit 2022)—indicates accountability without authority over strategic options. Three CEOs in three years suggests role difficulty: accountability for turnaround under constraints (Apollo's stranded capital, debt covenants, competitive pressure, regulatory fragmentation) without authority to address structural constraints. Authority (strategic/capital decisions) held by Apollo/debt holders, accountability (business performance) held by CEO.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Three CEOs in three years: Jones (to Sept 2022), Maletira (Sept 2022-Sept 2025), Kandiah (Sept 2025-present)",
+        "Strategic review failure 2022-2023, CEO change during review",
+        "Apollo 57% control (strategic veto)",
+        "Debt covenants: $1.3B First Lien with negative covenants, springing leverage ratio (financial veto)",
+        "CEO statements in earnings calls articulate strategy, but capital allocation unclear"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "redo_plan_if_failed": {
+    "gate_decision_actual": "PASS",
+    "redo_required": false,
+    "rationale": "All 5 exit criteria met with substantial margin (10+ entities vs 5 required, 8+ control points vs 3 required, 6+ historical constraints vs 2 required, multiple contracts blocking change vs 1 required, 10+ false assumptions vs 1 required). Stage 1 Legal-Operational Truth Map is complete, litigation-survivable, and sufficient for Investment Committee presentation. No material gaps in structural understanding. Hypothesis discipline strong. Uncertainty appropriately preserved. OUTPUT IS ACCEPTABLE - proceed to Stage 2.",
+    "hypothetical_failure_scenarios": [
+      {
+        "failure_scenario": "Exit Criterion 1 NOT MET: Fewer than 5 structurally relevant entities identified",
+        "what_would_trigger": "If analysis found only parent holding company plus 1-2 operating subsidiaries with no material functional segregation, jurisdictional separation, or debt isolation.",
+        "redo_plan": {
+          "sub_stages_to_redo": ["1.1"],
+          "additional_research_required": [
+            "Exhaustive subsidiary search: SEC Exhibit 21 from all recent 10-Ks, state/international corporate registries, credit agreement guarantor schedules, UCC financing statements, litigation defendant names across all jurisdictions",
+            "Functional analysis: Map business units to legal entities, identify whether operations consolidated in single entity or distributed",
+            "Historical M&A: Search for acquired entities not yet merged, carved-out divisions held separately",
+            "Regulatory entities: Search for entities holding specific licenses or authorizations (even if none found, document search)"
+          ],
+          "acceptance_criteria": "Either: (A) Find 5+ entities through expanded search, OR (B) Document exhaustive search attempt and conclude company genuinely operates as single-entity structure. If (B), acknowledge lower structural complexity but proceed - single-entity structure is acceptable finding if evidence-supported."
+        }
+      },
+      {
+        "failure_scenario": "Exit Criterion 2 NOT MET: Fewer than 3 control/veto points surfaced",
+        "what_would_trigger": "If analysis found no meaningful debt covenants, no concentrated ownership, no contractual restrictions on corporate actions - suggesting company has unfettered strategic flexibility.",
+        "redo_plan": {
+          "sub_stages_to_redo": ["1.1", "1.2"],
+          "additional_research_required": [
+            "Deep dive on debt agreements: Review full credit agreement for negative covenants, not just press release summary. Search for additional debt tranches (bonds, second lien, subordinated notes).",
+            "Ownership analysis: Search 13D/13G filings, proxy statements, insider transaction reports to identify all >5% beneficial owners and their board representation",
+            "Customer contract master agreements: Search for change-of-control consent requirements, termination for convenience rights in enterprise MSP contracts",
+            "Vendor/partner agreements: Identify critical suppliers/partners (AWS, Microsoft, Google) and search for termination provisions upon ownership change",
+            "Real estate: Review data center leases for assignment restrictions requiring landlord consent"
+          ],
+          "acceptance_criteria": "Either: (A) Find 3+ control/veto points through expanded research, OR (B) Document comprehensive search and conclude company has unusual strategic flexibility (rare but possible for unlevered, widely-held public companies). If (B), acknowledge finding and proceed - lack of constraints is acceptable if evidence-supported."
+        }
+      },
+      {
+        "failure_scenario": "Exit Criterion 3 NOT MET: Fewer than 2 historical decisions creating path dependencies",
+        "what_would_trigger": "If company is newly formed with no legacy decisions constraining current strategy - e.g., recent spin-off, new venture, no acquisition history.",
+        "redo_plan": {
+          "sub_stages_to_redo": ["1.3"],
+          "additional_research_required": [
+            "Company history research: Founding date, major capital events (IPOs, LBOs, recapitalizations), M&A history (acquisitions and divestitures), strategic pivots (product launches/discontinuations, market entries/exits)",
+            "Capital structure evolution: Trace debt levels over time, identify when leverage was added and why (LBO, acquisition financing, dividend recap)",
+            "Operational decisions with lock-in: Product platform choices (AWS vs Azure vs on-prem), geographic expansion creating jurisdictional presence, workforce decisions (unionization, offshore vs onshore), infrastructure investments (data centers built/leased)",
+            "Crisis responses: Search for ransomware/security incidents, regulatory enforcement actions, customer losses that forced strategic changes"
+          ],
+          "acceptance_criteria": "Either: (A) Find 2+ path dependencies through historical analysis, OR (B) Document that company is genuinely new with minimal history (formed within 2-3 years, no major capital events or strategic pivots yet). If (B), acknowledge limited history and proceed - clean-sheet companies have fewer constraints, which is acceptable finding."
+        }
+      },
+      {
+        "failure_scenario": "Exit Criterion 4 NOT MET: No contracts or licenses materially blocking change",
+        "what_would_trigger": "If company has no debt covenants, no regulatory licenses requiring approval for ownership changes, no customer contracts with change-of-control provisions, no vendor agreements with termination rights, no real estate restrictions.",
+        "redo_plan": {
+          "sub_stages_to_redo": ["1.4", "1.5"],
+          "additional_research_required": [
+            "Contractual architecture deep dive: Review ALL material agreements filed as SEC exhibits, not just credit agreement. Search for: customer master service agreements, vendor/partner contracts, real estate leases, IP licenses, insurance policies (change-of-control exclusions?), employment agreements (change-of-control severance)",
+            "Regulatory licensing exhaustive search: Even if company in 'unregulated' industry, search for: state business licenses, professional certifications, industry association memberships with termination provisions, data privacy certifications (GDPR representative, Privacy Shield), export control licenses, government contractor registrations",
+            "Change-of-control clause database: Use contract intelligence tools to extract all change-of-control provisions from material agreements",
+            "Jurisdictional compliance: For each country of operation, research whether foreign investment restrictions apply (CFIUS in U.S., National Security Investment Act in UK, similar regimes in China, EU, Australia)"
+          ],
+          "acceptance_criteria": "Either: (A) Find 1+ material blocking contract/license through expanded search, OR (B) Document exhaustive search and conclude company has unusual contractual flexibility. If (B), validate finding seems anomalous (most leveraged companies have change-of-control provisions) and conduct second-pass review before accepting."
+        }
+      },
+      {
+        "failure_scenario": "Exit Criterion 5 NOT MET: No false flexibility assumptions invalidated",
+        "what_would_trigger": "If analysis found no conventional wisdom or common assumptions about target's flexibility that are contradicted by evidence - suggesting either target is genuinely flexible or analysis did not critically examine assumptions.",
+        "redo_plan": {
+          "sub_stages_to_redo": ["1.1", "1.5"],
+          "additional_research_required": [
+            "Assumption elicitation: Interview deal team members to document their initial assumptions about target (e.g., 'cloud business can serve customers from anywhere', 'entities can be merged post-close', 'certifications transfer automatically', 'operations can be offshored for cost savings')",
+            "Industry benchmark comparison: How do peer companies structure operations? If target has multi-entity structure, do peers have consolidated entities? If so, what prevents target from consolidating?",
+            "Post-merger integration planning: Develop preliminary integration plan assuming target can be fully integrated with acquirer. Identify specific legal, regulatory, contractual barriers preventing each integration step.",
+            "Jurisdictional mobility testing: For each major operation (data centers, support teams, customer-facing functions), ask: 'Can this be relocated to different jurisdiction? If not, why not?' Document constraints.",
+            "Certification/authorization transferability: For each compliance certification, authorization, or license, research transfer requirements. Identify which are entity-specific vs transferable."
+          ],
+          "acceptance_criteria": "Either: (A) Find 1+ false assumption through critical examination, OR (B) Conclude target is genuinely flexible with few operational constraints (rare but possible). If (B), validate this is intentional design (e.g., asset-light business model, no long-term commitments, platform-agnostic technology) and document positive finding - flexibility is valuable."
+        }
+      }
+    ],
+    "general_redo_methodology_if_gate_fails": {
+      "step_1_root_cause": "Identify whether failure is due to: (A) Insufficient research - relevant information exists but was not found, OR (B) Genuine absence - criterion truly not met by target company structure.",
+      "step_2_expanded_search": "If (A) insufficient research: Deploy expanded search strategy targeting information gaps. Use additional data sources: paid databases (Capital IQ, Bloomberg, industry research firms), FOIA/public records requests, deeper SEC filing archaeology, industry expert interviews, peer company benchmarking.",
+      "step_3_alternative_framing": "If (B) genuine absence: Re-examine whether criterion absence invalidates Stage 1 purpose. Example: If company has <5 entities but analysis still reveals meaningful structural understanding, proceed with caveat that entity complexity is low. Stage 1 purpose is to map legal-operational reality, not to find predetermined level of complexity.",
+      "step_4_hypothesis_revision": "Update hypothesis framework to reflect findings. If initial hypothesis (e.g., 'target has multi-tiered entity structure') is disconfirmed, this is VALUABLE FINDING not failure. Revise to 'target operates as single consolidated entity with [specific characteristics]'.",
+      "step_5_stakeholder_communication": "If gate decision changes to FAIL after redo: Communicate to Investment Committee that target has lower structural complexity than typical leveraged company, explain implications (less fragmentation may mean easier integration, OR may mean less sophisticated governance creating hidden risks), recommend whether to proceed to Stage 2 despite criterion failures."
+    },
+    "actual_status_no_redo_required": {
+      "all_criteria_met": true,
+      "margin_of_safety": "SUBSTANTIAL - all 5 criteria exceeded minimum thresholds, multiple independent lines of evidence support each finding",
+      "output_quality": "LITIGATION-SURVIVABLE - hypothesis discipline strong, uncertainty preserved, evidence hierarchy maintained, disconfirming searches conducted",
+      "proceed_to_stage_2": "YES - Stage 1 provides sufficient foundation for Investment Committee decision on whether to continue diligence. Next phase (Stage 2) will address: business model sustainability, competitive positioning, financial analysis, operational assessment, technology stack evaluation, management quality, customer concentration deep dive."
+    }
+  }
+}

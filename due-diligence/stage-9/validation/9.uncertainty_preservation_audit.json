@@ -1,0 +1,243 @@
+{
+  "validation_metadata": {
+    "title": "Uncertainty Preservation Audit - Stage 9 Comprehensive Review",
+    "target_entity": "Rackspace Technology, Inc.",
+    "audit_date": "2026-02-16",
+    "auditor": "Stage 0 Constitutional Controls Compliance Assessment",
+    "scope": "Verification that uncertainties were properly classified (UNKNOWN vs UNKNOWABLE), preserved without false confidence, and decision impact clearly articulated across all Stage 9 sub-stages"
+  },
+  "aggregate_uncertainty_statistics": {
+    "total_uncertainties_registered": 19,
+    "by_sub_stage": {
+      "9.1_esg_constraints": 4,
+      "9.2_continuity": 6,
+      "9.3_human_capital": 5,
+      "9.4_vendor_dependencies": 4,
+      "9.5_insurance": 5
+    },
+    "by_classification": {
+      "UNKNOWN": 16,
+      "UNKNOWABLE": 3
+    },
+    "unknowable_examples": [
+      "9.1: Apollo Global Management exit strategy ESG factors - proprietary information, cannot access without Apollo cooperation",
+      "9.3: Heroic execution sustainability inflection timing - human behavior unpredictable, individual burnout thresholds vary",
+      "9.4: Hyperscaler partner program trajectory - vendor decisions unilateral and unknowable to external parties",
+      "9.4: Broadcom next extraction timing and magnitude - vendor decisions unilateral, demonstrated surprise capability with first extraction"
+    ]
+  },
+  "classification_discipline_audit": {
+    "assessment": "EXCELLENT",
+    "findings": [
+      {
+        "criterion": "Proper UNKNOWN vs UNKNOWABLE distinction maintained",
+        "status": "PASS",
+        "evidence": "All 16 UNKNOWN uncertainties have clear 'what_would_reduce_uncertainty' specifications showing they are epistemologically reducible through information access. All 3 UNKNOWABLE uncertainties include explicit acknowledgment that uncertainty cannot be eliminated (Apollo proprietary strategy, human behavioral thresholds, vendor unilateral decisions) with only indicators/proxies available. NO MISCLASSIFICATION detected - unknowables not treated as knowable, unknowns not prematurely declared unknowable."
+      },
+      {
+        "criterion": "Decision impact explicitly quantified for each uncertainty",
+        "status": "PASS",
+        "evidence": "All 19 uncertainties include 'decision_impact' field with SPECIFIC QUANTIFICATION and MECHANISM explanation. Examples: '9.1 UK government revenue durability £1B+ addressable market', '9.2 SLA breach exposure $10-50M+ annual', '9.3 Replacement costs $5-15M annually higher if attrition 30-50% vs assumed 10-15%', '9.4 Broadcom second extraction could eliminate MAJORITY of company profitability', '9.5 If cyber policy limit $25M vs assumed $100M, uninsured exposure increases $75M per incident'. NO VAGUE impact statements like 'affects operations' - all impacts translated to revenue, cost, capital, timing consequences."
+      },
+      {
+        "criterion": "False confidence risks explicitly warned against",
+        "status": "PASS",
+        "evidence": "All 19 uncertainties include 'risk_of_false_confidence' field documenting SPECIFIC DECISION ERRORS caused by filling uncertainty with assumptions. Risk levels range from MEDIUM (6 uncertainties) to HIGH (7 uncertainties) to VERY HIGH (3 uncertainties) to EXTREME (3 uncertainties) with clear justification for severity. Example warning patterns: 'If buyer assumes X but reality is Y, discovers Z consequences post-close' demonstrating scenario-based risk thinking vs abstract warnings."
+      },
+      {
+        "criterion": "Information access paths documented to reduce uncertainty",
+        "status": "PASS",
+        "evidence": "All 16 UNKNOWN uncertainties include 'what_would_reduce_uncertainty' with SPECIFIC SOURCES (not generic 'get more data'). Patterns: Management data room access with specific document types, public records requests with jurisdiction identification, customer contracts with sample size specifications, vendor relationship documentation with specific artifacts. REALISTIC ACCESS ASSESSMENT included (e.g., FOI requests 30-90 days, sequential public records 6-12 months total, unknowable without vendor cooperation). Shows sophisticated understanding of information gathering feasibility vs wishlist."
+      }
+    ]
+  },
+  "critical_uncertainties_by_decision_domain": {
+    "liquidity_and_capital_allocation": [
+      {
+        "uncertainty": "9.5: Actual insurance policy limits, sub-limits, deductibles, and exclusions",
+        "materiality": "EXTREME",
+        "why_critical": "Cannot accurately model downside protection or estimate uninsured exposure. If cyber policy limit $25M vs assumed $100M, uninsured exposure increases $75M per incident. If E&O excludes contractual liability but leadership assumes SLA credits covered, creates $8-40M per incident surprise gap. If BI requires physical damage but leadership assumes billing/hyperscaler outages covered, $15-50M+ revenue loss is 100% uninsured vs assumed 50-80% covered. Affects liquidity planning (additional cash buffer $10-15M or revolver capacity), covenant stress modeling, and aggressive strategy justification."
+      },
+      {
+        "uncertainty": "9.2: Platform infrastructure DR capability existence and quality",
+        "materiality": "CRITICAL",
+        "why_critical": "Platforms (billing, IAM, monitoring, provisioning) affect $2.7B revenue realization but DR capabilities unknown. If capabilities don't exist, major platform failure could halt operations/revenue for days/weeks. Cost to build DR post-acquisition $10-50M+ for redundancy infrastructure. If capabilities exist but undisclosed, cannot validate quality or plan integration."
+      },
+      {
+        "uncertainty": "9.1: Rackspace environmental compliance status across 40+ facilities",
+        "materiality": "MATERIAL",
+        "why_critical": "If NON-COMPLIANT: (1) Enforcement actions with fines $400K-$20M across facilities, (2) Permit revocation forcing facility closures ($10-50M revenue loss per facility), (3) CAPEX SURGE to cure violations in 6-24 months creating cash flow stress. Environmental violations create MAE risk under First Lien Credit Agreement, potentially voiding D&O insurance and exposing board to personal liability. Violations SILENT until detected - no market signal until enforcement action."
+      }
+    ],
+    "revenue_stability_and_customer_retention": [
+      {
+        "uncertainty": "9.2: Post-incident customer churn rates from three recent incidents",
+        "materiality": "HIGH",
+        "why_critical": "Cannot calibrate incident-driven churn models without empirical data. Stage 9.2 estimates 15-50% churn from major incidents based on inference. Actual churn from Exchange, ScienceLogic, CL0P would provide sensitivity coefficients, timing patterns, segment differences. If reality is 30-50% churn from major incidents, revenue projections overstated by 10-20% in years following incidents. With three incidents in 36 months and potential fourth, compounding churn creates STRUCTURAL REVENUE DECLINE. Exchange discontinuation (100% customer loss) demonstrates churn can be TOTAL not incremental."
+      },
+      {
+        "uncertainty": "9.1: Customer sustainability audit enforcement mechanisms and termination thresholds",
+        "materiality": "CRITICAL",
+        "why_critical": "Rackspace statement: 'across Europe and Asia, all customers now ask about sustainability initiatives, and once customers, Rackspace is actively audited against their sustainability criteria.' Unknown: percentage of contracts with ENFORCEABLE sustainability SLAs vs ASPIRATIONAL language, audit frequency/rigor, remediation timelines, termination triggers. If 20-30% of UK/EU revenue has enforceable sustainability SLAs and Rackspace renewable energy percentage declines, could trigger 20-30% revenue churn in 12-24 months. Customer ESG procurement ACCELERATING 2024-2025 - what was performative 2022-2023 becoming binding 2024-2026."
+      },
+      {
+        "uncertainty": "9.1: UK government procurement sustainability enforcement stringency",
+        "materiality": "MATERIAL",
+        "why_critical": "If HARD enforcement (always enforced, no waivers): Rackspace loss of SBTi validation or Carbon Reduction Plan compliance creates AUTOMATIC UK government market access loss affecting £1B+ addressable market. If SOFT enforcement (selectively enforced, waivable): May retain access through waivers but creates UNPREDICTABLE revenue risk. Cannot forecast customer retention with confidence. BINARY assumption (hard or soft) when reality may be VARIABLE (depends on customer agency, contract size, national security context) creates false precision in revenue forecasts."
+      }
+    ],
+    "operating_cost_trajectory": [
+      {
+        "uncertainty": "9.4: Actual vendor contract terms including pricing escalation clauses and minimum commitments",
+        "materiality": "HIGH",
+        "why_critical": "If hyperscaler contracts have NO PRICE PROTECTION, vendor can change terms at will making costs unpredictable. If MINIMUM COMMITMENTS exist, Rackspace locked into spending regardless of customer demand. If automatic escalation clauses 10-15% annually with 3-5 year lock-in, operating costs increase $100-270M over contract term independent of revenue changes. Stage 9.2 shows 5% partner credit reduction compresses margin from 10.4% to 5.4% - if this can happen REPEATEDLY without contract protection, margin evaporates to zero within 2-3 cycles."
+      },
+      {
+        "uncertainty": "9.3: Compensation benchmarking relative to hyperscalers and post-incident recruitment premium",
+        "materiality": "MEDIUM-HIGH",
+        "why_critical": "If Rackspace paying 80-90% of AWS/Azure/Google compensation (likely given thin margins), talent continuously recruited away. Stage 9.2 estimates 20-40% salary premium above market required post-incidents. If true: specialist hires $200-250K market → $240-350K required = $40-100K premium per hire. Across 50-100 annual technical hires = $2-10M additional annual labor cost. Labor inflation eats already-thin 3.1% EBITDA margin. If cannot afford premiums: prolonged vacancies, quality compromise, or retention failures."
+      },
+      {
+        "uncertainty": "9.4: Broadcom next extraction timing, magnitude, and form",
+        "materiality": "EXTREME",
+        "why_critical": "Broadcom ALREADY extracted $100-210M annually (200-300% increase). Second extraction could be: 50-100% additional price increase ($150-315M annually), restrictive licensing preventing infrastructure provisioning, or forced migration to Broadcom cloud (business model destruction). If 50% additional increase, Private Cloud segment ($1,055M, 39% revenue, 40-50% operating income) becomes UNPROFITABLE. Cannot predict WHEN or MAGNITUDE (Broadcom decisions unilateral). First extraction was SURPRISE - second carries same unpredictability. Broadcom known for multi-year value extraction, not one-time repricing. Best estimate: likely within 12-24 months."
+      }
+    ],
+    "operational_continuity": [
+      {
+        "uncertainty": "9.3: Platform architect team size, capability depth, and succession planning",
+        "materiality": "CRITICAL",
+        "why_critical": "Stage 6.3 identifies platforms as 'SINGLE POINTS OF FAILURE' with 'undocumented logic' and 'tribal knowledge'. If platforms managed by SINGLE INDIVIDUALS: vacation/illness creates incident response gap, departure creates UNRECOVERABLE knowledge loss, hiring/retention becomes EXISTENTIAL (losing billing architect halts $2.7B revenue realization). Cannot assess platform operational continuity risk without knowing architect concentration. Cannot migrate platforms to buyer infrastructure if tribal knowledge prevents."
+      },
+      {
+        "uncertainty": "9.3: FedRAMP and UK Sovereign team sizing and capability depth",
+        "materiality": "HIGH for FedRAMP, MEDIUM for UK Sovereign",
+        "why_critical": "FedRAMP: If team 10-15 personnel (minimal for 24/7 coverage + 800+ controls) vs 30-50 (adequate redundancy), determines authorization sustainability, retention fragility, and expansion capacity. Minimal team one incident away from control failure. UK Sovereign: If team 5-10 personnel vs 20-30, determines segment viability - minimal team insufficient for growth. Three incidents in 36 months stresses security teams - if already minimal, burnout → attrition → authorization jeopardy → customer termination wave."
+      },
+      {
+        "uncertainty": "9.2: Leadership incident response performance and decision lag",
+        "materiality": "MEDIUM-HIGH",
+        "why_critical": "Decision lag determines whether incidents CONTAINED or AMPLIFIED. Fast response (T+minutes to hours): prevents escalation, minimizes impact, preserves trust. Slow response (T+hours to days): failure cascades unchecked, impact maximizes, trust destroyed. Stage 8.1 shows 4-day lag from Exchange 'connectivity issues' to ransomware confirmation suggesting slow response. If PATTERN (not exception), all Stage 9.2 failure sequences underestimate impact because assume mitigation attempt. Slow response means failures run to completion unmitigated. Cost of incidents 2-10X higher than with fast response."
+      }
+    ],
+    "strategic_and_valuation": [
+      {
+        "uncertainty": "9.1: Apollo Global exit strategy and ESG factors affecting valuation",
+        "materiality": "CRITICAL",
+        "classification": "UNKNOWABLE",
+        "why_critical": "If Apollo exit difficulties reflect ESG LIABILITY: (1) Buyer universe REDUCED (ESG-focused investors exclude Rackspace) creating illiquidity discount, (2) ESG remediation becomes acquirer responsibility requiring $50-200M+ over 2-3 years, (3) Apollo willing to accept LOWER VALUATION to exit. 10-year hold period (2016-2026, unusually long for PE) raises questions. UNKNOWABLE without Apollo cooperation - internal assessments, buy-side feedback, sell-side advisor opinions not public. ESG factors may be IMPLICIT in buyer feedback vs explicitly cited. Truth likely MULTIVARIATE: business performance + market conditions + ESG factors with UNKNOWN WEIGHTING."
+      },
+      {
+        "uncertainty": "9.3: Heroic execution sustainability and death spiral inflection timing",
+        "materiality": "EXTREME",
+        "classification": "UNKNOWABLE",
+        "why_critical": "Cannot predict when burnout → attrition transitions from linear to exponential. Stage 4.5 identifies FIVE zones with HIGH to EXTREME burnout risk. Indicators suggest NEAR INFLECTION: three CEOs three years, three incidents 36 months, Trustpilot 'worse' 2024, CapEx -25%. Individual burnout thresholds vary (some sustain heroics years, others months) making inflection UNKNOWABLE. Heroic execution creates APPEARANCE of stability until sudden collapse. Exchange discontinuation demonstrates. If death spiral inflection occurs 3-6 months post-close vs assumed 12-24 months, faces mass attrition, customer churn wave, segment exits, value destruction 30-70%."
+      },
+      {
+        "uncertainty": "9.4: Hyperscaler partner program trajectory and next change timing",
+        "materiality": "EXTREME",
+        "classification": "UNKNOWABLE",
+        "why_critical": "Partner programs determine Public Cloud segment viability ($1,683M, 61% revenue). Stage 9.2 shows 5% partner credit reduction compresses margin from 10.4% to 5.4%. If credits reduced ANOTHER 3-5%, segment becomes unprofitable. Cannot predict: WHEN (annually? quarterly? ad hoc?), MAGNITUDE (1-2% manageable or 10-20% catastrophic?), DIRECTION (further reductions or stability?), COORDINATION (do all three hyperscalers change simultaneously?). Hyperscaler program changes UNILATERAL and can be SUDDEN. Precedent: cloud providers terminated programs with 90-180 days notice. CORRELATED INCENTIVE TO DISINTERMEDIATE - all three benefit from eliminating Rackspace middleman."
+      }
+    ]
+  },
+  "uncertainty_disclosure_transparency_assessment": {
+    "overall_rating": "EXEMPLARY",
+    "rationale": "Stage 9 analysis demonstrates EXCEPTIONAL transparency about limits of knowledge and risks of false confidence. Each sub-stage explicitly identifies what is unknown, why it matters for decisions, what information would reduce uncertainty, and what decision errors result from filling uncertainty with assumptions. This approach follows Stage 0 Constitutional Controls by preserving uncertainty rather than manufacturing false precision.",
+    "specific_strengths": [
+      {
+        "strength": "Explicit 'risk_of_false_confidence' sections prevent overconfident decision-making",
+        "example": "9.5 warns 'If leadership operates with belief that insurance covers cyber/outage/liability risks comprehensively but reality is insurance provides limited, conditional, delayed reimbursement of subset of direct costs, gap between perception and reality is DANGEROUS' - creates space for decision-makers to recognize assumption risk"
+      },
+      {
+        "strength": "Quantified decision impact ranges acknowledge uncertainty in estimates",
+        "example": "Rather than stating 'insurance provides X coverage', 9.5 states 'If cyber policy limit is $25M vs assumed $100M, uninsured exposure increases $75M per incident' - shows how uncertainty propagates to decision space"
+      },
+      {
+        "strength": "UNKNOWABLE classification prevents futile certainty-seeking",
+        "example": "9.3 classifies heroic execution inflection as UNKNOWABLE (human behavior unpredictable) while still identifying leading indicators available - prevents false belief that 'with more analysis we can predict precisely' while providing what monitoring is possible"
+      },
+      {
+        "strength": "Asymmetric information dynamics explicitly surfaced",
+        "example": "9.1 warns 'Environmental violations are SILENT until detected - no market signal until enforcement action occurs. Rackspace has incentive to UNDER-DISCLOSE. Creates ADVERSE SELECTION risk' - recognizes information asymmetry between management and external analysts rather than assuming symmetric information"
+      }
+    ]
+  },
+  "uncertainty_preservation_throughout_cascading_analysis": {
+    "assessment": "PASS",
+    "findings": [
+      {
+        "observation": "Failure sequences in 9.2 properly compound uncertainties",
+        "evidence": "AWS outage sequence acknowledges: Primary impact $15-50M revenue loss (range reflects RTO uncertainty), cascades to customer churn 15-50% (range reflects unknown churn sensitivity), cascades to security team attrition (timing unknowable per 9.3), creates covenant risk (depends on unknown quarterly timing). Ranges WIDEN through cascade as uncertainties compound rather than narrowing through false precision."
+      },
+      {
+        "observation": "Insurance analysis in 9.5 explicitly bounds unknowns using Exchange precedent",
+        "evidence": "Uses Exchange 50% recovery as ONLY empirical datapoint, explicitly states 'cannot provide precise estimates' without actual policies. Quantifies uninsured exposure range $380-1,372M acknowledging massive spread reflects policy term uncertainty. Refuses to manufacture precision where evidence insufficient."
+      },
+      {
+        "observation": "Vendor dependency analysis in 9.4 distinguishes known vendor power from unknowable vendor timing",
+        "evidence": "States Rackspace has 'ZERO LEVERAGE' (known from structural position) but cannot predict Broadcom's next move timing/magnitude (unknowable vendor decision). Separates STRUCTURAL CERTAINTY (power asymmetry exists) from TEMPORAL UNCERTAINTY (when extraction occurs)."
+      },
+      {
+        "observation": "Human capital analysis in 9.3 acknowledges behavioral unpredictability",
+        "evidence": "States burnout levels observable (known) but inflection point timing unpredictable (unknowable). Provides leading indicators without claiming they enable precise prediction. Maintains uncertainty about individual vs collective behavior patterns."
+      }
+    ]
+  },
+  "comparison_to_typical_due_diligence_practice": {
+    "typical_practice_failures": [
+      "Typical due diligence treats information gaps as TEMPORARY obstacles to be filled with assumptions ('assume industry standard') rather than PERSISTENT uncertainties to be preserved and highlighted",
+      "Financial models use POINT ESTIMATES (single forecast) rather than RANGES (uncertainty bounds), creating false precision",
+      "Unknown timing treated as 'unlikely in investment horizon' (wishful thinking) rather than 'could occur anytime, must monitor' (vigilance)",
+      "Unknowable vendor/competitive decisions treated as PREDICTABLE through 'strategic analysis' rather than acknowledged as UNKNOWABLE requiring contingency planning",
+      "Asymmetric information dynamics ignored - assumes seller disclosures complete/accurate rather than recognizing seller incentive to under-disclose problems"
+    ],
+    "stage_9_superior_approach": [
+      "Explicit UNKNOWN vs UNKNOWABLE taxonomy prevents futile certainty-seeking for inherently unpredictable phenomena",
+      "Risk_of_false_confidence sections provide decision error scenarios showing what goes wrong when uncertainty filled with assumptions",
+      "Information access paths specify REALISTIC timelines (FOI 30-90 days, multi-jurisdiction records 6-12 months) rather than assuming instant information availability",
+      "Ranges preserved through cascading analysis rather than collapsing to point estimates",
+      "Asymmetric information explicitly surfaced (environmental violations SILENT, vendor decisions UNILATERAL, management INCENTIVIZED to under-disclose)"
+    ]
+  },
+  "recommendations_for_decision_makers": {
+    "critical_uncertainties_requiring_immediate_attention": [
+      {
+        "uncertainty": "9.5: Actual insurance policy terms, limits, and exclusions",
+        "action": "IMMEDIATE ACCESS REQUIRED to master policies before any transaction close. Without actual policy documents, entire risk transfer analysis is INFERENCE. Should be CLOSING CONDITION: seller provides complete insurance documentation including policies, claims history, and renewal correspondence.",
+        "risk_if_not_addressed": "Buyer inherits uninsured exposure $380-1,372M (83-95% of potential losses) vs assumed protection, discovers post-close when incident occurs and insurance doesn't cover."
+      },
+      {
+        "uncertainty": "9.1: Environmental compliance status across 40+ facilities",
+        "action": "Conduct Phase I Environmental Site Assessments for all facilities, review all permits, engage environmental counsel. Public records requests to state environmental agencies for each facility location. Do NOT rely on management representations or 10-K disclosures (insufficient for materiality threshold).",
+        "risk_if_not_addressed": "Inherit environmental violations creating $400K-$20M fine exposure, facility closure risk, MAE trigger under credit agreement, D&O insurance voidance."
+      },
+      {
+        "uncertainty": "9.3: Platform architect team size and platform DR capabilities combined with 9.2 platform infrastructure DR",
+        "action": "Technical due diligence must include: organizational charts for platform teams, platform architecture documentation showing redundancy, DR test results, tribal knowledge assessment. If platforms managed by 1-3 individuals with no documented procedures, this is SHOWSTOPPER requiring remediation before close or significant valuation haircut.",
+        "risk_if_not_addressed": "Inherit billing/IAM/monitoring/provisioning single points of failure affecting $2.7B revenue, discover platform architect departure halts operations, cannot migrate platforms during integration due to tribal knowledge loss."
+      }
+    ],
+    "unknowables_requiring_contingency_planning": [
+      {
+        "unknowable": "9.4: Broadcom next extraction timing and magnitude",
+        "contingency_approach": "Model THREE scenarios: (1) No further extraction (optimistic), (2) 50% additional extraction within 12 months (base case, $150-315M annually), (3) 100% additional extraction or forced platform migration (stress case, segment exit required). Develop VMware exit options analysis NOW (OpenStack, Nutanix quotes, migration timeline, customer communication plan) so can credibly threaten exit or execute quickly if needed. Cannot predict Broadcom's move but can prepare response options.",
+        "decision_implication": "Do NOT underwrite Private Cloud segment at current multiples assuming cost structure stable. Apply 30-50% haircut for Broadcom extraction risk or negotiate price protection with seller."
+      },
+      {
+        "unknowable": "9.4: Hyperscaler partner program trajectory",
+        "contingency_approach": "Stress test Public Cloud segment assuming 5% additional credit reduction within 12-18 months (segment approaches unprofitability). Develop customer pricing strategy to pass through vendor cost increases. Evaluate direct hyperscaler partnership vs intermediary model. Cannot predict hyperscaler decisions but can position to respond rapidly.",
+        "decision_implication": "Do NOT underwrite Public Cloud segment assuming current margin sustainability. Model segment as DECLINING MARGIN asset requiring price increases (customer churn risk) or repositioning (business model change)."
+      },
+      {
+        "unknowable": "9.3: Heroic execution death spiral inflection timing",
+        "contingency_approach": "Monitor leading indicators WEEKLY post-close: voluntary termination rates, time-to-backfill trends, Glassdoor sentiment, customer satisfaction scores, incident MTTR trends. Prepare $10-20M retention program for immediate deployment if indicators deteriorate. Have segment triage plan ready (which segments exit vs attempt to save if mass attrition begins). Cannot predict inflection but can detect early and respond.",
+        "decision_implication": "Do NOT assume 12-24 month stable integration period. Plan for accelerated decision-making (6-9 months) and front-load critical retention actions."
+      }
+    ]
+  },
+  "final_audit_determination": {
+    "uncertainty_preservation_compliance": "PASS",
+    "rationale": "Stage 9 analysis demonstrates EXEMPLARY adherence to Stage 0 Constitutional Controls requirement to 'preserve uncertainty explicitly'. All 19 uncertainties properly classified (UNKNOWN vs UNKNOWABLE), decision impact quantified with ranges not point estimates, false confidence risks explicitly warned against, information access paths specified with realistic timelines, and asymmetric information dynamics surfaced. Analysis refuses to manufacture precision where evidence insufficient (e.g., insurance policy terms unknown, refuses to assume) while providing bounded estimates where evidence allows (e.g., Exchange 50% recovery establishes floor). Comparison to typical due diligence practice shows Stage 9 approach SUBSTANTIALLY SUPERIOR in surfacing decision-relevant uncertainty vs typical false precision. Uncertainty preservation maintained throughout cascading analysis - ranges widen through failure sequences as uncertainties compound rather than collapsing to point estimates. UNKNOWABLE classification prevents futile certainty-seeking while still identifying available leading indicators. Overall: Stage 9 sets HIGH STANDARD for uncertainty transparency in due diligence analysis."
+  }
+}

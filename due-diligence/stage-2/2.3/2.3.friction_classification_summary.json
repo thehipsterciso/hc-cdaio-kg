@@ -1,0 +1,68 @@
+{
+  "friction_classification_summary": [
+    {
+      "friction": "Multi-Entity Jurisdictional Fragmentation (Operational Silos, Duplicative Overhead)",
+      "classification": "STRUCTURAL",
+      "localized_or_systemic": "SYSTEMIC",
+      "primary_constraint_source": "STAGE_1",
+      "claim_type": "FACT",
+      "evidence_sources": ["Stage 1.V multi-jurisdictional structure mandate", "Stage 1.5 Government/UK Sovereign isolation requirements", "Stage 2.2 cost fragmentation (15-25% penalty)"]
+    },
+    {
+      "friction": "Private Cloud Revenue Realization Lag (8-20 Weeks Procurement/Deployment/Migration)",
+      "classification": "OPERATIONAL",
+      "localized_or_systemic": "LOCALIZED",
+      "primary_constraint_source": "STAGE_2.2",
+      "claim_type": "INFERENCE",
+      "evidence_sources": ["Stage 2.2 Private Cloud fixed infrastructure (CapEx model)", "Industry standard hardware/deployment timelines"]
+    },
+    {
+      "friction": "Customer Churn Leakage (Estimated 20-25% Annual Gross Churn)",
+      "classification": "OPERATIONAL",
+      "localized_or_systemic": "SYSTEMIC",
+      "primary_constraint_source": "STAGE_2.1",
+      "claim_type": "INFERENCE",
+      "evidence_sources": ["Stage 2.1 revenue declining 7% YoY despite bookings growth 14%", "Stage 2.2 month-to-month billing = zero lock-in"]
+    },
+    {
+      "friction": "Sales-to-Delivery Handoff (Knowledge Transfer, Expectation Mismatch, Re-Discovery)",
+      "classification": "OPERATIONAL",
+      "localized_or_systemic": "SYSTEMIC",
+      "primary_constraint_source": "STAGE_2.2",
+      "claim_type": "INFERENCE",
+      "evidence_sources": ["Stage 2.2 organizational fragmentation (sales vs delivery incentives)", "Industry standard MSP handoff friction"]
+    },
+    {
+      "friction": "FedRAMP Authorization Gating (3-12 Month ATO Process Delays Government Revenue)",
+      "classification": "CONTRACTUAL",
+      "localized_or_systemic": "LOCALIZED",
+      "primary_constraint_source": "STAGE_1",
+      "claim_type": "FACT",
+      "evidence_sources": ["Stage 1.5 FedRAMP program requirements", "Federal ATO process timelines (regulatory mandate)"]
+    },
+    {
+      "friction": "VMware Vendor Lock-In + Broadcom Cost Shock (200-300% Price Increases, Migration Infeasible)",
+      "classification": "STRUCTURAL",
+      "localized_or_systemic": "SYSTEMIC",
+      "primary_constraint_source": "STAGE_1",
+      "claim_type": "FACT",
+      "evidence_sources": ["Stage 1.3 VMware platform dependency (historical path dependency)", "Stage 2.2 Broadcom price increases 200-300%"]
+    },
+    {
+      "friction": "Hyperscaler Partner Credit Dependency (Public Cloud Margin Hostage to AWS/Azure/Google)",
+      "classification": "STRUCTURAL",
+      "localized_or_systemic": "SYSTEMIC",
+      "primary_constraint_source": "STAGE_2.1",
+      "claim_type": "INFERENCE",
+      "evidence_sources": ["Stage 2.1 Public Cloud 10.4% margin dependent on partner credits 5-15%", "Stage 2.2 no control over hyperscaler programs"]
+    },
+    {
+      "friction": "Fixed Infrastructure Underutilization (Private Cloud Declining 13% Creating Stranded Capacity)",
+      "classification": "OPERATIONAL",
+      "localized_or_systemic": "SYSTEMIC",
+      "primary_constraint_source": "STAGE_2.2",
+      "claim_type": "FACT",
+      "evidence_sources": ["Stage 2.2 Private Cloud revenue -13% YoY", "Stage 2.2 fixed infrastructure costs (depreciation, facilities) create negative leverage"]
+    }
+  ]
+}

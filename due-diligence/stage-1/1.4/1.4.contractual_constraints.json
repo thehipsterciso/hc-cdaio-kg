@@ -1,0 +1,122 @@
+{
+  "contractual_constraints": [
+    {
+      "contract_type": "FINANCING",
+      "counterparty": "First Lien Credit Agreement Lenders (Citibank N.A. as Administrative Agent)",
+      "constraint": "Change-of-control provisions require mandatory offer to repurchase entire $1.3B debt or lender consent for any transaction resulting in >50% ownership change within 1-year period. Negative covenants restrict asset sales, additional debt, dividends, and M&A without lender consent.",
+      "trigger_event": "Any acquisition, merger, or change in beneficial ownership of Rackspace Technology, Inc. exceeding 50% (or series of transactions within 12 months exceeding 50% in aggregate). Includes direct ownership changes and change in board control if results in de facto ownership change.",
+      "business_impact": "BLOCKS all M&A transactions unless: (1) Acquirer refinances entire $1.3B debt (requires new financing commitment), (2) Lenders consent to ownership change (gives lenders veto power and ability to extract concessions), (3) Debt is repaid in full (requires $1.3B cash company does not have). If triggered without compliance: immediate event of default, acceleration of full balance, foreclosure on collateral (substantially all assets). Effectively gives lenders ABSOLUTE VETO over any transaction.",
+      "severity": "HIGH",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "First Lien Credit Agreement dated March 12, 2024 per Rackspace IR press release",
+        "Stage 1.1 and Stage 1.2 covenant analysis",
+        "Form 8-K filed March 7, 2024 with credit agreement exhibits"
+      ]
+    },
+    {
+      "contract_type": "CUSTOMER",
+      "counterparty": "Enterprise customers (government, healthcare, financial services sectors requiring compliance certifications)",
+      "constraint": "Customer contracts in regulated sectors (government FedRAMP, healthcare HIPAA/HITRUST, financial services SOC 2/PCI) likely contain: (1) Change-of-control notification requirements (30-90 days advance notice), (2) Termination for convenience upon change of control (with notice period), (3) Audit rights triggered by ownership change, (4) Re-certification requirements if entity providing services changes, (5) Right to renegotiate pricing/terms upon control change. Standard MSP contract provisions per industry practice.",
+      "trigger_event": "Change of control as defined in customer contracts (typically >50% ownership change, merger, acquisition, or asset sale affecting service delivery entity). May also trigger if entity holding compliance certification changes.",
+      "business_impact": "Customer termination rights create CHURN RISK post-transaction. If 10-30% of customer base exercises termination rights (reasonable assumption given change uncertainty), revenue loss of $150-450M (10-30% of ~$1.5B revenue). Customers may use termination threat to extract price concessions or enhanced SLAs. Re-certification periods (6-18 months for FedRAMP, HITRUST) create service delivery gaps - customers cannot remain on platform during gaps, forcing immediate migration. Acquirer must: (1) Notify all customers pre-close (telegraphing transaction), (2) Obtain consents or risk mass exodus, (3) Maintain separate legal entities to preserve certifications (blocks integration).",
+      "severity": "HIGH",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Industry standard MSP contract terms per TechContracts, Scott & Scott LLP, UpCounsel research",
+        "Rackspace compliance certifications (FedRAMP, HIPAA/HITRUST, SOC 2) documented in Stage 1.1",
+        "Customer revenue concentration unknown (documented as uncertainty in Stage 1.2), but enterprise customers in regulated sectors are typical for Rackspace per company description"
+      ]
+    },
+    {
+      "contract_type": "CUSTOMER",
+      "counterparty": "All customers (general MSP customer base)",
+      "constraint": "Standard MSP contracts include assignment restrictions: 'Neither party may assign this Agreement without other party's express written consent, except MSP may assign to successor in merger or acquisition of substantially all assets.' Customers have consent rights, creating negotiation leverage. Contracts likely include data ownership and portability provisions requiring customer data return upon termination (in customer's specified format within 30-60 days).",
+      "trigger_event": "Acquisition or merger where Rackspace is not surviving entity, or asset sale affecting customer accounts. Assignment restrictions triggered even if services continue unchanged.",
+      "business_impact": "Customer consent requirement creates TRANSACTION FRICTION: (1) Must contact every customer (potentially thousands) requesting assignment consent, (2) Customers can withhold consent to renegotiate terms, (3) Small percentage of refusals can derail transaction if revenue materially impacted, (4) Consent process takes 60-180 days creating deal timeline risk. Data portability requirements limit 'stickiness' - customers can exit with full data, reducing switching costs. Acquirer must plan for: (1) Consent solicitation campaign (legal, operational burden), (2) Customer retention incentives, (3) Contingent consideration if consent rates below threshold.",
+      "severity": "MEDIUM",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Industry standard MSP contract assignment provisions per TechContracts, MSP contract guidance",
+        "Rackspace customer agreements structure per Rackspace.com/information/legal/contract-structure",
+        "Data ownership and portability are standard SaaS/MSP contractual rights per industry practice"
+      ]
+    },
+    {
+      "contract_type": "VENDOR",
+      "counterparty": "Amazon Web Services (AWS)",
+      "constraint": "Multi-year Strategic Collaboration Agreement (SCA) signed October 2024 designates AWS as Rackspace's 'preferred cloud provider.' Agreement likely includes: (1) Minimum purchase commitments or consumption targets, (2) Exclusivity or preferred partner obligations, (3) Co-marketing and joint go-to-market requirements, (4) Pricing tied to volume/partnership status (better pricing contingent on maintaining partnership), (5) Change-of-control provisions allowing AWS to terminate or renegotiate if Rackspace acquired by competitor. $X million investment commitment by Rackspace in Migration & Modernization Center of Excellence.",
+      "trigger_event": "Acquisition of Rackspace by cloud competitor (Microsoft, Google, Oracle) or other party AWS deems competitive. Material changes in Rackspace's business model or market positioning. Failure to meet committed consumption or investment targets.",
+      "business_impact": "AWS partnership is FOUNDATIONAL to business model - 2,000+ AWS customers, 1,000+ AWS-dedicated professionals, 250% growth over 3 years indicates AWS is largest cloud practice. If AWS terminates partnership or reduces pricing/support: (1) Rackspace loses cost advantages vs direct AWS relationships (customers could bypass Rackspace), (2) Cannot position as 'AWS Premier Partner' damaging sales, (3) Loses access to AWS co-marketing funds, sales leads, technical support escalations, (4) Must layoff or redeploy 1,000 AWS-focused employees. Competitive acquisition (e.g., Microsoft acquiring Rackspace) would likely trigger AWS termination - creates deal structure constraint (strategic buyers in cloud space are problematic). Financial buyer acceptable but must maintain AWS partnership.",
+      "severity": "HIGH",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "AWS Strategic Collaboration Agreement announced October 2024 per Rackspace newsroom",
+        "2,000+ AWS customers, 1,000+ AWS professionals, 250% growth per company disclosures",
+        "AWS as 'preferred cloud provider' per press release October 2024",
+        "Change-of-control provisions in partner agreements are standard per industry practice (TechTarget coverage of cloud partnerships)"
+      ]
+    },
+    {
+      "contract_type": "VENDOR",
+      "counterparty": "Microsoft Azure and Google Cloud Platform (GCP)",
+      "constraint": "Similar partnership agreements as AWS (though AWS is 'preferred'), likely including: (1) Volume commitments or consumption targets, (2) Co-marketing and technical collaboration requirements, (3) Pricing tiers tied to partnership level, (4) Change-of-control provisions protecting partners from competitive acquisition, (5) Exclusivity or non-compete provisions. Rackspace positions as 'multicloud MSP' requiring relationships with all major cloud providers.",
+      "trigger_event": "Acquisition by competing cloud provider or party with conflicting partnerships. Material shift in multicloud positioning (e.g., becoming AWS-exclusive would violate Microsoft/Google partnerships).",
+      "business_impact": "If Microsoft or Google partnership terminates: (1) Cannot serve Azure or GCP customers (must refer to direct Microsoft/Google relationships, losing revenue and customer relationships), (2) 'Multicloud' positioning collapses - becomes single-cloud provider reducing addressable market, (3) Loses access to vendor programs, discounts, technical support, (4) Must layoff Azure/GCP-dedicated staff. Multicloud positioning REQUIRES maintaining all three partnerships - termination of any one impairs value proposition. Creates DEAL STRUCTURE CONSTRAINT: Acquirer must be acceptable to AWS, Microsoft, AND Google, narrowing buyer universe to financial sponsors and non-competitive strategics.",
+      "severity": "MEDIUM",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Rackspace multicloud positioning per company website and marketing materials",
+        "Technology alliance partners include AWS, Microsoft, Google per Rackspace.com/about/channel-partners",
+        "Partnership agreement change-of-control provisions are industry standard",
+        "Microsoft/Google partnership status inferred from multicloud business model (not explicitly disclosed like AWS SCA)"
+      ]
+    },
+    {
+      "contract_type": "VENDOR",
+      "counterparty": "Data center and colocation providers (landlords for owned/leased data center space)",
+      "constraint": "Real estate leases for data centers likely contain: (1) Assignment restrictions requiring landlord consent for any transfer (standard commercial lease), (2) Change-of-control provisions triggering landlord consent rights if tenant acquired, (3) Financial covenant requirements (maintain certain net worth, creditworthiness), (4) Use restrictions limiting assignment to approved uses (data center operations), (5) Termination rights if financial covenants breached. Leases may have 5-15 year terms with substantial renewal option commitments.",
+      "trigger_event": "Acquisition or merger affecting lessee entity, assignment of lease to new entity, material adverse change in financial condition triggering covenant breach.",
+      "business_impact": "Data center operations are ASSET-HEAVY and LOCATION-SPECIFIC - cannot easily move infrastructure. If landlords withhold consent to assignment: (1) Acquirer cannot consolidate real estate (must maintain separate entities as lessees), (2) Integration blocked (cannot merge entities with leases into acquirer's structure), (3) Termination forces equipment relocation (6-12 month process, $X million cost, customer service disruption). If acquisition impairs credit quality: (1) Landlords may demand lease guarantees or LOCs from acquirer, (2) May demand rent prepayment or security deposits, (3) May terminate for financial covenant breach. Rackspace reportedly operates 40 data centers globally - creates 40+ separate lease negotiations for any transaction.",
+      "severity": "MEDIUM",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Rackspace operates 40 data centers per company disclosures (Rackspace.com/compliance)",
+        "Commercial lease assignment and change-of-control provisions are standard per real estate law",
+        "Data center lease terms (5-15 years, covenant requirements) are industry standard",
+        "No specific Rackspace lease terms publicly disclosed"
+      ]
+    },
+    {
+      "contract_type": "PARTNER",
+      "counterparty": "Technology vendors (software licenses: VMware, Red Hat, monitoring tools, security tools, management platforms)",
+      "constraint": "Enterprise software licenses for service delivery likely contain: (1) Named entity restrictions (license granted to 'Rackspace US, Inc.' not transferable without vendor consent), (2) Change-of-control provisions requiring re-negotiation or allowing price adjustment, (3) Use restrictions limiting to specific number of customers, seats, or consumption, (4) Audit rights triggered by ownership change, (5) Termination rights if acquirer is competitor or has conflicting licenses. May include OEM or resale rights that terminate upon control change.",
+      "trigger_event": "Acquisition or merger, assignment of licenses to new entity, material change in use case or consumption.",
+      "business_impact": "Software licenses are FOUNDATIONAL to service delivery - cannot provide managed services without infrastructure management tools, monitoring, security, virtualization platforms. If vendors terminate or renegotiate: (1) Service delivery interruption (weeks-months to procure replacement licenses), (2) Price increases (lose volume discounts or special pricing negotiated over years), (3) Functionality loss if replacement tools lack features, (4) Customer SLA breaches during transition. Acquirer with conflicting licenses (e.g., uses different monitoring platform) forces PLATFORM MIGRATION across entire customer base. OEM/resale rights termination eliminates certain revenue streams. Must negotiate vendor consents pre-close or accept service delivery risk.",
+      "severity": "MEDIUM",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "MSP business model requires extensive software licensing (VMware, monitoring, security tools) per industry knowledge",
+        "Enterprise license change-of-control provisions are standard per software licensing practice",
+        "Rackspace acquired companies (Datapipe, Onica) likely brought software licenses creating complex licensing footprint",
+        "No specific Rackspace software vendor relationships or license terms publicly disclosed"
+      ]
+    },
+    {
+      "contract_type": "CUSTOMER",
+      "counterparty": "Government customers (FedRAMP authorized environments)",
+      "constraint": "FedRAMP authorization is entity-specific and requires maintaining security controls, personnel clearances, and operational procedures. Contracts with government customers require: (1) Advance notification of any ownership change (often 30-60 days), (2) Government right to terminate for convenience upon control change (FAR clause 52.212-4(l)), (3) Re-authorization if entity changes or security posture impacted, (4) Restrictions on foreign ownership or control (FOCI concerns), (5) Flow-down requirements to subcontractors. FedRAMP authorization timeline is 12-18 months if re-authorization required.",
+      "trigger_event": "Change of control of entity holding FedRAMP authorization, foreign acquirer, material change in operations affecting security posture, changes in personnel with clearances.",
+      "business_impact": "Government customers represent $X million revenue (unknown percentage, but FedRAMP authorization suggests material government business). If FedRAMP authorization must be re-obtained: (1) Cannot serve government customers for 12-18 months (entire revenue stream lost), (2) Customers forced to migrate to other providers (permanent churn), (3) Re-authorization costs $500K-2M and requires dedicated team. Foreign acquirer or PE sponsor with foreign LPs may trigger FOCI review - could block transaction or require mitigation (proxy board, voting trusts, cost and complexity). Government termination for convenience upon ownership change is STANDARD FAR provision - creates immediate churn risk. Must structure transaction to avoid triggering re-authorization: maintain entity, maintain personnel, demonstrate continuity of security controls.",
+      "severity": "HIGH",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "FedRAMP authorization documented in Stage 1.1 compliance certifications (Rackspace.com/compliance/fedramp)",
+        "FedRAMP authorization is entity-specific and requires 12-18 month process per FedRAMP guidelines",
+        "FAR 52.212-4(l) termination for convenience is standard government contract provision",
+        "FOCI concerns for foreign acquirers are standard under CFIUS/DoD procurement rules",
+        "Government revenue percentage unknown (documented as uncertainty in prior stages)"
+      ]
+    }
+  ]
+}

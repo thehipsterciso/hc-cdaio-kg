@@ -1,0 +1,129 @@
+{
+  "sub_stage": "2.1",
+  "revenue_engines": [
+    {
+      "engine_name": "Public Cloud Managed Services (Hyperscaler Resale + Management)",
+      "what_customer_buys": "AWS/Azure/Google Cloud infrastructure consumption billed at hyperscaler list rates PLUS ongoing managed services (monitoring, alerts, tickets, system administration, architecture guidance, 24x7x365 access to certified cloud engineers). Customer receives consolidated billing from Rackspace as reseller, not direct hyperscaler relationship.",
+      "revenue_trigger": "MONTHLY CONSUMPTION: (1) Variable infrastructure consumption from hyperscaler billed at list rates (pass-through), PLUS (2) Recurring management fee based on service tier (Managed Infrastructure $50/mo minimum OR Managed Operations $500/mo minimum) plus percentage of infrastructure spend or usage-based pricing. Revenue recognized monthly as services consumed.",
+      "pricing_logic": "TIERED MANAGEMENT FEE MODEL: Managed Infrastructure tier ($50+ monthly minimum) provides monitoring, alerts, basic ticket support. Managed Operations tier ($500+ monthly minimum) provides full-stack management, 24x7 system administration, proactive response. Management fee is percentage markup on infrastructure OR fixed fee depending on contract. Infrastructure billed at hyperscaler published list rates (no Rackspace markup on infrastructure itself, but Rackspace receives partner credits/rebates from hyperscalers estimated 5-15% of infrastructure spend).",
+      "key_dependencies": [
+        "AWS Advanced Consulting Partner status and reseller agreement",
+        "Microsoft Azure CSP 2-Tier Distributor status (one of <10 globally) and Partner Earned Credit (~15% PEC)",
+        "Google Cloud Platform partnership and reseller terms",
+        "Hyperscaler partner credits/rebates providing economic margin on infrastructure resale",
+        "Certified engineer workforce (AWS/Azure/Google certifications)",
+        "Customer retention (month-to-month contracts, low switching costs)"
+      ],
+      "structural_constraints_from_stage_1": [
+        "NONE DIRECT - but economically constrained by hyperscaler partnership terms which are not disclosed and could be modified. No entity-level constraints identified for commercial public cloud business (unlike government/UK sovereign). However, customer contracts likely distributed across multiple entities (Rackspace US, Rackspace Singapore, etc.) based on jurisdiction, preventing easy consolidation."
+      ],
+      "touch_test_what_breaks": "ECONOMIC: Hyperscalers (AWS/Azure/Google) can terminate reseller agreements or reduce partner credits, eliminating Rackspace's infrastructure margin and forcing pure services margin (estimated <5-10% management fee only). COMPETITIVE: Hyperscalers increasingly offering native managed services directly (AWS Managed Services, Azure Managed Services), enabling customer disintermediation and direct hyperscaler relationship. OPERATIONAL: Loss of certified engineer workforce degrades service delivery and 'Fanatical Support' differentiation. CONTRACTUAL: Month-to-month billing creates zero switching cost - customers can migrate to direct hyperscaler or competitor with 30-day notice.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Rackspace Q4 2024 earnings: Public Cloud revenue $1,683M (61% of total), gross margin 10.4%",
+        "Rackspace pricing documentation: Managed Infrastructure $50 minimum, Managed Operations $500 minimum",
+        "DataCenterKnowledge article: 'Rackspace bills AWS infrastructure at the list rates on the AWS website, charges service fees in addition'",
+        "Microsoft Partner Center: Azure CSP partners receive ~15% Partner Earned Credit",
+        "Rackspace newsroom: '2-Tier CSP Program' and 'one of less than 10 hosting providers globally enabled with 2-Tier distribution'",
+        "AWS Partners page: Rackspace listed as Advanced Consulting Partner"
+      ]
+    },
+    {
+      "engine_name": "Private Cloud Managed Services (Dedicated Infrastructure + Management)",
+      "what_customer_buys": "Dedicated infrastructure (VMware, OpenStack, or Microsoft Hyper-V) hosted in Rackspace data centers OR customer premises, with dedicated compute/storage/networking resources NOT shared with other tenants. Includes full management, patching, monitoring, architecture design, capacity planning, security. Customer receives performance isolation, customization, and compliance control not available in public cloud.",
+      "revenue_trigger": "MONTHLY RECURRING COMMITMENT: Fixed monthly fee based on infrastructure footprint (# hosts, storage capacity, network bandwidth) PLUS management tier. Revenue recognized ratably over contract term. Minimum $500/mo for Managed Operations tier (typical for Private Cloud customers requiring dedicated resources). Contract terms typically 12-36 months with commitment (not month-to-month like Public Cloud).",
+      "pricing_logic": "COMMITTED CAPACITY PRICING: Customer commits to minimum infrastructure footprint (e.g., 10 hosts, 50TB storage) at fixed monthly rate, with additional usage billed at utility rates. Higher per-unit pricing than public cloud due to dedicated resources and NO multi-tenant cost sharing. Premium pricing justified by compliance requirements (HIPAA/HITRUST, PCI-DSS, FedRAMP, UK Sovereign), performance guarantees (no noisy neighbor), and customization (customer-specific configurations). Gross margin 38.6% (vs 10.4% Public Cloud) reflects pricing power for dedicated infrastructure.",
+      "key_dependencies": [
+        "Data center capacity and colocation agreements (owned or leased facilities)",
+        "Vendor partnerships: VMware licensing and support, Microsoft licensing, Red Hat/OpenStack ecosystem",
+        "Hardware supply chain (servers, storage, networking equipment)",
+        "Customer contract duration and renewal rates (revenue stability depends on committed terms)",
+        "Compliance certifications tied to specific infrastructure: FedRAMP JAB, DoD IL4, ISO 27001, SOC 2, HIPAA/HITRUST, PCI-DSS"
+      ],
+      "structural_constraints_from_stage_1": [
+        "GOVERNMENT REVENUE (subset of Private Cloud, exact $ unknown): Entity-locked in Rackspace Government Solutions with FedRAMP JAB authorization since 2015, DoD IL4 certification, serving >50% of federal cabinet agencies. CANNOT TRANSFER to non-FedRAMP entity. Change of control INVALIDATES authorization, forcing 12-18 month re-authorization with zero service continuity. Requires 100% US citizen security team in continental US. Foreign acquisition triggers FOCI review and proxy board requirement eliminating economic control.",
+        "UK SOVEREIGN SERVICES (subset of Private Cloud, launched March 2024, $ unknown): ARCHITECTURALLY ISOLATED in RACKSPACE LIMITED (UK entity). Infrastructure CANNOT be shared with global Rackspace network or non-UK personnel by design (UK data sovereignty requirement post-Brexit). Consolidation with non-UK operations = immediate compliance breach and loss of UK government/NHS/police/financial services customers. BT partnership likely UK-entity-specific. Integration with global operations PERMANENTLY PROHIBITED.",
+        "Data center lease restrictions: Stage 1.4 identified real estate leases may contain assignment restrictions requiring landlord consent for ownership change."
+      ],
+      "touch_test_what_breaks": "STRUCTURAL: Government revenue cannot survive foreign acquisition without 12-18 month service interruption (FedRAMP re-authorization) and potential loss of all federal customers. UK Sovereign revenue lost if operations consolidated with non-UK entities (sovereignty breach). ECONOMIC: Revenue decline 13% YoY indicates customer migration to public cloud, eroding higher-margin base. Cannot prevent migration without matching public cloud economics (impossible with dedicated infrastructure cost structure). OPERATIONAL: Data center capacity is fixed and long-lead-time - cannot quickly scale up or down. Excess capacity creates cost burden; insufficient capacity loses customers. VENDOR: VMware licensing costs are significant and VMware (now Broadcom-owned) has raised prices dramatically in 2023-2024, compressing margins.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Rackspace Q4 2024 earnings: Private Cloud revenue $1,055M (39% of total), down 13% YoY, gross margin 38.6%",
+        "Rackspace website: Private Cloud offerings include VMware, OpenStack, Microsoft Hyper-V on dedicated infrastructure",
+        "Rackspace Government Solutions e-book: FedRAMP JAB authorization since 2015, serves >50% federal cabinet agencies",
+        "Stage 1.5.structural_lock_ins.json: Government Solutions entity-specific authorizations, UK Sovereign architecturally isolated",
+        "Rackspace newsroom March 27, 2024: UK Sovereign Services launch with isolated infrastructure",
+        "Stage 1.V.truth_map.entities.json: Multi-jurisdictional structure prevents consolidation"
+      ]
+    },
+    {
+      "engine_name": "Professional Services & Migrations (Project-Based)",
+      "what_customer_buys": "Non-recurring project work: cloud migration services (lift-and-shift or re-architecture), application modernization, architecture design/consulting, implementation services, proof-of-concept builds, staff augmentation. One-time or short-duration engagements billed separately from ongoing managed services. Typically sold as precursor to recurring managed services contract OR as standalone to existing customers.",
+      "revenue_trigger": "PROJECT MILESTONES OR TIME-AND-MATERIALS: Revenue recognized on percentage-of-completion basis for fixed-price projects OR monthly as hours consumed for T&M engagements. Lumpy revenue (not recurring) creates quarterly variability. Bookings growth (14% YoY in 2024) suggests strong pipeline, but conversion to ARR uncertain.",
+      "pricing_logic": "HOURLY RATES OR FIXED-PRICE PROJECTS: Solutions architects, migration engineers, and specialists billed at hourly rates (estimated $150-300/hr based on industry norms for enterprise consultants) OR fixed-price for defined scope. Pricing varies by complexity, urgency, and incumbent expertise requirements. Lower margin than recurring managed services due to labor intensity and project delivery risk (scope creep, delays).",
+      "key_dependencies": [
+        "Skilled professional services workforce (solutions architects, migration specialists, DevOps engineers)",
+        "Customer acquisition and sales pipeline (professional services often initial engagement)",
+        "Land-and-expand motion: professional services projects convert to recurring managed services contracts",
+        "Vendor-funded migration incentives: AWS Migration Acceleration Program, Azure Migration Program Factory providing funding/credits for customer migrations"
+      ],
+      "structural_constraints_from_stage_1": [
+        "WORKFORCE JURISDICTION: Stage 1 identified Rackspace US, Inc. as U.S. employing entity. Professional services likely delivered by jurisdiction-specific entities (US, UK, Singapore, etc.) based on customer location and data sovereignty. Cross-border delivery may be restricted by customer contracts or regulatory requirements (e.g., ITAR, classified federal work requires US citizens on US soil)."
+      ],
+      "touch_test_what_breaks": "COMPETITIVE: Hyperscalers offer migration funding and free consulting to win customers, undercutting Rackspace's professional services revenue. AWS/Azure/Google have armies of solutions architects and can afford to give away consulting to capture infrastructure spend. CONVERSION RISK: Professional services projects that do NOT convert to ongoing managed services ARR are margin-dilutive (labor costs with no recurring revenue follow-on). TALENT: Shortage of certified cloud architects and migration specialists drives wage inflation and attrition risk.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Rackspace Q4 2024 earnings: 'Differences between revenue periods might be due to higher or lower professional services revenue' (suggesting variability)",
+        "Rackspace Q4 2024 earnings: Bookings grew 14% YoY in 2024 (suggesting strong pipeline including professional services)",
+        "Rackspace website: Services include 'architecture advisors, code development assist, launch assistance'",
+        "Industry knowledge: AWS MAP, Azure Migration Program Factory provide customer incentives for cloud migrations",
+        "INFERENCE: Professional services revenue not separately disclosed but industry-standard for MSPs to offer migration/consulting alongside managed services"
+      ]
+    },
+    {
+      "engine_name": "Email Hosting (Legacy SMB Subscription)",
+      "what_customer_buys": "Email hosting for SMBs: mailboxes, storage, webmail access, basic spam filtering. Separate from managed cloud offerings. Legacy business from Rackspace's early days as SMB hosting provider. Commoditized service with minimal differentiation.",
+      "revenue_trigger": "PER-MAILBOX MONTHLY SUBSCRIPTION: Fixed monthly fee per mailbox. Historical pricing $1-3/mailbox/month. NEW PRICING (effective March 1, 2026): $6-10/mailbox/month for standard mailboxes (up to 706% increase). Revenue recognized monthly. Customer count and mailbox count declining due to price shock.",
+      "pricing_logic": "DRAMATIC PRICE INCREASE (MARGIN DEFENSE OR EXIT STRATEGY): Standard mailboxes jumping from $1-3/month to $6-10/month. Reseller wholesale rates reportedly increased 706%. Volume discount for >1,000 mailboxes caps at 15%, still far above pre-increase pricing. Price increase appears to be: (A) Margin defense - exiting unprofitable customer segment by pricing out low-ARPU SMBs, OR (B) Harvesting - extracting maximum revenue from sticky customers before inevitable decline. Storage limits and support unchanged - pure price increase with no added value.",
+      "key_dependencies": [
+        "SMB customer stickiness and switching costs (email migration perceived as painful)",
+        "Reseller/partner channel tolerance for price increases (partners reporting 'devastating' impact and 'immediate churn')",
+        "Competitive landscape: Microsoft 365, Google Workspace offer enterprise-grade email at $5-12/user/month with full productivity suite"
+      ],
+      "structural_constraints_from_stage_1": [
+        "NONE IDENTIFIED - email hosting likely operates on shared infrastructure across jurisdictions. No entity-specific constraints found in Stage 1 analysis."
+      ],
+      "touch_test_what_breaks": "CUSTOMER CHURN (ALREADY HAPPENING): Partners report 'immediate churn' and predict 'wave of churn' from 706% price increase. SMBs cannot justify $6-10/mailbox/month for basic email when Microsoft 365 Business Basic costs $6/user/month with full Office suite. CHANNEL REVOLT: Resellers describing increase as 'devastating' and 'unsustainable for most SMBs' - partner abandonment accelerates customer loss. REVENUE CLIFF: If churn exceeds 50-70%, total revenue declines despite price increase. REPUTATIONAL: Price increase damages 'Fanatical Support' brand and customer loyalty.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "WebProNews Feb 2026: 'Rackspace Email Hosting Prices Soar Up to 706%', standard mailboxes $3/mo to $10/mo effective March 1, 2026",
+        "Archyde: 'Rackspace Email Hosting Prices Surge 706%—Partners Call the Increase Devastating'",
+        "WebProNews: Partner quote: 'immediate churn', 'A 706% hike is unsustainable for most SMBs'",
+        "WebProNews: 'Early indicators suggest significant churn from Rackspace's pricing gamble'",
+        "WebProNews: 'Volume-based pricing for over 1,000 mailboxes, but the discount typically caps at 15%'"
+      ]
+    },
+    {
+      "engine_name": "Acquired Entity Revenue (Datapipe, Onica, TriCore, RelationEdge) - Integration Status Unknown",
+      "what_customer_buys": "UNKNOWN - revenue mechanics depend on whether acquired entities remain separate operating units with original service offerings OR have been integrated into Rackspace Public/Private Cloud segments. $1.7B acquisition spend (2017-2019) suggests material revenue contribution, but segment disclosure does not break out acquired entity revenue separately.",
+      "revenue_trigger": "UNKNOWN - likely mix of managed services, consulting, and infrastructure resale similar to core Rackspace offerings. Integration status unclear: if entities remain separate, revenue triggers/pricing/contracts may differ from core business. If integrated, revenue now reported within Public/Private Cloud segments.",
+      "pricing_logic": "UNKNOWN - acquired entities had distinct pricing and service offerings at time of acquisition. Datapipe: enterprise managed hosting. Onica: AWS consulting/managed services (now likely integrated into Public Cloud). TriCore: Microsoft Azure/Office 365 services (likely integrated into Public Cloud). RelationEdge: Salesforce consulting (potentially separate or divested). Current pricing unclear.",
+      "key_dependencies": [
+        "Integration execution: Stage 1.3 identified $1.7B acquisition spend with unknown integration status",
+        "Customer retention post-acquisition: acquired customers may have churned during integration or brand change",
+        "Technology platform consolidation: multiple acquisitions created 'multi-entity complexity, duplicate systems, customer fragmentation, technology platform multiplicity' per Stage 1"
+      ],
+      "structural_constraints_from_stage_1": [
+        "INTEGRATION STRUCTURAL DEBT (Stage 1.3): If entities remain separate: administrative burden, duplicate systems, customer fragmentation, platform multiplicity. If partially integrated: 'worst outcome - paid full price, realized partial synergies, retained most complexity'. Completing integration requires customer migrations (20-30% failure rate, data loss risk, churn), employee terminations, system cutover (outage risk), brand retirement. Abandoning integration accepts permanent 20-30% cost structure penalty. Carving out requires 'reverse integration' untangling shared dependencies."
+      ],
+      "touch_test_what_breaks": "OPERATIONAL: If entities remain separate, cannot realize acquisition synergies and carry duplicative cost structure (sales, marketing, IT, HR, finance, legal for each entity). If integration incomplete, may have mixed state with partial shared services creating complexity and inefficiency. If integration attempted, 20-30% customer migration failure rate creates churn and revenue loss. STRATEGIC: Acquirer inherits $1.7B of acquisition decisions with unknown value realization. Cannot easily divest entities if integration already begun (shared dependencies).",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 1.3.structural_debt_map.json: '$1.7B acquisition spend (2017-2019)' for Datapipe, Onica, TriCore, RelationEdge",
+        "Stage 1.3.structural_debt_map.json: 'If entities remain separate: administrative burden, duplicate systems, customer fragmentation, technology platform multiplicity'",
+        "Stage 1.V.truth_map.entities.json: 'Acquired Entities (Datapipe, Onica, TriCore, RelationEdge) - Integration Status Unknown'",
+        "Wikipedia: Acquisition dates and transaction values (Datapipe $684M in 2017, Onica $250M in 2019, TriCore $21M in 2019, RelationEdge undisclosed)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "sub_stage": "4.3",
+  "document_metadata": {
+    "title": "Information Requests - Dependencies & Failure Propagation Unknowns",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09"
+  },
+  "unknowns_requests": [
+    {
+      "request_id": "4.3-REQ-01",
+      "priority": "CRITICAL",
+      "unknown_addressed": "Complete cross-functional dependency mapping",
+      "specific_request": "(1) Vendor dependency inventory: Critical vendors, contract terms, integration dependencies, single-source risks, (2) Shared services utilization: Which functions depend on which central services (IT, security, legal, finance, HR), capacity constraints, (3) Technology platform architecture: Central infrastructure vs distributed, critical paths, single points of failure, (4) Data flow dependencies: Which teams depend on which data sources, data pipelines, critical data dependencies",
+      "why_material": "Partial dependency visibility creates integration risk. Unknown dependencies will surface post-close creating surprises. Critical for failure propagation analysis—cannot map cascades without complete dependency understanding. Vendor dependencies create external bottlenecks (ScienceLogic example)—need complete inventory to assess risk."
+    },
+    {
+      "request_id": "4.3-REQ-02",
+      "priority": "HIGH",
+      "unknown_addressed": "Heroics capacity utilization and failure absorption limits",
+      "specific_request": "(1) Employee burnout indicators: Voluntary turnover rates by function/role, engagement survey results, overtime/weekend work patterns, (2) CEO coordination load quantification: Time allocation analysis, decision queue depth, approval bottleneck metrics, (3) Delivery margin absorption: Historical margin erosion rates, profitability distribution by customer, capacity allocation between profitable/unprofitable, (4) Support escalation patterns: Queue depth trends, aging analysis, escalation success rates",
+      "why_material": "Heroics masking failures but capacity limits unknown. Need to assess how close to exhaustion—determines urgency of structural fixes. Post-close integration will stress heroics capacity—need baseline to assess integration load absorbability. Critical for determining whether business stabilizable or approaching collapse."
+    },
+    {
+      "request_id": "4.3-REQ-03",
+      "priority": "MEDIUM",
+      "unknown_addressed": "Failure propagation velocity and cascading patterns",
+      "specific_request": "(1) Customer churn analysis: Churn acceleration patterns, time from first complaint to churn, churn prediction indicators, (2) Margin erosion velocity: Monthly margin trends, rate of change, tipping point analysis, (3) Support quality degradation: Trend analysis (linear/exponential), correlation with volume/complexity, (4) Security incident frequency: Historical incident rates, mean time between incidents, trend analysis",
+      "why_material": "Need to assess crisis timing—how quickly do masked failures surface? Determines urgency of corrective actions. Some failures may cascade slowly (margin erosion), others quickly (security incidents, customer churn). Cannot prioritize interventions without understanding propagation velocity."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "structural_constraint_register": [
+    {
+      "constraint": "$1.3B First Lien Credit Agreement with change-of-control mandatory repurchase",
+      "category": "CONTRACT",
+      "severity": "HIGH",
+      "why_severity": "ABSOLUTE VETO on any M&A transaction. Lender consent required or full debt refinancing ($1.3B). Failure triggers immediate default, acceleration, foreclosure on substantially all assets. Lenders can block deal or extract concessions. This is PRIMARY BLOCKING CONSTRAINT on all transactions.",
+      "touch_test_what_breaks": "Any acquisition without lender approval = event of default, $1.3B acceleration, foreclosure, company bankruptcy or forced liquidation.",
+      "evidence_refs": ["1.4.contractual_constraints.json", "1.1.control_constraints.json"],
+      "open_unknowns": ["Lender consent process timeline", "Historical lender consent precedents", "Fees/concessions lenders would extract"]
+    },
+    {
+      "constraint": "FedRAMP authorization entity-specific, 12-18 month re-authorization upon change",
+      "category": "JURISDICTION_LICENSE",
+      "severity": "HIGH",
+      "why_severity": "23 FedRAMP authorizations serving >50% cabinet agencies. Entity change invalidates immediately, forcing 12-18 month re-authorization with no service continuity. Government customers migrate during gap = permanent revenue loss. Foreign acquisition triggers FOCI review adding 6-12 months and potential denial.",
+      "touch_test_what_breaks": "Change-of-control = immediate FedRAMP invalidation, 100% government customer churn during 12-18 month gap, all government revenue ($X million unknown but material) permanently lost if customers migrate or re-authorization denied.",
+      "evidence_refs": ["1.5.structural_lock_ins.json", "1.4.contractual_constraints.json"],
+      "open_unknowns": ["Government revenue amount", "Historical re-authorization experience", "FOCI review likelihood of approval for various acquirer types"]
+    },
+    {
+      "constraint": "Apollo Global Management 53-57% majority trapped, cannot exit easily",
+      "category": "CONTROL",
+      "severity": "HIGH",
+      "why_severity": "Apollo has absolute governance control but economic stake worth only $64-68M at $0.48 price (vs $703M IPO proceeds 2020). Cannot sell without massive loss. Cannot take private without expensive buyout of public shareholders. Structure intended as temporary but permanent after 5+ years. Apollo trapped creates transaction complexity - must negotiate Apollo exit as part of any deal.",
+      "touch_test_what_breaks": "Transaction requires Apollo approval (majority vote) but Apollo economically unmotivated to sell at current valuation. Creates pricing tension - Apollo wants high price to recoup losses, acquirer sees distressed asset. Public shareholders block supermajority transactions and can force appraisal/litigation.",
+      "evidence_refs": ["1.3.path_dependency_risks.json", "1.2.control_reality.json"],
+      "open_unknowns": ["Apollo's minimum acceptable exit price", "Investor rights agreement provisions"]
+    },
+    {
+      "constraint": "UK Sovereign Services architecturally isolated, cannot integrate with global operations",
+      "category": "JURISDICTION_LICENSE",
+      "severity": "HIGH",
+      "why_severity": "UK government/NHS/regulated industry customers require UK-only operations BY LAW post-Brexit. Infrastructure ISOLATED BY DESIGN from global network - integration would immediately violate sovereignty requirements losing all UK sovereign customers. Must maintain separate UK entity, infrastructure, support teams in perpetuity. Integration synergies impossible.",
+      "touch_test_what_breaks": "Integration with non-UK operations = breach of UK sovereignty requirements, immediate loss of UK government/NHS/police/financial services/pharma customers (revenue $X million unknown), cannot recover UK sovereign market position once lost.",
+      "evidence_refs": ["1.5.structural_lock_ins.json", "1.5.false_mobility_assumptions.json"],
+      "open_unknowns": ["UK Sovereign Services revenue and growth trajectory", "BT partnership terms and change-of-control provisions"]
+    },
+    {
+      "constraint": "Cloud provider partnerships (AWS, Microsoft, Google) with termination rights upon competitive acquisition",
+      "category": "CONTRACT",
+      "severity": "HIGH",
+      "why_severity": "AWS likely represents 30-40% revenue (2,000+ customers, 1,000+ staff). Microsoft and Google partnerships also material. Termination upon competitive acquisition blocks strategic buyers (cloud providers, large tech companies). Multicloud positioning requires maintaining all three - loss of any one collapses value proposition. Effectively limits buyer universe to financial sponsors.",
+      "touch_test_what_breaks": "AWS partnership termination = loss of 30-40% revenue ($450-600M estimated), cannot position as AWS Premier Partner, must lay off 1,000 AWS staff, multicloud MSP model collapses. Similar impacts if Microsoft or Google terminate.",
+      "evidence_refs": ["1.4.contractual_constraints.json", "1.5.structural_lock_ins.json"],
+      "open_unknowns": ["AWS/Microsoft/Google partnership agreement actual change-of-control provisions", "Revenue concentration by cloud provider"]
+    },
+    {
+      "constraint": "Multi-jurisdictional entity structure legally cannot be consolidated",
+      "category": "ENTITY",
+      "severity": "HIGH",
+      "why_severity": "Rackspace operates as portfolio of jurisdictionally-segregated businesses, not unified operation. U.S. Government business (Rackspace Government Solutions), UK Sovereign (RACKSPACE LIMITED isolated), China (local entity localized), EU Commercial (GDPR-restricted), U.S. Commercial, APAC (Singapore) each require separate entities, authorizations, infrastructure. Consolidation equals market exit in multiple jurisdictions.",
+      "touch_test_what_breaks": "Entity consolidation = loss of FedRAMP (government), UK Sovereign compliance (UK regulated), China operations (market exit), EU operations (GDPR violations), APAC (Singapore exit). Revenue loss 30-50% ($450-750M). Cannot achieve integration synergies assumed in M&A.",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "All Stage 1 sub-stages document entity requirements"],
+      "open_unknowns": ["Revenue breakdown by jurisdictional segment", "Integration cost if allowed by law"]
+    },
+    {
+      "constraint": "9-year debt structure (2016-2025) cannot be eliminated, covenants locked until 2028",
+      "category": "HISTORY",
+      "severity": "HIGH",
+      "why_severity": "Debt persisted through multiple refinancings, currently $1.3B with restrictive covenants until May 2028 maturity. Cannot delever: equity raise impossible at $0.48 price (90%+ dilution), asset sales blocked by covenants, cash generation insufficient. March 2024 refinancing was distressed exchange locking strategic paralysis for 4+ years. Capital structure flexibility permanently lost.",
+      "touch_test_what_breaks": "Eliminating debt requires $1.3B cash (impossible), $1.3B equity raise (90%+ dilution at $0.48), or asset sales generating $1.3B (requires selling most/all business). Debt is FOUNDATIONAL - removal without replacement financing = cease as going concern. Cannot pursue M&A, growth capital, dividends until 2028 maturity.",
+      "evidence_refs": ["1.3.path_dependency_risks.json", "1.1.control_constraints.json"],
+      "open_unknowns": ["Lender consent requirements for early refinancing", "Make-whole premium exact amount"]
+    },
+    {
+      "constraint": "Customer contracts with change-of-control termination rights creating 10-30% expected churn",
+      "category": "CONTRACT",
+      "severity": "MED",
+      "why_severity": "Industry-standard MSP contracts contain assignment restrictions and termination rights upon change-of-control. Government customers have FAR termination for convenience. 10-30% churn assumption = $150-450M revenue loss. Assignment consent requirements create 60-180 day timeline risk. Re-certification gaps force immediate customer migration for regulated customers.",
+      "touch_test_what_breaks": "Customer termination upon announcement reduces revenue by $150-450M, destroying deal economics if at high end of range. Customer consent solicitation takes 60-180 days delaying close. Regulated customers (government, healthcare, financial) cannot remain during re-certification gaps (6-18 months) forcing immediate churn potentially 40-60% of revenue.",
+      "evidence_refs": ["1.4.contractual_constraints.json", "1.4.change_of_control_risk_summary.json"],
+      "open_unknowns": ["Customer contract actual change-of-control provisions", "Historical customer churn upon Apollo 2016 LBO"]
+    }
+  ]
+}

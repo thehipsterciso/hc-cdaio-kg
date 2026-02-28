@@ -1,0 +1,54 @@
+{
+  "hard_constraint_truth_map": {
+    "security_constraints": [
+      "FedRAMP security control changes require JAB approval (supplemental assessment $50K-$200K, 2-4 months timeline), preventing rapid threat response",
+      "UK Sovereign Cloud requires complete isolation from global network and UK-only personnel access (VMware certification requirement, customer contracts), preventing global security tool/SOC consolidation",
+      "Patch management discipline failed with Exchange (patches available Nov 2022, not applied, breach Dec 2022), three incidents in 36 months demonstrate control weakness pattern",
+      "Supply chain attack surface uncontrollable (ScienceLogic Sept 2024, CL0P/Cleo Oct 2024 zero-days), recurring breach risk ~2/year from third-party tools",
+      "Legacy platform technical debt prevents safe modernization (Exchange too fragile to patch, VMware 40-60% customer migration resistance), creates compound vulnerability accumulation",
+      "IAM change paralysis from multi-stakeholder veto (Security, Compliance, Operations, Customers all must approve changes), security improvements blocked by implementation risk"
+    ],
+    "data_use_and_privacy_constraints": [
+      "GDPR processor status PROHIBITS using customer data for Rackspace analytics, AI training, monetization without written customer permission + controller status assumption (French CNIL guidance)",
+      "HIPAA Business Associate restrictions limit PHI use to contracted services only, customer must encrypt PHI before transmission (Rackspace processes 'data blind'), de-identification standards (Safe Harbor 18 identifiers, Expert Determination) too narrow for analytics value",
+      "FedRAMP data definition excludes provider metadata BUT individual agency contracts override claiming government ownership of ALL data including telemetry, prevents federal intelligence business",
+      "UK Sovereign data CANNOT leave UK or be accessed by non-UK personnel (customer contracts + VMware certification + UK GDPR), zero cross-border leverage",
+      "Customer workload data technically accessible but legally OFF-LIMITS (breach of contract, CFAA violation risk), cannot build workload insights business without customer-by-customer authorization (99% will refuse)",
+      "Security incident forensics contain customer confidential information (IP addresses, architectures, vulnerabilities) covered by NDAs, cannot monetize threat intelligence from three breaches"
+    ],
+    "regulatory_and_enforcement_constraints": [
+      "FedRAMP JAB can suspend ATO within 24-72 hours via continuous monitoring detecting material control failures, serves >50% cabinet agencies, suspension = federal revenue loss",
+      "SEC 4-business-day cyber disclosure creates compliance trap (CL0P Oct 2024 no 8-K filing suggests potential violation, investigations take 12-36 months but create immediate M&A/capital markets obstacles)",
+      "UK ICO enforcement escalated 7x (£19.6M Q1 2025 vs £2.7M full year 2024), MSP targeting campaign (Advanced £3.07M for ransomware/patch failure identical to Rackspace Exchange pattern), UK Sovereign Services in crosshairs",
+      "EU DPAs can issue immediate processing suspension or transfer bans (27 independent enforcers, €20M or 4% revenue per jurisdiction), Data Privacy Framework under legal challenge (Schrems pattern)",
+      "HHS OCR Risk Analysis Initiative proactively targeting Business Associates ($7M settlements 2024 vs $1M 2022, 7x increase), cloud service providers highest-risk category, three Rackspace incidents create pattern visibility",
+      "VMware/Broadcom controls UK Sovereign Cloud certification (30-90 day audit to decertification), commercial veto not government regulation, Broadcom economic incentive to enforce strictly for premium pricing protection",
+      "State AG coordinated enforcement creates 20-30 parallel investigations for single breach ($200K-$500K legal costs, 6-12 months each), breach notification complexity across 50+ state laws",
+      "PCI DSS certification loss prevents accepting card payments (existential for e-commerce customers), Visa/Mastercard fines $5K-$500K/month + $50-$200/card, three-breach pattern triggers heightened scrutiny"
+    ],
+    "residency_and_sovereignty_constraints": [
+      "FedRAMP federal data CONUS-only (implicit requirement from federal sovereignty doctrine + agency contracts), cannot consolidate with commercial global infrastructure, 2-3x cost multiplier",
+      "UK Sovereign Services UK-isolated (VMware certification + customer contracts: government, NHS, police, FCA/PRA), 'platforms and support teams isolated from global network', 2-3x cost vs global",
+      "China CSL Article 37 data localization ABSOLUTE for personal information and important data, CIIOs must store in China + submit to government oversight, business license suspension risk",
+      "EU personal data CONDITIONAL mobility via Data Privacy Framework or SCCs, DPF under legal challenge (Max Schrems Feb 2024 cases), potential invalidation forces EU operational isolation",
+      "Healthcare PHI legally mobile with HIPAA safeguards BUT customers refuse offshore processing (practical immobility), HITRUST certification requires demonstrable controls creating implementation barrier",
+      "Financial services increasing data residency demands (regulatory pressure from banking regulators, cyber insurance requirements), becoming de facto immobile even when legally mobile",
+      "Defense contractors CMMC requirements phase-in (US-only data processing, US-citizen personnel, FedRAMP+), creates separate infrastructure requirement",
+      "Law enforcement CJIS Security Policy requires US-only + FBI background checks for personnel, separate infrastructure for law enforcement customers",
+      "Cross-border transfer mechanisms FRAGILE (UK adequacy revocable, DPF under challenge, China localization tightening), transfer rights eroding not strengthening"
+    ],
+    "governance_and_veto_constraints": [
+      "Apollo controls capital allocation (53-57% ownership, Board majority), Investment Committee operates on 2-3 year exit timeline (2028-2029) deprioritizing 3-5 year payback initiatives, capital starvation = de facto veto",
+      "Audit Committee post-SEC cyber disclosure rules HYPER-RISK-AVERSE, any initiative characterized as 'increasing cyber risk' blocked via fiduciary duty invocation, risk framing = rejection",
+      "CISO compliance gatekeeper invokes regulatory requirements as unappealable (FedRAMP won't allow, HITRUST will decertify, ICO will enforce), information asymmetry prevents challenge",
+      "Legal/Compliance interpretation monopoly on ambiguous regulations, conservative interpretation becomes operationalized (e.g., FedRAMP requires physical not logical separation), never tested whether flexible interpretation acceptable",
+      "Security Architecture Review Board uses technical complexity as veto (infinite edge cases, compliance interpretation conservatism), consolidation blocked despite 30-50% cost savings opportunity",
+      "Enterprise Risk Committee perpetual assessment without decision (unresolved risk = more analysis, member-by-member veto via 'need to assess X'), 12-24 month delays for strategic initiatives",
+      "Change Advisory Board change freeze post-incident (30-90 days after each security event), three incidents in 36 months = perpetual restricted change posture, optimization initiatives stalled",
+      "External Audit Bodies (FedRAMP 3PAO, HITRUST assessors) veto via re-certification risk ($500K-$2M expanded audit cost + 6-12 month timeline), auditors conservatively interpret requirements blocking consolidation",
+      "Risk escalation asymmetry: CISO/Legal risk escalation ALWAYS heard (24-72hrs to Audit Committee for material cyber risk), business opportunity escalation SOMETIMES ignored (quarterly Board cycle)",
+      "Escalation effectiveness declines hierarchically: operational-to-executive INEFFECTIVE (filtered at each layer), executive-to-Board EFFECTIVE (but Board defers to Audit Committee on risk), downward directives IGNORED when conflicting with risk/compliance preferences",
+      "External regulatory authority UNAPPEALABLE (FedRAMP JAB, ICO, VMware certification decisions are final), internal governance NEGOTIABLE (can request more analysis, alternative proposals), creates asymmetry where internal governance borrows external authority to amplify veto power"
+    ]
+  }
+}

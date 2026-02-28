@@ -1,0 +1,64 @@
+{
+  "unknowns_requests": [
+    {
+      "information_needed": "Segment P&L with detailed Cost of Revenue breakdown: Public Cloud vs Private Cloud COGS by line item (infrastructure pass-through, personnel, depreciation, facilities, licenses, other)",
+      "why_needed": "Determine cost structure composition (fixed vs variable), identify margin improvement levers, understand why Public Cloud is 10.4% margin and Private Cloud is 38.6%. Without COGS breakdown, cannot assess cost reduction opportunities or margin sensitivity to revenue changes.",
+      "request_to": "Management / CFO",
+      "format": "Excel file with monthly P&L 2023-2024 by segment (Public Cloud, Private Cloud, Professional Services if separate, Email Hosting if separate), with COGS detail: Hyperscaler infrastructure costs, Personnel (delivery engineers), Infrastructure depreciation, VMware/vendor licenses, Data center facilities (rent, power, cooling), Maintenance/support, Overhead allocation, Other. For each line: $ amount, % of segment revenue, cost type (fixed/semi-fixed/variable)."
+    },
+    {
+      "information_needed": "VMware licensing agreements, annual spend 2022-2024, Broadcom renewal terms and price increases effective 2024-2026, customer pass-through contract provisions",
+      "why_needed": "VMware/Broadcom price shock (200-300% increases) is EXISTENTIAL THREAT to Private Cloud margin 38.6%. Must quantify: (1) Baseline VMware cost pre-Broadcom, (2) Incremental cost post-Broadcom, (3) Which customers have contracts allowing pass-through vs fixed pricing requiring Rackspace absorption, (4) Margin impact scenarios.",
+      "request_to": "Management / CFO OR Vendor Management",
+      "format": "VMware master licensing agreements (vSphere, vSAN, NSX) with pricing schedules, Annual VMware spend 2022-2024 (baseline), Broadcom renewal terms 2024-2026 with new pricing, Customer contract analysis: % of Private Cloud customers with pass-through provisions vs fixed pricing, Margin impact model: scenarios for 0%, 50%, 100% pass-through and resulting gross margin."
+    },
+    {
+      "information_needed": "Hyperscaler partnership agreements (AWS, Google Cloud) with full terms including partner credits/rebates, volume tiers, termination provisions, change-of-control consent",
+      "why_needed": "Public Cloud gross margin 10.4% ($175M profit on $1,683M revenue) is ENTIRELY DEPENDENT on hyperscaler partner credits (estimated 5-15%). If credits reduced or partnerships terminated, Public Cloud becomes unprofitable. Must understand: (1) Actual credit %, (2) Term length and revocability, (3) Volume thresholds and Rackspace current position, (4) Termination triggers.",
+      "request_to": "Management / Chief Partnerships Officer OR hyperscaler account managers",
+      "format": "Full executed partnership agreements under NDA: AWS Consulting Partner Agreement, Google Cloud Partner Agreement (Azure CSP Agreement already documented at ~15% PEC), with specific focus on: Partner credit/rebate schedules (%), Volume tier thresholds and Rackspace current tier, Agreement term and auto-renewal provisions, Termination clauses and notice periods, Change-of-control consent requirements."
+    },
+    {
+      "information_needed": "Data center infrastructure footprint, utilization rates, lease terms, carrying costs: facilities by location, owned vs leased, capacity, current utilization %, underutilized capacity costs",
+      "why_needed": "Private Cloud declining 13% YoY likely creates 10-30% underutilized data center capacity. Stranded infrastructure generates depreciation, lease payments, and facilities costs with no revenue. Must quantify: (1) Total capacity by location, (2) Current utilization %, (3) Underutilized capacity carrying costs, (4) Lease expiration schedule and exit optionality.",
+      "request_to": "Management / VP Real Estate OR VP Operations",
+      "format": "Data center footprint report: Location (city, state/country), Owned or Leased (if leased: landlord, lease expiration date, early termination provisions, annual rent), Capacity (racks, MW, square feet), Current utilization %, Customer segment allocation (commercial, government, UK sovereign, etc.), Annual carrying costs (depreciation if owned, rent if leased, power, cooling, security, maintenance). Identify underutilized facilities and exit opportunities."
+    },
+    {
+      "information_needed": "Headcount by function and geography with cost per FTE: delivery (by segment), sales, marketing, G&A, with breakdown by location (US, UK, India, LATAM, other)",
+      "why_needed": "Personnel costs are largest component of SG&A and COGS. Total headcount 5,100 (down 12%) but allocation unknown. Must assess: (1) Delivery efficiency (engineers per $M revenue by segment), (2) Sales productivity (bookings per sales FTE), (3) Labor arbitrage opportunity (onshore vs offshore cost differential), (4) Overstaffed vs understaffed functions.",
+      "request_to": "Management / CHRO",
+      "format": "Headcount report as of Dec 2023 and Dec 2024: Function (Delivery: Public Cloud, Private Cloud, Government, UK Sovereign, Professional Services; Sales; Marketing; Product/Engineering; G&A: Finance, HR, IT, Legal, Executive), Geography (US, UK, India, LATAM, other), Headcount by function and geography, Average total compensation (salary + benefits + equity) per FTE by geography. Calculate delivery engineer per $M revenue ratios and compare to industry benchmarks."
+    },
+    {
+      "information_needed": "Email hosting segment baseline metrics pre-price-increase (2022-2024) and post-increase actuals/forecast (March-Dec 2026): revenue, customers, mailboxes, margins, churn",
+      "why_needed": "Email hosting 706% price increase (March 2026) driving 'immediate churn' per partners. Cannot assess impact without baseline. Need to determine: (1) Revenue materiality (2% or 8% of total?), (2) Baseline margin (profitable or loss-making?), (3) Churn magnitude (50%, 70%?), (4) Exit decision urgency and costs.",
+      "request_to": "Management / CFO",
+      "format": "Email hosting P&L 2022-2024: Annual revenue, customer count (direct and reseller), mailbox count, COGS (platform infrastructure, support personnel), gross margin $and %, SG&A allocation, operating margin. Post-price-increase (March-Dec 2026): Monthly revenue, customer count, mailbox count, churn rate %, gross margin. Exit scenario analysis: (A) Continue at loss, (B) Exit immediately (shutdown costs, customer migration costs, platform write-off), (C) Sell to consolidator (potential buyer interest, valuation)."
+    },
+    {
+      "information_needed": "Acquired entity integration status, cost structure, and synergy realization: Datapipe, Onica, TriCore, RelationEdge - platform consolidation, headcount consolidation, synergies captured",
+      "why_needed": "$1.7B acquisition spend (2017-2019) should have generated $50-150M annual synergies if integrated. If entities remain separate with duplicative costs, this is 20-30% cost penalty. Must determine: (1) Integration completion status, (2) Duplicative costs remaining, (3) Synergy realization actual vs projected, (4) Further consolidation potential or divestiture options.",
+      "request_to": "Management / CFO OR M&A Integration Lead",
+      "format": "Acquisition post-mortem for each (Datapipe, Onica, TriCore, RelationEdge): Integration status (complete, partial, minimal), Customer platform migration % (on unified Rackspace platform vs legacy), Headcount consolidation (duplicative sales, delivery, G&A eliminated?), Technology consolidation (systems, tools unified?), Synergy realization: Projected synergies at acquisition (cost savings, revenue synergies), Actual synergies realized to date, Remaining integration work and costs. Identify divestiture candidates (failed integrations, non-core)."
+    },
+    {
+      "information_needed": "Government Solutions and UK Sovereign Services separate P&Ls: revenue, margins, dedicated costs (infrastructure, personnel, compliance), customer metrics",
+      "why_needed": "Stage 1 identified Government (FedRAMP) and UK Sovereign as structurally isolated with higher compliance costs. Unknown if premium pricing justifies incremental costs or if margins are lower than commercial. Government/UK Sovereign may be 10-20% of revenue with different margin profiles. CRITICAL for valuation: Government has ZERO VALUE to foreign buyers (FOCI), UK Sovereign has limited buyer universe.",
+      "request_to": "Management / CFO OR Government/UK Sovereign Business Unit Leaders",
+      "format": "Separate P&Ls for: (1) Rackspace Government Solutions (FedRAMP business), (2) UK Sovereign Services. For each: Revenue 2022-2024, Customer count and top customers, Gross margin $ and %, COGS breakdown (dedicated infrastructure, US citizen/UK personnel costs, compliance and certification costs, overhead allocation), Operating margin. Compare to commercial Public/Private Cloud to quantify premium pricing and incremental costs. Assess buyer universe constraints (Government = US buyers only, UK Sovereign = limited interest)."
+    },
+    {
+      "information_needed": "Customer cohort retention curves, churn rates by segment, and economics: gross churn %, net churn %, cohort revenue retention by year, churn drivers",
+      "why_needed": "Month-to-month billing creates zero contractual lock-in. Actual customer retention/churn rates determine business sustainability. If gross churn is 20-30% annually, must acquire same amount just to maintain revenue (treadmill). If net revenue retention is <100% (existing customers shrinking), business is in structural decline. Need to understand retention by segment (Public Cloud, Private Cloud, Government, UK Sovereign) and churn drivers (price, service, competitive).",
+      "request_to": "Management / Chief Revenue Officer OR VP Customer Success",
+      "format": "Customer retention analysis 2022-2024: Gross churn rate % (customers who leave), Net revenue churn rate % (revenue lost from churn minus upsells), Cohort analysis (for customers acquired in 2020, 2021, 2022, what % of revenue retained in year 1, 2, 3+?), Churn by segment (Public Cloud, Private Cloud, Government, Email), Churn reasons (top 5-10 drivers from exit interviews or surveys), Competitive win-loss analysis (where customers go when they churn)."
+    },
+    {
+      "information_needed": "Fixed vs variable cost structure by segment: for Public Cloud and Private Cloud, what % of COGS is truly variable with revenue vs fixed/semi-fixed",
+      "why_needed": "Understanding cost elasticity is CRITICAL for modeling margin behavior under revenue decline scenarios. If Public Cloud COGS is 90% variable (hyperscaler pass-through), margin stays relatively stable as revenue declines. If Public Cloud has 30% fixed costs (personnel, overhead), margin compresses rapidly. If Private Cloud is 60-70% fixed (infrastructure, facilities), negative operating leverage is severe. Need precise cost behavior classification to model margin trajectories.",
+      "request_to": "Management / CFO OR FP&A Lead",
+      "format": "Cost behavior analysis by segment: For Public Cloud: COGS line items classified as variable (scales 1:1 with revenue, e.g., hyperscaler infrastructure), semi-fixed (adjustable over 6-12 months, e.g., delivery personnel), or fixed (committed for 12-24 months, e.g., platform overhead, allocated G&A). Same for Private Cloud: Infrastructure depreciation (fixed), facilities costs (semi-fixed), personnel (semi-fixed), VMware licenses (semi-fixed), maintenance (variable). Scenario analysis: If Public Cloud revenue declines 10%, what is COGS decline % by line item? If Private Cloud declines 20%, what is COGS decline %?"
+    }
+  ]
+}

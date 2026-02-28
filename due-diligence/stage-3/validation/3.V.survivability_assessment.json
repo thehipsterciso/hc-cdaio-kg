@@ -1,0 +1,123 @@
+{
+  "survivability_assessment": [
+    {
+      "pressure_or_shock": "Economic recession (15-30% IT spending contraction)",
+      "what_breaks": "SYSTEMIC FAILURE: Revenue declines 27-38% to $1.0-1.1B over 18 months. Mid-Market churn 20-30%. SG&A stays ~$650M becoming 59-65% of revenue. Operating losses $150-250M annually. Covenant breach within 1-2 quarters forcing lender control. Vendor relationships strain. Government customers exit due to stability concerns. Requires immediate restructuring or bankruptcy within 12-18 months.",
+      "reversibility": "IRREVERSIBLE",
+      "who_gains_power": "Hyperscalers gain customers and market share through aggressive recession pricing. Low-cost MSPs gain price-sensitive mid-market share. Lenders gain control through covenant breaches. Customer migrations permanent (70-85% don't return post-recession). Portfolio quality degrades permanently through adverse selection.",
+      "evidence_refs": [
+        "3.6: Recession shock analysis documents 15-20% demand shock + 20-30% Mid-Market churn = 27-38% revenue decline",
+        "3.6: SG&A deleverage analysis shows ratio increases from 25.9% to 59-65% under revenue shock",
+        "3.6: Covenant breach risk analysis assumes tight covenants typical of PE capital structures",
+        "3.6: Historical pattern 2008-2009 recession saw permanent share shifts toward larger providers"
+      ],
+      "open_unknowns": [
+        "Actual debt covenant terms and headroom (CRITICAL - determines bankruptcy timeline)",
+        "Historical Rackspace recession performance 2008-2009 and 2020 (would calibrate shock magnitude estimates)",
+        "Lender willingness to waive covenants vs force restructuring (determines distress severity)"
+      ]
+    },
+    {
+      "pressure_or_shock": "Hyperscaler partner credit compression continuation",
+      "what_breaks": "Public Cloud gross margins: 50% credit reduction (10% to 5%) eliminates $84M gross profit. Segment becomes unprofitable after overhead allocation. Must either exit segment (lose 61% of revenue) or operate at losses (company-wide unprofitability). Pricing power insufficient to offset through price increases (Stage 3.4 proves zero pricing power). Competitive disadvantage vs hyperscaler-direct widens to 40-50% cost gap.",
+      "reversibility": "IRREVERSIBLE",
+      "who_gains_power": "Hyperscalers consolidate value capture, increase from 89.6% to 92-95%. MSP layer value approaches zero. Customers switch to hyperscaler-direct for 30-40% cost savings. Hyperscaler strategic intent (disintermediation) advances, credits never increase only decline.",
+      "evidence_refs": [
+        "3.5: Partner credit compression from 20-25% historical to 10-15% current documented",
+        "3.5: Public Cloud 10.4% gross margin provides minimal buffer, 50% credit reduction eliminates profitability",
+        "3.1: Hyperscalers capture 89.6% value, <0.5% revenue materiality = zero Rackspace leverage",
+        "3.2: Hyperscaler-direct managed services identified as primary competitive threat"
+      ],
+      "open_unknowns": [
+        "Current hyperscaler partner credit levels (estimated 10-15%, actual could be better or worse)",
+        "Hyperscaler credit reduction trajectory (estimated 5-10% annual erosion, actual pace unknown)",
+        "Any long-term credit guarantees in partner agreements (unlikely but would affect timeline)"
+      ]
+    },
+    {
+      "pressure_or_shock": "VMware/Broadcom continued price escalation",
+      "what_breaks": "Private Cloud economics: Additional 50-100% VMware increase (400-500% total) consumes 50-105% of Private Cloud revenue in VMware costs alone, mathematically impossible to operate. Customers face: accept price increases (unjustifiable economics) or migrate (pay $2-10M switching costs justified by ongoing savings). Private Cloud churn accelerates from 13% currently to 40-60% over 3 years = $400-630M revenue loss. Segment contributes 40-50% of operating income, elimination creates existential financial gap.",
+      "reversibility": "IRREVERSIBLE",
+      "who_gains_power": "VMware/Broadcom extracts maximum value from captive installed base before migrations complete. Hyperscalers gain customers who modernize to public cloud escaping VMware dependency. Alternative platforms (KVM, Hyper-V) gain some migration share. Rackspace loses Private Cloud operating income pillar permanently.",
+      "evidence_refs": [
+        "3.1: VMware 200-300% price increase = $100-210M annual impact documented",
+        "3.3: VMware pricing creates $90-150M latent churn risk, switching costs become economically justifiable",
+        "3.6: Private Cloud contracts from $1,055M to $100-200M over 10 years under cloud-native adoption",
+        "Stage 2.4: Private Cloud contributes 40-50% of operating income, elimination creates existential gap"
+      ],
+      "open_unknowns": [
+        "VMware contract price protection provisions (CRITICAL - determines if/when further increases possible)",
+        "Broadcom escalation strategy (will increases continue 10-20% annually or stabilize?)",
+        "Customer migration failure rates (estimated 20-30%, actual could be higher creating higher retention)"
+      ]
+    },
+    {
+      "pressure_or_shock": "AI-driven cloud automation mainstream adoption (50% of enterprises within 3 years)",
+      "what_breaks": "CATASTROPHIC BUSINESS MODEL FAILURE: Mid-Market exodus as enterprises adopt AI tools enabling self-management at 80-90% cost savings vs MSP. 50-70% Mid-Market churn over 24-36 months = $140-290M revenue loss (fastest churn ever). Large Enterprise customers adopt AI for 60-80% of workloads, maintain Rackspace only for specialized legacy, spending per customer declines 50-70% = $150-300M revenue loss. Remaining customers use AI cost benchmarking to force 50-70% price reductions, Public Cloud margins become negative. Combined revenue decline from $1.38B to $400-600M over 3 years (60-70% decline). Bankruptcy inevitable within 36 months of AI mainstream adoption.",
+      "reversibility": "IRREVERSIBLE",
+      "who_gains_power": "Hyperscalers gain dominantly - control AI tool roadmaps, integrate natively into platforms, capture customers who adopt AI then consolidate to hyperscaler-direct. Enterprises gain cost savings and control. AI tool vendors (Datadog, New Relic) gain some revenue but limited. MSP industry faces extinction-level event, massive consolidation/exits 2025-2030.",
+      "evidence_refs": [
+        "3.6: AI automation eliminates 70-80% of MSP value proposition at <5% of MSP cost",
+        "3.6: Mid-Market cohort $280-420M most vulnerable to AI-enabled insourcing",
+        "3.6: AI adoption creates permanent MSP obsolescence, skill democratization irreversible",
+        "3.1: Value migration analysis shows MSP role commoditizing, AI tools accelerate exponentially"
+      ],
+      "open_unknowns": [
+        "AI tool mainstream adoption pace (estimated 50% enterprises within 3 years, could be faster or slower)",
+        "Customer insourcing vs hyperscaler-direct split (affects who captures displaced MSP revenue)",
+        "Rackspace AI adoption strategy and effectiveness (could reduce delivery costs but accelerates customer obsolescence paradox)"
+      ]
+    },
+    {
+      "pressure_or_shock": "Cloud-native architecture widespread adoption (60% of workloads over 5 years)",
+      "what_breaks": "Private Cloud segment elimination: Customers modernize 50-70% of applications to cloud-native and migrate to hyperscaler Public Cloud. Private Cloud revenue declines from $1,055M to $300-500M over 5 years (60-75% loss). High fixed costs (data centers, VMware licenses, specialized staff) remain while revenue declines creating massive losses, estimated -20% to -40% EBITDA margins on remaining base (losing $60-200M annually). Segment contributes 40-50% of operating income currently, elimination creates $300-400M operating income hole. Remaining segments insufficient to cover $709M SG&A. Company-wide restructuring or exit required.",
+      "reversibility": "IRREVERSIBLE",
+      "who_gains_power": "Hyperscalers gain dominantly - own cloud-native platforms (AWS/Azure/Google created Kubernetes, Lambda, serverless), customers modernizing naturally migrate to hyperscaler infrastructure. VMware/Broadcom loses as customers modernize away from VMware dependencies. Rackspace loses Private Cloud segment permanently.",
+      "evidence_refs": [
+        "3.6: Cloud-native adoption widespread 60-70% of enterprises pursuing strategies, Kubernetes adoption 70%+",
+        "3.6: Private Cloud contracts from $1,055M to $100-200M over 10 years, one-way architectural evolution",
+        "3.1: Private Cloud declining 13% YoY already, cloud-native adoption accelerates decline to 25-35% YoY",
+        "Stage 2.4: Government cloud-smart mandates cloud-native adoption, forcing public sector migration"
+      ],
+      "open_unknowns": [
+        "Cloud-native adoption pace (estimated 60% by 2030, could accelerate with AI-assisted modernization)",
+        "Customer split between hyperscaler-direct vs other platforms (affects total Private Cloud retention)",
+        "Rackspace ability to pivot to cloud-native service delivery (requires $50-150M investment and 3-5 years, likely impossible)"
+      ]
+    },
+    {
+      "pressure_or_shock": "Data sovereignty mandate proliferation (5-8 major jurisdictions)",
+      "what_breaks": "Market access and scale economics: Rackspace faces $50-150M initial investment + $15-40M annual costs for multi-jurisdiction compliance. At 3.1% EBITDA ($43M) cannot self-fund, requires external capital PE owner unlikely to provide. FORCED JURISDICTIONAL TRIAGE: Must select 1-3 jurisdictions and exit others, loses 60-80% of addressable market permanently. Even in chosen markets, compliance costs eliminate profitability ($3-8M annually per jurisdiction on $100-300M revenue = 1-8% of revenue consumed). Hyperscalers achieve compliance within 2-5 years (AWS UK Sovereign proof), Rackspace sovereignty advantage temporary (2-3 year window) while costs permanent. Company becomes $400-600M regional niche provider with negative margins, structurally unviable.",
+      "reversibility": "IRREVERSIBLE",
+      "who_gains_power": "National governments gain regulatory control, can pick winners/losers. Local/regional providers gain protected markets from sovereignty barriers. Hyperscalers gain long-term through multi-jurisdiction compliance investments. Rackspace becomes niche player in 1-3 markets, exits majority of historical addressable market.",
+      "evidence_refs": [
+        "3.5: UK Sovereign investment $5-15M documented, compliance costs $5-10M annually for Government",
+        "3.6: Sovereignty mandates fragment addressable market into non-consolidatable regional pieces",
+        "3.2: AWS UK Sovereign launch demonstrates hyperscaler willingness to invest, closes sovereignty window",
+        "3.1: Scale economics require $4-5B revenue, sovereignty fragmentation prevents achieving scale"
+      ],
+      "open_unknowns": [
+        "Pace of sovereignty mandate proliferation (EU tightening, China/India/Middle East timeline uncertain)",
+        "Jurisdiction market sizing (which markets justify compliance investment vs exit)",
+        "Hyperscaler compliance timeline in each jurisdiction (estimated 2-5 years, affects Rackspace window)"
+      ]
+    },
+    {
+      "pressure_or_shock": "Capital markets dislocation preventing PE exit (3-5 year extended hold)",
+      "what_breaks": "Competitive capability gaps: Apollo harvest mode (maximize cash extraction, minimize investment) creates 3-5 year capability gap vs hyperscalers. CapEx reduced to $80-100M (60-70% decline), headcount reduced 25-35% beyond current cuts, SG&A cut from $709M to $500-550M but revenue declines proportionally faster. BY TIME CAPITAL MARKETS REOPEN, Rackspace 5-7 technology generations behind in AI-driven operations, cloud-native tooling, automation capabilities. Chronic underinvestment visible to customers (aging infrastructure, slower innovation, service degradation), proactive churn accelerates to 20-30% annually. Private Cloud and Email terminal, Government stagnates, only Public Cloud remains at commodity margins. EXIT SCENARIO: Rackspace worth 40-60% of current value, Apollo faces $1-2B write-down, eventual distressed sale or bankruptcy providing pennies on dollar.",
+      "reversibility": "IRREVERSIBLE",
+      "who_gains_power": "Hyperscalers gain durable 5-7 year capability advantage, capability investments 2024-2028 create moats Rackspace cannot close. Apollo (PE owner) gains cash extraction during hold but loses on exit. Next buyer gains fire-sale acquisition but inherits depleted asset requiring $500M-1B rebuilding. Customers gain leverage to extract pricing concessions during underinvestment period.",
+      "evidence_refs": [
+        "3.6: Capital dislocation analysis documents 3-5 year capability gaps compounding exponentially",
+        "Stage 1.5: Apollo owned since 2016 (9 years), approaching forced exit",
+        "Stage 2.2: CapEx declining 25% YoY already ($181M to $136M), harvest mode pattern emerging",
+        "3.6: Technology evolution exponential, standing still 3-5 years = falling 5-10X behind"
+      ],
+      "open_unknowns": [
+        "Apollo investment basis and required return hurdles (determines minimum exit price and hold strategy)",
+        "M&A market valuation for declining MSP assets (determines if/when exit possible)",
+        "Apollo willingness to inject capital vs harvest (determines underinvestment severity)"
+      ]
+    }
+  ]
+}

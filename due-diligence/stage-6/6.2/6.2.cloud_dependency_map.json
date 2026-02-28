@@ -1,0 +1,145 @@
+{
+  "sub_stage": "6.2",
+  "document_metadata": {
+    "title": "Cloud Dependency Map - Hyperscaler Dependencies and Exit Reality",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-10",
+    "scope": "Analysis of whether cloud usage represents flexibility or asymmetric dependency - exit feasibility assessment"
+  },
+  "cloud_dependency_map": [
+    {
+      "provider": "Amazon Web Services (AWS)",
+      "partnership_status": "AWS Advanced Consulting Partner, reseller agreement for infrastructure billing",
+      "workloads_bound": [
+        "Public Cloud managed services customers choosing AWS infrastructure (~30-40% of Public Cloud revenue estimated $500-700M)",
+        "U.S. Federal Government cloud services via AWS GovCloud integration (FedRAMP authorized)",
+        "Customer workloads deployed on: EC2 compute, S3 storage, RDS databases, Lambda serverless, proprietary AWS services (DynamoDB, Aurora, etc.)",
+        "Rackspace management layer and tooling potentially built on AWS APIs and services"
+      ],
+      "dependency_type": "COMBINED (COMMERCIAL + TECHNICAL + ORGANIZATIONAL)",
+      "dependency_drivers": [
+        "COMMERCIAL: AWS partner credits/rebates estimated 5-15% of infrastructure spend provide Rackspace's infrastructure margin. Public Cloud gross margin 10.4% depends on these partner economics. AWS controls partner program terms and can modify unilaterally.",
+        "TECHNICAL: Customer workloads using AWS-proprietary services (DynamoDB, Aurora, Lambda with AWS integrations, CloudFormation, etc.) create technical lock-in. Migration to Azure/Google requires re-architecting applications. Estimated 40-60% of workloads use proprietary services preventing portability.",
+        "ORGANIZATIONAL: Rackspace delivery teams trained on AWS (certified AWS engineers). Job postings and certifications indicate deep AWS skill investment. Pivoting to alternative clouds requires workforce retraining (6-12 months, $X cost per engineer for certifications and ramp-up).",
+        "CUSTOMER CHOICE: Customers explicitly choose AWS infrastructure when selecting Rackspace Public Cloud. Cannot unilaterally migrate customers to alternative cloud without consent (contractual and operational breach)."
+      ],
+      "exit_feasibility": "LOW",
+      "exit_time_estimate": ">24M",
+      "exit_cost_signal": "PROHIBITIVE - Exiting AWS partnership would require: (1) Migrating all AWS-based customers to alternative infrastructure (Azure, Google, or direct AWS) over 24-36 months with high churn risk (30-50% customer loss likely - customers chose AWS, may not accept alternative), (2) Re-architecting Rackspace management tooling built on AWS APIs, (3) Retraining delivery workforce from AWS to alternative platforms ($X million, 12-18 months), (4) Losing AWS Advanced Partner status and associated marketing/co-sell benefits, (5) Negotiating alternative hyperscaler partnerships from scratch (no guarantee of equivalent economics). ESTIMATED COST: $50-150M (customer migration, tooling rebuild, workforce retraining, revenue loss from churn). ESTIMATED REVENUE AT RISK: $500-700M AWS-based Public Cloud customers, plus unknown portion of Government business using AWS GovCloud. Exit cost approaches or exceeds one year of AWS-related revenue - economically irrational to execute.",
+      "increasing_dependency_over_time": "YES - As Public Cloud grows and AWS partnership deepens, dependency increases: (1) More customer workloads on AWS, (2) More engineers AWS-certified, (3) More tooling AWS-integrated, (4) Stronger customer expectation of AWS availability. Switching costs rise with scale. Once AWS partnership is $500M+ revenue, exit becomes practically impossible (too much revenue at risk, too many customers affected, too deep organizational integration).",
+      "who_can_realistically_change_it": "EFFECTIVELY NOBODY - While theoretically management could decide to exit AWS, practical constraints make it impossible: (1) Customer contracts specify AWS infrastructure (cannot change without consent), (2) Exit timeline 24-36 months exceeds liquidity runway 5-15 months (Stage 5), (3) Exit cost $50-150M exceeds discretionary capital $10-35M (Stage 5), (4) Customer churn 30-50% during migration would destroy Public Cloud business before migration complete. Dependency is STRUCTURAL not strategic - cannot be changed within business constraints even if desired.",
+      "touch_test_pricing_or_term_change": "HIGH IMPACT - MARGIN COMPRESSION OR CUSTOMER LOSS: If AWS increases pricing 20-30% or modifies partner program terms: (1) PRICING INCREASE PASSED TO CUSTOMERS: Rackspace bills infrastructure at AWS list rates (pass-through model), so customer prices automatically increase 20-30%. Customers compare to AWS-direct pricing and discover Rackspace markup no longer justified. Customer exodus to AWS-direct or competitors. Estimated 20-40% churn if AWS raises prices materially and Rackspace passes through. (2) PRICING INCREASE ABSORBED BY RACKSPACE: If Rackspace maintains customer pricing to prevent churn, must absorb 20-30% infrastructure cost increase. Public Cloud gross margin 10.4% becomes NEGATIVE (estimate: -5% to -10% margin) if absorb 20-30% cost increase on 80-90% of COGS. Public Cloud business becomes UNPROFITABLE, cash burn accelerates, liquidity crisis worsens. (3) PARTNER CREDIT REDUCTION: If AWS reduces partner credits from estimated 5-15% to 0-5%, Rackspace infrastructure margin compresses 50-100%. Public Cloud gross margin 10.4% could decline to 5-7%, destroying unit economics. Cannot maintain business at 5-7% gross margin with SG&A 25.9% (Stage 5). (4) TERM CHANGES: If AWS modifies partner agreement terms (adds restrictions, reduces co-sell support, changes payment terms), Rackspace economics or operations affected. No disclosed termination rights or protection in partner agreement - AWS controls relationship. WORST CASE: AWS terminates partnership entirely (low probability but theoretically possible if AWS decides to disintermediate MSPs and serve enterprise direct). Loses $500-700M revenue immediately, cannot serve AWS-based customers, forced exit from Public Cloud or radical business model change. OVERALL: Rackspace has ZERO LEVERAGE in AWS relationship. AWS sets terms, Rackspace accepts. Material pricing or term changes create existential threat to Public Cloud business model.",
+      "claim_type": "FACT (partnership status, revenue estimates) + INFERENCE (exit costs, churn estimates, dependency increasing)",
+      "evidence_sources": [
+        "Stage 2.1 revenue engines: Public Cloud $1,683M (61% revenue), AWS Advanced Consulting Partner status documented",
+        "Stage 2.2 cost structures: Hyperscaler infrastructure pass-through 80-90% of Public Cloud COGS, partner credits estimated 5-15%",
+        "DataCenterKnowledge: 'Rackspace bills AWS infrastructure at list rates on AWS website, charges service fees in addition'",
+        "AWS Partners page: Rackspace listed as Advanced Consulting Partner",
+        "Industry knowledge: MSPs depend on hyperscaler partner programs for economics, terms can change"
+      ]
+    },
+    {
+      "provider": "Microsoft Azure",
+      "partnership_status": "Azure CSP (Cloud Solution Provider) 2-Tier Distributor - one of <10 globally, receives ~15% Partner Earned Credit (PEC)",
+      "workloads_bound": [
+        "Public Cloud managed services customers choosing Azure infrastructure (~30-40% of Public Cloud revenue estimated $500-700M)",
+        "U.S. Federal Government cloud services via Azure Government",
+        "Customer workloads on: Azure VMs, Azure SQL, Azure Storage, proprietary Azure services (Cosmos DB, Azure Functions, Azure AD integration, etc.)",
+        "Enterprise customers with existing Microsoft enterprise agreements (EA) often choose Azure for licensing synergies"
+      ],
+      "dependency_type": "COMBINED (COMMERCIAL + TECHNICAL + ORGANIZATIONAL)",
+      "dependency_drivers": [
+        "COMMERCIAL: Azure CSP 2-Tier Distributor status provides ~15% Partner Earned Credit documented in Microsoft partner program. This PEC is MATERIAL to Public Cloud gross margin 10.4%. Rackspace is one of <10 global 2-Tier Distributors (high status but also concentration risk - if lose status, cannot easily replicate). Microsoft controls CSP program terms.",
+        "TECHNICAL: Customer workloads using Azure-proprietary services (Cosmos DB, Azure AD, Azure Functions with Azure integrations, ARM templates, etc.) create lock-in. Migration to AWS/Google requires re-architecture. Estimated 40-60% workloads use proprietary services.",
+        "ORGANIZATIONAL: Rackspace delivery teams Azure-certified. Significant investment in Azure skills and certifications. Retraining to alternative platforms requires time and cost.",
+        "MICROSOFT ECOSYSTEM: Enterprise customers often choose Azure due to existing Microsoft relationship (Office 365, Windows Server, SQL Server licensing). Azure choice is ecosystem lock-in at customer level, not just infrastructure decision. Rackspace benefits from but also depends on Microsoft's enterprise dominance."
+      ],
+      "exit_feasibility": "LOW",
+      "exit_time_estimate": ">24M",
+      "exit_cost_signal": "PROHIBITIVE - Exiting Azure similar to AWS: (1) Customer migration 24-36 months with 30-50% churn risk, (2) Tooling re-architecture, (3) Workforce retraining, (4) Loss of Azure CSP 2-Tier Distributor status (one of <10 globally - status has value and is difficult to achieve, cannot easily regain if lost), (5) Alienate Microsoft enterprise customer base (customers chose Azure for Microsoft ecosystem integration). ESTIMATED COST: $50-150M. REVENUE AT RISK: $500-700M Azure-based Public Cloud. ADDITIONAL RISK: Microsoft enterprise relationships are strategic - losing Azure partnership may affect other Microsoft collaborations or customer perception of Rackspace credibility with Microsoft ecosystem.",
+      "increasing_dependency_over_time": "YES - Azure dependency growing due to: (1) Microsoft enterprise dominance (Office 365, Azure AD, Teams adoption driving Azure preference), (2) Hybrid cloud narratives (Azure Stack, Azure Arc) creating on-premises-to-cloud continuum favoring Azure, (3) Azure government cloud certifications aligning with Rackspace government business. As Microsoft ecosystem penetration increases, Azure dependency deepens.",
+      "who_can_realistically_change_it": "EFFECTIVELY NOBODY - Same constraints as AWS: customer contracts, liquidity/capital limitations, exit timeline exceeds runway, churn risk destroys business before completion. ADDITIONAL CONSTRAINT: Azure CSP 2-Tier Distributor status is RARE (one of <10 globally) - difficult to achieve, valuable to maintain, painful to lose. Management unlikely to risk losing status even if wanted to reduce Azure dependency.",
+      "touch_test_pricing_or_term_change": "HIGH IMPACT - MARGIN COMPRESSION OR CUSTOMER LOSS: If Microsoft increases Azure pricing 20-30% or modifies CSP program: (1) Pass-through pricing increase → customer exodus to Azure-direct or competitors (20-40% churn), (2) Absorb pricing → Public Cloud becomes unprofitable (gross margin 10.4% → negative), (3) PEC reduction from ~15% to 5-10% → gross margin compression to 5-7% destroying unit economics, (4) CSP program term changes → operational disruption or economic degradation, (5) Loss of 2-Tier Distributor status → cannot serve Azure customers at all (eliminates $500-700M revenue). Microsoft has PRICING POWER over Rackspace. Material changes create existential threat. HISTORICAL PRECEDENT: Microsoft has modified CSP program terms multiple times (2018, 2020, 2022 program changes) affecting partner economics - demonstrates willingness to change terms. Rackspace vulnerable to future changes.",
+      "claim_type": "FACT (CSP status, PEC ~15%) + INFERENCE (exit costs, dependency growth)",
+      "evidence_sources": [
+        "Stage 2.1: Azure CSP 2-Tier Distributor, one of <10 globally, ~15% PEC documented",
+        "Microsoft Partner Center: CSP partners receive ~15% Partner Earned Credit per public program terms",
+        "Rackspace newsroom: '2-Tier CSP Program' and 'one of less than 10 hosting providers globally'",
+        "Industry knowledge: Microsoft CSP program changes (2018, 2020, 2022) affected partner economics"
+      ]
+    },
+    {
+      "provider": "Google Cloud Platform (GCP)",
+      "partnership_status": "Google Cloud Partner with reseller agreement",
+      "workloads_bound": [
+        "Public Cloud managed services customers choosing Google Cloud infrastructure (~10-20% of Public Cloud revenue estimated $150-350M - smallest of three hyperscalers for Rackspace)",
+        "Customer workloads on: Compute Engine, Cloud Storage, BigQuery, proprietary Google services (Firestore, Cloud Functions, Google Kubernetes Engine, etc.)",
+        "Customers attracted to Google's data analytics and AI/ML capabilities (BigQuery, Vertex AI)"
+      ],
+      "dependency_type": "COMBINED (COMMERCIAL + TECHNICAL + ORGANIZATIONAL)",
+      "dependency_drivers": [
+        "COMMERCIAL: Google Cloud partner credits/rebates similar to AWS model (estimated 5-15%). Smaller scale than AWS/Azure reduces negotiating leverage - Rackspace is less strategic to Google than to AWS/Microsoft. Google has less mature MSP channel program historically.",
+        "TECHNICAL: Google Cloud proprietary services (BigQuery, Firestore, Vertex AI, GKE with Google integrations) create lock-in for customers using them. Migration to AWS/Azure requires re-architecture.",
+        "ORGANIZATIONAL: Smaller Google Cloud practice within Rackspace (estimated based on market share). Fewer Google-certified engineers than AWS/Azure. Less organizational dependency but also less capability depth.",
+        "SMALLEST HYPERSCALER EXPOSURE: Google Cloud is estimated 10-20% of Public Cloud revenue (smallest of three). Lower dependency than AWS/Azure but still material ($150-350M revenue)."
+      ],
+      "exit_feasibility": "MED",
+      "exit_time_estimate": "12-24M",
+      "exit_cost_signal": "HIGH BUT MANAGEABLE - Exiting Google Cloud less catastrophic than AWS/Azure due to smaller scale: (1) Customer migration 12-24 months with estimated 20-40% churn (lower customer count affected), (2) Smaller organizational footprint (fewer engineers to retrain, less tooling integration), (3) Could potentially consolidate Google Cloud customers to AWS/Azure (offer migration assistance) reducing total hyperscaler count from 3 to 2. ESTIMATED COST: $15-50M (lower than AWS/Azure due to scale). REVENUE AT RISK: $150-350M Google Cloud-based Public Cloud. STRATEGIC QUESTION: Is 3-hyperscaler model necessary or can consolidate to AWS+Azure (covering 80-90% of market preference)? Google Cloud exit more FEASIBLE than AWS/Azure but still DIFFICULT and COSTLY given capital constraints (discretionary capital $10-35M < exit cost $15-50M).",
+      "increasing_dependency_over_time": "NO - Google Cloud dependency likely FLAT or DECLINING: Google Cloud has smallest market share (10% vs AWS 32%, Azure 23% per industry estimates). Customer preference tilts toward AWS/Azure. Google Cloud may be STRATEGIC LIABILITY (subscale, consumes resources disproportionate to revenue contribution). Management may rationally choose to de-emphasize Google Cloud over time, focusing resources on AWS/Azure where customer demand concentrated.",
+      "who_can_realistically_change_it": "POTENTIALLY MANAGEMENT - Unlike AWS/Azure where exit practically impossible, Google Cloud exit is CONCEIVABLE (though still difficult): Smaller revenue impact ($150-350M vs $500-700M per hyperscaler for AWS/Azure), fewer customers affected, less organizational integration. If Rackspace needed to rationalize cloud portfolio, Google Cloud is most likely exit candidate. However, BARRIERS REMAIN: (1) Customer contracts specify Google Cloud (migration requires consent), (2) Exit cost $15-50M exceeds discretionary capital, (3) 12-24 month timeline challenges liquidity runway, (4) Customer churn 20-40% destroys $30-140M revenue during migration. Feasible in theory with external capital, but not executable within current constraints.",
+      "touch_test_pricing_or_term_change": "MED-HIGH IMPACT - Similar mechanics to AWS/Azure but smaller scale: (1) Pricing increase 20-30% → pass-through causes customer exodus OR absorption causes margin compression, (2) Partner credit reduction → gross margin compression, (3) MITIGATING FACTOR: Smaller Google Cloud revenue ($150-350M vs $500-700M AWS/Azure) reduces absolute impact. Losing Google Cloud partnership less existential than AWS/Azure but still PAINFUL (5-13% of Public Cloud revenue at risk). Google Cloud has PRICING POWER but SMALLER IMPACT than AWS/Azure due to scale difference.",
+      "claim_type": "INFERENCE (revenue estimates, dependency assessment based on market position)",
+      "evidence_sources": [
+        "Stage 2.1: Rackspace has Google Cloud partnership documented",
+        "Industry market share: AWS ~32%, Azure ~23%, Google Cloud ~10% (Synergy Research Group, Canalys)",
+        "INFERENCE: Google Cloud likely smallest hyperscaler for Rackspace based on market preference patterns",
+        "Rackspace website: Public Cloud offerings include AWS, Azure, Google Cloud"
+      ]
+    },
+    {
+      "provider": "VMware (Broadcom-owned post Nov 2023 acquisition)",
+      "partnership_status": "VMware technology partner for Private Cloud infrastructure - VMware vSphere, vSAN, NSX deployed at scale for customer environments",
+      "workloads_bound": [
+        "Private Cloud dedicated infrastructure ($1,055M revenue, 39% of total)",
+        "VMware-based customer environments (estimated majority of Private Cloud uses VMware vs alternatives OpenStack/Microsoft Hyper-V)",
+        "Customer applications architected for VMware (vSphere APIs, VMware tools, vMotion, HA/DRS features)",
+        "Rackspace operational runbooks and automation built on VMware management tools"
+      ],
+      "dependency_type": "COMBINED (TECHNICAL + COMMERCIAL + ORGANIZATIONAL)",
+      "dependency_drivers": [
+        "TECHNICAL: VMware is dominant virtualization platform for Private Cloud. Customer environments architected on VMware infrastructure (vSphere, vSAN, NSX). Applications depend on VMware APIs and features. Migration to alternatives (OpenStack, Microsoft Hyper-V, Nutanix, etc.) requires: (1) Application compatibility testing and re-architecture (20-30% failure rate per Stage 1.3), (2) Storage migration from vSAN to alternative (high risk of data loss or corruption), (3) Network reconfiguration from NSX to alternative SDN (downtime and complexity), (4) Loss of vMotion, HA, DRS features customers rely on. MULTI-YEAR MIGRATION per customer environment.",
+        "COMMERCIAL: VMware licensing costs significant (capacity-based pricing per CPU, storage, networking). Broadcom acquisition (Nov 2023) created 200-300% price increases per market reports (CRN, The Register). Rackspace facing MASSIVE cost increase ($100-210M annually per Stage 5.2) on existing infrastructure. Cannot pass through to customers without churn (pricing power absent per Stage 5), forced to absorb creating margin compression. Private Cloud gross margin 38.6% declining as VMware costs rise.",
+        "ORGANIZATIONAL: Rackspace Private Cloud operations teams deeply trained on VMware (VMware Certified Professionals, specialized expertise in vSphere/vSAN/NSX). Operational runbooks, automation, troubleshooting all VMware-specific. Pivoting to alternative platforms requires: (1) Workforce retraining (6-12 months), (2) Runbook rewriting (automation, monitoring, incident response all VMware-specific), (3) Loss of accumulated institutional knowledge and troubleshooting expertise.",
+        "HISTORICAL PATH DEPENDENCY: Rackspace bet on VMware for Private Cloud 10+ years ago. VMware was industry standard, strategic choice at time. However, choice created LOCK-IN. Now trapped by historical decision. Broadcom acquisition and price shock is CONSEQUENCE of dependency created by past platform choice (Stage 1.3 path dependency)."
+      ],
+      "exit_feasibility": "VERY LOW",
+      "exit_time_estimate": ">24M",
+      "exit_cost_signal": "CATASTROPHIC - Exiting VMware for Private Cloud would require: (1) Selecting alternative platform (OpenStack, Microsoft Hyper-V, Nutanix, or exit Private Cloud entirely), (2) Migrating ALL Private Cloud customers from VMware to alternative over 24-48 months (estimated 100+ customer migrations, each 3-6 months duration), (3) Customer consent required (contractual and operational change), (4) Application testing and re-architecture (20-30% migration failure rate per Stage 1.3), (5) Workforce retraining from VMware to alternative ($X million, 12-18 months), (6) Operational runbook and automation rewrite ($X million, 12-24 months), (7) CUSTOMER CHURN: Estimated 30-50% customers refuse migration or churn during process (lose $300-500M of $1,055M Private Cloud revenue), (8) NEW LICENSING COSTS: Alternative platforms also have licensing costs (OpenStack has operational complexity costs, Microsoft Hyper-V has licensing costs, Nutanix has per-node licensing). ESTIMATED TOTAL COST: $200-500M (customer migrations + churn revenue loss + workforce retraining + operational rebuild + new platform costs). REVENUE AT RISK: $1,055M Private Cloud, with 30-50% churn risk = $300-500M permanent loss. EXIT COST APPROACHES TOTAL PRIVATE CLOUD REVENUE - economically irrational. ALTERNATIVE STRATEGY: Exit Private Cloud business entirely rather than re-platform (sell to competitor, shut down gracefully, migrate customers to competitors). However, this also destroys $1,055M revenue (39% of total) - existential business impact.",
+      "increasing_dependency_over_time": "YES HISTORICALLY, but NOW ATTEMPTING TO REDUCE - VMware dependency grew over 10+ years as Private Cloud expanded on VMware platform. However, Broadcom price shock (200-300% increase) creates FORCING MECHANISM to reduce dependency. Rackspace likely attempting to: (1) Slow new VMware deployments, (2) Offer alternatives (OpenStack, Microsoft Hyper-V) to new customers, (3) Selective migration of customers to alternatives where feasible. However, INSTALLED BASE DEPENDENCY remains massive - existing VMware customers cannot be migrated quickly. Dependency INCREASING in COST (Broadcom pricing) even as Rackspace tries to reduce TECHNICAL dependency. Trapped in worst of both worlds: Rising costs while attempting slow escape.",
+      "who_can_realistically_change_it": "EFFECTIVELY NOBODY in near term - While Rackspace management may WANT to reduce VMware dependency (Broadcom price shock creates urgency), PRACTICAL CONSTRAINTS prevent action: (1) Migration cost $200-500M far exceeds discretionary capital $10-35M (Stage 5), (2) Migration timeline 24-48 months exceeds liquidity runway 5-15 months (Stage 5), (3) Customer churn 30-50% during migration destroys Private Cloud business before completion, (4) Private Cloud already declining 13% YoY - migration chaos would accelerate decline. Cannot execute VMware exit within survival constraints. Only path is: (1) Marginal actions (stop new VMware deployments, offer alternatives to new customers, selective migrations where customer-initiated), OR (2) Bankruptcy restructuring enabling radical actions (reject VMware contracts, force customer migrations, accept massive churn as sunk cost). Orderly VMware exit IMPOSSIBLE, disorderly exit via restructuring POSSIBLE.",
+      "touch_test_pricing_or_term_change": "ALREADY OCCURRING - CRITICAL IMPACT IN PROGRESS: Broadcom VMware pricing changes (Nov 2023 acquisition, 200-300% price increases) are ACTIVE STRESS TEST. Impact: (1) COST INCREASE: $100-210M annually per Stage 5.2 estimate (significant portion of $175M operating losses), (2) MARGIN COMPRESSION: Private Cloud gross margin 38.6% under pressure as absorb VMware costs (cannot pass through without churn), (3) CUSTOMER MIGRATION: VMware price shock driving customers to exit Private Cloud for public cloud alternatives (contributing to Private Cloud revenue decline 13% YoY), (4) STRATEGIC CRISIS: VMware dependency now EXISTENTIAL THREAT not just vendor relationship. Broadcom price shock is FORCING MECHANISM for Private Cloud business model viability. FURTHER PRICING INCREASES: If Broadcom increases prices AGAIN (plausible given aggressive monetization strategy), Private Cloud economics may become completely untenable. Could trigger: (1) Rackspace announcement of Private Cloud wind-down or divestiture, (2) Mass customer migration to alternatives, (3) Acceleration of revenue decline beyond 13% YoY. VMware (Broadcom) has ABSOLUTE PRICING POWER over Rackspace Private Cloud business. Rackspace has ZERO LEVERAGE.",
+      "claim_type": "FACT (VMware partnership, Broadcom acquisition, price increases documented) + INFERENCE (exit costs, migration complexity)",
+      "evidence_sources": [
+        "Stage 2.2: VMware licensing costs, Broadcom acquisition Nov 2023, 200-300% price increases",
+        "Stage 5.2: VMware cost shock $100-210M annually impacting Private Cloud margins",
+        "Market reports: CRN, The Register, VMware community forums document 200-300% Broadcom price increases",
+        "Rackspace Private Cloud offerings: VMware vSphere, vSAN, NSX documented on website",
+        "Industry precedents: VMware customer migrations to alternatives (Nutanix, OpenStack, public cloud) due to Broadcom pricing - validates exit difficulty and customer loss"
+      ]
+    }
+  ],
+  "dependency_summary": {
+    "total_cloud_dependencies_identified": 4,
+    "existential_dependencies": [
+      "AWS (Public Cloud dependency, $500-700M revenue at risk, exit effectively impossible)",
+      "Azure (Public Cloud dependency, $500-700M revenue at risk, CSP 2-Tier Distributor status unique)",
+      "VMware (Private Cloud dependency, $1,055M revenue at risk, Broadcom price shock active existential threat)"
+    ],
+    "material_but_potentially_addressable_dependencies": [
+      "Google Cloud (Public Cloud dependency, $150-350M revenue at risk, smallest scale makes exit conceivable though still difficult)"
+    ],
+    "overall_exit_feasibility": "EFFECTIVELY ZERO for AWS/Azure/VMware (90-95% of revenue depends on these three), LOW for Google Cloud. Rackspace business model is FUNDAMENTALLY DEPENDENT on hyperscaler partnerships and platform choices. Cannot exit without destroying business. 'Cloud flexibility' is FICTION - Rackspace is TRAPPED in current cloud dependencies with zero realistic exit path within survival constraints.",
+    "total_revenue_dependent_on_cloud_providers": "~100% - Public Cloud $1,683M (61%) entirely depends on AWS/Azure/Google partnerships. Private Cloud $1,055M (39%) majority depends on VMware platform. Email and other services <$100M are only segments potentially not cloud-dependent. Result: Entire business model predicated on maintaining hyperscaler and VMware relationships where Rackspace has ZERO LEVERAGE."
+  }
+}

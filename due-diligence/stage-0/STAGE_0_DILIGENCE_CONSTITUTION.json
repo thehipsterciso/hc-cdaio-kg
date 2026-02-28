@@ -1,0 +1,266 @@
+{
+  "document_metadata": {
+    "title": "Diligence Constitution - Stage 0 Governance Framework",
+    "version": "1.0",
+    "created_date": "2026-02-05",
+    "status": "AWAITING_ACCEPTANCE",
+    "purpose": "Establishes non-negotiable rules for truth, evidence, uncertainty, and judgment",
+    "standard": "Litigation-survivable, Investment-Committee-grade, Adversarial by design",
+    "warning": "DO NOT PROCEED TO STAGE 1 UNTIL THIS CONSTITUTION IS EXPLICITLY ACCEPTED"
+  },
+  "stage_0_outputs": {
+    "0.1_strategic_intent_lock": {
+      "sub_stage": "0.1",
+      "strategic_intent": {
+        "supported_decisions": [
+          "INVEST",
+          "ACQUIRE",
+          "PARTNER",
+          "DIVEST",
+          "LEADERSHIP_ACTION"
+        ],
+        "explicit_non_goals": [
+          "NO_STRATEGY_DEVELOPMENT",
+          "NO_ARCHITECTURE_DESIGN",
+          "NO_OPERATING_MODEL_PROPOSAL",
+          "NO_INVESTMENT_ROADMAP",
+          "NO_INTEGRATION_PLANNING",
+          "NO_ORGANIZATIONAL_DESIGN",
+          "NO_TECHNOLOGY_SELECTION",
+          "NO_VENDOR_RECOMMENDATIONS"
+        ],
+        "primary_consumers": [
+          "UNKNOWN_REQUIRES_SPECIFICATION"
+        ],
+        "misuse_risks": [
+          "Selective extraction of favorable findings without caveats",
+          "Retrofitting conclusions to support pre-determined outcomes",
+          "Using discovery outputs as justification for solutions this diligence did not evaluate",
+          "Conflating 'no evidence of problem' with 'evidence of no problem'",
+          "Treating absence of data as confirmation",
+          "Using uncertainty ranges as precision claims",
+          "Bypassing IC review by claiming diligence supports decisions it was not scoped to address"
+        ]
+      },
+      "boundary_enforcement_rules": [
+        "Any output containing words 'recommend', 'should', 'roadmap', 'strategy' triggers mandatory red-team review and probable rejection",
+        "Synthesis stages limited to: WHAT EXISTS, WHAT IS UNCERTAIN, WHAT IS UNKNOWN — never WHAT TO DO",
+        "All stage outputs must pass 'discovery vs prescription' test: if output guides action rather than informs judgment, it is out of scope",
+        "Quarterly boundary audits: random sampling of outputs checked for solution bias",
+        "Dissent documentation: any analyst identifying scope creep must document objection in permanent record"
+      ],
+      "unknowns_requests": [
+        "CRITICAL: Identify primary decision consumer(s) - Investment Committee, Board, CISO, Acquirer, PE Sponsor, or other",
+        "CRITICAL: Specify decision type - single decision (invest/not) or decision class (invest AND partner AND leadership action)",
+        "REQUIRED: Confirm access level - public sources only, or includes management access, data room, site visits",
+        "REQUIRED: Identify regulatory constraints - SEC, FINRA, competition authorities, or other that limit scope or disclosure",
+        "REQUIRED: Specify decision timeframe - affects staleness tolerance and depth of inquiry"
+      ]
+    },
+    "0.2_evidence_standards": {
+      "sub_stage": "0.2",
+      "evidence_standards": {
+        "source_hierarchy": [
+          "REGULATORY_FILINGS",
+          "AUDITED_FINANCIALS",
+          "PRIMARY_CONTRACTUAL_DISCLOSURE",
+          "ISSUER_STATEMENTS",
+          "CREDIBLE_THIRD_PARTY",
+          "MEDIA"
+        ],
+        "claim_classes": {
+          "FACT": "PRIMARY_REQUIRED",
+          "INFERENCE": "MULTI_SOURCE_REQUIRED",
+          "HYPOTHESIS": "CLEARLY_LABELED"
+        },
+        "staleness_policy": "Regulatory filings: current or most recent required filing. Financial data: no older than most recent fiscal year plus one quarter. Market data: no older than 30 days. Technology/product claims: dated and verified within 6 months. Breaches/incidents: verified occurrence date + current remediation status. CRITICAL: All evidence must carry visible timestamp. Undated evidence is inadmissible for fact claims.",
+        "conflict_resolution_rules": "When sources conflict: (1) Higher-hierarchy source prevails unless dated evidence supersedes. (2) Regulatory filing supersedes all except subsequent regulatory filing. (3) Audited financials supersede unaudited except for material subsequent events disclosed in filings. (4) When equal-hierarchy sources conflict, BOTH views documented, uncertainty registered, decision impact assessed. (5) Conflicts are NEVER resolved by analyst preference or narrative convenience. (6) Unresolvable conflicts escalate to red-team review."
+      },
+      "disallowed_evidence_patterns": [
+        "Single anonymous source for material claims",
+        "Undated claims presented as current fact",
+        "Vendor marketing materials as evidence of capability",
+        "Self-reported security posture without audit",
+        "Aggregated indices or scores without underlying data transparency",
+        "Analyst consensus without disclosed methodology",
+        "Social media as sole source for material claims",
+        "Circular citation chains (A cites B cites A)",
+        "Paywalled sources that cannot be verified by reviewers",
+        "Screenshots without source URL and timestamp",
+        "AI-generated summaries without source verification",
+        "Hearsay presented as fact",
+        "Correlation presented as causation without explicit caveat"
+      ],
+      "unknowns_requests": [
+        "REQUIRED: Confirm acceptable evidence age for target industry - some sectors (biotech, crypto) require fresher evidence than others (utilities, manufacturing)",
+        "REQUIRED: Identify if MNPI (material non-public information) restrictions apply - affects evidence admissibility",
+        "REQUIRED: Specify if third-party research (Gartner, Forrester, etc.) is admissible as credible third-party or treated as opinion"
+      ]
+    },
+    "0.3_hypothesis_discipline": {
+      "sub_stage": "0.3",
+      "hypothesis_framework": [
+        {
+          "hypothesis": "TEMPLATE_PLACEHOLDER",
+          "stage_scope": "Hypotheses will be explicitly defined at stage initialization, not predetermined",
+          "disconfirming_tests_required": [
+            "Each hypothesis must specify: (1) What evidence would disprove it, (2) Where that evidence would appear, (3) Search execution plan, (4) Documented finding or non-finding"
+          ],
+          "status": "FRAMEWORK_ESTABLISHED",
+          "notes": "This sub-stage establishes hypothesis discipline framework. Actual hypotheses populate at Stage 1+ initialization and are tracked in stage-specific outputs."
+        }
+      ],
+      "confirmation_bias_controls": [
+        "MANDATORY: For every hypothesis, equal effort allocated to disconfirming search as to confirming search",
+        "MANDATORY: Devil's advocate review for any hypothesis showing only supporting evidence",
+        "MANDATORY: Hypothesis status tracking - SUPPORTED / WEAKENED / REFUTED / INCONCLUSIVE - with confidence level and evidence count for each direction",
+        "MANDATORY: Non-findings documented with same rigor as findings (what was sought but not found)",
+        "MANDATORY: Hypothesis collapse or weakening triggers root cause analysis - was hypothesis wrong, or evidence incomplete?",
+        "MANDATORY: Analyst incentives inverted - rewarded for disconfirming weak hypotheses, not for confirming convenient ones",
+        "PROHIBITION: No hypothesis can be upgraded to 'conclusion' without red-team attempt to falsify",
+        "PROHIBITION: Absence of disconfirming evidence is NOT confirming evidence",
+        "ESCALATION: Any hypothesis surviving only on absence of contrary evidence (vs. presence of supporting evidence) escalates to uncertainty register"
+      ],
+      "unknowns_requests": [
+        "REQUIRED: Confirm tolerance for hypothesis iteration - can hypotheses be revised mid-stage if evidence contradicts, or must they be tracked as REFUTED and new hypothesis spawned?",
+        "REQUIRED: Specify hypothesis granularity - are stage-level hypotheses sufficient, or required at sub-stage level?"
+      ]
+    },
+    "0.4_uncertainty_classification": {
+      "sub_stage": "0.4",
+      "uncertainty_register": [
+        {
+          "unknown": "TEMPLATE_PLACEHOLDER",
+          "type": "Framework established - specific unknowns populate during execution",
+          "decision_impact": "Each unknown must specify: CRITICAL (decision-determinative), MATERIAL (significantly affects analysis), INFORMATIVE (useful context but not decision-affecting)",
+          "what_would_reduce_uncertainty": "For each unknown: specify whether additional public research, management access, third-party expert, site visit, or UNKNOWABLE from external position",
+          "risk_of_false_confidence": "Each unknown must assess: what happens if we proceed assuming we know this when we don't?"
+        }
+      ],
+      "confidence_bounding_rules": [
+        "MANDATORY: All quantitative claims must carry confidence intervals or ranges, never point estimates presented as fact",
+        "MANDATORY: Qualitative claims must carry confidence levels - HIGH (multi-source primary evidence), MEDIUM (credible third-party or single primary source), LOW (inference or dated evidence), SPECULATIVE (hypothesis)",
+        "MANDATORY: Aggregation transparency - when multiple uncertain inputs combine, output uncertainty INCREASES not decreases",
+        "MANDATORY: Uncertainty decay documentation - how does confidence degrade over time as evidence ages?",
+        "MANDATORY: Distinction between precision and accuracy - narrow range with low confidence is FALSE PRECISION",
+        "PROHIBITION: Averaging uncertainty ranges to create false midpoint confidence",
+        "PROHIBITION: Dropping confidence qualifiers in summaries or executive outputs",
+        "PROHIBITION: Treating model outputs as evidence without model assumption transparency",
+        "PROHIBITION: Conflating 'no evidence of X' with 'evidence of no X'",
+        "ESCALATION: Any synthesis stage that narrows uncertainty without new evidence triggers red-team review"
+      ],
+      "unknowns_requests": [
+        "REQUIRED: Specify decision tolerance for uncertainty - at what level of unknown does decision become imprudent?",
+        "REQUIRED: Confirm if probabilistic expressions (e.g., '60% confident that...') are acceptable to consumers or if verbal qualifiers required",
+        "REQUIRED: Identify if there are specific unknowns already identified as critical (e.g., pending litigation outcome, regulatory approval, key person retention) that must be tracked"
+      ]
+    },
+    "0.5_rigor_enforcement": {
+      "sub_stage": "0.5",
+      "qa_framework": {
+        "mandatory_reviews": [
+          "STAGE COMPLETION: Each stage output undergoes evidence audit - random sampling of claims traced to source",
+          "SYNTHESIS STAGES: Mandatory red-team review before acceptance - independent analyst attempts to disprove conclusions",
+          "FINAL OUTPUT: Complete evidence chain verification - every material claim traced to admissible source",
+          "CROSS-STAGE CONSISTENCY: Claims made in multiple stages checked for contradictions or drift",
+          "UNCERTAINTY PRESERVATION: Summary outputs checked against detailed outputs for dropped caveats or collapsed confidence levels"
+        ],
+        "redo_triggers": [
+          "Evidence source fails hierarchy standards (e.g., material claim based on media only)",
+          "Hypothesis shows only confirming evidence without documented disconfirming search",
+          "Uncertainty collapsed or hidden in aggregation or summary",
+          "Claim conflicts with higher-hierarchy source without documented resolution",
+          "Boundary violation detected (solution bias, recommendations, scope creep)",
+          "Material unknown discovered that affects prior stage conclusions",
+          "Source credibility questioned after claim publication",
+          "Staleness policy violated (evidence too old for claim class)",
+          "Red-team review identifies unfalsified hypothesis presented as conclusion"
+        ],
+        "red_team_authority": "Red team operates with HALT authority - can stop stage progression until issues resolved. Red team is independent (not involved in primary analysis). Red team reviews triggered automatically for: (1) all synthesis stages, (2) any stage showing zero hypothesis failures, (3) any stage requested by primary analyst who has concerns. Red team findings documented in permanent record. Disagreements escalate to Diligence Director (external to primary team).",
+        "dissent_preservation": "MANDATORY dissent documentation system: Any analyst (primary or review) who disagrees with a finding, interpretation, or conclusion must have dissent captured in permanent record attached to that output. Dissent includes: (1) specific point of disagreement, (2) alternative interpretation, (3) evidence supporting alternative view, (4) assessment of decision impact if dissent is correct. Dissents are never resolved by vote or consensus - they travel with output as permanent context. Executive summaries must note existence and nature of material dissents."
+      },
+      "anti_convenience_controls": [
+        "PROHIBITION: No stage can be compressed or skipped due to timeline pressure without explicit decision consumer acknowledgment of reduced rigor",
+        "PROHIBITION: Evidence standards cannot be relaxed for convenience - if primary source unavailable, claim is either downgraded to inference or marked as unknown",
+        "PROHIBITION: 'Good enough for now' findings must be explicitly labeled as INTERIM with redo commitment",
+        "ESCALATION: Any request to accelerate schedule triggers review of affected stages for corner-cutting",
+        "TRANSPARENCY: All timeline-driven tradeoffs documented and disclosed to decision consumers"
+      ],
+      "unknowns_requests": [
+        "REQUIRED: Identify who holds Diligence Director authority (external arbitrator for red-team escalations)",
+        "REQUIRED: Specify if there are sacred-cow topics that cannot be challenged (e.g., executive assumptions) - these constitute rigor compromises and must be explicitly documented",
+        "REQUIRED: Confirm consequence model - what happens if redo is triggered late in process? Is timeline extension acceptable or does analysis proceed with explicit limitation disclosure?"
+      ]
+    },
+    "0.6_output_integrity": {
+      "sub_stage": "0.6",
+      "output_integrity_controls": {
+        "traceability_requirements": "MANDATORY end-to-end traceability chain: CLAIM → EVIDENCE SOURCE → SOURCE HIERARCHY LEVEL → DATE ACCESSED → CONFIDENCE LEVEL → UNCERTAINTY BOUNDS. Every material claim in every output must be traceable to specific evidence. Summary outputs include citation indices linking to detailed analysis. No claim may appear in executive summary that does not appear with full evidence chain in detailed analysis. Traceability audit performed pre-publication.",
+        "summary_guardrails": [
+          "MANDATORY: Executive summaries must preserve all CRITICAL and MATERIAL uncertainties from detailed analysis",
+          "MANDATORY: Summary confidence levels cannot be higher than source detailed analysis",
+          "MANDATORY: Summaries must include explicit 'What We Do Not Know' section with decision impact assessment",
+          "MANDATORY: Any summary simplification that narrows ranges or drops caveats must be red-team reviewed",
+          "PROHIBITION: Summaries cannot introduce conclusions not present in detailed analysis",
+          "PROHIBITION: Summaries cannot resolve ambiguities that remain unresolved in detailed analysis",
+          "TRANSPARENCY: Summaries must reference existence of dissents and their nature"
+        ],
+        "misuse_prevention_mechanisms": [
+          "WATERMARKING: All outputs carry visible metadata - date, scope boundaries, key limitations, intended decision context",
+          "EXCERPTING PROTECTION: Outputs include header/footer noting 'This page is part of complete analysis - context required'",
+          "CONTEXT BINDING: Key uncertainties and limitations repeated in each section, not isolated in single disclaimer",
+          "VERSION CONTROL: Outputs carry version hash - any modification creates new version with change log",
+          "EXPIRATION DATING: Outputs carry 'Valid Through' date based on evidence staleness policy - after which output is STALE",
+          "MISUSE SCENARIOS: Each output includes 'How This Could Be Misinterpreted' section with specific warnings"
+        ]
+      },
+      "known_misinterpretation_risks": [
+        "RISK: Treating investment-grade diligence as operational blueprint - this work finds problems, does not design solutions",
+        "RISK: Assuming comprehensiveness - absence of identified issue does not mean issue does not exist, only that it was not discovered in scope",
+        "RISK: Confidence drift - high confidence in specific claims does not transfer to high confidence in aggregate conclusions",
+        "RISK: Temporal drift - conclusions valid at analysis date may be invalid at decision date if evidence has aged",
+        "RISK: Scope drift - applying findings beyond intended decision context (e.g., using acquisition diligence for partnership decisions)",
+        "RISK: Cherry-picking - extracting favorable findings while ignoring caveats, uncertainties, or contradictory evidence",
+        "RISK: False precision - treating ranges and uncertainties as point estimates for convenience",
+        "RISK: Neglecting dissent - proceeding as if consensus when material disagreement exists"
+      ],
+      "unknowns_requests": [
+        "REQUIRED: Specify output distribution controls - who receives what level of detail, and are there recipients who should NOT receive certain sections?",
+        "REQUIRED: Confirm output retention and update policy - are outputs living documents or point-in-time snapshots?",
+        "REQUIRED: Identify known high-risk misuse scenarios specific to this decision context (e.g., using diligence to justify layoffs, using diligence in litigation, using diligence for PR)"
+      ]
+    }
+  },
+  "critical_unknowns_summary": {
+    "description": "These unknowns must be resolved before Stage 1 initialization",
+    "priority_critical": [
+      "Target company/entity identification",
+      "Decision type specification (INVEST, ACQUIRE, PARTNER, DIVEST, LEADERSHIP_ACTION)",
+      "Primary decision consumer(s) identification",
+      "Diligence Director authority assignment"
+    ],
+    "priority_required": [
+      "Access level confirmation (public only vs. management access)",
+      "Decision timeframe specification",
+      "Regulatory/MNPI constraints identification",
+      "Industry-specific evidence staleness tolerances",
+      "Third-party research admissibility standards",
+      "Hypothesis iteration tolerance policy",
+      "Decision uncertainty tolerance thresholds",
+      "Redo consequence model",
+      "Output distribution controls",
+      "Known high-risk misuse scenarios"
+    ]
+  },
+  "exit_certification": {
+    "stage_0_complete": true,
+    "governance_constitution_established": true,
+    "strategy_solution_prohibition_enforced": true,
+    "evidence_hierarchy_locked": true,
+    "falsification_mandatory": true,
+    "uncertainty_classification_active": true,
+    "red_team_authority_granted": true,
+    "status": "AWAITING_ACCEPTANCE",
+    "next_action": "DO NOT PROCEED TO STAGE 1 UNTIL: (1) This governance constitution is explicitly accepted, (2) Critical unknowns are resolved, (3) Any constitutional modifications are negotiated and locked"
+  }
+}

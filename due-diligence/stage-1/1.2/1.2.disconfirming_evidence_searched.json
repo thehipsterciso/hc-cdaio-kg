@@ -1,0 +1,60 @@
+{
+  "disconfirming_evidence_searched": [
+    {
+      "evidence_type": "Dual-class share structure or super-voting rights",
+      "search_conducted": "Reviewed public market data (NASDAQ listing shows single ticker RXT), ownership disclosures showing Apollo 53-57% as percentage of total shares (not separate class), no mention in press releases or financial news of Class A/Class B structure. Searched for '10:1 voting' or 'Class B shares' in context of Rackspace - none found.",
+      "why_relevant_to_hypothesis": "If found, would indicate Apollo's control exceeds economic ownership (supporting H2 misalignment). Alternatively, if public shareholders had super-voting rights, would weaken H1 (Apollo concentrated control).",
+      "finding": "NOT FOUND. Rackspace appears to have single-class common stock with one-share-one-vote structure. Apollo's 53-57% equity ownership directly translates to 53-57% voting power. Control is aligned with ownership percentage at equity level (though misaligned relative to debt and management).",
+      "impact": "Confirms Apollo's control derives from majority ownership, not from super-voting mechanisms. Simplifies transaction structure - buyer need only acquire majority of common stock to achieve control (subject to debt covenants)."
+    },
+    {
+      "evidence_type": "Shareholder rights plan (poison pill) limiting Apollo's control or acquirer's ability to buy",
+      "search_conducted": "Searched SEC filings (8-Ks), press releases, and financial news for 'rights plan', 'poison pill', 'shareholder rights agreement', 'Section 382 rights plan' (tax-related poison pills). Reviewed corporate governance pages on Rackspace IR website. No current poison pill found.",
+      "why_relevant_to_hypothesis": "Poison pill would give board (or minority shareholders) power to block hostile acquisition attempts, weakening H1 (Apollo concentrated control) and potentially supporting H3 (hidden minority veto rights).",
+      "finding": "NOT FOUND. No shareholder rights plan currently in effect. Apollo's majority ownership means board cannot adopt poison pill without Apollo approval (Apollo can elect directors who would rescind it). Absence of poison pill consistent with controlled company structure.",
+      "impact": "Confirms Apollo's control is UNCONSTRAINED by anti-takeover defenses at equity level. Acquirer could purchase Apollo's stake or tender for all shares without triggering poison pill. However, debt covenants remain constraint regardless of poison pill absence."
+    },
+    {
+      "evidence_type": "Independent director majority or strong independent board oversight",
+      "search_conducted": "Reviewed board composition from January 2025 press release. Identified Apollo affiliates (Sobel, Mahidhar) and former Apollo-controlled Chairman (Sambur until Jan 2025). Current Chairman Jeffrey Benjamin described as 'Independent' but succession from Apollo's Sambur suggests Apollo influence in selection. Did not find disclosure of full board independence analysis or committee compositions beyond named directors.",
+      "why_relevant_to_hypothesis": "Independent director majority would provide check on Apollo's influence, weakening H1 (concentrated control) and H4 (informal control mechanisms). Strong independence would suggest formal governance constrains Apollo.",
+      "finding": "INCONCLUSIVE. Apollo has 2 affiliated directors (Sobel, Mahidhar). Total board size not disclosed in available sources. If board is 7-9 members (typical for public company), Apollo's 2 seats plus influenced Chairman historically gave Apollo effective control even if numerically minority. Current Chairman Benjamin is 'independent' but succeeded Apollo's Sambur - suggests Apollo blessing of appointment. Cannot confirm independent director majority without full board roster and independence determinations.",
+      "impact": "Uncertainty remains on board independence. Full board composition and independence analysis required from DEF 14A proxy statement. If Apollo controls <50% of board seats numerically, still likely exercises influence via Chairman role, information access, and majority shareholder status."
+    },
+    {
+      "evidence_type": "Management equity ownership >25% creating founder-like alignment",
+      "search_conducted": "Searched proxy statements (DEF 14A), insider trading reports, and executive compensation disclosures for CEO, CFO, and executive equity ownership. Employment agreements (per Justia) filed as SEC exhibits do not typically disclose equity percentages - only grant terms. No public disclosure found showing material management equity ownership.",
+      "why_relevant_to_hypothesis": "High management equity ownership would reduce principal-agent misalignment described in H2. If management owned >25%, their interests would align closely with shareholders (including Apollo), reducing operational control vs economic stake divergence.",
+      "finding": "NOT FOUND. No evidence of material management equity ownership. Standard practice for non-founder management in PE-backed companies is equity grants of 1-5% diluted. Absence of disclosed significant stakes suggests management's primary compensation is cash (salary/bonus) not equity, confirming principal-agent misalignment.",
+      "impact": "Confirms management's economic incentives are NOT strongly aligned with shareholder value. Management likely prioritizes employment stability, annual bonus targets, and reputation over long-term equity value. Post-acquisition, management may need retention bonuses or new equity grants to ensure cooperation."
+    },
+    {
+      "evidence_type": "Lender equity kickers (warrants, equity participation, conversion rights) aligning creditor-equity interests",
+      "search_conducted": "Reviewed First Lien Credit Agreement terms disclosed in March 12, 2024 press release and Form 8-K. Terms specify: term loan, interest rate (Term SOFR + 2.75%), maturity (May 15, 2028), covenants, security. No mention of warrants, equity participation, conversion features, or equity upside for lenders.",
+      "why_relevant_to_hypothesis": "If lenders held equity kickers, their interests would partially align with equity holders (Apollo, public shareholders), reducing creditor-equity conflict described in H2. Lenders would benefit from enterprise value growth, not just debt repayment.",
+      "finding": "NOT FOUND. First Lien term loan appears to be pure debt instrument with no equity upside. Lenders receive fixed interest and principal repayment. No warrants or conversion rights identified. This is typical for first lien secured term loans but confirms creditor-equity misalignment.",
+      "impact": "Confirms lenders optimize purely for credit risk minimization and debt repayment, NOT enterprise value maximization. Lenders will block value-creating but risky transactions. Creditor-equity tension is unmitigated by shared upside. Acquirer must refinance debt or negotiate lender consent with no equity alignment lever."
+    },
+    {
+      "evidence_type": "Strategic partnerships, JVs, or customer contracts with governance rights or veto provisions",
+      "search_conducted": "Searched press releases, 10-K risk factors (where available via summaries), and news articles for material partnerships with Microsoft, AWS, Google Cloud, VMware, or major customers. Looked for 'joint venture', 'strategic alliance', 'partnership agreement', 'master services agreement' with governance provisions. No material partnerships with governance rights identified.",
+      "why_relevant_to_hypothesis": "If strategic partner held veto rights over M&A or major decisions, would support H3 (hidden veto rights) and create additional control constraint beyond Apollo/lenders. Customer concentration could create de facto veto if top customer could terminate upon ownership change.",
+      "finding": "NOT FOUND. No evidence of strategic partnerships granting governance or veto rights to third parties. Customer contracts likely contain standard change-of-control or assignment provisions (requiring customer consent for contract transfer) but these are OPERATIONAL constraints, not GOVERNANCE constraints. No single customer appears to have structural control.",
+      "impact": "Confirms control is concentrated in Apollo (equity) and lenders (debt covenants), without third-party strategic partners having veto rights. Simplifies transaction - need only negotiate with Apollo and lenders, not with ecosystem partners. Customer consent for contract assignments is operational due diligence matter, not control issue."
+    },
+    {
+      "evidence_type": "Public shareholder activism, proxy fights, or organized opposition to Apollo control",
+      "search_conducted": "Searched financial news, proxy filings, and activist investor databases (13D filings by activist funds) for evidence of shareholder activism at Rackspace. Looked for dissident director nominations, proxy contests, open letters to board, or hedge fund involvement. No activist campaigns identified.",
+      "why_relevant_to_hypothesis": "Active public shareholders challenging Apollo's control would weaken H1 (concentrated control) and demonstrate effective minority shareholder power. Activism could create reputational pressure or litigation risk constraining Apollo.",
+      "finding": "NOT FOUND. No evidence of public shareholder activism or organized opposition to Apollo. Given low stock price ($0.48) and modest market cap ($120M), public shareholders appear passive or have exited. No Schedule 13D filings by activists identified in searches. Public shareholders appear to have accepted minority status or are waiting for liquidity event.",
+      "impact": "Confirms public shareholders exercise NO effective control despite 43-47% economic ownership. Absence of activism suggests public shareholders are either: (1) Passive index funds, (2) Retail investors with no coordination, (3) Have given up on influencing management/Apollo. Acquirer need not worry about activist shareholder interference but must address appraisal rights if going private."
+    },
+    {
+      "evidence_type": "Regulatory approval requirements for ownership changes (FCC, CFIUS, antitrust beyond HSR)",
+      "search_conducted": "Reviewed H3 from Stage 1.1 which found NO structural regulatory licenses (FCC, state banking, etc.). Assessed whether Rackspace operates in CFIUS-sensitive sectors (defense, critical infrastructure, sensitive data). Rackspace provides cloud services but appears to be commercial, not defense-focused. Standard HSR antitrust filing would apply for transactions meeting thresholds, but no sector-specific approvals identified.",
+      "why_relevant_to_hypothesis": "Regulatory veto rights would support H3 (hidden veto rights) and create control constraint where government agencies must approve ownership changes. Would introduce non-commercial actor into control analysis.",
+      "finding": "NOT FOUND (largely). No FCC or sector-specific regulatory approvals required beyond standard HSR antitrust review for transactions >$119.5M (2025 threshold). CFIUS could theoretically review acquisition by foreign buyer if deemed critical infrastructure risk, but domestic acquirer or financial buyer would not trigger CFIUS. Government contracts (FedRAMP) do not require ownership change approval, only recertification of security standards.",
+      "impact": "Confirms control constraints are COMMERCIAL (Apollo, lenders), not REGULATORY (government agencies). Domestic acquirer faces no regulatory approval risk beyond HSR antitrust (which is routine for non-concentrated markets). Foreign acquirer might face CFIUS review but only if critical infrastructure concerns raised. Simplifies transaction timeline."
+    }
+  ]
+}

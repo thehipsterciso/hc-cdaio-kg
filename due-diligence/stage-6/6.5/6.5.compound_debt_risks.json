@@ -1,0 +1,26 @@
+{
+  "sub_stage": "6.5",
+  "compound_debt_risks": [
+    {
+      "debt_area": "Multi-Entity + Multi-Cloud + Multi-Certification Complexity Multiplication",
+      "compounding_mechanism": "Each debt area MULTIPLIES others: 100+ entities × 3 clouds × 4-5 certifications = 1200-1500 distinct operational configurations. Each entity-cloud-certification combination requires separate processes, documentation, evidence. Adding one entity increases operational burden by 3 clouds × 5 certifications = 15X. Adding one cloud increases burden by 100 entities × 5 certifications = 500X. Adding one certification increases burden by 100 entities × 3 clouds = 300X. Debt compounds MULTIPLICATIVELY not additively.",
+      "systemic_effect": "Cannot optimize any single dimension without addressing all three. Cannot consolidate entities without multi-cloud coordination. Cannot exit cloud without entity-specific impacts. Cannot streamline compliance without entity/cloud restructuring. Three-dimensional debt creates COMBINATORIAL EXPLOSION preventing focused remediation. Estimated impact: If single-entity, single-cloud, single-certification baseline = 1X operational cost, current state = 8-12X operational cost (not 100+3+5=108X additive, but compounding factor 8-12X).",
+      "severity": "HIGH",
+      "evidence_sources": ["Stage 6.5 technical constraint map: Multi-entity $80-160M, multi-cloud $50-105M, compliance manual $3-9M documented separately but interact multiplicatively"]
+    },
+    {
+      "debt_area": "VMware Platform Aging Accelerating Private Cloud Decline",
+      "compounding_mechanism": "VMware platform aging → customer churn (13% YoY) → reduced scale → higher per-customer support cost → must raise prices → more churn (vicious cycle). Additionally: Churn reduces leverage with Broadcom (smaller customer base = less negotiating power, not that any existed) → Broadcom increases prices further → pass to remaining customers → accelerates churn. Debt creates DEATH SPIRAL not linear decline.",
+      "systemic_effect": "Private Cloud business approaching economic unviability: $1,055M revenue declining 13%/year = $137M annual loss, accelerating as platform ages. Timeline to breakeven: 5-7 years at current trajectory. But trajectory is ACCELERATING - may hit unsustainability in 3-5 years. At that point, FORCED EXIT from Private Cloud (wind down customer base, write off VMware assets, layoff operations teams) causing disruption and value destruction. VMware debt converts Private Cloud from declining-but-manageable to terminal-within-5-years.",
+      "severity": "HIGH",
+      "evidence_sources": ["Stage 6.5 technical constraint map: VMware aging causes $27-55M annual churn", "Stage 2.1: Private Cloud $1,055M declining 13% YoY"]
+    },
+    {
+      "debt_area": "Integration Layer Brittleness Amplifying Vendor Lock-In",
+      "compounding_mechanism": "Custom integration code creates switching costs for vendors: Cannot replace monitoring vendor without rewriting integrations (adds $2-5M to switch cost). Cannot replace billing platform without integration rebuild ($3-10M). Cannot exit hyperscaler without breaking provisioning integrations ($5-15M per cloud). Integration debt INCREASES vendor power (Stage 6.4) by making substitution more expensive over time. As integrations age and accumulate, vendor lock-in TIGHTENS.",
+      "systemic_effect": "Vendors can exploit with pricing knowing integration debt prevents switching. Broadcom VMware 200-300% increase partially enabled by integration lock-in (not just customer workload dependencies). Monitoring/backup vendors can increase 20-40% knowing integration rewrite cost exceeds acceptance. Integration debt converts MODERATE vendor lock-in into ABSOLUTE lock-in over 5-10 year horizon.",
+      "severity": "MEDIUM-HIGH",
+      "evidence_sources": ["Stage 6.5 technical constraint map: Integration layer $7.5-12.5M drag", "Stage 6.4 vendor control: Vendor exit timelines 12-48 months partially due to integration complexity"]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "sub_stage": "9.4",
+  "document_metadata": {
+    "title": "Ecosystem Shock Propagation Paths - External Failures Creating Internal Cascades",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-16",
+    "scope": "Third-party dependencies whose failure halts operations, destroys revenue, or creates irreversible damage"
+  },
+  "shock_propagation_paths": [
+    {
+      "external_dependency": "AWS (Amazon Web Services) - Advanced Partner Status",
+      "failure_scenario": "AWS experiences major multi-region outage (similar to historical US-EAST-1 failures Dec 2021, Nov 2020) affecting Rackspace customer workloads hosted on AWS infrastructure. Duration: 6-12 hours.",
+      "internal_impact": "IMMEDIATE (T+0 to T+30 min): Rackspace AWS customers ($500-700M revenue per Stage 6.2) lose access to workloads - applications, databases, APIs DOWN. Rackspace management plane (portal, monitoring, API endpoints if AWS-hosted) FAILS simultaneously. NOC overwhelmed with customer calls/emails (hundreds to thousands simultaneous). Engineers determine root cause is AWS failure - CANNOT FIX, must wait for AWS restoration. SECONDARY (T+1 to T+6 hours): Customer SLA breaches accumulate (99.9% SLA = 8.76 hours annual allowance, 6-hour outage consumes 68% in single incident). SLA credit exposure $8-40M estimated (Stage 9.2). Customer business impact compounds - customers' revenue-generating apps DOWN, losses exceed Rackspace SLA credits. Customer churn decisions initiated - 'Why use Rackspace middleman when AWS outage affects us anyway?' TERTIARY (T+30 to T+90 days): Customer churn wave materializes - estimated 5-10% of affected customers ($25-70M annual revenue) terminate via 30-day notice. AWS sales team proactively targets Rackspace customers post-incident offering AWS Managed Services direct. Estimated 10-15% additional churn over 12 months ($50-105M) as AWS capitalizes. AWS partner relationship strain - AWS questions Rackspace value after customer escalations. Potential partner credit reduction from 10-15% to 5-10% = $25-35M annual margin loss (Stage 9.2). TOTAL IMPACT: $75-175M revenue at risk over 12 months, $8-40M immediate SLA credits, $25-35M potential ongoing margin compression.",
+      "time_to_failure": "IMMEDIATE customer impact (T+0), SLA breach T+1 hour, churn decisions T+6 hours, revenue loss T+30 days (first terminations)",
+      "replaceability_reality": "CANNOT BE REPLACED. Customers chose AWS specifically - workloads architected for AWS-native services (Lambda, DynamoDB, etc.). Multi-cloud failover is FICTION per Stage 6.2 - customers on AWS OR Azure OR Google, not redundant across clouds. Migration to Azure/Google requires: (1) Application re-architecture (weeks to months), (2) Data migration (terabytes = days to weeks), (3) Testing and validation, (4) Customer consent and coordination. CANNOT EXECUTE during live incident. Rackspace has ZERO LEVERAGE to compel AWS faster restoration - Advanced Partner status provides NO operational control. When AWS fails, Rackspace customers are DOWN until AWS recovers. No alternative.",
+      "severity": "HIGH",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 6.2: AWS $500-700M revenue dependency, Advanced Partner status, 'Rackspace has ZERO LEVERAGE in AWS relationship'",
+        "Stage 9.2: AWS region outage failure sequence - 15-25% churn potential, $15-50M revenue loss",
+        "Stage 6.2: 'Multi-cloud is FICTION - customers choose specific cloud, workloads not portable'",
+        "Industry historical: AWS US-EAST-1 outages 5-7+ hours (December 2021, November 2020)",
+        "Stage 5.1: Month-to-month billing enables immediate customer exits post-incident"
+      ]
+    },
+    {
+      "external_dependency": "VMware/Broadcom - Private Cloud Virtualization Platform Vendor",
+      "failure_scenario": "Broadcom (VMware owner post-2023 acquisition) implements further price increases beyond current 200-300% shock, OR restricts partner licensing terms forcing Rackspace architectural changes, OR experiences extended support outage affecting Rackspace operations.",
+      "internal_impact": "PRICE SHOCK SCENARIO (already active): Broadcom 200-300% price increase = $100-210M annual cost increase per Stage 6.2. Rackspace must either: (1) Absorb cost = eliminate Private Cloud profitability (38.6% margin becomes negative), (2) Pass through to customers = 20-40% price increases triggering customer exodus. Customer response: 30-50% churn estimated as customers migrate to hyperscaler dedicated hosts or competitors (Stage 6.3). Revenue loss: $316-528M from $1,055M base. FURTHER PRICE INCREASE: If Broadcom increases another 50-100%, makes Private Cloud UNECONOMICAL to operate. Must choose: Accept losses, exit segment (Exchange discontinuation precedent Stage 8.1), or divest to buyer who can absorb costs. LICENSING RESTRICTION: If Broadcom restricts partner reseller terms (precedent: eliminated perpetual licenses, forced subscription), Rackspace may lose ability to provision new VMware infrastructure. Cannot onboard new Private Cloud customers, cannot expand existing. Growth blocked, segment enters managed decline. SUPPORT OUTAGE: If Broadcom support unavailable during critical VMware incident (vCenter failure, ESXi vulnerability), Rackspace engineers cannot escalate to vendor. Extended outages affect customer VMs = SLA breaches, customer churn, reputational damage. TERTIARY: Private Cloud contributes 40-50% of operating income despite 39% of revenue (Stage 5.1). Losing Private Cloud eliminates majority of profitability, makes overall company unprofitable. Triggers covenant stress, potential bankruptcy.",
+      "time_to_failure": "PRICE SHOCK: Already active (T+0), customer churn T+30 to T+12 months. LICENSING RESTRICTION: T+0 blocks new customer adds immediately. SUPPORT OUTAGE: T+0 during incident, MTTR extends from hours to days",
+      "replaceability_reality": "CANNOT BE REPLACED without CUSTOMER CONSENT and MASSIVE DISRUPTION. Customer workloads are VMs running ON VMware - Rackspace cannot unilaterally switch hypervisors. Migration to KVM/Nutanix/Hyper-V requires: (1) Customer workload rebuild (not lift-and-shift), (2) Application compatibility testing per customer, (3) Customer maintenance windows and coordination, (4) 24-48 month timeline for full migration. Customer REFUSAL RATE 40-60% estimated - chose Rackspace FOR VMware compatibility (Stage 6.3). EXIT MORE EXPENSIVE THAN STAYING: Migration cost $200-500M + customer churn 30-50% ($316-528M revenue loss) = $516M-$1B total cost exceeds staying despite Broadcom price shock. Rackspace is VENDOR HOSTAGE - Broadcom knows exit impossible and prices accordingly. No viable alternative.",
+      "severity": "HIGH",
+      "claim_type": "FACT",
+      "evidence_refs": [
+        "Stage 6.2: VMware dependency $1,055M revenue, Broadcom price shock $100-210M annually ACTIVE",
+        "Stage 6.3: 'VMware platform is FOUNDATIONAL - customer workloads run ON VMware, cannot migrate without customer consent'",
+        "Stage 6.3: Migration attempt - estimated 30-50% customer churn = $316-528M revenue loss",
+        "Stage 6.2: Exit cost $200-500M, feasibility VERY LOW, 'VENDOR HOSTAGE situation'",
+        "Stage 5.1: Private Cloud 40-50% of operating income - loss eliminates company profitability",
+        "Industry reality: Broadcom VMware acquisition 2023, 200-300% price increases, restrictive licensing changes"
+      ]
+    },
+    {
+      "external_dependency": "Azure (Microsoft Azure) - CSP 2-Tier Distributor Status",
+      "failure_scenario": "Azure experiences regional outage affecting Rackspace customers, OR Microsoft changes CSP program terms unfavorably, OR Microsoft prioritizes direct customers over partners during capacity constraints.",
+      "internal_impact": "Similar to AWS but with CSP-SPECIFIC RISKS: OUTAGE: Azure customer impact identical to AWS scenario ($500-700M revenue at risk per Stage 6.2). CSP PROGRAM CHANGE: Microsoft could: (1) Reduce partner margins (currently estimated 10-15% credits), (2) Restrict which services partners can resell (precedent: some Azure services direct-only), (3) Change billing/support terms disadvantaging partners. Margin impact: 5% credit reduction = $25-35M annual gross profit loss. Service restriction: If Rackspace cannot resell high-demand Azure services (AI/ML, new features), competitive disadvantage vs Azure-direct. CAPACITY PRIORITIZATION: During Azure capacity constraints (AI/ML compute shortage, regional capacity limits), Microsoft prioritizes DIRECT enterprise customers over CSP partners. Rackspace customer provisioning requests DELAYED or DENIED while direct customers served. Customer perceives Rackspace as BLOCKER not ENABLER, accelerates migration to Azure-direct. CSP 2-TIER STATUS creates DOUBLE INTERMEDIATION - Rackspace is partner of partner (distributor), not direct Microsoft partner. Adds complexity, reduces control, increases Microsoft's ability to change terms without Rackspace input.",
+      "time_to_failure": "OUTAGE: Immediate (T+0). PROGRAM CHANGE: T+0 when announced, margin impact T+30 days (billing cycle). CAPACITY PRIORITIZATION: T+0 when customer requests denied, churn decisions T+7 to T+30 days",
+      "replaceability_reality": "CANNOT BE REPLACED for same reasons as AWS. Customers on Azure chose Azure - workloads use Azure-native services (Azure Functions, Cosmos DB, Azure AD). Migration to AWS/Google requires re-architecture. CSP STATUS CANNOT BE UPGRADED easily - becoming direct Microsoft partner requires: (1) Meeting Microsoft partnership requirements (revenue scale, certifications, competencies), (2) Migrating customer billing from CSP to direct (customer disruption), (3) Multi-year relationship building with Microsoft. CSP 2-Tier is STRUCTURAL CONSTRAINT from Rackspace's market position - not large enough for Tier 1 or direct status. ASYMMETRIC POWER: Microsoft has thousands of CSP partners, Rackspace is ONE. Microsoft optimizes for direct enterprise customers ($BILLIONS) not CSP partners ($MILLIONS). Rackspace expendable in Microsoft's strategy.",
+      "severity": "HIGH",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 6.2: Azure $500-700M revenue dependency, CSP 2-Tier Distributor status",
+        "Stage 6.2: '2-Tier status creates DOUBLE INTERMEDIATION, reduces control'",
+        "Stage 9.2: Hyperscaler outage scenario - same churn dynamics apply to Azure",
+        "Stage 6.2: 'Hyperscaler partner credit reduction risk' - applies to Azure",
+        "Industry reality: Microsoft prioritizes direct customers, CSP margins under pressure, AI/ML capacity constraints favor direct customers"
+      ]
+    },
+    {
+      "external_dependency": "ScienceLogic - Monitoring Platform Vendor",
+      "failure_scenario": "ScienceLogic experiences zero-day vulnerability (September 2024 precedent per Stage 8.1), extended service outage, OR discontinues product Rackspace depends on.",
+      "internal_impact": "September 2024 PRECEDENT: Zero-day vulnerability in ScienceLogic monitoring platform. IMMEDIATE (T+0): Monitoring dashboards OFFLINE during incident response (Stage 4.5). Rackspace operations BLIND - cannot see customer infrastructure status. Must respond to incidents WITHOUT monitoring visibility = extended MTTR. Customers checking dashboards see 'no data' = panic, support tickets 'is my environment down?'. SECONDARY (T+24 to T+72 hours): INCIDENT RESPONSE DEPENDS ON VENDOR - remediation timeline EXTERNALLY CONTROLLED (Stage 4.5). Rackspace cannot fix ScienceLogic vulnerability, must wait for vendor patch. If vendor slow to respond (48-72+ hours), Rackspace operations degraded for extended period. Customer SLA breaches accumulate from degraded incident response. TERTIARY (Post-incident): CUSTOMER CONFIDENCE DAMAGE - 'Rackspace monitoring failed when we needed it most.' Churn evaluation triggered. OPERATIONS TEAM BURNOUT - responding to incidents blind, managing vendor coordination stress, creates attrition risk (Stage 9.3). DISCONTINUATION SCENARIO: If ScienceLogic discontinues product or exits market (acquisition, bankruptcy), Rackspace must: (1) Find alternative monitoring platform, (2) Migrate thousands of customer monitoring configurations, (3) Retrain operations teams, (4) Timeline: 12-24 months, cost $10-50M estimated. During migration: Monitoring fragility, customer dissatisfaction, competitive vulnerability.",
+      "time_to_failure": "VULNERABILITY: Immediate (T+0) when exploited. REMEDIATION DELAY: 24-72+ hours vendor-controlled. DISCONTINUATION: 12-24 month replacement timeline if vendor exits",
+      "replaceability_reality": "CAN BE REPLACED but VERY COSTLY and DISRUPTIVE. Alternative monitoring platforms exist (Datadog, New Relic, Splunk, Prometheus/Grafana, etc.). But replacement requires: (1) Vendor selection and contract negotiation (3-6 months), (2) Platform implementation and integration (6-12 months), (3) Customer monitoring migration - thousands of custom configurations per customer (12-24 months), (4) Operations team retraining (6-12 months), (5) Parallel run to validate (3-6 months). TOTAL TIMELINE: 24-36 months for complete migration with HIGH EXECUTION RISK (monitoring platform changes notorious for customer impact). CANNOT REPLACE DURING INCIDENT - stuck with vulnerable/unavailable platform until remediation. Vendor dependency for security/availability creates OPERATIONAL FRAGILITY despite replaceability in theory.",
+      "severity": "MED",
+      "claim_type": "FACT",
+      "evidence_refs": [
+        "Stage 8.1: September 2024 ScienceLogic zero-day breach - 'monitoring dashboards offline during incident'",
+        "Stage 4.5: 'ScienceLogic vendor dependency creates external constraints, remediation timeline externally controlled'",
+        "Stage 9.2: 'Monitoring platform is OPERATIONAL BACKBONE - without monitoring, Rackspace is REACTIVE not PROACTIVE'",
+        "Stage 6.3: '24/7 Monitoring, Alerting, and Incident Management Platform' critical business service",
+        "Industry reality: Monitoring platform migrations high-risk, 12-24 month timelines typical for enterprise scale"
+      ]
+    },
+    {
+      "external_dependency": "Hyperscaler Partner Portal APIs (AWS/Azure/Google) - Billing System Integration",
+      "failure_scenario": "One or more hyperscaler partner portal APIs experience extended outage (48-72+ hours), API breaking changes without notice, OR API rate limiting during month-end billing.",
+      "internal_impact": "BILLING SYSTEM DEPENDS ON APIS: Must pull consumption data from three hyperscaler partner portals with 'different APIs, data formats, update frequencies' per Stage 6.3. API OUTAGE (48-72 hours): IMMEDIATE: Cannot pull consumption data for affected hyperscaler. Billing system cannot generate accurate invoices without consumption data. Must delay invoicing or estimate (risky - over/under-billing creates customer disputes). SECONDARY (T+72 hours to T+7 days): Month-end close BLOCKED - cannot recognize revenue without invoices. $228M monthly revenue affected per Stage 9.2. SEC reporting timeline at risk if outage during quarter-end. Hyperscaler bills arrive (must pay regardless) but cannot invoice customers = cash trap. Must pay hyperscalers $194M monthly but haven't collected from customers = working capital stress (Stage 9.2). TERTIARY: MANUAL BILLING BACKUP requires 10-50X staff time (Stage 9.2) with 2-5% error rate. Customer disputes from errors. Audit risk - manual billing is material control deficiency (SOX 404). API BREAKING CHANGE: If AWS/Azure/Google changes API format/schema without adequate notice, billing integration BREAKS. Cannot pull data until Rackspace updates integration code (hours to days depending on complexity). Similar impacts to outage but CAUSED BY VENDOR unilaterally, not incident. API RATE LIMITING: During month-end when ALL partners pulling consumption data simultaneously, hyperscaler may rate-limit API calls. Rackspace requests THROTTLED, delaying data retrieval and invoice generation.",
+      "time_to_failure": "OUTAGE: Immediate (T+0) but impact delayed to month-end billing cycle. BREAKING CHANGE: Hours to days to update integration. RATE LIMITING: T+month-end, delays measured in hours to days",
+      "replaceability_reality": "CANNOT BE REPLACED - no alternative to hyperscaler APIs for consumption data. Rackspace MUST use AWS/Azure/Google partner portals - only source of customer consumption data. NO REDUNDANT DATA SOURCE. If API unavailable, NO WORKAROUND except manual customer-by-customer reconciliation (unscalable). DEPENDENCY IS PERMANENT as long as Rackspace resells hyperscaler services. Hyperscalers control API availability, format, rate limits unilaterally. Rackspace has NO LEVERAGE (Stage 6.2) - partner status does not guarantee API SLAs. API changes can be UNILATERAL with minimal notice. ASYMMETRIC POWER: Hyperscalers prioritize DIRECT customers over partners. Partner API stability/performance NOT guaranteed same as direct customer APIs.",
+      "severity": "HIGH",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 6.3: Billing system 'must pull consumption data from 3 hyperscaler partner portals with different APIs, data formats, update frequencies'",
+        "Stage 9.2: Billing system failure - $228M monthly revenue, $137-274M annual revenue at risk",
+        "Stage 9.2: 'Manual billing requires 10-50X staff time, 2-5% error rate'",
+        "Stage 6.2: 'Rackspace has ZERO LEVERAGE in hyperscaler relationships'",
+        "Stage 2.3: 'Billing must pull hyperscaler consumption data' - critical dependency"
+      ]
+    },
+    {
+      "external_dependency": "BT (British Telecom) Partnership - UK Sovereign Services Communications Infrastructure",
+      "failure_scenario": "BT partnership terminates, BT experiences service outage affecting UK Sovereign infrastructure, OR BT acquired creating partnership uncertainty.",
+      "internal_impact": "UK SOVEREIGN DEPENDS ON BT: March 2024 Rackspace announcement - UK Sovereign uses BT for 'sovereign communications' (Stage 1.5). PARTNERSHIP TERMINATION: If BT ends partnership (strategic pivot, dissatisfaction with Rackspace relationship, better opportunity elsewhere): Must find alternative UK communications provider, rebuild infrastructure integration (likely 6-12 months), VMware Sovereign Cloud certification may require RECERTIFICATION with new provider (6-12 months), customers experience service disruption during transition = churn risk. UK Sovereign nascent segment (<$135M revenue) cannot absorb partnership disruption - may force SEGMENT EXIT (Exchange precedent). BT SERVICE OUTAGE: UK Sovereign customers (government, NHS, police, financial services) lose communications connectivity. Cannot access Rackspace management, data transfer interrupted, monitoring/alerting fails. Customer business impact SEVERE for critical services (NHS patient care, police operations). Reputational damage to sovereignty promise - 'sovereign cloud failed when needed'. CUSTOMER CHURN from trust loss - estimated 40-50% of immature customer base (Stage 5.1). BT ACQUISITION: If BT acquired by non-UK entity, sovereignty promise COMPROMISED. UK government/NHS customers require UK-owned communications - must exit or find alternative. Similar to Rackspace foreign acquisition risk (Stage 9.2).",
+      "time_to_failure": "TERMINATION: 6-12 month transition if graceful, immediate if hostile. OUTAGE: Immediate (T+0), customer impact minutes. ACQUISITION: Months of uncertainty, customer exits during review",
+      "replaceability_reality": "CAN BE REPLACED but LIMITED OPTIONS and EXTENDED TIMELINE. UK communications providers for sovereign services: BT, Virgin Media Business, CityFibre, some smaller regional providers. Selection pool <10 providers vs hundreds for non-sovereign. Requirements: (1) UK-owned and operated (sovereignty compliance), (2) Capable of supporting isolated infrastructure (VMware Sovereign Cloud), (3) Willing to partner with Rackspace (may prefer direct customer relationships), (4) Acceptable pricing (UK Sovereign segment thin margins). REPLACEMENT TIMELINE: 6-12 months partner selection, contract negotiation, infrastructure integration, VMware certification validation. CUSTOMER CONSENT required - some customers may have BT-specific requirements in contracts. SEGMENT VIABILITY RISK: <$135M revenue insufficient to absorb partnership transitions. One major partnership failure may force segment exit vs investing in replacement.",
+      "severity": "MED",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 1.5: UK Sovereign Services uses 'BT partnership for sovereign communications'",
+        "Rackspace announcement March 27, 2024: UK Sovereign launched with BT partnership",
+        "Stage 2.1: UK Sovereign <$135M revenue, launched March 2024 - immature segment",
+        "Stage 5.1: 'UK Sovereign estimated 20-30% early churn, 40-50% if service quality issues'",
+        "Stage 8.1: December 2022 Exchange DISCONTINUED precedent - segment exit when economics fail",
+        "Stage 9.3: UK Sovereign team isolated, cannot access global resources for support"
+      ]
+    }
+  ]
+}

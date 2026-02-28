@@ -1,0 +1,80 @@
+{
+  "sub_stage": "9.3",
+  "unknowns_requests": [
+    {
+      "request": "HR Turnover and Retention Data Package - Role-Specific Attrition Patterns 2022-2025",
+      "why_needed": "CRITICAL for assessing human capital sustainability and death spiral risk. Cannot model workforce continuity without empirical turnover data. Need to determine: (1) Which roles experiencing highest attrition (FedRAMP, VMware, platform architects, operations, support), (2) Whether attrition correlates with incidents (post-Exchange Dec 2022, post-ScienceLogic Sept 2024, post-CL0P Oct 2024), (3) Whether attrition accelerating (death spiral inflection point assessment), (4) Termination reasons (burnout, compensation, management, career), (5) Time-to-backfill by role (replacement lag visibility). Three CEOs three years proves LEADERSHIP attrition problem. Stage 4.5 burnout risks HIGH to EXTREME suggest OPERATIONS/SUPPORT attrition likely. Exchange discontinuation may reflect post-ransomware personnel shortage. Need data to quantify risk vs confirm/refute inferences.",
+      "highest_value_source_types": [
+        "HR turnover reports by role, department, month for 2022-2025 (shows patterns)",
+        "Exit interview summaries aggregated by termination reason (why people leave)",
+        "Voluntary vs involuntary termination breakdown (burnout shows as voluntary)",
+        "Time-to-backfill analysis by role showing replacement lag (operational impact)",
+        "Offer acceptance/decline rates and declined candidate reasons (recruiting difficulty)",
+        "Retention bonus program documentation (who receives, amounts, effectiveness)",
+        "Employee engagement survey results with burnout/satisfaction metrics",
+        "Headcount trends by function showing net staffing changes over time"
+      ],
+      "blocking_for_stage_progression": true
+    },
+    {
+      "request": "Platform Team Structure and Capability Documentation - Architect Concentration and Succession Plans",
+      "why_needed": "CRITICAL for assessing $2.7B revenue realization continuity risk. Stage 6.3 identifies eight platforms as 'SINGLE POINTS OF FAILURE' with 'undocumented logic' and 'tribal knowledge'. Cannot assess operational continuity without knowing: (1) Team size per platform (1 architect, 2-3, or 5-10+?), (2) Capability depth (can team sustain vacation/illness/departure?), (3) Documentation maturity (can new staff learn from docs or require years of experience?), (4) Succession plans (backups identified and trained?), (5) Retention risk (are architects actively recruited? market competitive compensation?). Billing system failure Stage 9.2 shows $137-274M annual revenue at risk - is this managed by 1 person or team? IAM failure paralyzes all operations - adequate redundancy? Buyer must know before valuation/integration planning.",
+      "highest_value_source_types": [
+        "IT organizational charts showing platform team structures and reporting relationships",
+        "Platform architect headcount by platform (billing, IAM, monitoring, provisioning, etc.)",
+        "Platform documentation maturity assessments (can new staff maintain with current docs?)",
+        "On-call rotation schedules showing coverage depth (how many staff support 24/7?)",
+        "Platform architect job descriptions and required experience levels",
+        "Recent platform architect recruiting activity (open positions, time-to-fill, offer declines)",
+        "Platform vendor support contracts (does Rackspace rely on vendor expertise?)",
+        "Succession plans or business continuity personnel assignments for platforms"
+      ],
+      "blocking_for_stage_progression": true
+    },
+    {
+      "request": "FedRAMP and UK Sovereign Team Sizing, Clearances, and Capability Assessment",
+      "why_needed": "HIGH PRIORITY for assessing $270-410M government revenue and <$135M UK Sovereign segment sustainability. FedRAMP requires 'US citizen security team' and UK Sovereign requires 'UK-only personnel' creating constrained talent pools. Need to determine: (1) Team sizes (adequate for 24/7/365 operations?), (2) Clearance status (how many SECRET, TOP SECRET, in-process?), (3) Workload adequacy (teams stretched or adequate redundancy?), (4) Retention risk (are teams stable or experiencing attrition?), (5) Growth capacity (can teams support new customer adds?). FedRAMP team likely 10-30 personnel for 800+ NIST controls - if minimal sizing, 3-5 departures catastrophic. UK Sovereign team likely 10-20 for nascent segment - insufficient for growth. Need data to assess segment viability vs exit risk (Exchange discontinuation precedent).",
+      "highest_value_source_types": [
+        "FedRAMP security team organizational chart and headcount by role",
+        "Clearance status breakdown (active SECRET/TOP SECRET, in-process, denied, renewal schedule)",
+        "UK Sovereign team organizational chart and headcount",
+        "On-call rotation schedules showing coverage depth and overtime burden",
+        "Team workload metrics (incident response times, overtime hours, satisfaction surveys)",
+        "Recruiting pipelines (open positions, time-to-hire, clearance processing timelines)",
+        "Retention programs specific to constrained talent pools (bonuses, career paths)",
+        "Customer growth capacity analysis (can current teams support expansion?)"
+      ],
+      "blocking_for_stage_progression": false
+    },
+    {
+      "request": "Compensation Benchmarking and Recruiting Difficulty Analysis vs Hyperscalers/Competitors",
+      "why_needed": "MEDIUM-HIGH PRIORITY for assessing hiring/retention feasibility and labor cost trajectory. Stage 9.2 estimates '20-40% salary premium required to overcome negative perception' post-incidents. Need to determine: (1) Current compensation vs AWS/Azure/Google/competitors (at market, above, below?), (2) Whether premium required to recruit (offer declines citing compensation?), (3) Retention bonus effectiveness (are bonuses retaining or people leaving anyway?), (4) Labor cost inflation trajectory (trending up with market competition?). Affects: Operating cost modeling (if must pay premiums, margins compressed further), hiring feasibility (can company afford market+premium?), retention program ROI (are investments working?). With EBITDA margin 3.1% (Stage 5.2), 10-20% labor cost increase eliminates profitability.",
+      "highest_value_source_types": [
+        "Compensation benchmarking studies vs AWS, Azure, Google, MSP competitors by role",
+        "Offer acceptance/decline analysis with declined candidate feedback (why rejected?)",
+        "Retention bonus program budget, recipients, and attrition rates of bonus recipients",
+        "Salary band structures and recent adjustment history (keeping pace with market?)",
+        "Recruiting cost per hire by role (shows market difficulty and competition)",
+        "Employee compensation satisfaction survey results",
+        "Voluntary termination exit interviews citing compensation as primary reason",
+        "Labor cost inflation projections for next 12-24 months"
+      ],
+      "blocking_for_stage_progression": false
+    },
+    {
+      "request": "Knowledge Management and Documentation Infrastructure Assessment",
+      "why_needed": "MEDIUM PRIORITY for assessing knowledge concentration remediation feasibility. Stage 6.3 explicitly states platforms have 'undocumented logic' and 'tribal knowledge'. Stage 4.5 documents 'legacy system custodians possess undocumented operational knowledge'. Need to determine: (1) Does knowledge management infrastructure exist (wiki, confluence, documentation portal)?, (2) Documentation maturity by function (comprehensive, partial, minimal?), (3) Documentation maintenance (actively updated or stale?), (4) Cross-training programs (staff rotated through roles?), (5) Knowledge transfer processes (documented handoff procedures?). If documentation immature, buyer faces: Cannot rapidly onboard replacements (12-24 month learning curves), cannot integrate systems (tribal knowledge prevents migration), must retain all key personnel indefinitely (hostage situation). If documentation exists but unmaintained, remediation possible but expensive/time-consuming.",
+      "highest_value_source_types": [
+        "Knowledge management system documentation (Confluence, wiki, etc. - if exists)",
+        "Documentation maturity assessments by platform and function",
+        "Documentation update activity logs (is documentation actively maintained?)",
+        "Employee onboarding timelines by role (how long to productivity?)",
+        "Cross-training program documentation and participation rates",
+        "Knowledge transfer procedures and case studies of successful transfers",
+        "Technical debt assessments mentioning documentation gaps",
+        "IT audit findings related to documentation or knowledge concentration risk"
+      ],
+      "blocking_for_stage_progression": false
+    }
+  ]
+}

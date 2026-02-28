@@ -1,0 +1,54 @@
+{
+  "sub_stage": "7.1",
+  "document_metadata": {
+    "title": "Data Domain Authoritativeness Hypotheses - Rackspace Technology",
+    "analysis_date": "2026-02-15"
+  },
+  "hypotheses": [
+    {
+      "hypothesis": "H7.1-A: Truth is centralized in single authoritative source per domain—'system of record' equals 'system of truth'",
+      "supporting_evidence_sought": ["Single system definitively resolves disputes per domain", "Conflicts rare or resolved systematically by designated authority", "Consistent data usage across functions from single source", "Executive decisions reference same authoritative system"],
+      "disconfirming_evidence_sought": ["Multiple parallel truths coexist per domain", "System of record bypassed or overridden in decisions", "Disputes resolved politically not systematically", "Different functions use different data sources for same domain"],
+      "evidence_found": {
+        "supporting": "NONE. No domain has unified authoritative truth.",
+        "disconfirming": ["Deal profitability: Sales CRM vs delivery cost vs finance margin—no unified system", "Customer metrics: CRM counts vs billing active vs support engagement—parallel truths", "Support: SLA system vs customer satisfaction platforms—contradictory", "Incidents: Operations MTTD/MTTR vs customer impact vs regulator disclosure—fragmented", "Pipeline: Sales CRM optimistic vs finance conservative vs CEO profitability filter—contested", "Operations: Jurisdiction-specific systems, no enterprise aggregation trusted"]
+      },
+      "status": "REFUTED",
+      "notes": "Hypothesis refuted comprehensively. Every material domain exhibits parallel or contested truths. System of record ≠ system of truth pattern pervasive. CRM is system of record for sales but CEO walk away policy overrides CRM opportunity values. Support ticketing system of record for SLA but customer complaint platforms establish satisfaction truth externally. Finance general ledger system of record for margins but profitability by deal/customer contested between sales and delivery. Refutation indicates structural pattern: Authority-accountability misalignment (Stage 4.1) prevents unified truth—each function controls truth within domain, cross-functional truth negotiated or imposed by CEO reactively."
+    },
+    {
+      "hypothesis": "H7.1-B: Data conflicts resolved through systematic governance processes—not political negotiation or executive intervention",
+      "supporting_evidence_sought": ["Data governance committee resolves disputes", "Documented resolution protocols by domain", "Conflicts resolved at working level not executive escalation", "Resolution based on data quality or methodology not politics"],
+      "disconfirming_evidence_sought": ["CEO arbitrates data disputes personally", "Conflicts resolved through political negotiation", "Resolution inconsistent case-by-case not systematic", "Data governance infrastructure absent or ineffective"],
+      "evidence_found": {
+        "supporting": "NONE. No systematic governance process identified.",
+        "disconfirming": ["CEO walk away policy Q4 2024—CEO personal arbitration of deal profitability", "Sales refresh Q3 2024—CEO intervention on performance/pipeline disputes", "Customer escalations reach CEO—no systematic resolution (BBB: 'cannot reach CEO')", "Stage 4.1: No deal review board, no operating committee, no data governance visible", "Finance conservative adjustment methodology—not governed, determined case-by-case", "Multi-jurisdictional aggregation—methodology contested, no governance standard"]
+      },
+      "status": "REFUTED",
+      "notes": "Hypothesis refuted. Conflicts escalate to CEO for reactive personal arbitration (walk away policy, sales refresh, customer escalations)—not resolved systematically. No data governance committee visible (Stage 4.1 governance infrastructure absent). Resolution political: CEO has authority not methodology, walk away policy case-by-case not criteria-based, sales refresh personnel change not data reconciliation. Three CEOs in three years indicates personal arbitration unsustainable (Stage 4.2 bottleneck, Stage 4.5 talent constraints). Refutation indicates governance void: Data conflicts symptom of authority-accountability misalignment (Stage 4.4), resolved reactively through CEO heroics not systematically through governance infrastructure."
+    },
+    {
+      "hypothesis": "H7.1-C: Internal operational metrics reliably predict external outcomes—activity truth aligns with outcome truth",
+      "supporting_evidence_sought": ["SLA compliance predicts customer satisfaction", "CRM pipeline predicts bookings quality", "Incident response metrics predict stability perception", "Utilization metrics predict capacity needs accurately"],
+      "disconfirming_evidence_sought": ["Internal activity stable while external outcomes degrade", "Leading internal indicators fail to predict lagging external results", "Operational metrics optimized while customer/financial reality deteriorates", "Divergence pattern persistent not episodic"],
+      "evidence_found": {
+        "supporting": "NONE. Internal-external alignment not found.",
+        "disconfirming": ["Support SLA met (internal activity) but satisfaction declining (external outcome)—Trustpilot 'consistently worse' 2024", "Sales bookings maintained (CRM activity) but margins eroding (profitability outcome)—Private Cloud -13%, Public Cloud -3%", "Incident response capable (operations activity) but incidents recurring (stability outcome)—ransomware, zero-day", "CRM pipeline (sales activity) but quality contested (delivery outcome)—walk away policy needed", "Activity-outcome divergence pattern systematic not episodic (Stage 4.2, 4.4)"]
+      },
+      "status": "REFUTED",
+      "notes": "Hypothesis decisively refuted. Internal activity truth systematically diverges from external outcome truth across all tested domains. Pattern: Incentive optimization favors measurable internal activities (SLA response, CRM entry, incident response, bookings volume) over hard-to-measure external outcomes (satisfaction, profitability, stability, quality). Divergence creates measurement theater (Stage 4.4): Internal metrics reported green while business deteriorates. Refutation indicates structural misalignment: Internal measurement systems designed for controllability (objective, immediate, directly influenced) not validity (predicting customer/financial outcomes). Activity-outcome divergence symptom of incentive misalignment—individuals rationally optimize measured activities while unmeasured outcomes degrade."
+    },
+    {
+      "hypothesis": "H7.1-D: Data quality and authoritativeness improve over time through learning and investment",
+      "supporting_evidence_sought": ["Historical data quality improvements documented", "Investment in data systems, governance, measurement", "Disputed domains resolved through infrastructure building", "Maturation pattern: Early chaos, later systematization"],
+      "disconfirming_evidence_sought": ["Data disputes persistent or worsening", "No improvement despite CEO transitions, reorganizations", "Reactive interventions don't resolve structural issues", "Deterioration pattern: Quality degrades over time"],
+      "evidence_found": {
+        "supporting": "Walk away policy Q4 2024, sales refresh Q3 2024 could indicate attempted improvement—but reactive not proactive.",
+        "disconfirming": ["Three CEOs three years—data disputes persist across CEO transitions", "2023 reorganization created BU structure—authority-accountability misalignment persists (Stage 4.1)", "Sales refresh Q3 2024—margin erosion continues post-refresh", "Walk away policy Q4 2024—reactive after severe deterioration, not proactive improvement", "Satisfaction declining 2024 (Trustpilot 'consistently worse')—measurement-reality gap widening", "No data governance infrastructure visible despite repeated failures"]
+      },
+      "status": "WEAKENED/REFUTED",
+      "notes": "Hypothesis weakened significantly, likely refuted. Data quality and authoritativeness not improving—disputes persistent despite CEO transitions (three in three years), reorganizations (2023 BU structure), personnel changes (sales refresh Q3 2024). Reactive interventions (walk away policy, sales refresh) address symptoms not causes—authority-accountability misalignment (Stage 4.1), incentive misalignment (Stage 4.4), governance void persist. No systematic data infrastructure investment visible—capital constrained ($1.3B debt Stage 5), CEO bottleneck (Stage 4.2) prevents governance building bandwidth. Pattern suggests degradation not improvement: Activity-outcome divergence widening (satisfaction 'consistently worse' 2024), margin erosion accelerating, CEO intervention necessity increasing. Refutation indicates: Data disputes symptom of structural execution constraints (authority gaps, incentive misalignments, coordination bottlenecks)—not improving because underlying structure unchanged."
+    }
+  ],
+  "synthesis_notes": "All hypotheses testing truth centralization, systematic governance, internal-external alignment, quality improvement either refuted or weakened. Pattern: Truth fragmented not centralized, governance reactive/political not systematic, internal activity diverges from external outcome, quality not improving potentially degrading. Refutations convergent: Point to structural root cause—authority-accountability misalignment (Stage 4.1), incentive misalignment (Stage 4.4), coordination bottlenecks (Stage 4.2), capital constraints (Stage 5). Data disputes symptomatic not causal—resolving data conflicts requires structural reform (authority reallocation, incentive realignment, governance infrastructure) not data management improvement. Three CEOs, sales refresh, walk away policy all fail to resolve data contestation because structural causes unchanged."
+}

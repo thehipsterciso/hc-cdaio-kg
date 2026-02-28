@@ -1,0 +1,83 @@
+{
+  "sub_stage": "4.1",
+  "document_metadata": {
+    "title": "Uncertainty Register - Decision Authority Analysis",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09",
+    "note": "Per Stage 0.4 requirements: Uncertainty must be preserved, not smoothed. UNKNOWNs can be resolved with additional evidence. UNKNOWABLEs are structurally irreducible."
+  },
+  "uncertainty_register": [
+    {
+      "unknown": "Complete Board of Directors composition, committee assignments, and meeting frequency",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot determine whether independent directors have any real authority to challenge Apollo decisions beyond voting (which Apollo controls 57%). Cannot assess whether audit, compensation, nominating committees have independent majorities that could constrain Apollo influence on executive appointments, compensation incentives, or financial oversight. Cannot evaluate board meeting frequency or attendance patterns that would indicate director engagement vs rubber-stamping.",
+      "what_would_reduce_uncertainty": "Most recent proxy statement (DEF 14A) with complete board composition, committee membership rosters, director biographies, board meeting attendance records, committee meeting frequency, director independence determinations, and any disclosed disagreements or dissents."
+    },
+    {
+      "unknown": "Executive compensation structure and incentive metrics (CEO, CFO, BU Presidents)",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot determine whether executives incentivized for Apollo's objectives (cash generation, debt paydown, operational efficiency) vs growth objectives (revenue growth, customer satisfaction, innovation). Cannot assess alignment between executive incentives and public shareholder interests. Cannot predict how executives will prioritize when objectives conflict (e.g., cut costs to hit EBITDA targets vs invest in customer support quality). Cannot evaluate whether BU Presidents have P&L-based incentives suggesting real accountability.",
+      "what_would_reduce_uncertainty": "Proxy statement (DEF 14A) executive compensation tables, equity ownership by executives, performance metrics and weighting in annual and long-term incentive plans, change-of-control provisions in executive agreements, BU President compensation structure (if disclosed or inferable from NEO disclosures if BU Presidents are NEOs)."
+    },
+    {
+      "unknown": "Sales force compensation structure and deal approval authorities",
+      "type": "UNKNOWN",
+      "decision_impact": "CEO stated 'walk away from unprofitable deals' policy (Q4 2024), but cannot determine whether enforceable. If sales reps compensated purely on bookings (not profitability or retention), policy will be resisted or gamed. If deal approval authority delegated to sales reps without profitability review threshold, CEO policy cannot be enforced. Cannot predict whether strategic pivot to profitability is executable or aspirational. Cannot forecast revenue/margin reliability if sales force books deals knowing delivery will fail.",
+      "what_would_reduce_uncertainty": "Sales compensation plan documentation (bookings vs profitability weighting, customer retention metrics in comp plan, clawbacks for early churn). Deal approval matrix (at what TCV/margin level does deal require VP/CFO/CEO approval). Sales leadership structure and P&L authority. Evidence of sales process changes implemented Q3-Q4 2024 during 'refresh.'"
+    },
+    {
+      "unknown": "Customer support escalation process and senior management accountability",
+      "type": "UNKNOWN",
+      "decision_impact": "Customer complaints state 'inability to escalate to senior management' and 'no ownership.' Cannot determine whether: (a) escalation process exists but isn't followed (execution failure—fixable through enforcement), (b) process doesn't exist (governance failure—requires process creation), or (c) process exists but routes to powerless role (authority gap—requires organizational redesign). Resolution of this unknown determines whether customer execution issues fixable through process enforcement vs requiring structural change. Post-close integration risk assessment depends on this—if no empowered support executive exists, integration will amplify churn.",
+      "what_would_reduce_uncertainty": "Customer support escalation playbook documentation. VP/SVP Customer Support or Chief Customer Officer role charter and authority. SLA breach escalation paths. Evidence of executive involvement (CEO, BU Presidents, COO) in customer escalations. Customer success team structure and P&L accountability."
+    },
+    {
+      "unknown": "Standing governance forums and cross-functional decision-making councils",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot determine how cross-functional conflicts actually resolved (sales vs delivery, growth vs profitability, risk vs speed). If structured governance forums exist (weekly operating committee with decision authority), decision-making has process. If no forums exist, decisions escalate to CEO ad hoc, creating bottleneck and inconsistency. Cannot assess organizational scalability—if CEO is bottleneck, adding volume overwhelms decision capacity. Cannot evaluate risk governance maturity—absence of risk committee particularly concerning given security incidents and regulatory complexity.",
+      "what_would_reduce_uncertainty": "Organizational governance structure documentation: Operating Committee (charter, membership, meeting cadence, decision authorities), Deal Review Board, Risk Committee, Customer Success Council, Technology Investment Committee. Governance forum escalation paths. Evidence of governance decisions (meeting minutes, decision logs) showing forums actually resolve issues vs just informational briefings."
+    },
+    {
+      "unknown": "Business Unit P&L detail and BU President delegation of authority",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot determine whether operating model can scale. If BU Presidents have real P&L authority (revenue targets, cost budgets, capital allocation within budget, hiring authority, pricing authority within guardrails), then decisions can be federated—scalable. If BU Presidents are figureheads with CEO holding all authority, then decision-making centralized and unscalable. Evidence from Lillie departure suggests centralized, but degree of autonomy unknown. Cannot assess whether BU structure creates value or just reporting overhead.",
+      "what_would_reduce_uncertainty": "Delegation of authority matrix showing BU President sign-off thresholds (hiring, capital expenditure, contract approval, pricing variance). Internal P&L structure showing BU President accountability metrics. Evidence of BU-level decisions made without CEO approval (deal approvals, hiring announcements, customer escalation resolutions). BU President role descriptions and performance evaluation criteria."
+    },
+    {
+      "unknown": "Apollo Global Management's investment thesis, exit timeline, and performance requirements",
+      "type": "UNKNOWN",
+      "decision_impact": "Apollo's stranded capital position (paid $4.3B 2016, current stake worth ~$68M) determines decision-making priorities. If Apollo seeking exit, decisions optimize for sale/IPO value (growth, customer satisfaction, technology investment). If Apollo in harvest mode, decisions optimize for cash generation (cost cuts, debt paydown, margin maximization regardless of customer impact). CEO and board decision-making will align with Apollo's timeline, not public shareholders. Cannot predict strategic direction sustainability—current operational turnaround strategy may be sustained or pivoted depending on Apollo's patience and exit plans.",
+      "what_would_reduce_uncertainty": "Apollo fund vintage and expected fund life (determines urgency to exit). Apollo public statements or SEC filings about Rackspace position (fund performance reporting may indicate valuation marks). Apollo Portfolio Performance Solutions team involvement with Rackspace (Vikram Mahidhar joining board Jan 2025 suggests active portfolio management). Comparable Apollo portfolio company exit timelines and strategies. Apollo's cost of capital and return thresholds for continued hold vs exit decision."
+    },
+    {
+      "unknown": "Legacy acquisition integration status (Datapipe, Onica, TriCore, RelationEdge)",
+      "type": "UNKNOWN",
+      "decision_impact": "Stage 1 identified $1.7B acquisition spend 2017-2019 with integration status unknown. If fully integrated: technology platform and customer base unified—operational complexity lower than feared, customer support issues due to capacity/process not systems fragmentation. If acquisitions remain separate: multiple CRM systems, support processes, technology platforms persist—explains customer complaint patterns (conflicting advice from multiple engineers, multiple tickets without coordination). Integration status determines whether operational improvements achievable through process optimization (if integrated) or requires major systems consolidation program (if not integrated—capital intensive, high execution risk).",
+      "what_would_reduce_uncertainty": "Technology platform architecture disclosure (unified CRM/ticketing system vs separate systems per acquired entity). Customer contract distribution (acquired entity contracts migrated to Rackspace parent vs still under legacy entity names). Employee organization (acquired teams integrated into functional structure vs still separate business units). Brand strategy (acquired brands retired vs still marketed separately). Revenue attribution (can customers be traced to acquisition source vs fully commingled)."
+    },
+    {
+      "unknown": "Regulatory compliance governance structure (FedRAMP, UK Sovereign, HIPAA/HITRUST, ISO 27001)",
+      "type": "UNKNOWN",
+      "decision_impact": "Stage 1 identified material compliance obligations (FedRAMP, UK Sovereign, HIPAA/HITRUST, ISO 27001). Cannot determine whether compliance governance centralized (Chief Compliance Officer, enterprise compliance committee) or distributed across business units. Cannot assess whether compliance requirements act as constraint on operational decisions (e.g., Can offshore support for government customers? Can consolidate UK Sovereign infrastructure with commercial infrastructure? Can use shared resources across jurisdictionally-isolated entities?). Compliance breach risk unknown—if governance immature, authorization loss risk material (FedRAMP authorizations sustain government revenue; loss forces 12-18 month re-authorization).",
+      "what_would_reduce_uncertainty": "Chief Compliance Officer or equivalent role disclosure. Compliance committee charter and membership. Compliance audit results (SOC 2 reports, ISO 27001 certification status, FedRAMP continuous monitoring results). Evidence of compliance review in operational decision-making (e.g., compliance sign-off required for architecture changes, M&A, customer contracts in regulated verticals). Compliance training and awareness programs for decision-makers."
+    },
+    {
+      "unknown": "Technology architecture and platform consolidation status",
+      "type": "UNKNOWN",
+      "decision_impact": "Customer complaints suggest technology platform fragmentation (conflicting advice from multiple engineers, support issues spanning multiple tickets without coordination). Cannot determine whether: (a) single unified platform with process issues, or (b) multiple platforms from acquisitions requiring systems integration. If (a), process fixes required. If (b), major systems consolidation program required—capital intensive, high execution risk, customer migration risk (20-30% failure rate). Cannot assess operational improvement feasibility or cost. Cannot evaluate customer churn risk during post-close integration—if platforms already fragmented, additional integration risk high.",
+      "what_would_reduce_uncertainty": "Technology stack disclosure: CRM systems (Salesforce, ServiceNow, custom, multiple?), ticketing systems, monitoring platforms, customer portals, billing systems. Platform consolidation roadmap (if exists). Evidence of systems integration projects (announced initiatives, capital expenditure for systems integration). Engineering team structure (unified platform team vs separate teams per legacy platform)."
+    },
+    {
+      "unknown": "Risk governance structure and enterprise risk ownership",
+      "type": "UNKNOWN",
+      "decision_impact": "Security incidents (ransomware Dec 2022, zero-day Sept 2024) handled reactively without evidence of proactive risk governance. Cannot determine whether Chief Risk Officer or equivalent exists below CEO level. Cannot assess whether risk escalation paths route to empowered risk owner who can make risk acceptance/mitigation decisions without CEO escalation. Customer complaints about security incidents receiving 'no apology, compensation, or solution' suggest unclear risk response authority. Cannot evaluate whether risk governance adequate for regulated verticals (government, healthcare, financial services) that require mature risk management.",
+      "what_would_reduce_uncertainty": "Chief Risk Officer or equivalent role disclosure. Enterprise Risk Management Committee charter, membership, meeting frequency. Risk register (top risks, ownership, mitigation plans). Evidence of risk governance in decision-making (risk assessments for major initiatives, risk escalation paths, risk acceptance authorities). Incident response plans and post-incident review processes. Cyber insurance coverage (indicates insurer's assessment of risk governance maturity)."
+    },
+    {
+      "unknown": "Post-close integration plans if Rackspace acquired",
+      "type": "UNKNOWABLE",
+      "decision_impact": "Stage 4.1 analysis identifies multiple decision authority constraints and escalation failures. Post-close operability depends entirely on acquirer's integration approach: (1) If acquirer changes leadership, decision-making collapses (authority concentrated in current CEO); (2) If acquirer attempts operational integration, multi-jurisdictional constraints (Stage 1: FedRAMP, UK Sovereign, China) create absolute barriers; (3) If acquirer attempts process improvements, authority gaps prevent execution without organizational redesign. Only viable acquirer: one who accepts portfolio of separate businesses and does not attempt operational integration. However, acquirer identity, integration strategy, and timeline UNKNOWABLE until transaction negotiated.",
+      "what_would_reduce_uncertainty": "UNKNOWABLE—depends on future acquirer identity and strategy. Can model integration risk scenarios but cannot predict actual approach. Can identify integration constraints (regulatory, authority gaps, escalation failures) that any acquirer will face."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "uncertainty_register": [
+    {
+      "unknown": "ACTUAL CUSTOMER CHURN RATES: Gross churn % (customers/revenue lost annually), net churn % (accounting for upsells), churn by segment (Public Cloud, Private Cloud, Government), churn by cohort (Year 1, 2, 3+ retention curves).",
+      "type": "UNKNOWN",
+      "decision_impact": "BUSINESS SUSTAINABILITY: If gross churn is 15%, business is manageable with normal acquisition. If gross churn is 25-30%, business is in death spiral requiring unsustainable acquisition to offset leakage. Implied 21% net leakage from bookings/revenue math suggests HIGH churn, but exact magnitude determines severity. If Year 1 retention is <70%, customer acquisition is value-destroying (CAC not recovered). AFFECTS: Valuation (churn determines LTV/CAC and terminal value), turnaround feasibility, investor/buyer confidence.",
+      "what_would_reduce_uncertainty": "ACCESS: Request customer retention analysis by segment and cohort from management. VALIDATE: Compare Rackspace churn to industry benchmarks (MSPs 10-20% typical, Rackspace appears higher). IDENTIFY: Churn drivers (price, service, competitive) and retention initiatives effectiveness."
+    },
+    {
+      "unknown": "SALES-TO-DELIVERY HANDOFF QUALITY METRICS: Handoff cycle time (days from contract to delivery engagement), rework rate (% requiring re-scoping), customer satisfaction at handoff, knowledge transfer completeness.",
+      "type": "UNKNOWN",
+      "decision_impact": "FIRST IMPRESSION RISK: Poor handoff creates customer dissatisfaction at highest-risk period (first 90 days). If handoff typically takes 2-4 weeks with frequent rework, customer perceives Rackspace as disorganized. If handoff is 3-5 days with clean transfer, customer confidence builds. Handoff quality affects: churn probability (bad handoff increases Year 1 churn), time-to-value (delays create dissatisfaction), upsell potential (satisfied customers expand, dissatisfied customers minimize). AFFECTS: Churn reduction strategy, operational improvement priorities.",
+      "what_would_reduce_uncertainty": "ACCESS: Request handoff process metrics from operations: cycle time, rework rate, customer satisfaction surveys post-handoff, escalation rates in first 90 days. IDENTIFY: Root causes of handoff friction (incentive misalignment, documentation gaps, system fragmentation from acquisitions). BENCHMARK: Compare to MSP industry standards."
+    },
+    {
+      "unknown": "PRIVATE CLOUD DEPLOYMENT CYCLE TIME DISTRIBUTION: Average and distribution of sale-to-revenue lag (procurement + deployment + migration), by customer size and complexity. Lead time variance by vendor and component type.",
+      "type": "UNKNOWN",
+      "decision_impact": "WORKING CAPITAL REQUIREMENT: If average cycle is 12 weeks, Rackspace has ~$20-30M of in-flight CapEx at any time. If cycle extends to 20 weeks (supply chain issues), in-flight balloons to $35-50M. Longer cycles = higher working capital needs = cash burn. COMPETITIVE POSITIONING: If Rackspace can reduce cycle from 12 weeks to 6 weeks through process improvements or pre-provisioning, competitive gap vs public cloud narrows. If cycle extends beyond 16 weeks, customer frustration accelerates defection. AFFECTS: Cash flow modeling, CapEx efficiency initiatives, Private Cloud viability.",
+      "what_would_reduce_uncertainty": "ACCESS: Request deployment project data: sale date, go-live date, cycle time by stage (procurement, deployment, migration), variance by customer segment and infrastructure complexity. IDENTIFY: Bottlenecks (procurement lead times most common?) and mitigation strategies (pre-purchase inventory?). MODEL: Cash flow sensitivity to cycle time changes."
+    },
+    {
+      "unknown": "CROSS-ENTITY CUSTOMER COORDINATION COMPLEXITY: How many customers span multiple Rackspace entities (e.g., US commercial + Government, or US + UK), coordination mechanisms, customer satisfaction with cross-entity experience.",
+      "type": "UNKNOWN",
+      "decision_impact": "FRAGMENTATION CUSTOMER IMPACT: If 10-20% of customers span entities, fragmentation creates visible customer friction (multiple account teams, separate invoices, escalation confusion). Customer dissatisfaction from fragmented experience drives churn. If <5% span entities, fragmentation is primarily internal cost issue (not visible customer friction). Multi-entity customers are likely LARGEST customers (enterprises with global + government operations) making satisfaction critical. AFFECTS: Churn risk for highest-value customers, organizational redesign opportunities (if any).",
+      "what_would_reduce_uncertainty": "ACCESS: Request customer data: % of customers spanning multiple entities, revenue from cross-entity customers, satisfaction scores, escalation rates. IDENTIFY: Coordination mechanisms (single account exec across entities? shared ticketing?) and friction points. PRIORITIZE: If cross-entity customers are small %, fragmentation is cost issue not customer issue."
+    }
+  ]
+}

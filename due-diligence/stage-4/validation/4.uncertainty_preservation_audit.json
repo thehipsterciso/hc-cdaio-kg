@@ -1,0 +1,87 @@
+{
+  "stage": "4",
+  "document_metadata": {
+    "title": "Uncertainty Preservation Audit - Stage 4",
+    "validation_date": "2026-02-09"
+  },
+  "uncertainty_preservation_audit": {
+    "unknowns_summary": [
+      {
+        "unknown": "Incentive structure details—sales compensation formulas, support performance metrics weights, operations measurement systems",
+        "sub_stages_documented": ["4.4", "4.5"],
+        "decision_impact": "Cannot quantify incentive misalignment magnitude precisely. Cannot design incentive reforms without formulas/weightings. Cannot predict personnel response to changes. Inferred sales on bookings not profitability from pattern persistence post-refresh—but specific comp structure unknown.",
+        "preserved_appropriately": true
+      },
+      {
+        "unknown": "Actual attrition rates in heroic execution zones—support staff, operations teams, delivery teams",
+        "sub_stages_documented": ["4.5"],
+        "decision_impact": "Cannot quantify talent stability risk or death spiral timeline. Inferred support attrition from satisfaction decline, operations burnout from multi-month crises—but actual turnover rates unknown. Cannot prioritize retention interventions without data.",
+        "preserved_appropriately": true
+      },
+      {
+        "unknown": "Tribal knowledge concentration and documentation gaps—extent of undocumented operational knowledge",
+        "sub_stages_documented": ["4.5"],
+        "decision_impact": "Cannot assess turnover impact severity. Inferred legacy system tribal knowledge from 15+ year history, ownership transitions, technical debt—but documentation extent unknown. Cannot determine knowledge transfer feasibility or timeline.",
+        "preserved_appropriately": true
+      },
+      {
+        "unknown": "Burnout severity and sustainability timeline in heroic zones—how long until capacity exhausts",
+        "sub_stages_documented": ["4.5"],
+        "decision_impact": "Cannot assess intervention urgency. CEO three transitions proves unsustainability but timeline variable. Support satisfaction declining—heroics degrading but collapse timing unknown. Cannot predict gradual degradation vs sudden failure.",
+        "preserved_appropriately": true
+      },
+      {
+        "unknown": "Leadership capability to exercise delegated authority—BU Presidents coordination skills, support leadership cross-functional direction capability",
+        "sub_stages_documented": ["4.5"],
+        "decision_impact": "Cannot assess structural reform feasibility. BU Presidents lack authority currently—capability untested. If authority granted, success uncertain. Cannot determine build vs buy—develop internal or recruit external.",
+        "preserved_appropriately": true
+      },
+      {
+        "unknown": "Execution drag value quantification—margin erosion, customer churn, incident costs attributable to specific incentive misalignments",
+        "sub_stages_documented": ["4.4"],
+        "decision_impact": "Cannot prioritize incentive reforms by ROI. Margin erosion quantified (Private Cloud -13%, Public Cloud -3%) but attribution to sales incentive vs market conditions unknown. Cannot justify reform investment without value recovery modeling.",
+        "preserved_appropriately": true
+      },
+      {
+        "unknown": "Structural reform implementation capacity—organizational change absorption capability given capital constraints, leadership bandwidth, change fatigue",
+        "sub_stages_documented": ["4.5"],
+        "decision_impact": "Cannot assess whether organization can absorb multiple structural reforms simultaneously. Three CEOs, multiple reorganizations—change fatigue unknown. Capital constrained ($1.3B debt)—reform investment capacity uncertain.",
+        "preserved_appropriately": true
+      }
+    ],
+    "unknowables_summary": [
+      {
+        "unknowable": "Post-acquisition integration strategy impact on talent stability and structural reform feasibility",
+        "sub_stages_documented": ["4.5"],
+        "why_unknowable": "Depends on future acquirer identity and integration approach negotiation. Cannot predict whether full integration (Rackspace talent redundant), standalone operation (structural reforms critical), or asset cherry-picking (selective talent retention).",
+        "decision_impact": "All talent deployment and structural reform analysis assumes going concern. Acquirer integration approach determines relevance. Investment in pre-close reforms risky—may be wasted if acquirer replaces systems. But failure to reform may reduce value—acquirer values stability not fragility. Scenario planning possible but probability assignment impossible pre-acquirer identification.",
+        "preserved_appropriately": true
+      },
+      {
+        "unknowable": "Whether fourth CEO transition would create unrecoverable coordination collapse vs continued muddling through",
+        "sub_stages_documented": ["4.5"],
+        "why_unknowable": "Three transitions created cumulative degradation (institutional knowledge loss, coordination pattern disruption, execution reliability declining). Fourth transition extrapolation uncertain—might cross threshold into unrecoverable failure or continue degradation pattern. System resilience under additional stress unknowable until tested.",
+        "decision_impact": "Indicates execution fragility material and accelerating but precise failure threshold unknown. Cannot predict catastrophic failure timing—may be gradual degradation enabling time for intervention or sudden collapse. Uncertainty preserved—avoided false precision about failure modes.",
+        "preserved_appropriately": true
+      }
+    ],
+    "material_execution_impacts": [
+      {
+        "impact": "Cannot precisely quantify ROI of structural reforms (incentive realignment, governance infrastructure, authority reallocation) without knowing: reform investment costs, value recovery potential, personnel attrition during transition, implementation timeline, organizational change capacity",
+        "materiality": "HIGH—structural reforms material investment ($M+ magnitude likely for governance infrastructure, incentive transition, capability development). ROI uncertainty affects investment prioritization and business case justification. Capital constrained ($1.3B debt)—cannot afford reform failures.",
+        "uncertainty_preserved": "Yes—Stage 4 identifies structural reforms necessary but doesn't claim to prove ROI positive. Preserves uncertainty about feasibility, cost, timeline, success probability."
+      },
+      {
+        "impact": "Cannot predict execution failure timing—whether heroics zones at gradual degradation (months/quarters warning) or sudden collapse risk (catastrophic without warning)",
+        "materiality": "HIGH—determines intervention urgency and acquirer risk assessment. Gradual degradation enables time for structural reforms or managed wind-down. Sudden collapse creates acquirer emergency, value destruction, customer/employee exodus. CEO three transitions, satisfaction declining, margins eroding indicate degradation accelerating—but collapse timing uncertain.",
+        "uncertainty_preserved": "Yes—Stage 4 identifies fragility and acceleration but doesn't claim precise failure prediction. Preserves uncertainty about failure modes and timelines."
+      },
+      {
+        "impact": "Cannot determine whether talent attrition already occurring at elevated rates in heroic zones or if burnout risk prospective",
+        "materiality": "MEDIUM-HIGH—determines whether execution at immediate crisis (attrition active) or building crisis (attrition imminent). CEO three transitions factual—attrition active at CEO level. Support/operations attrition inferred from burnout patterns but unconfirmed. Actual attrition data would materially change risk assessment—active attrition requires immediate intervention, prospective allows time for prevention.",
+        "uncertainty_preserved": "Yes—Stage 4 infers attrition risk from burnout indicators but explicitly documents actual attrition rates unknown. Preserves uncertainty rather than asserting crisis without data."
+      }
+    ],
+    "uncertainty_preservation_quality": "HIGH—Stage 4 consistently distinguishes FACT from INFERENCE, documents unknowns explicitly, preserves UNKNOWN vs UNKNOWABLE classifications, avoids false precision. Where evidence exists (three CEO transitions, margin data, customer complaints), claims stated confidently. Where evidence inference or unavailable (attrition rates, incentive structure details, capability assessments), uncertainty preserved and documented in registers. No narrative smoothing of gaps—contradictions and tensions preserved rather than resolved artificially. Unknowns requests prioritize material uncertainties for information gathering. Overall: rigorous uncertainty discipline maintained throughout Stage 4."
+  }
+}

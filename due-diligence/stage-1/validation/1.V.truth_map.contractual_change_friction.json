@@ -1,0 +1,62 @@
+{
+  "legal_operational_truth_map": {
+    "contractual_change_friction": [
+      {
+        "contract_or_class": "First Lien Credit Agreement (Financing)",
+        "trigger_event": "Change-of-control >50% ownership within 12 months",
+        "what_breaks": "Mandatory offer to repurchase entire $1.3B debt OR lender consent required. Failure = immediate default, acceleration, foreclosure on substantially all assets. Lenders can extract concessions (pricing adjustments, fees, additional collateral) or refuse, killing deal. This is ABSOLUTE VETO - cannot proceed without lender approval or full refinancing.",
+        "severity": "HIGH",
+        "evidence_refs": ["1.4.contractual_constraints.json", "1.4.change_of_control_risk_summary.json", "March 12, 2024 credit agreement"]
+      },
+      {
+        "contract_or_class": "Cloud Provider Partnerships (AWS, Microsoft, Google)",
+        "trigger_event": "Acquisition by cloud competitor or party deemed competitive, material business model change",
+        "what_breaks": "AWS Strategic Collaboration Agreement (October 2024) likely permits termination upon competitive acquisition. Loss of AWS partnership eliminates 2,000+ customers, 1,000+ AWS staff, estimated 30-40% revenue. Multicloud positioning collapses if any major provider terminates. Limits buyer universe to financial sponsors and non-cloud strategics.",
+        "severity": "HIGH",
+        "evidence_refs": ["1.4.contractual_constraints.json", "AWS SCA October 2024", "Industry standard partnership change-of-control provisions"]
+      },
+      {
+        "contract_or_class": "Enterprise Customer Contracts (Regulated Sectors)",
+        "trigger_event": "Change-of-control, entity change, assignment without consent",
+        "what_breaks": "Customer termination rights (10-30% expected to exercise) = $150-450M revenue loss. Government FAR termination for convenience. Assignment consent requirements create 60-180 day timeline risk. Re-certification gaps (FedRAMP 12-18 months, HITRUST 6-12 months) force immediate customer migration. Customer churn cascade compounds transaction risk.",
+        "severity": "HIGH",
+        "evidence_refs": ["1.4.contractual_constraints.json", "1.4.change_of_control_risk_summary.json", "Industry standard MSP terms"]
+      },
+      {
+        "contract_or_class": "Data Center Real Estate Leases (40 Facilities)",
+        "trigger_event": "Assignment of lease, change in lessee entity, financial covenant breach",
+        "what_breaks": "Landlord consent required for 40+ leases - delays, potential refusals, concession demands. Physical infrastructure cannot be easily relocated (12-24 months, $X million per facility, customer disruption). Acquirer cannot consolidate real estate without negotiating 40 separate landlord consents. Must maintain separate entities as lessees or face relocation costs and customer churn.",
+        "severity": "MED",
+        "evidence_refs": ["1.4.contractual_constraints.json", "40 data centers confirmed", "Standard commercial lease provisions"]
+      },
+      {
+        "contract_or_class": "Enterprise Software Licenses (VMware, Monitoring, Security Tools)",
+        "trigger_event": "Entity change, change-of-control, material use case modification",
+        "what_breaks": "License terminations or price resets eliminate volume discounts and cost advantages. Service delivery interruption (weeks-months to procure replacements). Acquirer with conflicting licenses forces platform migration across customer base. OEM/resale rights termination eliminates revenue streams. Must negotiate vendor consents pre-close or accept service delivery risk.",
+        "severity": "MED",
+        "evidence_refs": ["1.4.contractual_constraints.json", "Enterprise license standard change-of-control provisions"]
+      },
+      {
+        "contract_or_class": "Government Customer Contracts (FedRAMP Environments)",
+        "trigger_event": "Ownership change, foreign acquirer, material operational change affecting security",
+        "what_breaks": "FedRAMP entity-specific - change invalidates authorization immediately. Government customers forced to migrate (12-18 months re-authorization, no service continuity). All government revenue ($X million unknown but material) at immediate risk. Foreign acquirer triggers FOCI review (6-12 months) requiring proxy board, voting trust, or divestiture. Government termination for convenience upon change-of-control is standard FAR provision.",
+        "severity": "HIGH",
+        "evidence_refs": ["1.4.contractual_constraints.json", "1.5.structural_lock_ins.json", "FedRAMP authorization requirements"]
+      },
+      {
+        "contract_or_class": "Subsidiary Guarantee Structure",
+        "trigger_event": "Sale or separation of subsidiary guarantor from borrower group",
+        "what_breaks": "Lender consent required to release guarantors. Cannot sell, spin off, or divest subsidiary guarantors without: release from guarantee (lender consent), substitution of replacement guarantor, or full debt repayment. Operating subsidiaries cannot be separated without addressing guarantee obligations. Prevents asset sales, carve-outs, or restructurings that would diminish collateral pool.",
+        "severity": "HIGH",
+        "evidence_refs": ["1.1.control_constraints.json", "Subsidiary guarantee structure March 12, 2024 credit agreement"]
+      },
+      {
+        "contract_or_class": "Compliance Certifications (SOC 2, HITRUST, ISO, PCI DSS)",
+        "trigger_event": "Material entity change, merger, consolidation",
+        "what_breaks": "Entity-specific certifications require re-certification (6-18 months depending on certification). During re-certification gaps, customers requiring certifications potentially non-compliant, may churn. Re-certification not guaranteed - can be denied if new entity doesn't meet requirements. Foreign acquirer may be unable to obtain U.S. government certifications due to FOCI restrictions.",
+        "severity": "MED",
+        "evidence_refs": ["1.1.control_constraints.json", "1.5.false_mobility_assumptions.json", "Industry standard certification practices"]
+      }
+    ]
+  }
+}

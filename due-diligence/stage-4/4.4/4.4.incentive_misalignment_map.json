@@ -1,0 +1,138 @@
+{
+  "sub_stage": "4.4",
+  "document_metadata": {
+    "title": "Incentive Misalignment Map - Rackspace Technology, Inc.",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09"
+  },
+  "incentive_misalignment_map": [
+    {
+      "area": "Sales organization incentivized on bookings volume without profitability accountability",
+      "formal_incentive": "Sales compensation tied to bookings volume and revenue targets. Sales reps incentivized to maximize deal size and close rate. Quarterly/annual quotas based on TCV (Total Contract Value) booked.",
+      "actual_behavior_rewarded": "Sales books deals without profitability validation, delivery feasibility assessment, or buildability review. Sales incentivized to accept customer requirements that create delivery complexity, accept pricing below cost, book deals requiring custom engineering without validation. Volume maximization over value creation.",
+      "execution_outcome": "Delivery inherits unprofitable deals post-signature creating margin erosion (Private Cloud -13%, Public Cloud -3% FY2024). Delivery capacity consumed reworking/executing unbuildable deals. Customer execution failures from under-resourced unprofitable accounts. Revenue growth sacrificed for profitability—Q4 2024 'walk away' policy indicates CEO forced to reject renewals to stop margin destruction.",
+      "misalignment_mechanism": "Sales incentive (bookings volume) directly conflicts with business outcome (profitable revenue). Sales captures upside (commission on bookings) while delivery absorbs downside (margin erosion, execution failures). No penalty to sales for unprofitable deals—misalignment creates moral hazard where sales externalizes cost of volume pursuit to delivery organization.",
+      "why_it_persists": "Sales refresh Q3 2024 indicates problem recognized but only after severe margin erosion. No structural fix to sales-delivery authority gap (Stage 4.1)—sales still has booking authority, delivery lacks veto. Walk away policy Q4 2024 reactive (CEO intervention required) not proactive (sales incentive realignment). Suggests incentive system not reformed—still measuring sales on bookings not delivered profitability. Changing personnel (refresh) without changing incentives (profitability accountability) treats symptom not cause.",
+      "touch_test": "If sales incentives realigned to delivered profitability (not bookings volume), would sales behavior change? HYPOTHESIS: Yes—sales would conduct profitability validation pre-signature, negotiate pricing reflecting true cost, walk away from unbuildable deals proactively. Evidence: Walk away policy Q4 2024 shows deals can be rejected when profitability prioritized—but required CEO intervention not sales self-regulation, indicates incentive misalignment persists.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: Sales has booking authority, delivery has profitability accountability without veto",
+        "Stage 4.2: Sales-delivery negative-value cascade",
+        "Margin erosion: Private Cloud -13%, Public Cloud -3% FY2024",
+        "Q3 2024: Sales refresh (personnel changes)",
+        "Q4 2024: CEO walk away policy (reactive intervention)",
+        "Stage 4.3: Delivery absorbing sales failures through margin erosion"
+      ]
+    },
+    {
+      "area": "Support organization incentivized on SLA response times without resolution accountability",
+      "formal_incentive": "Support staff measured on SLA compliance: 15min critical, 1hr urgent, 4hr normal response times. Performance reviews, team metrics, escalation thresholds tied to SLA adherence. Activity metrics (tickets processed, response times) drive resource allocation and compensation.",
+      "actual_behavior_rewarded": "Support responds within SLA timeframe (meets activity metric) without resolving customer issue (outcome metric). Support incentivized to: Respond quickly even if lacking information to resolve, Process tickets (close/transfer) to maintain throughput metrics, Avoid complex cross-functional issues requiring extended resolution time. Activity optimization over outcome delivery.",
+      "execution_outcome": "Customer satisfaction declining despite SLA compliance (Trustpilot 'consistently getting worse' 2024, BBB complaints about unresolved issues). Support coordinates informally across functions ('dozens of engineers' per BBB) burning heroics capacity to achieve actual resolution—activity metric met, outcome metric failed. Customer churn from support quality degradation. Competitive differentiation ('Fanatical Support') eroding.",
+      "misalignment_mechanism": "Support incentive (SLA response time) measures activity not outcome. Responding within 15min/1hr/4hr earns credit regardless of whether issue resolved. Resolution requires cross-functional coordination (billing, delivery, engineering) lacking formal authority (Stage 4.1)—so support optimizes measurable (response time) rather than unmeasurable/unrewarded (resolution quality). Incentive creates perverse optimization—minimize time per ticket rather than maximize resolution rate.",
+      "why_it_persists": "No VP Support or empowered coordinator (Stage 4.1) to realign incentives toward outcomes. SLA metrics simple to measure, resolution quality complex (requires customer satisfaction surveys, churn analysis, complaint tracking). Organization optimizes what it measures—SLA measured continuously, satisfaction measured sporadically/lagging. Support staff heroics (Stage 4.3) mask severity—informal coordination achieves resolution preventing complete failure, delaying recognition that incentive broken.",
+      "touch_test": "If support incentives realigned to resolution rate and customer satisfaction (not SLA response time), would behavior change? HYPOTHESIS: Yes—support would prioritize complex issue resolution over ticket throughput, invest in cross-functional coordination process, escalate authority gaps proactively. Evidence: BBB complaints 'dozens of engineers' indicates support attempting resolution despite incentive misalignment—suggests would embrace outcome-based incentive if available.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.2: SLA response times met, customer satisfaction declining",
+        "Stage 4.3: Support staff absorbing coordination failures through heroics",
+        "Trustpilot: 'consistently getting worse' 2024",
+        "BBB: 'dozens of engineers' coordination, unresolved issues",
+        "Stage 4.1: No VP Support, no empowered coordinator",
+        "Activity vs outcome metric divergence (Stage 4.2)"
+      ]
+    },
+    {
+      "area": "Business Unit Presidents incentivized on P&L ownership without cross-functional authority",
+      "formal_incentive": "BU Presidents accountable for P&L performance (revenue, margin, profitability) within Private Cloud, Public Cloud, Apps/Cross Platform segments. Compensation tied to BU financial results. Organizational structure (2023 reorganization) created BU-based accountability.",
+      "actual_behavior_rewarded": "BU Presidents attempt to drive P&L results through influence rather than authority. Escalate cross-functional conflicts to CEO (Stage 4.1: CEO sole adjudicator). Optimize local BU metrics potentially at expense of enterprise optimization. Avoid resource conflicts with other BUs—reduces coordination cost but foregoes cross-BU synergies.",
+      "execution_outcome": "BU Presidents lack authority to resolve cross-functional dependencies: Cannot compel sales to prioritize profitable deals, Cannot override shared services priorities (IT, security, finance, legal), Cannot direct technology platform roadmap (central vs distributed), Cannot reallocate talent across BUs. Result: BU Presidents accountable for outcomes without authority over inputs—creates accountability void. CEO bottleneck (Stage 4.2) as all BU conflicts escalate.",
+      "misalignment_mechanism": "BU Presidents incentivized on P&L (outcome) but lack authority over cross-functional inputs determining P&L (sales behavior, technology platform, shared services capacity). Creates responsibility without authority—classic accountability dilution. BU Presidents rational response: Escalate everything to CEO (has authority), optimize within BU scope of control (local not global), avoid conflicts consuming political capital. Incentive drives escalation behavior rather than autonomous execution.",
+      "why_it_persists": "2023 reorganization created BU structure but didn't reallocate authority (Stage 4.1). BU Presidents have titles suggesting authority ('President') but actual authority remains centralized with CEO. No operating committee or governance layer to resolve cross-BU conflicts (Stage 4.1)—only escalation to CEO. Changing structure without changing authority creates accountability dilution—BU Presidents blamed for P&L results they cannot control.",
+      "touch_test": "If BU Presidents given authority matching accountability (sales prioritization, shared services allocation, technology roadmap input), would P&L performance improve? HYPOTHESIS: Possibly—eliminates CEO bottleneck, enables parallel execution, aligns authority/accountability. But introduces coordination cost—BUs may conflict over shared resources. Evidence: Three CEOs in three years suggests CEO role overloaded—delegating authority might relieve bottleneck. But no evidence BU Presidents capable of exercising authority—may lack skills/context.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: BU Presidents lack authority despite P&L accountability",
+        "Stage 4.1: CEO sole cross-functional adjudicator",
+        "2023 reorganization created BU structure (FACT from 10-K)",
+        "Stage 4.2: CEO serial bottleneck",
+        "Stage 4.1: No operating committee, no governance layer",
+        "Three CEOs three years indicates role overload"
+      ]
+    },
+    {
+      "area": "Operations/security teams incentivized on incident response speed without proactive risk investment",
+      "formal_incentive": "Operations and security teams measured on incident response metrics: Mean time to detect (MTTD), mean time to respond (MTTR), mean time to resolve (MTTR). Incident severity and customer impact drive performance assessment. Reactive crisis response rewarded through visibility and recognition.",
+      "actual_behavior_rewarded": "Operations/security optimize reactive incident response—heroic crisis management earns recognition. Proactive risk investments (security controls, monitoring infrastructure, process automation) invisible/unrewarded until incident prevented (but prevented incidents unmeasurable—how count events that didn't occur?). Rational behavior: Prioritize reactive (visible, measurable, rewarded) over proactive (invisible, uncertain ROI, unrewarded).",
+      "execution_outcome": "Incident response capable but incident prevention underfunded. No CRO or proactive risk governance (Stage 4.1). Reactive spending pattern (Stage 4.2): Incidents force spending that could have prevented incident if allocated proactively. Ransomware multi-month impact, zero-day monitoring offline Sept 2024, vendor dependency (ScienceLogic) creates external constraints. Incident recurrence inevitable—reactive posture doesn't prevent, only responds.",
+      "misalignment_mechanism": "Operations/security incentive (incident response metrics) rewards reactive not proactive behavior. Proactive investments reduce future incidents but create current cost—misaligned with quarterly/annual performance cycles. Prevented incidents uncountable—cannot prove ROI of proactive spending. Crisis response visible (executive attention, customer communication, all-hands) while prevention invisible (nothing happens). Incentive drives under-investment in prevention, over-investment in response.",
+      "why_it_persists": "No CRO to advocate proactive risk investment (Stage 4.1). Capital constrained ($1.3B debt) prioritizes visible immediate spending over invisible future prevention. Budget process (Stage 4.3) prioritizes activity metrics (incident response) over outcome metrics (incident frequency reduction). Regulatory compliance reactive—FedRAMP, HIPAA/HITRUST require controls but enforcement sporadic, so minimum viable compliance rational. Each incident creates crisis forcing reactive spending—resets proactive investment cycle before accumulation.",
+      "touch_test": "If operations/security incentivized on incident frequency reduction (not response speed), would behavior change? HYPOTHESIS: Yes—teams would invest proactively in prevention, build automated controls, eliminate vendor dependencies creating external constraints. Evidence: Reactive spending pattern shows capital available during crisis—reallocating to proactive would reduce total spending (prevention cheaper than response). But counterfactual measurement hard—how prove incidents prevented?",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: No CRO, reactive risk posture only",
+        "Stage 4.2: Reactive spending pattern—incidents displace proactive",
+        "Stage 4.3: Operations absorbing risk failures through reactive crisis management",
+        "Ransomware multi-month impact, zero-day monitoring offline Sept 2024",
+        "ScienceLogic vendor dependency (Stage 4.2)",
+        "Capital constrained: $1.3B debt (Stage 4.1)"
+      ]
+    },
+    {
+      "area": "Technology/engineering teams incentivized on feature delivery without operational stability accountability",
+      "formal_incentive": "Technology and engineering teams measured on feature velocity: Story points completed, release cadence, roadmap delivery. Product managers prioritize feature development (customer requests, competitive parity, revenue opportunities). Engineering capacity allocated to feature development over operational stability.",
+      "actual_behavior_rewarded": "Engineering prioritizes feature delivery (visible, customer-requested, revenue-generating) over operational stability (invisible until failure). Rational to: Ship features meeting functional requirements without operational hardening, Accept technical debt to accelerate delivery, Defer infrastructure investment (monitoring, automation, scalability), Deprioritize incident prevention work (unglamorous, no immediate customer value).",
+      "execution_outcome": "Feature velocity maintained while operational stability degrades. Monitoring degradation (Sept 2024 dashboards offline during zero-day incident). Incident frequency increasing (hypothesis—no direct evidence of trend but multi-month ransomware impact, zero-day incident, customer complaints suggest pattern). Technical debt accumulation constraining future velocity. Operations teams absorbing stability failures through reactive incident response (Stage 4.3).",
+      "misalignment_mechanism": "Engineering incentive (feature velocity) conflicts with operational stability. Features deliver immediate value (customer satisfaction, revenue), stability delivers future risk reduction (value invisible until incident prevented). Product roadmap prioritizes features (customer-driven, competitive pressure) over stability (internally-driven, no customer advocacy). Engineering rationally optimizes measured performance (feature delivery) over unmeasured (stability). Operations absorbs cost of instability—misalignment externalizes engineering technical debt to operations.",
+      "why_it_persists": "Product management lacks operational stability representation—no voice advocating stability over features. Customer requests drive roadmap—customers request features not stability (until incident occurs, then blame operations not engineering). Engineering career progression rewards feature delivery (promotion criteria: shipped products, launched capabilities) not stability (criteria: prevented incidents—unmeasurable). Operations lacks authority to compel engineering stability investment (Stage 4.1)—can only request, cannot require.",
+      "touch_test": "If engineering incentivized on operational stability metrics (incident frequency, MTTD/MTTR, technical debt reduction), would behavior change? HYPOTHESIS: Yes—engineering would invest in monitoring, automation, infrastructure hardening. Evidence: Engineering capable (operates multi-jurisdictional infrastructure) but incentive misdirected. Google SRE model demonstrates feasibility—error budgets align feature velocity with stability. But requires authority reallocation—operations must have veto over unstable releases.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.3: Operations absorbing stability failures reactively",
+        "Stage 4.2: Incidents displacing proactive execution",
+        "Sept 2024: Monitoring dashboards offline during zero-day incident",
+        "Ransomware multi-month impact",
+        "Stage 4.1: Operations lacks authority over engineering priorities",
+        "Technical debt inference from incident pattern"
+      ]
+    },
+    {
+      "area": "CEO incentivized on enterprise performance without organizational scalability accountability",
+      "formal_incentive": "CEO compensated on enterprise financial performance: Revenue growth, profitability, stock price, strategic objectives. Board accountability for overall business results. Short-term financial targets (quarterly earnings, annual guidance) dominate performance assessment.",
+      "actual_behavior_rewarded": "CEO intervenes personally to resolve execution failures: Adjudicates cross-functional conflicts (Stage 4.1: sole coordinator), processes major deals (healthcare $100M+ TCV), establishes reactive policies (Q4 2024 walk away, Q3 2024 sales refresh). Heroic personal intervention maintains short-term performance while organizational scalability degrades. Rational to optimize current quarter/year results through personal heroics rather than invest in structural fixes (governance layer, authority delegation) with uncertain/delayed ROI.",
+      "execution_outcome": "Organizational throughput plateaus at CEO coordination capacity (Stage 4.2: serial bottleneck). CEO consumed by operational coordination—strategic focus impossible. Organizational fragility increases—execution dependent on CEO personal intervention not repeatable process. Three CEOs in three years suggests role unsustainable—coordination load exceeds any individual capacity. Each CEO transition disrupts informal coordination—new CEO must rebuild networks, relearn context.",
+      "misalignment_mechanism": "CEO incentive (enterprise financial results) rewards short-term performance optimization through personal heroics over long-term organizational capability building. Building governance infrastructure (operating committee, deal review board, cross-functional coordinators) consumes CEO time/capital/attention but delivers uncertain future throughput improvement—not measured in quarterly/annual performance. Board evaluates CEO on financial results (revenue, profitability) not organizational scalability (coordination efficiency, throughput per headcount)—so CEO rationally prioritizes measurable over unmeasurable. Personal intervention more reliable than delegation when authority architecture broken.",
+      "why_it_persists": "Board lacks visibility into organizational execution physics—financial results lag indicators of scalability breakdown. When financial deterioration surfaces (FY2024 -7% revenue), Board response is CEO replacement (three CEOs three years) not organizational redesign. New CEO inherits broken authority architecture (Stage 4.1)—same coordination bottleneck recreates. No operating committee or governance layer (Stage 4.1) because requires CEO to delegate authority—but delegation risky when organizational coordination capability unproven. CEO trapped: Personal intervention unsustainable but delegation uncertain. Rational to optimize personal heroics until exhaustion forces exit.",
+      "touch_test": "If CEO incentivized on organizational scalability metrics (throughput growth per headcount, coordination efficiency, decision velocity), would behavior change? HYPOTHESIS: Yes—CEO would invest in governance infrastructure, delegate authority to operating committee, build repeatable coordination process. Evidence: Three CEOs in three years indicates personal heroics insufficient—structural fix necessary. But requires multi-year investment with uncertain ROI—conflicts with CEO short-term financial accountability. Board would need to accept short-term performance cost for long-term capability building.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: CEO sole cross-functional coordinator",
+        "Stage 4.2: CEO serial bottleneck limits throughput",
+        "Three CEOs three years (Jones, Maletira, Kandiah)",
+        "Q4 2024: CEO walk away policy (reactive intervention)",
+        "Q3 2024: Sales refresh (CEO-driven)",
+        "Healthcare deal: CEO personal involvement in $100M+ TCV",
+        "Stage 4.1: No operating committee, no governance layer"
+      ]
+    },
+    {
+      "area": "Financial planning incentivized on budget control without execution outcome accountability",
+      "formal_incentive": "Finance organization measured on budget variance, cost control, forecast accuracy. CFO accountability for cash flow, debt covenants ($1.3B debt structure), capital allocation within constraints. Performance rewarded for hitting budget targets, minimizing variance, controlling spend.",
+      "actual_behavior_rewarded": "Finance prioritizes cost control over execution effectiveness. Budget allocation favors measurable activity metrics (SLA response times, sales headcount, ticket processing) over unmeasurable outcome metrics (customer satisfaction, delivered profitability, resolution quality). Rational to: Allocate budget where spending visible/measurable, Minimize discretionary investment (uncertain ROI), Enforce cost discipline even if constrains execution. Activity-based budgeting (Stage 4.3) masks outcome degradation.",
+      "execution_outcome": "Resource allocation misaligned with business outcomes. Support funded for SLA compliance not resolution quality—SLA met, satisfaction declining. Sales funded for bookings volume not delivered profitability—bookings maintained, margins eroding. Operations funded for incident response not prevention—response capable, incidents recurring. Underinvestment in execution enablers: Governance infrastructure, coordination process, proactive risk controls, operational stability. Financial metrics stable (budget variance controlled) while business deteriorates (revenue -7%, margins -13%/-3%).",
+      "misalignment_mechanism": "Finance incentive (budget control) optimizes cost not value. Budget process funds activity metrics (simple to measure, directly controllable) not outcome metrics (complex to measure, indirectly influenced). When finance controls resource allocation but lacks accountability for execution outcomes, rational to minimize spending uncertainty—fund activities with predictable cost, defund initiatives with uncertain ROI. Activity-based budgeting creates measurement theater—activity metrics reported green while outcome metrics degrade. Finance captures credit for budget discipline while execution organizations absorb cost of underinvestment.",
+      "why_it_persists": "CFO measured on financial control not execution effectiveness. Board reviews budget variance not execution outcome alignment. Activity metrics simple to measure—SLA compliance, sales headcount, ticket volume captured in existing systems. Outcome metrics complex—customer satisfaction requires surveys, delivered profitability requires margin analysis by customer, resolution quality requires complaint tracking. Organization optimizes what it measures—finance measures activity, so activity funded. Capital constrained ($1.3B debt) creates genuine cost pressure—but pressure applied uniformly to activities not prioritized by outcome impact.",
+      "touch_test": "If finance incentivized on execution outcome delivery (not budget variance), would allocation change? HYPOTHESIS: Yes—finance would fund outcome drivers (resolution quality, delivered profitability, proactive risk) over activity metrics (SLA compliance, bookings volume, incident response). Evidence: CEO walk away policy Q4 2024 shows willingness to sacrifice revenue (activity) for profitability (outcome) when forced—indicates outcome-based allocation feasible but requires leadership mandate. Finance would require outcome measurement infrastructure—currently unavailable.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.3: Financial planning masking underinvestment through activity metrics",
+        "Stage 4.2: Activity metrics stable, outcome metrics degrade",
+        "Budget process prioritizes measurable activities (inference)",
+        "$1.3B debt creates capital constraint (Stage 4.1)",
+        "SLA compliance funded, satisfaction declining (Stage 4.2)",
+        "Sales headcount maintained (400+ reps), margins eroding",
+        "Q4 2024: CEO walk away policy prioritizes profitability over revenue"
+      ]
+    }
+  ]
+}

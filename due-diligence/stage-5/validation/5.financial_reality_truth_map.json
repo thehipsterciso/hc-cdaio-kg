@@ -1,0 +1,361 @@
+{
+  "stage": "5",
+  "document_metadata": {
+    "title": "Financial Reality Truth Map - High-Confidence Facts vs Uncertainty Zones",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-10",
+    "scope": "Mapping what is KNOWN with high confidence vs what remains UNCERTAIN from Stage 5 financial reality analysis",
+    "purpose": "Prevent uncertainty collapse, maintain intellectual honesty about knowledge limits, guide information priorities"
+  },
+  "high_confidence_facts": {
+    "description": "Assertions supported by objective evidence, quantified metrics, direct observation, or mathematical necessity—confidence 85-95%+",
+    "revenue_quality_facts": [
+      {
+        "fact": "Net leakage 21% in Q1-Q3 2024 indicates revenue shrinking despite bookings growth",
+        "confidence": "95%",
+        "evidence_basis": "Quantified metric from Stage 5.1, mathematically impossible for business to grow with 21% net leakage (new + expansions - churn - contractions = -21%)",
+        "uncertainty": "Precise churn composition unknown (how much from small customers vs large, which services, what triggers), but NET EFFECT (shrinking 21%) is definitive fact"
+      },
+      {
+        "fact": "Revenue declined -7% YoY (FY2023 to FY2024)",
+        "confidence": "95%",
+        "evidence_basis": "Direct financial metric from available materials, year-over-year comparison",
+        "uncertainty": "Segment-level details incomplete (exact Public Cloud vs Private Cloud vs Colocation revenue amounts), but total revenue decline is fact"
+      },
+      {
+        "fact": "Headcount reduction -12% exceeds revenue decline -7%, creates revenue per FTE increase 14% to $537K",
+        "confidence": "90%",
+        "evidence_basis": "Calculated from headcount changes and revenue metrics Stage 5.1, indicates workforce productivity increase or employee overload",
+        "uncertainty": "Whether 14% increase represents genuine efficiency gains vs employee overload—context (burnout High 65-75%, satisfaction declining) indicates overload not efficiency, but productivity attribution has some uncertainty"
+      },
+      {
+        "fact": "Email 706% price increase triggered immediate churn and wave of customer exits",
+        "confidence": "90%",
+        "evidence_basis": "Channel partner reports documented in Stage 5.1-5.2, qualitative evidence of pricing power test failure",
+        "uncertainty": "Exact churn rate or revenue loss from Email price increase unknown, qualitative 'immediate churn' and 'wave' not quantified, but directional failure is certain"
+      },
+      {
+        "fact": "CapEx reduced -25%, creates infrastructure underinvestment",
+        "confidence": "95%",
+        "evidence_basis": "Direct CapEx spending metric Stage 5.1, compared to historical and estimated maintenance requirements",
+        "uncertainty": "Precise maintenance CapEx requirement unknown ($X million annually needed), but -25% reduction creates gap is definitive, deferred maintenance accumulation $32M+ annually estimated with range"
+      },
+      {
+        "fact": "VMware pricing changes create $100-210M annual cost increase for Private Cloud operations",
+        "confidence": "75-85%",
+        "evidence_basis": "Industry reports of Broadcom VMware pricing changes, Private Cloud revenue base ~$700M, estimated impact range",
+        "uncertainty": "EXACT impact unknown without specific contract terms, pricing SKUs, and Rackspace VMware consumption patterns—$100-210M is ESTIMATED RANGE with significant width (2.1X high vs low), not precise amount. Could be outside range if Rackspace negotiated special terms or usage different than typical."
+      }
+    ],
+    "margin_physics_facts": [
+      {
+        "fact": "Operating margin -6.4% creates operating losses ~$175M annually on $2.7B revenue",
+        "confidence": "95%",
+        "evidence_basis": "Calculated from gross margin 19.5% and SG&A 25.9% documented in Stage 5.2, mathematical certainty",
+        "uncertainty": "Exact operating loss dollar amount depends on precise revenue figure (used $2.7B), but negative operating margin FACT regardless of revenue precision—even at $2.5B or $3B revenue, still operating losses given margin structure"
+      },
+      {
+        "fact": "Gross margin 19.5% is structurally below SG&A 25.9%, creates permanent operating loss at current configuration",
+        "confidence": "95%",
+        "evidence_basis": "Margin structure documented Stage 5.2, arithmetic lock-in—cannot reach operating profitability with gross margin < SG&A without fundamental change",
+        "uncertainty": "Whether margins are improving or deteriorating (trend direction), but CURRENT STATE of unprofitable structure is fact"
+      },
+      {
+        "fact": "Public Cloud gross margin 10.4% and Private Cloud 11.9% are thin, approaching commodity levels",
+        "confidence": "85-90%",
+        "evidence_basis": "Segment margins documented Stage 5.2, comparative analysis to industry indicates commodity positioning",
+        "uncertainty": "Exact margin composition (what COGS components, how much from vendor credits vs direct costs) unknown, margins may include embedded vendor financing effects (credits, discounts) vulnerable to reduction"
+      },
+      {
+        "fact": "Multi-entity structure creates 15-25% cost penalty estimated $110-175M annually",
+        "confidence": "70-80%",
+        "evidence_basis": "Multi-entity structure observable fact (100+ entities from M&A history), cost penalty ESTIMATED based on typical multi-entity inefficiencies Stage 5.2",
+        "uncertainty": "EXACT cost penalty unknown without detailed entity-level cost analysis, $110-175M is MODELED ESTIMATE not measured fact, range is wide (60% variance high to low), actual could be lower if integration better than typical or higher if worse"
+      },
+      {
+        "fact": "Zero customer switching costs eliminates pricing power, Rackspace is price-taker not price-setter",
+        "confidence": "90-95%",
+        "evidence_basis": "Two direct market tests: Email price increase FAILED (immediate churn), VMware cost shock cannot be passed through (forced absorption). Natural experiments prove zero pricing power definitively.",
+        "uncertainty": "Whether ANY customer segment has switching costs (large enterprise with deep integration might have some switching friction), but AGGREGATE behavior proves pricing power zero—even if some pockets exist, insufficient to matter"
+      }
+    ],
+    "liquidity_facts": [
+      {
+        "fact": "Cash balance $260M as of Q3 2024",
+        "confidence": "95%",
+        "evidence_basis": "Direct financial metric from quarterly reporting, reported cash on balance sheet",
+        "uncertainty": "Restricted cash portion unknown (how much trapped in subsidiaries, minimum operating balances, covenant-restricted), accessible cash estimated 50-70% ($130-182M) with uncertainty"
+      },
+      {
+        "fact": "Operating cash burn $150-250M annually, creates runway 5-15 months base case",
+        "confidence": "80-85%",
+        "evidence_basis": "Calculated from operating losses $175M + working capital deterioration + CapEx minimum + debt service requirements Stage 5.3",
+        "uncertainty": "WIDE RANGE (5-15 months = 3X variance) reflects uncertainty in: burn rate volatility (working capital swings, unexpected costs), accessible cash fraction (50-70% range), stress scenario likelihood (deterioration acceleration). Precision low but DIRECTION certain—runway measured in months not years, acute time pressure exists."
+      },
+      {
+        "fact": "No revolving credit facility disclosed in available materials",
+        "confidence": "75-80%",
+        "evidence_basis": "March 2024 refinancing described as term loan structure, no revolver mentioned in Stage 5.3-5.4 debt analysis",
+        "uncertainty": "Possible small revolver exists but undisclosed in available materials, or revolver exists but fully drawn/unavailable due to covenant restrictions. Confidence 75-80% that NO revolver vs 95%+ if had full credit agreement."
+      },
+      {
+        "fact": "Mandatory prepayment provisions require 100% of asset sale proceeds to debt reduction",
+        "confidence": "85-90%",
+        "evidence_basis": "Standard credit agreement term documented in Stage 5.3-5.4, typical in leveraged capital structures",
+        "uncertainty": "Exact threshold ($X million carve-out before mandatory prepayment kicks in) unknown without credit agreement, typically $25-50M annually. Uncertainty in threshold not in EXISTENCE of provision—mandatory prepayment is near-certain."
+      },
+      {
+        "fact": "Multi-entity structure fragments cash across 100+ entities, creating cash trapping and accessibility constraints",
+        "confidence": "90%",
+        "evidence_basis": "Entity structure observable fact from corporate history (serial M&A created fragmented structure), cash accessibility impact documented Stage 5.3",
+        "uncertainty": "EXACT number of entities and precise cash distribution unknown (which entities hold how much), but EFFECT (fragmentation, trapping, reduced accessibility) is definitive based on structure complexity"
+      }
+    ],
+    "debt_control_facts": [
+      {
+        "fact": "Financial covenant breach likely within 6-15 months based on deterioration trajectory",
+        "confidence": "70-75%",
+        "evidence_basis": "Operating losses continuing $175M, Adjusted EBITDA likely deteriorating, leverage ratio and/or interest coverage likely approaching covenant thresholds Stage 5.4",
+        "uncertainty": "TIMING UNCERTAINTY HIGH (6-15 months = 2.5X range) due to: covenant definitions unknown (Total Leverage = Debt / Adjusted EBITDA, but Adjusted EBITDA amount/composition unknown), current cushion unknown (how close to threshold today), deterioration rate uncertainty (could accelerate or stabilize). DIRECTION certain (approaching breach), TIMING imprecise."
+      },
+      {
+        "fact": "Comprehensive covenant restrictions limit distributions, M&A, asset sales, inter-company transactions",
+        "confidence": "90-95%",
+        "evidence_basis": "Standard leveraged credit agreement provisions documented Stage 5.4, March 2024 refinancing unlikely to remove standard restrictions",
+        "uncertainty": "SPECIFIC covenant baskets and thresholds unknown (how much restricted payment allowance, what asset sale limits, which transactions permitted), but EXISTENCE of comprehensive restrictions is near-certain for leveraged credit structure"
+      },
+      {
+        "fact": "Change of control provision grants lenders veto over ownership changes, blocks Apollo exit without lender consent",
+        "confidence": "95%",
+        "evidence_basis": "Universal credit agreement provision for leveraged loans, documented Stage 5.4, standard market term",
+        "uncertainty": "Specific Change of Control definition details (exact ownership change threshold 50%? 35%?) and lender approval requirements, but EXISTENCE of provision is definitive"
+      },
+      {
+        "fact": "March 2024 refinancing created term loan structure without disclosed revolver, indicates lender tightening not loosening",
+        "confidence": "80-85%",
+        "evidence_basis": "Refinancing structure documented Stage 5.4, interpretation that term-only structure indicates restrictive lender posture",
+        "uncertainty": "Motivations for term-only structure could include: lender unwillingness to provide revolver (negative), revolver too expensive so eliminated (neutral), strategic choice for other reasons (unknown). Term-only structure is FACT, interpretation as 'tightening' has some uncertainty."
+      }
+    ],
+    "capital_allocation_facts": [
+      {
+        "fact": "Discretionary capital $10-35M (3-12% of total capital) after survival spending, insufficient for any material change initiative",
+        "confidence": "80-85%",
+        "evidence_basis": "Calculated Stage 5.5 from total capital minus protected capital (mandatory debt service, minimum CapEx, working capital, critical vendors)",
+        "uncertainty": "Precise discretionary amount depends on: actual capital availability (cash + potential asset sale proceeds + potential financing), survival spending precision (minimum CapEx could be $X or $X+20M), management capital allocation choices (could prioritize different survival needs). RANGE $10-35M is estimate, but ORDER OF MAGNITUDE certain—discretionary capital is TENS of millions not HUNDREDS, insufficient for material initiatives requiring $30-150M."
+      },
+      {
+        "fact": "Major change initiatives all unaffordable: VMware migration $30-75M, Platform modernization $50-100M, Technology catch-up $20-50M, CX investment $10-25M",
+        "confidence": "75-85%",
+        "evidence_basis": "Initiative cost estimates Stage 5.5 based on industry benchmarks, project scope, and comparable transformation costs",
+        "uncertainty": "COST ESTIMATES are MODELS not quotes—actual costs could be 30-50% lower (aggressive cost management, phased approach, partner subsidies) or 50-100% higher (scope creep, integration complexity, consulting fees). But RELATIVE SCALE certain—all initiatives require MULTIPLES of discretionary capital available ($10-35M vs $30-150M needs = 3-15X gap)."
+      },
+      {
+        "fact": "Apollo has injected $0 equity capital despite 6 years of deterioration (2019-2024) and 53-57% control stake",
+        "confidence": "95%",
+        "evidence_basis": "Observable fact Stage 5.5.4, no public announcements or filings indicating Apollo capital injection, management would disclose if occurred (positive signal)",
+        "uncertainty": "Apollo INTERNAL REASONING unknown—is zero injection because: (1) Turnaround economics unfavorable (negative), (2) Lender cooperation unavailable (negative), (3) Management lacks credible plan (negative), (4) Apollo preserving dry powder for better opportunities (negative—indicates Rackspace not priority), (5) Apollo position changed to 'manage for exit' not 'invest to hold' (negative). ALL interpretations of zero injection are negative, but SPECIFIC reasoning unknown."
+      },
+      {
+        "fact": "Deferred maintenance accumulation $32M+ annually from CapEx -25% reduction",
+        "confidence": "75-80%",
+        "evidence_basis": "Calculated Stage 5.5.2 from CapEx reduction vs estimated maintenance requirements, infrastructure degradation observable",
+        "uncertainty": "Maintenance CapEx REQUIREMENT unknown precisely (industry benchmarks suggest $X per data center square foot, per server, per network capacity—Rackspace asset base known partially, extrapolation has error), $32M+ is ESTIMATE. But DIRECTION certain—underspending on maintenance creates accumulating deferred maintenance, consequences observable (service quality declining, infrastructure reliability concerns)."
+      },
+      {
+        "fact": "Technology underinvestment $20-50M annually below adequate level creates technical debt accumulation and operational drag",
+        "confidence": "70-75%",
+        "evidence_basis": "Estimated Stage 5.5.2 based on platform complexity, modernization gaps, and industry investment benchmarks",
+        "uncertainty": "ADEQUATE technology investment level unknown precisely (what is 'right' amount to spend?), $20-50M gap is JUDGMENT not measurement. But COMPARATIVE assessment certain—Rackspace technology investment appears LOW relative to peers (hyperscalers invest 10-15% revenue in R&D, Rackspace minimal investment), consequences observable (platform modernization lagging, integration complexity, operational inefficiencies)."
+      }
+    ],
+    "financial_contradictions_facts": [
+      {
+        "fact": "Bookings growth +14% coexists with revenue decline -7% and net leakage 21%—mathematically contradictory if bookings represent quality growth",
+        "confidence": "95%",
+        "evidence_basis": "Three metrics coexist Stage 5.6 Contradiction 1, mathematical impossibility creates proof of contradiction",
+        "uncertainty": "INTERPRETATION has some flexibility (bookings growth could be unprofitable deals, low-quality customers, non-renewing contracts, channel stuffing), but EXISTENCE of contradiction is mathematical certainty—cannot have healthy growth with 21% net leakage"
+      },
+      {
+        "fact": "Cost reductions correlate temporally with churn acceleration and service quality deterioration—cost cuts harm revenue durability",
+        "confidence": "85-90%",
+        "evidence_basis": "Temporal sequence observed Stage 5.6 Contradiction 2: Headcount cuts -12% (2023-2024) → burnout High 65-75% → satisfaction declining → churn acceleration 21% net leakage",
+        "uncertainty": "CAUSALITY vs CORRELATION—cost cuts might not CAUSE churn (could be common cause like competitive pressure forcing both cost cuts and causing churn independently). But TEMPORAL SEQUENCE + MECHANISM (understaffing → service degradation → dissatisfaction → churn) + ABSENCE of confounding evidence provides strong support for causality. Confidence 85-90% cost cuts CONTRIBUTE to churn, not proof of sole cause."
+      },
+      {
+        "fact": "Adjusted EBITDA profitability narrative contradicts cash burn $150-250M annually—profitable by accounting but burning cash operationally",
+        "confidence": "90%",
+        "evidence_basis": "Operating loss -$175M (GAAP) + implied positive Adjusted EBITDA (covenant compliance) + cash burn $150-250M (observable) = massive gap requiring $200-300M+ adjustments Stage 5.6 Contradiction 4",
+        "uncertainty": "EXACT Adjusted EBITDA amount unknown (could be +$50M, +$100M, +$150M—determines size of adjustment gap), add-back composition unknown (restructuring how much? SBC how much?), but EXISTENCE of large gap is certain based on operating loss vs implied profitability reconciliation"
+      },
+      {
+        "fact": "Zero pricing power proven by two natural experiments: Email price increase FAILED (immediate churn), VMware cost shock absorbed not passed through",
+        "confidence": "95%",
+        "evidence_basis": "Two independent direct market tests Stage 5.6 Contradiction 5, both FAILED definitively when pricing power tested",
+        "uncertainty": "Whether SOME customer segments have switching costs (enterprise with deep integration), but AGGREGATE behavior proves pricing power insufficient to matter—even if pockets of lock-in exist, cannot sustain business-level pricing actions"
+      },
+      {
+        "fact": "Lender-equity prisoner's dilemma evidenced by: Apollo $0 injection + lender comprehensive restrictions + mandatory prepayments 100% + March 2024 refinancing tightening",
+        "confidence": "85-90%",
+        "evidence_basis": "Multiple independent facts Stage 5.6 Contradiction 6: Apollo zero injection (revealed preference), covenant restrictions comprehensive (credit agreement terms), mandatory prepayments binding (standard provision), refinancing tightened (term-only structure)",
+        "uncertainty": "Apollo INTERNAL DECISION-MAKING unknown (is cooperation unavailable OR economics unfavorable OR both?), lender composition unknown (banks vs distressed funds affects cooperation probability), but OBSERVED BEHAVIOR (no cooperation, no capital injection, restrictions maintained) is definitive—cooperation is NOT occurring regardless of reasons"
+      }
+    ]
+  },
+  "uncertainty_zones": {
+    "description": "Areas where evidence is incomplete, assumptions required, ranges are wide, or information access limitations create knowledge gaps",
+    "critical_unknowns": [
+      {
+        "unknown": "Adjusted EBITDA amount and add-back composition",
+        "why_critical": "Determines: (1) Covenant cushion and breach timing precision (6 months vs 18 months), (2) Gap between reported profitability and economic reality (size of adjustments), (3) Credibility of profitability claims (sustainable adjustments vs accounting games)",
+        "current_uncertainty": "No public disclosure of: Adjusted EBITDA dollar amount (could be +$50M, +$100M, +$150M—3X range), Add-back categories and amounts (restructuring $X, SBC $Y, other $Z), Covenant calculation definitions (do lender-covenant calculations match public reporting or differ)",
+        "what_would_resolve": "Access to: Management Adjusted EBITDA reconciliation (GAAP to Adjusted line-by-line), Credit agreement compliance certificates (quarterly covenant calculation with actual numbers), Lender reporting packages (detailed financials for lender monitoring)",
+        "impact_on_conclusions": "TIMING uncertainty (covenant breach in 6 months vs 18 months, precision low), not DIRECTIONAL uncertainty (deterioration trajectory certain, breach approaching). ACTIONABLE DECISION: Affects urgency calibration and response timing, does NOT affect fundamental assessment that financial model contradictory."
+      },
+      {
+        "unknown": "Lender syndicate composition, economics, and amendment threshold requirements",
+        "why_critical": "Determines: (1) Lender cooperation probability (banks vs distressed funds), (2) Amendment negotiation difficulty (51% majority vs 66.7% supermajority vs unanimous), (3) Lender economic incentives (holding at par vs marked down vs distressed positioning), (4) Negotiating dynamics (concentrated vs diffuse ownership)",
+        "current_uncertainty": "No public disclosure of: WHO holds debt (lender names, institution types), CONCENTRATION (top 3 lenders own 60%+ or diffuse 20+ lenders), LENDER MARKS (par vs 70-80 cents), AMENDMENT THRESHOLDS (majority, supermajority, unanimous consent), LENDER RELATIONSHIPS (Apollo relationships, equity participation elsewhere)",
+        "what_would_resolve": "Access to: Credit agreement amendment provisions (voting thresholds), Syndicate list from agent bank (lender names and amounts), Lender trading activity from LCD/Debtwire (market intelligence), Company-lender correspondence (relationship quality), Direct lender channel checks",
+        "impact_on_conclusions": "PATHWAY uncertainty (lender cooperation possible vs deadlocked), not OUTCOME uncertainty (deterioration forces resolution within 6-18 months regardless). ACTIONABLE DECISION: If lenders cooperative banks, negotiated amendment possible. If lenders distressed funds, adversarial workout probable. Either way, intervention or failure required—pathway differs but necessity identical."
+      },
+      {
+        "unknown": "Apollo internal decision on Rackspace—hold and support vs manage for exit vs write-off and minimize losses",
+        "why_critical": "SINGLE MOST CRITICAL UNKNOWN—determines: (1) Whether external capital solution possible (turnaround requires $200-500M Apollo injection), (2) Turnaround feasibility (Apollo support = possible, Apollo exit = impossible), (3) Timeline to resolution event (if Apollo exiting, sale process or restructuring accelerates)",
+        "current_uncertainty": "Apollo internal strategy completely unknown to external parties: Position (1) Hold and support (commit $200-500M+, drive turnaround, multi-year hold) = turnaround possible, Position (2) Manage for exit (seek buyer at discount, no additional capital, maintain viability for sale) = managed decline, Position (3) Write-off and minimize (investment written to zero internally, minimize further losses, accept restructuring) = failure imminent",
+        "what_would_resolve": "Access to: Apollo investment committee memos on Rackspace (strategic positioning documentation), Apollo fund LP reports or earnings mentions (whether marked down or written off), Apollo internal valuation models (expected outcome scenarios), Direct Apollo discussions (capital commitment willingness), Apollo comparable situations (precedent behavior in distressed portfolio companies)",
+        "impact_on_conclusions": "FUNDAMENTAL FEASIBILITY uncertainty—Apollo decision determines whether turnaround pathway exists (if Position 1 support) or is closed (if Position 2-3 exit/minimize). MOST IMPORTANT UNKNOWN for action implications. However, DISCOVERY MANDATE constrains analysis—cannot resolve without Apollo access, must preserve uncertainty and present RANGE of outcomes conditional on Apollo position."
+      },
+      {
+        "unknown": "Timing and trigger for accounting masking mechanism exhaustion",
+        "why_critical": "Determines: SPECIFIC QUARTER when accounting treatment collapses into economic reality, affecting: Crisis timing precision (Q2 2025 vs Q4 2025 vs Q2 2026), Forcing mechanism identification (which arrives first—liquidity, covenant, customer confidence, competitive, supplier)",
+        "current_uncertainty": "Cannot predict specific quarter when: Working capital borrowed from future must reverse (pulled forward 2-3 months collections, reversal in which quarter?), Auditors challenge adjustment appropriateness (annual impairment test in Q4? interim triggering event?), Restructuring add-backs become unsustainable (after how many consecutive quarters?), Deferred CapEx consequences undeniable (infrastructure failure when?)",
+        "what_would_resolve": "Access to: Management cash flow forecasts with working capital assumptions (reveals reversal timing), Auditor work papers on adjustment testing (reveals auditor scrutiny timeline), Infrastructure failure rate monitoring (reveals deferred CapEx consequence timing), Lender correspondence on covenant calculations (reveals if lenders scrutinizing adjustments)",
+        "impact_on_conclusions": "PRECISION uncertainty (2-8 quarters range for mechanism exhaustion vs 3-5 quarters precision), not EXISTENCE uncertainty (mechanisms DO exhaust, deferrals DO reverse, accounting DOES collapse to reality eventually). AFFECTS tactical response timing, not strategic assessment."
+      },
+      {
+        "unknown": "Specific forcing mechanism most likely to trigger crisis first—liquidity, covenant breach, customer confidence, competitive displacement, or supplier action",
+        "why_critical": "Different mechanisms have different: Arrival patterns (gradual vs sudden), Warning time (predictable vs discrete event), Stakeholder impacts (who controls resolution), Optimal responses (different interventions appropriate)",
+        "current_uncertainty": "FIVE potential forcing mechanisms approaching: (1) LIQUIDITY CRISIS (runway 5-15 months, gradual, predictable), (2) COVENANT BREACH (6-15 months estimated, gradual with threshold uncertainty), (3) CUSTOMER CONFIDENCE BREAK (sudden if triggering event, timing unpredictable), (4) COMPETITIVE DISPLACEMENT (sudden if major renewal lost, discrete events at contract cycles), (5) SUPPLIER ACTION (sudden if VMware/hyperscaler action, supplier discretion). Cannot predict WHICH arrives first—could be any, or multiple simultaneously.",
+        "what_would_resolve": "Access to: Detailed cash flow forecast (identifies liquidity crisis month precisely), Covenant compliance with headroom analysis (identifies covenant breach threshold), Customer confidence early warning indicators (NPS trends, escalations), Major contract renewal schedule (identifies competitive displacement timing), Supplier relationship status (VMware, hyperscalers—pricing roadmaps)",
+        "impact_on_conclusions": "MECHANISM uncertainty affects RESPONSE OPTIMIZATION (liquidity crisis requires different intervention than covenant breach than customer exodus), not NEED FOR RESPONSE (resolution forced within 6-18 months regardless of which mechanism triggers first). MULTIPLE mechanisms approaching increases probability ONE triggers within timeframe, even if cannot predict which."
+      }
+    ],
+    "estimation_ranges_with_wide_uncertainty": [
+      {
+        "estimate": "Cash burn $150-250M annually",
+        "range_width": "67% variance (high vs low)",
+        "confidence_interval": "80-85% confidence actual burn falls in range",
+        "drivers_of_uncertainty": "Working capital volatility, deterioration acceleration/deceleration, unexpected costs, timing of cash flows",
+        "how_affects_decisions": "Wide range creates liquidity runway uncertainty 5-15 months (3X variance), affects urgency calibration but not directional conclusion (acute time pressure exists regardless)"
+      },
+      {
+        "estimate": "VMware cost shock $100-210M annually",
+        "range_width": "110% variance (high vs low)",
+        "confidence_interval": "75-85% confidence actual impact falls in range",
+        "drivers_of_uncertainty": "Specific contract terms unknown, Rackspace VMware consumption patterns unknown, Broadcom pricing SKU applicability uncertain",
+        "how_affects_decisions": "Wide range affects margin compression severity assessment ($100M = serious, $210M = catastrophic), but DIRECTION certain (significant negative margin impact) regardless of precision"
+      },
+      {
+        "estimate": "Covenant breach timing 6-15 months",
+        "range_width": "150% variance (high vs low)",
+        "confidence_interval": "70-75% confidence breach occurs in range",
+        "drivers_of_uncertainty": "Covenant definitions unknown, current cushion unknown, Adjusted EBITDA deterioration rate uncertain",
+        "how_affects_decisions": "Wide range affects response timeline (6 months = immediate action required, 15 months = some planning time), but INEVITABILITY certain unless trajectory reverses dramatically"
+      },
+      {
+        "estimate": "Discretionary capital $10-35M",
+        "range_width": "250% variance (high vs low)",
+        "confidence_interval": "80-85% confidence actual discretionary capital falls in range",
+        "drivers_of_uncertainty": "Survival spending requirements flexible at margins, capital availability depends on asset sale execution, management capital allocation choices vary",
+        "how_affects_decisions": "Even at high end ($35M), still insufficient for material initiatives ($30-150M requirements), so CONCLUSION (capital-constrained, cannot fund turnaround initiatives) robust to uncertainty"
+      },
+      {
+        "estimate": "Multi-entity cost penalty $110-175M annually",
+        "range_width": "59% variance (high vs low)",
+        "confidence_interval": "70-80% confidence actual penalty falls in range",
+        "drivers_of_uncertainty": "Entity-level cost analysis not available, inefficiency estimate modeled from typical patterns, integration quality unknown",
+        "how_affects_decisions": "Affects magnitude of cost structure problem ($110M = significant, $175M = severe), but EXISTENCE of penalty from 100+ entity fragmentation is certain regardless of precise amount"
+      }
+    ],
+    "information_access_limitations": [
+      {
+        "limitation": "No access to credit agreement full text",
+        "missing_information": "Covenant definitions, levels, thresholds, amendment provisions, pricing grid, security details, mandatory prepayment thresholds, restricted payment baskets",
+        "how_worked_around": "Used industry standards and typical leveraged credit agreement terms, cited 'typical' or 'likely' provisions, preserved uncertainty about specifics",
+        "residual_uncertainty": "Covenant breach timing (6-15 months range vs precise quarter), lender control transfer mechanisms (exact triggers and thresholds), capital allocation restrictions (specific baskets and carve-outs)"
+      },
+      {
+        "limitation": "No access to management internal forecasts, budgets, or cash flow projections",
+        "missing_information": "Management's view of: Future revenue trajectory, cost reduction plans, cash burn estimates, covenant compliance projections, capital allocation priorities, crisis contingency plans",
+        "how_worked_around": "Extrapolated from historical trends, calculated from observed metrics (operating losses + working capital = burn), used ranges to capture uncertainty",
+        "residual_uncertainty": "Whether management sees situation as manageable or urgent, whether management has undisclosed plans or interventions, whether management projections more optimistic or pessimistic than extrapolation"
+      },
+      {
+        "limitation": "No access to detailed financial statements beyond high-level metrics",
+        "missing_information": "Segment-level P&L, cash flow statements, entity-level financials, detailed cost breakdowns, working capital components, CapEx allocation by category, Adjusted EBITDA reconciliations",
+        "how_worked_around": "Used available revenue and margin data, estimated missing components, calculated synthetic metrics (e.g., operating losses from gross margin and SG&A), cited estimates with ranges",
+        "residual_uncertainty": "Precise operating loss amount (used -$175M based on margins × revenue), segment profitability (Public Cloud vs Private Cloud operating margins unknown), cash flow components (operating vs investing vs financing cash flows)"
+      },
+      {
+        "limitation": "No access to customer contracts, pricing, churn reasons, satisfaction surveys, or retention analysis",
+        "missing_information": "Contract terms and duration, pricing by customer segment, churn drivers (why customers leave), satisfaction scores by cohort, retention rates by segment, win/loss analysis",
+        "how_worked_around": "Used aggregate metrics (net leakage 21%, burnout High, satisfaction declining), cited industry switching costs, used natural experiments (Email price test, VMware shock)",
+        "residual_uncertainty": "Which customer segments churning most (SMB vs enterprise), whether churn is price-driven or service-driven (likely both), whether retention improvements possible with focused intervention"
+      },
+      {
+        "limitation": "No access to lender syndicate composition, marks, or relationship dynamics",
+        "missing_information": "Lender names and amounts, whether banks or distressed funds, marks (par vs discount), amendment thresholds, prior amendment history, lender communication tone",
+        "how_worked_around": "Analyzed observable lender behaviors (maintained restrictions, tightened structure in March 2024 refinancing, no flexibility provided), used game theory (prisoner's dilemma) to model incentives",
+        "residual_uncertainty": "Lender cooperation probability (cooperative banks vs adversarial distressed funds), amendment negotiation cost (2% fees vs 5%+ fees), lender willingness to support turnaround vs force liquidation"
+      },
+      {
+        "limitation": "No access to Apollo internal decision-making, strategy, or capital commitments",
+        "missing_information": "Apollo's strategic position on Rackspace (hold/exit/minimize), capital commitment willingness, internal valuation, expected outcome probabilities, exit timing if planning sale",
+        "how_worked_around": "Used revealed preference (zero injection despite 6 years deterioration proves something negative), modeled three possible positions (support/exit/minimize), preserved uncertainty about which position",
+        "residual_uncertainty": "Apollo's actual position unknown (MOST CRITICAL UNKNOWN per Stage 5.6), affects turnaround feasibility fundamentally (support = possible, exit/minimize = impossible)"
+      }
+    ]
+  },
+  "truth_map_synthesis": {
+    "overall_confidence_in_stage_5_conclusions": "HIGH (85-90%) for DIRECTIONAL conclusions, MODERATE (60-75%) for TIMING precision",
+    "directional_confidence_explanation": "HIGH confidence (85-90%) that: (1) Financial model is contradictory and unsustainable (proven by mathematical contradictions, natural experiments, temporal sequences), (2) Revenue durability is failing (net leakage 21%, churn accelerating, bookings growth not translating to revenue), (3) Margin structure is locked in losses (gross margin 19.5% < SG&A 25.9% = operating losses unavoidable without fundamental change), (4) Liquidity is constrained with acute time pressure (cash burn $150-250M, runway measured in months not years), (5) Lender control transfer approaching (covenant breach within quarters, restrictions comprehensive, no cooperation observed), (6) Capital allocation is prisoner's dilemma deadlock (Apollo zero injection, lenders comprehensive restrictions, cooperation absent). DIRECTIONAL conclusions robust to uncertainties—even under optimistic assumptions on unknowns, contradictions persist and resolution forced.",
+    "timing_precision_explanation": "MODERATE confidence (60-75%) in TIMING precision due to: (1) Covenant breach timing 6-15 months (2.5X range, depends on unknown covenant levels and cushion), (2) Liquidity runway 5-15 months (3X range, depends on burn volatility and accessible cash), (3) Accounting mechanism exhaustion 2-8 quarters (4X range, depends on management choices and auditor timing), (4) Forcing mechanism identification (which of five arrives first unpredictable). TIMING uncertainty does NOT undermine DIRECTIONAL conclusions—resolution is FORCED within 6-18 months (confidence HIGH), but WHETHER in month 6 vs month 12 vs month 18 is LOW PRECISION. Directional certainty with timing uncertainty is APPROPRIATE response to evidence—preserves intellectual honesty while enabling action.",
+    "what_high_confidence_enables": "DIRECTIONAL conclusions enable: (1) Recognizing financial model is unsustainable (not 'turnaround in progress', not 'temporary difficulties'), (2) Understanding resolution is FORCED not optional (external intervention or failure within 6-18 months), (3) Identifying root causes (revenue durability failure, structural operating losses, capital constraints, stakeholder misalignment), (4) Mapping forcing mechanisms (liquidity, covenants, customer confidence, competition, suppliers), (5) Assessing pathway viability (capital solution depends on Apollo position unknown, lender cooperation currently absent). HIGH directional confidence is SUFFICIENT for understanding nature and severity of situation.",
+    "what_uncertainty_preserves": "Acknowledging uncertainty zones preserves: (1) INTELLECTUAL HONESTY (do not claim precision where evidence incomplete), (2) INFORMATION PRIORITIES (Apollo position, lender syndicate, covenant details are HIGH VALUE to resolve for action planning), (3) SCENARIO RANGE (Apollo supporting = turnaround possible, Apollo exiting = failure probable—both possible, evidence insufficient to conclude), (4) DECISION QUALITY (recognizing what is KNOWN vs UNKNOWN enables appropriate action under uncertainty, prevents false confidence), (5) DISCOVERY DISCIPLINE (maintains Stage 0 mandate—discovery not strategy, cannot collapse uncertainty prematurely).",
+    "confidence_calibration_check": "Confidence levels calibrated by: (1) DISCONFIRMING EVIDENCE SEARCHES conducted Stage 5.6—found ZERO contradictory evidence after comprehensive searches, strengthens confidence, (2) NATURAL EXPERIMENTS provide definitive evidence (Email price test FAILED, VMware cost shock absorption FORCED—both unambiguous), (3) MATHEMATICAL CONTRADICTIONS eliminate alternative explanations (bookings +14% + net leakage 21% + revenue -7% CANNOT coexist if bookings = quality growth—arithmetic proof), (4) TEMPORAL SEQUENCES establish causality (cost cuts → service degradation → churn acceleration observed chronologically with mechanism), (5) REVEALED PREFERENCES eliminate subjective interpretation (Apollo $0 injection, lender zero flexibility—actions reveal true positions regardless of narratives). Confidence is EVIDENCE-BASED not assumption-based.",
+    "appropriate_use_of_ranges": "Wide ranges (cash burn $150-250M, VMware shock $100-210M, covenant breach 6-15 months) reflect HONEST UNCERTAINTY not imprecision failure. Ranges are APPROPRIATE when: (1) Multiple scenarios plausible with available evidence, (2) Missing information prevents precision (covenant definitions, internal forecasts), (3) Future dependent on uncertain events (working capital volatility, auditor timing, customer behavior). NARROW RANGES would be FALSE PRECISION given information limitations. PRESERVING RANGE WIDTH maintains intellectual honesty and prevents misleading certainty.",
+    "when_precision_matters_vs_direction": "PRECISION matters for: Tactical timing (when to act), Resource mobilization (how much time to prepare), Forcing mechanism prediction (which arrives first determines response). DIRECTION matters for: Strategic assessment (is situation sustainable or not), Root cause identification (why is model contradictory), Pathway evaluation (what intervention types could work). CURRENT ANALYSIS: HIGH confidence in DIRECTION (unsustainable, contradictory, resolution forced), MODERATE confidence in PRECISION (timing 6-18 months but which month uncertain). This confidence distribution is APPROPRIATE—sufficient for strategic understanding, honest about tactical uncertainty.",
+    "unknowns_that_would_change_conclusions": "VERY FEW unknowns would change DIRECTIONAL conclusions: (1) IF Apollo committed $200-500M capital with lender cooperation, turnaround pathway opens (currently CLOSED per zero injection and no cooperation)—changes FEASIBILITY not NEED. (2) IF Adjusted EBITDA is substantially negative (not positive as implied), covenant breach IMMINENT not 6-15 months—changes TIMING urgency not DIRECTION. (3) IF pricing power exists contrary to two natural experiment failures, margin improvement via pricing possible—BUT two direct tests FAILED definitively, pricing power evidence would need to be EXTRAORDINARY to overturn. MOST unknowns affect TIMING, MAGNITUDE, or MECHANISM—very few affect FUNDAMENTAL CONCLUSION (financial model contradictory, unsustainable, resolution forced).",
+    "information_priorities_for_uncertainty_reduction": [
+      {
+        "priority": 1,
+        "information_needed": "Apollo internal position on Rackspace (hold and support vs manage for exit vs minimize losses)",
+        "why_highest_priority": "SINGLE MOST IMPORTANT UNKNOWN—determines whether turnaround pathway exists (if support) or is closed (if exit/minimize). Affects fundamental feasibility assessment, not just tactics. Without Apollo support, external capital solution impossible, turnaround unfunded, failure almost certain.",
+        "how_to_obtain": "Direct Apollo discussions, investment committee memos, fund LP reports, internal valuation models, precedent behavior analysis"
+      },
+      {
+        "priority": 2,
+        "information_needed": "Lender syndicate composition and amendment thresholds",
+        "why_high_priority": "Determines lender cooperation probability and negotiation dynamics. If cooperative banks with 51% threshold = amendments possible, If distressed funds with 66.7% threshold = extractive negotiation, If diffuse CLOs = cooperation impossible. Affects intervention pathway viability.",
+        "how_to_obtain": "Credit agreement amendment provisions, syndicate list from agent, lender trading intelligence, channel checks with lenders"
+      },
+      {
+        "priority": 3,
+        "information_needed": "Adjusted EBITDA amount, add-back composition, and covenant compliance calculations",
+        "why_high_priority": "Determines covenant breach timing precision (6 months vs 18 months affects urgency dramatically), gap size between accounting profitability and economic reality (credibility of adjustments), covenant cushion (runway to crisis).",
+        "how_to_obtain": "Management Adjusted EBITDA reconciliation, credit agreement compliance certificates, lender reporting packages"
+      }
+    ]
+  },
+  "evidence_sources": [
+    "Stage 5.1: Revenue quality erosion signals—net leakage 21%, revenue decline -7%, bookings growth +14%, headcount -12%, CapEx -25%, Email price increase failure, VMware cost shock",
+    "Stage 5.2: Margin physics—operating margin -6.4%, gross margin 19.5%, SG&A 25.9%, segment margins (Public Cloud 10.4%, Private Cloud 11.9%), VMware cost shock $100-210M, multi-entity cost penalty $110-175M",
+    "Stage 5.3: Liquidity truth—cash $260M, burn $150-250M annually, runway 5-15 months, no revolver disclosed, mandatory prepayments 100%, multi-entity cash trapping",
+    "Stage 5.4: Debt control—covenant breach estimated 6-15 months, comprehensive restrictions, March 2024 refinancing tightening, change of control veto, control transfer mechanisms",
+    "Stage 5.5: Capital allocation—discretionary capital $10-35M insufficient, survival spending dominates 88-97%, all major initiatives unaffordable, Apollo $0 injection, deferred maintenance $32M+ annually, technology underinvestment $20-50M",
+    "Stage 5.6: Financial contradictions—seven contradictions documented with mathematical proofs, natural experiments, temporal sequences, revealed preferences",
+    "Stage 5.6: Uncertainty register—five critical unknowns documented with resolution pathways and decision impacts",
+    "Stage 5.6: Disconfirming evidence searches—zero contradictory evidence found after systematic falsification attempts"
+  ]
+}

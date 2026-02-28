@@ -1,0 +1,115 @@
+{
+  "sub_stage": "4.4",
+  "document_metadata": {
+    "title": "Accountability Voids - Rackspace Technology, Inc.",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09"
+  },
+  "accountability_voids": [
+    {
+      "void": "Deal profitability—accountability split between sales (booking) and delivery (execution) with no unified owner",
+      "why_void_exists": "Sales has authority to book deals without profitability validation (Stage 4.1). Delivery has accountability for margin execution without authority to reject unprofitable deals (Stage 4.1). No deal review board or cross-functional governance to assess profitability before signature (Stage 4.1). Accountability split creates void—sales blamed for low bookings, delivery blamed for low margins, but neither accountable for profitable deal flow (the actual business outcome).",
+      "who_should_be_accountable": "UNCLEAR from organizational structure. Options: (1) Deal review board with sales/delivery/finance representation and go/no-go authority, (2) Chief Revenue Officer with authority over both sales and delivery, (3) BU Presidents with authority to approve deals within BU P&L accountability. Currently: CEO by default (adjudicates conflicts) but no formal accountability—CEO reactive not proactive.",
+      "consequences_of_void": "Margin erosion: Private Cloud -13%, Public Cloud -3% FY2024. Delivery capacity consumed executing unprofitable deals. Customer execution failures from under-resourced unprofitable accounts. CEO forced to intervene reactively (Q4 2024 walk away policy) after severe deterioration. No proactive deal discipline—pattern persists until crisis forces recognition. Sales refresh Q3 2024 treats symptom (personnel) not cause (accountability void).",
+      "why_void_persists": "Fixing void requires authority reallocation—either sales loses booking autonomy or delivery gains veto authority. Authority reallocation creates conflict: Sales argues veto slows deal closure (competitive disadvantage), delivery argues booking autonomy destroys margins (financial unsustainability). CEO hasn't resolved conflict—2023 reorganization created BU structure but didn't reallocate sales/delivery authority. Walk away policy Q4 2024 is CEO-level workaround not structural fix—when CEO bandwidth exhausted, void reopens.",
+      "touch_test": "If deal profitability accountability unified (single owner with authority and accountability), would margins improve? HYPOTHESIS: Yes—unified owner would conduct profitability validation pre-signature, reject unprofitable deals proactively, negotiate pricing reflecting true cost. Evidence: Walk away policy Q4 2024 demonstrates deals can be rejected when profitability prioritized—but required CEO intervention (not scalable). Healthcare deal $100M+ TCV required CEO involvement—indicates major deal accountability defaults to CEO. Suggests void persists because no one below CEO has unified authority.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: Sales has booking authority, delivery has margin accountability",
+        "Stage 4.1: No deal review board",
+        "Margin erosion: Private Cloud -13%, Public Cloud -3%",
+        "Q4 2024: CEO walk away policy (reactive)",
+        "Q3 2024: Sales refresh",
+        "Healthcare deal: CEO involvement $100M+ TCV",
+        "2023 reorganization: BU structure created but authority gap persists"
+      ]
+    },
+    {
+      "void": "Customer resolution—accountability split between support (ticket processing) and delivery/billing/engineering (issue resolution) with no unified owner",
+      "why_void_exists": "Support has accountability for SLA response times (Stage 4.2) but lacks authority to compel other functions (billing, delivery, engineering) to resolve cross-functional issues (Stage 4.1: no VP Support). Customer issues requiring cross-functional coordination fall into void—support accountable for customer satisfaction but cannot enforce resolution. No empowered coordinator with authority across functions (Stage 4.1). Accountability diluted across 'dozens of engineers' (BBB) with no single owner.",
+      "who_should_be_accountable": "UNCLEAR from organizational structure. Options: (1) VP of Support with authority to compel cross-functional action, (2) Customer Success organization with end-to-end accountability, (3) BU Presidents accountable for customer outcomes within BU. Currently: Support by default but lacks authority, so accountable for outcome cannot control. Customer escalations escalate to CEO (Stage 4.1) but CEO capacity insufficient (BBB: cannot reach CEO).",
+      "consequences_of_void": "Customer satisfaction declining (Trustpilot 'consistently getting worse' 2024). BBB complaints: Dozens of engineers involved but issues unresolved, cannot escalate to senior management. Support staff burning heroics capacity coordinating informally (Stage 4.3). Customer churn from unresolved issues. 'Fanatical Support' brand promise eroding. Support staff burnout inevitable—heroics masking coordination void unsustainable.",
+      "why_void_persists": "Fixing void requires creating VP Support or empowered coordinator with cross-functional authority—but no such role exists (Stage 4.1). Creating role requires headcount/cost (capital constrained) and authority reallocation (billing/delivery/engineering must accept support direction). Engineering/delivery resist support direction—argue support lacks technical context to prioritize. Support informal coordination (heroics) masks severity—issues eventually resolved through personal relationships, preventing complete failure that would force recognition. Customer complaints visible but not aggregated into executive visibility—individual escalations, not systemic metric.",
+      "touch_test": "If customer resolution accountability unified (single owner with authority to compel cross-functional action), would satisfaction improve? HYPOTHESIS: Yes—unified owner would establish resolution process, allocate cross-functional capacity, track resolution not just response. Evidence: BBB 'dozens of engineers' indicates coordination possible when forced—but requires heroics not process. Support staff attempting resolution despite lacking authority—suggests would embrace empowerment if granted. Customer complaints cite 'no ownership' not 'no capability'—indicates accountability void not skill deficit.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: No VP Support, no empowered coordinator",
+        "Stage 4.2: SLA response times met, satisfaction declining",
+        "Stage 4.3: Support absorbing coordination failures through heroics",
+        "BBB: Dozens of engineers, unresolved issues, cannot escalate to CEO",
+        "Trustpilot: 'consistently getting worse' 2024",
+        "Customer complaints cite 'no ownership' (coordination not skill)"
+      ]
+    },
+    {
+      "void": "Proactive risk management—accountability for incident prevention displaced by accountability for incident response",
+      "why_void_exists": "No CRO or proactive risk governance (Stage 4.1). Operations/security measured on incident response metrics (MTTD/MTTR) not prevention metrics (incident frequency reduction). Incident prevention accountability unmeasurable—how count incidents that didn't occur? Reactive incidents create immediate accountability (customer impact, executive visibility, all-hands mobilization). Proactive prevention creates no accountability trigger until incident occurs—then reactive response blamed, not proactive underinvestment.",
+      "who_should_be_accountable": "UNCLEAR from organizational structure. Options: (1) CRO with proactive risk governance authority and budget, (2) CISO with authority beyond reactive security to proactive risk investment, (3) COO with accountability for operational stability not just incident response. Currently: Operations by default but measured reactively. No proactive risk advocacy—capital allocation process (Stage 4.3) prioritizes reactive spending (visible/urgent) over proactive investment (invisible/deferrable).",
+      "consequences_of_void": "Incident recurrence: Ransomware multi-month impact, zero-day monitoring offline Sept 2024. Reactive spending pattern (Stage 4.2): Each incident forces spending that could have prevented incident if allocated proactively. Vendor dependencies create external constraints (ScienceLogic zero-day remediation timeline controlled externally). Regulatory risk: FedRAMP, HIPAA/HITRUST require proactive controls—reactive-only posture creates authorization risk. Operations team burnout from crisis cycles. Technical debt accumulation as proactive infrastructure investment deferred.",
+      "why_void_persists": "Fixing void requires creating CRO or proactive risk authority with budget and decision rights—but capital constrained ($1.3B debt). Proactive investment delivers uncertain future benefit (prevented incidents) vs certain current cost (budget allocation). Budget process prioritizes immediate visible needs (incident response) over future invisible benefits (prevention). Each incident resets proactive investment cycle—crisis spending crowds out prevention budget. No executive advocate for proactive risk—operations focused on response, finance focused on cost control, CEO focused on immediate crisis resolution.",
+      "touch_test": "If proactive risk accountability created (CRO with budget and authority), would incident frequency decline? HYPOTHESIS: Likely—dedicated authority would fund proactive controls, eliminate vendor dependencies, build automated prevention. Evidence: Reactive spending pattern shows capital available during crisis—reallocating to proactive would reduce total spending. Google SRE model, Site Reliability Engineering practices demonstrate prevention cheaper than response. But requires multi-year investment with uncertain counterfactual measurement (how prove incidents prevented?). May conflict with short-term financial constraints.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: No CRO, reactive risk posture only",
+        "Stage 4.2: Reactive spending pattern—incidents displace proactive",
+        "Stage 4.3: Operations absorbing risk failures reactively",
+        "Ransomware multi-month impact, zero-day monitoring offline Sept 2024",
+        "ScienceLogic vendor dependency creates external constraint",
+        "$1.3B debt creates capital constraint",
+        "Incident response metrics measured, prevention metrics not"
+      ]
+    },
+    {
+      "void": "Cross-functional coordination—accountability for coordination outcomes exists (BU P&L) but authority to coordinate absent (CEO bottleneck)",
+      "why_void_exists": "BU Presidents accountable for P&L (Stage 4.1) but lack authority to compel cross-functional action: Cannot direct sales prioritization, cannot override shared services allocation, cannot influence technology roadmap. 2023 reorganization created BU accountability without reallocating authority. No operating committee or governance layer (Stage 4.1) to resolve cross-BU conflicts—only escalation to CEO. Accountability-authority mismatch creates void—BU Presidents blamed for results cannot control.",
+      "who_should_be_accountable": "UNCLEAR how to fix. Options: (1) Grant BU Presidents authority matching accountability (sales direction, shared services control, technology input), (2) Remove BU P&L accountability, return to functional structure, (3) Create operating committee where BU Presidents negotiate resource allocation collectively. Currently: CEO by default—all cross-functional conflicts escalate to CEO (Stage 4.2: serial bottleneck). CEO accountable for everything, effectively accountable for nothing—overload dilutes accountability.",
+      "consequences_of_void": "CEO serial bottleneck (Stage 4.2): Organizational throughput limited by CEO coordination capacity. BU Presidents escalate rather than coordinate—rational when lacking authority. Three CEOs in three years suggests coordination load unsustainable. Decision delays accumulate as CEO queue lengthens. BU local optimization without enterprise optimization—BUs optimize within scope of control, forego cross-BU synergies requiring coordination. Strategic focus impossible—CEO consumed by operational coordination.",
+      "why_void_persists": "Fixing void requires either (1) delegating authority to BU Presidents (risk: BU conflicts without resolution mechanism) or (2) removing BU accountability (risk: no P&L ownership). 2023 reorganization attempted BU accountability creation but stopped short of authority delegation—suggests concern about BU President capability or conflict resolution. CEO retains authority because delegation risky when organizational coordination capability unproven. Each new CEO inherits void—authority architecture unchanged, bottleneck recreates.",
+      "touch_test": "If BU Presidents granted authority matching accountability, would P&L performance improve? HYPOTHESIS: Uncertain—eliminates CEO bottleneck enabling parallel execution, but introduces coordination cost (BU conflicts over shared resources). Requires BU Presidents have coordination capability—may lack skills. Evidence: Three CEOs in three years indicates CEO coordination insufficient—structural change necessary. But no evidence BU Presidents capable of coordination—may replicate CEO bottleneck at BU level. Operating committee could provide coordination forum—but doesn't exist (Stage 4.1).",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: BU Presidents lack authority despite P&L accountability",
+        "Stage 4.1: CEO sole cross-functional coordinator",
+        "Stage 4.2: CEO serial bottleneck",
+        "2023 reorganization created BU structure",
+        "Three CEOs three years (Jones, Maletira, Kandiah)",
+        "Stage 4.1: No operating committee",
+        "BU Presidents escalate to CEO (inference from authority gap)"
+      ]
+    },
+    {
+      "void": "Operational stability—accountability for features (product/engineering) separate from accountability for stability (operations) with no unified owner",
+      "why_void_exists": "Product/engineering accountable for feature delivery (roadmap, velocity, customer requests). Operations accountable for incident response (MTTD/MTTR). No unified accountability for operational stability—engineering ships features, operations absorbs instability. When feature deployment causes incident, who accountable? Engineering (shipped unstable code) or operations (failed to prevent deployment)? Accountability void creates finger-pointing—engineering argues feature met requirements, operations argues deployment premature.",
+      "who_should_be_accountable": "UNCLEAR from organizational structure. Options: (1) Site Reliability Engineering model—engineering accountable for operational stability of features shipped (error budgets, on-call rotation), (2) Platform engineering team bridging product and operations, (3) CTO with authority over both feature velocity and operational stability. Currently: Engineering and operations separate—coordination informal, accountability void when features cause incidents.",
+      "consequences_of_void": "Feature velocity maintained while stability degrades (inference from incident pattern). Monitoring degradation (Sept 2024 dashboards offline during zero-day incident). Incidents recurring (ransomware, zero-day, customer complaints suggest pattern). Technical debt accumulation—engineering accepts debt to accelerate features, operations absorbs debt servicing through incident response. Operations lacks authority to block unstable releases (Stage 4.1)—can only request delay, cannot enforce.",
+      "why_void_persists": "Fixing void requires engineering accountability for operational stability—but conflicts with feature velocity optimization. Engineering career progression rewards features shipped not stability maintained. Customer requests drive roadmap—customers request features until incident occurs, then blame operations. Creating SRE function or error budget system requires cultural change and measurement infrastructure (currently unavailable). Operations lacks authority to compel engineering stability investment—escalation to CEO required but CEO bandwidth limited.",
+      "touch_test": "If engineering accountable for operational stability (SRE model with error budgets), would stability improve? HYPOTHESIS: Yes—engineering would invest in monitoring, testing, infrastructure hardening. Evidence: Google SRE model demonstrates feasibility. Engineering capable (operates complex multi-jurisdictional infrastructure) but incentive misdirected. Would require authority reallocation—operations must have veto over unstable releases or engineering must carry pager for production incidents. Cultural resistance likely—engineering may resist operations accountability.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.3: Operations absorbing stability failures reactively",
+        "Stage 4.1: Operations lacks authority over engineering priorities",
+        "Sept 2024: Monitoring offline during zero-day incident",
+        "Ransomware multi-month impact, incident pattern suggests recurrence",
+        "Engineering/operations separation inference from organizational structure",
+        "Technical debt inference from incident pattern and coordination failures"
+      ]
+    },
+    {
+      "void": "Multi-jurisdictional compliance—accountability distributed across jurisdictions (FedRAMP, UK Sovereign, HIPAA/HITRUST, China) without central coordination",
+      "why_void_exists": "Each jurisdiction has separate compliance requirements: FedRAMP (US government), UK Sovereign Cloud (UK government), HIPAA/HITRUST (healthcare), China (local regulations). Compliance managed per-jurisdiction creating 5-6x operational multiplier (Stage 4.2). No central compliance function coordinating across jurisdictions—common controls replicated, compliance debt accumulates separately. When compliance failure occurs in one jurisdiction, who accountable? Local operations (failed to maintain controls) or central governance (failed to coordinate)? Accountability void when distributed.",
+      "who_should_be_accountable": "UNCLEAR from organizational structure. Options: (1) Chief Compliance Officer with authority across all jurisdictions, (2) GRC (Governance, Risk, Compliance) function coordinating common controls, (3) Jurisdiction-specific compliance owners with coordination forum. Currently: Distributed by jurisdiction—no central coordination visible. Compliance reactive (audit-driven) not proactive (control-driven). Each jurisdiction maintains separate compliance—duplication, inconsistency, escalating cost.",
+      "consequences_of_void": "Multi-jurisdictional deployment overhead (5-6x separate execution per Stage 4.2). Compliance cost escalation as each jurisdiction maintains separate controls. Compliance debt accumulation—when one jurisdiction falls behind, no visibility to others. Regulatory authorization risk—FedRAMP requires timely incident management, separate incident response per jurisdiction creates delays. Technology platform fragmentation—cannot consolidate infrastructure across jurisdictions due to compliance isolation. Vendor dependencies per jurisdiction (ScienceLogic monitoring) multiply cost.",
+      "why_void_persists": "Fixing void requires central compliance coordination—but jurisdictional regulations may prohibit consolidation (data sovereignty, local operations requirements). Creating Chief Compliance Officer or GRC function requires headcount (capital constrained) and authority across jurisdictions (organizational complexity). Each jurisdiction resists central control—argues local context requires local autonomy. Compliance reactive posture—audit cycles drive compliance, no proactive harmonization. Multi-jurisdictional complexity creates coordination overhead—rational to maintain separation despite cost duplication.",
+      "touch_test": "If multi-jurisdictional compliance accountability centralized (CCO or GRC function), would compliance cost decline? HYPOTHESIS: Possibly—common control coordination would reduce duplication, proactive compliance would prevent audit failures. Evidence: 5-6x operational multiplier (Stage 4.2) suggests significant waste from isolation. But jurisdictional regulations may prohibit consolidation—data sovereignty, local operations mandates may require separation. Central coordination might reduce cost without violating sovereignty—harmonize controls where possible, maintain separation where required. But requires compliance expertise currently may not exist.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.2: Multi-jurisdictional 5-6x operational multiplier",
+        "FedRAMP, UK Sovereign, HIPAA/HITRUST, China compliance requirements (FACT)",
+        "Stage 4.3: Multi-jurisdictional bottleneck persistent",
+        "No central compliance function visible (Stage 4.1 authority analysis)",
+        "Compliance reactive posture inference from risk governance absence",
+        "Vendor dependencies per jurisdiction (ScienceLogic monitoring)"
+      ]
+    }
+  ]
+}

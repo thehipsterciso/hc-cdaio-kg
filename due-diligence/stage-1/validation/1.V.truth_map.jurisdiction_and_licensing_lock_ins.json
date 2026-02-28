@@ -1,0 +1,48 @@
+{
+  "legal_operational_truth_map": {
+    "jurisdiction_and_licensing_lock_ins": [
+      {
+        "activity_or_asset": "U.S. Federal Government Cloud Services (FedRAMP)",
+        "locked_to": "Rackspace Government Solutions, Inc. (U.S. entity) + Continental U.S. operations + 100% U.S. citizen security team",
+        "operational_constraint": "FedRAMP Joint Authorization Board authorization (23 authorizations since 2015) + DoD Impact Level 4 are ENTITY-SPECIFIC. Change of control invalidates authorization immediately. Re-authorization requires 12-18 months with no service continuity. Government customers (>50% cabinet agencies) forced to migrate. Foreign acquisition triggers FOCI review (expanded May 2024 to contracts >$5M) requiring proxy board (no control) or divestiture.",
+        "touch_test_what_breaks": "Entity change = IMMEDIATE LOSS of FedRAMP authorization. All government revenue at risk ($X million unknown). Cannot consolidate with non-U.S. entity. Cannot relocate outside continental U.S. Cannot use non-U.S. citizens. Foreign acquirer faces FOCI barrier effectively blocking transaction or forcing government business divestiture to U.S. buyer.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "Rackspace Government Solutions FedRAMP authorization", "DoD FOCI regulations 32 CFR § 2004.34"]
+      },
+      {
+        "activity_or_asset": "UK Government/NHS/Regulated Industry Cloud (UK Sovereign Services)",
+        "locked_to": "RACKSPACE LIMITED (UK Company No. 03897010) + UK data centers + UK-isolated infrastructure + UK-only support teams",
+        "operational_constraint": "UK Sovereign Services launched March 2024 with VMware Sovereign Cloud certification (January 2026) to meet post-Brexit UK data sovereignty requirements. Infrastructure ARCHITECTURALLY ISOLATED from global Rackspace network BY DESIGN. UK government, NHS Class V risk data, police, financial services, pharma customers require UK-only operations. Platform and support teams cannot access non-UK systems.",
+        "touch_test_what_breaks": "Consolidation with non-UK operations = IMMEDIATE BREACH of UK sovereignty requirements. UK government/NHS/police/regulated customers lose compliant provider. Cannot integrate with European or global infrastructure. Cannot use non-UK personnel. BT partnership for sovereign communications UK-specific and likely non-transferable. Integration is PERMANENTLY PROHIBITED by regulatory requirements.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "Rackspace UK Sovereign Services March 27, 2024", "VMware Sovereign Cloud certification January 2026"]
+      },
+      {
+        "activity_or_asset": "China Cloud Operations and Customer Data",
+        "locked_to": "China legal entity + Shanghai data center + China-based operations under Chinese government oversight",
+        "operational_constraint": "China Cybersecurity Law (2017) mandates data localization for critical infrastructure operators. Personal information and important data must be stored within China. Cross-border data transfers heavily restricted and require government approval. Chinese government retains oversight authority.",
+        "touch_test_what_breaks": "Consolidating with non-China entity or storing data outside China = IMMEDIATE VIOLATION of Cybersecurity Law. Chinese government can fine, suspend operations, revoke licenses. China customers legally prohibited from using non-China storage. Cannot eliminate China entity without exiting market entirely. Government oversight cannot be avoided.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "China Cybersecurity Law 2017", "Shanghai data center confirmed"]
+      },
+      {
+        "activity_or_asset": "EU Personal Data Processing and Cross-Border Transfers",
+        "locked_to": "EU data centers (Amsterdam, Frankfurt, London) + GDPR-compliant transfer mechanisms for EU-U.S. data flows",
+        "operational_constraint": "GDPR + Schrems II decision (July 2020 invalidated Privacy Shield) restrict EU-U.S. data transfers. EU-U.S. Data Privacy Framework (July 2023) under legal challenge by Max Schrems (February 2024), may be invalidated like predecessors. U.S. FISA Section 702 surveillance deemed incompatible with EU fundamental rights. Case-by-case assessments required. Cloud providers with data access may not be compliant.",
+        "touch_test_what_breaks": "Consolidating EU and U.S. operations without compliant mechanisms = EU customers (estimated 20-30% revenue = $300-450M) in BREACH of GDPR. Fines up to 4% global revenue ($60M). If acquirer subject to FISA 702 (large U.S. tech company), may be IMPOSSIBLE to maintain compliant transfers under Schrems II. If Data Privacy Framework invalidated 2025-2027, must COMPLETELY SEPARATE EU from U.S. operations with no data transfers.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "CJEU Schrems II July 16, 2020", "Max Schrems legal challenges February 2024"]
+      },
+      {
+        "activity_or_asset": "Physical Data Center Infrastructure (40 Global Facilities)",
+        "locked_to": "13+ jurisdictions with long-term leases, jurisdictional authorizations tied to specific locations, customer data residency requirements",
+        "operational_constraint": "Data centers are FIXED ASSETS tied to physical locations with 40 leases containing assignment restrictions. FedRAMP tied to specific U.S. data centers. UK Sovereign tied to UK data centers. China operations tied to Shanghai. Customer contracts specify data center locations. Real estate cannot be moved without: landlord consent, physical relocation ($X million, 12-24 months), customer disruption, loss of jurisdiction-specific authorizations.",
+        "touch_test_what_breaks": "Consolidation or relocation triggers: landlord consent requirements for 40 leases (delays, refusals, concessions), customer SLA breaches during migration (10-30% churn), loss of jurisdictional authorizations (FedRAMP, UK Sovereign, China), relocation costs ($X million per facility), 12-24 month timeline per data center. Physical infrastructure creates structural immobility.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "40 data centers confirmed", "Stage 1.4 lease analysis"]
+      },
+      {
+        "activity_or_asset": "Multi-Jurisdictional Legal Entity Architecture",
+        "locked_to": "Separate legal entities in U.S. (Rackspace Government Solutions, Rackspace US), UK (RACKSPACE LIMITED), Singapore (Rackspace Singapore), China (entity name not disclosed), plus others",
+        "operational_constraint": "Corporate law, tax law, and regulatory requirements mandate separate entities for operations in different jurisdictions. Government contracts awarded to specific entities cannot transfer. FedRAMP authorization held by Rackspace Government Solutions, Inc. cannot transfer to parent. UK customers require UK legal entity for local liability. Singapore entity required for APAC. Customer contracts, vendor agreements, data center leases, software licenses executed by specific entities require consent to transfer.",
+        "touch_test_what_breaks": "Consolidating into single global entity = COMPLETE BUSINESS FAILURE in multiple jurisdictions: Loss of FedRAMP (government customers), loss of UK operations (UK market exit), loss of APAC (Singapore exit), loss of China (market exit), breach of customer contracts, loss of jurisdiction-specific licenses. Cannot eliminate local entities without exiting local markets. Entity structure creates permanent multi-jurisdictional complexity that cannot be simplified.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "1.5.false_mobility_assumptions.json", "Multi-entity structure across all Stage 1 sub-stages"]
+      }
+    ]
+  }
+}

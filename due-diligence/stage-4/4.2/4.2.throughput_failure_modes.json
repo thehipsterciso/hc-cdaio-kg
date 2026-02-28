@@ -1,0 +1,90 @@
+{
+  "sub_stage": "4.2",
+  "document_metadata": {
+    "title": "Throughput Failure Modes - Rackspace Technology, Inc.",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09"
+  },
+  "throughput_failure_modes": [
+    {
+      "trigger_condition": "Customer issue requires cross-functional coordination (billing + technical + service)",
+      "failure_mode": "COORDINATION OVERHEAD EXCEEDS PRODUCTIVE WORK",
+      "how_throughput_degrades": "Single customer issue generates: Multiple tickets (customer must open separate tickets per function) → Multiple engineer assignments ('dozens of engineers' per BBB complaint) → Knowledge loss at each handoff (re-explanation required) → No single owner (accountability diffuses) → Escalation attempts fail (cannot reach empowered decision-maker per Stage 4.1) → Issue loops indefinitely. Throughput measured as tickets processed appears healthy (SLA response times met), but throughput measured as issues resolved degrades to near-zero for cross-functional cases. Coordination cost (multiple engineers, multiple tickets, multiple handoffs) consumes capacity without producing resolution.",
+      "systemic_effect": "Customer churn (unresolved issues force migration to competitors), Support staff demoralization (accountable without authority creates learned helplessness), SLA metric gaming (optimize response time, ignore resolution time), Capacity illusion (ticket volume manageable but customer satisfaction plummeting). Throughput degradation NON-LINEAR: Simple issues (single-function) resolve normally, complex issues (cross-functional) create exponentially rising coordination cost without resolution. Result: Organization appears operationally stable (ticket volumes, response SLAs) while customer base erodes.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "BBB: 'multiple tickets, dozens of engineers, no ownership'",
+        "Trustpilot: 'consistently getting worse'",
+        "SLA: 15min/1hr/4hr response, resolution time undefined",
+        "Stage 4.1: Customer escalation authority gap"
+      ]
+    },
+    {
+      "trigger_condition": "Sales books deal without delivery profitability review",
+      "failure_mode": "NEGATIVE-VALUE THROUGHPUT - Revenue booked but margin destroyed",
+      "how_throughput_degrades": "Sales closes deal → Delivery attempts execution → Discovers unprofitability or capability overselling → Cannot veto (deal signed) → Executes poorly → Customer complains → Margin erodes → CEO forced to walk away from renewals. Throughput measured as bookings appears positive (deals flow through sales), throughput measured as delivered profitability NEGATIVE (Private Cloud -13%, Public Cloud -3% margin erosion). Each deal that flows through sales-delivery handoff without proper coordination DESTROYS value rather than creates it. CEO 'walk away' policy Q4 2024 sacrifices revenue throughput to stop margin bleed—indicates throughput so toxic that zero throughput preferable to negative-margin throughput.",
+      "systemic_effect": "Revenue decline FY2024 -7% (CEO walking away from unprofitable business), Margin erosion (Private Cloud -13%, Public Cloud -3%), Customer execution failures (deals sold that cannot be delivered), Sales force misalignment requiring 'refresh' Q3 2024, Throughput paradox (sales books deals but company loses money—higher sales throughput worsens financial performance until CEO intervenes). Non-linear degradation: Each unprofitable deal not only fails to contribute margin, but consumes delivery capacity that could serve profitable customers—opportunity cost compounds financial loss.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Q4 2024: CEO 'walk away from unprofitable deals'",
+        "FY2024 revenue -7%, margins eroding",
+        "Q3 2024: sales organization refresh",
+        "Stage 4.1: Sales/delivery authority mismatch"
+      ]
+    },
+    {
+      "trigger_condition": "Volume or complexity increase (customer growth, deal complexity, technology scope)",
+      "failure_mode": "CEO SERIAL BOTTLENECK - Throughput plateaus at CEO coordination capacity",
+      "how_throughput_degrades": "Volume increases → Cross-functional issues increase → CEO escalations increase → CEO queue lengthens → Decisions delay → Execution stalls. CEO can adjudicate N issues per unit time (serial processing). As organizational volume increases, cross-functional issues requiring CEO coordination increase faster than linearly (coordination dependencies grow combinatorially). CEO becomes saturated—throughput plateaus regardless of additional functional capacity. Adding headcount (sales reps, support staff, engineers) does not increase throughput because bottleneck is CEO coordination capacity, not functional execution capacity. Three CEOs in three years suggests role overloaded—coordination load may exceed sustainable capacity.",
+      "systemic_effect": "Organizational unscalability (cannot grow without overwhelming CEO), Decision delays (issues queue for CEO availability), Strategic distraction (CEO consumed by tactical coordination reduces strategic leadership time), Executive turnover (CEO role difficulty evidenced by three CEOs in three years), Throughput ceiling (company constrained to volume CEO can coordinate, cannot scale beyond). Adding resources BELOW bottleneck (more support staff, more sales reps, more engineers) increases coordination load WITHOUT increasing throughput—worsens problem.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: CEO sole cross-functional decision-maker, no governance forums",
+        "Three CEOs three years: Jones, Maletira, Kandiah",
+        "Major deals require CEO: Healthcare $100M+ TCV",
+        "Customer complaints: cannot escalate to senior management (CEO unreachable)"
+      ]
+    },
+    {
+      "trigger_condition": "Strategic initiative launched (strategic review, reorganization, CEO transition, layoffs)",
+      "failure_mode": "CHANGE INITIATIVE CAPACITY CONSUMPTION WITHOUT THROUGHPUT IMPROVEMENT",
+      "how_throughput_degrades": "Major initiative announced → Management attention diverts to initiative → Operational execution deprioritized → Customer-facing performance degrades → Initiative completes or fails → Financial metrics continue deteriorating → Next initiative required. Strategic review 2022-2023: 12-18 month cycle, CEO replaced during process, review abandoned—consumed massive organizational capacity, produced zero output. Business unit realignment Jan 2023: Reorganization executed, but revenue declined -7% FY2024 and customer complaints worsened—change consumed capacity without improving throughput. Each CEO transition creates 3-6 month strategy discontinuity. Throughput during major initiatives DECREASES as attention shifts from execution to change management.",
+      "systemic_effect": "Customer execution degradation during change initiatives (support quality worsening 2024 post-realignment), Revenue decline despite reorganization (FY2024 -7% post-Jan 2023 realignment), Strategic initiative addiction (each failed initiative triggers next initiative—perpetual change state), Employee uncertainty and disengagement (three CEOs, repeated layoffs, constant restructuring), Throughput volatility (performance degrades during initiatives, may recover briefly post-initiative, then degrades requiring next initiative). Non-linear degradation: Multiple concurrent initiatives (strategic review + CEO transition + layoffs 2021-2023) compound coordination load—organization cannot stabilize.",
+      "claim_type": "FACT + INFERENCE",
+      "evidence_sources": [
+        "Strategic review 2022-2023: 12-18 months, abandoned",
+        "Business unit realignment Jan 2023: Revenue -7% FY2024",
+        "Three CEOs three years",
+        "Layoffs 2021, 2023",
+        "Trustpilot: 'consistently getting worse' 2024"
+      ]
+    },
+    {
+      "trigger_condition": "Security incident occurs (ransomware, zero-day vulnerability)",
+      "failure_mode": "REACTIVE CRISIS DISPLACES PROACTIVE EXECUTION",
+      "how_throughput_degrades": "Incident detected → Operations, security, engineering, legal, communications teams mobilized → Regular work deprioritized → Incident response coordination without standing process → Extended remediation duration → Reactive spending authorized → Strategic projects delayed or cancelled → Organization returns to steady state until next incident. Dec 2022 ransomware: Multi-month customer impact and remediation. Sept 2024 zero-day: Monitoring dashboards offline. Each incident consumes capacity for: Detection, containment, remediation, customer communication, regulatory reporting, vendor coordination. Without proactive risk governance, incidents recur—creating recurring throughput disruption.",
+      "systemic_effect": "Strategic initiative delays (security incidents force reactive spending, crowding out strategic investment), Customer trust erosion (multi-month ransomware impact, 'no apology or solution' per BBB), Operational blind spots (Sept 2024 monitoring offline during remediation), Reactive spending cycle (incidents force spending that could have prevented incidents if allocated proactively), Regulatory risk (FedRAMP, HIPAA/HITRUST require timely incident management), Throughput volatility (steady-state execution disrupted by crisis response, cannot maintain consistent delivery cadence).",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Dec 2022 ransomware: multi-month impact",
+        "Sept 2024 zero-day: monitoring offline",
+        "BBB: 'no apology, compensation, or solution'",
+        "Stage 4.1: No CRO, reactive risk governance"
+      ]
+    },
+    {
+      "trigger_condition": "Multi-jurisdictional operation requires coordinated deployment (technology update, security patch, process change)",
+      "failure_mode": "5-6X DEPLOYMENT MULTIPLIER - Every initiative must be executed separately across isolated jurisdictions",
+      "how_throughput_degrades": "Initiative planned for unified deployment → Realize must deploy separately to: US Government (FedRAMP-isolated), UK Sovereign (architecturally isolated), China (in-country isolated), EU Commercial, US Commercial, APAC → Each deployment requires: Separate planning, separate testing, separate deployment, separate validation, separate support → Coordination across 5-6 separate executions → Initiative duration and cost multiply by jurisdiction count. Technology updates cannot use shared services. Security patches must be deployed per jurisdiction. Process improvements require separate change management per jurisdiction. Throughput for any enterprise-wide initiative reduced to 1/5th or 1/6th of unified operation pace.",
+      "systemic_effect": "Technology investment lag (AI strategy articulated but deployment across jurisdictions slow), Security patch delays (each jurisdiction separate deployment increases vulnerability window), Operational complexity (every process improvement requires 5-6x deployment effort), Cost structure persistence (cannot consolidate despite layoffs 2021, 2023—regulatory isolation prevents economies of scale), Competitive disadvantage (hyperscalers deploy unified infrastructure at faster pace), M&A integration barriers (acquired entities potentially constrained by jurisdictional isolation). Throughput degradation STRUCTURAL—cannot be fixed through process improvement or headcount, requires regulatory regime changes (impossible).",
+      "claim_type": "STRUCTURAL_INFERENCE",
+      "evidence_sources": [
+        "Stage 1: FedRAMP entity-specific isolation",
+        "Stage 1: UK Sovereign architecturally isolated",
+        "Stage 1: China in-country requirements",
+        "Stage 1: 'Portfolio of separate businesses'",
+        "Layoffs 2021, 2023: Cost structure remains high"
+      ]
+    }
+  ]
+}

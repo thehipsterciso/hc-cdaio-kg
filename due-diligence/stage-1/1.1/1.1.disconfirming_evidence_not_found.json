@@ -1,0 +1,49 @@
+{
+  "disconfirming_evidence_not_found": [
+    {
+      "description": "Evidence of covenant-lite debt structure or unencumbered balance sheet",
+      "why_expected": "If H2 (material debt covenants) were false, would expect to find: (1) Loan agreements described as 'covenant-lite' in press releases, (2) Absence of financial maintenance covenants, (3) Minimal or no negative covenants, (4) Public statements about financial flexibility or unencumbered assets, (5) Credit rating agency reports describing minimal covenant protection.",
+      "impact_of_absence": "Absence of covenant-lite evidence SUPPORTS H2. Presence of springing leverage covenant, negative covenants, change-of-control provisions, and make-whole premiums confirms debt is RESTRICTIVE, not permissive. Company's corporate actions are materially constrained by debt covenants."
+    },
+    {
+      "description": "Evidence of simple single-entity corporate structure",
+      "why_expected": "If H1 (multi-tiered structure) were false, would expect to find: (1) Single entity listed in SEC filings with no subsidiaries, (2) Exhibit 21 stating 'no subsidiaries', (3) Credit agreements with single borrower and no guarantors, (4) All contracts, employment agreements, and litigation naming same entity, (5) No intercompany transactions in financial statements.",
+      "impact_of_absence": "Absence of single-entity evidence SUPPORTS H1. Multiple distinct entities identified across credit agreements, employment contracts, litigation, and subsidiary disclosures. Structure is multi-tiered with separate finance vehicles, operating entities, and legacy acquisition vehicles."
+    },
+    {
+      "description": "Evidence of dispersed public ownership without controlling shareholder",
+      "why_expected": "If H5 (concentrated ownership) were false, would expect to find: (1) Proxy statements showing no >10% shareholders, (2) All directors identified as 'independent' with no sponsor affiliations, (3) Press coverage describing 'widely held' company, (4) Absence of PE investor in company description, (5) No Schedule 13D/13G filings showing large blocks.",
+      "impact_of_absence": "Absence of dispersed ownership evidence SUPPORTS H5. Apollo's 53-57% majority stake is consistently reported across multiple sources. Board includes Apollo affiliates. Company is controlled by PE sponsor despite public listing. This is unusual structure (typical PE exit is full sale or complete IPO, not retention of majority control)."
+    },
+    {
+      "description": "Evidence of FCC, state banking, or other structural regulatory licenses",
+      "why_expected": "If H3 (regulatory licensing) were true in structural sense, would expect to find: (1) FCC license numbers or authorizations, (2) State public utility commission approvals, (3) State banking or insurance licenses, (4) Regulatory filing requirements with industry-specific agencies, (5) 10-K risk factors discussing licensing requirements and renewal risks, (6) Change-of-control provisions requiring regulatory approval.",
+      "impact_of_absence": "Absence of structural licensing evidence WEAKENS H3. Company operates in substantially unregulated industry from structural perspective. Compliance certifications found (ISO, SOC, HIPAA, FedRAMP) are operational/contractual, not regulatory licenses. No evidence of government approvals required for ownership changes (beyond generally applicable SEC, antitrust, and Delaware corporate law)."
+    },
+    {
+      "description": "Evidence of minimal or no litigation exposure",
+      "why_expected": "If H4 (material litigation) were false, would expect to find: (1) 10-K Item 3 stating 'Company is not party to any material litigation', (2) No PACER docket entries for Rackspace entities, (3) No contingent liability reserves in financial statements, (4) Absence of litigation-related press releases or news coverage, (5) No disclosed settlements or judgments.",
+      "impact_of_absence": "Partial absence: Found active patent litigation (Alpha Modus, filed June 2024) and one remaining ransomware class action, BUT most ransomware litigation resolved via arbitration/settlement. No regulatory investigations found. No securities litigation found. Litigation exposure is PRESENT but appears LIMITED in scope. Not 'no material litigation' but also not bet-the-company litigation."
+    },
+    {
+      "description": "Evidence of independent board majority without PE sponsor representation",
+      "why_expected": "If Apollo's control (H5) were governance-limited despite equity majority, would expect to find: (1) Board majority identified as 'independent' with no Apollo affiliations, (2) Lead independent director structure limiting sponsor influence, (3) Special committee structures for related-party transactions, (4) Public statements about board independence or governance best practices.",
+      "impact_of_absence": "Absence of independent board evidence SUPPORTS H5. Board includes Apollo affiliates (Sobel, Mahidhar). Apollo controlled Chairman role until January 2025 (Sambur). No evidence of governance structures limiting Apollo's board influence. Combined with 53-57% equity stake, Apollo has full governance and equity control."
+    },
+    {
+      "description": "Evidence of material subsidiary operating licenses issued by foreign governments",
+      "why_expected": "If H3 were true in international context, would expect to find: (1) References to data residency licenses in EU, China, or other jurisdictions, (2) Telecommunications licenses in countries with restrictive telecom regulations, (3) Cloud service provider registrations with foreign regulators, (4) Restrictions on foreign ownership in subsidiary jurisdictions.",
+      "impact_of_absence": "Absence of foreign licensing evidence further WEAKENS H3. No evidence of foreign government licenses creating change-of-control constraints. Company lists 'international subsidiaries' (Canada, Singapore, Mexico, etc.) but no indication these jurisdictions impose structural licensing beyond general business registration."
+    },
+    {
+      "description": "Evidence that Inception entities have been dissolved or merged out of structure",
+      "why_expected": "If Inception Parent Inc. and Inception Intermediate Inc. served no ongoing purpose, would expect to find: (1) Dissolution filings with Delaware Secretary of State, (2) Merger certificates showing consolidation into parent or operating entities, (3) Subsidiary lists excluding these entities, (4) Management discussion of corporate simplification.",
+      "impact_of_absence": "Absence of dissolution evidence indicates Inception entities remain in structure despite serving no obvious operating purpose. Possible explanations: (1) Hold tax attributes from 2016 acquisition, (2) Contractually required by Apollo as ownership vehicle, (3) Not yet eliminated due to low priority or legal/tax complexity. Creates structural complexity without clear operational benefit."
+    },
+    {
+      "description": "Evidence of material intangible asset holdings (patents, trademarks, customer contracts) assigned to Rackspace Technology Inc. at parent level",
+      "why_expected": "If material assets consolidated at parent level (simplifying separation analysis), would expect to find: (1) IP assignment agreements from subsidiaries to parent, (2) Parent entity listed as party to material customer contracts, (3) Parent entity named as patent holder in USPTO records, (4) Master services agreements with parent as contracting entity.",
+      "impact_of_absence": "Absence of parent-level asset consolidation evidence suggests assets remain distributed across operating subsidiaries. This creates separation complexity: cannot acquire parent equity cleanly without inheriting all subsidiaries, and cannot carve out subsidiaries without addressing asset assignments and customer contract novations."
+    }
+  ]
+}

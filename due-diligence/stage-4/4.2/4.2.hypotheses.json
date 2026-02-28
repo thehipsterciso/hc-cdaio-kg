@@ -1,0 +1,139 @@
+{
+  "sub_stage": "4.2",
+  "document_metadata": {
+    "title": "Execution Throughput Hypotheses - Rackspace Technology, Inc.",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09"
+  },
+  "hypothesis_framework": [
+    {
+      "hypothesis_id": "H4.2-A",
+      "hypothesis": "Coordination load is the primary constraint on execution throughput—adding functional capacity (headcount, resources) does not increase throughput because coordination overhead scales faster than execution capacity",
+      "type": "STRUCTURAL",
+      "supporting_evidence_sought": [
+        "Customer issues requiring cross-functional coordination stalling despite adequate functional capacity",
+        "Sales force of 400+ reps booking deals but delivery throughput declining (margin erosion)",
+        "Layoffs reducing headcount but throughput not improving (revenue -7% FY2024)",
+        "CEO bottleneck limiting throughput despite functional teams having capacity",
+        "Multi-jurisdictional operations requiring 5-6x coordination for any enterprise initiative"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence that adding headcount increased throughput proportionally",
+        "Evidence of streamlined coordination processes improving delivery speed",
+        "Functional capacity constraints (not coordination) cited as primary bottleneck",
+        "Throughput improvements following organizational simplification or coordination reduction"
+      ],
+      "evidence_found": {
+        "supporting": [
+          "Customer complaints: 'dozens of engineers' involved but issues unresolved—coordination overhead exceeds productive work",
+          "Sales 400+ reps booking but margin eroding -13%/-3%—sales throughput not translating to delivery throughput",
+          "Layoffs 2021 (10%), 2023 (4%) reduced headcount but revenue declined -7% FY2024—throughput worsened",
+          "CEO serial bottleneck limits throughput (Stage 4.1: all cross-functional issues escalate to CEO)",
+          "Multi-jurisdictional isolation requires separate deployment per jurisdiction—coordination multiplier 5-6x"
+        ],
+        "disconfirming": [
+          "No evidence found of throughput improving with headcount additions",
+          "No evidence of coordination process improvements—customer complaints 'consistently getting worse'",
+          "No evidence of organizational simplification attempts beyond layoffs (which worsened coordination)"
+        ]
+      },
+      "status": "SUPPORTED",
+      "notes": "Hypothesis strongly supported. Multiple patterns indicate coordination overhead, not functional capacity, constrains throughput: (1) Customer issues stall despite 'dozens of engineers' involved, (2) Sales books deals delivery cannot execute, (3) Layoffs reduce capacity but throughput worsens not improves, (4) CEO bottleneck persists across leadership changes. Coordination load grows non-linearly with complexity while functional execution capacity grows linearly—creates widening gap."
+    },
+    {
+      "hypothesis_id": "H4.2-B",
+      "hypothesis": "Throughput degrades non-linearly with volume or complexity—organization can handle simple cases but throughput collapses for cross-functional or multi-jurisdictional work",
+      "type": "STRUCTURAL",
+      "supporting_evidence_sought": [
+        "Simple customer issues (single-function) resolving while complex issues (cross-functional) stalling",
+        "Standard deals flowing through sales-delivery handoff while custom/major deals requiring CEO involvement",
+        "Technology deployments to single jurisdiction succeeding while multi-jurisdictional deployments multiplying effort",
+        "Security incidents overwhelming organization despite having incident response capability for routine issues"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence of consistent throughput regardless of complexity",
+        "Complex cross-functional initiatives executing at similar pace to simple initiatives",
+        "Large custom deals processing as efficiently as standard deals",
+        "Multi-jurisdictional coordination not creating deployment delays"
+      ],
+      "evidence_found": {
+        "supporting": [
+          "SLA response times met (15min/1hr/4hr) for simple issues, but resolution time unbounded for complex cross-functional issues",
+          "Major healthcare deal ($100M+ TCV) required CEO involvement—large deals cannot flow through standard process",
+          "Multi-jurisdictional operations require 5-6x deployment effort—complexity creates multiplicative not additive cost",
+          "Security incidents (ransomware multi-month impact, zero-day monitoring offline) overwhelm despite routine security operations functioning"
+        ],
+        "disconfirming": [
+          "No evidence of complex work flowing at similar pace to simple work",
+          "No evidence of scalable processes for cross-functional or multi-jurisdictional coordination"
+        ]
+      },
+      "status": "SUPPORTED",
+      "notes": "Hypothesis supported. Throughput degrades NON-LINEARLY: Simple/single-function work processes normally, complex/cross-functional work stalls or requires CEO escalation. Coordination dependencies grow combinatorially with complexity while coordination capacity grows linearly or not at all—creates exponential degradation at scale."
+    },
+    {
+      "hypothesis_id": "H4.2-C",
+      "hypothesis": "Strategic initiatives and major organizational changes consume execution capacity without improving throughput—change initiatives are COST not CURE",
+      "type": "STRUCTURAL",
+      "supporting_evidence_sought": [
+        "Strategic review 2022-2023 consuming 12-18 months with no output",
+        "Business unit realignment Jan 2023 followed by revenue decline -7% FY2024",
+        "CEO transitions creating strategy discontinuity without throughput improvement",
+        "Layoffs reducing cost but also reducing throughput (revenue decline)",
+        "Customer satisfaction degrading during/after organizational changes"
+      ],
+      "disconfirming_evidence_sought": [
+        "Strategic initiatives followed by throughput improvements",
+        "Organizational changes improving customer satisfaction or execution metrics",
+        "CEO transitions creating performance inflections (positive)",
+        "Layoffs enabling focus and productivity gains"
+      ],
+      "evidence_found": {
+        "supporting": [
+          "Strategic review 2022-2023: 12-18 months consumed, abandoned with no transaction",
+          "Business unit realignment Jan 2023: Revenue -7% FY2024 post-realignment, customer complaints worsening",
+          "Three CEOs three years: Each transition creates discontinuity, pattern of deterioration persists",
+          "Layoffs 2021, 2023: Cost structure remains high, revenue declining, customer satisfaction worsening",
+          "Trustpilot: 'consistently getting worse' 2024—post-realignment customer experience degrading"
+        ],
+        "disconfirming": [
+          "No evidence of strategic initiatives improving throughput",
+          "No evidence of organizational changes improving customer satisfaction—opposite pattern evident"
+        ]
+      },
+      "status": "SUPPORTED",
+      "notes": "Hypothesis supported. Strategic initiatives consume organizational capacity (management attention, employee uncertainty, process disruption) without resolving structural constraints (Apollo control, debt burden, regulatory fragmentation, authority gaps). Each initiative attacks symptoms not root causes—creates change fatigue without performance improvement."
+    },
+    {
+      "hypothesis_id": "H4.2-D",
+      "hypothesis": "Execution throughput measured by financial/customer metrics (revenue growth, margin, satisfaction) is declining despite operational activity metrics (ticket volume, sales bookings) appearing stable—creates THROUGHPUT ILLUSION",
+      "type": "STRUCTURAL",
+      "supporting_evidence_sought": [
+        "SLA response times met (activity metric) while customer satisfaction declining (outcome metric)",
+        "Sales bookings healthy (activity metric) while margins eroding (outcome metric)",
+        "Ticket volume manageable (activity metric) while customer churn increasing (outcome metric)",
+        "Organizational headcount/capacity appearing adequate while delivery performance degrading"
+      ],
+      "disconfirming_evidence_sought": [
+        "Activity metrics and outcome metrics aligned (both improving or both degrading)",
+        "Evidence that meeting SLA response times correlates with customer satisfaction",
+        "Evidence that sales bookings translate to profitable delivery",
+        "Management openly acknowledging activity/outcome metric divergence"
+      ],
+      "evidence_found": {
+        "supporting": [
+          "SLA response times 15min/1hr/4hr met (activity) but customer complaints 'consistently getting worse' (outcome)",
+          "Sales force 400+ reps maintained (activity) but revenue -7% FY2024, margins eroding (outcome)",
+          "Support tickets processed (activity) but customer complaints 'multiple tickets, no resolution' (outcome)",
+          "400+ sales reps booking deals (activity) but CEO walking away from unprofitable renewals (outcome)"
+        ],
+        "disconfirming": [
+          "No evidence of activity and outcome metrics aligned",
+          "CEO 'walk away' policy Q4 2024 acknowledges (implicitly) that booking activity not producing profitable outcomes"
+        ]
+      },
+      "status": "SUPPORTED",
+      "notes": "Hypothesis supported. Organization optimizes for measurable activity metrics (SLA response times, sales bookings, ticket processing) while outcome metrics (customer satisfaction, profitability, revenue growth) degrade. Creates illusion of operational stability while business deteriorates. Activity metrics mask throughput failure until financial/customer outcomes force recognition."
+    }
+  ]
+}

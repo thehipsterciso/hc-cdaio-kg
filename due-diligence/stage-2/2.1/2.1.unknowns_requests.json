@@ -1,0 +1,124 @@
+{
+  "unknowns_requests": [
+    {
+      "information_needed": "Revenue by customer segment: Federal Government vs State/Local Government vs UK Sovereign vs China vs Commercial (US, EU, APAC)",
+      "why_needed": "Determine magnitude of structurally non-portable revenue (FedRAMP government, UK Sovereign, China) to assess valuation haircut and buyer universe constraints (foreign buyers cannot acquire government/UK Sovereign without destroying value).",
+      "request_to": "Management / CFO",
+      "format": "Excel file with monthly revenue by segment (24 months historical + 12 months forecast), customer count by segment, ARR by segment"
+    },
+    {
+      "information_needed": "Top 25 customers by annual revenue with contract details",
+      "why_needed": "Assess customer concentration risk (do top 10 = 10%, 20%, 30%+ of revenue?), identify renewal risk, understand contract terms and pricing leverage.",
+      "request_to": "Management / Chief Revenue Officer",
+      "format": "Excel file with columns: Customer Name, Industry, Annual Revenue, % of Total Revenue, Contract Start Date, Contract Term (months), Renewal Date, Pricing (Fixed vs Variable), Gross Margin %, NPS/CSAT Score, Churn Risk (Low/Medium/High), Notes"
+    },
+    {
+      "information_needed": "Hyperscaler reseller agreements: AWS Consulting Partner Agreement, Azure CSP Agreement, Google Cloud Partner Agreement",
+      "why_needed": "Understand economic terms (partner credits/rebates %, volume tiers), agreement duration, termination provisions, change-of-control consent requirements. Determine if Public Cloud economics are sustainable or at risk.",
+      "request_to": "Management / Chief Partnerships Officer OR hyperscaler account managers",
+      "format": "Full executed agreements under NDA, with specific focus on: Schedule A (Partner Credits/Rebates), Term & Termination clauses, Change of Control provisions, Volume Commitment Requirements"
+    },
+    {
+      "information_needed": "Email hosting segment P&L: Pre-price-increase baseline (2024-2025) and post-price-increase actuals/forecast (March-Dec 2026)",
+      "why_needed": "Quantify revenue impact of 706% price increase, assess churn severity, determine if email hosting is material revenue line or immaterial legacy business. Understand if price increase is successful margin defense or accelerating decline.",
+      "request_to": "Management / CFO",
+      "format": "Excel file with: Monthly revenue (Jan 2024 - Dec 2026), Customer count, Mailbox count, Churn rate % by month, ARPU (average revenue per mailbox), Gross Margin %, Operating Margin %. Separate analysis for: Direct customers vs Reseller channel, SMB vs Enterprise segment."
+    },
+    {
+      "information_needed": "Acquired entity integration status: Datapipe, Onica, TriCore, RelationEdge customer retention, platform consolidation, synergy realization",
+      "why_needed": "Understand if $1.7B acquisition spend created value (successful integration, synergies captured) or destroyed value (customer churn, incomplete integration, duplicative costs). Assess hidden liabilities buyer would inherit.",
+      "request_to": "Management / Chief Integration Officer OR CFO",
+      "format": "Post-acquisition review deck for each acquisition with: Customer retention % (year 1, 2, 3+ post-close), Revenue retention %, Technology platform migration status (% customers on unified Rackspace platform), Synergy realization (projected vs actual $), Staff retention (% key employees remaining), Outstanding integration work items"
+    },
+    {
+      "information_needed": "First Lien Credit Agreement (full document) and recent compliance certificates",
+      "why_needed": "Understand debt constraints: EBITDA covenant calculations and headroom, springing covenant trigger (revolver utilization >35%), change-of-control provisions requiring lender consent or mandatory prepayment, negative covenants restricting operational flexibility.",
+      "request_to": "Management / CFO OR lead lender (KKR Capital Markets, Goldman Sachs, or other syndicate member)",
+      "format": "Full executed First Lien Credit Agreement, most recent Compliance Certificate (showing covenant calculations and headroom), any amendment history"
+    },
+    {
+      "information_needed": "China operations: Revenue, legal entity structure, JV partner (if applicable), customer list, regulatory compliance status",
+      "why_needed": "Assess materiality (if <1% of revenue, divest-able; if >5%, material and complex). Understand geopolitical risk, government oversight, foreign ownership restrictions, and divestiture optionality.",
+      "request_to": "Management / APAC Regional Lead OR General Counsel",
+      "format": "China operations summary deck: Revenue 2022-2024, Customer count and top customers, Legal entity name and ownership structure, JV partner details (if applicable), Cybersecurity Law compliance documentation, Government oversight mechanisms, Restrictions on foreign ownership/control"
+    },
+    {
+      "information_needed": "Data center footprint: Owned vs leased facilities, capacity utilization %, lease expiration dates, exit optionality",
+      "why_needed": "Private Cloud declining 13% YoY likely creates underutilized data center capacity (fixed cost burden). Understand: (1) Can excess capacity be shed (sublease, early termination)? (2) What is cost of underutilization? (3) Are leases long-term obligations creating structural cost that cannot be reduced as revenue declines?",
+      "request_to": "Management / Chief Real Estate Officer OR VP Operations",
+      "format": "Excel file with: Data center location, Owned or Leased, If leased: Landlord, Lease expiration date, Early termination provisions, Annual rent, Square footage, Capacity (MW or rack units), Utilization %, Assigned customer segment (commercial, government, UK sovereign, etc.)"
+    },
+    {
+      "information_needed": "Apollo Global Management exit intent and transaction history",
+      "why_needed": "Understand if Apollo is motivated seller (seeking exit) or passive holder (waiting for turnaround). Motivated seller creates deal urgency and negotiating leverage; passive holder creates price expectations and timeline uncertainty.",
+      "request_to": "Apollo principals (Aaron Sobel, Vikram Mahidhar) via backchannel OR investment bankers (if Apollo has engaged sell-side advisor)",
+      "format": "Informal discussion to gauge: (1) Apollo's return expectations and timeline, (2) Whether Apollo has explored exit previously (process run, buyer discussions, valuation feedback), (3) Apollo's view on Rackspace strategic positioning and turnaround prospects, (4) Willingness to accept sponsor-to-sponsor transaction vs strategic buyer vs public market hold"
+    },
+    {
+      "information_needed": "Competitive positioning and market share: Rackspace vs peers (Accenture Cloud, DXC, IBM, Wipro, HCL) and vs hyperscaler native managed services",
+      "why_needed": "Determine if Rackspace is market leader (strong strategic value), niche player (limited scale), or losing relevance (melting ice cube). Affects valuation methodology, strategic rationale, and turnaround plausibility.",
+      "request_to": "Third-party market research (Gartner Magic Quadrant, Forrester Wave, IDC MarketScape) OR primary customer research",
+      "format": "Gartner Magic Quadrant for Public Cloud Infrastructure Managed Service Providers, Forrester Wave: Hybrid Cloud Management, IDC MarketScape: Worldwide Managed Cloud Services. Customer interviews (10-15 current + 5-10 former customers) on: Why chose Rackspace vs alternatives, Perception of value vs hyperscaler-direct or IT services giants, Reasons for churn (if former customer)"
+    },
+    {
+      "information_needed": "Gross margin and profitability by customer segment: Government, UK Sovereign, Public Cloud, Private Cloud, Email Hosting, Professional Services",
+      "why_needed": "Understand which revenue is profitable vs margin-dilutive. Identify if declining revenue segments (Private Cloud -13%, Public Cloud -3%) are high-margin or low-margin, affecting profit impact of revenue decline.",
+      "request_to": "Management / CFO",
+      "format": "Excel file with: Revenue by segment, Cost of Revenue by segment (direct costs only), Gross Profit $, Gross Margin %, Contribution to total gross profit. Historical (2022-2024) and forecast (2025-2026)."
+    },
+    {
+      "information_needed": "Customer churn rate (monthly), customer acquisition cost (CAC), customer lifetime value (LTV), and cohort retention curves",
+      "why_needed": "Assess revenue quality and unit economics. High churn suggests customer dissatisfaction and unsustainable revenue base. CAC > LTV indicates unprofitable customer acquisition. Cohort analysis shows retention trends over time.",
+      "request_to": "Management / Chief Revenue Officer OR VP Customer Success",
+      "format": "Excel file with: Monthly churn rate % (24 months historical), Gross churn $ and net churn $ (accounting for upsells/downsells), CAC by channel (direct sales, partners, digital), LTV calculation (methodology and assumptions), Cohort retention curves (% of customers/revenue retained by cohort year: Year 1, 2, 3, 5+)"
+    },
+    {
+      "information_needed": "Sales bookings detail: FY 2024 bookings by segment (Public Cloud, Private Cloud, Government, UK Sovereign), TCV vs ACV, conversion to ARR",
+      "why_needed": "Bookings grew 14% YoY (positive signal) but need to understand: (1) Which segments are winning new business? (2) What is sales cycle and lag between bookings and revenue recognition? (3) Are bookings converting to ARR or languishing as backlog?",
+      "request_to": "Management / Chief Revenue Officer",
+      "format": "Excel file with: Quarterly bookings 2023-2024 by segment, TCV (total contract value) vs ACV (annual contract value), Weighted pipeline (opportunities x probability), Bookings conversion to revenue (% of bookings that convert to recognized revenue within 90 days, 180 days, 12 months)"
+    },
+    {
+      "information_needed": "VMware licensing costs and exposure to Broadcom price increases",
+      "why_needed": "Broadcom acquired VMware (Nov 2023) and raised prices 200-300%. Rackspace Private Cloud uses VMware extensively. Understand: (1) Annual VMware licensing cost $ and % of Private Cloud COGS, (2) Impact of Broadcom price increases (absorbed by Rackspace = margin compression, passed to customers = churn risk), (3) Migration plan to alternatives (OpenStack, Microsoft) and feasibility.",
+      "request_to": "Management / CFO OR VP Technology Operations",
+      "format": "VMware cost analysis: Historical VMware licensing spend 2022-2024, Projected 2025-2026 with Broadcom price increases, Customer contracts with pass-through provisions vs fixed pricing, % of Private Cloud infrastructure on VMware vs alternatives, Migration plan timeline and cost estimate (if applicable)"
+    },
+    {
+      "information_needed": "Customer contract terms: Standard MSA (Master Service Agreement), SLA (Service Level Agreement), pricing escalation clauses, termination provisions",
+      "why_needed": "Understand customer lock-in mechanisms (if any): contract duration, early termination penalties, auto-renewal provisions, pricing escalation rights. Month-to-month billing suggests weak lock-in, but enterprise customers may have multi-year agreements.",
+      "request_to": "Management / General Counsel OR Chief Revenue Officer",
+      "format": "Template customer MSA and SLA (redacted), Summary of standard contract terms: Average contract duration (% month-to-month, % annual, % multi-year), Early termination provisions and penalties, Auto-renewal terms, Price escalation rights (CPI, fixed %, at-will), Change-of-control provisions (customer termination right?)"
+    },
+    {
+      "information_needed": "Capital expenditure requirements: Data center infrastructure, hardware refresh cycles, technology platform investments (2025-2027 forecast)",
+      "why_needed": "Understand CapEx intensity and cash burn. Private Cloud requires ongoing investment in servers, storage, networking equipment. Declining revenue creates pressure: underinvest (service degradation, customer churn) OR maintain investment (negative cash flow). Assess buyer's investment requirements post-acquisition.",
+      "request_to": "Management / CFO OR CTO",
+      "format": "Excel file with: Historical CapEx 2022-2024 (data center, hardware, software, other), CapEx forecast 2025-2027 by category, Maintenance CapEx vs growth CapEx, Hardware refresh cycle assumptions (servers 3-5 years?), Technology platform investments (cloud management tools, automation, AI)"
+    },
+    {
+      "information_needed": "IT systems architecture: Number of distinct ERP, CRM, billing, ITSM platforms; integration status; technical debt",
+      "why_needed": "If acquired entities (Datapipe, Onica, TriCore) remain on separate systems, this creates: (1) Integration complexity and cost for buyer, (2) Operational inefficiency and duplicative costs, (3) Data fragmentation preventing unified customer view. Assess IT systems consolidation requirements post-acquisition.",
+      "request_to": "Management / CIO OR CTO",
+      "format": "IT systems inventory: ERP (# instances, vendors), CRM (# instances), Billing systems (# instances), ITSM/ticketing (# instances), Monitoring/observability platforms (# instances), Data warehouses/analytics, Integration architecture (APIs, middleware), Technical debt assessment (aging systems, EOL software, migration requirements)"
+    },
+    {
+      "information_needed": "Workforce analytics: Headcount by function, attrition rate, certification levels (AWS/Azure/Google), geographic distribution",
+      "why_needed": "Certified cloud engineers are scarce and expensive. High attrition degrades service delivery (Fanatical Support depends on people). Understand: (1) Workforce stability (attrition vs industry norm 15-20%), (2) Certification levels (% AWS/Azure/Google certified), (3) Geographic distribution (onshore vs offshore cost structure), (4) Retention risk post-acquisition.",
+      "request_to": "Management / CHRO OR Chief People Officer",
+      "format": "Excel file with: Headcount by function (sales, delivery/engineering, customer success, G&A) as of year-end 2023, 2024, 2025, Attrition rate % (voluntary vs involuntary), AWS/Azure/Google certifications (# certified engineers by level), Geographic distribution (US, UK, India, LATAM, other), Compensation benchmarking (vs market 50th percentile, 75th, 90th?)"
+    },
+    {
+      "information_needed": "Litigation register: Active lawsuits, IP disputes, regulatory investigations, customer disputes, employment claims",
+      "why_needed": "Stage 1 identified Alpha Modus patent infringement lawsuit (June 2024, W.D. Texas) regarding FCoE technology. Understand: (1) Litigation exposure $ (potential damages, settlement costs), (2) IP risk (does Rackspace have freedom-to-operate?), (3) Other hidden liabilities (customer disputes, employment claims, regulatory investigations).",
+      "request_to": "Management / General Counsel",
+      "format": "Litigation register: Case name, Court, Filing date, Plaintiff, Claims, Rackspace's defense, Potential exposure $ (low/mid/high), Status (discovery, trial, settlement discussions), Expected resolution timing, Insurance coverage (if applicable)"
+    },
+    {
+      "information_needed": "Management incentive structure and retention: CEO/CFO/CRO/CTO compensation, change-of-control provisions, unvested equity, retention agreements",
+      "why_needed": "Assess: (1) Management retention risk post-acquisition (unvested equity, change-of-control severance, retention bonuses), (2) Alignment of incentives (are executives incentivized for growth, profitability, customer retention?), (3) Cost of management turnover or retention packages buyer must fund.",
+      "request_to": "Management / CHRO OR from SEC proxy statement (DEF 14A)",
+      "format": "Executive compensation summary (from proxy statement): Base salary, Annual bonus (target and actual), Equity grants (unvested stock/options), Change-of-control provisions (cash severance, equity acceleration), Retention agreements (if any), Non-compete/non-solicit terms"
+    }
+  ]
+}

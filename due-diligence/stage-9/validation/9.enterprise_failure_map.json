@@ -1,0 +1,158 @@
+{
+  "enterprise_failure_map": {
+    "failure_sequences": [
+      {
+        "trigger": "AWS US-EAST-1 multi-AZ outage 6-12 hours",
+        "cascade": "T+0: $100-200M customer workloads inaccessible → T+1-6h: SLA breaches accumulate ($8-40M credits), customer churn decisions → T+6-12h: NOC overwhelmed, press coverage amplifies damage → T+30-90d: 5-10% affected customers terminate ($5-20M revenue loss) → T+90d-12m: AWS competitive displacement 10-15% ($10-30M additional loss), potential AWS partner credit reduction $25-35M annually",
+        "total_impact": "$15-50M revenue loss + $8-40M SLA credits + $25-35M ongoing margin compression potential = $48-125M total",
+        "severity": "HIGH"
+      },
+      {
+        "trigger": "Ransomware on Private Cloud VMware infrastructure (similar to December 2022 Exchange)",
+        "cascade": "T+0-2h: vCenter/ESXi encrypted, 50-200 customers inaccessible ($20-80M revenue) → T+2-24h: Incident response paralysis, customer pressure mounts → T+24-72h: Repair vs rebuild vs discontinue decision (Exchange precedent: discontinue) → T+3-7d: FedRAMP/SEC/GDPR notifications, 30-50% affected customers terminate ($6-40M) → T+3-12m: Contagion churn 5-10% of unaffected base ($49-104M), insurance non-renewal risk, Private Cloud viability questioned",
+        "total_impact": "$69-184M revenue loss + $10-40M direct costs + $5-15M annual insurance premium increases = $84-239M cumulative",
+        "severity": "HIGH"
+      },
+      {
+        "trigger": "Billing system failure 72+ hours preventing invoice generation",
+        "cascade": "T+0-24h: Cannot generate $228M monthly invoices → T+24-72h: Revenue recognition deadline pressure, month-end close blocked → T+3-7d: Cash flow crisis ($194M hyperscaler payment due without customer collections), working capital exceeds $173M cash → T+7-14d: Manual billing backup (10-50X labor, 2-5% errors) → T+30-90d: Customer trust erosion 2-5% incremental churn ($55-137M), competitive exploitation 3-5% ($82-137M), SOX 404 material weakness",
+        "total_impact": "$137-274M annual revenue at risk + $194M temporary working capital requirement + $10-50M system replacement = $341-518M cumulative",
+        "severity": "HIGH"
+      },
+      {
+        "trigger": "3-5 senior engineers/architects simultaneous departure (FedRAMP team, platform architects, VMware specialists)",
+        "cascade": "T+0-30d: Knowledge drain, incomplete handoffs → T+30-90d: Incident response degradation (15min → 2-4h MTTR), customer SLA breaches → T+90-180d: Hiring lag (3-6 months sourcing, 3-6 months onboarding), understaffing persists → T+180d-12m: Customer escalation/churn 5-10% ($4-27M), team morale decline triggers secondary departures (death spiral) → T+12-24m: Recruiting difficulty (employer brand damage), 20-40% salary premium required ($360K-$1M annually)",
+        "total_impact": "$4-27M revenue loss + $150-750K hiring costs + $360K-$1M annual salary premium + $20-50M enterprise account following individuals = $25-79M",
+        "severity": "MED"
+      },
+      {
+        "trigger": "Change of control to foreign acquirer invalidating FedRAMP authorization",
+        "cascade": "T+0 (announcement): FedRAMP authorization under FOCI review, government customers notified → T+0-30d: 20-40% government customers invoke termination for convenience ($54-164M revenue) → T+30-180d: FOCI mitigation review by DoD (SSA/PA/VTA requirements reduce economic control) → T+180d-18m: Re-authorization process 12-18 months, additional 20-30% customer loss ($32-86M) → T+6-12m: UK Sovereign impact if non-UK buyer, UK customers exit → T+12-24m: Forced divestiture at 30-60% discount ($108-329M value destruction), commercial customer contagion 3-5% ($82-137M)",
+        "total_impact": "$270-410M government revenue elimination + $108-329M divestiture discount + $82-137M commercial contagion + $5-15M stranded infrastructure = $465-891M total value destruction",
+        "severity": "HIGH"
+      }
+    ],
+    "esg_operating_constraints": [
+      {
+        "constraint": "UK government procurement requires SBTi-validated carbon reduction targets",
+        "mechanism": "UK Procurement Act 2023 + G-Cloud 14 framework mandate science-based targets for high-value contracts",
+        "impact": "Without SBTi validation: UK government/NHS/police £1B+ addressable market becomes INELIGIBLE for RFP participation. UK Sovereign Services (launched March 2024) customer acquisition blocked.",
+        "enforcers": "UK Cabinet Office, Crown Commercial Service, individual UK government agencies, Science Based Targets initiative (third-party validator)",
+        "activation": "IMMEDIATE during procurement evaluation - automatic disqualification if SBTi targets absent"
+      },
+      {
+        "constraint": "Carbon Reduction Plan (CRP) mandatory for UK public sector contracts >£5M annually",
+        "mechanism": "UK Procurement Policy Note 06/21 requires published CRP showing net-zero 2050 commitment, baseline emissions, reduction targets, updated annually",
+        "impact": "Without published/updated CRP: Automatic disqualification from UK public sector RFPs above threshold. 100% of UK Sovereign revenue depends on CRP compliance. Existing customers may trigger contract review if CRP lapses.",
+        "enforcers": "UK Cabinet Office, individual UK public sector procuring authorities, Crown Commercial Service",
+        "activation": "IMMEDIATE - pass/fail gate before technical/commercial evaluation of RFP responses"
+      },
+      {
+        "constraint": "Data center environmental compliance - water usage, closed-loop cooling, energy efficiency",
+        "mechanism": "Multi-state environmental regulations (Minnesota closed-loop mandate, California SB 58 tax credits, 8-state water disclosure, AIM Act HFC phasedown)",
+        "impact": "Without compliance: New data center construction BLOCKED in Minnesota and states with closed-loop requirements. Expansion constrained in water-scarce regions (40%+ of US market). Retrofit CapEx $40M-$200M across 40+ facilities for cooling system compliance by 2036. 6-18 month permitting delays.",
+        "enforcers": "State environmental agencies (Minnesota DNR, California), US EPA (AIM Act), local water districts, zoning authorities",
+        "activation": "MIXED - IMMEDIATE for new construction (permits required before build), SHORT_LAG for retrofits (2036 deadline), STRESS-ACTIVATED during drought (water allocation cuts)"
+      },
+      {
+        "constraint": "100% renewable energy requirement from UK government, NHS, FCA/PRA customers",
+        "mechanism": "UK Greening Government Commitments ICT strategy, customer sustainability audits with renewable energy thresholds, EU CSRD supply chain due diligence",
+        "impact": "If renewable percentage declines: UK government/NHS procurement scores decline (reduced win rates), existing customer sustainability audits trigger remediation requirements (60-180 day cure periods or contract termination), FCA/PRA customers face their own regulatory compliance gaps forcing exit or contractual guarantees",
+        "enforcers": "UK government departments/agencies, regulated sector customers (via FCA/PRA requirements), EU customers (CSRD obligations)",
+        "activation": "STEADY-STATE for new business (pre-sales evaluation), POST-CONTRACT for existing (annual/biannual audits), STRESS-ACTIVATED during energy crisis (cost vs commitment tension)"
+      }
+    ],
+    "human_and_org_fragilities": [
+      {
+        "fragility": "FedRAMP US citizen security team (10-30 personnel) - $270-410M government revenue dependency",
+        "failure_mode": "5-10 senior team members depart simultaneously → continuous monitoring gaps, incident response degradation, FedRAMP findings accumulate → authorization suspension risk → 20-40% government customers terminate immediately ($54-164M revenue loss) → death spiral as remaining team stressed",
+        "why_structural": "US citizenship 100% requirement cannot be eliminated without losing FedRAMP authorization. Clearances take 6-18 months. Talent pool severely constrained. Team size insufficient for 24/7/365 continuous monitoring of 800+ NIST controls. NO backup team disclosed."
+      },
+      {
+        "fragility": "UK Sovereign isolated team (10-20 personnel) - <$135M nascent segment",
+        "failure_mode": "3-5 UK team members depart (50% of team) → service degradation, incident response delays, new customer onboarding blocked → VMware Sovereign Cloud certification at risk → customer churn 40-50% of immature base → segment becomes unviable (<$68-81M remaining) → forced exit following Exchange discontinuation precedent",
+        "why_structural": "Architectural isolation PERMANENT - integration with global operations PROHIBITED. Cannot access global resources for backup. UK-only hiring constrained. Nascent segment revenue insufficient to absorb team attrition. If depleted, CANNOT BE RESCUED."
+      },
+      {
+        "fragility": "Platform infrastructure architects (3-8 individuals) - $2.7B revenue-critical systems",
+        "failure_mode": "2-3 architects depart (billing, IAM, monitoring) → troubleshooting capability lost, platform changes frozen, incident recovery impossible → platform failure (billing 72h, IAM 24h, monitoring hours) → business operations UNRECOVERABLE without expert knowledge → emergency rehiring at 3-5X compensation or platform technical debt compounds permanently",
+        "why_structural": "Eight platforms SINGLE POINTS OF FAILURE (Stage 6.3) with CATASTROPHIC BLAST RADIUS. Platforms contain UNDOCUMENTED LOGIC and TRIBAL KNOWLEDGE - only architects understand internals. Likely custom-built (billing reconciles 3 hyperscaler APIs, 100+ entity attribution). NO disclosed redundancy or backup architects."
+      },
+      {
+        "fragility": "Senior VMware architects (5-15 individuals) - $1,055M Private Cloud (39% revenue, 40-50% operating income)",
+        "failure_mode": "3-5 VMware architects depart → incident response degrades, MTTR increases 2-5X, customer relationships lost → Private Cloud churn accelerates 10-20% beyond baseline ($106-211M revenue loss) → operating income collapses ($41-106M at 38.6% margin) → death spiral (remaining architects overloaded → secondary departures) → segment viability questioned, potential exit",
+        "why_structural": "Senior VMware expertise scarce (10+ years experience, customer-specific configuration knowledge, Broadcom relationship management). Customer relationship dependencies - Fortune 500 accounts $20-50M revenue follow individuals. NO succession plan (CapEx declining 25% suggests no training investment). Competitive poaching ACTIVE (AWS/Azure/Nutanix recruiting VMware experts)."
+      },
+      {
+        "fragility": "CEO as sole cross-functional coordinator - third CEO in three years (Jones, Maletira, Kandiah)",
+        "failure_mode": "CEO Kandiah departs (fourth transition <4 years) → cross-functional coordination FREEZES, major deals stall, strategic initiatives pause → Q4 2024 walk away policy enforcement lapses, sales-delivery margin erosion resumes, BU conflicts accumulate → organizational throughput declines, customer satisfaction collapses → Apollo loses confidence → strategic alternatives (distressed sale, segment divestitures, Chapter 11 restructuring)",
+        "why_structural": "CEO is 'SOLE CROSS-FUNCTIONAL COORDINATOR' per Stage 4.1 with NO OPERATING COMMITTEE and NO EMPOWERED COORDINATORS. Authority architecture CENTRALIZES all cross-functional decisions with CEO. Three CEOs in three years PROVES role is UNSUSTAINABLE by design. Coordination load exceeds individual capacity. This is ARCHITECTURE PROBLEM not talent problem - replacing CEO treats symptom not cause."
+      }
+    ],
+    "ecosystem_shock_paths": [
+      {
+        "dependency": "AWS - Advanced Partner Status ($500-700M revenue)",
+        "shock": "Major multi-region outage 6-12 hours",
+        "propagation": "Immediate: Customer workloads DOWN, management plane FAILS, NOC overwhelmed → Hours: SLA breaches $8-40M, customer churn decisions → Months: 15-25% churn ($75-175M revenue), AWS competitive displacement, potential partner credit reduction $25-35M annually",
+        "replaceability": "CANNOT BE REPLACED - customers chose AWS specifically, workloads use proprietary services (Lambda, DynamoDB), multi-cloud failover FICTION. Rackspace ZERO LEVERAGE (Advanced Partner status provides no operational control). When AWS fails, Rackspace customers DOWN until AWS recovers."
+      },
+      {
+        "dependency": "VMware/Broadcom - Private Cloud vendor ($1,055M revenue, 40-50% operating income)",
+        "shock": "ACTIVE: 200-300% price increase ($100-210M annually), potential further increases 50-100% or licensing restrictions",
+        "propagation": "Immediate: Profitability threatened (38.6% margin compressed) → Months: Customer churn 30-50% if prices passed through ($316-528M revenue) → Years: Private Cloud uneconomical, segment exit following Exchange precedent, company unprofitable (Private Cloud contributes 40-50% of OI)",
+        "replaceability": "CANNOT BE REPLACED without customer consent and massive disruption - exit cost $200-500M + churn $316-528M = $516M-$1B exceeds staying despite price shock. Rackspace is VENDOR HOSTAGE - Broadcom knows exit impossible and prices accordingly."
+      },
+      {
+        "dependency": "Azure - CSP 2-Tier Distributor ($500-700M revenue)",
+        "shock": "Regional outage, CSP program changes (margin reductions, service restrictions, capacity prioritization favoring direct customers)",
+        "propagation": "Similar to AWS for outages. CSP changes: 5% margin reduction = $25-35M annual GP loss. Service restrictions create competitive disadvantage. Capacity prioritization during shortages (AI/ML compute) blocks Rackspace customer provisioning → customers perceive Rackspace as BLOCKER → accelerate migration to Azure-direct.",
+        "replaceability": "CANNOT BE REPLACED - same portability constraints as AWS. CSP status CANNOT BE UPGRADED easily (not large enough for Tier 1 or direct). 2-Tier creates DOUBLE INTERMEDIATION reducing control. ASYMMETRIC POWER - Microsoft optimizes for direct enterprise ($BILLIONS) not CSP partners ($MILLIONS)."
+      },
+      {
+        "dependency": "ScienceLogic - Monitoring Platform (September 2024 breach precedent)",
+        "shock": "Zero-day vulnerability, extended outage, or product discontinuation",
+        "propagation": "Immediate: Monitoring OFFLINE, operations BLIND, incident response without visibility = extended MTTR → Days: Customer SLA breaches, panic from 'no data' dashboards → Months: Customer confidence damage, operations team burnout. Discontinuation: 12-24 month vendor replacement ($10-50M cost), monitoring fragility during migration.",
+        "replaceability": "CAN BE REPLACED but VERY COSTLY AND DISRUPTIVE - alternatives exist (Datadog, New Relic, Splunk) but migration requires 24-36 months (vendor selection, implementation, customer configuration migration, operations retraining, parallel run). CANNOT REPLACE DURING INCIDENT - stuck with vulnerable/unavailable platform until vendor remediation."
+      },
+      {
+        "dependency": "Hyperscaler Partner Portal APIs (AWS/Azure/Google) - Billing System Integration",
+        "shock": "Extended API outage 48-72+ hours, breaking changes without notice, rate limiting during month-end billing",
+        "propagation": "Immediate: Cannot pull consumption data, billing blocked → Days: $228M monthly invoicing delayed, revenue recognition blocked, cash trap ($194M hyperscaler payments due without customer collections exceeds $173M cash) → Weeks: Manual billing (10-50X labor, 2-5% errors), customer disputes, SOX 404 material weakness, covenant stress",
+        "replaceability": "CANNOT BE REPLACED - no alternative to hyperscaler APIs for consumption data. MUST use partner portals (only source). NO redundant data source. DEPENDENCY PERMANENT as long as reselling hyperscaler services. Hyperscalers control availability/format/rate limits UNILATERALLY. NO SLA guarantees for partner APIs."
+      },
+      {
+        "dependency": "BT Partnership - UK Sovereign Communications Infrastructure (<$135M revenue)",
+        "shock": "Partnership termination, BT service outage, or BT acquisition by non-UK entity",
+        "propagation": "Termination: 6-12 month transition to alternative, VMware Sovereign certification review, service disruption → customer churn 40-50% of nascent base. Outage: UK government/NHS/police/financial services lose connectivity → severe business impact → reputational damage. Acquisition: Sovereignty promise compromised → customer exits during uncertainty.",
+        "replaceability": "CAN BE REPLACED but LIMITED OPTIONS - UK sovereign communications providers <10 (BT, Virgin Media Business, CityFibre). Replacement timeline 6-12 months (selection, contract, integration, certification). Segment viability risk - <$135M revenue insufficient to absorb partnership transitions. One major failure may force exit."
+      }
+    ],
+    "risk_transfer_failures": [
+      {
+        "assumed_transfer": "Cyber insurance comprehensively covers ransomware incident costs",
+        "actual_reality": "Exchange precedent: $10.8-12M costs, $5.4M recovery (45-50% ONLY). Three incidents in 36 months consume aggregate limits. Exclusions likely: unpatched vulnerabilities, failure to maintain reasonable security, prior acts continuation. Consequential damages (customer churn $50-200M, regulatory revenue loss $270-410M FedRAMP, valuation destruction) 100% EXCLUDED.",
+        "residual_uninsured": "$5-20M uninsured direct costs per incident + $69-184M revenue loss (ransomware scenario) + $5-15M annual premium increases = $79-219M uninsured per major incident. Pattern: 83-95% of total impact UNINSURED across all scenarios."
+      },
+      {
+        "assumed_transfer": "Business interruption insurance covers revenue loss from hyperscaler outages or billing system failures",
+        "actual_reality": "BI requires DIRECT PHYSICAL DAMAGE to trigger - hyperscaler service interruptions NOT covered, billing software bugs NOT physical damage, ransomware encryption is cyber event not BI. Contingent BI requires physical damage at SUPPLIER site (AWS fire = covered, AWS software outage = NOT covered). Sub-limits 10-25% of main BI limit = $5-15M vs $15-50M AWS outage loss. SLA credits ($8-40M) excluded as contractual liability not lost profit.",
+        "residual_uninsured": "AWS outage: $48-125M total impact 90-100% UNINSURED. Billing failure: $153-528M cumulative impact 97-100% UNINSURED. Hyperscaler/system operational failures STRUCTURALLY UNINSURABLE under BI policies."
+      },
+      {
+        "assumed_transfer": "E&O insurance protects against customer lawsuits and liability",
+        "actual_reality": "E&O excludes CONTRACTUAL LIABILITY (SLA credits are contractual obligations = EXCLUDED). E&O excludes CONSEQUENTIAL DAMAGES (customer revenue losses = indirect = EXCLUDED). Claims-made coverage creates timing gaps (incident 2024, claim 2026 = may not be covered if policy changed/lapsed). Per-claim deductibles if insurer treats simultaneous customer claims as separate (could be $10-100M self-insured).",
+        "residual_uninsured": "SLA credits $8-40M per major outage 100% UNINSURED. Customer consequential damages potentially $X million per enterprise customer EXCLUDED or exceed limits. Revenue loss from churn $15-50M (AWS) to $69-184M (ransomware) DEFINITELY UNINSURED."
+      },
+      {
+        "assumed_transfer": "Insurance renewability is routine with stable, predictable pricing",
+        "actual_reality": "Three incidents in 36 months creates HIGH-RISK underwriting profile. Renewal options: (1) Premium increase 200-500% ($5-15M annually), (2) Coverage restrictions (lower limits, higher deductibles, exclusions added - e.g., ransomware excluded, unpatched vulnerabilities excluded), (3) Non-renewal → surplus lines market 300-1000% premium OR uninsurable entirely. Annual renewals = NO long-term protection. Market cyclical (hardening periods withdraw capacity industry-wide).",
+        "residual_uninsured": "Renewability UNSTABLE - single non-renewal creates: (1) Customer contracts requiring proof of insurance become unserviceable → terminations, (2) Apollo cannot sell (buyers require insurance as closing condition), (3) Debt covenant breach if 'maintain adequate insurance' required, (4) Must self-insure without capital ($20-60M reserve needed from $173M total cash)."
+      },
+      {
+        "assumed_transfer": "Insurance provides immediate crisis liquidity during incidents",
+        "actual_reality": "Insurance is REIMBURSEMENT (pays after loss proven) not PREVENTION (provides immediate funds). Timeline: Incident → 30-90 days claim submission → 60-180 days investigation → 90-270 days payment = median 6-12 months. But covenant tests QUARTERLY and liquidity runway 5-15 months. Major incident costs $10-40M direct + $194M billing working capital paid IMMEDIATELY from operations. Insurance arrives 6-18 months later AFTER covenant tests, potential breach, and liquidity crisis.",
+        "residual_uninsured": "TIMING GAP creates liquidity crisis despite eventual insurance recovery. Covenant breach risk before reimbursement. Requires revolver draw or Apollo emergency injection. Insurance reduces MAGNITUDE (50% vs 100% self-funded) but doesn't eliminate EXISTENCE of loss or TIMING of cash needs. Management bandwidth cost: 6-18 month claim process (documentation, negotiation, potential litigation) distracts from operations."
+      }
+    ]
+  }
+}

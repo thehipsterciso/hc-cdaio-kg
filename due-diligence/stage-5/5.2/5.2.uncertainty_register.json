@@ -1,0 +1,35 @@
+{
+  "sub_stage": "5.2",
+  "uncertainty_register": [
+    {
+      "unknown": "Exact magnitude of VMware cost increase and absorption vs pass-through decision",
+      "type": "UNKNOWN",
+      "decision_impact": "VERY HIGH—determines whether Private Cloud margin compresses from 38.6% to 19-29% (absorbed) or revenue accelerates decline to 20-30% annually (passed through). $100-210M annual cost increase estimate wide range. Actual Broadcom contract terms and Rackspace pricing decisions to customers not disclosed. Full impact materializes FY2025-2026 as contracts renew.",
+      "what_would_reduce_uncertainty": "Access to: (1) VMware license agreements showing actual cost pre/post-Broadcom, (2) Customer pricing decisions (which customers received increases, magnitude, timing, response), (3) Private Cloud margin decomposition showing VMware cost as % of COGS, (4) Customer retention rates for customers receiving VMware-driven price increases."
+    },
+    {
+      "unknown": "Hyperscaler partner credit terms and modification risk timeline",
+      "type": "UNKNOWN",
+      "decision_impact": "VERY HIGH—Public Cloud viability depends on 5-15% partner credits continuing. If reduced 50%, segment becomes unprofitable. Partnership terms not disclosed (proprietary). Cannot assess WHEN credit reduction might occur or under what conditions. Azure PEC ~15% documented but AWS/Google terms unknown.",
+      "what_would_reduce_uncertainty": "Access to: (1) AWS/Azure/Google partnership agreements (credits, terms, modification notice periods, volume tiers), (2) Partnership status and health (Rackspace strategic importance to hyperscalers, renewal timing), (3) Historical credit rate changes, (4) Competitive intelligence on other MSPs' credit rates."
+    },
+    {
+      "unknown": "Cost reduction capacity without triggering service failures or churn acceleration",
+      "type": "UNKNOWN",
+      "decision_impact": "HIGH—determines how much further costs can be cut before service collapses. Headcount already reduced 12% vs revenue 7% with satisfaction declining. How much MORE can be cut? What is minimum viable delivery headcount? At what point do cuts trigger death spiral?",
+      "what_would_reduce_uncertainty": "Access to: (1) Service level actual performance vs commitments (SLA compliance rates, ticket response times, incident resolution times), (2) Minimum staffing models (engineers per customer, coverage requirements), (3) Customer satisfaction trends by cohort, (4) Churn correlation analysis (does satisfaction decline predict churn 6-12 months forward?)."
+    },
+    {
+      "unknown": "Multi-entity overhead decomposition and potential for partial consolidation",
+      "type": "UNKNOWN",
+      "decision_impact": "MEDIUM-HIGH—estimated 15-25% SG&A penalty ($110-175M) from multi-entity structure but actual magnitude uncertain. Are there SOME consolidation opportunities that preserve authorizations? Can back-office functions consolidate while maintaining front-end separation?",
+      "what_would_reduce_uncertainty": "Access to: (1) Entity-level financial statements (revenue, costs, headcount by entity), (2) Overhead allocation methodology (which costs duplicated vs shared), (3) Regulatory/contractual constraints on consolidation by function (can finance consolidate? HR? IT?), (4) Feasibility study on shared services while maintaining isolation."
+    }
+  ],
+  "uncertainty_classification_summary": {
+    "total_unknowns_registered": 4,
+    "high_decision_impact_unknowns": 3,
+    "medium_decision_impact_unknowns": 1,
+    "uncertainty_impact_on_conclusions": "MODERATE impact on MAGNITUDE but LOW impact on DIRECTION. Core diagnosis (structurally loss-making with zero leverage, margins controlled externally, backward-bending cost curves) has HIGH CONFIDENCE regardless of unknowns. Unknowns affect: (1) Speed of margin compression (VMware impact timing), (2) Trigger point for hyperscaler credit reduction, (3) Threshold where cost cuts trigger death spiral. Do NOT affect conclusion that margins are fragile, deteriorating, and structurally unprofitable."
+  }
+}

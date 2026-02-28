@@ -1,0 +1,80 @@
+{
+  "sub_stage": "9.4",
+  "unknowns_requests": [
+    {
+      "request": "Vendor Master Agreements Package - AWS, Azure, Google, VMware/Broadcom, ScienceLogic Replacement, BT Partnership",
+      "why_needed": "CRITICAL for modeling vendor cost trajectory and understanding contractual constraints. Cannot assess future vendor cost risk without seeing: (1) Pricing escalation clauses - are price increases capped (e.g., 'CPI +2%') or unlimited ('vendor may change pricing at any time')?, (2) Minimum commitments - is Rackspace obligated to spend $X annually or pay shortfalls (demand risk)?, (3) Termination provisions - what penalties for early termination (exit feasibility)?, (4) Change control - how much notice for contract changes (can Rackspace prepare or surprised)?, (5) Volume discounts - does pricing improve with scale (margin leverage) or flat regardless of volume?, (6) Term lengths - are contracts 1-year (flexibility) or 3-5 year (locked in)?. Stage 9.2 shows 5% partner credit reduction compresses margin from 10.4% to 5.4% - need to know if contractually protected or vulnerable to repeated reductions. Broadcom $100-210M price shock shows vendor CAN impose unilateral increases - need to verify if contractually permitted or breach (remedies?).",
+      "highest_value_source_types": [
+        "Master Services Agreements (MSAs) with AWS, Azure, Google showing partner program terms",
+        "VMware/Broadcom licensing agreements with pricing schedules and escalation clauses",
+        "Amendment history showing how vendors have changed terms over time (pattern recognition)",
+        "Minimum commitment schedules (if exist) showing spending obligations",
+        "Termination and transition provisions (early exit penalties, data portability requirements)",
+        "Service level agreements from vendors (what Rackspace entitled to when vendor fails?)",
+        "Contract negotiation correspondence showing what was negotiated vs imposed",
+        "Legal analysis of contract terms (can vendor do X, Y, Z legally under contract?)"
+      ],
+      "blocking_for_stage_progression": true
+    },
+    {
+      "request": "Vendor Relationship Status Documentation - Partnership Tiers, Account Teams, Strategic Value Assessment",
+      "why_needed": "HIGH PRIORITY for assessing vendor shock probability and negotiation feasibility. Stage 6.2 states 'Rackspace has ZERO LEVERAGE' but need to confirm relationship status. If STRATEGIC PARTNER status with AWS/Azure/Google/VMware: (1) Advanced warning of program changes (not surprised), (2) Exemptions from adverse changes possible (negotiate protection), (3) Dedicated account teams with executive access (can escalate issues), (4) Influence on vendor roadmap (advocate for needed features). If STANDARD RESELLER status: (1) No advance warning (changes announced publicly), (2) No exemptions (one-size-fits-all), (3) Standard support channels (low priority), (4) No influence (vendor ignores feedback). Affects: (1) Whether buyer can 'leverage Rackspace's vendor relationships' post-acquisition - strategic status transferable value, standard status no value, (2) Vendor shock mitigation - strategic partners warned and can prepare, standard resellers surprised, (3) Negotiation strategy - strategic partners can appeal changes, standard resellers must accept.",
+      "highest_value_source_types": [
+        "AWS/Azure/Google partnership tier certifications (Premiere, Advanced, Select, etc.)",
+        "Vendor account team organization charts (dedicated team vs shared suggests importance)",
+        "Quarterly Business Review (QBR) presentations and attendance (executive engagement level)",
+        "Vendor-sponsored co-marketing or co-selling programs (strategic partners receive investment)",
+        "Early access program participation (beta features, program previews for strategic partners)",
+        "Vendor escalation paths and executive contacts (can Rackspace CEO call vendor CEO?)",
+        "Vendor performance scorecards or rankings (where does Rackspace rank in vendor's partner ecosystem?)",
+        "Recent vendor relationship health assessments (internal or vendor-provided)"
+      ],
+      "blocking_for_stage_progression": false
+    },
+    {
+      "request": "Vendor Switching Feasibility Studies - VMware Exit Analysis, Hyperscaler Migration Studies, Monitoring Vendor Alternatives",
+      "why_needed": "MEDIUM-HIGH PRIORITY for validating or correcting Stage 6.3 cost inferences. Stage 6.3 ESTIMATES VMware exit cost $200-500M + churn $316-528M but lacks formal validation. Need actual studies to determine: (1) Engineering cost breakdown by platform/system (what specifically drives $200-500M?), (2) Customer migration complexity by workload type (some easy, some impossible?), (3) Churn risk calibration (will 30-50% really leave or 10-20% or 60-80%?), (4) Alternative vendor quotes (what would OpenStack/Nutanix/Hyper-V actually cost vs VMware?), (5) Timeline reality (18-36 months assumed, validated or optimistic?). If studies show exit cost LOWER than Stage 6.3 inference (e.g., $150-250M), Rackspace has MORE negotiation leverage with Broadcom (credible exit threat). If studies show exit cost HIGHER (e.g., $500M-1B), Broadcom has EVEN MORE pricing power (Rackspace truly hostage). Either way, buyer needs precision vs inference to model Private Cloud segment value.",
+      "highest_value_source_types": [
+        "VMware exit or migration feasibility studies (engineering estimates, timelines, costs)",
+        "Alternative platform competitive quotes (OpenStack, Nutanix, Hyper-V vendor proposals)",
+        "Customer migration complexity assessments (which customers easy/hard/impossible to migrate?)",
+        "Pilot migration case studies (did Rackspace test any customer migrations?)",
+        "Make-vs-buy analysis for building internal virtualization platform",
+        "Hyperscaler migration cost models (AWS to Azure, Azure to Google portability reality)",
+        "Customer contract analysis showing migration rights and restrictions",
+        "Third-party analyst reports on MSP vendor switching costs (industry benchmarks)"
+      ],
+      "blocking_for_stage_progression": false
+    },
+    {
+      "request": "Hyperscaler Partner Program History and Communications - AWS, Azure, Google Program Changes 2020-2024",
+      "why_needed": "MEDIUM PRIORITY for establishing partner program trend and change frequency. Cannot predict NEXT change but can establish PATTERN: (1) How often have partner credits changed historically (annually? quarterly? ad hoc?), (2) What magnitudes typical (1-3% adjustments vs 5-10% shocks)?, (3) Any advance warning provided (90 days? 180 days? surprise?)?, (4) Were changes coordinated across AWS+Azure+Google (correlated risk) or independent (sequential risk)?, (5) What triggered changes (hyperscaler financial pressure, competitive dynamics, strategic shift)?. If pattern shows: Annual 2-3% reductions with 180 day notice = predictable, manageable. If pattern shows: Ad hoc 5-10% shocks with 90 day notice = unpredictable, unmanageable. Affects: (1) Operating cost volatility modeling, (2) Customer pricing strategy timing (pass-through immediately or absorb?), (3) Segment viability timeline (when does cumulative reduction make segment unprofitable?).",
+      "highest_value_source_types": [
+        "AWS Partner Network (APN) program change announcements 2020-2024",
+        "Microsoft Azure CSP program updates and partner communications 2020-2024",
+        "Google Cloud Partner Advantage program change history 2020-2024",
+        "Internal financial analysis of partner credit changes over time (trending down, stable, up?)",
+        "Partner portal communications showing advance warnings or surprise announcements",
+        "Industry association reports on hyperscaler partner program trends (MSP community intelligence)",
+        "Competitive intelligence on how other MSPs affected by same program changes",
+        "Vendor account team meeting notes discussing upcoming program changes (any advance signals?)"
+      ],
+      "blocking_for_stage_progression": false
+    },
+    {
+      "request": "Broadcom/VMware Relationship Documentation - Price Shock Correspondence, Negotiation Attempts, Future Program Communications",
+      "why_needed": "MEDIUM-HIGH PRIORITY for assessing second extraction risk timing and magnitude. Broadcom ALREADY extracted $100-210M annually (Stage 6.2), need to understand: (1) Was first extraction NEGOTIATED (Rackspace attempted to reduce, Broadcom refused) or IMPOSED (no discussion)?, (2) Did Broadcom signal 'one-time repricing' or 'ongoing optimization' (more coming)?, (3) What was Rackspace's response strategy (accept, threaten exit, escalate to executives)?, (4) Any advance warning of first increase (months? weeks? surprise?)?, (5) Has Broadcom communicated future pricing intentions or next licensing model changes?. If correspondence shows: Broadcom positioned as 'one-time alignment to market' with 'pricing now stable', suggests LOWER second extraction risk. If correspondence shows: Broadcom positioned as 'ongoing value realization' or silent on future, suggests HIGHER second extraction risk. Private Cloud 40-50% of operating income - second extraction could eliminate company profitability, CRITICAL uncertainty.",
+      "highest_value_source_types": [
+        "Broadcom price increase notification letters or emails (initial communication)",
+        "Rackspace response correspondence attempting to negotiate or appeal increase",
+        "Executive meeting summaries discussing Broadcom relationship and pricing",
+        "VMware/Broadcom account team communications (any signals of future changes?)",
+        "Legal analysis of price increase (contractually permitted or potential breach?)",
+        "Industry intelligence on Broadcom's VMware MSP strategy (extract then divest? long-term support?)",
+        "Competitive intelligence on other VMware MSPs experiencing similar price shocks",
+        "Financial modeling of Private Cloud segment viability under various second extraction scenarios"
+      ],
+      "blocking_for_stage_progression": false
+    }
+  ]
+}

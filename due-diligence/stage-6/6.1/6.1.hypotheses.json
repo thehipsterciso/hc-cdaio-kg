@@ -1,0 +1,102 @@
+{
+  "sub_stage": "6.1",
+  "document_metadata": {
+    "title": "Hypothesis Testing - Compute Mobility and Control Assumptions",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-10",
+    "scope": "Falsification testing of common assumptions about compute portability and infrastructure flexibility"
+  },
+  "hypotheses": [
+    {
+      "hypothesis": "Compute infrastructure is largely portable across geographic locations, enabling flexible capacity optimization",
+      "supporting_evidence_sought": [
+        "Evidence of successful facility consolidations or data center exits without significant customer impact",
+        "Customer contracts permitting infrastructure relocation without consent requirements",
+        "Cloud-native architecture enabling rapid failover between geographies",
+        "Absence of data residency requirements in majority of customer contracts",
+        "Lease flexibility allowing termination or assignment without penalties"
+      ],
+      "disconfirming_evidence_sought": [
+        "Data residency requirements (regulatory or contractual) preventing relocation",
+        "Lease assignment restrictions requiring landlord consent and creating exit barriers",
+        "Customer SLA breaches or churn resulting from facility changes",
+        "Jurisdictional authorizations (FedRAMP, UK Sovereign) tied to specific locations and non-transferable",
+        "Fixed asset depreciation creating financial penalties for premature relocation"
+      ],
+      "disconfirming_evidence_found": [
+        "FOUND: 40 data center leases with assignment restrictions (Stage 1.4) - landlord consent required, creating exit barriers and negotiation leverage for landlords",
+        "FOUND: FedRAMP authorization entity-specific and location-dependent - relocating government workloads requires 12-18 month re-authorization with uncertain outcome (Stage 1.5)",
+        "FOUND: UK Sovereign Services architecturally isolated in UK - cannot relocate outside UK without sovereignty breach and 100% customer loss (Stage 1.5)",
+        "FOUND: China Cybersecurity Law mandates data localization - cannot relocate China customer data outside China borders without CSL violation (Stage 1.5)",
+        "FOUND: GDPR and customer contracts require EU data residency for many customers - relocation to U.S. faces Schrems II complications and customer refusal (Stage 1.5)",
+        "FOUND: Healthcare (HIPAA/HITRUST) and financial services customers typically require U.S. data residency in practice despite technical legal ability to offshore (Stage 1.5)",
+        "FOUND: Private Cloud infrastructure physically installed with 3-5 year depreciation - premature relocation creates stranded asset write-offs and decommission/reinstallation costs (Stage 2.2)",
+        "FOUND: Industry standard data center migration causes 20-30% customer churn and requires 12-24 months per facility (Stage 1.5 industry research)"
+      ],
+      "status": "REFUTED",
+      "confidence": "VERY HIGH (95%+)",
+      "notes": "Hypothesis comprehensively refuted by multiple independent evidence streams: (1) REGULATORY - Jurisdictional data sovereignty requirements (U.S. Government, UK, China, EU) prevent geographic portability for material customer segments, (2) CONTRACTUAL - 40 lease assignment restrictions + customer data residency clauses create legal barriers, (3) ECONOMIC - Fixed asset base, facility overhead, and customer churn costs make relocation prohibitively expensive ($200-500M+ to rationalize portfolio per facility lock-in analysis), (4) OPERATIONAL - Migration complexity, SLA breach risk, and 12-24 month timelines prevent rapid optimization. Portability assumption is FALSE - compute is HIGHLY IMMOBILE due to converging regulatory, contractual, economic, and operational constraints. EXCEPTION: Public Cloud managed services have SOME portability (can move management layer between hyperscaler regions) but represent only 61% of revenue and face own constraints (hyperscaler partner program terms, customer expectations for stability)."
+    },
+    {
+      "hypothesis": "Redundancy and geographic diversity eliminate single points of failure, enabling business continuity if any individual facility fails",
+      "supporting_evidence_sought": [
+        "Multi-facility deployment architecture for all critical workloads with automatic failover",
+        "Evidence of successful facility outage handling without customer impact",
+        "Customer contracts NOT specifying individual data center locations (allowing transparent failover)",
+        "Shared infrastructure pools enabling rapid capacity reallocation across facilities",
+        "No regulatory constraints preventing cross-facility or cross-geography failover"
+      ],
+      "disconfirming_evidence_sought": [
+        "Workloads deployed in single facilities without redundancy (cost optimization, customer choice, technical constraints)",
+        "Regulatory isolation requirements preventing failover (Government, UK Sovereign, China cannot share infrastructure)",
+        "Customer contracts specifying primary data center location (preventing transparent failover without customer consent)",
+        "Fixed/dedicated infrastructure models (Private Cloud) preventing rapid reallocation unlike multi-tenant public cloud",
+        "Evidence of facility outages causing customer impact despite geographic diversity presence"
+      ],
+      "disconfirming_evidence_found": [
+        "FOUND: U.S. Federal Government workloads CANNOT failover to non-FedRAMP facilities - architectural isolation by regulatory design creates ZERO redundancy (Stage 1.5, compute control map analysis)",
+        "FOUND: UK Sovereign workloads CANNOT failover to global Rackspace infrastructure - 'isolated from global network to ensure no access possible from outside UK' creates ZERO redundancy (Stage 1.5)",
+        "FOUND: China workloads CANNOT failover outside China borders - CSL data localization mandate creates ZERO international redundancy (Stage 1.5)",
+        "FOUND: Private Cloud model uses customer-dedicated infrastructure (servers, storage, networking) NOT shared pools - customer-specific configurations prevent rapid failover to alternative facilities (Stage 2.1)",
+        "FOUND: Many customer contracts specify data center location ('Dallas facility', 'East Coast data center') preventing transparent failover - relocation requires customer consent (facility lock-in analysis)",
+        "FOUND: Geographic diversity EXISTS (40 facilities across 13+ jurisdictions) but CANNOT BE UTILIZED for regulatory segments - redundancy present but INACCESSIBLE due to isolation requirements"
+      ],
+      "status": "WEAKENED",
+      "confidence": "HIGH (85%)",
+      "notes": "Hypothesis partially true but materially weakened by regulatory isolation requirements. Commercial operations DO have geographic redundancy - U.S. commercial customers can theoretically failover between U.S. facilities (Virginia to Dallas, etc.), EU customers between EU facilities (Amsterdam to Frankfurt). However: (1) REGULATORY SEGMENTS have ZERO failover capability - Government, UK Sovereign, China are isolated by design with no alternative Rackspace facilities to failover to if primary fails, (2) PRIVATE CLOUD customers typically deployed in SINGLE facility for cost optimization - customer would need to pay for dual-facility deployment (2X infrastructure cost) to achieve redundancy, most decline, (3) CUSTOMER CONTRACTS often specify location preventing transparent failover, (4) FAILOVER REQUIRES: Customer architectural design for multi-facility deployment (many lack this), Operational readiness and testing (requires investment and ongoing maintenance), Customer willingness to accept increased costs (dedicated infrastructure in multiple facilities). Reality: Geographic diversity provides POTENTIAL for redundancy, but ACTUALIZED redundancy is LIMITED to subset of commercial customers with multi-facility architecture. Government/Sovereign segments have NO redundancy, and most Private Cloud customers have SINGLE-FACILITY deployment. Single points of failure EXIST despite geographic diversity presence."
+    },
+    {
+      "hypothesis": "Cloud infrastructure presence (Public Cloud managed services) eliminates physical infrastructure immobility concerns since workloads run on hyperscaler infrastructure not Rackspace-owned facilities",
+      "supporting_evidence_sought": [
+        "Public Cloud customers can move freely between AWS/Azure/Google regions without Rackspace infrastructure constraints",
+        "Rackspace Public Cloud business model requires minimal physical infrastructure investment (pure management layer)",
+        "Public Cloud revenue NOT dependent on Rackspace data center footprint",
+        "Hyperscaler partnerships provide infrastructure flexibility Rackspace-owned facilities cannot match"
+      ],
+      "disconfirming_evidence_sought": [
+        "Public Cloud managed services still require Rackspace data center presence for operations/support infrastructure",
+        "Hyperscaler partner programs have jurisdictional or operational constraints limiting flexibility",
+        "Customer contracts or regulatory requirements tie Public Cloud workloads to specific regions despite hyperscaler infrastructure",
+        "Rackspace management layer requires physical presence or proximity creating immobility"
+      ],
+      "disconfirming_evidence_found": [
+        "FOUND: Public Cloud represents 61% of revenue ($1,683M) but does NOT eliminate all physical infrastructure dependencies - Rackspace still operates 40 data centers for Private Cloud (39% revenue $1,055M) creating immobility for that segment (Stage 2.1)",
+        "FOUND: U.S. Government Public Cloud uses AWS GovCloud/Azure Government/Google Cloud for Government which have jurisdictional constraints - cannot move government workloads to commercial hyperscaler regions, must use government-specific regions in U.S. (Stage 1.5)",
+        "FOUND: Hyperscaler partner programs (AWS Advanced Partner, Azure CSP 2-Tier Distributor, Google Cloud Partner) provide economic margin (5-15% partner credits/rebates) but these programs have TERMS that can be modified by hyperscalers - Rackspace has no control over partner program economics (Stage 2.2)",
+        "FOUND: Some customers choose Rackspace Public Cloud specifically for Rackspace's physical infrastructure presence and local support - if Rackspace exits region (e.g., closes APAC data centers), loses local support capability, reducing value proposition vs hyperscaler-direct (inference from facility lock-in analysis)",
+        "FOUND: Even Public Cloud customers may have regulatory data residency requirements (EU GDPR, China CSL, financial services regulations) tying workloads to specific hyperscaler regions - Rackspace cannot arbitrarily relocate customer workloads across regions (Stage 1.5)"
+      ],
+      "status": "WEAKENED",
+      "confidence": "HIGH (80%)",
+      "notes": "Hypothesis partially true but less definitive than assumed. Public Cloud DOES reduce physical infrastructure immobility COMPARED TO Private Cloud: (1) No Rackspace-owned servers/storage/networking to relocate, (2) Hyperscaler infrastructure provides global footprint Rackspace cannot replicate alone, (3) Management layer more portable than physical infrastructure. However, MATERIAL CAVEATS: (1) Public Cloud is only 61% of revenue - Private Cloud 39% still requires physical infrastructure creating immobility for substantial revenue portion, (2) Hyperscaler partnerships have ECONOMIC DEPENDENCIES - partner credits/rebates provide margin, if hyperscalers modify terms Rackspace has no alternative (cannot switch hyperscalers quickly without disrupting ALL Public Cloud customers), (3) Regulatory data residency still applies - Public Cloud customers cannot freely move between regions if regulations tie data to specific jurisdictions, (4) Customer expectations and support model may require Rackspace physical presence even for Public Cloud (local support teams, on-site services). Conclusion: Public Cloud reduces but does NOT ELIMINATE infrastructure immobility concerns. Rackspace still faces: Physical infrastructure requirements for Private Cloud (39% revenue), Hyperscaler partnership dependencies (economic control), Regulatory jurisdictional constraints (government, EU, China), Operational support requirements (may need local presence). Public Cloud is LESS immobile than Private Cloud, but not FREELY MOBILE."
+    }
+  ],
+  "hypothesis_testing_summary": {
+    "hypotheses_tested": 3,
+    "refuted": 1,
+    "weakened": 2,
+    "supported": 0,
+    "inconclusive": 0,
+    "key_finding": "ALL THREE hypotheses assuming infrastructure portability and flexibility were REFUTED or MATERIALLY WEAKENED. Rackspace compute infrastructure is HIGHLY IMMOBILE due to converging constraints: (1) REGULATORY - Jurisdictional data sovereignty (Government, UK, China, EU) prevents geographic portability, (2) CONTRACTUAL - 40 lease restrictions + customer residency clauses create legal barriers, (3) ECONOMIC - $200-500M+ optimization cost exceeds available capital, (4) OPERATIONAL - 12-24 month migration timelines, 20-30% churn risk, SLA breach exposure. Even Public Cloud (61% revenue) faces material immobility from hyperscaler dependencies and regulatory constraints. Infrastructure mobility assumptions are FALSE - compute control reality is IMMOBILITY not flexibility."
+  }
+}

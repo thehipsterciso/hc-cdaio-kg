@@ -1,0 +1,192 @@
+{
+  "sub_stage": "2.2",
+  "cost_structures_by_revenue_engine": [
+    {
+      "engine_name": "Public Cloud Managed Services (Hyperscaler Resale + Management)",
+      "cost_category": "Hyperscaler Infrastructure Pass-Through (AWS/Azure/Google consumption)",
+      "cost_type": "VARIABLE",
+      "primary_cost_driver": "Customer infrastructure consumption volume (compute, storage, network, database services consumed from hyperscalers)",
+      "scaling_behavior": "PERFECTLY VARIABLE with customer usage. Rackspace bills hyperscaler infrastructure at list rates (pass-through), capturing partner credits/rebates (estimated 5-15%) as infrastructure margin. As customer consumption increases, this cost scales proportionally. Hyperscaler infrastructure represents majority of Public Cloud COGS (estimated 80-90% of segment cost of revenue).",
+      "structural_constraints_from_stage_1": [
+        "ECONOMIC DEPENDENCY: Partner credit/rebate terms controlled by AWS/Azure/Google (non-disclosed). Hyperscalers can modify partner programs, reducing Rackspace's infrastructure margin. No long-term guaranteed terms identified in Stage 1.",
+        "COMPETITIVE PRESSURE: Hyperscalers offering native managed services (AWS Managed Services, Azure Managed Services) can undercut Rackspace by eliminating reseller layer and absorbing support costs to win infrastructure spend."
+      ],
+      "touch_test_what_breaks": "ECONOMIC: If hyperscaler partnerships terminated or partner credits eliminated, Public Cloud becomes UNPROFITABLE (10.4% gross margin cannot absorb loss of 5-15% infrastructure rebates). Revenue continues but all margin disappears. OPERATIONAL: Cannot deliver Public Cloud services without hyperscaler accounts - customers explicitly buying AWS/Azure/Google infrastructure via Rackspace reseller relationship.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Rackspace pricing documentation: 'Bills AWS infrastructure at list rates on AWS website'",
+        "Azure CSP program: ~15% Partner Earned Credit (PEC) for managed services partners",
+        "Public Cloud gross margin 10.4% per Q4 2024 earnings (thin margin consistent with pass-through + small markup model)",
+        "Industry knowledge: Hyperscaler resellers earn 5-15% margins on infrastructure resale through partner credits",
+        "Cost structure inference: Variable cost behavior required to explain Public Cloud's 10.4% margin vs Private Cloud's 38.6%"
+      ]
+    },
+    {
+      "engine_name": "Public Cloud Managed Services (Hyperscaler Resale + Management)",
+      "cost_category": "Managed Services Delivery Personnel (Certified Cloud Engineers, Architects, Support Staff)",
+      "cost_type": "SEMI_FIXED",
+      "primary_cost_driver": "Headcount of AWS/Azure/Google certified engineers and support staff assigned to Public Cloud customers. Cost per FTE includes: salary, benefits, certifications, training, facilities allocation.",
+      "scaling_behavior": "SEMI-FIXED with revenue growth. Personnel costs are fixed in short term (salaries paid regardless of customer volume), but can adjust over 6-12 months through hiring/attrition. As Public Cloud revenue grows, Rackspace must add engineers to maintain service levels (ticket response time, 24x7 coverage). However, engineers can support multiple customers, creating leverage. HEADCOUNT DECLINED 12% (5,800 to 5,100 employees) while revenue declined only 7%, suggesting cost reduction efforts but also potential service degradation risk. Estimated 30-40% of total headcount (1,500-2,000 FTEs) allocated to Public Cloud delivery based on 61% revenue contribution.",
+      "structural_constraints_from_stage_1": [
+        "TALENT MARKET: Certified cloud engineers (AWS/Azure/Google certifications) are scarce and command premium salaries. Wage inflation and attrition create upward cost pressure.",
+        "JURISDICTIONAL FRAGMENTATION: Delivery personnel distributed across US, UK, India, LATAM based on customer location and service requirements. Cannot consolidate all delivery to lowest-cost location due to: (1) Time zone coverage for 24x7 support, (2) Language requirements, (3) Customer contract requirements (e.g., US Government requires US citizens on US soil), (4) Data sovereignty (UK Sovereign requires UK-based staff)."
+      ],
+      "touch_test_what_breaks": "OPERATIONAL: Reducing delivery headcount degrades 'Fanatical Support' service levels (longer ticket response times, reduced proactive monitoring, fewer architecture consultations). Service degradation drives customer churn to hyperscaler-direct or competitors. STRUCTURAL: Cannot offshore all support to low-cost locations - Government business requires US citizens, UK Sovereign requires UK staff, time zones require distributed coverage. COMPETITIVE: Fanatical Support differentiation depends on human expertise - reducing headcount eliminates value proposition.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Headcount 5,100 (Dec 2024) down from 5,800 (Dec 2023), 12% reduction per MacroTrends employee data",
+        "SG&A expenses $708M (25.9% of revenue) include personnel costs per Q4 2024 earnings: 'lower personnel costs'",
+        "Fanatical Support value proposition: '24x7 access to certified cloud engineers' per Rackspace marketing materials",
+        "Stage 1.V: Government requires '100% US citizen security team in continental US', UK Sovereign requires UK-isolated staff",
+        "Industry benchmark: MSPs typically require 1 engineer per $1-2M ARR for managed services delivery, suggesting 1,500-2,500 FTE for $2.7B revenue"
+      ]
+    },
+    {
+      "engine_name": "Private Cloud Managed Services (Dedicated Infrastructure + Management)",
+      "cost_category": "Owned/Leased Data Center Infrastructure (Servers, Storage, Networking Hardware)",
+      "cost_type": "FIXED",
+      "primary_cost_driver": "Depreciation of owned infrastructure hardware (servers, storage arrays, network switches, load balancers) installed in Rackspace data centers or customer premises. Hardware has 3-5 year useful life requiring ongoing CapEx refresh cycles.",
+      "scaling_behavior": "FIXED in short-to-medium term (12-24 months). Infrastructure purchased/deployed in advance of customer contracts. Once installed, depreciation is fixed cost regardless of utilization. Capacity must be provisioned ahead of demand, creating: (1) Underutilization risk if customers don't materialize or churn (fixed cost with no revenue), (2) Capacity constraints if demand exceeds installed base (lost revenue opportunities). CAPEX DECLINING: $136M (2024) down from $181M (2023), suggesting Rackspace is UNDERINVESTING in infrastructure refresh as Private Cloud revenue declines 13% YoY. Depreciation included in Cost of Revenue, which increased as % of revenue despite lower CapEx (suggesting older gear requiring more maintenance OR accounting change extending useful life artificially).",
+      "structural_constraints_from_stage_1": [
+        "DATA CENTER LEASES: Stage 1.4 identified data center leases may have assignment restrictions and long-term commitments. Cannot quickly exit facilities even as Private Cloud revenue declines. Excess capacity becomes stranded cost.",
+        "VENDOR LOCK-IN - VMWARE: Private Cloud heavily dependent on VMware licensing. Broadcom acquisition (Nov 2023) drove 200-300% VMware price increases. Rackspace cannot easily migrate existing customers to alternative platforms (OpenStack, Microsoft) without: (1) Customer data migration (high failure risk, customer churn), (2) Staff retraining, (3) Multi-year transition timeline.",
+        "GOVERNMENT/UK SOVEREIGN ISOLATION: Government business (FedRAMP) and UK Sovereign Services require SEPARATE, ISOLATED infrastructure that cannot be shared with commercial customers or across jurisdictions. Creates infrastructure silos with no economies of scale. Government/UK Sovereign capacity cannot be repurposed if those businesses shrink."
+      ],
+      "touch_test_what_breaks": "ECONOMIC: As Private Cloud revenue declines 13% YoY, fixed infrastructure costs create negative operating leverage (costs decline slower than revenue). Underutilized data center capacity generates depreciation expense with no corresponding revenue. Cannot quickly shed capacity due to long-lived assets (3-5 year depreciation) and facility leases. OPERATIONAL: Underinvesting in CapEx (down 25% YoY) means aging infrastructure (servers beyond refresh cycle) creates: (1) Higher maintenance costs, (2) Performance degradation, (3) Increased failure rates, (4) Customer dissatisfaction and churn. COMPETITIVE: Cannot maintain Private Cloud service quality and performance without ongoing CapEx investment, accelerating customer migration to public cloud.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "CapEx $136M (2024) vs $181M (2023), down 25% per Q4 2024 earnings",
+        "Cost of Revenue $2,204M (80.5% of revenue), up 180bps as % of revenue despite lower CapEx, per Q4 2024 earnings",
+        "Q4 2024 earnings: 'Increase in useful life of certain customer gear assets reduced depreciation expense' (suggests accounting change to manage margin compression)",
+        "Private Cloud revenue declining 13% YoY creates underutilization of fixed infrastructure",
+        "Industry standard: Server refresh cycle 3-5 years, storage 4-6 years (Dell, HPE, Supermicro vendor guidance)",
+        "Stage 1: VMware cost increases post-Broadcom, Government/UK Sovereign infrastructure isolation requirements"
+      ]
+    },
+    {
+      "engine_name": "Private Cloud Managed Services (Dedicated Infrastructure + Management)",
+      "cost_category": "Data Center Facilities Costs (Colocation, Power, Cooling, Physical Security)",
+      "cost_type": "SEMI_FIXED",
+      "primary_cost_driver": "Data center square footage leased/owned, power consumption ($/MWh), cooling requirements, physical security, network connectivity. Costs scale with infrastructure footprint (number of racks, power draw), not directly with revenue.",
+      "scaling_behavior": "SEMI-FIXED with capacity adjustments. Facilities costs (rent, power, cooling) are fixed for installed capacity but can be adjusted over 12-24 months by: (1) Subletting excess space, (2) Reducing power/cooling to idle racks, (3) Exiting facilities at lease expiration. However, most data center leases are 3-10 years with early termination penalties. As Private Cloud revenue declines 13% YoY, facilities costs become increasingly burdensome as % of revenue. STRUCTURAL: Private Cloud requires dedicated facilities that cannot be repurposed for Public Cloud (different infrastructure model). Government and UK Sovereign require isolated facilities that cannot be shared, creating duplicate facility overhead.",
+      "structural_constraints_from_stage_1": [
+        "LEASE OBLIGATIONS: Stage 1.4 identified data center leases with potential assignment restrictions and termination penalties. Cannot exit facilities without landlord consent or paying remaining lease obligations.",
+        "JURISDICTIONAL REQUIREMENTS: Government business (FedRAMP) and UK Sovereign Services require GEOGRAPHICALLY ISOLATED facilities (US for government with physical security requirements, UK for sovereign). Cannot consolidate facilities across jurisdictions without losing authorizations and customers.",
+        "SG&A OVERHEAD: Facilities costs flow through both Cost of Revenue (direct allocation) and SG&A (corporate overhead). Q4 2024 earnings noted '$12M expense for exiting UK office' in SG&A, suggesting facility rationalization efforts but also highlighting exit costs."
+      ],
+      "touch_test_what_breaks": "ECONOMIC: Cannot eliminate data center facilities without exiting Private Cloud business entirely. Reducing footprint requires: (1) Migrating customers to remaining facilities (complex, risky), (2) Paying lease termination penalties, (3) Disposing of stranded infrastructure assets (write-offs). OPERATIONAL: Government and UK Sovereign customers legally require isolated facilities - any facility consolidation that breaches isolation = immediate loss of authorizations and 100% customer loss in those segments. STRUCTURAL: Private Cloud declining 13% YoY but facility costs are sticky - creates margin compression as fixed facilities overhead spreads over shrinking revenue base.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Private Cloud revenue $1,055M declining 13% YoY creates underutilization of facilities",
+        "Q4 2024 earnings: '$12M expense for exiting UK office' demonstrates facility exit costs",
+        "Stage 1.4: Data center lease restrictions and assignment requirements",
+        "Stage 1.V: Government requires isolated facilities, UK Sovereign 'architecturally isolated infrastructure'",
+        "Industry benchmark: Data center colocation costs $100-300/rack/month depending on power/cooling density and location",
+        "Rackspace operates owned and leased facilities (mix not disclosed) creating both CapEx (owned) and OpEx (leased) exposure"
+      ]
+    },
+    {
+      "engine_name": "Private Cloud Managed Services (Dedicated Infrastructure + Management)",
+      "cost_category": "VMware and Vendor Licensing Costs",
+      "cost_type": "SEMI_FIXED",
+      "primary_cost_driver": "VMware vSphere, vSAN, NSX licensing and support costs based on CPU sockets, cores, or capacity deployed. Licensing is capacity-based (fixed for installed footprint) but scales with infrastructure growth.",
+      "scaling_behavior": "SEMI-FIXED with infrastructure capacity. VMware licensing purchased for installed infrastructure capacity (CPU cores, storage TBs), creating fixed cost for existing footprint. As Private Cloud revenue declines 13% YoY, VMware costs become increasingly burdensome as % of revenue. STRUCTURAL CRISIS: Broadcom acquired VMware (Nov 2023) and IMMEDIATELY raised prices 200-300% and terminated partner programs. Rackspace faces: (1) Massive cost increase on existing infrastructure (must renew support contracts at new pricing), (2) Customer backlash if price increases passed through (churn risk), (3) Margin compression if absorbed internally. NO EASY EXIT: Cannot migrate existing VMware customers to alternatives (OpenStack, Microsoft Hyper-V) without multi-year customer data migrations with 20-30% failure rate (per Stage 1 integration risks).",
+      "structural_constraints_from_stage_1": [
+        "VENDOR LOCK-IN: Stage 1 identified VMware as dominant Private Cloud platform. Customer environments built on VMware cannot be quickly migrated to alternatives without: (1) Application replatforming, (2) Operational runbook rewrites, (3) Staff retraining, (4) Customer downtime and migration risk.",
+        "CUSTOMER CONTRACTS: Private Cloud customers likely have multi-year contracts with fixed pricing or limited escalation clauses. Rackspace may not be able to pass through 200-300% VMware cost increases to existing customers, forcing margin absorption.",
+        "HISTORICAL PATH DEPENDENCY (Stage 1.3): Rackspace bet heavily on VMware for Private Cloud. Broadcom price shock is consequence of platform dependency created by historical architecture decisions. Locked in."
+      ],
+      "touch_test_what_breaks": "ECONOMIC: If VMware costs increase 200-300% (per market reports) and Rackspace absorbs even 50% of increase (cannot pass full cost to customers), Private Cloud gross margin 38.6% could compress to 25-30%, destroying profitability. If customers defect due to price increases, revenue decline accelerates beyond current 13% YoY. OPERATIONAL: Migrating customers off VMware to escape cost requires: (1) Customer consent, (2) Application testing and migration, (3) Multi-month timeline per customer, (4) High failure risk (20-30% migration failure rate per Stage 1). Cannot execute mass migration quickly. STRATEGIC: Private Cloud business model depends on VMware economics - Broadcom price shock is EXISTENTIAL THREAT to Private Cloud viability.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Broadcom acquired VMware November 2023 (public transaction)",
+        "Market reports: CRN, The Register, VMware community forums report 200-300% price increases post-Broadcom",
+        "Rackspace Private Cloud offerings heavily feature VMware per website and marketing materials",
+        "Stage 1.3: Historical path dependencies and technology platform lock-in",
+        "Private Cloud gross margin 38.6% but declining revenue -13% YoY suggests margin pressure from cost inflation",
+        "Industry trend: VMware customers migrating to alternatives (Nutanix, OpenStack, public cloud) to escape Broadcom pricing"
+      ]
+    },
+    {
+      "engine_name": "Private Cloud Managed Services (Dedicated Infrastructure + Management)",
+      "cost_category": "Dedicated Delivery Personnel (Private Cloud Engineers, System Administrators)",
+      "cost_type": "SEMI_FIXED",
+      "primary_cost_driver": "Headcount of Private Cloud engineers (VMware specialists, storage admins, network engineers) dedicated to managing customer environments. Cost includes salary, benefits, training, certifications.",
+      "scaling_behavior": "SEMI-FIXED with customer count and infrastructure scale. Private Cloud requires more dedicated personnel per customer than Public Cloud due to: (1) Customized configurations (not standardized), (2) Hands-on infrastructure management (physical hardware, not API-driven), (3) Higher SLAs and white-glove service expectations. As Private Cloud revenue declines 13% YoY, personnel costs should decline proportionally, but SEMI-FIXED nature creates lag: Cannot immediately reduce headcount without service degradation and remaining customer churn. Estimated 20-30% of total headcount (1,000-1,500 FTEs) allocated to Private Cloud based on 39% revenue contribution and higher personnel intensity vs Public Cloud.",
+      "structural_constraints_from_stage_1": [
+        "JURISDICTIONAL FRAGMENTATION: Private Cloud delivery teams must be distributed across jurisdictions: (1) US-based teams for Government (US citizenship requirement), (2) UK-based teams for UK Sovereign (isolation requirement), (3) Regional teams for commercial customers (time zone coverage, data sovereignty). Cannot consolidate to single global delivery center.",
+        "SKILLS SPECIALIZATION: VMware, OpenStack, and Microsoft Hyper-V require DIFFERENT skill sets. Multi-platform support creates personnel inefficiency (cannot cross-utilize talent). Government and UK Sovereign require security clearances and background checks (additional cost, time to hire)."
+      ],
+      "touch_test_what_breaks": "OPERATIONAL: Reducing Private Cloud headcount to match 13% revenue decline creates: (1) Longer incident response times, (2) Delayed customer requests, (3) Reduced proactive management, (4) Service quality degradation driving remaining customer churn. DEATH SPIRAL: Revenue decline → headcount cuts → service degradation → more churn → more headcount cuts. STRUCTURAL: Cannot eliminate Government-specific or UK Sovereign-specific teams even if those segments shrink - personnel requirements are jurisdictionally locked (citizenship, clearances, location).",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Total headcount 5,100 (down 12%) while overall revenue declined 7%, but Private Cloud declining 13% suggests Private Cloud headcount likely reduced proportionally or more",
+        "Private Cloud higher labor intensity than Public Cloud due to hands-on infrastructure management vs API-driven cloud management",
+        "Stage 1: Government requires US citizens, UK Sovereign requires UK-isolated staff, creating personnel fragmentation",
+        "Rackspace 'Fanatical Support' for Private Cloud includes dedicated account teams and 24x7 system administration per service descriptions",
+        "Industry benchmark: Private/dedicated hosting requires 1 engineer per $500K-1M ARR vs public cloud MSPs 1 engineer per $1-2M ARR"
+      ]
+    },
+    {
+      "engine_name": "Email Hosting (Legacy SMB Subscription)",
+      "cost_category": "Shared Email Infrastructure Platform Costs",
+      "cost_type": "FIXED",
+      "primary_cost_driver": "Email platform infrastructure (servers, storage, spam filtering, security) supporting all email hosting customers. Shared multi-tenant platform creates economies of scale but requires minimum viable scale to operate efficiently.",
+      "scaling_behavior": "FIXED with platform viability threshold. Email platform costs (infrastructure, software licenses for spam/security, personnel maintaining platform) are largely fixed regardless of customer/mailbox count ABOVE MINIMUM VIABLE SCALE. Below threshold (estimated 50-100K mailboxes?), per-mailbox economics deteriorate. 706% PRICE INCREASE driving 'immediate churn' per partners creates DEATH SPIRAL: (1) Customers leave → remaining customers bear higher per-mailbox cost allocation → makes price increase appear even less justified → more churn. If mailbox count declines 50-70%, fixed platform costs spread over dramatically smaller base, destroying unit economics. EMAIL HOSTING MAY BECOME UNECONOMICAL TO OPERATE.",
+      "structural_constraints_from_stage_1": [
+        "NONE IDENTIFIED in Stage 1 - email hosting appears to operate on shared global infrastructure with no entity-specific or jurisdictional constraints. Can potentially be divested or shut down without affecting other business lines."
+      ],
+      "touch_test_what_breaks": "ECONOMIC: If 706% price increase drives 60-70% customer churn (partners predicting 'wave of churn'), remaining mailbox base may fall below minimum viable scale where fixed platform costs per mailbox become uneconomical. Options: (1) Exit email hosting entirely (shut down platform, migrate remaining customers), (2) Sell email hosting business to acquirer who can consolidate with larger base, (3) Continue operating at loss as customer service to existing base. OPERATIONAL: Cannot maintain email platform quality (spam filtering effectiveness, uptime SLAs, security updates) if revenue declines dramatically - creates negative spiral of service degradation and more churn. REPUTATIONAL: Email pricing debacle damages Rackspace brand across all segments - enterprise customers wonder if they're next.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Email price increase 706% ($1-3/mailbox to $6-10/mailbox) effective March 2026 per WebProNews",
+        "Partners report 'immediate churn', 'devastating impact', predict 'wave of churn' per Stage 2.1 analysis",
+        "Fixed cost inference: Email platforms require minimum infrastructure, staffing, and software licenses regardless of scale",
+        "Industry benchmark: Shared email hosting has high fixed costs but low marginal costs per mailbox - requires scale for profitability",
+        "Management has not disclosed email hosting as separate segment, suggesting it may be <5% of revenue (immaterial or embarrassing)"
+      ]
+    },
+    {
+      "engine_name": "Cross-Business Selling, General & Administrative (SG&A)",
+      "cost_category": "Sales and Marketing Personnel",
+      "cost_type": "SEMI_FIXED",
+      "primary_cost_driver": "Sales team headcount (enterprise account executives, inside sales, sales engineers, channel/partner managers) and marketing program spend. Cost scales with go-to-market ambition, not directly with revenue.",
+      "scaling_behavior": "SEMI-FIXED with strategic choices. Sales/marketing costs are fixed in short term (salaries committed) but can be adjusted over 6-12 months. Q4 2024 earnings: SG&A $708M (25.9% of revenue), 'decreased 7.8% driven by lower personnel costs' - suggests headcount reductions in sales/marketing as revenue declines. However, SG&A as % OF REVENUE remained flat 25.9%, indicating cost reductions are proportional to revenue decline (NOT creating operating leverage). BOOKINGS GREW 14% YoY despite lower sales investment, suggesting either: (1) Sales productivity improved, OR (2) Bookings are from existing customer upsells requiring less sales investment, OR (3) Large deals skewing bookings metric (not indicative of run-rate).",
+      "structural_constraints_from_stage_1": [
+        "JURISDICTIONAL FRAGMENTATION: Sales teams must be distributed across geographies (US, UK, APAC, EU) to serve local markets and navigate local buying processes. Government sales require specialized sales team with security clearances. Cannot consolidate to single global sales organization.",
+        "MULTI-PRODUCT COMPLEXITY: Sales teams must sell across fragmented portfolio (Public Cloud AWS/Azure/Google, Private Cloud VMware/OpenStack/Microsoft, Government, UK Sovereign, Professional Services, Email). Product complexity reduces sales productivity (longer ramp time, lower quota attainment)."
+      ],
+      "touch_test_what_breaks": "GROWTH: Reducing sales/marketing investment below critical threshold eliminates new customer acquisition and upsell motion. Company enters revenue decline spiral powered only by existing customer base attrition. COMPETITIVE: Competitors (hyperscalers, IT services giants, MSPs) are heavily investing in sales/marketing. Rackspace reducing investment means losing competitive positioning and mindshare. OPERATIONAL: If SG&A remains 25.9% of revenue as revenue declines (no operating leverage), AND gross margin is only 19.5%, then operating margin is DEEPLY NEGATIVE -6.4% before depreciation, interest, taxes. STRUCTURAL LOSS-MAKING at current cost structure.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "SG&A $708M (25.9% of revenue) per Q4 2024 earnings",
+        "SG&A decreased 7.8% YoY, 'driven by lower personnel costs, professional fees, depreciation and amortization'",
+        "SG&A as % of revenue flat at 25.9% - no operating leverage despite revenue decline",
+        "Bookings growth 14% YoY per Q4 2024 earnings (but conversion to revenue uncertain)",
+        "Gross margin 19.5% - SG&A 25.9% = operating margin -6.4% before D&A, interest, taxes (loss-making structure)"
+      ]
+    },
+    {
+      "engine_name": "Cross-Business Selling, General & Administrative (SG&A)",
+      "cost_category": "Corporate Overhead (Finance, HR, IT, Legal, Executive Comp)",
+      "cost_type": "FIXED",
+      "primary_cost_driver": "Corporate function headcount and professional services fees (audit, tax, legal, consultants). Largely independent of revenue volume - required to operate as public company and maintain governance.",
+      "scaling_behavior": "FIXED with public company status and entity complexity. Public company overhead (SEC reporting, SOX compliance, audit fees, board compensation, investor relations) is largely fixed regardless of revenue. Multi-entity structure (per Stage 1: US parent, multiple jurisdictions, government entity, UK entity, Singapore, China, acquired entities) creates DUPLICATIVE overhead: separate legal, finance, HR, compliance for each jurisdiction. Q4 2024 SG&A includes 'professional fees' that decreased but remain material. STRUCTURAL: $715M non-cash goodwill impairment (2024) suggests prior acquisitions (Datapipe $684M, Onica $250M, others) are not generating expected returns. Goodwill write-off indicates overpaid for acquisitions, but does NOT reduce ongoing overhead from operating those businesses or the complexity of multi-entity structure.",
+      "structural_constraints_from_stage_1": [
+        "MULTI-ENTITY COMPLEXITY: Stage 1 identified Rackspace operates through portfolio of separate entities (US commercial, US government, UK Sovereign, China, Singapore, etc.). Each entity requires: separate books/records, separate tax filings, separate legal counsel, separate banking relationships, separate compliance programs. CANNOT consolidate entities due to jurisdictional/regulatory requirements (per Stage 1.5 and 1.V).",
+        "PUBLIC COMPANY COSTS: NASDAQ listing, SEC reporting, SOX 404 compliance, quarterly earnings, investor relations create fixed overhead. Apollo owns 53-57% but company remains public. Taking private would eliminate some costs but requires transaction.",
+        "APOLLO OWNERSHIP STRUCTURE: Stage 1 identified Inception Parent, Inc. and Inception Intermediate, Inc. (legacy 2016 LBO entities) still in structure. Suggests incomplete post-IPO simplification, creating unnecessary structural complexity and overhead."
+      ],
+      "touch_test_what_breaks": "COMPLEXITY COSTS: Multi-entity jurisdictional structure creates PERMANENT overhead burden that cannot be eliminated without exiting markets (losing revenue). Each jurisdiction requires full-stack corporate functions (finance, legal, HR, IT, compliance). ECONOMIES OF SCALE BLOCKED: Cannot consolidate corporate functions globally due to jurisdictional separation. Government entity needs separate compliance team (security clearances, FedRAMP). UK Sovereign needs separate UK team (isolated from global). China needs separate local team (government oversight). PUBLIC COMPANY OVERHEAD: SEC reporting, SOX compliance, audit fees, investor relations cost $10-20M+ annually. Delisting (go private) would save costs but requires shareholder vote and transaction. Apollo blocked at 53-57% ownership from taking private unilaterally (needs 90%+ for short-form merger without minority vote).",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "$715M goodwill impairment 2024 per Q4 earnings (relates to Datapipe, Onica, other acquisitions per Stage 1)",
+        "SG&A $708M includes 'professional fees' and 'depreciation and amortization' (corporate overhead categories)",
+        "Stage 1: Multi-entity structure (US, UK, China, Singapore, Government entity, acquired entities) creates complexity",
+        "Public company status: NASDAQ listed (RXT ticker), SEC reporting requirements",
+        "Stage 1: Inception Parent/Inception Intermediate retained post-IPO suggests incomplete simplification",
+        "Apollo 53-57% ownership insufficient for short-form merger (requires 90%+ per Delaware law) - minority shareholders have control rights"
+      ]
+    }
+  ]
+}

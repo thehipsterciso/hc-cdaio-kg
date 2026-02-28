@@ -1,0 +1,44 @@
+{
+  "sub_stage": "5.2",
+  "unknowns_requests": [
+    {
+      "request_priority": "CRITICAL",
+      "request_id": "RQ-5.2-001",
+      "request_title": "VMware Cost Impact and Customer Pricing Response Analysis",
+      "information_requested": [
+        "VMware licensing costs: FY2022, FY2023, FY2024, FY2025 budget showing Broadcom impact",
+        "Customer pricing actions: Which Private Cloud customers received price increases? What magnitude? When? Customer response (retention, churn, negotiation)?",
+        "Private Cloud margin decomposition: VMware cost as % of COGS, other vendor costs, personnel, facilities",
+        "Platform migration planning: Is Rackspace migrating customers off VMware? To what platforms? Timeline? Expected customer retention?"
+      ],
+      "why_critical": "VMware shock potentially destroys 40-50% of operating income (Private Cloud contribution). Need to know: (1) Actual cost magnitude ($100-210M estimate has wide range), (2) Management decision (absorb vs pass through), (3) Customer response (churn rate if passed through). Blocks Private Cloud viability assessment and overall profitability projection.",
+      "expected_availability": "VMware costs in vendor agreements and accounting. Pricing decisions in management documentation. Customer response in retention reports. Should be available in diligence data room."
+    },
+    {
+      "request_priority": "CRITICAL",
+      "request_id": "RQ-5.2-002",
+      "request_title": "Hyperscaler Partnership Terms and Credit Economics",
+      "information_requested": [
+        "AWS/Azure/Google partnership agreements: credit rates, volume tiers, modification terms, termination notice periods",
+        "Historical credit rate trends: Have credits been stable, increasing, decreasing?",
+        "Partnership health assessment: Is Rackspace strategic partner to hyperscalers? Any risk signals?",
+        "Public Cloud margin sensitivity: What happens to profitability if credits reduced 25%, 50%, 75%?"
+      ],
+      "why_critical": "Public Cloud (61% of revenue, $1,683M) viability depends on 5-15% partner credits. If reduced 50%, segment becomes unprofitable. Partnership terms proprietary (not publicly disclosed) creates critical unknown. Blocks Public Cloud risk assessment and scenario planning.",
+      "expected_availability": "Partnership agreements likely confidential. May require specific requests to hyperscalers or Rackspace partnership teams. Sensitivity analysis should be available from financial planning."
+    },
+    {
+      "request_priority": "HIGH",
+      "request_id": "RQ-5.2-003",
+      "request_title": "Cost Reduction Capacity and Service Quality Thresholds",
+      "information_requested": [
+        "Minimum viable staffing models by segment: engineers per customer, coverage requirements, SLA commitments",
+        "Service quality metrics and trends: SLA compliance rates, ticket response times, customer satisfaction (NPS, CSAT) by period",
+        "Headcount roadmap: Further reductions planned? What functions? What service impact expected?",
+        "Cost reduction history: Previous reduction programs, outcomes, lessons learned"
+      ],
+      "why_critical": "Headcount already cut 12% vs revenue 7% with satisfaction declining—may already exceed sustainable threshold. Need to assess: (1) How much further can costs be cut? (2) What is minimum viable cost base? (3) At what point do cuts trigger death spiral? Blocks assessment of whether cost-reduction path to profitability exists.",
+      "expected_availability": "Staffing models from operations. Service quality metrics from customer success/support systems. Headcount planning from HR/finance. Should be standard operational data."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "sub_stage": "6.4",
+  "document_metadata": {
+    "title": "Uncertainty Register - Critical Unknowns in Vendor Power Analysis",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-10",
+    "scope": "Documentation of information gaps creating decision uncertainty in vendor lock-in and commercial constraint assessment"
+  },
+  "uncertainty_register": [
+    {
+      "unknown": "Specific vendor contract terms - pricing, discounts, renewal dates, change-of-control provisions, audit rights",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot assess PRECISE vendor leverage or exit costs without contract details. Unknown elements: (1) Broadcom VMware exact subscription pricing and terms (200-300% increase estimated but not confirmed), (2) Hyperscaler partner credit exact percentages (5-15% ranges estimated), (3) Contract durations and renewal cycles (annual, multi-year, evergreen?), (4) Price protection clauses or escalation caps (do any exist?), (5) Change-of-control provisions (which vendors require consent? what conditions?), (6) Audit rights and penalties (can vendors audit usage? what penalties for under-licensing?), (7) Termination terms (notice periods, wind-down rights, data access post-termination). Without contracts: Cannot model exact financial impact of vendor price increases, Cannot assess M&A implications precisely (which vendors must approve? what renegotiation risk?), Cannot determine if any contractual protections exist limiting vendor exploitation.",
+      "what_would_reduce_uncertainty": "Access to: (1) Vendor contract repository (all active agreements with critical vendors), (2) Vendor spend analysis (actual payments by vendor by year showing trends), (3) Procurement team interviews (negotiation history, vendor relationship quality), (4) Legal review of change-of-control provisions (M&A implications). Information exists in procurement/legal systems but not publicly disclosed. Requires due diligence data room access."
+    },
+    {
+      "unknown": "Historical vendor cost escalation rates and Rackspace response patterns",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot assess whether vendor cost increases are ACCELERATING or STABLE without historical data. Need to understand: (1) VMware pricing history pre- and post-Broadcom (was 200-300% increase one-time shock or start of trend?), (2) Hyperscaler list price and partner credit changes 2019-2024 (are credits declining over time?), (3) Monitoring/backup vendor pricing trends (3-10% annual escalation typical?), (4) Rackspace response history (have previous vendor increases been absorbed, passed through, or met with vendor switches?), (5) Customer churn correlation with price increases (did previous increases cause churn spikes?). Without history: Cannot extrapolate future vendor behavior (one-time shock vs. ongoing exploitation), Cannot assess Rackspace's historical success at managing vendor costs, Cannot calibrate churn elasticity estimates (actual customer response to prior increases).",
+      "what_would_reduce_uncertainty": "Access to: (1) Multi-year vendor spend data (2019-2024 by vendor showing year-over-year changes), (2) Pricing history analysis (when did vendors increase prices? by how much?), (3) Customer churn analysis correlated with pricing changes (did churn spike following price increases?), (4) Procurement team institutional knowledge (how has Rackspace historically responded to vendor increases?). Information exists in finance/procurement systems but requires company access."
+    },
+    {
+      "unknown": "Availability and capabilities of alternative vendors for each critical dependency",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot assess whether vendor alternatives are VIABLE without detailed evaluation. For each critical vendor need to know: (1) Alternative vendors (who are they? how many exist?), (2) Feature parity (do alternatives match current vendor capabilities?), (3) Certification status (do alternatives have FedRAMP, ISO 27001, etc.?), (4) Pricing (are alternatives cheaper, similar, or more expensive?), (5) Migration path (do alternatives provide migration tools/services?), (6) Customer references (have peer companies successfully migrated to alternatives?). Examples: (1) VMware alternatives (Nutanix, Proxmox, KVM, Hyper-V) - which is best match for Rackspace scale and requirements?, (2) Monitoring alternatives (Datadog vs. New Relic vs. Dynatrace vs. Prometheus/Grafana) - which provides needed features?, (3) Backup alternatives (Veeam vs. Commvault vs. Rubrik vs. Cohesity) - which handles Rackspace scale?. Without alternative assessment: Cannot determine if vendor lock-in is ABSOLUTE (no alternatives exist) or ECONOMIC (alternatives exist but switching cost exceeds benefit).",
+      "what_would_reduce_uncertainty": "Conduct: (1) Vendor market research (identify alternatives for each critical vendor), (2) RFIs to alternative vendors (request capabilities, pricing, migration support), (3) Peer company references (talk to organizations who switched vendors - what was experience?), (4) Proof-of-concept pilots (test alternatives in lab environment before committing), (5) Total cost of ownership models (compare current vendor cost + switching cost vs. alternative vendor cost over 3-5 years). Time-intensive analysis but necessary for informed vendor strategy."
+    },
+    {
+      "unknown": "Customer contract terms regarding service changes and vendor-driven price increases",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot determine PASS-THROUGH ABILITY without customer contract terms. Need to know: (1) Price protection clauses (do customers have fixed pricing for contract term?), (2) Vendor cost pass-through clauses (can Rackspace automatically adjust pricing for vendor increases?), (3) Service level commitments (do SLAs prevent vendor changes that might disrupt service?), (4) Early termination rights (can customers exit if Rackspace increases prices?), (5) Contract durations (month-to-month, annual, multi-year?). Contract mix matters: If 80% of revenue has pass-through clauses = vendor increases manageable (most passed to customers), If 80% has fixed pricing = vendor increases catastrophic (Rackspace absorbs all costs). Additionally: Enterprise customers likely have better terms (negotiated pricing, protections), SMB customers likely have standard terms (less protection). Revenue mix by contract type determines financial impact of vendor cost increases.",
+      "what_would_reduce_uncertainty": "Access to: (1) Customer Master Service Agreement templates by segment, (2) Contract management system analysis (search for 'price', 'pass-through', 'vendor cost', 'infrastructure cost' clauses), (3) Revenue breakdown by contract type (fixed price vs. pass-through vs. cost-plus), (4) Sales team guidance on customer acceptance of price increases. Information exists in sales/legal systems but not publicly available."
+    },
+    {
+      "unknown": "Acquirer vendor relationships and potential synergies or conflicts",
+      "type": "UNKNOWABLE",
+      "decision_impact": "Vendor integration is major M&A consideration. Acquirer may: (1) USE SAME VENDORS - can consolidate licenses, achieve volume discounts, share operational expertise (positive synergy), (2) USE DIFFERENT VENDORS - must choose: Keep Rackspace vendors (acquirer migrates to Rackspace stack), Keep acquirer vendors (Rackspace migrates to acquirer stack, complex/expensive), Run both (no synergies, duplicate costs), (3) HAVE CONFLICTS - if acquirer is vendor competitor (Oracle acquiring Rackspace creates VMware conflict, AWS acquiring Rackspace eliminates need for multi-cloud), vendors may refuse to license to combined entity. Examples: (1) Private equity acquirer likely has NO vendor conflicts (financial buyer), can maintain Rackspace vendor relationships, (2) Strategic acquirer (Oracle, IBM, Cisco) may have MAJOR vendor conflicts requiring complex resolutions, (3) Hyperscaler acquiring Rackspace (AWS, Azure, Google Cloud) creates FUNDAMENTAL conflict (would eliminate multi-cloud positioning, other hyperscalers might refuse continued partnerships). Without knowing acquirer identity cannot assess vendor integration complexity or synergies.",
+      "what_would_reduce_uncertainty": "UNKNOWABLE until acquirer identified. Pre-transaction preparation: (1) Document all vendor relationships comprehensively (contracts, spending, integration points), (2) Identify vendor change-of-control provisions (which require consent/notification), (3) Assess vendor switching costs and timelines (so acquirer understands constraints), (4) Develop vendor integration scenarios for different acquirer types (PE, strategic tech, hyperscaler) showing costs/benefits. Reduces due diligence time and provides acquirer with clear vendor landscape."
+    }
+  ],
+  "uncertainty_impact_assessment": {
+    "high_impact_unknowns": [
+      "Specific vendor contract terms (determines exact leverage and M&A implications)",
+      "Customer contract pass-through terms (determines ability to offset vendor cost increases)",
+      "Acquirer vendor relationships (major M&A integration driver/destroyer)"
+    ],
+    "medium_impact_unknowns": [
+      "Historical vendor cost escalation (calibrates future expectations)",
+      "Alternative vendor assessment (determines if lock-in is absolute or economic)"
+    ],
+    "overall_confidence_despite_uncertainties": "HIGH (80-85%) on DIRECTIONAL conclusions despite unknowns. Uncertainties affect PRECISION (exact contract terms, exact price increases, exact customer churn rates) but NOT DIRECTION (vendors have structural power, exit is infeasible, pass-through is limited). Key findings ROBUST: (1) VENDOR POWER documented through observed behavior (Broadcom 200-300% increase happened, hyperscalers set terms unilaterally), (2) EXIT INFEASIBILITY proven through timeline and cost analysis (36-48 months, $50-500M costs, customer churn 30-50%), (3) PASS-THROUGH LIMITS demonstrated through touch tests (large increases trigger unacceptable churn). Unknowns would refine tactics (which vendor to exit first if forced, exact churn elasticity, optimal pass-through percentage) but strategic assessment clear: Vendors control critical dependencies, can exploit through pricing, Rackspace has limited countermeasures. Additional information would improve precision but not change fundamental conclusion that vendor power is structural business constraint."
+  }
+}

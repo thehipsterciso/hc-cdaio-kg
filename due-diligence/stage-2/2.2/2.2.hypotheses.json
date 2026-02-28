@@ -1,0 +1,112 @@
+{
+  "hypothesis_framework": [
+    {
+      "hypothesis": "H1: Public Cloud gross margin (10.4%) is structurally thin because hyperscaler infrastructure pass-through represents 85-90% of segment COGS, leaving only management fee capture as margin source, making business vulnerable to hyperscaler partner credit reductions.",
+      "supporting_evidence_sought": [
+        "Public Cloud gross margin 10.4% vs Private Cloud 38.6% - FOUND, confirms margin differential",
+        "Rackspace bills hyperscaler infrastructure at list rates with service fees added - FOUND in pricing documentation",
+        "Hyperscaler partner credits estimated 5-15% - FOUND for Azure (~15% PEC), inferred for AWS/Google",
+        "Variable cost behavior required for Public Cloud model - INFERRED from thin margin and resale economics",
+        "Overall margin compression (19.5% down from 21.3%) with Public Cloud 61% of revenue - FOUND, suggests Public Cloud drag on margins"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence of Public Cloud margin expansion or pricing power - NOT FOUND (margin declining)",
+        "Evidence of long-term guaranteed hyperscaler partnership terms protecting margin - NOT FOUND (terms not disclosed)",
+        "Evidence of management fee increases or customer acceptance of higher fees - NOT FOUND (revenue declining 3% YoY)",
+        "Evidence of cost reductions improving Public Cloud profitability - NOT FOUND (COGS% increasing)"
+      ],
+      "status": "SUPPORTED",
+      "notes": "All supporting evidence found. No disconfirming evidence discovered. Public Cloud economics are structurally fragile with thin margins entirely dependent on hyperscaler partner programs that Rackspace does not control. 10.4% margin cannot absorb partner credit reduction or competitive pressure."
+    },
+    {
+      "hypothesis": "H2: Private Cloud margin (38.6%) is under structural compression from negative operating leverage (revenue declining 13% YoY faster than fixed infrastructure costs can be reduced) and VMware cost shock (Broadcom 200-300% price increases).",
+      "supporting_evidence_sought": [
+        "Private Cloud revenue declining 13% YoY (fastest of any segment) - FOUND in Q4 2024 earnings",
+        "CapEx declining 25% ($181M to $136M) while revenue declined only 13% - FOUND, suggests underinvestment",
+        "VMware price increases 200-300% post-Broadcom acquisition (Nov 2023) - FOUND in market reports",
+        "Fixed infrastructure costs (depreciation, facilities, leases) create negative leverage - INFERRED from cost structure",
+        "Cost of Revenue 80.5% (up 180bps) despite lower CapEx indicates margin pressure - FOUND in Q4 2024 earnings"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence of Private Cloud margin expansion or stabilization - NOT FOUND (revenue declining, margin under pressure)",
+        "Evidence of VMware cost mitigation strategies (alternative platforms, customer migrations) - NOT FOUND",
+        "Evidence of infrastructure cost reductions matching revenue decline - NOT FOUND (accounting adjustments extended useful life, not cost cuts)",
+        "Evidence of customer retention initiatives reversing Private Cloud decline - NOT FOUND (13% YoY decline accelerating)"
+      ],
+      "status": "SUPPORTED",
+      "notes": "All supporting evidence found. No disconfirming evidence discovered. Private Cloud faces twin threats: secular decline (migration to public cloud) and VMware cost shock. Fixed infrastructure creates negative operating leverage. Underinvestment in CapEx creates future service degradation risk. Private Cloud margin 38.6% likely compresses to 30-32% within 12-24 months if trends continue."
+    },
+    {
+      "hypothesis": "H3: Overall gross margin compression (19.5% down from 21.3%, 180bps) is driven by revenue mix shift toward low-margin Public Cloud as high-margin Private Cloud shrinks faster, creating mathematical margin deterioration.",
+      "supporting_evidence_sought": [
+        "Private Cloud (38.6% margin) declining 13% YoY - FOUND",
+        "Public Cloud (10.4% margin) declining only 3% YoY - FOUND",
+        "Overall gross margin 19.5% down from 21.3% (180bps compression) - FOUND",
+        "Revenue mix: Public Cloud 61%, Private Cloud 39% - FOUND",
+        "Weighted average math: If Private Cloud shrinks from 39% to 35% of mix, overall margin compresses toward Public Cloud's 10.4% - CALCULABLE"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence of Public Cloud margin expansion offsetting Private Cloud mix shift - NOT FOUND (Public Cloud margin 10.4%, not improving)",
+        "Evidence of new high-margin revenue engines emerging - NOT FOUND (email hosting collapsing, professional services likely low-margin)",
+        "Evidence of margin improvement initiatives succeeding - NOT FOUND (accounting adjustments only, not operational improvements)",
+        "Evidence of revenue mix stabilizing or reversing - NOT FOUND (Private Cloud decline accelerating)"
+      ],
+      "status": "SUPPORTED",
+      "notes": "All supporting evidence found. No disconfirming evidence discovered. Margin compression is MATHEMATICAL INEVITABILITY as high-margin business (Private Cloud 38.6%) shrinks faster than low-margin business (Public Cloud 10.4%). If Private Cloud continues declining 13% YoY and shrinks from 39% to 30% of revenue mix over 2-3 years, overall gross margin compresses from 19.5% toward 12-15%, approaching operating margin break-even with SG&A 25.9%."
+    },
+    {
+      "hypothesis": "H4: SG&A at 25.9% of revenue demonstrates ZERO operating leverage (declined 7.8% matching revenue decline 7%), indicating cost structure is structurally sticky due to multi-entity complexity and public company overhead.",
+      "supporting_evidence_sought": [
+        "SG&A $708M (25.9% of revenue) flat as % despite revenue decline - FOUND in Q4 2024 earnings",
+        "SG&A decreased 7.8% matching revenue decline 7% (no operating leverage) - FOUND",
+        "Multi-entity structure (US, UK, Government, China, Singapore) per Stage 1 creates duplicative overhead - FOUND",
+        "Public company costs (SEC, SOX, audit, IR) estimated $10-20M annually - INFERRED from industry benchmarks",
+        "Q4 2024 'professional fees' remain material despite decline - FOUND (restructuring advisors, legal, consultants)"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence of SG&A as % of revenue declining (operating leverage) - NOT FOUND (flat at 25.9%)",
+        "Evidence of entity consolidation or structural simplification - NOT FOUND (multi-entity structure permanent per Stage 1)",
+        "Evidence of major cost reduction programs beyond proportional headcount cuts - NOT FOUND",
+        "Evidence of SG&A efficiency improvements or productivity gains - NOT FOUND (costs tracking revenue proportionally)"
+      ],
+      "status": "SUPPORTED",
+      "notes": "All supporting evidence found. No disconfirming evidence discovered. SG&A 25.9% is STRUCTURALLY STICKY and cannot be reduced faster than revenue without destroying sales/marketing (killing growth) or impairing operations. Multi-entity jurisdictional structure prevents consolidation. Public company status creates fixed overhead. To achieve competitive SG&A 15-20%, would require $220-380M cost reduction (30-55% SG&A cut), which is IMPOSSIBLE without radical restructuring or portfolio simplification."
+    },
+    {
+      "hypothesis": "H5: Rackspace operates at NEGATIVE operating margin (-6.4% before D&A) because gross margin 19.5% is insufficient to cover SG&A 25.9%, making business structurally unprofitable at current trajectory.",
+      "supporting_evidence_sought": [
+        "Gross margin 19.5% per Q4 2024 earnings - FOUND",
+        "SG&A 25.9% of revenue per Q4 2024 earnings - FOUND",
+        "Operating margin = 19.5% - 25.9% = -6.4% BEFORE depreciation, interest, taxes - CALCULABLE",
+        "Loss from operations $(909)M in 2024 per Q4 2024 earnings - FOUND (includes $715M goodwill impairment, but core operating loss evident)",
+        "Non-GAAP Operating Profit $106M in 2024 down 33% YoY per Q4 2024 earnings - FOUND (deteriorating even on adjusted basis)"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence of path to operating profitability at current trajectory - NOT FOUND",
+        "Evidence of margin expansion initiatives closing gross margin/SG&A gap - NOT FOUND",
+        "Evidence of revenue growth reversing decline trajectory - NOT FOUND (revenue declining 7% YoY)",
+        "Evidence of major cost restructuring creating profitability - NOT FOUND (incremental cuts only, not structural reform)"
+      ],
+      "status": "SUPPORTED",
+      "notes": "All supporting evidence found. No disconfirming evidence discovered. Rackspace is LOSS-MAKING at operating level with gross margin 19.5% insufficient to cover SG&A 25.9%. To achieve 5% operating margin (minimal viability), requires EITHER: (1) Gross margin expansion from 19.5% to 30.9% (impossible given Public Cloud 10.4%, Private Cloud declining), OR (2) SG&A reduction from 25.9% to 14.5% (requires 45% SG&A cut = $320M, devastating to operations). NO PATH TO PROFITABILITY without radical restructuring."
+    },
+    {
+      "hypothesis": "H6: Email hosting 706% price increase will destroy segment economics through churn spiral (fixed platform costs spread over shrinking mailbox base), forcing exit or continued operation at loss.",
+      "supporting_evidence_sought": [
+        "Email price increase 706% ($1-3/mailbox to $6-10/mailbox) effective March 2026 - FOUND",
+        "Partners report 'immediate churn', 'wave of churn' predicted - FOUND",
+        "Email platform has high fixed costs (infrastructure, software, personnel) requiring scale - INFERRED from industry economics",
+        "Competitive disadvantage: Microsoft 365 $6/user/month with Office vs Rackspace $10/month email only - FOUND",
+        "If churn >60-70%, total revenue DECLINES despite 7x price increase - CALCULABLE (breakeven retention ~85%)"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence of customer acceptance or retention despite price increase - NOT FOUND (partners report immediate churn)",
+        "Evidence of email hosting revenue disclosed separately justifying price increase - NOT FOUND (not disclosed, suggests immaterial or embarrassing)",
+        "Evidence of value-add or service improvements accompanying price increase - NOT FOUND (storage/support unchanged)",
+        "Evidence of competitor price increases justifying Rackspace move - NOT FOUND (Microsoft/Google stable)"
+      ],
+      "status": "SUPPORTED",
+      "notes": "All supporting evidence found. No disconfirming evidence discovered. Email hosting price increase is DESPERATION MOVE that will likely destroy segment through churn spiral. If churn reaches 60-70% (partners' prediction plausible), fixed platform costs spread over remaining mailboxes creates negative margin. Rackspace will face choice: (1) Exit (shut down, migrate customers, take write-off), OR (2) Operate at loss as customer service. Either option destroys value. Demonstrates management desperation and financial distress."
+    }
+  ]
+}

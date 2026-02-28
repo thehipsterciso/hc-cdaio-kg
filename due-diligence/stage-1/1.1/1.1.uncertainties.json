@@ -1,0 +1,58 @@
+{
+  "uncertainty_register": [
+    {
+      "unknown": "Complete list of subsidiary entities and their jurisdictions of incorporation. Exhibit 21 to 10-K not directly accessed due to SEC.gov 403 errors. Partial entity list compiled from secondary sources (employment agreements, litigation, contracts, press releases) but may be incomplete.",
+      "type": "UNKNOWN",
+      "decision_impact": "MATERIAL: Incomplete subsidiary list creates risk of: (1) Missing entities holding material assets (IP, customer contracts, data center leases), (2) Unidentified jurisdictional exposures (foreign tax, regulatory, employment law), (3) Hidden guarantor obligations or cross-default triggers, (4) Missed change-of-control provisions at subsidiary level. Carve-out or divestiture analysis cannot be completed without complete entity list.",
+      "what_would_reduce_uncertainty": "Direct access to: (1) Exhibit 21 to most recent 10-K (FY 2024 or FY 2025), (2) Credit agreement Schedule listing all borrower/guarantor entities, (3) Corporate organizational chart from management, (4) State/international corporate registry searches (requires budget and time)."
+    },
+    {
+      "unknown": "Existence and terms of Apollo investor rights agreement or shareholders agreement. Typical PE-backed public companies have investor rights agreements granting PE sponsor: (1) Board nomination rights, (2) Information rights, (3) Registration rights, (4) Consent rights over material actions, (5) Tag-along/drag-along rights. No such agreement found in public filings searched, but these are often filed as exhibits to IPO S-1 or subsequent 8-Ks.",
+      "type": "UNKNOWN",
+      "decision_impact": "CRITICAL: If Apollo has contractual governance rights beyond equity voting: (1) Apollo consent may be required for M&A even if majority vote sufficient, (2) Apollo may have veto over divestitures, financing, or strategic changes, (3) Tag-along rights could force inclusion of Apollo in any sale process, (4) Drag-along rights could force minority holders to sell if Apollo exits. Without knowing these terms, cannot assess true control constraints.",
+      "what_would_reduce_uncertainty": "Search SEC EDGAR for: (1) Form S-1 filed in connection with August 2020 IPO (Exhibits), (2) Form 8-K filings from 2020 announcing IPO and listing material agreements, (3) DEF 14A proxy statements (typically disclose material agreements with shareholders). If not publicly filed, would require management disclosure or data room access."
+    },
+    {
+      "unknown": "Specific allocation of material assets (IP, customer contracts, data center leases, compliance certifications) to entity level. Know that Rackspace US Inc. employs U.S. staff and Rackspace Technology Global Inc. likely operates assets, but precise mapping unclear.",
+      "type": "UNKNOWN",
+      "decision_impact": "MATERIAL: Cannot assess separability or carve-out feasibility without knowing: (1) Which entity holds IP (patents, trademarks, copyrights), (2) Which entity is party to customer contracts (and whether contracts are assignable), (3) Which entity leases data centers (and lease assignability), (4) Which entity holds compliance certifications (ISO, SOC, FedRAMP). Asset-level due diligence required before any M&A structuring.",
+      "what_would_reduce_uncertainty": "Management disclosure: (1) IP assignment register showing which entity owns patents/trademarks, (2) Material contract schedule showing contracting entity for top customers, (3) Real estate schedule showing lessee entity for data centers, (4) Compliance certification schedule showing certificate holder entity. Alternatively: review 10-K risk factor section and MD&A for hints about asset location."
+    },
+    {
+      "unknown": "Magnitude of contingent liabilities from: (1) Alpha Modus patent litigation (damages sought not disclosed in available sources), (2) Remaining ransomware class action (settlement value or judgment exposure unknown), (3) Unasserted claims from 2022 ransomware attack (customer claims, regulatory fines).",
+      "type": "UNKNOWN",
+      "decision_impact": "MATERIAL: Patent damages could range from immaterial ($1-5M) to material ($50M+) depending on: (1) Revenue attributable to accused technology, (2) Willfulness finding (treble damages), (3) Ongoing royalty rate. Ransomware class action could settle for negligible amount or result in tens of millions judgment. Cannot assess true litigation risk without damages estimates. Material adverse judgment could trigger debt covenant violations or impair valuation.",
+      "what_would_reduce_uncertainty": "Review: (1) 10-K Item 3 (Legal Proceedings) for disclosed litigation and damages estimates, (2) Financial statement footnotes for contingent liability reserves and range of exposure, (3) PACER dockets for Alpha Modus case to see damages contentions in complaint, (4) Engage litigation counsel to assess exposure range."
+    },
+    {
+      "unknown": "Tax attributes held by Inception Parent Inc. and Inception Intermediate Inc. from 2016 Apollo acquisition. These legacy acquisition vehicles may hold NOLs, basis step-ups, or other tax benefits subject to IRC Section 382 limitations upon ownership change.",
+      "type": "UNKNOWN",
+      "decision_impact": "MATERIAL: If entities hold significant NOLs (net operating losses) from pre-acquisition period or post-acquisition losses: (1) Ownership change exceeding 50% in 3-year period triggers Section 382 annual limitation on NOL usage, (2) Value of tax attributes could be impaired or lost, (3) Tax efficiency of structure may depend on maintaining these entities in current form. If no material tax attributes exist, entities may be eliminable through merger/dissolution (simplifying structure).",
+      "what_would_reduce_uncertainty": "Review: (1) 10-K financial statement footnote on income taxes showing NOL carryforwards by jurisdiction and entity, (2) Tax provision footnote showing valuation allowances, (3) Deferred tax asset schedule. Would require tax diligence with management cooperation to access tax returns and Section 382 studies."
+    },
+    {
+      "unknown": "Compliance certification entity-level holdings and recertification timelines. Assume operating subsidiaries hold ISO 27001, SOC 2, HIPAA/HITRUST, FedRAMP certifications, but precise mapping unknown.",
+      "type": "UNKNOWN",
+      "decision_impact": "MATERIAL: If entity holding certifications is sold, restructured, or merged: (1) Certifications may not automatically transfer, (2) Recertification required (6-18 month timeline depending on framework), (3) During recertification gap, cannot serve regulated customers (healthcare HIPAA customers, government FedRAMP customers) - representing revenue loss. Need to map certifications to entities and assess recertification risk for any corporate structure change.",
+      "what_would_reduce_uncertainty": "Request from management: (1) Compliance certification register showing entity name on each certificate, (2) Certification expiration dates and audit schedules, (3) Customer contract analysis showing which customers require which certifications, (4) Revenue mapping to certification-dependent customers."
+    },
+    {
+      "unknown": "NASDAQ minimum bid price compliance status. Stock trading at $0.48 (below $1.00 minimum). Unknown whether company has received deficiency notice or is subject to cure period.",
+      "type": "UNKNOWN",
+      "decision_impact": "MATERIAL: If company has received NASDAQ deficiency notice: (1) Typically 180-day cure period to regain compliance (stock must close above $1.00 for 10 consecutive trading days), (2) If not cured, company faces delisting to OTC markets, (3) Delisting impairs liquidity, institutional ownership, and public currency for M&A, (4) May trigger debt covenant violations if credit agreement contains listing covenant. If delisting is imminent, could force going-private transaction or reverse stock split.",
+      "what_would_reduce_uncertainty": "Review: (1) Recent 8-K filings for NASDAQ deficiency notice, (2) Press releases addressing stock price or listing status, (3) 10-K/10-Q risk factors discussing exchange listing, (4) Direct inquiry to NASDAQ or company IR."
+    },
+    {
+      "unknown": "Borrowing base availability and revolving credit facility utilization. Springing leverage covenant (5.0x ratio) applies only when revolving facility utilization exceeds 35% of commitments. Unknown: (1) Total revolver commitment size, (2) Current drawn amount, (3) Available capacity, (4) Whether company is approaching 35% threshold that would trigger covenant testing.",
+      "type": "UNKNOWN",
+      "decision_impact": "MATERIAL: If revolver utilization is approaching or exceeds 35% threshold: (1) Financial covenant becomes active, (2) Must maintain 5.0x super-priority net senior secured leverage ratio, (3) Covenant violation triggers default and acceleration, (4) Operating flexibility constrained by need to manage leverage ratio. If well below 35%, covenant is dormant and less concerning. Liquidity position depends on revolver availability.",
+      "what_would_reduce_uncertainty": "Review: (1) 10-Q/10-K financial statement footnote on debt showing revolver size and utilization, (2) MD&A liquidity discussion, (3) Credit agreement to understand revolver terms and borrowing base mechanics."
+    },
+    {
+      "unknown": "Ultimate beneficial ownership structure of Apollo Global Management's stake. Apollo likely holds through multiple funds (Apollo Fund VIII or later vintage). Ownership may be fragmented across funds with different liquidity profiles and exit timing.",
+      "type": "UNKNOWN",
+      "decision_impact": "INFORMATIVE: Understanding which Apollo funds hold stake informs: (1) Apollo's exit timeline (older vintage funds approaching end of life may seek exit sooner), (2) Whether stake can be easily sold or must be distributed to LPs, (3) Whether multiple Apollo funds have different interests. Does not change control analysis (Apollo controls regardless of fund structure) but informs negotiations and exit optionality.",
+      "what_would_reduce_uncertainty": "Review: (1) Schedule 13D/13G filings by Apollo Global Management showing reporting persons and fund names, (2) Apollo's fund vintage and lifecycle (public information), (3) Management discussion of Apollo as investor."
+    }
+  ]
+}

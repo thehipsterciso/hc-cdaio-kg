@@ -1,0 +1,104 @@
+{
+  "sub_stage": "3.3",
+  "churn_trigger_events": [
+    {
+      "trigger_event": "Hyperscaler account team proactive outreach offering direct managed services with financial incentives",
+      "affected_segments": [
+        "Mid-Market Public Cloud",
+        "Large Enterprise Public Cloud"
+      ],
+      "inertia_broken": "BEHAVIORAL INERTIA - customers staying due to lack of awareness/effort suddenly presented with ZERO-FRICTION alternative (hyperscaler already has infrastructure, account relationship, billing relationship). Financial incentives (credits, discounts, migration funding) eliminate cost barrier.",
+      "evidence_from_stages": "INFERENCE from Stage 2.5 (hyperscaler direct managed services existence) + Stage 3.2 (hyperscaler account teams have direct customer access) + Stage 2.4 (1-3 month management layer switching timeline = low friction). FACT: Stage 2.5 documents AWS Managed Services and Azure Managed Services as established offerings. INFERENCE: Hyperscaler sales teams likely proactively market these to MSP customers given strategic importance.",
+      "churn_timeline": "RAPID - 3-6 months from initial contact to migration for Mid-Market, 6-12 months for Large Enterprise (evaluation and procurement cycles longer but still fast relative to infrastructure change)",
+      "impact_scope": "SYSTEMIC if hyperscalers systematically target MSP customer base. LOCALIZED if opportunistic/reactive. Unknown which scenario applies - requires competitive intelligence on hyperscaler sales targeting strategies.",
+      "tolerance_threshold": "NONE for Mid-Market - behavioral inertia breaks on awareness + incentive. MODERATE for Large Enterprise - operational entrenchment provides resistance but not immunity, financial incentives can overcome switching hesitation.",
+      "evidence_of_materiality": "FACT: Stage 2.1 shows 21% net revenue leakage ($374M bookings decline, $119M revenue decline) but attribution unknown. INFERENCE: Portion attributable to hyperscaler-direct migration given threat vector analysis in Stage 3.2 identifying this as PRIMARY COMPETITIVE THREAT. Email segment showed 706% price increase triggered immediate exodus proving behavioral inertia breaks instantly on triggering event - hyperscaler incentives likely similar trigger for Public Cloud segments.",
+      "makes_latent_churn_visible": "YES - customers who would have churned eventually (dissatisfied but inertia-bound) churn immediately when presented with zero-friction alternative. Accelerates inevitable churn from 2-5 years (natural evaluation cycle) to 3-12 months (triggered evaluation)."
+    },
+    {
+      "trigger_event": "Service failure or security incident creating C-suite visibility and executive mandate to reevaluate vendor",
+      "affected_segments": [
+        "Large Enterprise Private Cloud",
+        "Large Enterprise Public Cloud",
+        "Government"
+      ],
+      "inertia_broken": "OPERATIONAL ENTRENCHMENT and PROCUREMENT FRICTION - incidents override normal inertia by creating executive mandate. Switching costs remain high ($2-10M, 12-24 months) but willingness to pay those costs increases from ZERO to HIGH when incident triggers loss of confidence.",
+      "evidence_from_stages": "INFERENCE from Stage 2.4 retention analysis: High lock-in segments retain 85-95% annually (5-15% churn), SOME of this churn must be incident-triggered given operational entrenchment would prevent voluntary switching. FACT: Stage 1.5 identifies security/compliance as core value proposition for Government and Large Enterprise, making security incidents EXISTENTIAL THREAT to retention. No public incident data available but incident-triggered churn is STANDARD PATTERN in enterprise IT services.",
+      "churn_timeline": "DELAYED but CERTAIN - incident triggers evaluation (30-90 days), procurement (3-12 months), migration (12-24 months for Private Cloud infrastructure, 3-6 months for Public Cloud management). Total timeline 18-36 months from incident to full exit for Private Cloud, 6-18 months for Public Cloud.",
+      "impact_scope": "LOCALIZED - affects individual customers experiencing incidents, not systemic across customer base. However, REPUTATIONAL SPILLOVER possible if incident becomes public (other customers question reliability even without experiencing incident directly).",
+      "tolerance_threshold": "VARIES by segment: Large Enterprise Private Cloud tolerates MINOR incidents (individual VM failures, brief outages <4 hours) due to operational entrenchment, LOW TOLERANCE for MAJOR incidents (multi-day outages, data loss, security breaches). Government has ZERO TOLERANCE for security/compliance incidents due to regulatory requirements - single material incident can trigger mandatory re-evaluation.",
+      "evidence_of_materiality": "UNKNOWN - requires incident history and post-incident churn tracking from Rackspace management. Stage 2.4 shows 5-15% annual churn in high lock-in segments, INFERENCE that incidents contribute to this churn rate but magnitude unknown (could be 20% of churn = 1-3% of base, or 80% of churn = 4-12% of base).",
+      "makes_latent_churn_visible": "YES - customers with underlying dissatisfaction (service quality concerns, cost concerns, considering alternatives) use incident as JUSTIFICATION for switching decision they wanted to make anyway. Incident provides political cover for expensive switching decision ('we MUST move after this incident' vs 'we WANT to evaluate alternatives')."
+    },
+    {
+      "trigger_event": "Rackspace price increase or contract renewal with material pricing change (15%+ increase)",
+      "affected_segments": [
+        "Mid-Market Public Cloud",
+        "SMB Public Cloud",
+        "Mid-Market Private Cloud"
+      ],
+      "inertia_broken": "BEHAVIORAL INERTIA and PASSIVE AUTO-RENEWAL - price increases force active decision where customers previously on auto-pilot. For SMB (zero structural barriers) and Mid-Market (low structural barriers), price attention triggers immediate alternative evaluation.",
+      "evidence_from_stages": "FACT: Stage 2.3 Email segment 706% price increase triggered customer exodus and -45% YoY revenue decline, PROVES price increases break behavioral inertia instantly in low-lock-in segments. FACT: Stage 2.1 shows Email segment terminal decline despite 'Fanatical Support' brand, customers will NOT pay premium for commodity service. INFERENCE: Public Cloud segments (Mid-Market, SMB) have similar behavioral inertia and price sensitivity as Email given low switching costs.",
+      "churn_timeline": "IMMEDIATE for SMB (1-2 weeks evaluation, 2-4 weeks migration = 1 month total), RAPID for Mid-Market Public Cloud (1-2 months evaluation, 2-4 months migration = 3-6 months total), DELAYED for Mid-Market Private Cloud (3-6 months evaluation, 6-12 months migration = 9-18 months total due to infrastructure dependencies).",
+      "impact_scope": "SYSTEMIC if Rackspace attempts broad-based price increases to address margin pressure. LOCALIZED if price increases targeted to specific customer cohorts. Stage 2.2 shows margin pressure requiring revenue growth or cost cuts, if Rackspace pursues price increases as margin defense, triggers SYSTEMIC churn risk across Mid-Market and SMB segments.",
+      "tolerance_threshold": "LOW for SMB (5-10% price increase triggers evaluation, 15%+ triggers immediate switching), MODERATE for Mid-Market Public Cloud (10-15% tolerated if justified by value-add, 20%+ triggers evaluation), HIGHER for Mid-Market Private Cloud (15-20% tolerated due to switching costs, 25%+ triggers evaluation but not necessarily switching).",
+      "evidence_of_materiality": "FACT: Email 706% increase proves extreme pricing breaks retention completely. INFERENCE: More modest price increases (15-30%) would trigger SOME churn (10-30% of affected customers) in low-lock-in segments based on behavioral economics - customers tolerate small increases (<10%) through inertia, moderate increases (10-20%) trigger evaluation but not certain switching, large increases (20%+) trigger high switching rates (30-50%+).",
+      "makes_latent_churn_visible": "YES - price increases surface dissatisfied customers who were staying due to inertia. Customers considering alternatives but not actively pursuing (latent churn risk) accelerate decision when price provides impetus. Price increase is PERMISSION to switch for customers with underlying dissatisfaction."
+    },
+    {
+      "trigger_event": "Customer organizational change (new CIO/CTO, M&A, PE acquisition, restructuring) bringing external perspective without institutional inertia",
+      "affected_segments": [
+        "All segments but HIGHEST impact in Large Enterprise and Mid-Market"
+      ],
+      "inertia_broken": "INSTITUTIONAL KNOWLEDGE and OPERATIONAL ENTRENCHMENT - new leadership lacks invested relationships with incumbent vendor and institutional knowledge making switching seem difficult. New executives bring ZERO switching cost in political capital (no prior commitment to defend) and HIGH incentive to demonstrate impact through vendor rationalization.",
+      "evidence_from_stages": "INFERENCE from Stage 2.4 switching cost analysis: 'Institutional knowledge and runbook dependencies' identified as Large Enterprise retention factor, organizational change ELIMINATES this factor as new leadership lacks institutional knowledge (no loss from switching). FACT: Stage 1.5 shows PE ownership of Rackspace by Apollo, PE buyers commonly drive vendor consolidation and cost reduction, creating irony that Rackspace PE owner may trigger customer PE acquisitions to churn customers. STANDARD PATTERN in enterprise services: new CIO tenure first 12-18 months includes vendor portfolio review.",
+      "churn_timeline": "DELAYED - new leadership typically reviews vendors within first 6-12 months (evaluation and portfolio analysis), initiates changes 12-18 months after arrival, completes migration 24-36 months after arrival. Long timeline but HIGH PROBABILITY once evaluation initiated (new leaders want wins, vendor changes are visible impact).",
+      "impact_scope": "LOCALIZED - affects individual customers experiencing leadership change, not systemic. However, FREQUENCY matters: if Large Enterprise customer base experiences 10-20% annual CIO turnover (typical), affects 10-20% of customer base annually even though each instance is localized.",
+      "tolerance_threshold": "NONE - new leadership has NO institutional inertia to overcome. Switching costs remain ($2-10M for Large Enterprise) but WILLINGNESS to pay switching costs increases dramatically. New leaders often pursue vendor changes specifically BECAUSE of switching costs (demonstrates commitment and impact vs easy changes).",
+      "evidence_of_materiality": "UNKNOWN - requires customer organizational change tracking and post-change churn analysis from Rackspace account management. INFERENCE: This is material contributor to Large Enterprise and Mid-Market churn given typical CIO tenure 3-5 years (20-33% annual turnover) and new leader vendor review pattern.",
+      "makes_latent_churn_visible": "YES - customers with underlying cost concerns or feature gaps but high switching costs (latent churn) become active churn when new leadership willing to invest in switching. New executives accelerate churn from 'eventually' to 'within 24 months'."
+    },
+    {
+      "trigger_event": "Hyperscaler marketplace requirement or ISV forcing 'hyperscaler-direct' relationship for technical integration/support",
+      "affected_segments": [
+        "Mid-Market Public Cloud",
+        "Large Enterprise Public Cloud"
+      ],
+      "inertia_broken": "BEHAVIORAL INERTIA - customers forced to engage directly with hyperscaler for specific workloads/applications (marketplace purchases, ISV requirements), creates PARALLEL RELATIONSHIP that makes hyperscaler-direct management less foreign. Once customer has AWS/Azure account team relationship and billing relationship for some workloads, adding managed services through same relationship is INCREMENTAL not NEW.",
+      "evidence_from_stages": "FACT: Stage 3.2 ecosystem shift identified hyperscaler marketplaces and ISV native integrations as competitive threat vector marginalizing MSPs. FACT: Stage 2.5 documents hyperscaler platforms capturing value, marketplaces are extension of platform control. INFERENCE: Marketplace-driven hyperscaler relationships PRIME customers for hyperscaler-direct managed services by breaking down MSP intermediation.",
+      "churn_timeline": "GRADUAL then SUDDEN - marketplace/ISV requirements create hyperscaler relationship (year 1-2), customer maintains hybrid MSP + direct model (year 2-4), customer consolidates to hyperscaler-direct when renewal provides opportunity (year 3-5). Total timeline 3-5 years from first marketplace requirement to full churn, but inflection is sudden at consolidation point.",
+      "impact_scope": "SYSTEMIC - hyperscaler marketplace growth is INDUSTRY TREND affecting all Public Cloud customers, not isolated incidents. FACT: AWS Marketplace grew 50%+ annually 2020-2023 (public AWS metrics), Azure Marketplace similar growth. As marketplace becomes PRIMARY software procurement channel for cloud customers, Rackspace MSP model increasingly disintermediated.",
+      "tolerance_threshold": "NO CUSTOMER RESISTANCE - customers embrace marketplaces for procurement efficiency and ISV breadth. Customers don't view marketplace adoption as 'switching from Rackspace' initially (hybrid model), resistance only emerges when Rackspace tries to prevent hyperscaler-direct relationship (customer sees Rackspace as OBSTACLE to desired ISV integrations).",
+      "evidence_of_materiality": "INFERENCE: Marketplace-driven disintermediation is SLOW-MOVING but LARGE-SCALE threat. May account for 5-10% annual Public Cloud customer base erosion as customers gradually shift from 'Rackspace-managed on hyperscaler infrastructure' to 'hyperscaler-direct with marketplace ISVs'. Contributes to 21% net revenue leakage identified in Stage 2.1 but magnitude uncertain.",
+      "makes_latent_churn_visible": "NO - this trigger creates NEW churn rather than surfacing latent churn. Customers may have been satisfied with Rackspace but marketplace/ISV requirements create EXTERNAL FORCING FUNCTION. However, once hyperscaler-direct relationship established for marketplace, customers with LATENT dissatisfaction (cost, features) more likely to consolidate to hyperscaler-direct."
+    },
+    {
+      "trigger_event": "VMware/Broadcom pricing shock forcing Private Cloud infrastructure reevaluation",
+      "affected_segments": [
+        "Large Enterprise Private Cloud",
+        "Mid-Market Private Cloud"
+      ],
+      "inertia_broken": "OPERATIONAL ENTRENCHMENT - VMware cost inflation (200-300% increase per Stage 2.5) transforms Private Cloud economics, customers FORCED to reevaluate despite high switching costs. When annual VMware costs increase $500K-5M, switching costs ($2-10M) become JUSTIFIABLE within 2-4 year payback period.",
+      "evidence_from_stages": "FACT: Stage 2.5 documents Broadcom VMware 200-300% price increase as confirmed event. FACT: Stage 3.1 documents $100-210M annual value transfer from Rackspace to VMware/Broadcom. INFERENCE: If Rackspace experiencing $100-210M VMware cost increase, Rackspace MUST pass costs to Private Cloud customers (Stage 2.2 shows 3.1% EBITDA margin, cannot absorb), customers face MATERIAL price increases triggering reevaluation.",
+      "churn_timeline": "DELAYED - VMware price shock occurred 2023-2024 (Broadcom acquisition), customer contract renewals with increased pricing 2024-2025, customer evaluation 6-12 months, migration 12-24 months for infrastructure change. PEAK CHURN 2025-2027 from 2023-2024 pricing shock.",
+      "impact_scope": "SYSTEMIC - affects ALL Private Cloud customers with VMware-based infrastructure (MAJORITY of Rackspace Private Cloud per Stage 1.2). This is INDUSTRY-WIDE forcing function affecting all VMware-based hosting/MSP providers, not Rackspace-specific. However, Rackspace CONCENTRATED in Private Cloud VMware (60%+ of Private Cloud revenue per Stage 1.2 segment sizing), making Rackspace DISPROPORTIONATELY exposed.",
+      "tolerance_threshold": "MODERATE to HIGH - customers tolerate 20-30% VMware cost increases by accepting Rackspace price increases IF Rackspace provides value-add justifying cost. 50%+ VMware cost increases (200-300% Broadcom increase passed through) EXCEED tolerance, force reevaluation of Private Cloud model entirely (migrate to Public Cloud, insource, alternative hypervisors).",
+      "evidence_of_materiality": "FACT: Stage 2.1 shows Private Cloud revenue declining 13% YoY from $558M to $486M (-$72M annual decline). INFERENCE: VMware pricing shock LIKELY material contributor to Private Cloud decline given timing (Broadcom acquisition 2023, revenue decline 2024-2025) and magnitude (13% decline = $72M is CONSISTENT with 10-20% customer churn triggered by pricing shock). This is LARGEST KNOWN churn trigger event affecting Rackspace currently.",
+      "makes_latent_churn_visible": "YES - customers with long-term concerns about Private Cloud vs Public Cloud migration (latent churn, delayed by operational entrenchment) forced to execute migration NOW when VMware pricing makes Private Cloud uneconomical. Accelerates 5-10 year cloud migration timelines to 2-4 years."
+    },
+    {
+      "trigger_event": "Government/Enterprise mandate for hyperscaler-native solutions (UK government 'Cloud First', US federal Cloud Smart, enterprise digital transformation requiring hyperscaler AI/ML services)",
+      "affected_segments": [
+        "Government",
+        "Large Enterprise"
+      ],
+      "inertia_broken": "PROCUREMENT FRICTION and OPERATIONAL ENTRENCHMENT - regulatory/executive mandates OVERRIDE normal inertia by creating COMPLIANCE REQUIREMENT. Switching costs remain but become MANDATORY rather than discretionary spend.",
+      "evidence_from_stages": "FACT: Stage 2.4 identifies government 'cloud smart' policies and modernization as trend favoring hyperscaler platforms. INFERENCE from Stage 3.2: UK government and US federal government increasingly require hyperscaler-native capabilities (AI/ML, data analytics, modern app platforms) that specialized hosting providers cannot deliver. FACT: Stage 1.5 shows UK Sovereign strategy is RESPONSE to government requirements but AWS UK Sovereign launches 2025-2026 as PREFERRED solution.",
+      "churn_timeline": "DELAYED - mandates announced with 2-5 year compliance windows, customers evaluate options 6-18 months, migrate 12-36 months. Total timeline 3-7 years from mandate announcement to full churn. However, CERTAINTY is high - mandates create inevitable churn even if delayed.",
+      "impact_scope": "SEGMENT-SPECIFIC but SYSTEMATIC - affects Government segment comprehensively (all government customers subject to cloud policies) and Large Enterprise selectively (enterprises pursuing digital transformation requiring hyperscaler services). Government segment is $127M revenue (9% of total), comprehensive policy-driven churn would affect ENTIRE segment over 3-7 years.",
+      "tolerance_threshold": "NONE - regulatory and executive mandates are NON-NEGOTIABLE. Customers may delay compliance but cannot avoid. Unlike other triggers (price increases, incidents) where tolerance exists, mandates eliminate tolerance.",
+      "evidence_of_materiality": "INFERENCE: Government modernization is KNOWN TREND but Rackspace impact timing uncertain. Stage 2.4 suggests Government churn rate is currently LOW (5-15% annually, procurement friction provides protection) but INCREASING as cloud mandates mature. Expect Government churn acceleration from 5-15% currently to 15-25% annually 2025-2028 as cloud-first policies enforced.",
+      "makes_latent_churn_visible": "YES - government agencies and enterprises with long-term hyperscaler migration plans (latent churn, delayed by procurement complexity) forced to execute when mandates create deadlines. Converts 'eventually migrate' to 'must migrate by [date]'."
+    }
+  ]
+}

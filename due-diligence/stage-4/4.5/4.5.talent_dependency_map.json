@@ -1,0 +1,111 @@
+{
+  "sub_stage": "4.5",
+  "document_metadata": {
+    "title": "Talent Dependency Map - Rackspace Technology, Inc.",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09"
+  },
+  "talent_dependency_map": [
+    {
+      "area_or_function": "CEO as sole cross-functional coordinator and conflict adjudicator",
+      "talent_dependency": "Organizational throughput limited by CEO personal capacity to adjudicate cross-functional conflicts, process major deals, establish policies, handle customer escalations. CEO must personally intervene in: Sales-delivery disputes (profitability vs bookings), BU resource conflicts (shared services allocation), major deal approvals ($100M+ TCV healthcare deal required CEO involvement), reactive policy creation (Q4 2024 walk away policy, Q3 2024 sales refresh). All cross-functional coordination paths converge on CEO—no operating committee, no empowered coordinators, no deal review board (Stage 4.1). System provides zero automation or process support—pure personal coordination.",
+      "system_support_level": "LOW",
+      "why_system_cannot_compensate": "No governance infrastructure exists to distribute coordination load: No operating committee to resolve BU conflicts, no deal review board to assess profitability before signature, no empowered coordinators to handle cross-functional issues, no delegation framework establishing decision rights below CEO level. Authority architecture centralizes all cross-functional authority with CEO (Stage 4.1)—system structurally requires CEO intervention. Adding more talented CEOs doesn't solve bottleneck—three CEOs in three years (Jones, Maletira, Kandiah) all exhibited same serial processing constraint. Coordination load exceeds any individual capacity—role structurally unsustainable. System design defeats CEO capability.",
+      "touch_test_what_breaks": "If CEO unavailable (vacation, illness, transition): Cross-functional conflicts stall—BU Presidents cannot resolve peer disputes, sales-delivery conflicts escalate without resolution, major deals cannot be approved (no substitute authority), customer escalations cannot be resolved (BBB: cannot reach CEO). Organizational throughput drops to near-zero—execution dependent on CEO personal intervention not repeatable process. Breakage type: COMBINED (operational coordination stops, delivery commitments at risk, strategic decisions stall). CEO transitions create coordination collapse—each new CEO must rebuild informal networks, relearn context, re-establish decision patterns. Three CEOs in three years demonstrates: Each transition disrupts execution, coordination fragility increases with turnover frequency, institutional knowledge loss compounding.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: CEO sole cross-functional coordinator, no operating committee",
+        "Stage 4.2: CEO serial bottleneck limits throughput",
+        "Three CEOs three years (Jones, Maletira, Kandiah)",
+        "Healthcare deal: CEO personal involvement $100M+ TCV",
+        "Q4 2024: CEO walk away policy (reactive intervention)",
+        "Q3 2024: Sales refresh (CEO-driven)",
+        "BBB: Cannot escalate to CEO (capacity exceeded)",
+        "Stage 4.3: CEO dependency creates systemic paralysis"
+      ]
+    },
+    {
+      "area_or_function": "Support coordination across billing, delivery, and engineering for customer issue resolution",
+      "talent_dependency": "Customer issues requiring cross-functional coordination depend on support staff personal relationships and informal networks to coordinate 'dozens of engineers' (BBB). Support staff must personally: Identify which engineers/functions to engage (no routing system), Negotiate prioritization with billing/delivery/engineering (no authority to compel), Track resolution progress across functions (no unified ticketing across functions), Maintain pressure until resolution (no SLA for cross-functional response). Success depends on individual support staff capability to coordinate informally without authority. System provides zero support—no VP Support, no empowered coordinator, no cross-functional resolution process (Stage 4.1).",
+      "system_support_level": "LOW",
+      "why_system_cannot_compensate": "No formal cross-functional coordination mechanism exists: Support lacks authority to compel billing/delivery/engineering action (Stage 4.1: no VP Support), no unified ticketing system spanning functions, no SLAs for cross-functional response times, no escalation path with teeth (customer cannot reach CEO per BBB). Support staff coordination purely informal—depends on personal relationships, tribal knowledge of who to contact, persuasion without authority. Adding more talented support staff doesn't solve authority gap—still cannot compel cross-functional action. Coordination overhead scales worse than linearly—'dozens of engineers' involved indicates coordination complexity overwhelming. System structurally requires heroic informal coordination—competence insufficient without authority.",
+      "touch_test_what_breaks": "If support staff unavailable (attrition, overload, burnout): Cross-functional issues stall—new support staff lack relationships/knowledge to coordinate informally, customer escalations cannot be resolved (no formal process to invoke), institutional knowledge of coordination pathways lost. Customer satisfaction deteriorates further (already declining—Trustpilot 'consistently worse' 2024). Customer churn accelerates from unresolved issues. 'Fanatical Support' brand promise collapses—competitive differentiation erodes. Breakage type: DELIVERY + RISK (customer commitments fail, churn threatens revenue). Support staff burnout structurally embedded—heroic coordination unsustainable, attrition inevitable, execution fragility increases.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "BBB: 'Dozens of engineers' involved in issue resolution",
+        "Stage 4.1: No VP Support, support lacks cross-functional authority",
+        "Stage 4.3: Support absorbing coordination failures through heroics",
+        "Trustpilot: 'Consistently getting worse' 2024",
+        "BBB: Unresolved issues, cannot escalate to senior management",
+        "Stage 4.2: Support coordination overhead exceeding productive work",
+        "Accountability void: Customer resolution split across functions"
+      ]
+    },
+    {
+      "area_or_function": "Operations and security incident response during multi-month crises",
+      "talent_dependency": "Major incidents (ransomware multi-month impact, zero-day vulnerabilities) require operations/security team sustained extraordinary effort: 24/7 on-call extended for weeks/months (not isolated incidents), Crisis coordination across multiple teams without formal structure, Vendor dependency management (ScienceLogic zero-day remediation timeline externally controlled), Customer communication and damage control, Parallel normal operations maintenance while managing crisis. Success depends on operations team willingness/capability to sustain heroic effort. No incident response automation, no proactive prevention investment (Stage 4.4: incentive on response not prevention), no redundancy for prolonged crisis.",
+      "system_support_level": "LOW",
+      "why_system_cannot_compensate": "No proactive risk infrastructure to prevent incidents: No CRO or proactive risk governance (Stage 4.1), reactive spending pattern—incidents force spending exceeding prevention cost (Stage 4.2), vendor dependencies create external constraints (ScienceLogic remediation timeline uncontrollable), monitoring degradation (Sept 2024 dashboards offline during zero-day incident). System structurally generates incidents operations must absorb reactively. Adding more talented operations staff doesn't prevent incidents—just distributes reactive burden. Incident response capability exists but incident prevention absent—operations fighting fires system continually generates. Competence deployed reactively not proactively—system defeats talent effectiveness.",
+      "touch_test_what_breaks": "If operations staff unavailable (attrition from burnout, overload during incident): Incident response degrades—extended MTTD/MTTR as fewer responders coordinate, multi-month incidents become multi-quarter (capacity insufficient for sustained crisis), vendor dependencies unmanaged (external constraints unmitigated), customer communication failures (coordination capacity exhausted). Regulatory risk escalates: FedRAMP authorization requires timely incident management—extended response times create compliance jeopardy, HIPAA/HITRUST incident notification requirements missed. Breakage type: COMBINED (operational stability collapses, delivery commitments fail, regulatory risk materializes). Operations burnout structurally embedded—reactive-only posture creates unsustainable workload, attrition inevitable, execution fragility compounds.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Ransomware: Multi-month impact requiring sustained response",
+        "Sept 2024: Zero-day monitoring offline during incident",
+        "Stage 4.1: No CRO, reactive risk posture only",
+        "Stage 4.2: Reactive spending pattern—incidents displace proactive",
+        "Stage 4.3: Operations absorbing risk failures reactively",
+        "Stage 4.4: Operations incentive on response not prevention",
+        "ScienceLogic vendor dependency creates external constraints"
+      ]
+    },
+    {
+      "area_or_function": "Multi-jurisdictional deployment and compliance coordination",
+      "talent_dependency": "Each deployment across FedRAMP, UK Sovereign, HIPAA/HITRUST, China jurisdictions requires specialized expertise: Jurisdiction-specific regulatory knowledge (cannot be generalized—each unique), Local operational procedures and compliance controls, Vendor relationship management per jurisdiction (ScienceLogic monitoring separately managed), Incident response procedures adhering to jurisdiction requirements. Deployment requires 5-6x separate execution (Stage 4.2)—cannot reuse across jurisdictions. Expertise not fungible—FedRAMP specialist cannot substitute for UK Sovereign specialist. Talent scarcity for jurisdiction-specific compliance increases fragility.",
+      "system_support_level": "LOW",
+      "why_system_cannot_compensate": "No central compliance coordination or common control framework: Each jurisdiction maintains separate compliance—no harmonization (Stage 4.4: accountability void), technology platform fragmentation—cannot consolidate infrastructure across jurisdictions, vendor dependencies per jurisdiction multiply cost and complexity, no central compliance function visible (Stage 4.1 authority analysis). System structurally requires jurisdiction-specific expertise—cannot automate across regulatory boundaries. Adding more talented compliance staff doesn't eliminate 5-6x multiplier—structural isolation persists. Jurisdictional regulations may prohibit consolidation (data sovereignty, local operations mandates)—system constrained by external forces. Talent capability bounded by regulatory complexity—competence necessary but insufficient.",
+      "touch_test_what_breaks": "If jurisdiction-specific expertise unavailable (attrition, overload): Compliance authorization at risk—FedRAMP, UK Sovereign, HIPAA/HITRUST require continuous compliance, local operations cannot be maintained (procedures undocumented or tribal), incident response fails jurisdiction requirements (regulatory notification missed), technology deployments stall (no expertise to navigate jurisdiction constraints). Revenue at risk: Government contracts require compliance maintenance (FedRAMP authorization loss terminates contracts), healthcare customers require HIPAA/HITRUST (authorization loss creates churn), UK Sovereign customers require local compliance (loss creates exit). Breakage type: COMBINED (operational continuity threatened, delivery commitments fail, regulatory/revenue risk materializes). Expertise scarcity amplifies fragility—cannot easily replace jurisdiction specialists.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.2: Multi-jurisdictional 5-6x operational multiplier",
+        "FedRAMP, UK Sovereign, HIPAA/HITRUST, China compliance requirements",
+        "Stage 4.3: Multi-jurisdictional bottleneck persistent",
+        "Stage 4.4: No central compliance coordination (accountability void)",
+        "ScienceLogic vendor dependency per jurisdiction",
+        "Technology platform fragmentation across jurisdictions inference"
+      ]
+    },
+    {
+      "area_or_function": "Legacy system and infrastructure custodianship",
+      "talent_dependency": "Inference: Multi-jurisdictional infrastructure, technology debt accumulation (Stage 4.4: engineering defers infrastructure investment), vendor dependencies (ScienceLogic, others likely), 15+ year operational history suggests legacy systems requiring specialized knowledge. Custodians likely possess: Undocumented system knowledge (tribal not institutionalized), Operational workarounds for technical debt, Vendor relationship context and escalation paths, Historical incident patterns and resolution approaches. System complexity and age create knowledge concentration—few individuals understand full stack.",
+      "system_support_level": "LOW",
+      "why_system_cannot_compensate": "Inference: No evidence of comprehensive documentation or knowledge management infrastructure. Technical debt accumulation (Stage 4.4: engineering prioritizes features over stability) suggests documentation deferred alongside infrastructure investment. Multi-jurisdictional fragmentation (Stage 4.2: 5-6x multiplier) multiplies undocumented complexity. Vendor dependencies (ScienceLogic zero-day incident) indicate external system integration knowledge required. 15+ year operational history with three ownership transitions (Apollo 2016, ABRY 2019, Apollo 2020) suggests institutional knowledge fragmentation. System likely requires custodian expertise—automation/documentation insufficient given complexity and technical debt.",
+      "touch_test_what_breaks": "If legacy system custodians unavailable (attrition, retirement): Operational incidents cannot be resolved—troubleshooting requires undocumented system knowledge, vendor escalations stall—relationship context and escalation procedures lost, deployment failures increase—infrastructure constraints undocumented, technical debt compounds—workarounds lost, new failures emerge. Customer delivery at risk: Infrastructure instability cascades to customer-facing services, incident MTTR extends dramatically (troubleshooting without context), regulatory compliance jeopardizes (infrastructure changes without understanding compliance dependencies). Breakage type: COMBINED (operational stability degrades, delivery reliability fails, regulatory risk from undocumented changes). Knowledge concentration amplifies turnover risk—cannot easily transfer tribal knowledge.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.4: Technical debt accumulation from engineering feature prioritization",
+        "Stage 4.2: Multi-jurisdictional infrastructure fragmentation (5-6x multiplier)",
+        "ScienceLogic vendor dependency and zero-day incident",
+        "15+ year Rackspace operational history (FACT)",
+        "Three ownership transitions creating institutional knowledge fragmentation",
+        "Stage 4.3: Infrastructure coordination complexity"
+      ]
+    },
+    {
+      "area_or_function": "Sales profitability validation and deal structuring (post-Q4 2024 walk away policy)",
+      "talent_dependency": "Q4 2024 CEO walk away policy established profitability discipline—but execution depends on sales organization capability: Assess delivery cost and buildability before signature, Negotiate value-based pricing reflecting true cost, Identify unprofitable deals proactively (not reactively after margin erosion), Coordinate with delivery on feasibility validation, Walk away from deals rationally (vs meeting quota pressure). Sales refresh Q3 2024 changed personnel—but profitability assessment capability uncertain. Walk away policy requires ongoing CEO enforcement (Stage 4.4: reactive not self-sustaining)—indicates sales not self-regulating. Talent capability critical transition dependency.",
+      "system_support_level": "LOW",
+      "why_system_cannot_compensate": "No structural support for profitability validation exists: No deal review board to assess profitability before signature (Stage 4.1), delivery lacks veto authority over unprofitable deals (Stage 4.1: accountability void), no profitability analysis tooling/data visible (how calculate delivery cost by deal?), sales incentive structure unchanged post-refresh (Stage 4.4: still bookings-based inference), walk away policy reactive CEO enforcement not proactive sales behavior (indicates no self-sustaining process). System still incentivizes volume (sales compensation on bookings)—walk away policy conflicts with incentive structure. Adding talented sales staff insufficient—incentive misalignment and authority gap persist. Policy compliance depends on CEO intervention capacity (bottleneck)—not scalable.",
+      "touch_test_what_breaks": "If sales profitability validation capability absent or CEO enforcement lapses: Margin erosion resumes—sales books unprofitable deals when walk away discipline relaxes, delivery inherits unbuildable commitments—margin destruction and customer execution failures, revenue sacrificed unnecessarily—profitable deals rejected while unprofitable accepted (assessment error), customer relationships damaged—commitments made then broken when delivery cannot execute. Business value destruction: Margin erosion (Private Cloud -13%, Public Cloud -3%) recreates, competitive position erodes (cannot invest in differentiation when margins consumed). Breakage type: DELIVERY + RISK (profitability destroyed, customer commitments fail). Walk away policy fragile—dependent on CEO enforcement bandwidth and sales capability uncertain.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Q4 2024: CEO walk away policy established",
+        "Q3 2024: Sales refresh (personnel change)",
+        "Stage 4.1: No deal review board, delivery lacks veto",
+        "Stage 4.4: Sales incentive on bookings not profitability (unchanged)",
+        "Margin erosion: Private Cloud -13%, Public Cloud -3% pre-policy",
+        "Stage 4.4: Walk away policy reactive CEO enforcement (not self-sustaining)",
+        "Accountability void: Deal profitability split sales/delivery"
+      ]
+    }
+  ]
+}

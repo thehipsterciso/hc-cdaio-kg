@@ -1,0 +1,91 @@
+{
+  "stage": "4",
+  "document_metadata": {
+    "title": "Execution Constraints Register - Rackspace Technology, Inc.",
+    "validation_date": "2026-02-09"
+  },
+  "execution_constraints_register": [
+    {
+      "constraint": "CEO serial bottleneck—all cross-functional coordination converges on single individual",
+      "category": "BOTTLENECK",
+      "severity": "HIGH",
+      "why_severity": "Organizational throughput limited by CEO personal capacity. Three CEOs in three years all hit identical limit—structural not individual. Decision delays accumulate, strategic focus impossible, turnover creates coordination collapse.",
+      "what_breaks_if_touched_or_under_stress": "CEO absence/transition: cross-functional conflicts stall, major deals cannot be approved, customer escalations unresolved, organizational throughput drops to near-zero. Already breaking: three transitions in three years, each disrupts coordination, FY2024 -7% revenue coincides with transitions.",
+      "evidence_refs": ["4.1.decision_authority_map", "4.2.coordination_bottlenecks", "4.3.dependency_map", "4.5.talent_dependency_map"],
+      "open_unknowns": ["Whether fourth CEO transition would create unrecoverable coordination collapse", "Whether organizational learning even possible with CEO tenure <18 months average"]
+    },
+    {
+      "constraint": "Sales-delivery authority mismatch—sales books deals without profitability validation, delivery accountable for margins without veto",
+      "category": "DECISION",
+      "severity": "HIGH",
+      "why_severity": "Margin erosion severe and continuous: Private Cloud -13%, Public Cloud -3% FY2024. Authority void allows negative-value deals. Sales refresh Q3 2024 changed personnel not structure—pattern persists. CEO forced reactive intervention Q4 2024 walk away policy.",
+      "what_breaks_if_touched_or_under_stress": "If sales autonomy continues: margin destruction accelerates, delivery capacity consumed by unprofitable customers, customer execution failures from under-resourcing, business value destroyed. If CEO enforcement lapses: walk away discipline fails, negative-value deals resume. Already breaking: margin erosion severe pre-intervention, revenue sacrificed (-7%) for profitability discipline.",
+      "evidence_refs": ["4.1.authority_mismatches", "4.3.dependency_map", "4.4.accountability_voids", "4.5.heroic_execution_zones"],
+      "open_unknowns": ["Sales incentive structure details—how deeply embedded is bookings optimization", "Whether sales organization has capability for profitability analysis if incentive realigned"]
+    },
+    {
+      "constraint": "Multi-jurisdictional 5-6x operational multiplier—regulatory isolation requires separate execution per jurisdiction",
+      "category": "BOTTLENECK",
+      "severity": "HIGH",
+      "why_severity": "Permanent cost penalty from FedRAMP/UK Sovereign/HIPAA/HITRUST/China regulatory boundaries. Cannot consolidate—data sovereignty mandates external constraints. Persistent across leadership changes—three CEOs, structure unchanged. Jurisdiction specialist attrition threatens authorization and revenue directly.",
+      "what_breaks_if_touched_or_under_stress": "If jurisdiction specialist departs: compliance authorization at risk (FedRAMP/UK Sovereign/HIPAA loss terminates contracts), deployment velocity degrades (no expertise to navigate constraints), incident response fails jurisdiction requirements. If deployment volume increases: 5-6x multiplier scales linearly creating unsustainable coordination load. Already stressed: ransomware multi-month, zero-day Sept 2024.",
+      "evidence_refs": ["4.2.coordination_bottlenecks", "4.3.bottlenecks", "4.5.turnover_sensitivity"],
+      "open_unknowns": ["Whether common control framework could reduce multiplier without violating sovereignty", "Extent of jurisdiction specialist attrition risk—burnout from 5-6x coordination overhead"]
+    },
+    {
+      "constraint": "Support lacks cross-functional resolution authority—no VP Support, cannot compel action from billing/delivery/engineering",
+      "category": "AUTHORITY",
+      "severity": "MEDIUM-HIGH",
+      "why_severity": "Customer satisfaction declining (Trustpilot 'consistently worse' 2024) despite support heroics. BBB complaints: dozens of engineers involved, issues unresolved, cannot reach CEO. Churn risk from unresolved issues. 'Fanatical Support' brand promise eroding—competitive differentiation lost.",
+      "what_breaks_if_touched_or_under_stress": "If support staff attrition (burnout from heroic coordination): informal networks break, new staff lack relationships to coordinate 'dozens of engineers', resolution failures increase, customer churn accelerates. If issue volume increases: coordination overhead overwhelms, support cannot scale heroics. Already breaking: satisfaction declining despite heroics, indicates capacity limit approaching.",
+      "evidence_refs": ["4.1.authority_mismatches", "4.2.execution_cadence_map", "4.4.accountability_voids", "4.5.heroic_execution_zones"],
+      "open_unknowns": ["Support staff actual attrition rate—inferred from satisfaction decline", "Whether VP Support role would succeed given cross-functional resistance to support direction"]
+    },
+    {
+      "constraint": "Operations reactive-only posture—no CRO, no proactive prevention funding, incentive on incident response not frequency reduction",
+      "category": "INCENTIVE",
+      "severity": "MEDIUM-HIGH",
+      "why_severity": "Incident recurrence: ransomware multi-month, zero-day Sept 2024, pattern suggests prevention gap not incident response capability gap. Reactive spending exceeds prevention cost but prevention budget unavailable until crisis. Regulatory risk: FedRAMP/HIPAA require proactive controls—reactive-only creates authorization jeopardy.",
+      "what_breaks_if_touched_or_under_stress": "If operations team attrition (burnout from sustained crises): incident response degrades, MTTR extends, regulatory compliance jeopardy, customer impact severity increases. If incident frequency increases: operations capacity overwhelmed, multi-month crises become multi-quarter, parallel incidents impossible to sustain. Already stressed: multi-month ransomware then zero-day, no recovery period between crises.",
+      "evidence_refs": ["4.1.decision_authority_map", "4.4.incentive_misalignment_map", "4.5.heroic_execution_zones"],
+      "open_unknowns": ["Operations team burnout severity—multi-month crises indicate high stress", "Whether proactive prevention investment would materially reduce incident frequency or incidents inherent to aging infrastructure"]
+    },
+    {
+      "constraint": "Incentive structures measure activity not outcomes—sales on bookings not profitability, support on SLA not resolution, operations on response not prevention",
+      "category": "INCENTIVE",
+      "severity": "MEDIUM-HIGH",
+      "why_severity": "Activity-outcome divergence pervasive: SLA met/satisfaction down, bookings maintained/margins down, incidents responded/frequency stable. Creates rational local optimization destroying global value. Personnel changes (sales refresh) don't resolve—incentive structure unchanged. Activity metrics mask business deterioration until crisis forces recognition.",
+      "what_breaks_if_touched_or_under_stress": "If incentive realignment attempted: short-term compensation reduction (fewer unprofitable deals, resolution vs throughput), personnel attrition from comp changes, measurement complexity (delivered profitability by deal, resolution quality tracking, prevented incidents counterfactual). If current incentives persist: margin erosion continues, satisfaction decline continues, incident frequency stable/increasing. Already breaking: margins down, satisfaction down despite activity metrics stable.",
+      "evidence_refs": ["4.4.incentive_misalignment_map", "4.4.execution_drag_patterns"],
+      "open_unknowns": ["Incentive structure change complexity and cost", "Personnel retention during transition", "Whether outcome measurement infrastructure exists or requires investment"]
+    },
+    {
+      "constraint": "Accountability voids—deal profitability, customer resolution, proactive risk, operational stability all split across functions without unified owner",
+      "category": "ACCOUNTABILITY",
+      "severity": "MEDIUM",
+      "why_severity": "Creates rational escalation and coordination overhead. CEO forced to own by default (walk away policy, sales refresh, crisis interventions). Voids persist across personnel changes—three CEOs inherit same voids. Prevents proactive issue resolution—only reactive crisis response when failure surfaces.",
+      "what_breaks_if_touched_or_under_stress": "If CEO bandwidth exhausted (already happened—three transitions): voids reopen unaddressed, issues escalate without resolution, execution failures accumulate. If void resolution attempted (create deal review board, VP Support, CRO): requires authority reallocation creating resistance, requires headcount (capital constrained), may fail if coordination capability absent. Voids structural—cannot resolve through personnel optimization alone.",
+      "evidence_refs": ["4.1.authority_mismatches", "4.4.accountability_voids"],
+      "open_unknowns": ["Which void most material to address first", "Whether unified ownership would work given cross-functional coordination complexity", "Capital availability for governance infrastructure creation"]
+    },
+    {
+      "constraint": "Heroic execution zones—support informal coordination, operations sustained crises, CEO personal intervention, delivery impossible commitments",
+      "category": "HEROICS",
+      "severity": "MEDIUM-HIGH",
+      "why_severity": "Heroics mask structural fragility—temporary workarounds prevent recognition system broken. Burnout inevitable: three CEOs three years, support satisfaction declining despite heroics, operations multi-month crises, delivery margin erosion. Death spiral: heroics drive attrition, attrition increases burden on remaining, accelerates additional attrition.",
+      "what_breaks_if_touched_or_under_stress": "If heroics capacity exhausted: support resolution failures cascade to customer churn, operations incident response collapses creating regulatory risk, CEO coordination stops creating organizational paralysis, delivery execution failures create contract breach. Already breaking: CEO three transitions (heroics unsustainable), satisfaction declining (support heroics insufficient), margins eroding (delivery heroics costly). Fragility accumulating—each heroics zone approaching capacity limit.",
+      "evidence_refs": ["4.5.heroic_execution_zones", "4.5.turnover_sensitivity"],
+      "open_unknowns": ["Burnout timeline—how long until heroics capacity depleted catastrophically", "Whether heroics zones at gradual degradation or sudden collapse risk", "Extent of talent attrition in heroic zones already occurring"]
+    },
+    {
+      "constraint": "Talent neutralized by system—capable individuals cannot materially improve execution without structural reform",
+      "category": "TALENT",
+      "severity": "MEDIUM",
+      "why_severity": "Three CEOs recreate identical bottleneck—different individuals, identical system constraint. Sales refresh doesn't stop margin erosion—incentive unchanged. Support 'dozens of engineers' heroics—authority gap forces capable talent into ineffective heroics. Personnel changes treat symptom not cause. Indicates structural reform necessary—talent optimization insufficient.",
+      "what_breaks_if_touched_or_under_stress": "If talent additions attempted without structure reform: new hires inherit same constraints (authority gaps, incentive misalignments, governance voids), heroics requirement drives attrition creating revolving door, coordination overhead increases (more people, same bottlenecks), marginal value of talent additions approaches zero. If key talent departs: CEO transition coordination collapse, support network breaks, operations crisis expertise lost, jurisdiction specialist authorization risk, legacy custodian tribal knowledge destroyed irreversibly.",
+      "evidence_refs": ["4.5.talent_dependency_map", "4.5.turnover_sensitivity"],
+      "open_unknowns": ["Actual attrition rates in heroic zones", "Whether talent pipeline adequate for replacement at current turnover rates", "Whether structural reforms feasible given organizational change capacity constraints"]
+    }
+  ],
+  "synthesis_notes": "Constraints interconnected and reinforcing. CEO bottleneck prevents structural reform—no bandwidth to build governance infrastructure (operating committee, deal review board) that would relieve bottleneck. Authority-accountability mismatches create rational escalation loading CEO further. Incentive misalignments drive activity optimization masking outcome degradation—delays recognition that structural reform urgent. Heroics mask constraint severity—temporary workarounds prevent crisis forcing reform. Talent neutralization indicates personnel optimization insufficient—structural changes required. Multiple constraints HIGH severity—indicates execution fragility material, compounding, accelerating."
+}
