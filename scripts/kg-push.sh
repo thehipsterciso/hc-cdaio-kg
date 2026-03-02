@@ -22,9 +22,7 @@ if git diff --cached --quiet; then
 fi
 
 # Commit
-git commit -m "$MSG
-
-Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+git commit -m "$MSG"
 
 # Pull + rebase then push — handles diverged remote without prompting
 git pull --rebase origin main
