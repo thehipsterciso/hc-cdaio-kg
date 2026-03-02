@@ -2597,6 +2597,27 @@
     }
   },
   {
+    "created_at": "2026-03-02T21:54:22.465108Z",
+    "updated_at": "2026-03-02T21:54:22.465108Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "48a17c58-6ee8-4ca3-a7db-b56789effaaa",
+    "relationship_type": "stores",
+    "source_id": "sys-027",
+    "target_id": "55f83917-5b71-4a4f-b950-44788d5aae5e",
+    "weight": 0.65,
+    "confidence": 0.65,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": true,
+      "rationale": "Nautobot DCIM/IPAM is the network source of truth. sys-027 (DC Management Plane DCIM/IPMI) is the closest existing system entity covering data center infrastructure management. No standalone Nautobot system entity exists in the graph.",
+      "assumption": "Nautobot may be a component of or co-located with the DC Management Plane infrastructure. Relationship is a proxy until a dedicated Nautobot system entity is created.",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "restricted"
+    }
+  },
+  {
     "created_at": "2026-02-28T17:47:24.305964Z",
     "updated_at": "2026-02-28T17:47:24.305964Z",
     "valid_from": null,
@@ -2626,6 +2647,27 @@
     "confidence": 0.95,
     "properties": {
       "description": "Atlassian Confluence stores enterprise knowledge base content"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465169Z",
+    "updated_at": "2026-03-02T21:54:22.465170Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "9c9626bd-b219-4282-980c-1d3011e4db97",
+    "relationship_type": "stores",
+    "source_id": "sys-068",
+    "target_id": "434e5ec6-d21d-4978-bcfe-3eb817a40fe2",
+    "weight": 0.72,
+    "confidence": 0.72,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": true,
+      "rationale": "Power BI is a Microsoft cloud service that stores datasets, dataflows, and semantic models in the Power BI Service (Premium capacity). Microsoft 365 Suite (sys-068) is the Microsoft platform umbrella covering Rackspace's Microsoft SaaS services. No dedicated Power BI system entity exists in the graph.",
+      "assumption": "Power BI Service is included within or adjacent to the Rackspace Microsoft 365 enterprise agreement. Relationship is a proxy until a dedicated Power BI system entity is created.",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "confidential"
     }
   },
   {
@@ -2677,6 +2719,90 @@
     }
   },
   {
+    "created_at": "2026-03-02T21:54:22.464748Z",
+    "updated_at": "2026-03-02T21:54:22.464757Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "f8f6e2f7-cabf-4cf9-8f5e-70ec31a79c79",
+    "relationship_type": "stores",
+    "source_id": "sys-085",
+    "target_id": "fa98ed99-e781-4859-b0d5-a80758b72e71",
+    "weight": 1.0,
+    "confidence": 0.97,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": false,
+      "rationale": "etcd is the embedded key-value store of the Kubernetes control plane. sys-085 (Kubernetes Clusters) is the direct host system for the etcd cluster state store \u2014 architectural certainty.",
+      "assumption": "None \u2014 etcd is intrinsic to Kubernetes; sys-085 is the Kubespray-managed cluster that runs etcd",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "restricted"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465071Z",
+    "updated_at": "2026-03-02T21:54:22.465072Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "1d9a9880-b8f9-470e-84a4-98c7af38e3e9",
+    "relationship_type": "stores",
+    "source_id": "sys-085",
+    "target_id": "52acabe7-750f-4704-b191-88362e29aa86",
+    "weight": 0.9,
+    "confidence": 0.9,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": false,
+      "rationale": "Argo Workflows persists execution state as Kubernetes CRDs in etcd. sys-085 (Kubernetes Clusters) is the host platform for the Argo Workflows engine and its state store.",
+      "assumption": "Argo Workflows deployed into the same Genestack Kubernetes cluster (sys-085) that runs Genestack CI/CD automation",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "confidential"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465130Z",
+    "updated_at": "2026-03-02T21:54:22.465131Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "13f8d943-98b0-4ab9-9f1a-66ab283c4c72",
+    "relationship_type": "stores",
+    "source_id": "sys-085",
+    "target_id": "1167c817-10d8-4832-bd1d-470add2eca64",
+    "weight": 0.88,
+    "confidence": 0.88,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": false,
+      "rationale": "Dex OIDC Identity Provider runs as a Kubernetes workload with state persisted as CRDs in etcd or embedded storage within the K8s cluster. sys-085 (Kubernetes Clusters) hosts Dex as part of the Genestack SSO stack.",
+      "assumption": "Dex is deployed into the Genestack Kubernetes cluster as a namespace-scoped workload providing SSO for Argo UI, Grafana, and kubectl",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "restricted"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465149Z",
+    "updated_at": "2026-03-02T21:54:22.465149Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "70bbdf2b-5ac7-4302-8f26-a47d61b2cb8e",
+    "relationship_type": "stores",
+    "source_id": "sys-085",
+    "target_id": "a0cf41b3-0da0-42cf-afcd-30d97106e29a",
+    "weight": 0.82,
+    "confidence": 0.82,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": false,
+      "rationale": "OpenSearch is deployed as part of the Genestack observability stack, running as a StatefulSet workload within the Kubernetes cluster. Persistent storage backed by Rook Ceph via PVCs. sys-085 (Kubernetes Clusters) is the host platform.",
+      "assumption": "OpenSearch is deployed into the Genestack Kubernetes cluster (sys-085) alongside Fluent Bit (sys-123) and Grafana (sys-096) as the logging backend",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "confidential"
+    }
+  },
+  {
     "created_at": "2026-02-28T17:36:40.292787Z",
     "updated_at": "2026-02-28T17:36:40.292787Z",
     "valid_from": null,
@@ -2722,6 +2848,27 @@
     "confidence": 0.95,
     "properties": {
       "description": "Grafana stores dashboard and alert state data"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465210Z",
+    "updated_at": "2026-03-02T21:54:22.465211Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "94104073-ffb0-48e6-aa28-bece05ef7bf7",
+    "relationship_type": "stores",
+    "source_id": "sys-140",
+    "target_id": "ab3f41be-1c6d-4a70-8f15-516198ad6fb7",
+    "weight": 0.75,
+    "confidence": 0.75,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": true,
+      "rationale": "Rackspace Public API Usage and Metering Data is stored by 'Rackspace API Gateway and Metering Infrastructure' per the asset's storage_technology field. OpenStack Ceilometer Telemetry (sys-140) is the metering/telemetry service that collects and stores API usage metrics for OpenStack services.",
+      "assumption": "Ceilometer handles the metering data for public-facing Rackspace cloud APIs. A dedicated API Gateway system entity may need to be created for full accuracy.",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "confidential"
     }
   },
   {
@@ -3122,6 +3269,27 @@
     "confidence": 0.95,
     "properties": {
       "description": "Snowflake Data Cloud stores enterprise analytics data warehouse"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465190Z",
+    "updated_at": "2026-03-02T21:54:22.465190Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "287d12ed-f103-4fea-b110-a25c53d71d35",
+    "relationship_type": "stores",
+    "source_id": "0a67c1bc-16e9-4de9-b758-e4d814d94c86",
+    "target_id": "9455b8e0-24aa-4d1a-9018-3aa1f363b337",
+    "weight": 0.78,
+    "confidence": 0.78,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": false,
+      "rationale": "The NPS/CSAT data asset description explicitly states it 'Feeds into Snowflake analytics for churn signal detection and customer health scoring'. Snowflake (0a67c1bc) is the analytics platform storing and processing this survey data.",
+      "assumption": "NPS/CSAT survey responses are staged and stored in Snowflake for analytics processing. The upstream survey SaaS platform (Qualtrics/Medallia/Momentive) has no entity in the graph.",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "confidential"
     }
   }
 ]
