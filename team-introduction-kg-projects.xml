@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.2/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.2/rng/docbook.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      version="5.2"
+      xml:lang="en">
+  <info>
+    <title>Team Introduction: The Knowledge Graph Projects</title>
+    <author>
+      <personname>
+        <firstname>Thomas</firstname>
+        <surname>Jones</surname>
+      </personname>
+      <affiliation>
+        <orgname>Rogers Corporation</orgname>
+      </affiliation>
+      <contrib>The Hipster CISO</contrib>
+    </author>
+    <date>2026</date>
+    <abstract>
+      <para>This document walks contributors through the two repositories that make up the enterprise knowledge graph initiative: the platform (hc-enterprise-kg) that defines the engine and schema, and the content repository (hc-cdaio-kg) that contains the actual entities, relationships, and due-diligence analysis for a real public company. Understanding the boundary between them is essential for successful contribution to the project.</para>
+    </abstract>
+    <keywordset>
+      <keyword>knowledge graph</keyword>
+      <keyword>enterprise architecture</keyword>
+      <keyword>CDAIO</keyword>
+      <keyword>open-source intelligence</keyword>
+      <keyword>data governance</keyword>
+      <keyword>relationship modeling</keyword>
+      <keyword>schema validation</keyword>
+    </keywordset>
+  </info>
+
+  <chapter xml:id="the-big-picture">
+    <title>The Big Picture</title>
+    <para>We are building a queryable, auditable knowledge graph of an enterprise — not another PDF that sits in SharePoint until the next deal cycle. The work originated as a Carnegie Mellon CDAIO program practicum and has grown into a demonstration of what rigorous open-source intelligence, AI-assisted analysis, and structured data modeling can produce without access to proprietary documents.</para>
+    <para>Two repositories power this initiative. One is the <emphasis role="strong">platform</emphasis> (the engine, the schema, the tooling). The other is the <emphasis role="strong">content</emphasis> (the actual entities, relationships, and due-diligence analysis for a real public company). Understanding the boundary between them is the single most important thing you can internalize on day one.</para>
+  </chapter>
+
+  <chapter xml:id="repository-1-hc-enterprise-kg">
+    <title>Repository 1: hc-enterprise-kg — The Platform</title>
+    <para><emphasis role="strong">Repository:</emphasis> <link xlink:href="https://github.com/thehipsterciso/hc-enterprise-kg">github.com/thehipsterciso/hc-enterprise-kg</link></para>
+    <para>This is the open-source Python framework that defines what a knowledge graph <emphasis>is</emphasis> in our world. Think of it as the engine, the schema, and the quality controls — everything except the actual company data.</para>
+
+    <section xml:id="what-it-does">
+      <title>What It Does</title>
+      <para>The platform provides three core capabilities:</para>
+      <formalpara>
+        <title>Synthetic generation.</title>
+        <para>It can produce a realistic "digital twin" of an enterprise from scratch — people, departments, systems, vendors, data assets, compliance frameworks — scaled by industry profile and organization size. This is useful for testing, demonstrations, and scenario planning before you commit real data.</para>
+      </formalpara>
+      <formalpara>
+        <title>Schema and validation.</title>
+        <para>It defines 30 entity types and 58 relationship types, all enforced through Pydantic v2 domain models with contextual metadata like dependency strength, risk effectiveness, and confidence scores. Every entity extends <code>BaseEntity</code> (UUID, type, name, description, tags, timestamps, versioning). Every relationship carries weight and confidence, not just a label.</para>
+      </formalpara>
+      <formalpara>
+        <title>Query and analysis.</title>
+        <para>The engine supports traversal (neighbors, shortest path, blast radius), centrality computation, fuzzy search, and statistics — all exposed through a CLI, a REST API, and a Model Context Protocol (MCP) server that integrates directly with Claude Desktop.</para>
+      </formalpara>
+    </section>
+
+    <section xml:id="architecture-at-a-glance">
+      <title>Architecture at a Glance</title>
+      <para>The system flows through a clean pipeline:</para>
+      <programlisting language="text">CLI → Orchestrator → Generators → KnowledgeGraph → Export / Query / MCP Server</programlisting>
+      <para>The knowledge graph itself sits on a NetworkX MultiDiGraph backend (Neo4j-swappable). Generation follows 11 sequential layers (L00 Geography through L10 Vendors) where each layer builds on previous ones to maintain referential integrity. After generation, the <code>RelationshipWeaver</code> enriches connections with contextual metadata, and <code>QualityAssessment</code> runs automated checks covering risk consistency, tech stack coherence, field correlation, and encryption alignment.</para>
+    </section>
+
+    <section xml:id="key-source-directories">
+      <title>Key Source Directories</title>
+      <table>
+        <title>Platform Repository Directory Structure</title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Directory</entry>
+              <entry>Purpose</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><code>src/domain/</code></entry>
+              <entry>Entity and relationship models (Pydantic v2)</entry>
+            </row>
+            <row>
+              <entry><code>src/engine/</code></entry>
+              <entry>Graph engine abstraction and NetworkX implementation</entry>
+            </row>
+            <row>
+              <entry><code>src/synthetic/</code></entry>
+              <entry>Orchestrator, generators, relationship weaver</entry>
+            </row>
+            <row>
+              <entry><code>src/cli/</code></entry>
+              <entry>Click-based command interface</entry>
+            </row>
+            <row>
+              <entry><code>src/mcp_server/</code></entry>
+              <entry>MCP integration for Claude Desktop</entry>
+            </row>
+            <row>
+              <entry><code>src/analysis/</code></entry>
+              <entry>Centrality, blast radius, traversal</entry>
+            </row>
+            <row>
+              <entry><code>src/ingest/</code></entry>
+              <entry>CSV/JSON ingestion with schema mapping</entry>
+            </row>
+            <row>
+              <entry><code>src/export/</code></entry>
+              <entry>JSON export (optimized for LLM context windows)</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </chapter>
+
+  <chapter xml:id="repository-2-hc-cdaio-kg">
+    <title>Repository 2: hc-cdaio-kg — The Content</title>
+    <para><emphasis role="strong">Repository:</emphasis> <link xlink:href="https://github.com/thehipsterciso/hc-cdaio-kg">github.com/thehipsterciso/hc-cdaio-kg</link></para>
+    <para>This is where the actual enterprise intelligence lives. Built on top of the <code>hc-enterprise-kg</code> platform, this repository contains the knowledge graph for a specific public company — constructed entirely from open-source intelligence (OSINT).</para>
+
+    <section xml:id="scale">
+      <title>Scale</title>
+      <para>The graph currently contains:</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><emphasis role="strong">2,900+ entities</emphasis> across 26 types, organized in 11 architectural layers</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">6,000+ relationships</emphasis> spanning 39 distinct types</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">401 structured analysis documents</emphasis> covering 10 due-diligence stages</para>
+        </listitem>
+        <listitem>
+          <para>Research ledgers tracking methodology and evidence confidence tiers</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section xml:id="how-the-content-is-organized">
+      <title>How the Content Is Organized</title>
+      <programlisting language="text">hc-cdaio-kg/
+├── entities/           # One JSON file per entity type (26 files)
+├── relationships/      # One JSON file per relationship type (39 files)
+├── due-diligence/      # 10-stage structured analysis (401 JSON docs)
+├── docs/               # Research ledgers, methodology documentation
+├── scripts/            # Install, sync, build, quality automation
+└── .github/workflows/  # CI/CD</programlisting>
+      <para>The per-type JSON file structure is a deliberate design decision. Having one file per entity type and one per relationship type prevents merge conflicts when multiple team members are contributing in parallel. You will rarely touch the same file as a colleague unless you are working on the same entity type.</para>
+    </section>
+
+    <section xml:id="evidence-classification">
+      <title>Evidence Classification</title>
+      <para>Every claim in this graph carries an explicit confidence classification:</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><emphasis role="strong">FACT</emphasis> — Directly sourced from public filings, official documentation, or verified records</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">INFERENCE</emphasis> — Reasonably derived from multiple corroborating sources</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">HYPOTHESIS</emphasis> — Analytical judgment requiring further validation</para>
+        </listitem>
+      </itemizedlist>
+      <para>This is not optional metadata. It is how we distinguish what we know from what we think we know.</para>
+    </section>
+
+    <section xml:id="provenance-requirements">
+      <title>Provenance Requirements</title>
+      <para>Every entity you contribute must include provenance fields documenting where the data came from, who assessed it, when, and at what confidence level:</para>
+      <programlisting language="json">{
+  "provenance": {
+    "primary_data_source": "SEC 10-K FY2024, docs.example.com",
+    "assessed_by": "Your Name",
+    "last_assessed_date": "2026-03-02",
+    "confidence_level": "0.90"
+  }
+}</programlisting>
+      <para>This is non-negotiable. A knowledge graph without provenance is just a database with opinions.</para>
+    </section>
+  </chapter>
+
+  <chapter xml:id="how-the-two-projects-relate">
+    <title>How the Two Projects Relate</title>
+    <literallayout class="monospaced">┌─────────────────────────────────────────────────────┐
+│                  hc-enterprise-kg                    │
+│                   (The Platform)                     │
+│                                                     │
+│  Schema ─── Validation ─── Engine ─── MCP Server    │
+│    │              │           │            │         │
+│    ▼              ▼           ▼            ▼         │
+│  Defines       Enforces    Queries     Exposes      │
+│  entity &amp;      data        graph       tools to     │
+│  relationship  quality     traversal   Claude        │
+│  types                     &amp; analysis  Desktop      │
+└─────────────────────┬───────────────────────────────┘
+                      │
+                      │  provides schema, validation,
+                      │  and query capabilities to
+                      │
+                      ▼
+┌─────────────────────────────────────────────────────┐
+│                   hc-cdaio-kg                        │
+│                  (The Content)                       │
+│                                                     │
+│  Entities ─── Relationships ─── Due Diligence       │
+│    │               │                 │              │
+│    ▼               ▼                 ▼              │
+│  2,900+         6,000+           401 structured     │
+│  across 26      across 39        analysis docs      │
+│  types          types            (10 stages)        │
+└─────────────────────────────────────────────────────┘</literallayout>
+    <para>The platform defines the rules. The content follows them. When you interact with the knowledge graph through Claude Desktop (via MCP), the platform's engine loads the content repository's JSON files and exposes them through queryable tools — search, traversal, blast radius, centrality analysis.</para>
+  </chapter>
+
+  <chapter xml:id="installation">
+    <title>Installation</title>
+    <para>The install scripts live in the content repository (<code>hc-cdaio-kg</code>). They handle everything end-to-end: Python 3.11+ detection or installation, Git, Poetry, dependency resolution, knowledge graph build, MCP server registration with Claude Desktop, sync daemon setup, and personal branch creation.</para>
+    <para>You do not need to install anything manually.</para>
+
+    <section xml:id="macos-and-linux">
+      <title>macOS and Linux</title>
+      <programlisting language="bash">git clone https://github.com/thehipsterciso/hc-cdaio-kg
+bash hc-cdaio-kg/scripts/install.sh</programlisting>
+    </section>
+
+    <section xml:id="windows">
+      <title>Windows</title>
+      <programlisting language="bash">git clone https://github.com/thehipsterciso/hc-cdaio-kg
+powershell -ExecutionPolicy Bypass -File hc-cdaio-kg\scripts\install.ps1</programlisting>
+    </section>
+
+    <section xml:id="what-the-installer-does">
+      <title>What the Installer Does</title>
+      <para>The script runs through eight stages automatically:</para>
+      <orderedlist spacing="compact">
+        <listitem>
+          <para><emphasis role="strong">OS detection</emphasis> — Identifies macOS (Intel/Apple Silicon), Linux (apt/dnf), or Windows</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Python ≥ 3.11</emphasis> — Locates or installs a compatible Python interpreter</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Git</emphasis> — Verifies availability, installs if missing</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Engine repository</emphasis> — Clones <code>hc-enterprise-kg</code> (the platform) into your home directory</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Poetry</emphasis> — Installs the dependency manager and binds it to your Python interpreter</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Python dependencies</emphasis> — Runs <code>poetry install --extras mcp</code> to resolve the full dependency tree</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Knowledge graph build</emphasis> — Constructs <code>graph.json</code> from the entity and relationship files in <code>hc-cdaio-kg</code></para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Claude Desktop MCP registration</emphasis> — Registers the knowledge graph as an MCP server so Claude Desktop can query it immediately</para>
+        </listitem>
+      </orderedlist>
+      <para>After the core install, the script optionally sets up:</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><emphasis role="strong">Sync branch</emphasis> — Creates a personal <code>username/data</code> branch for your contributions</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Automation daemons</emphasis> — Installs scheduled tasks (LaunchAgents on macOS, systemd timers on Linux, Task Scheduler on Windows) for the 30-minute sync cycle, morning rebuild, and evening PR closure</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Claude Desktop restart</emphasis> — Gracefully restarts Claude to load the new MCP configuration</para>
+        </listitem>
+      </itemizedlist>
+      <para>The script is idempotent. Run it again any time you need to update or repair your environment.</para>
+    </section>
+  </chapter>
+
+  <chapter xml:id="your-day-to-day-workflow">
+    <title>Your Day-to-Day Workflow</title>
+
+    <section xml:id="the-fast-path-claude-cowork">
+      <title>The Fast Path: Claude Cowork</title>
+      <para>For most contributors, the day-to-day workflow is a conversation. Open Cowork, point it at your local <code>hc-cdaio-kg</code> repository, and tell it what you want to do. Cowork handles the search-before-adding check, the entity or relationship creation via MCP, the validation, the commit, and the push — all from a single conversational thread. You do not need to touch the command line unless you want to.</para>
+      <para>Example: "I found that the company uses ServiceNow for IT service management. Add it as a system entity with status active and source the 2024 10-K, then create a 'depends_on' relationship from the help desk organizational unit." Cowork will search for duplicates, create the entity, validate the relationship, and commit the change to your personal branch.</para>
+    </section>
+
+    <section xml:id="the-manual-path">
+      <title>The Manual Path</title>
+      <para>If you prefer working directly with the files, or if you are contributing outside of Cowork, the manual workflow is:</para>
+      <formalpara>
+        <title>Step 1 — Search before adding.</title>
+        <para>Run the validation script to check for existing entities before creating new ones. The system catches duplicates at an 85%+ similarity threshold.</para>
+      </formalpara>
+      <programlisting language="bash">python scripts/sre/validate-commit.py</programlisting>
+      <formalpara>
+        <title>Step 2 — Add your entity or relationship</title>
+        <para>to the appropriate per-type JSON file in <code>entities/</code> or <code>relationships/</code>. Include all required fields: <code>id</code>, <code>name</code>, <code>entity_type</code>, <code>description</code>, and full provenance.</para>
+      </formalpara>
+      <formalpara>
+        <title>Step 3 — Validate relationships.</title>
+        <para>Every relationship must reference existing entity IDs and use a valid <code>relationship_type</code> from the schema. Dangling references will block your commit.</para>
+      </formalpara>
+      <formalpara>
+        <title>Step 4 — Commit and push.</title>
+        <para></para>
+      </formalpara>
+      <programlisting language="bash">git add entities/ relationships/
+git commit -m "feat: add new system entity for [description]"
+git push origin your-feature-branch</programlisting>
+      <para>Pre-commit hooks run automatically if you have installed them:</para>
+      <programlisting language="bash">cp scripts/sre/pre-commit-hook .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit</programlisting>
+    </section>
+
+    <section xml:id="what-blocks-a-commit-vs-what-warns">
+      <title>What Blocks a Commit vs. What Warns</title>
+      <table>
+        <title>Commit Validation Rules</title>
+        <tgroup cols="3">
+          <thead>
+            <row>
+              <entry>Check</entry>
+              <entry>Blocks Commit?</entry>
+              <entry>Threshold</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Schema compliance</entry>
+              <entry>Yes</entry>
+              <entry>100% required</entry>
+            </row>
+            <row>
+              <entry>Required fields</entry>
+              <entry>Yes</entry>
+              <entry>100% required</entry>
+            </row>
+            <row>
+              <entry>Relationship integrity</entry>
+              <entry>Yes</entry>
+              <entry>100% required</entry>
+            </row>
+            <row>
+              <entry>Provenance completeness</entry>
+              <entry>No (warning)</entry>
+              <entry>Strongly encouraged</entry>
+            </row>
+            <row>
+              <entry>Potential duplicates</entry>
+              <entry>No (warning)</entry>
+              <entry>85%+ similarity</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+
+    <section xml:id="automation-pipeline">
+      <title>Automation Pipeline</title>
+      <para>The repository runs an automation cycle that keeps everything synchronized:</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><emphasis role="strong">Morning sync</emphasis> rebuilds the unified graph from per-type files</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">30-minute intervals</emphasis> split changes back into per-type files</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Evening closure</emphasis> opens pull requests to main</para>
+        </listitem>
+      </itemizedlist>
+      <para>This means you work with the per-type files during the day, and the pipeline handles consolidation.</para>
+    </section>
+  </chapter>
+
+  <chapter xml:id="working-with-the-knowledge-graph-through-ai">
+    <title>Working with the Knowledge Graph Through AI</title>
+    <para>The easiest and recommended way to work with the knowledge graph is through <emphasis role="strong">Claude Cowork</emphasis>. Cowork is a desktop application that combines the MCP knowledge graph tools with full file system access, code execution, git operations, and document generation in a single conversational interface. It is the primary workflow surface for this project.</para>
+    <formalpara>
+      <title>What this means in practice:</title>
+      <para>you do not need to learn command-line tools, memorize JSON schemas, or run validation scripts yourself. You describe what you want in natural language, and Cowork handles the mechanics — querying the graph, adding entities, creating relationships, running validation, committing changes, generating reports, and producing deliverables.</para>
+    </formalpara>
+
+    <section xml:id="what-cowork-can-do-that-claude-desktop-alone-cannot">
+      <title>What Cowork Can Do That Claude Desktop Alone Cannot</title>
+      <para>Claude Desktop with MCP gives you query and mutation access to the knowledge graph. That is valuable, but it stops at the graph boundary. Cowork extends that reach across the entire workflow:</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><emphasis role="strong">Query, add, update, and remove</emphasis> entities and relationships through natural language — the same MCP tools available in Claude Desktop</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Run validation and pre-commit checks</emphasis> before committing, catching schema violations, dangling references, and duplicates without you ever running a script</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Commit and push changes</emphasis> directly to your personal branch, with properly formatted commit messages and staged files</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Generate reports and documents</emphasis> — Word documents, spreadsheets, presentations, PDFs — directly from graph data, without leaving the conversation</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Search the web</emphasis> for OSINT sources, then immediately enrich the graph with what it finds</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong">Read and process uploaded files</emphasis> — drop a 10-K filing, an earnings transcript, or a compliance audit into the conversation and let Cowork extract entities and relationships from it</para>
+        </listitem>
+      </itemizedlist>
+      <para>The MCP server auto-reloads when the graph file changes, so any additions or modifications are immediately reflected in subsequent queries without restarting anything.</para>
+    </section>
+
+    <section xml:id="available-mcp-tools">
+      <title>Available MCP Tools</title>
+      <para>Whether you use Cowork or Claude Desktop, the following tools are available through the MCP server:</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><emphasis role="strong"><code>search_entities</code></emphasis> — Fuzzy name search across all entity types</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>get_entity</code></emphasis> — Full detail for a single entity by ID</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>get_neighbors</code></emphasis> — All entities directly connected to a given node</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>get_blast_radius</code></emphasis> — Every entity reachable within N hops (impact analysis)</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>find_shortest_path</code></emphasis> — Shortest connection between any two entities</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>compute_centrality</code></emphasis> — Degree, betweenness, or PageRank scoring</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>get_statistics</code></emphasis> — Entity and relationship counts, density, connectivity</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>list_entities</code></emphasis> — Browse entities by type</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>add_entity</code></emphasis> — Create a new entity with schema validation</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>update_entity</code></emphasis> — Modify fields on an existing entity</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>remove_entity</code></emphasis> — Delete an entity and all its relationships</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>add_relationship</code></emphasis> — Create a validated relationship between entities</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>add_relationships_batch</code></emphasis> — Atomic batch creation (all-or-nothing validation)</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>remove_relationship</code></emphasis> — Delete a relationship by ID</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="strong"><code>find_most_connected</code></emphasis> — Top entities by raw connection count</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+  </chapter>
+
+  <chapter xml:id="why-this-approach-matters-for-the-cdaio-program">
+    <title>Why This Approach Matters for the CDAIO Program</title>
+    <para>This is not an academic exercise bolted onto a course requirement. The knowledge graph is a working demonstration of what a Chief Data and AI Officer actually needs to build: a structured, queryable, evidence-backed model of an enterprise that connects technology, people, data, compliance, and risk into a single traversable surface.</para>
+    <para>The value of approaching the CDAIO practicum this way comes down to three things the graph can do that traditional analysis cannot.</para>
+
+    <section xml:id="instant-situational-reporting">
+      <title>Instant Situational Reporting</title>
+      <para>Rather than spending weeks compiling a status deck, you can ask the graph directly. These are real queries you can run today through Cowork or Claude Desktop — no manual assembly required:</para>
+      <formalpara>
+        <title>"What is the current state of the knowledge graph?"</title>
+        <para>The <code>get_statistics</code> tool returns entity and relationship counts by type, graph density, and connectivity status. One question, one answer, and you have a structural snapshot of the entire enterprise model.</para>
+      </formalpara>
+      <formalpara>
+        <title>"Which entities are the most connected?"</title>
+        <para>The <code>compute_centrality</code> tool with PageRank or betweenness metrics identifies the nodes that matter most — the systems, people, or departments where failure or compromise would cascade the furthest. This is the kind of insight that takes weeks to surface through interviews and usually arrives too late.</para>
+      </formalpara>
+      <formalpara>
+        <title>"What would be affected if this system went down?"</title>
+        <para>The <code>get_blast_radius</code> tool traces every entity reachable within N hops of a given node. You get a dependency map in seconds that would otherwise require a cross-functional war room to reconstruct.</para>
+      </formalpara>
+    </section>
+
+    <section xml:id="gap-analysis-and-enrichment-recommendations">
+      <title>Gap Analysis and Enrichment Recommendations</title>
+      <para>The graph is designed to surface what is missing, not just what is present. Once you understand the schema and the evidence classification system, identifying gaps becomes conversational:</para>
+      <formalpara>
+        <title>"Show me all entities of type 'data_asset' and their relationships."</title>
+        <para>If a data asset exists but has no <code>governed_by</code> relationship to a policy or no <code>owned_by</code> relationship to a person, that is a governance gap. The graph makes the absence visible because the structure demands the relationship exist.</para>
+      </formalpara>
+      <formalpara>
+        <title>"Which entities have a confidence level below 0.7?"</title>
+        <para>A search filtered by provenance metadata surfaces everything that is still at the HYPOTHESIS tier. These are the enrichment priorities — the claims that need corroboration before they can be treated as reliable.</para>
+      </formalpara>
+      <formalpara>
+        <title>"What entity types have fewer than five instances?"</title>
+        <para>Sparse entity types signal underexplored domains. If the graph has 200 systems but only 3 data flows, the data architecture layer is undermodeled relative to the technology layer. That imbalance is a research directive.</para>
+      </formalpara>
+    </section>
+
+    <section xml:id="adding-and-enriching-without-manual-effort">
+      <title>Adding and Enriching Without Manual Effort</title>
+      <para>None of this requires manual JSON editing, command-line gymnastics, or separate validation runs. Through Cowork, you interact with the graph in natural language and the system handles every downstream mechanic — schema validation, UUID generation, relationship constraint checking, file persistence, git staging, commit, and push.</para>
+      <formalpara>
+        <title>Adding an entity:</title>
+        <para>"Add a new system entity called 'Salesforce CRM' with status active, classification confidential, and source the 2024 10-K filing." Cowork creates the entity via <code>add_entity</code>, validates it against the schema, persists it, and commits the change to your branch. You never touch a JSON file.</para>
+      </formalpara>
+      <formalpara>
+        <title>Adding a relationship:</title>
+        <para>"Create a 'depends_on' relationship from the ERP system to the Salesforce CRM with weight 0.8 and confidence 0.85." The <code>add_relationship</code> tool validates the source and target exist, confirms the relationship type is valid for those entity types via the schema constraints, and writes it. If it would violate domain/range rules, it rejects it and tells you why.</para>
+      </formalpara>
+      <formalpara>
+        <title>Enriching existing entities:</title>
+        <para>"Update the Oracle EBS entity to include patch status 'current' and add the 2025 SOC 2 report as the primary data source." The <code>update_entity</code> tool applies the changes and validates the result.</para>
+      </formalpara>
+      <formalpara>
+        <title>Batch operations:</title>
+        <para>"Add these five vendor entities and create 'supplies' relationships to the procurement department for each." The <code>add_relationships_batch</code> tool validates all inputs before committing any — if one fails validation, nothing is written, so you never end up with a half-complete batch.</para>
+      </formalpara>
+      <formalpara>
+        <title>Document generation:</title>
+        <para>"Generate a Word document summarizing all system entities, their dependencies, and their compliance status." Cowork queries the graph, structures the output, and produces a <code>.docx</code> file ready for submission or presentation — directly from the conversation.</para>
+      </formalpara>
+      <para>The automation daemons handle the rest. Your changes propagate to the per-type JSON files within 30 minutes, sync to your personal branch, and surface in the evening PR for review. The feedback loop from "I noticed something is missing" to "it is now in the graph and validated" can be measured in minutes, not sprints.</para>
+    </section>
+  </chapter>
+
+  <chapter xml:id="cdaio-practicum-questions">
+    <title>Questions for the CMU CDAIO Practicum</title>
+    <para>The following questions map directly to the five program deliverables and the frameworks covered in class. Each can be answered — or at least substantially advanced — by querying and enriching the knowledge graph. They are organized by the course modules that motivate them.</para>
+
+    <section xml:id="deliverable-1-company-overview-and-current-state">
+      <title>Deliverable 1: Company Overview and Current State</title>
+      <para>These questions establish the baseline. If the graph cannot answer them, the gaps themselves are the first finding.</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><quote>List all organizational units and their reporting relationships. Where are there structural gaps — departments with no parent or no people assigned?</quote></para>
+        </listitem>
+        <listitem>
+          <para><quote>What systems does the company operate? Which have no 'owned_by' relationship to a department or person?</quote> This surfaces shadow IT and governance blind spots.</para>
+        </listitem>
+        <listitem>
+          <para><quote>Show me every vendor entity and its contractual relationships. Which vendors have no contract entity linked?</quote> An incomplete vendor-to-contract map is a procurement risk.</para>
+        </listitem>
+        <listitem>
+          <para><quote>What is the geographic footprint? List all site and jurisdiction entities and their regulatory relationships.</quote> This is the starting point for understanding where compliance obligations apply.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section xml:id="deliverable-2-capability-and-maturity-assessment">
+      <title>Deliverable 2: Capability and Maturity Assessment</title>
+      <para>These questions align with the DMBOK, DCAM, and TDWI frameworks discussed in Doug Laney's session. The graph encodes the structural evidence that a maturity assessment depends on.</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><quote>For each of the 11 architectural layers, how many entities and relationships exist? Which layers are the most sparse relative to the others?</quote> Layer imbalance is a maturity signal — a company with 200 systems but 3 data flows has not modeled its data architecture.</para>
+        </listitem>
+        <listitem>
+          <para><quote>Which data assets have no 'governed_by' relationship to a regulation, policy, or control?</quote> This is a direct measure of data governance maturity. The DCAM framework treats governance traceability as a core capability.</para>
+        </listitem>
+        <listitem>
+          <para><quote>What percentage of entities are at the FACT confidence tier versus INFERENCE or HYPOTHESIS?</quote> A graph dominated by hypotheses is an early-stage assessment. One dominated by facts has been through rigorous corroboration. This is a maturity indicator in itself.</para>
+        </listitem>
+        <listitem>
+          <para><quote>Show me all controls and their 'mitigates' relationships to risks. Which risks have no mitigating control?</quote> Unmitigated risks are the gap analysis that security and compliance maturity models demand.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section xml:id="deliverable-3-data-and-ai-strategy">
+      <title>Deliverable 3: Data and AI Strategy</title>
+      <para>These questions reflect Krishna Cheriath's emphasis on use-case-driven strategy and CFO-certifiable value.</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><quote>Which systems are the most connected by 'depends_on' relationships? Compute centrality by PageRank.</quote> The most central systems are where an AI initiative or data platform investment would have the highest leverage — and the highest blast radius if it fails.</para>
+        </listitem>
+        <listitem>
+          <para><quote>What data assets exist and what business capabilities do they support? Are there capabilities with no supporting data asset?</quote> A capability without data is a strategic gap. This is the beginning of a use-case prioritization conversation.</para>
+        </listitem>
+        <listitem>
+          <para><quote>Trace the path from a specific business capability to the systems, data assets, and people that support it.</quote> This is the kind of end-to-end traceability that a CDAIO needs to build a credible business case — showing the CEO exactly how data connects to the investor promises.</para>
+        </listitem>
+        <listitem>
+          <para><quote>Which data assets are classified as confidential or restricted but have no encryption or access control relationship?</quote> This is where data strategy meets risk quantification in financial terms, not FUD.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section xml:id="deliverable-4-strategic-plan-for-enterprise-data-management">
+      <title>Deliverable 4: Strategic Plan for Enterprise Data Management</title>
+      <para>These questions support the roadmap and implementation planning that the midterm deliverable requires.</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><quote>What is the blast radius of the top 5 most connected systems? If we decommission or modernize one, what else is affected?</quote> This is infrastructure planning grounded in dependency analysis rather than guesswork.</para>
+        </listitem>
+        <listitem>
+          <para><quote>Show me all initiatives and their relationships to systems, departments, and data assets. Which initiatives overlap in scope?</quote> Overlap detection prevents duplicated effort and conflicting transformation programs.</para>
+        </listitem>
+        <listitem>
+          <para><quote>Which entity types have the highest ratio of HYPOTHESIS-tier provenance? Rank by enrichment priority.</quote> This tells you where to invest research effort next — the areas where the assessment is thinnest.</para>
+        </listitem>
+        <listitem>
+          <para><quote>Generate a summary of all relationships of type 'subject_to' between systems and regulations. Which systems are under the heaviest regulatory burden?</quote> Regulatory load mapping drives prioritization for compliance automation and governance investment.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section xml:id="deliverable-5-final-presentation">
+      <title>Deliverable 5: Final Presentation</title>
+      <para>These questions help produce the artifacts and narratives that a final presentation requires.</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para><quote>Give me a statistical overview of the graph: entity counts by type, relationship counts by type, overall density, and connectivity.</quote> This is the executive summary slide — one query, one answer.</para>
+        </listitem>
+        <listitem>
+          <para><quote>What are the top 10 entities by betweenness centrality and what do they connect?</quote> Betweenness centrality finds the bottlenecks and bridges. These are the entities that appear in every critical path and deserve the most attention in a presentation.</para>
+        </listitem>
+        <listitem>
+          <para><quote>Compare the current graph coverage to the 11 architectural layers defined in the schema. Which layers have the strongest coverage and which have the weakest?</quote> This is the maturity heatmap that boards and executives understand immediately.</para>
+        </listitem>
+        <listitem>
+          <para><quote>Generate a report of all enrichment actions taken this month — entities added, relationships created, confidence levels upgraded — with provenance for each.</quote> This is the evidence trail that demonstrates rigor and velocity. It shows the practicum is not a static document but a living, evolving model.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+  </chapter>
+
+  <chapter xml:id="key-principles-to-internalize">
+    <title>Key Principles to Internalize</title>
+    <formalpara>
+      <title>Provenance is not metadata — it is the product.</title>
+      <para>The graph is only as trustworthy as the evidence chain behind each claim. Document your sources rigorously.</para>
+    </formalpara>
+    <formalpara>
+      <title>Confidence is not a formality.</title>
+      <para>Distinguishing FACT from INFERENCE from HYPOTHESIS is how we maintain intellectual integrity at scale. Be honest about what you know versus what you are estimating.</para>
+    </formalpara>
+    <formalpara>
+      <title>Schema enforcement exists for a reason.</title>
+      <para>The validation gates are not bureaucracy. They prevent the kind of data quality erosion that makes knowledge graphs useless six months after they are built.</para>
+    </formalpara>
+    <formalpara>
+      <title>Search before you create.</title>
+      <para>Duplicates are the most common contributor error and the hardest to clean up after the fact. The 30 seconds you spend running validation saves hours of deduplication downstream.</para>
+    </formalpara>
+    <formalpara>
+      <title>The per-type file structure is your friend.</title>
+      <para>It is designed so that parallel contributions do not conflict. Respect the structure and you will rarely have a merge conflict.</para>
+    </formalpara>
+  </chapter>
+
+  <chapter xml:id="closing">
+    <title>Questions?</title>
+    <para>Start by reading the full README in each repository. The <code>ARCHITECTURE.md</code> in <code>hc-enterprise-kg</code> is particularly worth your time — it documents every major design decision and the rationale behind it. For contribution specifics, the <code>CONTRIBUTING.md</code> in <code>hc-cdaio-kg</code> covers the complete validation workflow.</para>
+    <para>Welcome aboard.</para>
+  </chapter>
+
+</book>
