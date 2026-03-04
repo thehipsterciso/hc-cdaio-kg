@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.236697Z",
-    "updated_at": "2026-02-25T20:59:01.141257Z",
+    "updated_at": "2026-03-04T08:43:34.288184Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "site-001",
     "entity_type": "site",
     "name": "Global Headquarters - San Antonio",
@@ -117,27 +117,34 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "10-K FY2024, TPR",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     },
     "site_code": "SAT-HQ"
   },
   {
     "created_at": "2026-02-25T19:01:57.236720Z",
-    "updated_at": "2026-02-25T19:01:57.236720Z",
+    "updated_at": "2026-03-04T08:43:35.001335Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "site-002",
     "entity_type": "site",
     "name": "Reston Federal Government Office",
@@ -250,26 +257,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.236730Z",
-    "updated_at": "2026-02-25T19:01:57.236730Z",
+    "updated_at": "2026-03-04T08:43:54.029485Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "site-003",
     "entity_type": "site",
     "name": "Austin Office",
@@ -382,26 +396,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.236738Z",
-    "updated_at": "2026-02-25T19:01:57.236738Z",
+    "updated_at": "2026-03-04T08:43:54.703110Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "site-004",
     "entity_type": "site",
     "name": "London Office - Hayes",
@@ -514,26 +535,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Companies House, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.236745Z",
-    "updated_at": "2026-02-25T19:01:57.236746Z",
+    "updated_at": "2026-03-04T08:43:55.323598Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "site-005",
     "entity_type": "site",
     "name": "Hamburg Office",
@@ -646,18 +674,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -778,18 +813,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -910,18 +952,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1042,18 +1091,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "PitchBook, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "PitchBook, rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1174,18 +1230,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "10-K FY2024, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "10-K FY2024, rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1306,18 +1369,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1438,18 +1508,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1570,18 +1647,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1702,18 +1786,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1834,18 +1925,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1966,18 +2064,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "S-1 Ex-21",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "S-1 Ex-21; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2098,18 +2203,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2230,18 +2342,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "S-1 Ex-21, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "S-1 Ex-21, rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2362,18 +2481,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "PitchBook",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "PitchBook; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2494,18 +2620,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "S-1 Ex-21",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "S-1 Ex-21; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2626,18 +2759,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "baxtel",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "baxtel; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     },
     "site_code": "DFW3"
   },
@@ -2759,18 +2899,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Wikipedia (Windsor Park Mall), 10-K FY2024",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     },
     "site_code": "SAT-DC1"
   },
@@ -2892,18 +3039,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     },
     "site_code": "DFW1"
   },
@@ -3025,18 +3179,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     },
     "site_code": "IAD3"
   },
@@ -3158,18 +3319,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "cloudandcolocation",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "cloudandcolocation; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     },
     "site_code": "IAD1"
   },
@@ -3291,18 +3459,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "cloudandcolocation",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "cloudandcolocation; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     },
     "site_code": "IAD2"
   },
@@ -3424,18 +3599,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "globenewswire",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "globenewswire; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     },
     "site_code": "SJC3"
   },
@@ -3557,18 +3739,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3689,18 +3878,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3821,18 +4017,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "baxtel",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "baxtel; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3953,18 +4156,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4085,18 +4295,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4217,18 +4434,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4349,18 +4573,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4481,18 +4712,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4613,18 +4851,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4745,18 +4990,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4877,18 +5129,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5009,18 +5268,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5141,18 +5407,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5273,18 +5546,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5405,18 +5685,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5537,18 +5824,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "baxtel",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "baxtel; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5669,18 +5963,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "docs",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "docs; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5801,18 +6102,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5933,18 +6241,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6065,18 +6380,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "10-K FY2022",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "10-K FY2022; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6197,18 +6519,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6329,18 +6658,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6461,18 +6797,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6593,18 +6936,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6725,18 +7075,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6857,18 +7214,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6989,18 +7353,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7121,18 +7492,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7253,18 +7631,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7385,18 +7770,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7517,18 +7909,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7649,18 +8048,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 60.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "peeringdb",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "peeringdb; Rackspace Technology 10-K FY2024 Properties section; corporate real estate records",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "current_occupancy",
+          "gap_description": "Current headcount and occupancy data not populated",
+          "remediation_plan": "Sync with corporate real estate management system",
+          "priority": "Medium"
+        }
+      ]
     }
   }
 ]

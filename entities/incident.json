@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T21:17:36.817474Z",
-    "updated_at": "2026-02-25T21:17:36.817476Z",
+    "updated_at": "2026-03-04T08:42:52.897266Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "de4f1c0f-e407-4528-a98d-4117fc5033be",
     "entity_type": "incident",
     "name": "PLAY Ransomware Attack on Hosted Exchange (November 2023)",
@@ -24,14 +24,44 @@
     "affected_data_asset_ids": [],
     "threat_actor_id": null,
     "responder_ids": [],
-    "lessons_learned": "Patch velocity for critical Exchange vulnerabilities must be accelerated even with compatibility risk. Multi-tenant shared Exchange infrastructure creates catastrophic blast radius for ransomware. Hosted Exchange product architecture did not support rapid tenant isolation. Incident response playbook for MSP-scale ransomware was insufficient. Rubrik cyber recovery partnership (ctr-023) established post-incident."
+    "lessons_learned": "Patch velocity for critical Exchange vulnerabilities must be accelerated even with compatibility risk. Multi-tenant shared Exchange infrastructure creates catastrophic blast radius for ransomware. Hosted Exchange product architecture did not support rapid tenant isolation. Incident response playbook for MSP-scale ransomware was insufficient. Rubrik cyber recovery partnership (ctr-023) established post-incident.",
+    "provenance": {
+      "confidence_level": "High",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "data_quality_score": {
+        "completeness_pct": 65.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "Security incident response records; public disclosure documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessment_methodology": "Hybrid",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "lessons_learned",
+          "gap_description": "Post-incident review and lessons learned documentation incomplete",
+          "remediation_plan": "Complete post-incident review process",
+          "priority": "Medium"
+        }
+      ]
+    },
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    }
   },
   {
     "created_at": "2026-02-25T21:17:41.084699Z",
-    "updated_at": "2026-02-25T21:17:41.084701Z",
+    "updated_at": "2026-03-04T08:42:53.961165Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "724d85b3-2637-441a-9541-63fe63fcf263",
     "entity_type": "incident",
     "name": "Texas Winter Storm Uri Data Center Power Degradation (February 2021)",
@@ -51,14 +81,44 @@
     "affected_data_asset_ids": [],
     "threat_actor_id": null,
     "responder_ids": [],
-    "lessons_learned": "Extended weather event scenarios require diesel fuel supply chain pre-positioning. Generator test cadence for multi-day scenarios must be extended. Cold weather vulnerability of Texas grid is a structural risk requiring ongoing monitoring. Enhanced coordination with ERCOT for critical infrastructure prioritization needed."
+    "lessons_learned": "Extended weather event scenarios require diesel fuel supply chain pre-positioning. Generator test cadence for multi-day scenarios must be extended. Cold weather vulnerability of Texas grid is a structural risk requiring ongoing monitoring. Enhanced coordination with ERCOT for critical infrastructure prioritization needed.",
+    "provenance": {
+      "confidence_level": "High",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "data_quality_score": {
+        "completeness_pct": 65.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "Security incident response records; public disclosure documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessment_methodology": "Hybrid",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "lessons_learned",
+          "gap_description": "Post-incident review and lessons learned documentation incomplete",
+          "remediation_plan": "Complete post-incident review process",
+          "priority": "Medium"
+        }
+      ]
+    },
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    }
   },
   {
     "created_at": "2026-02-25T21:17:45.942471Z",
-    "updated_at": "2026-02-25T21:17:45.942474Z",
+    "updated_at": "2026-03-04T08:42:55.280303Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "fb1efcd7-fdc7-4256-8ae8-ecaab4d808c5",
     "entity_type": "incident",
     "name": "Log4Shell Emergency Remediation Across Managed Customer Environments (December 2021)",
@@ -78,14 +138,44 @@
     "affected_data_asset_ids": [],
     "threat_actor_id": null,
     "responder_ids": [],
-    "lessons_learned": "Software bill of materials (SBOM) capability is essential for rapid identification of vulnerable components across managed estate. Emergency change management processes need pre-approved fast-track for CVSS 10.0 vulnerabilities. Customer communication templates for MSP-scale vulnerability events needed. Log4Shell became the impetus for Rackspace's software composition analysis tooling investment."
+    "lessons_learned": "Software bill of materials (SBOM) capability is essential for rapid identification of vulnerable components across managed estate. Emergency change management processes need pre-approved fast-track for CVSS 10.0 vulnerabilities. Customer communication templates for MSP-scale vulnerability events needed. Log4Shell became the impetus for Rackspace's software composition analysis tooling investment.",
+    "provenance": {
+      "confidence_level": "High",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "data_quality_score": {
+        "completeness_pct": 65.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "Security incident response records; public disclosure documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessment_methodology": "Hybrid",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "lessons_learned",
+          "gap_description": "Post-incident review and lessons learned documentation incomplete",
+          "remediation_plan": "Complete post-incident review process",
+          "priority": "Medium"
+        }
+      ]
+    },
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    }
   },
   {
     "created_at": "2026-02-25T21:17:48.558208Z",
-    "updated_at": "2026-02-25T21:17:48.558211Z",
+    "updated_at": "2026-03-04T08:42:56.988318Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "b6e0e98b-84e0-4b37-8065-8e923953a47d",
     "entity_type": "incident",
     "name": "Rackspace Cloud Files Unauthorized Access Vulnerability (2015)",
@@ -105,14 +195,44 @@
     "affected_data_asset_ids": [],
     "threat_actor_id": null,
     "responder_ids": [],
-    "lessons_learned": "API security testing must include authentication edge case scenarios. CDN configuration validation must be part of object storage security testing. Customer-facing security advisory process matured following this incident. Bug bounty program investment accelerated post-incident."
+    "lessons_learned": "API security testing must include authentication edge case scenarios. CDN configuration validation must be part of object storage security testing. Customer-facing security advisory process matured following this incident. Bug bounty program investment accelerated post-incident.",
+    "provenance": {
+      "confidence_level": "Medium",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "data_quality_score": {
+        "completeness_pct": 65.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "Security incident response records; public disclosure documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessment_methodology": "Hybrid",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "lessons_learned",
+          "gap_description": "Post-incident review and lessons learned documentation incomplete",
+          "remediation_plan": "Complete post-incident review process",
+          "priority": "Medium"
+        }
+      ]
+    },
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    }
   },
   {
     "created_at": "2026-02-25T21:17:50.189114Z",
-    "updated_at": "2026-02-25T21:17:50.189116Z",
+    "updated_at": "2026-03-04T08:42:58.475301Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "f16d55c0-631b-47ee-8cab-d6ff974012c6",
     "entity_type": "incident",
     "name": "IAD Data Center Network Connectivity Incident (2016)",
@@ -132,14 +252,44 @@
     "affected_data_asset_ids": [],
     "threat_actor_id": null,
     "responder_ids": [],
-    "lessons_learned": "Network change management must include pre-change BGP session monitoring baseline. Automated rollback triggers for BGP session count drops must be implemented. Maintenance window change approval process strengthened. IAD1/IAD2/IAD3 multi-facility redundancy leveraged to reduce future incident scope."
+    "lessons_learned": "Network change management must include pre-change BGP session monitoring baseline. Automated rollback triggers for BGP session count drops must be implemented. Maintenance window change approval process strengthened. IAD1/IAD2/IAD3 multi-facility redundancy leveraged to reduce future incident scope.",
+    "provenance": {
+      "confidence_level": "High",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "data_quality_score": {
+        "completeness_pct": 65.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "Security incident response records; public disclosure documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessment_methodology": "Hybrid",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "lessons_learned",
+          "gap_description": "Post-incident review and lessons learned documentation incomplete",
+          "remediation_plan": "Complete post-incident review process",
+          "priority": "Medium"
+        }
+      ]
+    },
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    }
   },
   {
     "created_at": "2026-02-25T21:17:51.892096Z",
-    "updated_at": "2026-02-25T21:17:51.892098Z",
+    "updated_at": "2026-03-04T08:43:00.024574Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "2cf51b51-3264-4534-bf0d-b74c7eed61a5",
     "entity_type": "incident",
     "name": "Phishing Campaign Targeting Rackspace Customer Credentials (2020)",
@@ -159,14 +309,44 @@
     "affected_data_asset_ids": [],
     "threat_actor_id": null,
     "responder_ids": [],
-    "lessons_learned": "MFA enforcement for all customer portal accounts is non-negotiable \u2014 mandatory MFA rollout accelerated post-incident. Customer security awareness communications formalized. Domain monitoring and lookalike domain takedown service engaged. Phishing simulation program for customer admins explored."
+    "lessons_learned": "MFA enforcement for all customer portal accounts is non-negotiable \u2014 mandatory MFA rollout accelerated post-incident. Customer security awareness communications formalized. Domain monitoring and lookalike domain takedown service engaged. Phishing simulation program for customer admins explored.",
+    "provenance": {
+      "confidence_level": "Medium",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "data_quality_score": {
+        "completeness_pct": 65.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "Security incident response records; public disclosure documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessment_methodology": "Hybrid",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "lessons_learned",
+          "gap_description": "Post-incident review and lessons learned documentation incomplete",
+          "remediation_plan": "Complete post-incident review process",
+          "priority": "Medium"
+        }
+      ]
+    },
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    }
   },
   {
     "created_at": "2026-02-25T21:17:53.844629Z",
-    "updated_at": "2026-02-25T21:17:53.844631Z",
+    "updated_at": "2026-03-04T08:43:01.442386Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "00e00102-a705-4d67-b4fa-7a92556b2dad",
     "entity_type": "incident",
     "name": "Third-Party Software Supply Chain Compromise \u2014 SolarWinds Orion Exposure (2020)",
@@ -186,6 +366,36 @@
     "affected_data_asset_ids": [],
     "threat_actor_id": null,
     "responder_ids": [],
-    "lessons_learned": "Software supply chain security must be incorporated into vendor risk management (RSK-00007). Third-party software update verification processes strengthened. IT infrastructure monitoring tool alternatives evaluated to reduce SolarWinds concentration. Threat intelligence sharing with Information Sharing and Analysis Centers (ISACs) improved for faster response to industry-wide supply chain events."
+    "lessons_learned": "Software supply chain security must be incorporated into vendor risk management (RSK-00007). Third-party software update verification processes strengthened. IT infrastructure monitoring tool alternatives evaluated to reduce SolarWinds concentration. Threat intelligence sharing with Information Sharing and Analysis Centers (ISACs) improved for faster response to industry-wide supply chain events.",
+    "provenance": {
+      "confidence_level": "High",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "data_quality_score": {
+        "completeness_pct": 65.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "Security incident response records; public disclosure documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessment_methodology": "Hybrid",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "lessons_learned",
+          "gap_description": "Post-incident review and lessons learned documentation incomplete",
+          "remediation_plan": "Complete post-incident review process",
+          "priority": "Medium"
+        }
+      ]
+    },
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    }
   }
 ]
