@@ -2421,10 +2421,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.240494Z",
-    "updated_at": "2026-03-04T08:43:10.726885Z",
+    "updated_at": "2026-03-04T17:29:06.898239Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pol-023",
     "entity_type": "policy",
     "name": "Asset Management Policy",
@@ -2508,25 +2508,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 40.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "rackspace",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.control_constraints.json",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "Thomas Jones, AI Enrichment Service",
-      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "policy_owner",
-          "gap_description": "Policy owner assignment is missing",
-          "remediation_plan": "Fill policy_owner from policy documentation and approval records",
-          "priority": "High"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
@@ -7591,10 +7584,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.241048Z",
-    "updated_at": "2026-02-25T19:01:57.241048Z",
+    "updated_at": "2026-03-04T17:29:07.503620Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-070",
     "entity_type": "policy",
     "name": "Source Code Management and Intellectual Property Policy",
@@ -7678,33 +7671,26 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 40.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "SOX Section 404, trade secret law",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.control_constraints.json",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "enforcement_mechanism",
-          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
-          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.241055Z",
-    "updated_at": "2026-02-25T19:01:57.241055Z",
+    "updated_at": "2026-03-04T17:29:08.248185Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-071",
     "entity_type": "policy",
     "name": "Data Governance Policy",
@@ -7788,25 +7774,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 40.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.control_constraints.json",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "enforcement_mechanism",
-          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
-          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
@@ -12538,5 +12517,969 @@
         }
       ]
     }
+  },
+  {
+    "created_at": "2026-03-04T17:15:15.170561Z",
+    "updated_at": "2026-03-04T17:15:15.170563Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d7429305-8f31-4180-bbc4-0ced26bcdb00",
+    "entity_type": "policy",
+    "name": "SBTi Science-Based Targets Initiative Validation",
+    "description": "Rackspace obtained SBTi validation of near-term (50% reduction by 2032) and long-term (90% by 2045, net-zero by 2045) GHG targets. Required for UK government procurement eligibility >\u00a35M contracts. Requires 5-year revalidation.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.esg_operating_constraints.json; stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.capital_and_deal_blockers.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "enforcer": "SBTi",
+    "revalidation_years": 5,
+    "uk_procurement_threshold_gbp_m": 5,
+    "near_term_target_pct": 50,
+    "long_term_target_pct": 90
+  },
+  {
+    "created_at": "2026-03-04T17:15:17.028339Z",
+    "updated_at": "2026-03-04T17:15:17.028341Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8b299ecf-6362-4064-aac6-9240a9ef136f",
+    "entity_type": "policy",
+    "name": "UK Procurement Policy Note 06/21 - Carbon Reduction Plans",
+    "description": "Mandatory Carbon Reduction Plan (CRP) for UK public sector suppliers bidding contracts >\u00a35M annually. Must demonstrate net-zero commitment, baseline emissions, reduction targets, and planned actions. Non-compliance = automatic disqualification.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "UK",
+    "enforcer": "UK_Cabinet_Office",
+    "threshold_gbp_m": 5,
+    "requirement_type": "MANDATORY_PREQUALIFICATION",
+    "update_frequency": "ANNUAL"
+  },
+  {
+    "created_at": "2026-03-04T17:15:18.308172Z",
+    "updated_at": "2026-03-04T17:15:18.308173Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ec667e1a-57e9-40e9-90c2-878d1fd1d30d",
+    "entity_type": "policy",
+    "name": "UK Procurement Act 2023 - Environmental Misconduct Exclusion",
+    "description": "Effective February 24, 2025. Allows UK public sector procuring authorities to exclude suppliers for poor environmental performance. Enables retroactive enforcement against existing contractors if ESG metrics regress or commitments unmet.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": "2025-02-24",
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "UK",
+    "exclusion_trigger": "poor_environmental_performance",
+    "enforcement": "RETROACTIVE",
+    "scope": "existing_contracts"
+  },
+  {
+    "created_at": "2026-03-04T17:15:20.066963Z",
+    "updated_at": "2026-03-04T17:15:20.066965Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "980780b9-a659-4aea-8454-0a8f710752ff",
+    "entity_type": "policy",
+    "name": "FedRAMP Continuous Monitoring Authorization",
+    "description": "Requires US citizen security team for 800+ NIST 800-53 controls. Continuous monitoring with critical findings 1 hour, high findings 24 hours reporting. Change of control invalidates immediately. Government revenue $270-410M depends on active authorization.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "FedRAMP",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "us_citizen_requirement": true,
+    "controls_monitored": 800,
+    "critical_reporting_sla_hours": 1,
+    "invalidation_trigger": "change_of_control"
+  },
+  {
+    "created_at": "2026-03-04T17:15:21.620529Z",
+    "updated_at": "2026-03-04T17:15:21.620531Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7606c54a-5370-4987-9a51-48666ef4d303",
+    "entity_type": "policy",
+    "name": "Minnesota Data Center Environmental Regulations (2024-2025)",
+    "description": "Requires data center developers to partner with Minnesota Department of Natural Resources BEFORE construction. Mandatory closed-loop cooling systems. Water supply verification required. Blocks construction permits without compliance.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "Minnesota",
+    "enforcer": "MN_Department_Natural_Resources",
+    "requirement": "closed_loop_cooling",
+    "trigger": "new_construction_or_major_expansion"
+  },
+  {
+    "created_at": "2026-03-04T17:15:22.800500Z",
+    "updated_at": "2026-03-04T17:15:22.800502Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "0b5e9860-2e8a-439a-bb52-aa5746cfe9be",
+    "entity_type": "policy",
+    "name": "California SB 58 Data Center Sustainability Tax Credits (January 2025)",
+    "description": "Provides tax credits for data centers adopting sustainable practices: 70%+ carbon-free energy, water-efficient cooling systems. Rackspace operating CA data centers may qualify for credits if meeting thresholds.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": "2025-01-01",
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.esg_operating_constraints.json; stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.capital_and_deal_blockers.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "California",
+    "carbon_free_requirement_pct": 70,
+    "incentive_type": "tax_credit"
+  },
+  {
+    "created_at": "2026-03-04T17:15:24.481469Z",
+    "updated_at": "2026-03-04T17:15:24.481471Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "77a74242-f252-40a5-b188-78fb9d66e7f8",
+    "entity_type": "policy",
+    "name": "AIM Act - HFC Refrigerant Phasedown 2036",
+    "description": "Federal mandate: 85% phasedown of high-GWP HFC refrigerants by 2036. Cooling system retrofits or replacements required. SNAP program identifies 70 prohibited/restricted cooling substances. Affects data center cooling systems across US.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "scope": "US_Federal",
+    "phasedown_deadline": 2036,
+    "phasedown_pct": 85,
+    "affected_systems": "data_center_cooling"
+  },
+  {
+    "created_at": "2026-03-04T17:15:27.299194Z",
+    "updated_at": "2026-03-04T17:15:27.299196Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "33ddc681-7229-463f-ad74-e5a307fc5d00",
+    "entity_type": "policy",
+    "name": "FCA ESG Disclosure Rules and PRA Climate Risk Requirements",
+    "description": "UK regulated financial services firms (FCA/PRA) must report supply chain sustainability and financed emissions. Creates pass-through enforcement: customer's ESG compliance depends on supplier (Rackspace) sustainability. Affects UK Sovereign financial services customers.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.esg_operating_constraints.json; stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.capital_and_deal_blockers.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "UK",
+    "enforcer": "FCA_PRA",
+    "scope": "regulated_financial_services",
+    "requirement": "supply_chain_sustainability_reporting"
+  },
+  {
+    "created_at": "2026-03-04T17:15:28.922329Z",
+    "updated_at": "2026-03-04T17:15:28.922331Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8e260f41-453b-4aba-a716-3e6ab5edc41f",
+    "entity_type": "policy",
+    "name": "EU CSRD Corporate Sustainability Reporting Directive",
+    "description": "Corporate Sustainability Reporting Directive requires supply chain due diligence. EU customers must report Scope 3 (supply chain) emissions. EU data centers 20-30% of Rackspace revenue. Sustainability audit enforcement via customer compliance requirements.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.esg_operating_constraints.json; stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.capital_and_deal_blockers.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "EU",
+    "scope": "supply_chain_due_diligence",
+    "reporting_requirement": "scope_3_emissions",
+    "customer_audit_trigger": true
   }
 ]

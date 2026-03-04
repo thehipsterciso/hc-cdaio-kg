@@ -1,14 +1,14 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.284908Z",
-    "updated_at": "2026-02-25T19:01:57.284908Z",
+    "updated_at": "2026-03-04T17:27:05.680596Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "pf-001",
     "entity_type": "product_portfolio",
     "name": "Private Cloud",
-    "description": "SEC-reported revenue segment encompassing managed private cloud infrastructure including VMware-based SDDC solutions (Enterprise, Business, Flex, Anywhere, SAP variants), Rackspace OpenStack Private Cloud, managed hosting (bare metal dedicated servers), colocation services, Private Cloud AI platforms, data storage, and RackConnect Global connectivity. VMware Cloud Service Provider Pinnacle partner. FY2024 revenue of $1,055 million (down 13% YoY). Private Cloud offerings are generally sold under multi-year contracts averaging three years with monthly recurring revenue. Typical contract lengths range from 18 to 36 months per SEC 10-K Item 1.",
+    "description": "SEC-reported revenue segment encompassing managed private cloud infrastructure including VMware-based SDDC solutions (Enterprise, Business, Flex, Anywhere, SAP variants), Rackspace OpenStack Private Cloud, managed hosting (bare metal dedicated servers), colocation services, Private Cloud AI platforms, data storage, and RackConnect Global connectivity. VMware Cloud Service Provider Pinnacle partner. FY2024 revenue of $1,055 million (down 13% YoY - fastest declining segment per Stage 2 DD). Gross margin 38.6% (highest margin segment). Revenue trigger: MONTHLY RECURRING COMMITMENT with fixed monthly fee based on infrastructure footprint plus management tier. Typical contract terms 12-36 months (not month-to-month like Public Cloud). Key dependencies: (1) Data center capacity and leases (Stage 1 identifies assignment restrictions), (2) VMware licensing and support - CRITICAL FRAGILITY: Broadcom acquired VMware (Nov 2023) and raised prices 200-300%, threatening Private Cloud margin compression, (3) Government/UK Sovereign infrastructure isolation creates duplicate facility overhead. Stage 2 DD identifies customer migration to public cloud (secular decline), VMware cost shock, and obsolete capacity risk from underinvestment in CapEx ($136M 2024, down 25% from $181M 2023).",
     "tags": [],
     "metadata": {},
     "portfolio_id": "PF-001",
@@ -19,28 +19,13 @@
     "portfolio_owner": "",
     "managing_org_unit": "",
     "strategic_role": "Core",
-    "lifecycle_stage": "Maturity",
+    "lifecycle_stage": "Decline",
     "investment_priority": "",
     "strategic_alignment": null,
     "financial_summary": null,
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -48,18 +33,39 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
-    }
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 95.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Verified"
+      },
+      "primary_data_source": "Stage 2.2 Revenue Model Structure (VMware pricing shock); Stage 5.3 Revenue Quality & Margin Compression; Stage 6.2 VMware Dependency; Stage 3.4 Secular Decline & Customer Migration",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "revenue_attribution": 1055000000,
+    "margin_contribution": 0.386,
+    "strategic_risk": "CRITICAL - VMware pricing, cloud-native migration, margin compression",
+    "revenue_trend": "-13% YoY",
+    "margin_compression": "38.6% gross \u2192 25-30% estimated from VMware costs",
+    "latent_churn_risk": "$90M-$150M over 3 years"
   },
   {
     "created_at": "2026-02-25T19:01:57.284917Z",
-    "updated_at": "2026-02-25T19:01:57.284917Z",
+    "updated_at": "2026-03-04T17:27:06.680389Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "pf-002",
     "entity_type": "product_portfolio",
     "name": "Public Cloud",
-    "description": "SEC-reported revenue segment encompassing managed services and professional services for hyperscale public cloud platforms: Amazon Web Services, Microsoft Azure, Google Cloud Platform, and Oracle Cloud Infrastructure. Delivered through Elastic Engineering pods, Modern Operations 24x7x365 support, consulting and advisory services, professional services, and FAIR AI services. FY2024 revenue of $1,683 million (down 3% YoY). Public Cloud revenue is primarily generated from recurring monthly fees for managed services and variable fees for professional services engagements. 15 AWS competencies, 2,700+ AWS certifications, 500+ GCP certifications.",
+    "description": "SEC-reported revenue segment encompassing managed services and professional services for hyperscale public cloud platforms: Amazon Web Services, Microsoft Azure, Google Cloud Platform, and Oracle Cloud Infrastructure. Delivered through Elastic Engineering pods, Modern Operations 24x7x365 support, consulting and advisory services, professional services, and FAIR AI services. FY2024 revenue of $1,683 million (down 3% YoY). Gross margin 10.4% (Stage 2 DD finding). Revenue trigger: MONTHLY CONSUMPTION with variable infrastructure from hyperscalers billed at list rates plus recurring management fee. Management fee pricing: Managed Infrastructure $50+ monthly minimum OR Managed Operations $500+ monthly minimum. Partner credits/rebates estimated 5-15% from AWS/Azure/Google comprise infrastructure margin. Month-to-month billing creates ZERO contractual lock-in. Key dependency: Hyperscaler partnership terms (AWS Advanced Consulting Partner, Azure CSP 2-Tier Distributor, GCP Premier MSP) provide partner credits that eliminate margin if terminated. Stage 2 DD identifies fragility: hyperscalers offer native managed services (AWS Managed Services, Azure Managed Services) enabling customer disintermediation. Public Cloud revenue declining 3% YoY.",
     "tags": [],
     "metadata": {},
     "portfolio_id": "PF-002",
@@ -70,28 +76,13 @@
     "portfolio_owner": "",
     "managing_org_unit": "",
     "strategic_role": "Core",
-    "lifecycle_stage": "Growth",
+    "lifecycle_stage": "Commoditization",
     "investment_priority": "",
     "strategic_alignment": null,
     "financial_summary": null,
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -99,14 +90,36 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
-    }
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 95.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Verified"
+      },
+      "primary_data_source": "Stage 2.2 Revenue Model Structure; Stage 3.4 Hyperscaler Disintermediation; Stage 5.3 Commoditization & Margin Compression; Stage 6.5 Hyperscaler Dependency",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "revenue_attribution": 1683000000,
+    "margin_contribution": 0.104,
+    "strategic_risk": "CRITICAL - hyperscaler disintermediation, partner credit compression, competitor pricing",
+    "revenue_trend": "-3% YoY",
+    "margin_profile": "10.4% gross (commoditized)",
+    "supplier_dependency": "61% of total revenue dependent on AWS partnership",
+    "latent_churn_risk": "$40M-$110M from hyperscaler competitive targeting"
   },
   {
     "created_at": "2026-02-25T19:01:57.284921Z",
-    "updated_at": "2026-02-25T19:01:57.284921Z",
+    "updated_at": "2026-03-04T17:27:07.874846Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-003",
     "entity_type": "product_portfolio",
     "name": "Foundry for AI by Rackspace (FAIR)",
@@ -128,21 +141,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -150,14 +148,29 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Verified"
+      },
+      "primary_data_source": "Stage 2.2 Growth Vector Analysis; Stage 3.2 AI/ML Market Positioning; Stage 6.5 Platform Modernization",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284925Z",
-    "updated_at": "2026-02-25T19:01:57.284925Z",
+    "updated_at": "2026-03-04T17:27:26.826489Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-004",
     "entity_type": "product_portfolio",
     "name": "Rackspace Elastic Engineering",
@@ -179,21 +192,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -201,6 +199,21 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 95.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Verified"
+      },
+      "primary_data_source": "Stage 2.2 Revenue Model Structure; Stage 2.3 Service Delivery Economics; Stage 3.4 Competitive Positioning",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
@@ -230,6 +243,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -244,14 +265,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -281,21 +294,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -303,6 +301,21 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
@@ -332,6 +345,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -346,14 +367,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -383,6 +396,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -397,22 +418,14 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284945Z",
-    "updated_at": "2026-02-25T19:01:57.284945Z",
+    "updated_at": "2026-03-04T17:28:01.733540Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-009",
     "entity_type": "product_portfolio",
     "name": "Rackspace Modern Operations",
@@ -434,21 +447,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -456,14 +454,29 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "Stage 2.2 Revenue Model Structure; Stage 2.3 Service Delivery; Stage 4.3 Operating Model; Stage 6.3 Platform Criticality",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284949Z",
-    "updated_at": "2026-02-25T19:01:57.284949Z",
+    "updated_at": "2026-03-04T17:28:02.431825Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-010",
     "entity_type": "product_portfolio",
     "name": "Rackspace Managed Cloud",
@@ -485,21 +498,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -507,14 +505,29 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "Stage 2.2 Revenue Model Structure; Stage 2.3 Service Delivery Economics; Stage 3.4 Competitive Positioning",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284952Z",
-    "updated_at": "2026-02-25T19:01:57.284952Z",
+    "updated_at": "2026-03-04T17:28:03.409220Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-011",
     "entity_type": "product_portfolio",
     "name": "Cloud Adoption and Migration Services",
@@ -536,21 +549,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -558,14 +556,29 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "Stage 2.2 Growth Vector Analysis; Stage 3.2 Migration Services Positioning; Stage 3.5 AWS Strategic Partnership",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284955Z",
-    "updated_at": "2026-02-25T19:01:57.284955Z",
+    "updated_at": "2026-03-04T17:28:03.727111Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-012",
     "entity_type": "product_portfolio",
     "name": "Cloud Optimization and FinOps Services",
@@ -587,21 +600,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -609,14 +607,29 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "Stage 2.2 Growth Vector Analysis; Stage 3.2 FinOps Market Positioning; Stage 5.3 Cloud Cost Optimization",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284959Z",
-    "updated_at": "2026-02-25T19:01:57.284959Z",
+    "updated_at": "2026-03-04T17:27:27.844348Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-013",
     "entity_type": "product_portfolio",
     "name": "Rackspace SDDC Solutions",
@@ -638,21 +651,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -660,14 +658,29 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 95.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Verified"
+      },
+      "primary_data_source": "Stage 2.2 Revenue Model Structure; Stage 3.4 VMware Dependency; Stage 6.2 VMware Platform Risk; Stage 5.3 Margin Compression",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284962Z",
-    "updated_at": "2026-02-25T19:01:57.284962Z",
+    "updated_at": "2026-03-04T17:27:28.484176Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-014",
     "entity_type": "product_portfolio",
     "name": "Rackspace OpenStack Private Cloud",
@@ -689,21 +702,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -711,14 +709,29 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 90.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Verified"
+      },
+      "primary_data_source": "Stage 2.2 Revenue Model Structure; Stage 3.4 Platform Positioning; Stage 6.2 OpenStack Platform",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284980Z",
-    "updated_at": "2026-02-25T19:01:57.284981Z",
+    "updated_at": "2026-03-04T17:27:29.265173Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-015",
     "entity_type": "product_portfolio",
     "name": "Rackspace Managed Hosting",
@@ -740,21 +753,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -762,6 +760,21 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 90.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Verified"
+      },
+      "primary_data_source": "Stage 2.2 Revenue Model Structure; Stage 3.4 Secular Decline; Stage 5.3 Legacy Product Risk",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
@@ -791,6 +804,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -805,14 +826,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -842,6 +855,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -856,14 +877,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -893,6 +906,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -907,14 +928,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -944,6 +957,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -958,14 +979,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -995,6 +1008,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1009,14 +1030,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1046,6 +1059,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1060,14 +1081,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1097,6 +1110,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1111,14 +1132,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1148,6 +1161,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1162,14 +1183,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1199,6 +1212,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1213,14 +1234,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1250,6 +1263,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1264,22 +1285,14 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285020Z",
-    "updated_at": "2026-02-25T19:01:57.285020Z",
+    "updated_at": "2026-03-04T17:27:43.930335Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-026",
     "entity_type": "product_portfolio",
     "name": "VMware Solutions",
@@ -1301,21 +1314,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1323,6 +1321,21 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
@@ -1352,6 +1365,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1366,14 +1387,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1403,6 +1416,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1417,14 +1438,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1454,6 +1467,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1468,14 +1489,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1505,6 +1518,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1519,14 +1540,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1556,6 +1569,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1570,14 +1591,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1607,6 +1620,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1621,14 +1642,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1658,6 +1671,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1672,14 +1693,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1709,6 +1722,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1723,14 +1744,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1760,6 +1773,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1774,14 +1795,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1811,6 +1824,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1825,14 +1846,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1862,6 +1875,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1876,14 +1897,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1913,6 +1926,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1927,14 +1948,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -1964,6 +1977,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -1978,14 +1999,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2015,6 +2028,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2029,14 +2050,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2066,6 +2079,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2080,14 +2101,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2117,6 +2130,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2131,14 +2152,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2168,21 +2181,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2190,6 +2188,21 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
@@ -2219,21 +2232,6 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2241,6 +2239,21 @@
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
     }
   },
   {
@@ -2270,6 +2283,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2284,14 +2305,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2321,6 +2334,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2335,14 +2356,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2372,6 +2385,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2386,14 +2407,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2423,6 +2436,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2437,14 +2458,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2474,6 +2487,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2488,14 +2509,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2525,6 +2538,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2539,14 +2560,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2576,6 +2589,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2590,14 +2611,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2627,6 +2640,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2641,14 +2662,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2678,6 +2691,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2692,14 +2713,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2729,6 +2742,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2743,14 +2764,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2780,6 +2793,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2794,14 +2815,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2831,6 +2844,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2845,14 +2866,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2882,6 +2895,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2896,14 +2917,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2933,6 +2946,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2947,14 +2968,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -2984,6 +2997,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -2998,14 +3019,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3035,6 +3048,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3049,14 +3070,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3086,6 +3099,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3100,14 +3121,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3137,6 +3150,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3151,14 +3172,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3188,6 +3201,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3202,14 +3223,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3239,6 +3252,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3253,14 +3274,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3290,6 +3303,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3304,14 +3325,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3341,6 +3354,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3355,14 +3376,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3392,6 +3405,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3406,14 +3427,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3443,6 +3456,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3457,14 +3478,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3494,6 +3507,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3508,14 +3529,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3545,6 +3558,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3559,14 +3580,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   },
   {
@@ -3596,6 +3609,14 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
@@ -3610,14 +3631,6 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
     }
   }
 ]

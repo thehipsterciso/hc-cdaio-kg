@@ -9272,10 +9272,10 @@
   },
   {
     "created_at": "2026-02-25T19:56:51.520469Z",
-    "updated_at": "2026-02-25T19:56:51.520472Z",
+    "updated_at": "2026-03-04T17:29:15.882007Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "fa503e47-6c82-4cc3-beae-f1c46cc3f519",
     "entity_type": "person",
     "name": "Neil Emerson",
@@ -9376,25 +9376,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 50.0,
-        "accuracy_confidence": "Medium",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "arnnet; Synthetic personnel model based on Rackspace Technology organizational structure",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.2-ownership-control-entitlement/1.2.control_reality.json",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "high",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "manager_assignment",
-          "gap_description": "Reporting relationship and manager assignment not fully verified",
-          "remediation_plan": "Sync with HR information system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "job_title": "Chief Commercial Officer",
     "seniority_level": "C-Suite",

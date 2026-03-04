@@ -1393,10 +1393,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.237333Z",
-    "updated_at": "2026-03-04T08:41:59.716568Z",
+    "updated_at": "2026-03-04T17:28:09.309128Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "ctl-013",
     "entity_type": "control",
     "name": "Endpoint Detection and Response (CrowdStrike Falcon)",
@@ -1505,7 +1505,12 @@
           "priority": "Medium"
         }
       ]
-    }
+    },
+    "primary_data_source": "stage-8-risk-security-regulatory/8.1-cybersecurity-control-failure",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+    "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+    "confidence_level": "High"
   },
   {
     "created_at": "2026-02-25T19:01:57.237340Z",
@@ -5685,10 +5690,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.237803Z",
-    "updated_at": "2026-03-04T08:43:48.080602Z",
+    "updated_at": "2026-03-04T17:28:09.982036Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "ctl-050",
     "entity_type": "control",
     "name": "Security Information and Event Management (Splunk)",
@@ -5797,7 +5802,12 @@
           "priority": "Medium"
         }
       ]
-    }
+    },
+    "primary_data_source": "stage-8-risk-security-regulatory/8.1-cybersecurity-control-failure",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+    "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+    "confidence_level": "High"
   },
   {
     "created_at": "2026-02-25T19:01:57.237809Z",
@@ -34621,10 +34631,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.240072Z",
-    "updated_at": "2026-02-25T19:01:57.240072Z",
+    "updated_at": "2026-03-04T17:29:26.869184Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ctl-313",
     "entity_type": "control",
     "name": "UK Tax Strategy Compliance Controls",
@@ -34708,25 +34718,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 35.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "rackspace; SOC 2/3 FY2024 audit reports; NIST/CIS/ISO framework control catalogs; Rackspace compliance documentation",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "control_effectiveness",
-          "gap_description": "Control effectiveness rating, testing approach, and evidence requirements not populated",
-          "remediation_plan": "Complete next control assessment cycle with SOC 2 audit findings",
-          "priority": "High"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
@@ -37698,5 +37701,1194 @@
         }
       ]
     }
+  },
+  {
+    "created_at": "2026-03-04T17:14:47.064934Z",
+    "updated_at": "2026-03-04T17:14:47.064937Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e9b2ece2-8b70-46cd-a270-87a0360bbff6",
+    "entity_type": "control",
+    "name": "Missing: Deal Profitability Validation Gate (Pre-Signature Approval)",
+    "description": "Absence of control: No mandatory deal profitability validation before customer signature. Sales CRM entries accepted without delivery cost review or profitability approval. Walk away policy Q4 2024 filters deals post-signature (reactive, too late for commitment cost). Needed control: Deal review board with cross-functional representation (sales, delivery, finance, possibly CEO) validating profitability assumptions before signature. Delivery cost estimation at T0-T1 sales engagement (not post-signature T3 discovery). Profitability approval gate blocking unprofitable deals at entry not post-commitment.",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "preventive",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "confidence": 0.9,
+    "evidence_stage": "7.4",
+    "control_focus": "deal_profitability_validation",
+    "implementation_gap": "no deal review board exists",
+    "maturity": "absent",
+    "discovery_date": "2026-02-15"
+  },
+  {
+    "created_at": "2026-03-04T17:14:49.602943Z",
+    "updated_at": "2026-03-04T17:14:49.602946Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2c2ac5f5-1162-492a-98fc-2ad5f9d6cc48",
+    "entity_type": "control",
+    "name": "Missing: Customer Identity Reconciliation Process (Cross-System Definition Alignment)",
+    "description": "Absence of control: No systematic process to reconcile customer identity and count across CRM (sales definition), Billing (revenue definition), and Support (engagement definition). No governance body owns reconciliation mandate. No periodic reconciliation or data quality audits validating alignment. Needed control: Data governance committee with CRM, finance, support representation owning customer identity stewardship. Quarterly reconciliation process identifying divergences and remediating root causes. Single authoritative customer definition enforced across systems (or explicit definition strategy allowing domain-specific definitions with documented rationale).",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "preventive",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "confidence": 0.85,
+    "evidence_stage": "7.4",
+    "control_focus": "customer_identity_governance",
+    "implementation_gap": "no governance committee, no reconciliation process",
+    "maturity": "absent",
+    "discovery_date": "2026-02-15"
+  },
+  {
+    "created_at": "2026-03-04T17:14:51.707415Z",
+    "updated_at": "2026-03-04T17:14:51.707417Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "567fe69e-7ee0-4c74-b5a5-fb7d142ff02e",
+    "entity_type": "control",
+    "name": "Missing: Customer Satisfaction Measurement Program (NPS/CSAT)",
+    "description": "Absence of control: No systematic NPS, CSAT, or satisfaction survey program. Satisfaction data not collected internally. Organization reactive to external satisfaction signals (Trustpilot, BBB) instead of proactive internal measurement. Needed control: Enterprise NPS program with quarterly measurement, segment-level breakdowns (by product, customer type, region), satisfaction trend tracking, early warning for at-risk accounts. Satisfaction tied to customer success/account management accountability and compensation. Board reporting of satisfaction trends alongside operational metrics.",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "preventive",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "confidence": 0.95,
+    "evidence_stage": "7.4",
+    "control_focus": "satisfaction_measurement",
+    "implementation_gap": "no measurement infrastructure exists",
+    "maturity": "absent",
+    "discovery_date": "2026-02-15"
+  },
+  {
+    "created_at": "2026-03-04T17:14:53.898845Z",
+    "updated_at": "2026-03-04T17:14:53.898846Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "04d8ff9b-d7ed-4777-bb8b-42b9f57d58af",
+    "entity_type": "control",
+    "name": "Missing: Incident Frequency Tracking and Prevention Accountability Framework",
+    "description": "Absence of control: Incident frequency not systematically measured. Prevention accountability orphaned\u2014no single function owns frequency reduction target or prevention investment ROI tracking. Prevention and response both critical but organization optimizes response (MTTD/MTTR measurable, incentivized) while neglecting prevention (frequency not measured, prevention owner absent). Needed control: Incident frequency tracking (historical recurrence pattern analysis), root cause resolution verification before incident-type closure, prevention owner assignment with frequency reduction accountability, monthly incident review board analyzing recurrence and approving prevention investments.",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "preventive",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "confidence": 0.9,
+    "evidence_stage": "7.4",
+    "control_focus": "incident_prevention",
+    "implementation_gap": "no frequency tracking, no prevention owner",
+    "maturity": "absent",
+    "discovery_date": "2026-02-15"
+  },
+  {
+    "created_at": "2026-03-04T17:15:30.288936Z",
+    "updated_at": "2026-03-04T17:15:30.288938Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "93afe81a-f35b-4190-aa39-57321227cc11",
+    "entity_type": "control",
+    "name": "100% Renewable Energy for UK Operations and Power Purchase Agreements (PPAs)",
+    "description": "Rackspace claims 100% renewable energy for UK operations. Global: 28.4% electricity matched via PPAs/RECs (2024), targeting 100% renewable integration. Controls customer sustainability audit risk and UK government procurement scoring.",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "uk_renewable_pct": 100,
+    "global_renewable_pct": 28.4,
+    "mechanism": "PPAs_and_RECs",
+    "customer_procurement_criterion": true
+  },
+  {
+    "created_at": "2026-03-04T17:15:32.399435Z",
+    "updated_at": "2026-03-04T17:15:32.399437Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c535b521-cb08-4e81-87bb-9cb221cc3794",
+    "entity_type": "control",
+    "name": "Cyber Insurance Coverage",
+    "description": "Cyber and E&O insurance provides partial protection for incident costs. Exchange 2022 recovered only 50% of costs ($5.4M of $10.8-12M). Insurance exclusions: contractual liability (SLA credits), consequential damages (customer revenue loss), business interruption (no physical damage trigger).",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.5-insurance-risk-transfer/9.5.risk_transfer_reality.json; stage-9-resilience-esg-continuity/9.5-insurance-risk-transfer/9.5.residual_risk_owners.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "coverage_type": "cyber_eo",
+    "recovery_rate_exchange_precedent_pct": 50,
+    "exclusions": [
+      "contractual_liability",
+      "consequential_damages",
+      "business_interruption"
+    ],
+    "uninsured_risk_pct": 50
+  },
+  {
+    "created_at": "2026-03-04T17:15:33.953753Z",
+    "updated_at": "2026-03-04T17:15:33.953756Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "23a4edd3-5188-4b39-934e-9f23cd48332a",
+    "entity_type": "control",
+    "name": "FedRAMP Continuous Monitoring Platform",
+    "description": "Controls 800+ NIST controls for government authorization. Evidence generation, incident response, compliance reporting. Critical business service. Single point of failure - if unavailable, authorization jeopardy within days of compliance lapse.",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "controls_maintained": 800,
+    "availability_requirement": "24_7_365",
+    "criticality": "GOVERNMENT_AUTHORIZATION",
+    "single_point_of_failure": true
+  },
+  {
+    "created_at": "2026-03-04T17:15:35.567694Z",
+    "updated_at": "2026-03-04T17:15:35.567696Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "09d67c6c-bdf0-4d55-afc9-76ef6c387c65",
+    "entity_type": "control",
+    "name": "Monitoring, Alerting, and Incident Response Platform (ScienceLogic)",
+    "description": "24/7 monitoring backbone for managed services. Proactive incident detection. September 2024 zero-day vulnerability disabled dashboards for 24-72+ hours. No disclosed backup/redundancy. SLA response time SLAs depend on monitoring - failure blocks incident detection.",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "dependency": "operational_backbone",
+    "availability_sla": "24_7",
+    "september_2024_incident": true,
+    "redundancy_disclosed": false
+  },
+  {
+    "created_at": "2026-03-04T17:15:37.348294Z",
+    "updated_at": "2026-03-04T17:15:37.348296Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d6e6ed15-12ec-49bc-b867-754ed00977ea",
+    "entity_type": "control",
+    "name": "Billing, Revenue Recognition, and Hyperscaler Consumption Reconciliation System",
+    "description": "Single point of failure for $2.7B revenue realization. Pulls consumption data from three hyperscaler APIs. No disclosed redundancy. System failure prevents invoice generation, revenue recognition delay, working capital crisis ($194M monthly hyperscaler payment vs customer collections).",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "revenue_dependency_usd_m": 2738,
+    "single_point_of_failure": true,
+    "api_dependencies": 3,
+    "redundancy_disclosed": false
+  },
+  {
+    "created_at": "2026-03-04T17:15:39.002232Z",
+    "updated_at": "2026-03-04T17:15:39.002234Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d3b47aa7-1670-4930-97a4-10576d90f432",
+    "entity_type": "control",
+    "name": "Identity, Access Management (IAM) and Privileged Access Controls",
+    "description": "Controls access to all customer-facing and internal systems. All operations depend on IAM (customer portal access, hyperscaler service accounts, infrastructure provisioning). Outage blocks ALL operations. Single point of failure for business continuity. SOC 2, ISO 27001, FedRAMP, HIPAA compliance evidence source.",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "criticality": "operational_perimeter",
+    "availability_requirement": "24_7_365",
+    "single_point_of_failure": true,
+    "compliance_evidence_primary": true
+  },
+  {
+    "created_at": "2026-03-04T17:15:40.410030Z",
+    "updated_at": "2026-03-04T17:15:40.410032Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "6fcafd4d-45f2-4bf9-8eb3-64e19957be83",
+    "entity_type": "control",
+    "name": "UK Sovereign Infrastructure Isolation Stack",
+    "description": "Architecturally isolated infrastructure for UK Sovereign Services. Cannot integrate with global network by design. Compliance-critical for UK data sovereignty. VMware Sovereign Cloud certification dependent. Isolation mandate creates 5-6X operational multiplier and prevents resource sharing.",
+    "tags": [],
+    "metadata": {},
+    "control_id": "",
+    "control_type": "",
+    "control_category": "",
+    "control_class": "",
+    "control_domain": "",
+    "control_status": "",
+    "control_weighting": null,
+    "applicability_dimensions": {
+      "people": false,
+      "process": false,
+      "technology": false,
+      "data": false,
+      "facility": false
+    },
+    "assessment_question": "",
+    "privacy_principle_mappings": [],
+    "control_owner": "",
+    "control_operator": "",
+    "implementing_org_unit": "",
+    "implements_policies": [],
+    "maps_to_frameworks": [],
+    "maps_to_regulations": [],
+    "mitigates_risks": [],
+    "control_effectiveness": {
+      "rating": "",
+      "methodology": "",
+      "last_assessed": null,
+      "assessed_by": ""
+    },
+    "assessment_history": [],
+    "assessment_cadence": "",
+    "next_assessment_date": null,
+    "testing_approach": {
+      "test_type": "",
+      "test_frequency": "",
+      "last_test_date": null,
+      "test_result": ""
+    },
+    "evidence_requirements": {
+      "evidence_types": [],
+      "evidence_location": "",
+      "retention_period": "",
+      "evidence_collection_automated": false
+    },
+    "automation_details": {
+      "tool_name": "",
+      "system_id": "",
+      "configuration_reference": ""
+    },
+    "kpi": {
+      "metric_name": "",
+      "target": "",
+      "current_value": "",
+      "trend": "",
+      "measurement_frequency": ""
+    },
+    "dependencies": [],
+    "compensating_controls": [],
+    "exceptions": [],
+    "gap_status": {
+      "gap_exists": false,
+      "gap_description": "",
+      "remediation_status": "",
+      "remediation_plan": "",
+      "target_date": null
+    },
+    "audit_findings": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "isolation_mandate": "PERMANENT",
+    "integration_with_global": "PROHIBITED",
+    "operational_multiplier": 6,
+    "certification_dependent": "VMware_Sovereign_Cloud"
   }
 ]
