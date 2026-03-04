@@ -3928,7 +3928,7 @@
     "id": "78078aea-61e2-44c9-a9f3-49177279283b",
     "entity_type": "vendor",
     "name": "Trend Micro Incorporated",
-    "description": "Enterprise cybersecurity platform provider (TYO: 4704). Rackspace deploys Trend Micro Cloud One - Workload Security (formerly Deep Security) for SaaS-based file integrity monitoring (FIM) and log inspection across production systems, as confirmed in SOC 3 FY2024 audit. Listed as Premier Security Partner on rackspace.com/about/channel-partners. Referenced in control CTL-014 (FIM), CTL-264 (System Monitoring - Splunk SIEM, CrowdStrike EDR, Palo Alto IDS, Trend Micro FIM), and integration INT-0340 (Trend Micro FIM\u2192Splunk). [com/about/channel-partners; partnerbase.com/rackspace-us-inc/trend-micro] [CONFIDENCE: high]",
+    "description": "Enterprise cybersecurity platform provider (TYO: 4704). Rackspace deploys Trend Micro Cloud One - Workload Security (formerly Deep Security) for SaaS-based file integrity monitoring (FIM) and log inspection across production systems, as confirmed in SOC 3 FY2024 audit. Listed as Premier Security Partner on rackspace.com/about/channel-partners. Referenced in control CTL-014 (FIM), CTL-264 (System Monitoring - Splunk SIEM, CrowdStrike EDR, Palo Alto IDS, Trend Micro FIM), and integration INT-0340 (Trend Micro FIM\u2192Splunk). [com/about/channel-partners; partnerbase.com/rackspace-us-inc/trend-micro] [CONFIDENCE: high]  Confirmed via Partnerbase: 311 total partners shared between Rackspace and Trend Micro; 9 mutual partners indicating deep ecosystem integration.",
     "tags": [],
     "metadata": {},
     "vendor_type": "Cybersecurity/Data Protection",
@@ -3954,11 +3954,11 @@
     "diversity_classification": null,
     "parent_company": "",
     "subsidiaries": [],
-    "relationship_status": "",
+    "relationship_status": "Active Partner",
     "relationship_start_date": "",
     "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
+    "strategic_importance": "High - Security Infrastructure",
+    "engagement_model": "Managed Service / Channel Partnership",
     "vendor_manager": "",
     "executive_sponsor": "",
     "governance_cadence": null,
@@ -4010,25 +4010,38 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
+      "last_review_date": "2026-03-04",
+      "next_review_date": "2026-06-04",
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 75,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "SOC 3 FY2024; rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "SOC 3 FY2024; rackspace; OSINT Web Research (2026-03-04)",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Subagent (Claude) \u2014 Vendor Batch 4",
+      "assessment_methodology": "OSINT Web Research + Graph Topology Validation",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "contract_value",
+          "gap_description": "No public contract value available for Trend Micro FIM services",
+          "remediation_plan": "Query procurement systems for licensing costs",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "relationship_start_date",
+          "gap_description": "Exact engagement date with Trend Micro not documented",
+          "remediation_plan": "Review SOC 3 audit records for initial deployment dates",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -4040,7 +4053,7 @@
     "id": "952b6bd3-a618-4757-ae43-2358765de44c",
     "entity_type": "vendor",
     "name": "Citrix Systems, Inc. (Cloud Software Group)",
-    "description": "Virtual desktop infrastructure (VDI), application delivery, and network virtualization platform provider. Acquired by Cloud Software Group (consortium of Vista Equity Partners and Elliott Management) in 2022. Rackspace employs dedicated Citrix System Administrators (L3) confirmed via role-061, indicating active Citrix virtual desktop and application delivery infrastructure deployment within Rackspace managed services stack. Listed as key technology alliance partner on rackspace.com/about/channel-partners. Citrix ADC (Application Delivery Controller) likely deployed for load balancing and SSL offload alongside F5 in data center environments. [com/about/channel-partners (Citrix listed); role-061 Citrix System Administrator L3 role entity; partnerbase.com/rackspace-us-inc] [CONFIDENCE: high]",
+    "description": "Virtual desktop infrastructure (VDI), application delivery, and network virtualization platform provider. Acquired by Cloud Software Group (consortium of Vista Equity Partners and Elliott Management) in 2022. Rackspace employs dedicated Citrix System Administrators (L3) confirmed via role-061, indicating active Citrix virtual desktop and application delivery infrastructure deployment within Rackspace managed services stack. Listed as key technology alliance partner on rackspace.com/about/channel-partners. Citrix ADC (Application Delivery Controller) likely deployed for load balancing and SSL offload alongside F5 in data center environments. [com/about/channel-partners (Citrix listed); role-061 Citrix System Administrator L3 role entity; partnerbase.com/rackspace-us-inc] [CONFIDENCE: high]  Cloud Software Group ownership (2022+) confirmed. Recent partnership focus on delivering flexible and secure digital transformation combining Citrix virtualization with Rackspace multi-cloud infrastructure.",
     "tags": [],
     "metadata": {},
     "vendor_type": "Network/Security Infrastructure",
@@ -4066,11 +4079,11 @@
     "diversity_classification": null,
     "parent_company": "",
     "subsidiaries": [],
-    "relationship_status": "",
+    "relationship_status": "Active Deployment",
     "relationship_start_date": "",
     "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
+    "strategic_importance": "Medium - Infrastructure Virtualization",
+    "engagement_model": "Managed Virtual Desktop Infrastructure (VDI)",
     "vendor_manager": "",
     "executive_sponsor": "",
     "governance_cadence": null,
@@ -4122,25 +4135,38 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
+      "last_review_date": "2026-03-04",
+      "next_review_date": "2026-06-04",
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 75,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; OSINT Web Research (2026-03-04)",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Subagent (Claude) \u2014 Vendor Batch 4",
+      "assessment_methodology": "OSINT Web Research + Graph Topology Validation",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "contract_expiry",
+          "gap_description": "No public contract expiration data available",
+          "remediation_plan": "Review procurement contracts and renewal schedules",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "total_annual_spend",
+          "gap_description": "Citrix licensing and support costs not disclosed",
+          "remediation_plan": "Query internal licensing and procurement databases",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4152,7 +4178,7 @@
     "id": "93a06a5b-323c-4e10-a3ca-ddd8d3f3e25c",
     "entity_type": "vendor",
     "name": "F5, Inc.",
-    "description": "Application delivery networking and security platform provider (NASDAQ: FFIV). Rackspace offers F5 Networks load balancers as a managed service, confirmed via rackspace.com/managed-hosting/custom-networking/load-balancers/f5-networks. F5 BIG-IP deployed for Layer 4-7 load balancing, SSL offload, and application security (WAF) across Rackspace dedicated and private cloud infrastructure. F5 load balancing is a billable add-on to Rackspace dedicated server configurations. [com/managed-hosting/custom-networking/load-balancers/f5-networks (referenced in int-0340 description); Rackspace product documentation] [CONFIDENCE: high]",
+    "description": "Application delivery networking and security platform provider (NASDAQ: FFIV). Rackspace offers F5 Networks load balancers as a managed service, confirmed via rackspace.com/managed-hosting/custom-networking/load-balancers/f5-networks. F5 BIG-IP deployed for Layer 4-7 load balancing, SSL offload, and application security (WAF) across Rackspace dedicated and private cloud infrastructure. F5 load balancing is a billable add-on to Rackspace dedicated server configurations. [com/managed-hosting/custom-networking/load-balancers/f5-networks (referenced in int-0340 description); Rackspace product documentation] [CONFIDENCE: high]  F5 and Rackspace deepening partnership as of 2025-2026: Rackspace manages fleet of 3,000+ F5 BIG-IP Application Delivery Controllers globally. Over 80 certified F5 engineers on Rackspace staff. F5 BIG-IP Advanced WAF integrated for application security. Partnership targets enabling flexible, agile secure digitalization across multi-cloud.",
     "tags": [],
     "metadata": {},
     "vendor_type": "Network/Security Infrastructure",
@@ -4178,11 +4204,11 @@
     "diversity_classification": null,
     "parent_company": "",
     "subsidiaries": [],
-    "relationship_status": "",
+    "relationship_status": "Strategic Partnership",
     "relationship_start_date": "",
     "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
+    "strategic_importance": "Critical - Network Layer Services",
+    "engagement_model": "Managed Application Delivery / Load Balancing",
     "vendor_manager": "",
     "executive_sponsor": "",
     "governance_cadence": null,
@@ -4234,25 +4260,38 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
+      "last_review_date": "2026-03-04",
+      "next_review_date": "2026-06-04",
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 75,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; OSINT Web Research (2026-03-04)",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Subagent (Claude) \u2014 Vendor Batch 4",
+      "assessment_methodology": "OSINT Web Research + Graph Topology Validation",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "total_annual_spend",
+          "gap_description": "Annual F5 licensing and support costs not publicly available",
+          "remediation_plan": "Query vendor management and procurement systems",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "sla_uptime",
+          "gap_description": "Service-level agreements for F5 managed services not documented",
+          "remediation_plan": "Review SLA definitions in managed service contracts",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4264,7 +4303,7 @@
     "id": "d31d8a26-09ac-4021-be8d-c8095317739c",
     "entity_type": "vendor",
     "name": "NETSCOUT Systems, Inc. (Arbor Networks)",
-    "description": "Network security and DDoS protection platform provider (NASDAQ: NTCT). Acquired Arbor Networks in 2015; Arbor brand retained for DDoS mitigation products. Arbor DDoS scrubbing appliances deployed at Rackspace DFW data centers, confirmed via rDNS records: arbor-dfw.dfw3.rackspace.net (72.3.128.13), arbor-dfw-netflow.dfw1.rackspace.net (72.3.128.6). Arbor appliances integrate with BGP edge routers for traffic scrubbing alongside Cisco Guard. Co-located in 72.3.128.0/24 subnet with DFW edge routers. Part of Rackspace's DDoS Mitigation Cluster (sys-043). [3.128.0/24 (int-0367 entity); integration INT-0367 DDoS Mitigation \u2192 BGP Edge Routers] [CONFIDENCE: high]",
+    "description": "Network security and DDoS protection platform provider (NASDAQ: NTCT). Acquired Arbor Networks in 2015; Arbor brand retained for DDoS mitigation products. Arbor DDoS scrubbing appliances deployed at Rackspace DFW data centers, confirmed via rDNS records: arbor-dfw.dfw3.rackspace.net (72.3.128.13), arbor-dfw-netflow.dfw1.rackspace.net (72.3.128.6). Arbor appliances integrate with BGP edge routers for traffic scrubbing alongside Cisco Guard. Co-located in 72.3.128.0/24 subnet with DFW edge routers. Part of Rackspace's DDoS Mitigation Cluster (sys-043). [3.128.0/24 (int-0367 entity); integration INT-0367 DDoS Mitigation \u2192 BGP Edge Routers] [CONFIDENCE: high]  Arbor Networks continues as NETSCOUT security division post-2015 acquisition. Arbor platform provides visibility into 800Tbps traffic across 550+ customers (50% of world internet traffic). Rackspace leverages Arbor TMS and Arbor Cloud for comprehensive DDoS scrubbing at scale.",
     "tags": [],
     "metadata": {},
     "vendor_type": "Network/Security Infrastructure",
@@ -4290,11 +4329,11 @@
     "diversity_classification": null,
     "parent_company": "",
     "subsidiaries": [],
-    "relationship_status": "",
+    "relationship_status": "Deployed Infrastructure",
     "relationship_start_date": "",
     "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
+    "strategic_importance": "Critical - Edge Security / DDoS Protection",
+    "engagement_model": "DDoS Mitigation as-a-Service",
     "vendor_manager": "",
     "executive_sponsor": "",
     "governance_cadence": null,
@@ -4346,25 +4385,38 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
+      "last_review_date": "2026-03-04",
+      "next_review_date": "2026-06-04",
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 75,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rDNS enumeration of 72",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "DNS reconnaissance",
-      "confidence_level": "",
+      "primary_data_source": "rDNS enumeration of 72; OSINT Web Research (2026-03-04)",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Subagent (Claude) \u2014 Vendor Batch 4",
+      "assessment_methodology": "OSINT Web Research + Graph Topology Validation",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "relationship_tenure_years",
+          "gap_description": "Initial Rackspace-Arbor engagement date not documented in web sources",
+          "remediation_plan": "Review internal procurement records and network infrastructure project timelines",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "contract_value",
+          "gap_description": "No public pricing for DDoS mitigation services",
+          "remediation_plan": "Query internal billing systems for Arbor service costs",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4376,7 +4428,7 @@
     "id": "06f09685-4a72-412b-bbf2-3071986c2265",
     "entity_type": "vendor",
     "name": "NVIDIA Corporation",
-    "description": "Accelerated computing and AI infrastructure platform provider (NASDAQ: NVDA). NVIDIA H100/H200 Tensor Core GPUs power Rackspace AI Business Platform (announced Mar 25, 2025) deployed on HPE ProLiant servers with InfiniBand networking. NVIDIA AI Enterprise software stack underlies Rackspace AI Business. NVIDIA H100 GPUs deployed at SJC3 Silicon Valley data center for Rackspace Spot GPU-as-a-Service (launched Nov 4, 2024 per GlobeNewswire). NVIDIA acquired Run:AI in 2024; Run:AI GPU orchestration (sys-144) is now a NVIDIA product. NVIDIA infrastructure also powers Rackspace AI Anywhere and AI Launchpad. Dell-NVIDIA joint infrastructure stack used across multiple AI products. [com/newsroom AI Business Mar 25 2025; globenewswire.com Nov 4 2024 GPUaaS launch; rackspace.com/cloud/private/ai-business; sys-061; sys-144] [CONFIDENCE: high]",
+    "description": "Accelerated computing and AI infrastructure platform provider (NASDAQ: NVDA). NVIDIA H100/H200 Tensor Core GPUs power Rackspace AI Business Platform (announced Mar 25, 2025) deployed on HPE ProLiant servers with InfiniBand networking. NVIDIA AI Enterprise software stack underlies Rackspace AI Business. NVIDIA H100 GPUs deployed at SJC3 Silicon Valley data center for Rackspace Spot GPU-as-a-Service (launched Nov 4, 2024 per GlobeNewswire). NVIDIA acquired Run:AI in 2024; Run:AI GPU orchestration (sys-144) is now a NVIDIA product. NVIDIA infrastructure also powers Rackspace AI Anywhere and AI Launchpad. Dell-NVIDIA joint infrastructure stack used across multiple AI products. [com/newsroom AI Business Mar 25 2025; globenewswire.com Nov 4 2024 GPUaaS launch; rackspace.com/cloud/private/ai-business; sys-061; sys-144] [CONFIDENCE: high]  NVIDIA partnership intensified 2024-2025: Rackspace AI Business (announced March 25, 2025) powered by NVIDIA H100/H200 Tensor Core GPUs. NVIDIA joined DGX-Ready Managed Services Program. GPU-as-a-Service launched Nov 4, 2024 at SJC3 with NVIDIA H100s. NVIDIA H100 infrastructure deployed across Rackspace AI Anywhere, AI Launchpad, and AI Business Platform. Run:AI GPU orchestration (acquired by NVIDIA 2024) integrated for workload management.",
     "tags": [],
     "metadata": {},
     "vendor_type": "AI/Data Analytics Platform",
@@ -4402,11 +4454,11 @@
     "diversity_classification": null,
     "parent_company": "",
     "subsidiaries": [],
-    "relationship_status": "",
+    "relationship_status": "Strategic Partnership",
     "relationship_start_date": "",
     "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
+    "strategic_importance": "Critical - AI/ML Acceleration Platform",
+    "engagement_model": "AI Infrastructure as-a-Service",
     "vendor_manager": "",
     "executive_sponsor": "",
     "governance_cadence": null,
@@ -4458,25 +4510,38 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
+      "last_review_date": "2026-03-04",
+      "next_review_date": "2026-06-04",
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 75,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; OSINT Web Research (2026-03-04)",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Subagent (Claude) \u2014 Vendor Batch 4",
+      "assessment_methodology": "OSINT Web Research + Graph Topology Validation",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "total_annual_spend",
+          "gap_description": "NVIDIA GPU procurement and licensing costs not disclosed",
+          "remediation_plan": "Query procurement and capital expenditure systems",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "relationship_start_date",
+          "gap_description": "Initial NVIDIA AI engagement date not precisely documented",
+          "remediation_plan": "Review project initiation records for AI product launches",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4488,7 +4553,7 @@
     "id": "82ae1b55-80dc-4e1c-a187-ec663a0df68f",
     "entity_type": "vendor",
     "name": "Hewlett Packard Enterprise (HPE)",
-    "description": "Enterprise server, storage, and networking infrastructure provider (NYSE: HPE). HPE ProLiant servers with NVIDIA H100/H200 GPUs power the Rackspace AI Business Platform announced March 2025. HPE and Rackspace previously announced the industry's first pay-as-you-go OpenStack private cloud partnership. HPE acquired Zerto (IT resilience platform) in 2021; Zerto remains deployed within Rackspace SDDC for DR (sys-113). Listed as technology infrastructure partner. [com/newsroom AI Business Mar 25 2025 (HPE ProLiant explicitly named); cloudcomputing-news.net HPE-Rackspace OpenStack; HPE.com/us/en/collateral/rackspace] [CONFIDENCE: high]",
+    "description": "Enterprise server, storage, and networking infrastructure provider (NYSE: HPE). HPE ProLiant servers with NVIDIA H100/H200 GPUs power the Rackspace AI Business Platform announced March 2025. HPE and Rackspace previously announced the industry's first pay-as-you-go OpenStack private cloud partnership. HPE acquired Zerto (IT resilience platform) in 2021; Zerto remains deployed within Rackspace SDDC for DR (sys-113). Listed as technology infrastructure partner. [com/newsroom AI Business Mar 25 2025 (HPE ProLiant explicitly named); cloudcomputing-news.net HPE-Rackspace OpenStack; HPE.com/us/en/collateral/rackspace] [CONFIDENCE: high]  HPE partnership evolved from pay-as-you-go OpenStack private cloud (2017+) to comprehensive AI infrastructure. HPE ProLiant servers with NVIDIA H100/H200 GPUs power Rackspace AI Business Platform (March 2025). HPE recognized Rackspace as Global Service Provider Partner of the Year 2018. HPE GreenLake Flex Capacity underpins on-demand consumption models for VMware and Kubernetes private clouds.",
     "tags": [],
     "metadata": {},
     "vendor_type": "Private Cloud Infrastructure",
@@ -4514,11 +4579,11 @@
     "diversity_classification": null,
     "parent_company": "",
     "subsidiaries": [],
-    "relationship_status": "",
+    "relationship_status": "Strategic Partnership",
     "relationship_start_date": "",
     "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
+    "strategic_importance": "Critical - Core Infrastructure Platform",
+    "engagement_model": "Infrastructure as-a-Service / Private Cloud",
     "vendor_manager": "",
     "executive_sponsor": "",
     "governance_cadence": null,
@@ -4570,25 +4635,38 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
+      "last_review_date": "2026-03-04",
+      "next_review_date": "2026-06-04",
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 75,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; OSINT Web Research (2026-03-04)",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Subagent (Claude) \u2014 Vendor Batch 4",
+      "assessment_methodology": "OSINT Web Research + Graph Topology Validation",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "total_annual_spend",
+          "gap_description": "HPE server and GreenLake licensing costs not publicly available",
+          "remediation_plan": "Query capital equipment procurement and leasing agreements",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "contract_expiry",
+          "gap_description": "HPE GreenLake and infrastructure contract terms not documented",
+          "remediation_plan": "Review vendor master agreements and renewal schedules",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4600,7 +4678,7 @@
     "id": "42c68aa6-1068-4b25-bed4-66b0cc770a12",
     "entity_type": "vendor",
     "name": "Zerto (Hewlett Packard Enterprise)",
-    "description": "IT resilience and disaster recovery platform provider. Acquired by HPE in 2021 for $374M; Zerto brand retained. Zerto IT Resilience Platform (sys-113) deployed within Rackspace SDDC Business and Enterprise tiers providing hypervisor-based continuous data replication, near-zero RPO, Virtual Protection Groups (VPGs), and journal-based recovery. Zerto Virtual Manager (ZVM) integrates with vCenter. Configurable per-VM network mapping for failover/test scenarios. Documented at docs.rackspace.com/docs/zerto-disaster-recovery. [rackspace.com/docs/zerto-disaster-recovery; sys-113 entity; L02-system.json] [CONFIDENCE: high]",
+    "description": "IT resilience and disaster recovery platform provider. Acquired by HPE in 2021 for $374M; Zerto brand retained. Zerto IT Resilience Platform (sys-113) deployed within Rackspace SDDC Business and Enterprise tiers providing hypervisor-based continuous data replication, near-zero RPO, Virtual Protection Groups (VPGs), and journal-based recovery. Zerto Virtual Manager (ZVM) integrates with vCenter. Configurable per-VM network mapping for failover/test scenarios. Documented at docs.rackspace.com/docs/zerto-disaster-recovery. [rackspace.com/docs/zerto-disaster-recovery; sys-113 entity; L02-system.json] [CONFIDENCE: high]  Zerto (HPE subsidiary since 2021, $374M acquisition) Managed DRaaS launched by Rackspace for on-premises, colocation and multi-cloud DR. Zerto IT Resilience Platform provides continuous data replication, near-zero RPO, Virtual Protection Groups, and journal-based recovery within SDDC Business and Enterprise tiers. Professional services available for DR plan design and execution with custom SLA guarantees.",
     "tags": [],
     "metadata": {},
     "vendor_type": "Cybersecurity/Data Protection",
@@ -4626,11 +4704,11 @@
     "diversity_classification": null,
     "parent_company": "",
     "subsidiaries": [],
-    "relationship_status": "",
+    "relationship_status": "Active Deployment",
     "relationship_start_date": "",
     "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
+    "strategic_importance": "High - Business Continuity / Resilience",
+    "engagement_model": "Disaster Recovery as-a-Service",
     "vendor_manager": "",
     "executive_sponsor": "",
     "governance_cadence": null,
@@ -4682,25 +4760,38 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
+      "last_review_date": "2026-03-04",
+      "next_review_date": "2026-06-04",
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 75,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "docs",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "primary_data_source": "docs; OSINT Web Research (2026-03-04)",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Subagent (Claude) \u2014 Vendor Batch 4",
+      "assessment_methodology": "OSINT Web Research + Graph Topology Validation",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "contract_value",
+          "gap_description": "Zerto licensing and Managed DRaaS service pricing not publicly disclosed",
+          "remediation_plan": "Query internal cost accounting and billing systems",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "sla_uptime",
+          "gap_description": "Specific uptime SLAs for Zerto Managed DRaaS not documented",
+          "remediation_plan": "Review DRaaS service level agreements",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4712,7 +4803,7 @@
     "id": "9e651731-012d-4d54-8937-2307a06cf294",
     "entity_type": "vendor",
     "name": "Red Hat, Inc. (IBM)",
-    "description": "Open-source enterprise software provider; subsidiary of IBM since 2019 (NYSE: IBM). Rackspace Private Cloud Powered by Red Hat (RPC-R) is a long-standing managed private cloud offering based on Red Hat OpenStack Platform. Rackspace OpenStack Enterprise (launched Aug 2024) supports Red Hat OpenStack configuration as an option. Rackspace has contributed 5.6M+ lines of code to OpenStack (co-founded with NASA in 2010). Red Hat Enterprise Linux is the OS substrate for multiple Rackspace private cloud and OpenStack deployments. [com/cloud/openstack-enterprise; rackspace.com/blog/rackspace-private-cloud-red-hat-delivers-benefits; redhat.com/en/success-stories/rackspace; ir.rackspace.com Aug 2024 OpenStack Enterprise launch] [CONFIDENCE: high]",
+    "description": "Open-source enterprise software provider; subsidiary of IBM since 2019 (NYSE: IBM). Rackspace Private Cloud Powered by Red Hat (RPC-R) is a long-standing managed private cloud offering based on Red Hat OpenStack Platform. Rackspace OpenStack Enterprise (launched Aug 2024) supports Red Hat OpenStack configuration as an option. Rackspace has contributed 5.6M+ lines of code to OpenStack (co-founded with NASA in 2010). Red Hat Enterprise Linux is the OS substrate for multiple Rackspace private cloud and OpenStack deployments. [com/cloud/openstack-enterprise; rackspace.com/blog/rackspace-private-cloud-red-hat-delivers-benefits; redhat.com/en/success-stories/rackspace; ir.rackspace.com Aug 2024 OpenStack Enterprise launch] [CONFIDENCE: high]  Red Hat-Rackspace partnership spans 12+ years (since 2003 as first managed RHEL provider). Rackspace Private Cloud Powered by Red Hat (RPC-R) is long-standing managed OpenStack offering. Rackspace OpenStack Enterprise (launched Aug 2024) supports Red Hat OpenStack Platform configuration. Rackspace has contributed 5.6M+ lines of code to OpenStack project (co-founded with NASA 2010). Red Hat Enterprise Linux substrate for multiple Rackspace private cloud deployments.",
     "tags": [],
     "metadata": {},
     "vendor_type": "Private Cloud Infrastructure",
@@ -4738,11 +4829,11 @@
     "diversity_classification": null,
     "parent_company": "",
     "subsidiaries": [],
-    "relationship_status": "",
+    "relationship_status": "Strategic Partnership",
     "relationship_start_date": "",
     "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
+    "strategic_importance": "Critical - Cloud Platform Foundation",
+    "engagement_model": "OpenStack / Private Cloud Platform",
     "vendor_manager": "",
     "executive_sponsor": "",
     "governance_cadence": null,
@@ -4794,25 +4885,38 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
+      "last_review_date": "2026-03-04",
+      "next_review_date": "2026-06-04",
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 75,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; OSINT Web Research (2026-03-04)",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Subagent (Claude) \u2014 Vendor Batch 4",
+      "assessment_methodology": "OSINT Web Research + Graph Topology Validation",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "total_annual_spend",
+          "gap_description": "Red Hat licensing costs for RPC-R and OpenStack deployments not disclosed",
+          "remediation_plan": "Query licensing management and procurement systems",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "contract_expiry",
+          "gap_description": "Red Hat OpenStack Platform support contract renewal dates not documented",
+          "remediation_plan": "Review vendor master agreements and renewal schedules",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
