@@ -1,6 +1,74 @@
 # Assembled graph file — built locally by kg-morning.sh / kg-sync.sh
 graph.json
 
+# Graph working copies and backups
+graph_*.json
+graph.json.*
+*.bak
+*.bak-*
+*.backup*
+*.corrupt
+
+# Daemon logs
+.kg-*.log
+*.log
+
+# Session-specific enrichment artifacts
+# (reports, batch payloads, summaries generated during work sessions)
+*_REPORT*.md
+*_REPORT*.txt
+*_REPORT*.json
+*_SUMMARY*.md
+*_SUMMARY*.txt
+*_SUMMARY*.csv
+*_SUMMARY*.json
+*_EXECUTION_*.txt
+*_EXECUTION_*.md
+*_INDEX.md
+*_INDEX.txt
+*_DELIVERABLES*.txt
+*_DELIVERABLES*.md
+*_CHECKLIST.md
+*ENRICHMENT*.md
+*ENRICHMENT*.txt
+*ENRICHMENT*.json
+*REMEDIATION*.md
+*REMEDIATION*.txt
+ORPHAN_*.md
+ORPHAN_*.txt
+DUPLICATE_*.md
+DUPLICATE_*.txt
+QUICK_REFERENCE.txt
+EXECUTION_SUMMARY.txt
+FINAL_ENRICHMENT_VERIFICATION.txt
+README_*.md
+
+# Batch payload / working JSON files
+batch_*.json
+valid_batch_*.json
+valid_relationships.json
+actual_relationships.json
+relationships_to_create.json
+bulk_updates_payload.json
+update_commands.json
+mcp_update_calls.json
+executives.json
+person_*.json
+enrichment_*.json
+portfolio_*.json
+product_enrichment_data.json
+*_enrichment_report*.json
+*_enrichment_report*.txt
+graphguard_report.json
+karma_assessment_report.json
+karma_entity_scores.json
+orphan_fix_summary.json
+jurisdictions_to_enrich.json
+initiative_enrichment_report.json
+customer_enrichment_*.json
+*_update_log.json
+*_updates.json
+
 # Editor / OS
 .DS_Store
 *.swp
