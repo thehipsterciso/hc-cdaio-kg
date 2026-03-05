@@ -6,6 +6,7 @@ on:
       - 'entities/**'
       - 'relationships/**'
       - 'graph.json'
+      - '.github/workflows/**'
   push:
     branches:
       - main
@@ -13,6 +14,7 @@ on:
       - 'entities/**'
       - 'relationships/**'
       - 'graph.json'
+      - '.github/workflows/**'
 
 jobs:
   validate:
