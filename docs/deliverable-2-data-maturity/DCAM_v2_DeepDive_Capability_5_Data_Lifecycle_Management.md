@@ -14,6 +14,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 ***The organizational investment in data lifecycle governance is substantial. Rackspace operates two distinct Data Protection Departments: dept-053 (Data Protection Department, $1.092M budget, 7 headcount) responsible for data loss prevention, compliant data storage, encryption, and data sovereignty, and dept-242 (Privacy & Data Protection Department, $3.25M budget, 10 headcount) responsible for GDPR compliance, CCPA compliance, privacy notices, data protection agreements, and data subject rights. Combined, these units represent $4.34M annual investment and 17 full-time equivalents dedicated solely to protecting and managing data assets. The Data Protection Specialist role (role-258, P4 level, $156K annual salary) is explicitly chartered for encryption, DLP, data classification, and key management. Yet despite this investment, the organization cannot currently measure whether classification is accurate across its data estate, whether retention schedules are being followed, or whether disposal processes are executing as documented.***
 ***The assessment draws from a knowledge graph containing 3,060 entities and 7,614 relationships, with particular focus on 90 data domains (each with populated retention_policy objects containing minimum/maximum retention periods, destruction methods, legal hold status, and regulatory basis), 70 regulations with lifecycle-specific requirements, 2 lifecycle-focused policies, 4 lifecycle-relevant controls, 2 data protection departments, multiple data protection roles, and the pervasive pattern of documented retention requirements coupled with unmeasured compliance. The December 2022 Hosted Exchange breach created an additional complexity: multiple data domains have active legal holds tied to breach litigation (including dd-029, dd-033, dd-037), which override normal retention/disposal schedules and must be tracked and managed separately. This demonstrates the real-world complexity that formal lifecycle policies must accommodate: legal holds can suspend normal data destruction cycles indefinitely, requiring different governance mechanics than standard retention schedules.***
 ### Maturity Positioning
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DCAM v2 MATURITY SCALE — CAPABILITY 5 POSITION                    │
 ├─────────────────────────────────────────────────────────────────┤
@@ -28,6 +29,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │                                                                     │
 │   NOTE: All 4 Sub-Capabilities score 3 (Defined) — uniform maturity  │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ### Policy and Control Foundation
 
@@ -51,6 +53,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 
 ***The sub-capability scores reveal a capability that is uniformly mature in policy articulation but uniformly deficient in operational measurement. All four sub-capabilities score 3 (Defined), indicating that Rackspace has documented requirements, created controls, assigned ownership, and begun implementation. However, none of the four dimensions have mature key performance indicators, automated evidence collection, or compliance dashboards that verify execution. The capability is policy-rich and measurement-poor, creating a maturity ceiling at the Defined level (3) until compliance measurement infrastructure is operationalized.***
 ### Data Lifecycle Stages and Current Maturity
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DATA LIFECYCLE STAGES — MATURITY PER STAGE                        │
 ├─────────────────────────────────────────────────────────────────┤
@@ -65,6 +68,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │ Controls: CTL-031 (classify), CTL-037 (retain/purge)               │
 │ Gap: No measurement at any stage; legal holds override disposal    │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 # 3. Sub-Capability 5.1: Data Lifecycle Strategy and Policy
 ***Sub-Capability 5.1 assesses the organization's ability to define, communicate, and enforce data lifecycle strategy and foundational governance policies. Rackspace scores 3 (Defined) on this dimension, reflecting comprehensive policy articulation (POL-016, POL-026), executive governance structure (Data Governance Council leadership), and alignment to regulatory frameworks. However, the defining tension is the Compliance Measurement Void: while retention_policy objects are populated across all 90 data domains with minimum/maximum retention periods, destruction methods, legal hold status, and regulatory basis, the compliance_measurement fields for both POL-016 and POL-026 are empty. Organizations cannot improve what they do not measure, and they cannot demonstrate compliance without measurement.***
@@ -105,6 +109,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 ***The four-tier classification scheme is well-defined at the policy level. Each tier has explicit access requirements, encryption specifications, retention drivers, and downstream control implications. However, no measurement dashboard tracks the percentage of the 90 data domains currently classified into each tier, the percentage of new data ingestion flows classifying data, or the accuracy of existing classifications. The 'Unknown %' entries reflect the Capability 5 assessment's core finding: Rackspace has defined classification tiers and controls but lacks measurement infrastructure to verify implementation at scale.***
 
 ### Classification-to-Downstream-Controls Chain
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  CLASSIFICATION DRIVES DOWNSTREAM CONTROLS (CTL-031)                  │
 ├─────────────────────────────────────────────────────────────────┤
@@ -121,6 +126,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │                                                                     │
 │ Gap: Classification coverage unknown, accuracy unmeasured            │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 # 5. Sub-Capability 5.3: Data Retention and Archival
 ***Sub-Capability 5.3 assesses the organization's ability to define, enforce, and measure data retention and archival requirements across its data estate. Rackspace scores 3 (Defined) on this dimension, reflecting the existence of comprehensive retention_policy objects across all 90 data domains (each specifying minimum retention period, maximum retention period, retention basis, destruction method, and legal hold status), the preventive control CTL-037 (Data Retention and Automated Purge), and alignment to 70 regulatory frameworks. However, the defining gap is the 'Automated Purge Contradiction': CTL-037 is named for and describes 'automated data retention enforcement' and 'automated purge processes for expired data,' yet the control's evidence_collection_automated field is FALSE, all KPIs are null, and no automated purge tool has been deployed. The organization has defined what should happen but not verified that it is actually happening.***
@@ -130,6 +136,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 ***The gap between promised and operational automation is the defining tension. CTL-037 describes 'automated data retention enforcement aligned with regulatory requirements (7-year SOX, 6-year GDPR, sector-specific). 13-month security log retention for audit-ready compliance. Automated purge processes for expired data.' The language suggests that expired data is automatically purged according to schedule. However, the control's evidence_collection_automated = FALSE, no automated purge tool is documented, and the control's KPIs are all null. This indicates that purge execution is currently manual, verification is manual, and compliance is not measured. The cobbler's children scenario repeats: Rackspace delivers automated data retention services to customers (via prd-014 Rackspace Data Protection on Cohesity), yet the organization's internal retention processes are not automated. Moving from Defined (3) to Managed (4) requires deploying a retention compliance system that automates purge execution, logs all purge operations for audit trails, measures purge compliance (percentage of expired data purged within SLA), and reports monthly to the Data Governance Council.***
 ### Retention Requirement Landscape (70 Regulations, 1 Policy)
 ***Rackspace's retention policy must reconcile 70 distinct regulatory requirements spanning 1-year minimum (PCI DSS) to indefinite (litigation holds). The policy is unified at the enterprise level (POL-026) but operationalized with domain-specific overrides per the examples above (dd-029, dd-033, dd-037). Each domain's retention_policy specifies the minimum and maximum retention periods that apply to that domain's data, calculated as the intersection of: regulatory requirements applicable to that domain, the data classification (Public/Internal/Confidential/Restricted driving retention), the business use case (e.g., audit trails retain 13 months; transaction data retains 7 years), and any active legal holds. Without a compliance measurement dashboard, verifying that all 90 domains are being retained according to their specified requirements is operationally infeasible. The organization must move from policy documentation to automated compliance verification.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  LEGAL HOLD COMPLEXITY (December 2022 Breach)                         │
 ├─────────────────────────────────────────────────────────────────┤
@@ -150,6 +157,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │                                                                     │
 │   Gap: No legal hold tracking system; compliance unmeasured         │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 # 6. Sub-Capability 5.4: Data Disposal and Destruction
 ***Sub-Capability 5.4 assesses the organization's ability to securely destroy, dispose of, and retire data assets when they have reached the end of their retention period or business usefulness. Rackspace scores 3 (Defined) on this dimension, reflecting the definition of destruction methods in domain-specific retention policies (CTL-037 enforcement), the existence of a preventive control governing destruction (CTL-037), and alignment to regulatory destruction requirements (GDPR Art. 17 right to erasure, SOX record destruction, PCI DSS secure deletion). However, the defining gap is the same Automated Purge Contradiction: CTL-037 promises automated purge execution, but no automated purge tool is deployed, no KPIs measure purge success rate, and no compliance dashboard tracks whether expired data is actually being destroyed.***
@@ -158,6 +166,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 ***The organizational mandate for secure disposal is clear. Dept-053 (Data Protection Department, $1.092M, 7 HC) is responsible for 'data sovereignty' and 'compliant data storage,' which includes ensuring that data is disposed of securely according to regulatory and classification requirements. Dept-242 (Privacy & Data Protection Department, $3.25M, 10 HC) is responsible for GDPR compliance, including the right to erasure (Art. 17) and data subject deletion rights, which require secure disposal upon request. The Data Protection Specialist (role-258, P4) is chartered for 'encryption' and key management, which extends to ensuring that cryptographic keys used to encrypt data are destroyed when the data is destroyed (tied to CTL-036 Key Management Lifecycle). However, the current operational state does not support automated secure disposal at scale. Organizations like Rackspace that handle customer data under regulatory obligations (GDPR, SOX, PCI DSS, HIPAA) must be able to prove that data has been securely destroyed when requested or when retention periods expire. Without automated purge and audit logs, this proof is difficult to demonstrate.***
 ***The gap is three-fold. First, purge automation is not deployed: 'automated purge processes' remain theoretical, with no tool executing purges according to schedule. Second, purge compliance cannot be measured: without a purge tracking system, Rackspace cannot report on the percentage of expired data that has been purged within SLA (e.g., 30 days of expiration). Third, cryptographic key lifecycle is not integrated with data disposal: when data encrypted with a key is destroyed, the key should also be destroyed or archived (per CTL-036), but no integration between data retention/disposal (CTL-037) and key management (CTL-036) is documented. Moving from Defined (3) to Managed (4) requires deploying automated purge capabilities across the data domains (prioritizing high-sensitivity Restricted and Confidential data), implementing purge audit logs and compliance dashboards, integrating key management lifecycle with data disposal, and establishing monthly purge compliance reporting to the Data Governance Council. The timeline is 12-18 months contingent on technology platform selection and operational integration with data governance.***
 ### Destruction Method Maturity
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  CTL-037: DOCUMENTED vs OPERATIONAL STATE                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -173,6 +182,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │                                                                     │
 │ RESULT: Policy → Procedural Naming =/= Operational Automation      │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 # 7. Cross-Cutting Analysis: Systemic Tensions and Regulatory Complexity
 ***Six key cross-cutting tensions emerge from the analysis of Capability 5 across all four sub-capabilities, revealing systemic gaps between policy articulation and operational measurement that must be addressed to progress from Defined (3) to Managed (4).***
@@ -241,6 +251,7 @@ Role-258 (Data Protection Specialist) is explicitly chartered for data classific
 ***The December 2022 Hosted Exchange breach has created both a challenge and an opportunity. The legal holds on dd-029, dd-033, and dd-037 require a separate governance track for litigation holds, forcing the organization to build exception management capabilities alongside standard retention schedules. This is an opportunity to design hold management from the outset as an integral part of lifecycle governance, rather than a reactive patch. As Rackspace advances Capability 5, treating legal holds as a first-class governance concern (not an afterthought) will strengthen the overall program and prepare the organization for future incidents, investigations, or litigation.***
 ***Finally, Rackspace has an opportunity to close the gap between external and internal services. Prd-014 (Rackspace Data Protection, built on Cohesity) delivers automated data protection, retention, and recovery services to customers across cloud platforms (Azure, Databricks, Synapse, Snowflake). The same automated practices, compliance frameworks, and measurement approaches that Rackspace uses to protect customer data should be internalized and applied to Rackspace's own data estate. The cobbler's children should not have to remain shoeless.***
 
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  CAPABILITY 5 MATURITY: DEFINED (LEVEL 3)                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -256,4 +267,4 @@ Role-258 (Data Protection Specialist) is explicitly chartered for data classific
 │  TARGET: Move to Managed (Level 4) within 18-24 months by            │
 │  operationalizing measurement, automating purge, and establishing    │
 │  unified governance structure with Chief Data Officer accountability.│
-└─────────────────────────────────────────────────────────────────┘
+└─────────────────────────────────────────────────────────────────┘```

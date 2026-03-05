@@ -12,6 +12,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 ***The paradox at the center of this capability is revealing. Rackspace has built a sophisticated data governance services practice within FAIR (dept-070: Data Strategy & Governance Department, $780K budget, 5 headcount) that advises customers on governance frameworks. Yet the enterprise itself lacks several foundational governance structures that its own consultants would recommend to clients. This is the services-facing versus internal-facing disconnect identified in Capability 1, now manifesting as a governance architecture that is stronger on paper than in practice.***
 ***The assessment draws from a knowledge graph containing 3,060 entities and 7,614 relationships, with particular focus on 123 policies, 351 controls, 90 data domains, 70 regulations, and the critical relationship patterns that reveal governance effectiveness: 385 managed_by relationships (average confidence 0.77, the lowest of any major relationship type), 386 enforces relationships (confidence 0.91), 601 applies_to relationships (confidence 0.78), and 1,117 subject_to relationships (confidence 0.91).***
 ### Maturity Positioning
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DCAM v2 MATURITY SCALE — CAPABILITY 2 POSITION                    │
 ├─────────────────────────────────────────────────────────────────┤
@@ -25,6 +26,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │   │            │              12-18 mo.      │            │           │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 # 2. Sub-Capability Score Summary
 
@@ -43,6 +45,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 ***The Governance Operating Model sub-capability assesses whether Rackspace has established the organizational structures, decision rights, escalation paths, and accountability mechanisms necessary to govern data as an enterprise asset. At a score of 3, the organization has defined roles and responsibilities in policy but has not yet implemented the cross-functional governance body that would give those definitions operational authority.***
 ## The Missing Governance Layer
 ***The knowledge graph reveals a critical architectural absence: there is no Data Governance Council, Data Governance Committee, or equivalent cross-functional governance body anywhere in the 3,060-entity knowledge graph. The entity ROLE-OM-003 (Operating Committee Chair / Cross-Functional Governance) is explicitly flagged as 'Missing' with an operating_model_gap of 'Critical - Governance layer void.' All cross-functional conflicts escalate directly to CEO Srini Koushik, who functions as an ad hoc operating committee chair. There is no standing mechanism for data governance dispute resolution below the executive level.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  GOVERNANCE OPERATING MODEL — CURRENT STATE                        │
 ├─────────────────────────────────────────────────────────────────┤
@@ -71,6 +74,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │   NOTE: This team advises CUSTOMERS, not the enterprise itself.      │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ## Decision Rights and Escalation Architecture
 ***Without a Data Governance Council, decision rights for data-related disputes are unresolved at the organizational level. The KG entity ROLE-OM-003 documents that Business Unit Presidents lack authority to resolve peer disputes over data ownership, classification, or access. Major decisions requiring cross-functional coordination, including data sharing agreements between business units, classification disputes, and domain boundary conflicts, escalate directly to the CEO. This escalation pattern is unsustainable and indicative of a governance operating model that has not matured beyond the ad hoc stage, even though individual policy artifacts suggest a higher maturity level.***
@@ -86,6 +90,7 @@ dept-070 (Data Strategy & Governance, $780K budget, 5 headcount) is explicitly s
 ***Data Stewardship is the lowest-scoring sub-capability within Capability 2 and represents the most significant operational gap in Rackspace's governance architecture. At a score of 2, the organization has identified the concept of data stewardship in its policies but has not yet established a formal stewardship network with defined roles, assigned individuals, or measurable accountability.***
 ## The Stewardship Void
 ***A search of the knowledge graph for 'data steward' roles returns zero dedicated data stewardship positions. The closest match is role-303 (Data Strategy & Governance Lead), but this role is positioned within dept-070 and focuses on customer-facing governance engagements rather than internal enterprise data stewardship. There are no Domain Data Stewards, Technical Data Stewards, or Business Data Stewards defined in the KG's role taxonomy of 300+ roles.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  STEWARDSHIP CONFIDENCE DISTRIBUTION                               │
 ├─────────────────────────────────────────────────────────────────┤
@@ -108,6 +113,7 @@ dept-070 (Data Strategy & Governance, $780K budget, 5 headcount) is explicitly s
 │  This is the stewardship gap expressed as a measurement signal.      │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ## Department-Level Stewardship Patterns
 ***At the department level, 63 managed_by relationships exist between data domains and departments, but these represent organizational custody rather than formalized stewardship. The data domains reference ownership roles such as 'Chief Revenue Officer' (dd-001: Customer Account Data), 'VP of Data Services' (dd-014, dd-033), and 'Chief Financial Officer' (dd-032: Business Intelligence and Reporting Data). These are domain owner titles embedded in data domain metadata, not dedicated stewardship appointments with defined responsibilities, escalation authority, and quality accountability.***
@@ -134,6 +140,7 @@ No stewardship RACI matrix or equivalent accountability framework identified in 
 | POL-048   | Supplier DPA Policy                    | Vendor Mgmt | Annual       | Yes      |
 | POL-051   | Records Management Policy              | Compliance  | Annual       | Yes      |
 
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DATA POLICY FRAMEWORK TAXONOMY                                    │
 ├─────────────────────────────────────────────────────────────────┤
@@ -160,6 +167,7 @@ No stewardship RACI matrix or equivalent accountability framework identified in 
 │   Control Backing:      351 controls supporting policy enforcement  │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ## Enforcement Depth
 ***The enforcement architecture connecting policies to controls is genuinely robust. POL-071 (Data Governance Policy) is enforced by CTL-328 (Data Governance Framework Controls, confidence 0.85) and CTL-038 (Data Masking and Anonymization, confidence 0.80). POL-072 (Data Quality Policy) is enforced by CTL-305 (Data Quality Monitoring Controls, confidence 0.80). The average enforcement confidence of 0.91 across all 386 enforces relationships is the second-highest confidence score in the knowledge graph, exceeded only by regulates (1.00).***
@@ -179,6 +187,7 @@ CCPA/CPRA: California consumer privacy with published Consumer Privacy Protectio
 LGPD: Brazilian data protection law applicable to Latin American customer footprint
 PCI DSS: Payment card data for billing and subscription management
 HIPAA: Protected health information for healthcare customers on managed infrastructure
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  REGULATORY MAPPING DEPTH                                          │
 ├─────────────────────────────────────────────────────────────────┤
@@ -201,6 +210,7 @@ HIPAA: Protected health information for healthcare customers on managed infrastr
 │   The gap is in WHO is accountable for compliance (managed_by 0.77)│
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ## FedRAMP Heightened Scrutiny Pattern
 ***A specific and material risk entity (FedRAMP Heightened Scrutiny - Breach Pattern Triggers Enhanced Monitoring) documents that three security incidents within a five-year window, the Exchange breach in December 2022, ScienceLogic in September 2024, and CL0P in October 2024, have created a pattern that likely triggers enhanced monitoring by the FedRAMP Joint Authorization Board (JAB). The risk entity notes that JAB has not publicly suspended Rackspace's Authorization to Operate (ATO) but may be requiring contingency authorizations with additional controls. A fourth incident could trigger ATO suspension where the first three did not, described as a ceiling effect. Given that federal business represents a significant portion of Rackspace's revenue and the company serves more than 50% of cabinet-level agencies, the governance implications of regulatory compliance in this domain are existential.***
@@ -215,6 +225,7 @@ DD-001: Customer Account Data (81,000+ accounts, 120 countries, CRO-owned, Confi
 DD-014: Customer Data Lake and Warehouse Data (Snowflake/Redshift/Synapse/BigQuery, VP Data Services-owned, maturity 'Defined')
 DD-032: Business Intelligence and Reporting Data (PowerBI/Tableau/Looker, CFO-owned, financial data and trade secret flagged)
 DD-033: Data Pipeline and ETL Orchestration Data (Spark/Glue/DataFactory, VP Data Services-owned, trade secret flagged)
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DATA DOMAIN OWNERSHIP UNCERTAINTY MAP                              │
 ├─────────────────────────────────────────────────────────────────┤
@@ -241,6 +252,7 @@ DD-033: Data Pipeline and ETL Orchestration Data (Spark/Glue/DataFactory, VP Dat
 │            The market disciplines what the org model does not.       │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ## Domain Classification and Sensitivity
 ***The data classification model, governed by POL-016 (Data Classification Policy), implements a four-tier classification scheme. Each data domain carries explicit sensitivity flags for PII, PHI, PCI, children's data, biometric data, financial data, and trade secrets. This granularity enables precise regulatory mapping. For example, dd-001 (Customer Account Data) is flagged as PII-containing and is therefore automatically subject to GDPR, CCPA, and LGPD, while dd-033 (Data Pipeline and ETL Orchestration Data) is flagged as a trade secret but carries no PII, placing it under different governance requirements.***
@@ -256,6 +268,7 @@ Domain maturity levels range from 'Defined' to 'Managed', with none reaching 'Op
 # 8. Cross-Cutting Analysis
 ## The Governance Paradox: Policy Depth Without Organizational Depth
 ***Capability 2 presents a governance architecture with a fundamental structural imbalance. The policy framework (score 4) and regulatory mapping (score 4) demonstrate that Rackspace knows what governance looks like on paper. The organization has articulated comprehensive policies, mapped them to controls, and linked them to regulations with high confidence. But the stewardship network (score 2) and operating model (score 3) reveal that the human capital and organizational structures needed to operationalize those policies are materially underdeveloped.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  THE GOVERNANCE PARADOX                                             │
 ├─────────────────────────────────────────────────────────────────┤
@@ -278,6 +291,7 @@ Domain maturity levels range from 'Defined' to 'Managed', with none reaching 'Op
 │   (operating cadence), the performance is inconsistent.              │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ## Services-Facing vs. Internal-Facing Disconnect (Continued)
 ***The services-internal disconnect identified in Capability 1 manifests even more acutely in governance. The Data Strategy & Governance Department (dept-070, $780K budget, 5 headcount) and the Data Strategy & Governance Lead role (role-303) exist entirely within the services-facing FAIR practice. These professionals advise customers on data governance frameworks, data quality management, metadata management, and data catalog implementation. They possess exactly the competencies needed to build Rackspace's internal governance architecture. Yet there is no evidence in the knowledge graph that their expertise is deployed inward.***

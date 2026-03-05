@@ -14,6 +14,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 ***The paradox deepens when examined through an organizational lens. Rackspace employs DataOps Engineers (role-125), Lead Data Engineers (role-160), and operates a Data Modernization Department (dept-069, $1.56M budget, 10 headcount) whose explicit mandate includes 'data quality validation' in customer-facing services. These professionals implement data quality frameworks for external customers daily: completeness validation, accuracy checks, timeliness enforcement, and consistency rules across Azure Data Lake, Databricks, Synapse, and Snowflake platforms. Yet those same quality frameworks, methodologies, and technical patterns have not been turned inward to systematically measure and improve the quality of Rackspace's own data estate. The cobbler's children, once again, have no shoes.***
 ***The assessment draws from a knowledge graph containing 3,060 entities and 7,614 relationships, with particular focus on 90 data domains, 123 policies (of which 1 is quality-specific), 351 controls (of which 1 is quality-monitoring-specific), and the structural absence of quality measurement data across the entire domain portfolio. Sub-Capability 3.4 (Data Profiling & Assessment) scores 1 (Initial)—the lowest sub-capability score in the entire DCAM assessment—indicating a complete operational void in data profiling execution.***
 ### Maturity Positioning
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DCAM v2 MATURITY SCALE — CAPABILITY 3 POSITION                    │
 ├─────────────────────────────────────────────────────────────────┤
@@ -28,6 +29,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │                                                                     │
 │   NOTE: Sub-Cap 3.4 scores 1 (Initial) — lowest in entire DCAM     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ### Quality Policy and Control Landscape
 
@@ -51,6 +53,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 
 ***The sub-capability scores reveal a capability that is uniformly underdeveloped across all four dimensions, with Sub-Capability 3.4 representing a complete operational void. Scores of 1-2 indicate that while the organization has identified the concept of data quality and created policy artifacts, it has not yet built the operational capability to measure, enforce, or improve data quality systematically. The scores also reveal a cascading dependency chain that compounds the problem.***
 ### Cascading Dependency Chain
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  QUALITY MANAGEMENT DEPENDENCY CASCADE                              │
 ├─────────────────────────────────────────────────────────────────┤
@@ -69,6 +72,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │   ▶ ROOT CAUSE: 3.4           │  or prioritized. No SLA defined.   │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ***The cascade illustrates why Sub-Capability 3.4 is the root cause of the entire Capability 3 underperformance. Profiling provides the baselines that inform strategy; strategy defines the targets that drive measurement; measurement surfaces the issues that require management. When the foundation (profiling) is entirely absent, every subsequent layer inherits a structural inability to function. Addressing Capability 3 must therefore begin at 3.4 and flow upward.***
 
@@ -80,6 +84,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 ***However, the compliance_measurement object for POL-072 is entirely empty: metric_name is null, target_value is null, current_value is null, measurement_method is null, frequency is null. This structural absence reveals the gap between definition and operationalization. The policy defines WHAT to measure (five dimensions) but provides no framework for HOW to measure, WHO measures, at what FREQUENCY, or AGAINST WHAT TARGETS. The policy is definitional, not operational.***
 ***An operational data quality strategy would specify, for example, that 'Customer Account Data (DD-001) must achieve 99.5% completeness for critical billing fields, measured monthly through automated record validation against source systems, with exceptions escalated to the Data Strategy & Governance team within 24 hours and root cause analysis completed within 72 hours.' POL-072 says 'completeness shall be measured' but does not specify these operational details for any single data domain across the entire portfolio of 90 domains.***
 ## Five Dimensions Defined, Zero Operationalized
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  POL-072: FIVE DIMENSIONS vs. OPERATIONAL REALITY                   │
 ├─────────────────────────────────────────────────────────────────┤
@@ -96,6 +101,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │   Gap: Total (policy exists but zero measurement implemented)       │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ### Quality Dimensions Coverage Matrix
 
@@ -123,6 +129,7 @@ No quality dimension targets (completeness_target_pct, accuracy_target_pct, time
 ## CTL-305: The Implemented Control Without Implementation
 ***CTL-305 (Data Quality Monitoring Controls) exists as a Detective control, marked as 'Implemented' status, with control owner listed as 'Data Governance.' The control explicitly enforces POL-072 at a confidence level of 0.80. The control description references 'automated monitoring across completeness, accuracy, timeliness, and consistency dimensions, applied to enterprise data systems.' Three systems are linked via applies_to relationships: sys-056 (Data Lake and Warehouse), sys-050 (Data Pipeline Orchestration), and sys-031 (Metadata Store), all at confidence 0.75.***
 ***However, every operational attribute of CTL-305 contradicts its 'Implemented' status designation. The KPI fields (metric_name, target_value, current_value, measurement_method, frequency) are all null. The control_effectiveness rating field is null. The testing_approach field is undefined. Most critically, evidence_collection_automated is set to false, indicating that despite the control's title and description mentioning 'automated monitoring,' the actual monitoring infrastructure is either manual, non-systematized, or absent entirely.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  CTL-305: DOCUMENTED vs. OPERATIONAL STATE                          │
 ├─────────────────────────────────────────────────────────────────┤
@@ -146,6 +153,7 @@ No quality dimension targets (completeness_target_pct, accuracy_target_pct, time
 │                                                                     │
 │   VERDICT: Control documented; not operationalized                   │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ***The gap between CTL-305's documented status ('Implemented') and its operational reality (no KPIs, no automation, no effectiveness measurement) represents a control integrity issue. In an audit context, a control marked 'Implemented' with universally null operational attributes would likely receive a finding for inadequate control evidence. The 'Implemented' designation appears to reflect the existence of the control document rather than the operational deployment of the control's monitoring activities.***
 ## The Null Quality Phenomenon
@@ -166,6 +174,7 @@ No data quality dashboards, reports, trending analyses, or measurement artifacts
 ## The Missing Exception Management Workflow
 ***CTL-305's description includes the phrase 'exception reporting and remediation tracking,' suggesting an intended capability for quality defect identification and management. However, the knowledge graph contains no quality_issues entities, no issue_management_process, no exception_escalation_matrix, no remediation_sla, and no entity representing a formal quality issue lifecycle. There is no data quality incident taxonomy (critical, high, medium, low), no SLA definition for remediation response times, no escalation matrix linking issue severity to organizational response, and no reference to integration with the enterprise's broader ITSM platform.***
 ***The absence is particularly notable given that Rackspace, as a managed services provider, operates mature incident management processes for its customer-facing services. The organization undoubtedly has ITSM capabilities (incident classification, severity-based escalation, SLA tracking, root cause analysis) deployed for service incidents. The opportunity exists to extend this existing operational discipline to data quality incidents, leveraging the same frameworks, tooling, and organizational muscle that already governs service quality.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DATA QUALITY ISSUE MANAGEMENT: EXPECTED vs. ACTUAL                 │
 ├─────────────────────────────────────────────────────────────────┤
@@ -190,6 +199,7 @@ No data quality dashboards, reports, trending analyses, or measurement artifacts
 │                                                                     │
 │   LIFECYCLE COVERAGE: 0 of 5 stages implemented                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ***The issue management void means that data quality defects, if they are detected at all, are handled through ad hoc channels rather than systematic processes. An engineer might notice a data discrepancy in a report and fix it locally, but without logging, classification, root cause analysis, and trend tracking, the same defect pattern will recur. Without measurement, the organization cannot distinguish between a one-time data entry error and a systemic integration defect that affects multiple downstream systems.***
 ***The cascading dependency chain is visible here: Sub-Capability 3.3 depends on 3.2 (Measurement and Monitoring) to systematically detect quality issues. Since 3.2 has no operational monitoring in place (all 90 domains have automated_monitoring = FALSE), there is no systematic mechanism to surface quality defects. Without detection, there are no issues to manage. The score of 2 reflects the conceptual awareness (CTL-305 references exception reporting) without operational implementation.***
@@ -204,6 +214,7 @@ No integration between data quality issue management and enterprise ITSM platfor
 ***The Data Profiling and Assessment sub-capability is the lowest-scoring sub-capability not only within Capability 3 but across the entire DCAM v2 assessment for Rackspace Technology. At a score of 1 (Initial), the organization has not begun to systematically profile its data domains. No profiling tool has been deployed, no profiling has been executed, no profiling results have been populated, and zero data domains have composite quality scores. This is a complete operational void—the only sub-capability in the assessment at the Initial maturity level.***
 ## The Complete Profiling Void
 ***Across all 90 data domains in the knowledge graph, the profiling_status object is structurally present but uniformly unpopulated. profiling_status.last_profiled_date is NULL across all 90 domains. profiling_status.profiling_tool is NULL across all 90 domains. profiling_status.profiling_frequency is NULL across all 90 domains. Not a single data domain has ever been profiled. No profiling tool—Informatica Data Quality, Collibra Data Quality, Great Expectations, Soda Core, Talend Data Quality, Ataccama, or any equivalent—has been identified, evaluated, selected, configured, or deployed within the enterprise data architecture.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DATA PROFILING STATUS: 90 DOMAINS, ZERO PROFILED                   │
 ├─────────────────────────────────────────────────────────────────┤
@@ -226,6 +237,7 @@ No integration between data quality issue management and enterprise ITSM platfor
 │   (No Informatica, Collibra DQ, Great Expectations, Soda, etc.)     │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ***The profiling void creates a cascading inability that propagates through the entire Capability 3 structure. Without profiling, the organization cannot establish baseline quality metrics for any dimension (accuracy, completeness, consistency, timeliness, validity). Without baselines, it cannot define improvement targets that are grounded in actual data characteristics. Without improvement targets, it cannot assess whether quality remediation efforts have been effective. Without effectiveness measurement, it cannot demonstrate value to executive stakeholders or justify continued investment.***
 ## The Cascade of Inability

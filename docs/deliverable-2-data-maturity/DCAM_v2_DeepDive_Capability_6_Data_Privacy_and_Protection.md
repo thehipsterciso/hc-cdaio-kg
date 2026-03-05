@@ -23,6 +23,7 @@ Theme 6: The Measurement Void Even at Score 4
 Theme 7: Privacy as Revenue Architecture
 
 # 2. DCAM Maturity Landscape: Privacy Among Eight Capabilities
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DCAM v2 ALL CAPABILITIES — RELATIVE MATURITY PROFILE            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -44,6 +45,7 @@ Theme 7: Privacy as Revenue Architecture
 │   OBSERVATION: Privacy matures atop immature data foundations       │
 │   RISK: Pyramid inversion may mask vulnerabilities in lower tiers   │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ***This visualization reveals the structural paradox. Capability 6 achieves the highest maturity (4.0) while sitting immediately above capabilities scoring 2.0-2.4 (Developing tier). The privacy program cannot reliably discover what it must protect (Cap 1), does not yet manage the lifecycle of protected data (Cap 4), and lacks quality assurance on the personal information it handles (Cap 3). The inverted pyramid is a feature of the assessment, not a bug: privacy compliance can be achieved through governance and process even when underlying data capabilities are immature. But this structure creates vulnerability.***
 
@@ -59,6 +61,7 @@ Theme 7: Privacy as Revenue Architecture
 
 ***All five sub-capabilities score at the Defined level (3) or higher, with four achieving full Managed status (4). Sub-Capability 6.5 (Data Subject Rights Management) scores 3, indicating that while the organization responds to DSRs within regulatory timelines and has established processes, the capability is not yet fully automated or optimized. No privacy sub-capability falls below the Defined threshold, reflecting comprehensive regulatory alignment.***
 ### Sub-Capability Performance Distribution
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  SUB-CAPABILITY SCORES: DISTRIBUTION AND POSITIONING              │
 ├─────────────────────────────────────────────────────────────────┤
@@ -76,6 +79,7 @@ Theme 7: Privacy as Revenue Architecture
 │        4 of 5 achieve Managed status (highest tier for this group)   │
 │        6.5 the only sub-cap below 4; trend shows \'Improving\'        │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 # 4. Organizational Structure: Privacy Governance and Technical Data Protection
 ***Rackspace's privacy and data protection capabilities are distributed across two separate organizational units with distinct mandates, budgets, leadership reporting lines, and operational models. This bifurcation reflects a structural reality common in organizations managing large privacy compliance programs: governance and technical data protection are frequently separated. Understanding this structure is essential to assessing both the maturity of privacy management and the risks of the organizational design.***
@@ -97,6 +101,7 @@ Data sovereignty enforcement across multi-cloud and on-premises infrastructure
 Key management and HSM administration
 PCI DSS CDE (Cardholder Data Environment) isolation and compliance (CTL-291)
 ***The Data Protection Specialist role (role-258, P4 Professional tier, $156K salary band) is located within dept-053 and carries elevated/privileged access permissions for encryption key management, DLP rule configuration, and classification schema administration. Unlike the Privacy Analyst role in dept-242, which focuses on policy and process compliance, the Data Protection Specialist role is operationally focused on technical data controls.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  ORGANIZATIONAL STRUCTURE: TWO KINGDOMS                             │
 ├─────────────────────────────────────────────────────────────────┤
@@ -123,6 +128,7 @@ PCI DSS CDE (Cardholder Data Environment) isolation and compliance (CTL-291)
 │   COORDINATION RISK: No explicit cross-department governance       │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ### Theme 2 Analysis: Structural Coordination Risk
 ***The bifurcation creates both efficiency and risk. Separating governance from technical implementation allows each team to specialize: dept-242 focuses on regulatory interpretation, policy drafting, and compliance evidence gathering; dept-053 focuses on infrastructure deployment, automation, and technical control operationalization. This separation is operationally sound and reflects industry best practice.***
@@ -187,6 +193,7 @@ Encryption at Rest (AES-256, CTL-030): Sensitive personal data stored in the rec
 Tenant Isolation (CTL-066): Multi-tenant customer environments are logically isolated using organizational units (OUs), VLANs, firewall rules, and storage segregation, preventing one customer's data from being accessible to another customer.
 Access Controls and Authentication: Privileged access to data in third countries is restricted through role-based access control (RBAC), multi-factor authentication (MFA), and audit logging. The CPO/DPO role carries explicit privileged access permissions to validate compliance with these controls.
 ***The integration of legal mechanisms with technical safeguards creates a coherent architecture. A data subject's personal data (e.g., contact information of a Rackspace customer employee) can legally transfer from EU to U.S. under DPF (legal basis) while being protected by TLS encryption in transit, AES-256 at rest, and logical isolation from other customer data (technical safeguards). If the U.S. lacks data protection law equivalent to GDPR, the technical controls compensate for the legal gap.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  CROSS-BORDER TRANSFER ARCHITECTURE: LEGAL + TECHNICAL             │
 ├─────────────────────────────────────────────────────────────────┤
@@ -212,6 +219,7 @@ Access Controls and Authentication: Privileged access to data in third countries
 │   3 EU/Swiss/UK legal entities manage transfer mechanisms            │
 │   CTL-330 continuously validates transfer mechanism legality        │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ## Organizational Representation
 ***Rackspace maintains dedicated legal entities in key jurisdictions to support cross-border transfers:***
@@ -240,6 +248,7 @@ Australia Notifiable Data Breach Scheme (Inferred): Notify affected individuals 
 ## Control Response to Breach: CTL-095 Enhancement
 ***CTL-095 (Breach Notification Process) explicitly embeds materiality assessment into the incident response flow: 'Escalate to General Counsel and Chief Financial Officer for SEC Item 1.05 materiality assessment within 24 hours of incident confirmation.' This control response indicates that the December 2022 breach altered Rackspace's incident response procedures to ensure SEC disclosure obligation is triggered immediately and assessed by financial and legal leadership rather than delegated to privacy or security teams.***
 ***The control demonstrates organizational learning: the breach forced integration of SEC disclosure obligation into the incident response checklist. A company that did not previously embed SEC notification requirements into breach response procedures learned to do so through experience.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DEC 2022 BREACH: CRISIS ACCELERATION TIMELINE                     │
 ├─────────────────────────────────────────────────────────────────┤
@@ -266,6 +275,7 @@ Australia Notifiable Data Breach Scheme (Inferred): Notify affected individuals 
 │        |                                                            │
 │   OUTCOME: Privacy posture accelerated from theoretical to tested  │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ### Theme 5 Analysis: Crisis-Driven Capability Maturation
 ***Organizations often reach higher maturity levels through crisis response than through proactive planning. The December 2022 breach forced Rackspace's privacy and incident response capabilities to be tested at scale against real-time regulatory pressure. Unlike tabletop exercises or simulations, actual breach response reveals gaps in coordination, communication, evidence preservation, and regulatory compliance that are invisible until stress is applied.***

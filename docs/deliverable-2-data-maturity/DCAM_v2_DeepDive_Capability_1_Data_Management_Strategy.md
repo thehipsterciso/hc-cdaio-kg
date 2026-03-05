@@ -11,6 +11,7 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 ***This deep-dive examines the first of eight DCAM v2 capabilities assessed for Rackspace Technology: Data Management Strategy & Business Case. At a composite score of 2 (Developing), this capability represents the strategic foundation upon which all other data management capabilities depend. The score signals that while Rackspace has demonstrated awareness of data management as a strategic discipline, the organization has not yet formalized this awareness into a unified strategy document, a quantified business case, or executive-level sponsorship dedicated to enterprise data management.***
 ***The assessment draws from a knowledge graph containing 3,060 entities and 7,614 relationships, with particular focus on 25 strategic initiatives, 67 business capabilities, 100 key persons, and 123 policies. The confidence level for this capability is Medium, reflecting the availability of initiative and organizational data but the absence of direct evidence of a formalized data management strategy.***
 ### Maturity Positioning
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  DCAM v2 MATURITY SCALE — CAPABILITY 1 POSITION                    │
 ├─────────────────────────────────────────────────────────────────┤
@@ -24,12 +25,14 @@ Source: Enterprise Knowledge Graph (3,060 entities | 7,614 relationships)
 │   │            │          12-18 mo.       │            │           │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 # 2. Sub-Capability Score Summary
 
 | Sub-Capability                                   | Score | Level      | Trend Indicator    |
 | ------------------------------------------------ | ----- | ---------- | ------------------ |
 | 1.1 Data Management Strategy Articulation        | 2     | Developing | ▶ Stagnant         |
+```
 | 1.2 Business Case for Data Management            | 2     | Developing | ▲ Upward potential |
 | 1.3 Executive Sponsorship and Funding            | 2     | Developing | ▼ At risk          |
 | 1.4 Strategic Alignment with Business Objectives | 3     | Defined    | ▲ Positive         |
@@ -68,6 +71,7 @@ Internal Data & Analytics Department (dept-011): 20-person team, $3.38M budget. 
 │  Gap: No single document unifies these threads into an enterprise    │
 │  data management strategy with vision, scope, and roadmap.           │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ***The fundamental issue is not the absence of data management thinking. Rackspace has significant data capability. The issue is that strategic intent is distributed across at least three organizational vectors (FAIR for customer AI, Internal D&A for operational modernization, and service-line initiatives for revenue) with no unifying strategy document, no stated enterprise data management vision, and no published roadmap that connects these threads into a coherent whole.***
 ## What Good Looks Like (Score 3 Requirements)
@@ -87,6 +91,7 @@ Project Eagle (INIT-002): $100M+ annualized cost reduction program. Operational 
 Internal D&A Department: $3.38M budget, 20 headcount. Dashboard consolidation from 400 to 20 and data warehouse consolidation from 70 to unified platform. The cost and complexity of this consolidation is itself evidence of the cost of poor data management.
 Missing Customer Identity Reconciliation Process: CRM, Billing, and Support systems define customers differently with no systematic reconciliation across 81,000+ customer accounts. This gap alone likely creates quantifiable revenue leakage, billing disputes, and analytics inaccuracy.
 ## The Unrealized Business Case
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  BUSINESS CASE ELEMENTS — AVAILABLE BUT UNASSEMBLED               │
 ├─────────────────────────────────────────────────────────────────┤
@@ -103,6 +108,7 @@ Missing Customer Identity Reconciliation Process: CRM, Billing, and Support syst
 │  [✗] Not formalized     [✗] Not formalized    [✗] Not formalized     │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ***The irony is that Rackspace possesses all the raw material for a compelling business case. The customer identity reconciliation gap alone, affecting 81,000+ accounts across $2.7B in revenue, could be quantified as revenue leakage risk. The dashboard consolidation effort (400 to 20) quantifies the cost of data management debt. The 378 integration points and 790 dependency relationships represent operational risk that a formal data management program would systematically reduce. What is missing is not the evidence. What is missing is someone assembling it into a document that says: here is what data management costs us today, here is what it could save us, and here is the investment required.***
 
@@ -119,6 +125,7 @@ Missing Customer Identity Reconciliation Process: CRM, Billing, and Support syst
 | (Absent)      | Chief Data Officer                        | No CDO or equivalent enterprise data management executive exists in the KG. This is the single most significant gap.                       |
 
 ## The Sponsorship Gap
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  EXECUTIVE SPONSORSHIP MAP                                          │
 ├─────────────────────────────────────────────────────────────────┤
@@ -144,6 +151,7 @@ Missing Customer Identity Reconciliation Process: CRM, Billing, and Support syst
 │  Internal D&A reports through CIO, not to C-suite directly            │
 │  Data governance not visible in CEO/Board agenda                      │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 ***Srini Koushik, as President of AI Technology & Sustainability, is the closest the organization has to a Chief AI Officer with cross-functional authority. FAIR, under his leadership, has executed 70+ enterprise AI implementations and is scaling toward $50M+ AI services ARR. But his mandate is customer-facing AI services delivery, not enterprise data management. The Internal Data & Analytics Department (dept-011), which is the organizational unit most directly responsible for internal data management, reports through the CIO (Juan Rojas), placing it two levels below the C-suite. No entity in the knowledge graph carries the title of Chief Data Officer, VP of Data Management, or equivalent.***
 ***This is not unusual for a technology services company of Rackspace's size and history. But it creates a structural problem for DCAM advancement: without a dedicated executive sponsor, data management competes for attention against revenue-generating initiatives, security imperatives, and cost reduction programs. The $3.38M budget for Internal D&A, while meaningful, is small relative to Rackspace's $2.7B revenue base and $150M annual investment in multi-cloud transformation.***
@@ -165,6 +173,7 @@ Missing Customer Identity Reconciliation Process: CRM, Billing, and Support syst
 
 # 7. Cross-Cutting Analysis: The Services-vs-Internal Paradox
 ***The most consequential pattern across all four sub-capabilities is the asymmetry between Rackspace's customer-facing data and AI capability and its internal enterprise data management maturity. This pattern is worth examining in detail because it shapes every recommendation.***
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │  THE COBBLER'S CHILDREN PROBLEM                                     │
 ├─────────────────────────────────────────────────────────────────┤
@@ -184,6 +193,7 @@ Missing Customer Identity Reconciliation Process: CRM, Billing, and Support syst
 │  internal data management program already exists inside Rackspace.   │
 │  The gap is strategic direction, not organizational capacity.        │
 └─────────────────────────────────────────────────────────────────┘
+```
 
 # 8. Recommendations: Path from Score 2 to Score 3
 ***Moving Capability 1 from Developing (2) to Defined (3) requires four deliberate actions, each mapped to a specific sub-capability deficit:***
