@@ -45,18 +45,18 @@ scripts/               Sync, build, and quality automation
 
 ### Due Diligence Analysis
 
-| Stage | Focus |
-|-------|-------|
-| 0 | Diligence governance — evidence hierarchy, claim classification, epistemic standards |
-| 1 | Corporate & legal — legal existence, ownership, structural debt, change-of-control |
-| 2 | Business model — revenue engine, cost physics, value flow, contradictions |
-| 3 | Market & competition — structure, threats, buying behavior, shock sensitivity |
-| 4 | Operating model — decision rights, cadence, bottlenecks, incentive misalignment |
-| 5 | Financial reality — revenue quality, margins, liquidity, covenants, contradictions |
-| 6 | Technology — compute, hyperscaler dependency, platform fragility, technical debt |
-| 7 | Data & information — domains, lineage, quality, stewardship, epistemic coherence |
-| 8 | Risk & security — cyber posture, privacy, regulatory enforcement, sovereignty |
-| 9 | Resilience — ESG, failure sequencing, workforce fragility, ecosystem shocks |
+| Stage | Focus | Gate |
+|-------|-------|------|
+| [0](docs/deliverable-1-due-diligence/stage-0-diligence-governance/README.md) | Diligence governance — evidence hierarchy, claim classification, epistemic standards | |
+| [1](docs/deliverable-1-due-diligence/stage-1-corporate-legal-structural/README.md) | Corporate & legal — legal existence, ownership, structural debt, change-of-control | ✅ PASS |
+| [2](docs/deliverable-1-due-diligence/stage-2-business-model-economics/README.md) | Business model — revenue engine, cost physics, value flow, contradictions | ✅ PASS |
+| [3](docs/deliverable-1-due-diligence/stage-3-market-competitive-force/README.md) | Market & competition — structure, threats, buying behavior, shock sensitivity | ✅ PASS |
+| [4](docs/deliverable-1-due-diligence/stage-4-operating-model-execution/README.md) | Operating model — decision rights, cadence, bottlenecks, incentive misalignment | ✅ PASS |
+| [5](docs/deliverable-1-due-diligence/stage-5-financial-capital-stress/README.md) | Financial reality — revenue quality, margins, liquidity, covenants, contradictions | ✅ PASS |
+| [6](docs/deliverable-1-due-diligence/stage-6-technology-platform/README.md) | Technology — compute, hyperscaler dependency, platform fragility, technical debt | ✅ PASS |
+| [7](docs/deliverable-1-due-diligence/stage-7-data-information-epistemic/README.md) | Data & information — domains, lineage, quality, stewardship, epistemic coherence | ✅ PASS |
+| [8](docs/deliverable-1-due-diligence/stage-8-risk-security-regulatory/README.md) | Risk & security — cyber posture, privacy, regulatory enforcement, sovereignty | ✅ PASS |
+| [9](docs/deliverable-1-due-diligence/stage-9-resilience-esg-continuity/README.md) | Resilience — ESG, failure sequencing, workforce fragility, ecosystem shocks | ✅ PASS |
 
 Each stage includes validation gates, contradiction analysis, and uncertainty registers. Every claim is tagged FACT, INFERENCE, or HYPOTHESIS with source citations.
 
