@@ -1,0 +1,258 @@
+{
+  "document_metadata": {
+    "title": "Stage 1 Orientation - Corporate, Legal, and Structural Reality",
+    "version": "1.0",
+    "created_date": "2026-02-05",
+    "status": "APPROVED",
+    "target_entity": "Rackspace Technology",
+    "stage_type": "ORIENTATION_COMPLETE_AWAITING_EXECUTION",
+    "governed_by": "STAGE_0_DILIGENCE_CONSTITUTION.json"
+  },
+  "stage_1_intent": {
+    "primary_purpose": "Establish structural, legal, and control reality of target entity before business performance or operational analysis",
+    "discovery_domains": [
+      "Legal entity structure and jurisdictional exposures",
+      "Ownership chains, control mechanisms, and beneficial ownership reality",
+      "Contractual obligations that constrain or encumber the entity",
+      "Regulatory status, licensing requirements, and compliance posture",
+      "Material legal proceedings, liens, judgments, and encumbrances",
+      "Corporate governance structure and fiduciary relationships",
+      "Debt covenants, change-of-control triggers, and structural constraints"
+    ],
+    "why_stage_1_precedes_others": [
+      "Financial analysis is meaningless if ownership or entity structure is misunderstood",
+      "Operational assessments fail if regulatory constraints or contractual obligations are unknown",
+      "Risk analysis cannot be performed without understanding legal liabilities",
+      "Strategic options are bounded by structural reality (debt covenants, ownership structures, regulatory status)"
+    ],
+    "truths_not_fixable_retroactively": [
+      "Misidentification of legal entity being analyzed - all subsequent work analyzes wrong target",
+      "Missed material encumbrances (liens, guarantees, covenants) - downstream financial projections become fictional",
+      "Failed control structure mapping - negotiation with parties lacking authority",
+      "Ignored regulatory constraints - operational plans may be legally impossible",
+      "Late-discovered structural realities trigger complete rework of all downstream stages"
+    ]
+  },
+  "stage_1_explicit_non_goals": {
+    "prohibited_activities": [
+      "Assess business model viability or competitive positioning",
+      "Evaluate management quality or operational effectiveness",
+      "Analyze financial performance, profitability, or cash generation",
+      "Make recommendations about organizational structure changes",
+      "Propose solutions to identified structural problems",
+      "Conclude whether structural characteristics are good or bad for investment",
+      "Compare target structure to ideal forms or best practices",
+      "Design integration plans, restructuring approaches, or remediation strategies"
+    ],
+    "prohibited_analysis_types": [
+      "Strategic implications of structure (discovery only, not interpretation for strategy)",
+      "Valuation adjustments based on structural findings",
+      "Operational efficiency assessments",
+      "Technology or product capability evaluation",
+      "Market position or competitive advantage analysis"
+    ],
+    "boundary_violations": [
+      "Using prescriptive phrases: 'should restructure', 'recommend simplification', 'needs to'",
+      "Characterizing structural features as 'strengths' or 'weaknesses' relative to investment thesis",
+      "Proposing corporate actions, entity consolidations, or governance changes",
+      "Extrapolating from structure to business performance without evidence"
+    ]
+  },
+  "stage_1_failure_conditions": {
+    "invalidation_triggers": [
+      {
+        "condition": "Entity Misidentification",
+        "description": "Analysis examines subsidiary when parent is target, or vice versa; incorrect jurisdiction; operating entity confused with holding entity"
+      },
+      {
+        "condition": "Ownership Obscurity",
+        "description": "Beneficial ownership unclear; control mechanisms not traced to ultimate authority; voting vs. economic rights discrepancies unexplored"
+      },
+      {
+        "condition": "Missing Material Obligations",
+        "description": "Debt covenants not reviewed; guarantees and cross-defaults undiscovered; regulatory consent requirements overlooked; change-of-control provisions missed"
+      },
+      {
+        "condition": "Litigation Blindness",
+        "description": "Material proceedings dismissed without analysis; contingent liabilities ignored; regulatory investigations unreported"
+      },
+      {
+        "condition": "Source Hierarchy Violations",
+        "description": "Reliance on management narrative instead of formation documents; using press releases instead of SEC filings; treating summaries as primary evidence"
+      }
+    ],
+    "false_completeness_indicators": [
+      "Analysis appears comprehensive but relies on single source (e.g., only 10-K, not formation docs)",
+      "Corporate structure chart shown without verification against secretary of state records",
+      "Debt described without reviewing actual credit agreements",
+      "Regulatory status claimed without checking licensing databases",
+      "No material litigation stated based on absence of disclosure, not active search"
+    ],
+    "downstream_lies": [
+      "Presenting 'simplified' structure that hides complexity",
+      "Omitting 'immaterial' entities that house critical assets or liabilities",
+      "Characterizing litigation as 'routine' when dollar exposure is material",
+      "Stating entity is 'in compliance' when evidence only shows absence of disclosed violations",
+      "Failing to distinguish between contractual obligations and management assertions"
+    ]
+  },
+  "downstream_dependency_map": {
+    "stage_2_financial_analysis": {
+      "dependency_level": "CRITICAL",
+      "assumptions_from_stage_1": [
+        "Financial statements correspond to entity being analyzed",
+        "Debt obligations are completely identified for leverage calculations",
+        "No undisclosed liens or encumbrances affecting asset values"
+      ],
+      "failure_propagation": "If Stage 1 misses off-balance-sheet entities or contingent liabilities, Stage 2 financial metrics are systematically wrong"
+    },
+    "stage_3_business_model": {
+      "dependency_level": "MATERIAL",
+      "assumptions_from_stage_1": [
+        "Regulatory constraints on markets/products are known",
+        "Contractual relationships with customers/partners are within corporate authority"
+      ],
+      "failure_propagation": "If Stage 1 misses regulatory prohibitions, Stage 3 may analyze revenue streams that are legally impermissible"
+    },
+    "stage_4_operational_technology": {
+      "dependency_level": "MATERIAL",
+      "assumptions_from_stage_1": [
+        "Identified entity owns or controls assets being assessed",
+        "No contractual restrictions on technology use or IP ownership"
+      ],
+      "failure_propagation": "If Stage 1 misidentifies asset ownership (owned vs. licensed), Stage 4 may assess capabilities that don't transfer in acquisition"
+    },
+    "stage_5_risk_compliance": {
+      "dependency_level": "CRITICAL",
+      "assumptions_from_stage_1": [
+        "Stage 1 identified regulatory baseline and litigation inventory",
+        "All material compliance obligations are known"
+      ],
+      "failure_propagation": "If Stage 1 misses regulatory requirements, Stage 5 risk assessment understates compliance risk"
+    },
+    "stage_6_synthesis": {
+      "dependency_level": "ABSOLUTE",
+      "assumptions_from_stage_1": [
+        "Stage 1 correctly identified what entity is being analyzed",
+        "Structural constraints are completely known"
+      ],
+      "failure_propagation": "If Stage 1 is wrong about entity structure, entire diligence analyzes wrong target or operates under false assumptions"
+    },
+    "cross_stage_assumption_errors": [
+      "Assuming entity can take actions that covenants prohibit",
+      "Assuming ownership of assets that are actually leased or licensed",
+      "Assuming regulatory permissions that don't exist",
+      "Assuming clean title when liens exist",
+      "Assuming single entity when multiple entities must be separately analyzed"
+    ]
+  },
+  "stage_1_hypothesis_register": {
+    "governance_note": "Per Stage 0.3 requirements: hypotheses must be falsifiable, structural (not performance-based), evidence-based (not narrative-based)",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "hypothesis": "The target operates through a multi-tiered entity structure with subsidiaries in multiple jurisdictions, creating layered ownership and potential regulatory complexity",
+        "type": "STRUCTURAL",
+        "supporting_evidence_sources": [
+          "SEC filings listing multiple subsidiary entities",
+          "State/international corporate registry searches showing subsidiary registrations",
+          "Organizational charts in proxy statements showing holding company structure",
+          "Credit agreements referencing multiple borrower/guarantor entities"
+        ],
+        "disconfirming_evidence_sources": [
+          "Single entity registration with no subsidiaries listed in formation documents",
+          "Financial statements showing no intercompany transactions or consolidations",
+          "Regulatory filings identifying only one operating entity",
+          "Corporate formation documents showing simple single-entity structure"
+        ],
+        "falsification_approach": "Search secretary of state databases, SEC Exhibit 21 (subsidiaries), credit agreement schedules, and regulatory filings for subsidiary listings",
+        "status": "PENDING_INVESTIGATION"
+      },
+      {
+        "id": "H2",
+        "hypothesis": "The target operates under debt agreements containing financial covenants, change-of-control provisions, and operational restrictions that materially constrain corporate actions",
+        "type": "STRUCTURAL",
+        "supporting_evidence_sources": [
+          "Credit agreements containing financial maintenance covenants (leverage ratios, coverage ratios)",
+          "Change-of-control definitions and consent requirements in debt documents",
+          "Negative covenants restricting liens, asset sales, dividends, or additional debt",
+          "SEC filings disclosing covenant compliance status or waivers"
+        ],
+        "disconfirming_evidence_sources": [
+          "Covenant-lite loan agreements with no financial maintenance requirements",
+          "Absence of debt on balance sheet and no credit facility agreements",
+          "Unrestricted debt structures with no operational constraints",
+          "Public statements confirming unencumbered balance sheet"
+        ],
+        "falsification_approach": "Review actual credit agreements (not summaries), search SEC filings for covenant discussions, examine financial statement footnotes for debt terms",
+        "status": "PENDING_INVESTIGATION"
+      },
+      {
+        "id": "H3",
+        "hypothesis": "The target operates in regulated industries requiring licenses, permits, or ongoing regulatory compliance that creates jurisdictional dependencies and operational constraints",
+        "type": "STRUCTURAL",
+        "supporting_evidence_sources": [
+          "Operating licenses required in specific states/countries for business conduct",
+          "Regulatory filings with industry-specific agencies (FCC, state banking, healthcare, etc.)",
+          "Compliance obligations disclosed in SEC filings or annual reports",
+          "Regulatory consent requirements for ownership changes"
+        ],
+        "disconfirming_evidence_sources": [
+          "Business model operates in unregulated industry",
+          "No specialized licenses required beyond basic business registrations",
+          "Absence of regulatory agency filings or oversight relationships",
+          "10-K risk factors section lacks regulatory compliance discussion"
+        ],
+        "falsification_approach": "Search regulatory agency databases, review 10-K regulatory discussion sections, check state licensing boards, examine industry-specific compliance requirements",
+        "status": "PENDING_INVESTIGATION"
+      },
+      {
+        "id": "H4",
+        "hypothesis": "The target is party to material litigation, regulatory investigations, or legal proceedings that create contingent liabilities or operational constraints beyond routine commercial disputes",
+        "type": "STRUCTURAL",
+        "supporting_evidence_sources": [
+          "Legal proceedings disclosed in 10-K/10-Q with material dollar exposure",
+          "Ongoing regulatory investigations disclosed in SEC filings",
+          "Securities class actions or derivative suits naming the entity",
+          "Recorded contingent liabilities in financial statement footnotes"
+        ],
+        "disconfirming_evidence_sources": [
+          "10-K legal proceedings section states no material litigation",
+          "PACER federal court docket searches return no material cases",
+          "Financial statements show no contingent liability reserves",
+          "State court searches reveal only routine contract disputes below materiality threshold"
+        ],
+        "falsification_approach": "Search PACER federal dockets, state court systems, SEC litigation disclosures, regulatory enforcement databases (SEC, DOJ, FTC)",
+        "status": "PENDING_INVESTIGATION"
+      },
+      {
+        "id": "H5",
+        "hypothesis": "The target has concentrated ownership or control held by private equity sponsors, founder-insiders, or institutional blocks that creates principal-agent dynamics and potential conflicts in decision-making",
+        "type": "STRUCTURAL",
+        "supporting_evidence_sources": [
+          "Proxy statements (DEF 14A) showing >20% ownership blocks",
+          "Dual-class share structures with differential voting rights",
+          "Private equity ownership disclosed in press releases or SEC filings",
+          "Board composition dominated by sponsor-affiliated directors"
+        ],
+        "disconfirming_evidence_sources": [
+          "Widely dispersed public ownership with no >5% holders",
+          "Single-class common stock with one-share-one-vote structure",
+          "Independent board majority with no controlling shareholder",
+          "Public company with no disclosed beneficial owners above reporting thresholds"
+        ],
+        "falsification_approach": "Review DEF 14A beneficial ownership tables, Schedule 13D/13G filings for >5% holders, corporate charter for share class structures, board composition disclosures",
+        "status": "PENDING_INVESTIGATION"
+      }
+    ]
+  },
+  "stage_1_execution_readiness": {
+    "orientation_status": "COMPLETE",
+    "approval_status": "APPROVED",
+    "next_action": "PROCEED_TO_STAGE_1.1_EXECUTION",
+    "constitutional_compliance": "CONFIRMED",
+    "evidence_standards_binding": true,
+    "hypothesis_falsification_mandatory": true,
+    "red_team_review_required": true
+  }
+}

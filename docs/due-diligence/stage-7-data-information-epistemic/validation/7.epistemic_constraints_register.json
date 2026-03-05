@@ -1,0 +1,68 @@
+{
+  "stage": "7",
+  "epistemic_constraints_register": [
+    {
+      "constraint": "CRM Profitability Data 13-15% Systematic Overstatement - Territory Sizing and Compensation Depend on Inaccurate Data",
+      "category": "QUALITY",
+      "severity": "HIGH",
+      "why_severity": "Material financial impact (margin erosion Q1-Q3 2024 to -13%/-3%), affects material decisions (territory sizing billions in sales capacity, compensation millions in expense), persistent across three CEO tenures indicating institutional embedding",
+      "what_breaks_if_touched": "Sales velocity slows (delivery validation T0-T1 adds days/weeks to sales cycle), compensation disputes (commission clawback if bookings adjusted), sales culture resistance (accuracy discipline conflicts with velocity priority), requires cross-functional coordination infrastructure absent (operating committee, delivery CRM access, validation authority rebalancing)",
+      "evidence_refs": ["7.3.error_tolerance_map CRM", "7.7.epistemic_contradictions profitability", "7.6.systemic_timeliness_failures CRM velocity"],
+      "open_unknowns": ["CRM quality tolerance rationale (explicit decision vs default)", "Sales resistance magnitude to validation", "CEO walk away policy sustainability from bandwidth"]
+    },
+    {
+      "constraint": "Satisfaction Measurement Systematic Absence - Operations Without Customer Experience Visibility",
+      "category": "ACCESS",
+      "severity": "HIGH",
+      "why_severity": "Brand-reality gap material (Trustpilot 'consistently worse' 2024 vs 'Fanatical Support' claim), retention interventions impossibly late (months lag or post-churn), persistent across three CEO tenures indicating institutional acceptance",
+      "what_breaks_if_touched": "Accountability cascade (who responsible for satisfaction deterioration?), measurement infrastructure investment (NPS/CSAT deployment costs), cultural resistance (measurement creates visibility some prefer to avoid), brand repositioning may be required if measurement reveals satisfaction lower than brand implies",
+      "evidence_refs": ["7.3.error_tolerance_map satisfaction", "7.7.epistemic_contradictions satisfaction", "7.6.latency_map measurement paralysis"],
+      "open_unknowns": ["Satisfaction measurement history (considered and rejected vs never considered)", "Board awareness of measurement absence", "Customer success role existence and authority"]
+    },
+    {
+      "constraint": "Finance-Operations Forecast Adjustment Opacity - Sequential Truth Divergence",
+      "category": "MEANING_DRIFT",
+      "severity": "MED",
+      "why_severity": "Operations-finance misalignment creates execution risk, relationship tension from opacity, but magnitude uncertain (adjustment size unknown limiting severity quantification)",
+      "what_breaks_if_touched": "Finance autonomy reduced (operations input constrains finance discretion), adjustment methodology documentation required (effort and transparency overhead), real-time reconciliation process design needed (coordination burden), may expose adjustment inadequacy if operations contests methodology",
+      "evidence_refs": ["7.2.meaning_drift_map finance adjustment", "7.6.latency_map finance opacity", "7.7.epistemic_contradictions operations-finance"],
+      "open_unknowns": ["Finance adjustment magnitude", "Operations awareness and communication timing", "Adjustment methodology empirical basis"]
+    },
+    {
+      "constraint": "Deal Profitability Validation Gap - Commitment T2 Before Validation T3",
+      "category": "LATENCY",
+      "severity": "HIGH",
+      "why_severity": "Customer relationship damage from walk away post-commitment, margin erosion enabled by validation gap, CEO bandwidth consumed reactively, persistent structural gap across three CEO tenures",
+      "what_breaks_if_touched": "Sales cycle lengthens (delivery T0-T1 engagement adds time), delivery bandwidth burden increases (validate all deals not just post-signature subset), authority tensions (delivery authority to block sales commitments politically contentious), CEO walk away policy may become unnecessary if validation gap eliminated (exposes policy as symptom compensation not root cause solution)",
+      "evidence_refs": ["7.4.orphaned_data_domains deal profitability", "7.6.latency_map premature commitment", "7.7.epistemic_contradictions profitability triple truth"],
+      "open_unknowns": ["Delivery T0-T1 engagement timing feasibility", "CEO walk away policy profitability assessment methodology", "Sales-delivery validation authority balance"]
+    },
+    {
+      "constraint": "Board Operational Visibility Quarterly Latency - Governance Lag Enables Issue Persistence",
+      "category": "LATENCY",
+      "severity": "MED",
+      "why_severity": "Quarters lag enables operational issues to persist and compound (margin erosion three quarters, satisfaction deterioration year, data governance void years), but Board quarterly cycle standard practice limiting severity relative to governance norms",
+      "what_breaks_if_touched": "Board meeting frequency increase burdens directors (monthly meetings excessive time commitment), Board operational committee establishment requires director operational expertise and time allocation, management operational reporting burden increases (Board operational dashboards, inter-meeting updates), Board micro-management risk if operational involvement increases without proper boundaries",
+      "evidence_refs": ["7.6.latency_map Board quarterly", "7.5.information_asymmetry_map Board finance-filtered", "7.7.uncertainty_register Board awareness"],
+      "open_unknowns": ["Board operational data access current state", "Board awareness of operational contradictions", "Board operational oversight model intent (financial focus vs operational engagement)"]
+    },
+    {
+      "constraint": "Incident Frequency Tracking Absence - Prevention Accountability and Investment Unoptimized",
+      "category": "ACCOUNTABILITY",
+      "severity": "MED",
+      "why_severity": "Incident recurrence documented (ransomware multi-month 2024, zero-day September 2024), prevention ROI incalculable, but incident impact severity uncertain limiting constraint severity quantification",
+      "what_breaks_if_touched": "Operations accountability scope expands (measured on prevention not just response creates new performance expectations), prevention investment prioritization methodology required (frequency-severity matrix analysis capability), organizational culture shift needed (response heroic and visible, prevention invisible and long-horizon—incentive realignment difficult)",
+      "evidence_refs": ["7.3.error_tolerance_map frequency absence", "7.4.orphaned_data_domains prevention", "7.7.epistemic_contradictions incident frequency"],
+      "open_unknowns": ["Incident log existence and analyzability for frequency", "Prevention investment current adequacy", "Operations prevention awareness and priority"]
+    },
+    {
+      "constraint": "Customer Count Ambiguity - Functional Divergence Without Canonical Reconciliation",
+      "category": "MEANING_DRIFT",
+      "severity": "LOW",
+      "why_severity": "Planning and valuation uncertainty, but functions operate successfully on divergent counts currently suggesting organizational pain low, ambiguity persistent but not yet decision-forcing",
+      "what_breaks_if_touched": "Authority arbitration required (who decides customer definition?), data quality investment (CRM cleanup, master data management, parent-subsidiary relationships), functional autonomy reduced (canonical count forces functions to adopt methodology less suited to functional needs), ongoing governance (count methodology documentation, change control, dispute resolution)",
+      "evidence_refs": ["7.2.meaning_drift_map customer definition", "7.7.epistemic_contradictions customer count", "7.4.orphaned_data_domains count reconciliation"],
+      "open_unknowns": ["Count divergence magnitude (5% vs 20%)", "Reconciliation feasibility and effort", "Financial vs operational count methodologies"]
+    }
+  ]
+}

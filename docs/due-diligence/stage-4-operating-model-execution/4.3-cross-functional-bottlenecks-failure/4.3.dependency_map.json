@@ -1,0 +1,131 @@
+{
+  "sub_stage": "4.3",
+  "document_metadata": {
+    "title": "Cross-Functional Dependency Map - Rackspace Technology, Inc.",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09",
+    "analyst_role": "Dependency & Failure Propagation Analyst"
+  },
+  "dependency_map": [
+    {
+      "upstream_function": "CEO (sole cross-functional decision authority per Stage 4.1)",
+      "downstream_function": "All functions requiring cross-functional coordination: Sales-Delivery conflicts, Customer escalations, Technology investments, Risk decisions, Strategic initiatives, BU resource allocation",
+      "dependency_type": "APPROVAL + ENABLEMENT - CEO must adjudicate all cross-functional disputes and approve all material cross-functional initiatives",
+      "load_characteristic": "SERIAL BOTTLENECK - CEO can process N decisions per unit time. Load scales with organizational volume and complexity. BU Presidents lack authority (Stage 4.1: Lillie departure, CEO backfill), no standing governance forums exist. All cross-functional coordination routes through single person creating serial dependency. Load increases non-linearly with complexity—simple issues resolve at functional level, complex issues escalate to CEO.",
+      "failure_propagation_pattern": "SYSTEMIC PARALYSIS - If CEO unavailable/overloaded: (1) Cross-functional decisions queue, (2) Execution stalls awaiting CEO availability, (3) Urgent matters displace important matters in CEO calendar, (4) Decisions made hastily under time pressure or deferred creating cascading delays. Customer escalations cannot reach CEO (per BBB complaints 'cannot escalate to senior management')—queue indefinitely without resolution. Major deals require CEO involvement (healthcare $100M+ TCV example)—large deal throughput limited by CEO capacity. Three CEOs in three years suggests role overloaded—each CEO transition creates 3-6 month coordination disruption as new CEO learns dependencies. Failure propagates SYSTEMICALLY because CEO dependency affects ALL cross-functional work.",
+      "touch_test_what_breaks": "OPERATIONAL + STRATEGIC: If CEO dependency removed (empower BU Presidents, create governance forums), current CEOs may resist authority dilution or organization lacks management capacity for federated structure. If CEO dependency increased (more escalations, more complexity), CEO becomes saturated—throughput plateaus, decisions delay, execution stalls. Current state: CEO already bottleneck (Stage 4.2 finding), adding volume/complexity worsens paralysis. Breakage is SYSTEMIC—all cross-functional work depends on single coordinator who cannot scale.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: CEO sole cross-functional decision-maker, no governance forums",
+        "Stage 4.1: BU Presidents lack authority (Lillie departure, CEO backfill)",
+        "Stage 4.2: CEO serial bottleneck limits throughput",
+        "Three CEOs three years: Jones, Maletira, Kandiah",
+        "Healthcare deal $100M+ TCV: CEO involved",
+        "Customer complaints: 'cannot escalate to senior management'"
+      ]
+    },
+    {
+      "upstream_function": "Sales organization (400+ quota-bearing reps)",
+      "downstream_function": "Delivery/Operations teams (provisioning, customer onboarding, ongoing service delivery)",
+      "dependency_type": "HANDOFF + CAPACITY - Sales books deals, delivery must execute within sold scope/price/timeline. Delivery dependent on sales for accurate scoping, realistic commitments, profitability review.",
+      "load_characteristic": "ASYNCHRONOUS WITH AUTHORITY MISMATCH - Sales operates independently (400+ reps), delivery reacts to completed deals. Load on delivery determined by sales booking pace and deal complexity. Sales organization 'refresh' Q3 2024 indicates prior sales team booked without delivery coordination. CEO 'walk away from unprofitable deals' Q4 2024 attempts to insert profitability discipline but enforcement mechanism unclear at 400+ rep scale (Stage 4.1 finding). Load scales with sales volume but VALUE scales negatively when deals unprofitable (margin erosion Private Cloud -13%, Public Cloud -3%).",
+      "failure_propagation_pattern": "NEGATIVE-VALUE CASCADE - Sales books deal delivery cannot execute profitably → Delivery attempts execution → Discovers unprofitability/unbuildability → Cannot veto (deal signed per Stage 4.1 authority gap) → Executes poorly consuming capacity → Customer complains → Margin erodes → Delivery capacity consumed serving unprofitable customer → Less capacity for profitable customers → Revenue declines as CEO walks away from renewals. Failure originates in sales-delivery authority mismatch (Stage 4.1), propagates through delivery execution failure, cascades to customer churn and financial deterioration. Pattern persisted until sales 'refresh' Q3 2024 and CEO policy Q4 2024—indicates systemic not isolated failure. FY2024 revenue -7% as CEO sacrifices revenue to stop margin bleed demonstrates failure propagation to financial outcomes.",
+      "touch_test_what_breaks": "FINANCIAL + OPERATIONAL: If sales-delivery dependency strengthened (delivery pre-approval required), sales throughput drops, revenue declines further. If dependency weakened (sales continues booking without delivery input), margin erosion accelerates, customer execution failures multiply, churn increases. Current state: Dependency already broken (Stage 4.1 authority mismatch, Stage 4.2 handoff failure). Repair requires either (1) Delivery veto authority pre-sale, OR (2) Sales compensation tied to delivered profitability not bookings, OR (3) Deal review board with profitability enforcement. None disclosed—dependency remains structurally broken.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: Sales authority vs delivery accountability mismatch",
+        "Stage 4.2: Sales-delivery handoff negative-value throughput",
+        "Q4 2024: CEO 'walk away from unprofitable deals'",
+        "Q3 2024: Sales organization refresh",
+        "FY2024 revenue -7%, margin erosion -13%/-3%",
+        "400+ quota-bearing reps (SEC filings)"
+      ]
+    },
+    {
+      "upstream_function": "Customer support tiers (Tier 1 → Tier 2/3 technical → Billing/Delivery/Engineering as needed)",
+      "downstream_function": "Customer satisfaction, retention, renewal revenue",
+      "dependency_type": "SERIAL ESCALATION + CROSS-FUNCTIONAL COORDINATION - Customer issues requiring multiple functions (billing + technical + service) must coordinate across support tiers and functional boundaries without empowered coordinator.",
+      "load_characteristic": "COORDINATION OVERHEAD SCALES EXPONENTIALLY WITH COMPLEXITY - Simple single-function issues resolve at appropriate tier. Complex cross-functional issues create combinatorial coordination requirements: 'dozens of engineers' per BBB complaint, 'multiple tickets' per customer, re-explanation required at each handoff. Load measured as ticket volume appears manageable (SLA response times 15min/1hr/4hr met), but load measured as coordination effort for complex issues unbounded. No single owner (Stage 4.1: no VP Customer Support/CCO), cannot escalate to empowered decision-maker. Coordination load consumes capacity without producing resolution (Stage 4.2 finding).",
+      "failure_propagation_pattern": "INFINITE LOOP WITH CUSTOMER LOSS - Customer issue requires cross-functional coordination → Opens ticket Tier 1 → Tier 1 cannot resolve, escalates Tier 2 → Tier 2 identifies need for billing/delivery/engineering → No coordination mechanism exists (Stage 4.1 authority gap) → Ticket bounces between functions → Customer opens multiple tickets, re-explains to 'dozens of engineers' → No single owner emerges → Customer complains publicly (BBB, Trustpilot) → Issue remains unresolved → Customer churns. Failure originates in coordination authority gap (Stage 4.1), propagates through support tier inability to coordinate, cascades to customer churn and revenue loss. Pattern spans multiple complaint platforms and time periods (BBB, Trustpilot, Gartner 2024)—indicates systemic not isolated failure. Trustpilot: 'consistently getting worse' 2024 indicates failure propagation accelerating not stabilizing.",
+      "touch_test_what_breaks": "OPERATIONAL + RISK: If support dependency structure maintained (multi-tier without empowered coordinator), customer churn accelerates as complex issues multiply. If support tiers eliminated or consolidated, coordination may worsen as specialized expertise removed without addressing root cause (authority gap). Current state: Dependency structure creates failure propagation mechanism—complex issues CANNOT resolve within current structure regardless of support capacity or process improvements. Requires organizational authority redesign (Stage 4.1 finding) not process optimization. Breakage is STRUCTURAL—dependency architecture itself creates failure, not execution within architecture.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: Customer escalation authority gap, no VP Support/CCO",
+        "Stage 4.2: Support coordination overhead exceeds productive work",
+        "BBB: 'multiple tickets, dozens of engineers, no ownership'",
+        "Trustpilot: 'consistently getting worse' 2024",
+        "SLA: 15min/1hr/4hr response, resolution time undefined",
+        "Gartner Peer Insights: conflicting advice from multiple engineers"
+      ]
+    },
+    {
+      "upstream_function": "Multi-jurisdictional regulatory regimes (FedRAMP, UK Sovereignty, China Cybersecurity Law, GDPR, etc.)",
+      "downstream_function": "Operations, Technology deployment, Talent deployment, Cost structure optimization, M&A integration",
+      "dependency_type": "ABSOLUTE CONSTRAINT - Regulatory requirements mandate entity isolation, infrastructure separation, personnel restrictions. Not coordination issue—legal/regulatory VETO authority.",
+      "load_characteristic": "STRUCTURAL MULTIPLIER - Every enterprise-wide initiative must be decomposed and executed separately across 5-6 jurisdictions: US Government (FedRAMP-isolated), UK Sovereign (architecturally isolated), China (in-country isolated), EU Commercial, US Commercial, APAC. Technology updates, security patches, process improvements require separate planning, testing, deployment, validation per jurisdiction. Load multiplies linearly with jurisdiction count (5-6x) but coordination complexity multiplies combinatorially. Cannot consolidate operations (cost reduction) without violating compliance. Cannot offshore talent flexibly (US Government requires US citizens, UK Sovereign requires UK-isolated teams). Cannot integrate acquisitions fully if customers span jurisdictions.",
+      "failure_propagation_pattern": "PERMANENT FRAGMENTATION - Operations attempts cost optimization → Identifies consolidation opportunity → Realizes cannot consolidate without violating FedRAMP/UK Sovereignty/China requirements → Must maintain duplicate infrastructure/support/compliance per jurisdiction → Layoffs (2021, 2023) reduce headcount but cannot eliminate structural cost drivers → Cost structure remains high despite cuts → Financial pressure persists → Next layoff cycle required. Technology team plans deployment → Realizes must deploy separately to each jurisdiction → Deployment duration and cost multiply 5-6x → Competitive disadvantage vs hyperscalers deploying unified infrastructure → Technology gap widens. Failure originates in regulatory mandates (Stage 1 structural constraints), propagates through operational inability to consolidate, cascades to persistent high costs and competitive disadvantage. Not fixable—regulatory constraints are absolute and cannot be negotiated (Stage 1 finding).",
+      "touch_test_what_breaks": "OPERATIONAL + COMPETITIVE: If regulatory dependencies removed (attempt consolidation), immediate compliance violations: FedRAMP authorizations invalidate, UK Sovereign customers lose compliant provider, China operations violate Cybersecurity Law. If regulatory dependencies maintained, permanent cost structure penalty (cannot achieve economies of scale), permanent competitive disadvantage (deployment speed, technology investment pace), permanent M&A integration barriers. Current state: Dependency is STRUCTURAL CONSTRAINT not coordination issue. Stage 1 conclusion: 'Portfolio of separate businesses, not unified operation.' Breakage is STRUCTURAL—regulatory dependencies create absolute barriers to operational optimization.",
+      "claim_type": "STRUCTURAL_INFERENCE",
+      "evidence_sources": [
+        "Stage 1: FedRAMP entity-specific, invalidates on change of control",
+        "Stage 1: UK Sovereign architecturally isolated by design",
+        "Stage 1: China Cybersecurity Law in-country requirements",
+        "Stage 1: 'Portfolio of separate businesses'",
+        "Stage 4.2: Multi-jurisdictional 5-6x deployment multiplier",
+        "Layoffs 2021, 2023: Cost structure remains high despite cuts"
+      ]
+    },
+    {
+      "upstream_function": "CFO/Finance (capital allocation, budget approval)",
+      "downstream_function": "Technology investment, Customer support capacity, Sales capacity, Security investments, M&A, Strategic initiatives",
+      "dependency_type": "APPROVAL + CAPACITY ALLOCATION - All discretionary spending requires CFO/Finance approval. Budget priorities set by external constraints (debt service mandatory, Apollo performance targets) not operational needs.",
+      "load_characteristic": "EXTERNALLY CONSTRAINED ALLOCATION - Debt service ($1.3B First Lien) takes absolute priority, reducing discretionary capital. Apollo performance requirements enforce margin discipline. Load on downstream functions determined by capital availability AFTER external obligations met. Budget allocation fast for CUTS (layoffs 2021, 2023 announced and executed within quarter per Stage 4.2), slow or never for INVESTMENTS (AI strategy Q3 2024, capital allocation still unclear Q4 2024 per Stage 4.2). Revealed priority order: Debt service > Apollo targets > Cost reduction > Revenue growth > Customer satisfaction > Technology differentiation.",
+      "failure_propagation_pattern": "OPERATIONAL UNDERINVESTMENT SPIRAL - Operational function requests budget (support needs capacity, technology needs infrastructure, security needs proactive controls) → CFO evaluates capital availability → Debt service and Apollo targets consume available capital → Operational investment deferred or denied → Customer support quality degrades (complaints increasing 2024 per Stage 4.2), technology investment lags (AI strategy unfunded per Stage 4.2), security investments reactive only (post-incident spending per Stage 4.2) → Operational degradation creates customer churn → Revenue declines (-7% FY2024) → Financial pressure intensifies → Next budget cycle repeats with less capital available. Failure originates in capital structure (debt burden) and ownership structure (Apollo control per Stage 4.1), propagates through CFO capital allocation priorities, cascades to operational underinvestment, customer dissatisfaction, revenue decline. Pattern self-reinforcing—financial deterioration begets underinvestment begets further deterioration.",
+      "touch_test_what_breaks": "FINANCIAL + COMPETITIVE: If CFO dependency eliminated (unrestricted capital access), debt covenant violations trigger default, Apollo intervention likely. If CFO dependency maintained with current capital constraints, operational underinvestment continues, competitive gap widens, customer churn accelerates. Current state: Dependency structurally constrained by external obligations (debt, Apollo) not CFO discretion. CFO allocates LIMITED capital, cannot create additional capital. Breakage is STRUCTURAL—capital shortage not allocation process creates failure. Fixing requires either debt restructuring (difficult given valuation) or Apollo capital injection (unlikely given stranded capital per Stage 4.1).",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: Debt covenants and Apollo control constrain capital allocation",
+        "Stage 4.2: Budget allocation fast for cuts, slow for investments",
+        "Debt service: $1.3B First Lien (Stage 1)",
+        "Customer support degrading: BBB, Trustpilot 2024",
+        "Technology investment constrained: AI strategy unfunded",
+        "FY2024 revenue -7%",
+        "Layoffs 2021, 2023: Quick execution"
+      ]
+    },
+    {
+      "upstream_function": "Security/Operations teams (incident detection, response, remediation)",
+      "downstream_function": "Customer trust, Regulatory compliance (FedRAMP, HIPAA/HITRUST), Service availability, Operational monitoring",
+      "dependency_type": "REACTIVE RESPONSE + VENDOR DEPENDENCY - Security incidents require coordinating: Operations, Security, Engineering (patches), Legal/Compliance (regulatory reporting), Communications (customer notification), External vendors (ScienceLogic monitoring platform, security consultants).",
+      "load_characteristic": "EVENT-DRIVEN CRISIS WITH VENDOR DEPENDENCY - No proactive risk governance (Stage 4.1: no CRO, reactive only). Load spikes when incidents occur (ransomware Dec 2022, zero-day Sept 2024). Coordination must occur across multiple functions without standing incident response process. Sept 2024 zero-day in ScienceLogic EM7 monitoring platform created VENDOR DEPENDENCY—Rackspace cannot remediate without vendor patch, remediation timeline controlled externally. Incident response duration: Dec 2022 ransomware 'multi-month customer impact,' Sept 2024 zero-day duration unclear but monitoring offline during remediation creates operational blind spot.",
+      "failure_propagation_pattern": "INCIDENT TRIGGERS CAPACITY DISPLACEMENT - Incident detected → Operations/Security/Engineering mobilized → Regular work deprioritized → Incident response coordination without standing process → Extended remediation (multi-month for ransomware) → Reactive spending authorized crowding out strategic investment (Stage 4.2) → Monitoring/security infrastructure degraded during incident (Sept 2024 dashboards offline) → Increased vulnerability during remediation → Incident response completes → Organization returns to reactive posture → Next incident recurs. Failure originates in absence of proactive risk governance (Stage 4.1), propagates through crisis response displacing operational execution, cascades to strategic project delays, customer trust erosion, regulatory risk. Customer complaint: 'no apology, compensation, or solution' (BBB) indicates incident response doesn't include customer remediation protocol—failure propagates to customer relationships.",
+      "touch_test_what_breaks": "RISK + OPERATIONAL: If security dependency strengthened (proactive security governance), requires capital investment Rackspace cannot fund (constrained by debt/Apollo per above). If security dependency maintained (reactive only), incidents recur, customer trust erodes, regulatory authorizations at risk (FedRAMP requires timely incident management). Current state: Dependency on reactive security response creates recurring failure pattern. Vendor dependency (ScienceLogic) creates external bottleneck—Rackspace cannot control remediation pace for platform-level vulnerabilities. Breakage is SYSTEMIC—reactive posture guarantees incident recurrence, each incident displaces operational capacity creating vulnerability to next incident.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: No CRO, reactive risk governance",
+        "Stage 4.2: Security incidents displace proactive execution",
+        "Dec 2022 ransomware: multi-month customer impact",
+        "Sept 2024 zero-day ScienceLogic EM7: monitoring offline",
+        "BBB: 'no apology, compensation, or solution'",
+        "Vendor dependency: ScienceLogic monitoring platform"
+      ]
+    },
+    {
+      "upstream_function": "Apollo Global Management (57% owner, board representation)",
+      "downstream_function": "Strategic direction (M&A, divestitures, go-private review), CEO appointments, Capital structure decisions, Business model strategy (requiring board approval)",
+      "dependency_type": "ABSOLUTE CONTROL - Apollo 57% voting majority provides veto authority over all shareholder decisions. Board includes Apollo representatives (Vikram Mahidhar currently, David Sambur historically per Stage 4.1).",
+      "load_characteristic": "STRATEGIC VETO WITH MISALIGNED INCENTIVES - Apollo's stranded capital position (paid $4.3B 2016, current stake worth ~$68M per Stage 4.1) creates misalignment with public shareholders (43-47% ownership). Apollo decisions optimize for capital recovery from stranded position, not growth/market cap appreciation. Strategic review (2022-2023) initiated by Apollo-controlled board, abandoned mid-2023 when no acceptable buyer found—consumed 12-18 months organizational capacity with zero output (Stage 4.2). CEO transitions (Jones exit 2022, Maletira to Kandiah 2025) Apollo-directed. Load on downstream functions determined by Apollo's capital recovery strategy not operational effectiveness requirements.",
+      "failure_propagation_pattern": "STRATEGIC PARALYSIS WITH FINANCIAL CONSTRAINTS - Management proposes growth strategy requiring capital investment → Apollo evaluates against capital recovery objectives → Investment denied or constrained → Strategy execution capital-starved → Competitive positioning erodes → Financial performance deteriorates → Management proposes cost cuts to satisfy Apollo → Operational quality degrades → Customer churn accelerates → Revenue declines → Apollo maintains control seeking capital recovery → Cycle repeats. Failure originates in ownership structure (Apollo control with stranded capital per Stage 4.1), propagates through strategic decision constraints and capital starvation, cascades to competitive disadvantage and operational underinvestment. Three CEOs in three years suggests management inability to execute turnaround under Apollo constraints—each CEO attempts strategy, encounters capital/strategic constraints, exits or transitions. Pattern: Strategies announced (services-led, AI positioning) but execution capital-constrained.",
+      "touch_test_what_breaks": "STRATEGIC + FINANCIAL: If Apollo dependency removed (Apollo exits position), requires buyer willing to pay Apollo's recovery price OR Apollo accepts massive loss. Market unwilling at Apollo's price (strategic review 2022-2023 failed), Apollo unwilling to accept loss (still holding after 8+ years since 2016 acquisition). If Apollo dependency maintained, strategic options constrained by Apollo's capital recovery objectives, growth strategies underfunded, operational investments deferred. Current state: Dependency is STRUCTURAL OWNERSHIP CONSTRAINT. Public shareholders (43-47%) have economic exposure without decision authority. Breakage is STRUCTURAL—ownership structure creates misaligned decision-making that cannot be fixed without ownership change.",
+      "claim_type": "FACT + INFERENCE",
+      "evidence_sources": [
+        "Stage 4.1: Apollo 57% voting control, stranded capital $4.3B cost vs $68M value",
+        "Stage 4.2: Strategic review 2022-2023, 12-18 months, abandoned",
+        "Three CEOs three years: Jones, Maletira, Kandiah",
+        "Apollo board representation: Mahidhar current, Sambur historical",
+        "AI strategy articulated but capital allocation unclear",
+        "FY2024 revenue -7%"
+      ]
+    }
+  ]
+}

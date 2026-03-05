@@ -1,0 +1,71 @@
+{
+  "sub_stage": "9.3",
+  "document_metadata": {
+    "title": "False People Resilience Assumptions - Human Resource Claims That Fail Under Stress",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-16",
+    "scope": "Workforce resilience assumptions that break when tested against attrition, burnout, or knowledge concentration reality"
+  },
+  "false_people_resilience_assumptions": [
+    {
+      "assumption": "'We can hire replacements for departed employees' - talent market provides adequate replacement capacity for specialized roles",
+      "why_it_fails_under_stress": "Assumes FUNGIBLE TALENT POOL for highly specialized roles. Reality: (1) FedRAMP-experienced US citizen security professionals with clearances = <5,000 nationally estimated, competing for same pool as AWS GovCloud, Azure Government, Google Cloud for Government. (2) VMware architects with 10+ years enterprise experience = scarce and ACTIVELY RECRUITED by hyperscalers to support customer migrations. (3) UK Sovereign compliance specialists = tiny pool constrained to UK citizens with government/NHS/police expertise. (4) Platform infrastructure architects understanding custom-built billing/IAM systems = likely ZERO IN MARKET (knowledge walks out door). REPLACEMENT TIMELINES extend during stress: Normal 6-12 months for senior technical roles LENGTHENS to 12-24+ months when: Multiple departures simultaneously (market competition for candidates), Negative employer brand from incidents (requires 20-40% salary premium per Stage 9.2), Specialized clearances required (SECRET/TOP SECRET 6-18 month processing), Tribal knowledge transfer impossible (departed employees unavailable for knowledge transfer). HIRING DURING CRISIS reveals capacity deficit to market - competitors and candidates aware of operational stress, making recruiting HARDER not easier.",
+      "what_breaks": "Continuity planning assumptions break: Models assume 'backfill attrition in 3-6 months' but specialized roles take 12-24+ months, capacity gaps lasting 12-24 months create: (1) Service degradation visible to customers (MTTR increases, incident response slower, satisfaction declines), (2) Regulatory authorization jeopardy (FedRAMP/UK Sovereign/HIPAA require adequate staffing), (3) Customer churn acceleration (customers defect rather than tolerate degradation), (4) Secondary attrition from overload (remaining staff burned out covering departed colleagues). COMPOUNDING EFFECT: Initial attrition → extended vacancy → overload on remaining staff → secondary attrition → death spiral. Three incidents in 36 months (Stage 8.1) + declining satisfaction (Trustpilot 'worse' 2024) + three CEO transitions = EMPLOYER BRAND DAMAGED. Cannot hire at market rates - requires premium. Cannot hire quickly - extended timelines. Hiring assumption OPTIMISTIC, reality PESSIMISTIC.",
+      "severity": "HIGH",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 9.2: 'ISC2 3.5M global unfilled cybersecurity positions' - talent scarcity",
+        "Stage 9.2: Time-to-hire 3-6 months + onboarding 3-6 months = 6-12 month gap for senior roles",
+        "Stage 9.2: '20-40% salary premium above market required' post-incidents to overcome negative brand",
+        "Industry reality: FedRAMP expertise <5,000 professionals nationally, clearances 6-18 months",
+        "Stage 4.5: 'Trustpilot consistently getting worse 2024' - employer brand deteriorating",
+        "Stage 8.1: Three incidents in 36 months damages reputation, recruiting difficulty"
+      ]
+    },
+    {
+      "assumption": "'Heroic execution is sustainable' - employees will step up during crises and maintain performance through extended pressure",
+      "why_it_fails_under_stress": "Assumes UNLIMITED HUMAN CAPACITY for heroic effort. Reality: Heroics are SHORT-TERM CAPABILITY, not steady-state. Stage 4.5 identifies FIVE heroic execution zones: (1) Support staff coordinating 'dozens of engineers' informally (burnout risk HIGH), (2) Operations 24/7 crisis response for multi-month incidents (burnout risk HIGH), (3) CEO personal coordination consuming all capacity (burnout risk EXTREME), (4) Delivery teams executing unprofitable commitments (burnout risk HIGH), (5) Multi-jurisdictional deployments requiring 5-6X manual coordination (burnout risk MED-HIGH). Heroics MASK underlying system failures temporarily but CREATE ATTRITION over time: Extended on-call beyond sustainable rotations → burnout → departure, emotional labor absorbing customer frustration → demoralization → departure, coordination overhead exceeding productive work → exhaustion → departure, heroic effort expected as baseline (not exceptional) → unrecognized/unrewarded → departure. TURNOVER FROM BURNOUT removes MOST CAPABLE people - those who sustained organization through heroics are MOST EXHAUSTED and MOST LIKELY TO LEAVE.",
+      "what_breaks": "Organizational capability DEGRADES over time as heroic performers exit: Support coordination networks break (personal relationships lost), operations crisis response expertise walks out (tribal knowledge gone), CEO transitions accelerate (unsustainable role), delivery execution failures increase (understaffed unprofitable accounts). DEATH SPIRAL pattern: Heroics required → burnout drives attrition → remaining staff must increase heroics to compensate → accelerated burnout → more attrition → repeat. Three CEOs three years DEMONSTRATES heroics unsustainability - role designed to require superhuman effort fails repeatedly. Trustpilot 'consistently worse' 2024 DESPITE heroics proves heroics INSUFFICIENT to maintain quality - merely delays collapse. Heroics assumption creates FALSE CONFIDENCE - appears stable until hero departs, then reveals underlying brittleness. Management treating heroics as NORMAL creates expectation mismatch - employees expect recognition/relief, management expects continued heroics, gap drives exits.",
+      "severity": "HIGH",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 4.5: Five heroic execution zones identified with HIGH to EXTREME burnout risk",
+        "Stage 4.5: 'Support burnout risk HIGH', 'Operations burnout risk HIGH', 'CEO burnout risk EXTREME'",
+        "Stage 4.5: Three CEOs three years demonstrates role unsustainability",
+        "Stage 4.5: 'Trustpilot consistently worse 2024' despite heroics - heroics insufficient",
+        "Stage 9.2: 'Turnover contagion where one departure triggers cascade' - death spiral pattern",
+        "Stage 4.5: 'Heroics expected as baseline not exceptional' - unrecognized, unrewarded, unsustainable"
+      ]
+    },
+    {
+      "assumption": "'Documentation transfers knowledge' - departed employees' expertise can be captured through documentation and training",
+      "why_it_fails_under_stress": "Assumes CODIFIABLE KNOWLEDGE for roles heavy in tribal knowledge, judgment, relationships. Reality: Platform architects understand 'UNDOCUMENTED LOGIC' and 'CUSTOMER-SPECIFIC CUSTOMIZATIONS' per Stage 6.3 - cannot document years of accumulated edge case handling. Support staff coordination networks depend on PERSONAL RELATIONSHIPS and INFORMAL INFLUENCE - cannot document 'who to call and how to persuade them'. VMware architects possess customer-specific configuration contexts and application dependencies - cannot document without understanding customer business. Operations teams understand system failure modes through CRISIS EXPERIENCE - cannot document judgment developed through years of incidents. Documentation LAGS reality - systems change, documentation becomes stale, departed employees not available to update. DOCUMENTATION REQUIRES TIME employees don't have - heroic execution zones consume all capacity, no time for knowledge capture. TACIT KNOWLEDGE cannot be documented - judgment calls, relationship dynamics, situational awareness developed through experience. KNOWLEDGE TRANSFER requires WILLING TEACHER and CAPABLE STUDENT and TIME - departing employees (often burned out or conflicted) may not be willing, remaining employees (overloaded) may not have capacity.",
+      "what_breaks": "Succession planning assumptions break: Models assume 'document knowledge before departure' but departures are: (1) Unexpected (employee quits with 2-week notice, insufficient for transfer), (2) Adversarial (employee departing due to conflict, unwilling to help), (3) Competitive (employee joining competitor, legally restricted from detailed knowledge transfer). KNOWLEDGE WALKS OUT DOOR in practice: Platform architect departs → tribal knowledge of billing system internals GONE, support staff departs → coordination network contacts and persuasion approaches LOST, VMware architect departs → customer relationship contexts and configuration nuances VANISHED. Remaining employees must REDISCOVER through operational failures: Billing incident without architect → must reverse-engineer fix through trial-and-error, customer issue without support contacts → must rebuild coordination networks slowly, VMware incident without customer context → troubleshoot blindly causing extended outages. LEARNING CURVE measured in MONTHS or YEARS for complex roles - cannot rapidly replace departed expertise even with documentation. Documentation assumption creates FALSE SECURITY - appears prepared until crisis reveals documentation insufficient.",
+      "severity": "MED",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 6.3: 'Platforms contain undocumented logic, tribal knowledge, customer-specific customizations'",
+        "Stage 4.5: Support coordination depends on 'personal relationships and informal networks'",
+        "Stage 9.2: 'Platform architects - 12-24+ month replacement timeline' due to tribal knowledge concentration",
+        "Stage 6.5: Technical debt likely includes 'poor documentation, undocumented configurations'",
+        "Stage 4.5: 'Legacy system custodians possess undocumented operational knowledge'",
+        "Stage 9.2: 'Knowledge transfer is INCOMPLETE - cannot transfer years of tribal knowledge in 2-4 weeks'"
+      ]
+    },
+    {
+      "assumption": "'We have bench strength' - organization has backup personnel capable of covering key roles",
+      "why_it_fails_under_stress": "Assumes REDUNDANCY in specialized roles. Reality: KEY PERSON and KEY TEAM dependencies concentrated by design: (1) CEO is SOLE cross-functional coordinator (no operating committee per Stage 4.1) - ZERO backup, (2) Platform architects likely SINGLE INDIVIDUAL per platform (billing, IAM, monitoring) - ZERO backup, (3) FedRAMP security team likely 10-30 personnel for all government operations - MINIMAL backup, (4) UK Sovereign team likely 10-20 personnel isolated from global resources - MINIMAL backup. COST CONSTRAINTS prevent redundancy: CapEx declining 25% (Stage 5.1), $1.3B debt (Stage 5.4), EBITDA margin 3.1% (Stage 5.2) - no capital for 'bench strength' investment. SPECIALIZATION prevents cross-training: FedRAMP specialist cannot cover UK Sovereign (different regulations), VMware architect cannot cover AWS (different technology), Platform architect cannot be cross-trained (knowledge concentration too deep). ISOLATION prevents resource sharing: UK Sovereign team PROHIBITED from accessing global resources per Stage 1.5 - even if global bench exists, cannot use it.",
+      "what_breaks": "Crisis response assumptions break: Models assume 'pull from bench to cover vacancy' but bench DOESN'T EXIST for specialized roles. When key person unavailable: (1) Function STOPS not COVERED (billing architect unavailable → billing changes frozen, IAM architect unavailable → IAM troubleshooting impossible), (2) Remaining team OVERLOADED not BACKED UP (FedRAMP team loses 3 members → remaining 7-27 cannot maintain 24/7 coverage), (3) Cross-function cannot substitute (cannot pull Public Cloud engineer to cover Private Cloud VMware specialist). VACATION/ILLNESS creates risk: If platform architect on vacation when billing incident occurs → must interrupt vacation OR accept extended outage. If UK Sovereign team member ill → no global backup available due to isolation. PLANNED ABSENCE is risky, UNPLANNED ABSENCE is catastrophic. Bench assumption creates COMPLACENCY - leadership believes 'someone can cover' but discovers during crisis NO ONE CAN. Organizations with true bench strength invest 30-50% MORE in staffing than minimum required - Rackspace cutting costs not building bench.",
+      "severity": "MED",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 4.1: 'CEO sole cross-functional coordinator, no operating committee' - zero backup",
+        "Stage 6.3: Platform architects likely single individuals per platform - zero backup inferred",
+        "Stage 1.5: 'UK Sovereign integration PERMANENTLY PROHIBITED' - cannot access global bench",
+        "Stage 5.1: CapEx declining 25%, cost reduction mode not bench building mode",
+        "Stage 5.2: EBITDA margin 3.1% - thin margins prevent redundancy investment",
+        "Stage 4.5: Specialized expertise not fungible - cannot cross-train or substitute"
+      ]
+    }
+  ]
+}

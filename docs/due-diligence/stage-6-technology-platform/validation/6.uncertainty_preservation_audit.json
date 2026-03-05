@@ -1,0 +1,64 @@
+{
+  "stage": "6",
+  "document_metadata": {
+    "title": "Uncertainty Preservation Audit - Gap Documentation and Classification",
+    "analysis_date": "2026-02-10",
+    "validator": "Independent QA & Red Team Authority"
+  },
+  "uncertainty_preservation_audit": {
+    "unknowns_summary": [
+      "Precise technical debt quantification by category ($173-346M range is 2X, wider precision needed for exact ROI calculations)",
+      "Specific technical debt remediation costs, timelines, resource requirements (rough estimates exist $15-310M per program, detailed plans needed)",
+      "Customer tolerance for platform changes vs contradiction persistence (disruption risk vs persistence risk balance uncertain)",
+      "Historical attempts to resolve contradictions and failure reasons (unknown if tried and failed vs never attempted)",
+      "Rate of contradiction compounding vs amortization trajectory (is estate deteriorating, stable, or improving over time?)",
+      "Acquirer perspective on contradictions (liability vs opportunity vs neutral - unknowable pre-transaction)",
+      "Exact government revenue under FedRAMP (>$50M estimated)",
+      "Exact UK Sovereign revenue ($10-50M range)",
+      "Exact China revenue (Shanghai data center material but amount unknown)",
+      "Broadcom future pricing trajectory (200-300% is start or peak?)",
+      "Customer refusal rates for platform migrations (20-60% ranges, need segment-specific data)",
+      "Monitoring and backup vendor annual spend (estimated $20M and $10M respectively)",
+      "Industry benchmarks for technical debt in peer MSPs (is Rackspace 6-13% high, average, or low?)"
+    ],
+    "unknowables_summary": [
+      "Acquirer tolerance for technical debt (unknowable until specific acquirer identified and negotiations underway)",
+      "Vendor future behavior (will Broadcom increase prices further? Will hyperscalers reduce partner credits?)",
+      "Customer future behavior under stress (churn estimates are projections, actual behavior uncertain)",
+      "Regulatory future changes (will FedRAMP, UK Sovereign, China CSL requirements evolve?)",
+      "Competitive dynamics evolution (will peer MSPs successfully resolve similar contradictions creating competitive pressure?)"
+    ],
+    "material_uncertainty_impacts": [
+      {
+        "uncertainty": "Technical debt quantification precision ($173-346M range)",
+        "decision_impact": "Cannot build confident business cases for debt remediation without precise baseline. Range-on-range ROI calculations (debt costs $173-346M, remediation costs $50-200M, both uncertain) create analysis paralysis - cannot determine which debt programs worth pursuing.",
+        "mitigation": "Activity-based costing analysis, comparative benchmarks with peer MSPs, counterfactual modeling (what would costs be without debt?). Would narrow range to $200-280M enabling decisions.",
+        "severity": "HIGH - affects $50-200M capital allocation decisions"
+      },
+      {
+        "uncertainty": "Customer tolerance for resolution disruption (churn 20-60% ranges)",
+        "decision_impact": "Customer churn is MAJOR remediation cost but tolerance uncertain. Wide ranges (VMware 20-40%, multi-cloud 20-50%, integration 15-25%) make ROI unpredictable. If actual churn is high end of range, remediation destroys value. If low end, remediation may be viable. Cannot choose optimal strategy without tighter estimates.",
+        "mitigation": "Customer surveys on change tolerance, historical churn analysis during past platform changes, customer segmentation by risk (which tolerate change vs which will churn), reference customer pilots. Would narrow 20-40% to 25-30% ranges.",
+        "severity": "VERY HIGH - determines remediation viability, affects $316-528M revenue decisions"
+      },
+      {
+        "uncertainty": "Contradiction trajectory (deteriorating vs stable vs improving)",
+        "decision_impact": "If debt GROWING (M&A adds entities, clouds proliferate, platforms age), creates 3-7 year urgency timeline (debt becomes unsustainable). If debt STABLE, can survive indefinitely. If debt SHRINKING, can wait for natural resolution. Trajectory unknown - cannot determine intervention urgency.",
+        "mitigation": "Historical debt analysis 2019-2024 (model accumulation trends), forward projection based on business strategy, scenario analysis (if M&A continues, debt accelerates; if organic only, debt stable). Would reveal time bomb vs chronic condition.",
+        "severity": "HIGH - determines intervention urgency timeline"
+      },
+      {
+        "uncertainty": "Acquirer perspective on contradictions",
+        "decision_impact": "Optimal pre-acquisition strategy depends on acquirer view: If debt is LIABILITY → attempt remediation pre-close. If debt is NEUTRAL → preserve capital, accept debt. If debt is OPPORTUNITY → highlight as value creation upside. Cannot optimize without knowing acquirer type and preferences.",
+        "mitigation": "UNKNOWABLE pre-transaction. Prepare multiple narratives (clean, operational reality, value creation), research acquirer types (PE likely neutral, Strategic tech likely have tools to fix, MSPs likely view as neutral), maintain flexibility to adapt.",
+        "severity": "MEDIUM - affects pre-acquisition capital allocation but unknowable until acquirer identified"
+      }
+    ],
+    "uncertainty_classification_quality": {
+      "unknown_vs_unknowable_distinction": "MAINTAINED CONSISTENTLY. All sub-stages classify uncertainties as UNKNOWN (information exists but not accessed - can reduce through research/analysis) vs UNKNOWABLE (information does not exist or cannot be determined pre-transaction). Examples: Precise debt quantification is UNKNOWN (finance systems contain data), Acquirer tolerance is UNKNOWABLE (cannot know until acquirer identified). Classification enables appropriate uncertainty reduction strategies - pursue UNKNOWNS, prepare for UNKNOWABLES.",
+      "uncertainty_preservation_vs_collapse": "PRESERVED NOT COLLAPSED. All sub-stages maintain uncertainty through: (1) RANGES not point estimates ($173-346M not $260M), (2) CONFIDENCE LEVELS stated (70-95% ranges, not 100% certainty), (3) UNCERTAINTY REGISTERS documenting gaps explicitly, (4) UNKNOWABLES acknowledged (acquirer perspective, future vendor behavior). No false precision, no overconfident claims. Stage 0.5 requirements met.",
+      "decision_impact_clarity": "CLEARLY ARTICULATED. Each uncertainty register explains: What is unknown, Why it matters for decisions, How to reduce uncertainty if possible, Type classification (UNKNOWN vs UNKNOWABLE). Enables prioritization of uncertainty reduction efforts based on decision impact. Material uncertainties affecting $50M+ decisions highlighted."
+    },
+    "overall_uncertainty_management": "EXCELLENT. Stage 6 analysis maintains appropriate humility about knowledge limits while reaching directionally robust conclusions. Pattern: (1) Directional findings VERY HIGH confidence (85-95%) - compute immobility, vendor lock-ins, platform fragility, debt permanence, contradictions structural, (2) Precise quantification MEDIUM confidence (50-70%) - exact costs, exact timelines, exact customer behavior have wider ranges, (3) Future predictions LOW confidence (<50%) - vendor future behavior, regulatory changes, competitive dynamics acknowledged as unknowable. This confidence distribution is APPROPRIATE - high confidence on 'what exists today' questions, lower confidence on 'what will happen' questions. Uncertainty preservation prevents overconfident recommendations - analysis documents constraints and immobility but does NOT prescribe specific remediation programs (would require false precision on unknowns). Stage 0 intent maintained - DISCOVERY not STRATEGY."
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "sub_stage": "4.1",
+  "document_metadata": {
+    "title": "Decision Authority Map - Rackspace Technology, Inc.",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09",
+    "analyst_role": "Decision Rights & Authority Analyst"
+  },
+  "decision_authority_map": [
+    {
+      "decision_type": "Strategic Direction (M&A, divestitures, go-private review, capital structure)",
+      "formal_owner": "Board of Directors (majority Apollo-controlled), with CEO recommendation",
+      "actual_decision_maker": "Apollo Global Management through 57% voting control and board representation (Vikram Mahidhar, formerly David Sambur)",
+      "escalation_required": true,
+      "escalation_path": "CEO proposes → Board reviews → Apollo representatives control outcome through voting majority",
+      "execution_latency": "Strategic review initiated 2022, abandoned mid-2023 (12-18 month cycle with no execution). CEO replacement (Jones to Maletira) occurred Sept 2022 during review period.",
+      "touch_test_what_breaks": "OPERATIONAL + FINANCIAL: If strategic decisions attempted without Apollo approval, board votes down initiative (Apollo 57% veto). If CEO pursues contrary strategy, CEO replaced (Jones precedent). Public shareholders (43-47%) have economic exposure without decision rights. Market cap $120M vs Apollo's $4.3B 2016 cost basis creates stranded capital—Apollo cannot exit profitably, management cannot pursue growth requiring capital.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Apollo 57% ownership (SEC filings, Stage 1 analysis)",
+        "Strategic review 2022-2023 (Computer Weekly, company announcements)",
+        "CEO transition Sept 2022 (Jones departure, Maletira appointment)",
+        "Board composition (Apollo representatives: Mahidhar current, Sambur historical)",
+        "Stock price $0.48, market cap ~$120M (Yahoo Finance Feb 2026)"
+      ]
+    },
+    {
+      "decision_type": "Executive Leadership Selection (CEO, CFO, Business Unit Presidents)",
+      "formal_owner": "Board of Directors (Compensation Committee for terms)",
+      "actual_decision_maker": "Apollo representatives on Board, with independent directors consultative input only",
+      "escalation_required": true,
+      "escalation_path": "Search process managed by Board → Apollo board members control selection → Board ratifies",
+      "execution_latency": "Three CEOs in three years (Jones exit 2022, Maletira 2022-2025, Kandiah 2025-present). CFO turnover 2024 (Molu to Marino). Private Cloud President Lillie departed Jan 2025, CEO assumed role directly (no replacement appointed).",
+      "touch_test_what_breaks": "OPERATIONAL: Leadership churn creates strategy discontinuity. When Private Cloud President departed (Lillie Jan 2025), CEO assumed role directly rather than hiring replacement—indicates role lacks sufficient authority to attract/retain talent. Executive departures (CFO Molu to UK, President Lillie personal commitments) suggest insufficient autonomy or unclear authority making roles unattractive.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "CEO transitions: Jones (pre-2022 to Sept 2022), Maletira (Sept 2022 to Sept 2025), Kandiah (Sept 2025-present)",
+        "CFO transition: Molu departure Jan 2024, Marino promotion from CAO",
+        "Brian Lillie departure announcement Jan 2025",
+        "Board announcement Jan 2025: CEO assumes Private Cloud leadership",
+        "No Public Cloud President named in public disclosures"
+      ]
+    },
+    {
+      "decision_type": "Business Model Strategy (services-led vs infrastructure-led, vertical focus, pricing discipline)",
+      "formal_owner": "CEO (currently Gajen Kandiah, previously Amar Maletira during strategy formulation)",
+      "actual_decision_maker": "CEO articulates strategy, Board (Apollo) must approve material pivots, execution constrained by sales force capacity and customer contract base",
+      "escalation_required": true,
+      "escalation_path": "CEO develops strategy → Board approval for material changes → Sales/delivery organizations execute → Execution failures escalate back to CEO",
+      "execution_latency": "Services-led strategy articulated 2023-2024 earnings calls. Execution requires sales force retraining (400+ quota-bearing reps), contract renegotiation, delivery model changes. Revenue declined 7% FY2024 while strategy executed—indicating execution lag.",
+      "touch_test_what_breaks": "FINANCIAL: CEO stated Q4 2024 will 'walk away from unprofitable deals'—decision made but not enforceable at 400+ sales rep level without incentive realignment and approval authorities. Sales organization 'refreshed' Q3 2024 indicates prior team misaligned. If strategy not executed, margin continues to erode (Private Cloud down 13% YoY, Public Cloud down 3% YoY). If executed too aggressively, customer churn accelerates.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Q3 2024 earnings call (Maletira services-led strategy, vertical focus healthcare/BFSI/sovereign)",
+        "Q4 2024 earnings call (walk away from unprofitable deals)",
+        "FY2024 revenue down 7% YoY",
+        "Sales organization refresh mentioned Q3 2024",
+        "Business unit revenue declines: Private Cloud -13%, Public Cloud -3%"
+      ]
+    },
+    {
+      "decision_type": "Cost Structure & Workforce Changes (layoffs, restructuring, offshoring)",
+      "formal_owner": "CEO with Board approval for material workforce reductions",
+      "actual_decision_maker": "CEO/CFO propose, Board (Apollo) approves based on financial performance targets and debt covenant compliance pressure",
+      "escalation_required": true,
+      "escalation_path": "Financial performance deterioration → CFO models cost cuts → CEO proposes restructuring → Board approves → HR executes (subject to WARN Act, employment law)",
+      "execution_latency": "2021 restructuring plan (10% workforce, $70-80M cost) executed over 12-18 months. March 2023 layoffs (275 employees, 4%) announced and executed within quarter. Repeated restructuring indicates decisions execute but root causes not resolved.",
+      "touch_test_what_breaks": "OPERATIONAL + RISK: Cost cuts execute quickly but create customer service degradation (evidenced by BBB/Trustpilot complaints about support quality). Cannot cut delivery staff without SLA breaches. Multi-jurisdictional structure (US, UK Sovereign, China per Stage 1) prevents consolidation—repeated layoffs address symptoms not structural cost drivers. Debt covenant (5.0x springing leverage ratio) creates urgency for cuts regardless of customer impact.",
+      "claim_type": "FACT + INFERENCE",
+      "evidence_sources": [
+        "2021 restructuring plan SEC disclosure ($70-80M, 10% workforce)",
+        "March 2023 layoff announcement (275 employees, 4%)",
+        "Customer complaints Q3-Q4 2024 (BBB, Trustpilot: support quality decline)",
+        "Debt structure: $1.3B First Lien, 5.0x springing covenant (Stage 1 analysis)",
+        "Multi-jurisdictional constraints (Stage 1: FedRAMP, UK Sovereign, China isolation)"
+      ]
+    },
+    {
+      "decision_type": "Technology & Product Investment (AI strategy, platform modernization, security infrastructure)",
+      "formal_owner": "CEO, President of AI/Technology (Srini Koushik)",
+      "actual_decision_maker": "CEO articulates strategy, CFO/Board control capital allocation, execution constrained by debt service requirements and customer-funded CapEx model",
+      "escalation_required": true,
+      "escalation_path": "Technology strategy formulated by CEO/CTO → Capital requirements estimated by CFO → Board approves capital allocation → Execution depends on customer contracts (customer pays upfront CapEx) or debt capacity",
+      "execution_latency": "AI strategy articulated Q3 2024 (50+ customers, 250+ opportunities). Execution pace constrained by capital availability—no disclosure of dedicated AI infrastructure investment. Security incidents forced reactive spending (2022 ransomware, 2024 zero-day), crowding out strategic investment.",
+      "touch_test_what_breaks": "FINANCIAL + COMPETITIVE: Technology decisions can be made but cannot be funded at competitive pace. Debt service ($1.3B First Lien loan) and negative GAAP profitability constrain investment. Customer-funded CapEx model (mentioned Q4 2024) means large customers control infrastructure spend timing—Rackspace cannot independently invest in differentiated infrastructure. Security incidents (ransomware Dec 2022, zero-day Sept 2024) force reactive spending, depleting capital available for strategic technology investment. Result: technology roadmap exists on paper but execution capital-constrained.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Q3 2024 earnings: AI strategy with 50 customers, 250 opportunities",
+        "Q4 2024: multimodal GenAI deployments, customer-funded CapEx model mentioned",
+        "Dec 2022 ransomware attack on Hosted Exchange",
+        "Sept 2024 zero-day exploit (ScienceLogic EM7), monitoring dashboards offline",
+        "Debt structure $1.3B First Lien (Stage 1 analysis)",
+        "FY2024 GAAP net loss (10-K)"
+      ]
+    },
+    {
+      "decision_type": "Sales Pricing & Deal Approvals (contract terms, discounting, profitability thresholds)",
+      "formal_owner": "Sales organization (400+ quota-bearing reps), regional/vertical sales leadership",
+      "actual_decision_maker": "CEO controls strategic pricing policy ('walk away from unprofitable deals'), but daily deal-making authority distributed across 400+ sales reps with unclear escalation thresholds",
+      "escalation_required": true,
+      "escalation_path": "Sales rep negotiates deal → Regional VP approval (threshold unknown) → Large/strategic deals escalate to CEO → Delivery organization shadow veto if unbuildable",
+      "execution_latency": "Major healthcare deal (Q4 2023: $100M+ TCV, 38K Epic users) required CEO involvement—indicates large deal approval at CEO level. 'Walk away' policy announced Q4 2024 but enforcement mechanism unclear. Sales organization 'refreshed' Q3 2024 indicates incentive misalignment requiring personnel changes.",
+      "touch_test_what_breaks": "FINANCIAL + OPERATIONAL: Sales force of 400+ has daily deal-making authority but unclear profitability enforcement. CEO can set policy but cannot adjudicate every deal. Sales sells capabilities delivery cannot execute profitably (evidenced by customer complaints about execution failures, margin erosion). Formal authority at sales leadership, actual control split between CEO (policy) and sales reps (execution), with delivery having shadow veto through capacity constraints. Result: deals booked that shouldn't be, creating customer churn and margin pressure.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Q4 2024 earnings: 'walk away from unprofitable deals' policy statement",
+        "Q3 2024: sales organization refresh",
+        "Q4 2023: healthcare deal $100M+ TCV, 38K users, CEO involved",
+        "400+ quota-bearing reps mentioned in filings",
+        "Customer complaints (BBB, Trustpilot): execution failures suggesting overselling",
+        "Margin erosion: Private Cloud -13% YoY, Public Cloud -3% YoY"
+      ]
+    },
+    {
+      "decision_type": "Customer Support Escalations & Service Delivery Issue Resolution",
+      "formal_owner": "Business Unit Presidents (Private Cloud, Public Cloud), Operations leadership (roles not publicly disclosed)",
+      "actual_decision_maker": "UNCLEAR - Evidence suggests no empowered decision-maker exists between frontline support and CEO",
+      "escalation_required": true,
+      "escalation_path": "Customer issue → Support ticket → Multiple engineers/tiers → [AUTHORITY GAP] → Customer complains publicly → No resolution path to senior management",
+      "execution_latency": "Customer complaints indicate issues remain open for weeks/months across multiple support tickets without resolution. Pattern: 'multiple tickets, dozens of engineers, re-explanation required, no ownership, cannot reach senior management.'",
+      "touch_test_what_breaks": "OPERATIONAL + RISK: Customer escalations stall in organizational gaps. Customers cannot reach empowered decision-maker (per BBB complaint). Private Cloud President departure (Lillie Jan 2025) with CEO backfill suggests BU presidents lacked authority to resolve operational issues. No disclosed VP/SVP Customer Support or Chief Customer Officer role. Result: escalations queue indefinitely, customers churn when issues unresolved. SLA breaches likely but not publicly disclosed. Support staff can execute tickets but cannot make cross-functional decisions to resolve root causes.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "BBB complaints 2024: 'multiple tickets, no ownership, cannot escalate'",
+        "Trustpilot 2024: 'horrible customer support, nobody responds timely, getting worse'",
+        "Gartner Peer Insights: conflicting advice from multiple engineers, no single point of contact",
+        "Brian Lillie departure Jan 2025, CEO assumed Private Cloud leadership",
+        "No VP/SVP Customer Support disclosed in public filings or earnings calls"
+      ]
+    },
+    {
+      "decision_type": "Risk Acceptance & Security Incident Response",
+      "formal_owner": "Chief Legal Officer (Michael Bross) for legal/compliance risk, CISO (not publicly named) for security risk, CEO for enterprise risk",
+      "actual_decision_maker": "UNCLEAR below CEO level - Risk decisions appear to escalate to CEO, but CEO cannot be risk owner for all operational issues (unscalable)",
+      "escalation_required": true,
+      "escalation_path": "Risk identified → [UNCLEAR GOVERNANCE] → Crisis management when incident occurs → CEO crisis response → Reactive spending to remediate",
+      "execution_latency": "Dec 2022 ransomware created multi-month customer impact. Sept 2024 zero-day exploit forced monitoring dashboards offline. Both incidents handled reactively—no evidence of proactive risk governance preventing incidents or enabling rapid response.",
+      "touch_test_what_breaks": "RISK + OPERATIONAL: Risk governance structure not evident. Security incidents (ransomware 2022, zero-day 2024) handled through crisis management rather than structured risk escalation. Customer complaints indicate inability to escalate operational issues to 'senior management'—suggesting escalation paths don't route to empowered risk owner. No Chief Risk Officer or equivalent disclosed. Result: risks materialize before addressed, reactive spending depletes strategic investment capacity, customer trust eroded by incidents.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Dec 2022 ransomware attack on Hosted Exchange (SecurityWeek, Bank Info Security)",
+        "Sept 2024 zero-day exploit ScienceLogic EM7, monitoring offline",
+        "Customer complaint: 'no apology, compensation, or solution' (BBB)",
+        "No CRO or enterprise risk committee disclosed in governance documents",
+        "CLO Michael Bross disclosed but scope unclear"
+      ]
+    },
+    {
+      "decision_type": "Cross-Functional Resource Allocation (sales vs delivery vs support vs technology investment)",
+      "formal_owner": "CFO (Mark Marino) and CEO, with Board oversight for capital allocation",
+      "actual_decision_maker": "CFO/CEO decide allocation under Apollo/Board oversight, with debt service taking absolute priority (non-discretionary)",
+      "escalation_required": true,
+      "escalation_path": "Budget planning cycle (annual/quarterly) → CFO proposes allocation → CEO approves → Board ratifies → Execution by functional leaders within constraints",
+      "execution_latency": "Annual planning cycle with quarterly adjustments. Reactive adjustments during year (e.g., 2023 layoffs announced March, executed within quarter) show ability to reallocate quickly when financial pressure exists.",
+      "touch_test_what_breaks": "FINANCIAL: Budget allocation priorities observable through revealed preferences: (1) Debt service (mandatory, $1.3B First Lien), (2) Sales capacity maintained (400+ reps, 'refresh' investment), (3) Cost of goods sold, (4) Technology investment (constrained), (5) Customer support quality (degraded per complaints). Decision authority at CFO/CEO but actual priorities dictated by external constraints: debt covenants require cash generation, Apollo performance targets enforce margin discipline. Business Unit Presidents lack budget authority—CEO assumed Private Cloud role when President departed, indicating BU P&Ls not fully autonomous.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Debt service requirements: $1.3B First Lien (Stage 1 analysis)",
+        "Sales force maintained: 400+ quota-bearing reps, refresh mentioned Q3 2024",
+        "Customer support quality decline: BBB/Trustpilot complaints increasing 2023-2024",
+        "Technology investment constrained: AI strategy articulated but capital allocation unclear",
+        "Layoffs 2021, 2023: cost reduction prioritized when financial pressure exists",
+        "CFO role: Mark Marino (promoted from CAO Jan 2024)"
+      ]
+    }
+  ]
+}

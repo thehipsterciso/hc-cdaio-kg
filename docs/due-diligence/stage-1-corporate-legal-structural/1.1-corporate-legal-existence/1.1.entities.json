@@ -1,0 +1,146 @@
+{
+  "material_legal_entities": [
+    {
+      "entity_name": "Rackspace Technology, Inc.",
+      "jurisdiction": "Delaware",
+      "entity_type": "C Corporation (Public)",
+      "ownership_structure": "Publicly traded on NASDAQ (ticker: RXT). Apollo Global Management holds approximately 53-57% of outstanding shares as of Q4 2024/Q1 2025. Remaining ~43-47% dispersed among public shareholders and institutional investors.",
+      "control_mechanisms": "Board representation: Apollo affiliates Aaron Sobel (Principal, Apollo) and Vikram Mahidhar (Operating Partner, Apollo) serve as directors. Jeffrey Benjamin serves as Independent Chairman (as of January 2025, replacing Apollo's David Sambur). Apollo's majority shareholding provides effective control over shareholder votes requiring simple majority.",
+      "material_assets_or_functions": [
+        "Parent entity for consolidated group",
+        "Publicly traded equity vehicle",
+        "Ultimate beneficial ownership consolidation point",
+        "SEC reporting entity"
+      ],
+      "change_of_control_implications": "Change of control triggers: (1) Debt acceleration rights under First Lien Credit Agreement, (2) Potential repricing or refinancing requirements, (3) NASDAQ delisting if taken private without proper procedure, (4) Executive employment agreement change-of-control provisions.",
+      "touch_test_failure_mode": "LEGAL/CONTRACTUAL: Altering control of parent triggers debt acceleration rights, requiring lender consent or full repayment of $1.3B term loan. REGULATORY: Sale or merger requires SEC disclosure, shareholder vote, and compliance with Delaware corporate law. OPERATIONAL: Equity structure change affects public market access and investor base.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "NASDAQ listing verified via public market data (RXT ticker active as of Feb 2026)",
+        "Apollo ownership: Yahoo Finance and ainvest.com articles citing 53-57% stake (Nov 2024-Jul 2025)",
+        "Board composition: Rackspace IR press release Jan 17, 2025 announcing board transitions",
+        "Change-of-control provisions: First Lien Credit Agreement disclosed in Form 8-K filed March 12, 2024"
+      ]
+    },
+    {
+      "entity_name": "Rackspace Finance, LLC",
+      "jurisdiction": "Inferred Delaware (typical for finance SPVs, not explicitly disclosed in available sources)",
+      "entity_type": "Limited Liability Company",
+      "ownership_structure": "Indirect wholly-owned subsidiary of Rackspace Technology, Inc. Owned by Rackspace Finance Holdings, LLC.",
+      "control_mechanisms": "Borrower entity under First Lien Credit Agreement. Control exercised through parent company ownership and credit agreement covenants.",
+      "material_assets_or_functions": [
+        "Borrower under $1.3B First Lien Term Loan (as of March 2024)",
+        "Central debt issuance vehicle for consolidated group",
+        "Subject to financial maintenance covenants"
+      ],
+      "change_of_control_implications": "Change of control at Rackspace Technology, Inc. level constitutes event of default under credit agreement, requiring lender consent or immediate repayment. Cannot be sold or transferred separately without triggering debt acceleration.",
+      "touch_test_failure_mode": "CONTRACTUAL (IMMEDIATE): Altering ownership triggers mandatory offer to repurchase debt or obtain lender consent. Debt sits at this entity level - cannot separate from parent without restructuring $1.3B obligation. LEGAL: Merger or dissolution requires lender approval per credit agreement negative covenants.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "First Lien Credit Agreement dated March 12, 2024 (referenced in Form 8-K and press release)",
+        "Rackspace IR press release March 12, 2024 describing Rackspace Finance, LLC as borrower",
+        "Form 8-K filed March 7, 2024 with credit agreement exhibits"
+      ]
+    },
+    {
+      "entity_name": "Rackspace Finance Holdings, LLC",
+      "jurisdiction": "Inferred Delaware (not explicitly disclosed in available sources)",
+      "entity_type": "Limited Liability Company",
+      "ownership_structure": "Indirect subsidiary of Rackspace Technology, Inc. Serves as intermediate holding company between parent and borrower entity.",
+      "control_mechanisms": "Provides limited-recourse guarantee of debt obligations. Intermediate layer between public parent and debt vehicle.",
+      "material_assets_or_functions": [
+        "Holdings entity for Rackspace Finance, LLC (borrower)",
+        "Limited-recourse guarantor of First Lien Credit Agreement obligations",
+        "Structural isolation layer between public parent and debt"
+      ],
+      "change_of_control_implications": "Subject to same change-of-control triggers as borrower entity due to guarantee obligations and credit agreement definitions.",
+      "touch_test_failure_mode": "CONTRACTUAL: Cannot be dissolved, merged, or sold without violating credit agreement structure. Serves as intermediate layer for limited-recourse guarantee - removing this entity would alter creditor recourse rights. LEGAL: Restructuring requires lender consent and potential debt refinancing.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Rackspace IR press release March 12, 2024 identifying Rackspace Finance Holdings, LLC as holdings entity",
+        "Credit agreement structure disclosed in Form 8-K March 7, 2024"
+      ]
+    },
+    {
+      "entity_name": "Rackspace Technology Global, Inc.",
+      "jurisdiction": "Inferred Delaware or Texas (formerly Rackspace Hosting, Inc., not explicitly disclosed)",
+      "entity_type": "Corporation",
+      "ownership_structure": "Wholly-owned subsidiary of Rackspace Technology, Inc. (formerly the target of Apollo's 2016 acquisition, now subsidiary after corporate reorganization for 2020 IPO).",
+      "control_mechanisms": "Operating subsidiary. Guarantor under debt instruments (both prior indentures and current credit agreement).",
+      "material_assets_or_functions": [
+        "Operating entity (inferred from name and history)",
+        "Party to indenture agreements as subsidiary guarantor (Feb 2021, Dec 2020)",
+        "Likely holds material customer contracts, IP, and operational licenses",
+        "Former pre-IPO parent entity (Rackspace Hosting, Inc.) renamed and repositioned as subsidiary"
+      ],
+      "change_of_control_implications": "As subsidiary guarantor under credit agreement, change of control at parent level triggers guarantee obligations and potential acceleration. Cannot be sold separately without release from guarantee (requires lender consent).",
+      "touch_test_failure_mode": "CONTRACTUAL: Divestiture requires release from debt guarantee, which requires lender consent and likely debt paydown or replacement guarantee. OPERATIONAL: If this entity holds customer contracts, IP, or data center leases, separation would require assignment/assumption agreements with customers and landlords. REGULATORY: If this entity holds compliance certifications (ISO, SOC, HIPAA), separation triggers recertification requirements.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Entity name found in subsidiary lists and contracts database (Justia)",
+        "Indenture agreements dated Feb 9, 2021 and Dec 1, 2020 listing as subsidiary guarantor",
+        "Historical context: Rackspace Hosting, Inc. was acquisition target in 2016, now renamed to Rackspace Technology Global, Inc. (per multiple sources including Wikipedia and acquisition documents)"
+      ]
+    },
+    {
+      "entity_name": "Rackspace US, Inc.",
+      "jurisdiction": "Inferred United States (Delaware or Texas, not explicitly disclosed)",
+      "entity_type": "Corporation",
+      "ownership_structure": "Wholly-owned subsidiary of Rackspace Technology, Inc.",
+      "control_mechanisms": "Operating subsidiary. Employing entity for U.S.-based personnel.",
+      "material_assets_or_functions": [
+        "U.S. employing entity (employment agreements with executives including DK Sinha, Mark Marino, Naushaza Molu list Rackspace US, Inc. as employer)",
+        "Named defendant in 2025 patent infringement lawsuit by Alpha Modus Ventures",
+        "Likely holds or operates under material regulatory compliance certifications",
+        "Inferred to control U.S. operations, customer relationships, and service delivery"
+      ],
+      "change_of_control_implications": "As employing entity, change of control may trigger executive change-of-control provisions in employment agreements. As defendant in active patent litigation, transfer of ownership could complicate litigation posture or settlement negotiations.",
+      "touch_test_failure_mode": "OPERATIONAL: Separation requires employee transfer (WARN Act notifications, benefit plan transfers, state employment law compliance). CONTRACTUAL: Executive employment agreements contain change-of-control provisions tied to parent entity, but employment is with this entity. LEGAL: Active litigation (Alpha Modus patent case) - sale or transfer could be construed as attempt to evade judgment or complicate enforcement.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Employment agreements filed as exhibits to SEC filings (per Justia contracts database)",
+        "Alpha Modus Ventures federal lawsuit filed June 2024 in Western District of Texas naming Rackspace US, Inc. as defendant (Globenewswire June 24, 2025)",
+        "Stock Titan and Globenewswire reports on patent litigation"
+      ]
+    },
+    {
+      "entity_name": "Inception Parent, Inc.",
+      "jurisdiction": "Delaware (typical for PE acquisition vehicles)",
+      "entity_type": "Corporation",
+      "ownership_structure": "Listed as subsidiary of Rackspace Technology, Inc. Originally formed as Apollo acquisition vehicle in 2016, retained in structure post-IPO.",
+      "control_mechanisms": "Legacy acquisition vehicle. Ownership inverted post-IPO (originally parent, now subsidiary).",
+      "material_assets_or_functions": [
+        "Legacy Apollo acquisition vehicle from 2016 take-private",
+        "No material operating function identified in current structure",
+        "Potentially holds historical tax attributes or serves structural purpose for Apollo's ongoing ownership"
+      ],
+      "change_of_control_implications": "Unclear materiality. If entity holds tax attributes (NOLs, basis step-ups from 2016 acquisition), change of control at parent level could trigger limitations on tax attribute usage under IRC Section 382.",
+      "touch_test_failure_mode": "TAX (CONDITIONAL): If entity holds tax attributes from 2016 transaction, ownership change exceeding 50% within 3-year period triggers IRC Section 382 limitations on NOL utilization. STRUCTURAL: Apollo may require this entity to remain in structure as condition of ongoing ownership or financing arrangements (unknowable without internal documents).",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Entity listed in subsidiary disclosures (TrustArc PDF and search results)",
+        "Inception Parent, Inc. identified as Apollo acquisition vehicle in 2016 merger agreement (per OEM Capital and Law Insider references)",
+        "Retained in post-IPO structure per subsidiary lists"
+      ]
+    },
+    {
+      "entity_name": "Inception Intermediate, Inc.",
+      "jurisdiction": "Delaware (typical for PE acquisition vehicles)",
+      "entity_type": "Corporation",
+      "ownership_structure": "Listed as subsidiary of Rackspace Technology, Inc. Part of Apollo's 2016 acquisition structure.",
+      "control_mechanisms": "Intermediate holding vehicle between Inception Parent and operating entities (inferred from name).",
+      "material_assets_or_functions": [
+        "Intermediate holding layer from 2016 Apollo acquisition",
+        "No material operating function identified",
+        "May serve tax or structural isolation purpose"
+      ],
+      "change_of_control_implications": "Similar to Inception Parent - potential tax attribute implications if entity holds step-up basis or other tax benefits from 2016 transaction.",
+      "touch_test_failure_mode": "TAX (CONDITIONAL): Ownership change may trigger tax attribute limitations. STRUCTURAL: Removal could violate Apollo's required ownership structure (unknowable without shareholder agreements or Apollo investment documents).",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Entity listed in subsidiary disclosures",
+        "Part of 2016 Apollo acquisition structure (per historical transaction documents)"
+      ]
+    }
+  ]
+}

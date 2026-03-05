@@ -1,0 +1,28 @@
+{
+  "unknowns_requests": [
+    {
+      "information_needed": "Customer retention and churn analysis by segment and cohort: Gross churn rate % (customers + revenue), net churn rate %, cohort retention curves (Year 1, 2, 3, 5+ retention by acquisition cohort), churn by segment (Public Cloud, Private Cloud, Government, UK Sovereign)",
+      "why_needed": "IMPLIED CHURN 21% from bookings/revenue math (14% bookings growth - 7% revenue decline = 21% leakage) suggests business is LEAKING customers faster than acquiring. Must confirm actual churn magnitude to assess: (1) Business sustainability (high churn = death spiral), (2) LTV/CAC economics (if Year 1 retention <70%, CAC not recovered), (3) Churn drivers (price, service, competitive) for targeted retention initiatives. Critical for valuation and turnaround assessment.",
+      "request_to": "Management / Chief Revenue Officer OR VP Customer Success",
+      "format": "Excel file with: Monthly gross churn % and $ (2022-2024), Monthly net churn % (gross churn minus upsells/expansions), Cohort analysis (for customers acquired Q1 2020, Q1 2021, Q1 2022, what % of customers and revenue retained after 12, 24, 36 months?), Churn by segment, Churn reasons (top 10 drivers from exit interviews), Competitive displacement analysis (where customers go when they leave), Retention initiatives and effectiveness"
+    },
+    {
+      "information_needed": "End-to-end cycle time analysis for Private Cloud: Sale-to-revenue lag by stage (procurement, deployment, migration), average and distribution, variance by customer size/complexity, bottleneck identification",
+      "why_needed": "Private Cloud 8-20 week cycle time is COMPETITIVE DISADVANTAGE vs public cloud (minutes-hours). Long cycle creates: (1) Working capital burden (CapEx in-flight before revenue), (2) Customer frustration (time-to-value gap), (3) Revenue volatility (lumpy deployments). Must quantify cycle time to assess: (1) Working capital requirements and cash flow, (2) Improvement opportunities (which stages are bottlenecks?), (3) Competitive positioning vs alternatives. Contributes to Private Cloud's 13% YoY decline.",
+      "request_to": "Management / VP Operations OR VP Private Cloud",
+      "format": "Project database export: For each Private Cloud customer deployment (2023-2024), Contract signed date, Hardware ordered date, Hardware received date, Deployment complete date (infrastructure ready), Customer go-live date (workloads migrated, revenue starts), Total cycle time and breakdown by stage (procurement days, deployment days, migration days), Customer size ($ annual contract value) and complexity (# servers, storage TB, applications migrated)"
+    },
+    {
+      "information_needed": "Sales-to-delivery handoff process metrics: Handoff cycle time (contract signature to delivery team engaged), rework rate (% requiring re-scoping or re-discovery), customer satisfaction at handoff, knowledge transfer completeness, escalation rate in first 90 days",
+      "why_needed": "Sales-to-delivery handoff is CRITICAL VALUE TRANSFORMATION where customer expectations set by sales meet delivery reality. Poor handoffs create: (1) Customer dissatisfaction at highest-risk period (first 90 days = highest churn), (2) Delivery team rework (wasted labor re-discovering requirements), (3) Expectation mismatch and escalations. Handoff quality affects Year 1 retention and upsell potential. Must quantify to assess churn drivers and operational improvement priorities.",
+      "request_to": "Management / VP Delivery Operations OR VP Sales Operations",
+      "format": "Handoff metrics report: Average handoff cycle time (days from contract to delivery kickoff), Handoff rework rate % (delivery team requests clarification or rescoping), Customer satisfaction survey results at 30/60/90 days post-handoff, Escalation rate in first 90 days (% of new customers escalating issues), Correlation between handoff quality scores and Year 1 retention, Root cause analysis of handoff failures"
+    },
+    {
+      "information_needed": "Cross-entity customer analysis: # and % of customers spanning multiple Rackspace entities (e.g., US + Government, US + UK, etc.), revenue from cross-entity customers, coordination mechanisms, customer satisfaction with cross-entity experience",
+      "why_needed": "Multi-entity fragmentation per Stage 1 creates: (1) Internal operational friction (duplicative overhead), (2) External customer friction IF customers span entities (multiple account teams, separate invoices, coordination complexity). Must determine: (1) How many customers affected by fragmentation (if <5%, fragmentation is primarily internal cost issue; if >20%, it's visible customer friction), (2) Are cross-entity customers highest-value (enterprises with global operations)? (3) Does fragmentation drive churn in multi-entity accounts? Affects churn analysis and organizational design.",
+      "request_to": "Management / CFO OR Chief Revenue Officer",
+      "format": "Customer entity mapping: List of customers with presence in multiple Rackspace entities, Revenue by customer by entity, Coordination mechanisms (single account exec? separate teams?), Customer satisfaction scores for cross-entity customers vs single-entity, Escalation rates and churn rates for cross-entity customers, Organizational model for managing cross-entity accounts"
+    }
+  ]
+}

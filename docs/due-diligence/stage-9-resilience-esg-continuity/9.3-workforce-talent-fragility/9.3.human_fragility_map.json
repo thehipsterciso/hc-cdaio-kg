@@ -1,0 +1,144 @@
+{
+  "sub_stage": "9.3",
+  "document_metadata": {
+    "title": "Human Fragility Map - People Dependencies That Create Operational Risk",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-16",
+    "scope": "Functions where loss of specific people halts operations, creates compliance risk, or destroys institutional knowledge"
+  },
+  "human_fragility_map": [
+    {
+      "function_or_capability": "FedRAMP-Authorized Government Services Security Operations",
+      "dependency_type": "KEY_TEAM + TRIBAL_KNOWLEDGE",
+      "failure_impact": "FedRAMP JAB authorization requires 'US citizen security team' (100% US citizens per Stage 1.5) for government cloud operations. Security team must: (1) Perform continuous monitoring of 800+ NIST 800-53 controls, (2) Respond to security incidents within defined timeframes (critical findings 1 hour, high findings 24 hours), (3) Generate compliance evidence for annual assessments, (4) Maintain security control effectiveness. Team possesses tribal knowledge of: FedRAMP-specific control interpretations (how JAB/agencies expect evidence formatted), Government customer security contexts (classification levels, agency-specific requirements), Incident escalation procedures to JAB/agencies. Loss of team halts: Government service delivery ($270-410M estimated revenue per Stage 5.1), FedRAMP authorization maintenance (no US citizen security team = authorization jeopardy), New government customer acquisition (cannot onboard without functional security operations).",
+      "replaceability": "LOW",
+      "why_dependency_persists": "CITIZENSHIP CONSTRAINT limits talent pool to US citizens only - cannot recruit globally. CLEARANCE REQUIREMENTS for some government customers require SECRET or TOP SECRET clearances = 6-18 month background investigation before productivity. SPECIALIZED EXPERTISE in FedRAMP compliance is scarce - estimated <5,000 FedRAMP-experienced security professionals nationally vs millions of general cybersecurity professionals. TRIBAL KNOWLEDGE of government customer contexts and JAB expectations cannot be documented fully - requires years of experience working with specific agencies. CONTINUOUS AUTHORIZATION model means no breaks in coverage - team must maintain operations 24/7/365 or authorization at risk. Replacement timeline: 6-18 months (citizenship verification + clearance processing + FedRAMP training + JAB relationship building) means cannot quickly backfill losses. With estimated 10-15% of company revenue dependent on FedRAMP (Stage 5.1), team is SINGLE POINT OF FAILURE for government business segment.",
+      "claim_type": "FACT",
+      "evidence_refs": [
+        "Stage 1.5: 'FedRAMP requires US citizen security team (100% US citizens)'",
+        "Stage 6.3: 'FedRAMP Authorization & Continuous Monitoring Platform' critical business service",
+        "Stage 5.1: Government revenue estimated $270-410M (10-15% of total)",
+        "FedRAMP program: 800+ NIST 800-53 controls, continuous monitoring, critical findings 1 hour reporting",
+        "Industry data: FedRAMP expertise scarce, clearance processing 6-18 months for SECRET/TOP SECRET",
+        "Stage 1.5: 'Change of control INVALIDATES FedRAMP immediately' demonstrates authorization fragility"
+      ]
+    },
+    {
+      "function_or_capability": "UK Sovereign Services Isolated Operations Team",
+      "dependency_type": "KEY_TEAM + TRIBAL_KNOWLEDGE",
+      "failure_impact": "UK Sovereign Services requires 'UK-based, UK support personnel only' and is 'ARCHITECTURALLY ISOLATED from Rackspace Technology global network' per Stage 1.5. UK team must: (1) Operate isolated infrastructure without global team support, (2) Maintain VMware Sovereign Cloud certification compliance, (3) Support UK government, NHS, police, FCA-regulated customers with Class V risk data, (4) Respond to incidents using UK-only resources. Team possesses tribal knowledge of: UK data sovereignty interpretation and enforcement, NHS Class V risk data handling procedures, BT partnership coordination (UK-specific communication infrastructure), VMware Sovereign Cloud certification requirements. Loss of team halts: UK Sovereign customer service delivery (<$135M revenue per Stage 5.1, launched March 2024), VMware Sovereign Cloud certification maintenance (cannot operate without compliant team), New UK customer acquisition (cannot onboard without operational team), BT partnership value realization (team manages partnership relationship).",
+      "replaceability": "LOW",
+      "why_dependency_persists": "GEOGRAPHIC CONSTRAINT limits talent to UK-domiciled personnel only - cannot use global Rackspace workforce. ISOLATION MANDATE per March 2024 announcement means 'integration with global operations PERMANENTLY PROHIBITED' - UK team must be self-sufficient. NASCENT SEGMENT (launched March 2024) means limited team size and no succession depth - likely <20 personnel for entire segment. SPECIALIZED COMPLIANCE knowledge of UK government/NHS/police/FCA requirements scarce in market. CANNOT LEVERAGE GLOBAL RESOURCES - if UK team short-staffed or lacks expertise, PROHIBITED from bringing in non-UK personnel. Replacement timeline: 3-6 months (UK hiring, security clearances, training) but CONSTRAINED BY SMALL UK TALENT POOL for sovereign cloud expertise. Segment at risk: Revenue <$135M insufficient to justify large team = tight staffing = high fragility. If team attrition exceeds replacement capacity, segment becomes INOPERABLE and must be DISCONTINUED (Exchange precedent Stage 8.1).",
+      "claim_type": "FACT",
+      "evidence_refs": [
+        "Stage 1.5: 'UK Sovereign: Platforms and support teams are isolated from Rackspace Technology global network'",
+        "Rackspace announcement March 27, 2024: 'Integration with global operations PERMANENTLY PROHIBITED'",
+        "Stage 2.1: UK Sovereign <$135M revenue estimate, launched March 2024",
+        "Stage 6.3: 'UK Sovereign Infrastructure & Isolation Stack' - architecturally isolated",
+        "Target customers: UK government, NHS (Class V risk data), police, FCA-regulated financial services",
+        "VMware Sovereign Cloud certification January 2026 - compliance-critical for market credibility"
+      ]
+    },
+    {
+      "function_or_capability": "VMware Infrastructure Architects and Operations Specialists",
+      "dependency_type": "KEY_TEAM + TRIBAL_KNOWLEDGE",
+      "failure_impact": "Private Cloud $1,055M revenue (39% of total, 40-50% of operating income per Stage 5.1) runs on VMware vSphere/vCenter. VMware team must: (1) Operate customer VMs and manage vCenter/ESXi infrastructure, (2) Respond to VMware-specific incidents (vCenter failures, ESXi crashes, vSAN storage issues), (3) Manage Broadcom/VMware licensing and support relationship post-acquisition, (4) Navigate VMware 200-300% price increases and customer migrations. Team possesses tribal knowledge of: Customer-specific VMware configurations (10+ years some enterprise accounts per Stage 9.2), VMware workarounds for technical debt and aging infrastructure, Broadcom relationship management post-acquisition, Customer VM dependencies and application architectures. Loss of team halts: Private Cloud service delivery to VMware customers (estimated 80-90% of $1,055M Private Cloud), Incident response for VMware failures (cannot troubleshoot without expertise), Customer migrations and expansions (cannot deploy without VMware knowledge), Broadcom relationship management (pricing negotiations, support escalations).",
+      "replaceability": "LOW",
+      "why_dependency_persists": "SPECIALIZED EXPERTISE in VMware vSphere/vSAN/NSX at scale is scarce - estimated 10+ years experience required for senior roles. TRIBAL KNOWLEDGE of customer environments accumulated over years - cannot be documented fully. BROADCOM ACQUISITION complexity (200-300% price increases per Stage 6.2) creates unique navigation challenges requiring vendor relationship expertise. CUSTOMER RELATIONSHIP DEPENDENCIES - Fortune 500 accounts with $20-50M annual revenue have 5-10 year engineer relationships per Stage 9.2, customer may follow engineer to competitor if relationship breaks. CERTIFICATION REQUIREMENTS - VMware Certified Professional (VCP) and advanced certifications require training and experience. Replacement timeline: 6-12 months (recruiting + onboarding + customer environment learning per Stage 9.2) during which team understaffed. TALENT MARKET COMPETITION - AWS/Azure/Google/Nutanix actively recruiting VMware experts to support customer migrations FROM VMware. With CapEx declining 25% (Stage 5.1), cannot invest in redundancy or training programs = team fragility increases.",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 5.1: Private Cloud $1,055M revenue (39% of total), 40-50% of operating income",
+        "Stage 6.2: VMware dependency $1,055M revenue at risk, Broadcom price shock $100-210M annually",
+        "Stage 6.3: 'VMware vSphere/vCenter Private Cloud Virtualization Platform' - foundational infrastructure",
+        "Stage 9.2: 'Senior engineers have 5-10 year relationships with largest customers ($20-50M revenue each)'",
+        "Stage 9.2: Key personnel exodus - time-to-hire 3-6 months + onboarding 3-6 months = 6-12 month gap",
+        "Industry reality: VMware expertise scarce, Broadcom acquisition creating expert exodus to competitors"
+      ]
+    },
+    {
+      "function_or_capability": "AWS/Azure/Google Cloud Certified Architects and Operations Engineers",
+      "dependency_type": "KEY_TEAM + TRIBAL_KNOWLEDGE",
+      "failure_impact": "Public Cloud $1,683M revenue (61% of total per Stage 5.1) depends on hyperscaler-certified engineers. Cloud team must: (1) Architect customer environments on AWS/Azure/Google using native services, (2) Operate hyperscaler infrastructure via APIs and management consoles, (3) Respond to incidents involving complex cloud networking, IAM, serverless architectures, (4) Navigate hyperscaler partner programs and maintain Advanced Partner/CSP status. Team possesses tribal knowledge of: Customer-specific cloud architectures (proprietary service dependencies, integration patterns), Hyperscaler partner program nuances (credit structures, technical support escalations), Incident response for cloud-native failures (Lambda timeouts, DynamoDB throttling, Azure AD issues), Customer application contexts enabling effective troubleshooting. Loss of team halts: Public Cloud service delivery ($1,683M revenue at risk), Incident response for hyperscaler infrastructure issues, Customer onboarding and migrations (cannot architect without cloud expertise), Hyperscaler partner relationship management (Advanced Partner/CSP status maintenance).",
+      "replaceability": "MEDIUM",
+      "why_dependency_persists": "CERTIFICATION REQUIREMENTS - AWS/Azure/Google professional/expert certifications require training and exam passage. SPECIALIZED KNOWLEDGE of hyperscaler-proprietary services (AWS Lambda/DynamoDB, Azure Functions/Cosmos DB, Google BigQuery/Firestore) is specific to each cloud - not transferable. CUSTOMER ARCHITECTURE CONTEXT - engineers understand customer application dependencies enabling effective support. HYPERSCALER RELATIONSHIP KNOWLEDGE - partner program mechanics, technical support escalation procedures, credit negotiation contexts. Replacement timeline: 3-6 months recruiting + 3-6 months onboarding = 6-12 month gap per Stage 9.2. TALENT MARKET HIGHLY COMPETITIVE - ISC2 reports 3.5M global unfilled cybersecurity positions, cloud architects in highest demand. HYPERSCALERS ACTIVELY RECRUITING - AWS/Azure/Google target Rackspace engineers to support customer migrations TO hyperscaler-direct. NEGATIVE EMPLOYER BRAND from security incidents (three in 36 months per Stage 8.1) requires 20-40% salary premium to recruit per Stage 9.2. With baseline Public Cloud churn 15-25% (Stage 5.1), team attrition accelerates customer loss - customers follow engineers or lose confidence in Rackspace capability.",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 5.1: Public Cloud $1,683M revenue (61% of total)",
+        "Stage 6.2: AWS $500-700M, Azure $500-700M, Google $150-350M revenue dependencies",
+        "Stage 9.2: Time-to-hire 3-6 months + onboarding 3-6 months for senior technical roles",
+        "Stage 9.2: 'ISC2 reports 3.5M global unfilled cybersecurity positions' - talent scarcity",
+        "Stage 8.1: Three incidents in 36 months damages employer brand, recruiting difficulty",
+        "Stage 9.2: '20-40% salary premium above market to overcome negative perception' post-incidents",
+        "Stage 5.1: Public Cloud baseline churn 15-25% mid-market - team attrition accelerates customer loss"
+      ]
+    },
+    {
+      "function_or_capability": "Platform Infrastructure Architects (Billing, IAM, Monitoring, Provisioning Systems)",
+      "dependency_type": "KEY_PERSON + TRIBAL_KNOWLEDGE",
+      "failure_impact": "Eight 'untouchable platforms' identified in Stage 6.3 as single points of failure affecting $2.7B revenue realization (billing), all operations (IAM), service quality (monitoring), customer onboarding (provisioning). Platform architects must: (1) Maintain platform operational stability - cannot change without catastrophic blast radius, (2) Troubleshoot platform failures - platforms are 'SINGLE POINT OF FAILURE' per Stage 6.3, (3) Navigate platform vendor relationships (hyperscaler APIs, commercial software vendors), (4) Document platform architecture and dependencies (currently insufficient per Stage 6.3). Architects possess tribal knowledge of: Platform integration points and dependencies - 'tightly coupled to multiple backend systems', Undocumented logic and edge case handling - 'platforms contain undocumented logic accumulated over years', Vendor relationship contexts - personal contacts for escalations, Historical incident patterns and resolution procedures. Loss of architects halts: Platform troubleshooting and incident response (no one else understands platforms), Platform changes and upgrades (too risky without architect knowledge), Platform vendor management (escalation procedures and relationship contexts lost), Platform documentation efforts (tribal knowledge walks out door).",
+      "replaceability": "VERY LOW",
+      "why_dependency_persists": "EXTREME COMPLEXITY of platforms supporting $2.7B revenue with 'tight coupling' and 'high change risk' per Stage 6.3. POOR DOCUMENTATION - Stage 6.3 explicitly notes platforms have 'undocumented logic', 'tribal knowledge', 'customer-specific customizations'. LIKELY CUSTOM-BUILT - billing reconciliation across three hyperscaler APIs with 100+ entity revenue attribution likely custom code, not commercial software. ARCHITECT CONCENTRATION - platforms may have SINGLE architect or very small team given complexity. NO DISCLOSED REDUNDANCY - Stage 6.3 identifies platforms as 'SINGLE POINTS OF FAILURE' with no hot standby or backup systems mentioned. Replacement timeline: 12-24+ months to develop equivalent platform expertise from scratch - must reverse-engineer undocumented systems through operational failures. CANNOT REPLACE DURING CRISIS - if platform fails and architect unavailable, may be UNRECOVERABLE (billing system failure Stage 9.2 shows manual backup requires 10-50X staff time). Platform architects are UNRECOGNIZED SINGLE POINTS OF FAILURE - invisible to external observers but EXISTENTIAL to operations.",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 6.3: Eight 'untouchable platforms' identified as single points of failure",
+        "Stage 6.3: 'Platforms contain undocumented logic, customer-specific customizations, tribal knowledge'",
+        "Stage 6.3: Billing 'SINGLE POINT OF FAILURE for $2,738M revenue realization'",
+        "Stage 9.2: Billing system failure - manual backup requires '10-50X staff time', '2-5% error rate'",
+        "Stage 6.3: 'No disclosed evidence of platform redundancy or DR capability'",
+        "Stage 6.5: Technical debt likely includes 'poor documentation, tribal knowledge, undocumented configurations'",
+        "Stage 9.2: Platform failures affect ALL customers simultaneously - systemic risk"
+      ]
+    },
+    {
+      "function_or_capability": "Support Staff Cross-Functional Coordination for Customer Issue Resolution",
+      "dependency_type": "KEY_TEAM + TRIBAL_KNOWLEDGE + VENDOR_EMBEDDED",
+      "failure_impact": "Customer support resolution requires coordinating 'dozens of engineers' across billing/delivery/engineering per Stage 4.5 BBB complaints. Support staff must: (1) Route customer issues to correct function without formal routing system, (2) Negotiate prioritization across functions without authority to compel, (3) Track resolution across unintegrated systems manually, (4) Maintain pressure until resolution through informal relationships. Staff possesses tribal knowledge of: Who to contact in each function for different issue types, How to escalate effectively without formal authority, Customer account contexts and histories, Which approaches work for cross-functional coordination. Loss of staff halts: Customer issue resolution (coordination networks break), Cross-functional troubleshooting (informal pathways lost), Customer escalation handling (relationships and contexts lost), 'Fanatical Support' delivery (coordination heroics no longer possible).",
+      "replaceability": "MEDIUM",
+      "why_dependency_persists": "NO FORMAL AUTHORITY - support lacks VP Support or empowered coordinator per Stage 4.1, must rely on informal relationships and persuasion. NO UNIFIED TICKETING - cross-functional issues span multiple unintegrated systems requiring manual coordination. NO SLAs FOR CROSS-FUNCTIONAL RESPONSE - cannot compel other functions to respond within timeframes. COORDINATION NETWORKS ARE PERSONAL - built through individual relationships over time, not systematized. ALREADY DECLINING SATISFACTION - Trustpilot 'consistently worse' 2024 per Stage 4.5 suggests support under stress. Replacement timeline: 3-6 months to develop cross-functional networks and learn coordination pathways. TURNOVER CREATES DEATH SPIRAL - burnout from heroic coordination drives attrition (Stage 4.5 'burnout risk HIGH'), attrition increases burden on remaining staff, increased burden drives more attrition. Support staff attrition DIRECTLY ACCELERATES CUSTOMER CHURN - unresolved issues drive customer exits, satisfaction decline threatens revenue retention.",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 4.5: BBB complaints - support coordinating 'dozens of engineers' for issue resolution",
+        "Stage 4.1: 'No VP Support, support lacks cross-functional authority'",
+        "Stage 4.5: 'Support burnout risk HIGH from heroic coordination requirements'",
+        "Stage 4.5: 'Trustpilot: consistently getting worse 2024' - satisfaction declining despite heroics",
+        "Stage 4.4: 'Support incentive on SLA response not resolution' - heroics required for unmeasured outcome",
+        "Stage 4.3: 'Support absorbing coordination failures through heroics'",
+        "Stage 5.1: Baseline churn 15-25%, service quality degradation accelerates to 30-40%"
+      ]
+    },
+    {
+      "function_or_capability": "Operations/Security Sustained Crisis Response During Multi-Month Incidents",
+      "dependency_type": "KEY_TEAM + TRIBAL_KNOWLEDGE",
+      "failure_impact": "Major incidents require operations/security teams to sustain 24/7 crisis response for extended periods: December 2022 Exchange ransomware (multi-month impact), September 2024 ScienceLogic zero-day (monitoring offline during response), October 2024 CL0P/Cleo (no public resolution timeline disclosed). Crisis response teams must: (1) Coordinate forensic investigation and remediation, (2) Manage vendor dependencies (ScienceLogic remediation externally controlled), (3) Maintain parallel normal operations while managing crisis, (4) Handle customer communications and regulatory notifications (FedRAMP, HIPAA, SEC). Teams possess tribal knowledge of: System failure modes and troubleshooting procedures, Vendor escalation procedures and relationship contexts, Incident response patterns from prior crises, Regulatory reporting requirements and agency expectations. Loss of teams during crisis: Incident response collapses mid-crisis (capacity insufficient), Forensic investigation quality degrades (expertise lost), Vendor coordination breaks down (relationship contexts lost), Regulatory notification failures (compliance jeopardy).",
+      "replaceability": "LOW",
+      "why_dependency_persists": "REACTIVE-ONLY POSTURE - no CRO or proactive risk governance per Stage 4.1, operations incentivized on incident response not prevention per Stage 4.4. SUSTAINED CRISIS PATTERN - three incidents in 36 months (Exchange, ScienceLogic, CL0P) per Stage 8.1 creates continuous crisis state. EXTENDED TIMELINES - multi-month incident response (Exchange precedent) exceeds sustainable on-call rotations. VENDOR DEPENDENCIES - ScienceLogic, others create external constraints operations cannot control. NO INCIDENT PREVENTION INVESTMENT - CapEx declining 25% (Stage 5.1), reactive spending pattern (Stage 4.2). Replacement timeline: Cannot replace during crisis (learning curve unacceptable), 6-12 months post-crisis to develop equivalent expertise. BURNOUT INEVITABLE - 'operations burnout risk HIGH' per Stage 4.5, extended crisis response unsustainable. ATTRITION AFTER CRISIS LIKELY - crisis responders who sustained organization through incident are MOST BURNED OUT and MOST LIKELY TO LEAVE, removing most valuable expertise. Operations attrition POST-CRISIS creates REDUCED CAPACITY FOR NEXT CRISIS = compounding fragility.",
+      "claim_type": "INFERENCE",
+      "evidence_refs": [
+        "Stage 8.1: Three incidents in 36 months - Exchange (Dec 2022), ScienceLogic (Sept 2024), CL0P (Oct 2024)",
+        "Stage 8.1: Exchange ransomware 'multi-month impact', service ultimately DISCONTINUED",
+        "Stage 4.5: 'Operations burnout risk HIGH from sustained crisis response'",
+        "Stage 4.1: 'No CRO, reactive risk posture structurally embedded'",
+        "Stage 4.4: 'Operations incentive on response not prevention'",
+        "Stage 5.1: CapEx declining 25% limits infrastructure resilience investment",
+        "Stage 9.2: Ransomware sequence shows 24-72 hour forensic investigation before recovery even begins"
+      ]
+    },
+    {
+      "function_or_capability": "CEO as Cross-Functional Coordinator and Conflict Adjudicator",
+      "dependency_type": "KEY_PERSON",
+      "failure_impact": "CEO is 'sole cross-functional coordinator' per Stage 4.1 with no operating committee or distributed coordination mechanism. CEO must personally: (1) Adjudicate sales-delivery conflicts over deal profitability, (2) Resolve BU resource allocation disputes, (3) Approve major deals ($100M+ TCV healthcare deal required CEO per Stage 4.5), (4) Establish reactive policies (Q4 2024 walk away policy, Q3 2024 sales refresh), (5) Handle customer escalations when coordination fails. Loss of CEO (vacation, illness, transition) halts: Cross-functional conflict resolution (no alternative adjudicator), Major deal approvals (no substitute authority), Strategic policy decisions (no delegation framework), Customer escalations (cannot reach decision-maker), Organizational coordination (throughput drops to near-zero per Stage 4.5). Three CEOs in three years (Jones, Maletira, Kandiah) demonstrates: CEO transitions create coordination collapse, each new CEO must rebuild informal networks and learn organizational context, execution degrades with each transition (FY2024 revenue -7%, margins -13%/-3%).",
+      "replaceability": "VERY LOW",
+      "why_dependency_persists": "AUTHORITY ARCHITECTURE centralizes all cross-functional authority with CEO per Stage 4.1 - no operating committee, no empowered coordinators, no delegation framework. COORDINATION LOAD EXCEEDS INDIVIDUAL CAPACITY - three CEOs in three years suggests role STRUCTURALLY UNSUSTAINABLE not individually challenging. INFORMAL NETWORKS REQUIRED - CEO coordination depends on personal relationships and tribal knowledge of organizational dynamics, not repeatable processes. BU PRESIDENTS LACK AUTHORITY despite P&L accountability - rational to escalate all conflicts to CEO creating bottleneck. 2023 REORGANIZATION created BU structure but DIDN'T REALLOCATE AUTHORITY - coordination void persists. Replacement timeline: 3-6 months CEO search + 6-12 months new CEO learning curve = 9-18 months total disruption. EACH TRANSITION COMPOUNDS FRAGILITY - three transitions in three years = cumulative knowledge loss severe, organizational coordination patterns never stabilize. CEO dependency is STRUCTURAL not fixable by better CEO hiring - system design requires heroic coordination no individual can sustain.",
+      "claim_type": "FACT",
+      "evidence_refs": [
+        "Stage 4.5: Three CEOs three years (Jones, Maletira, Kandiah) - FACT",
+        "Stage 4.1: 'CEO sole cross-functional coordinator, no operating committee'",
+        "Stage 4.2: 'CEO serial bottleneck limits organizational throughput'",
+        "Stage 4.5: 'CEO burnout risk EXTREME - role unsustainable by design'",
+        "Stage 4.5: Healthcare deal '$100M+ TCV required CEO personal involvement'",
+        "FY2024: Revenue -7%, Private Cloud -13%, Public Cloud -3% coincides with CEO transitions",
+        "Q4 2024: CEO walk away policy, Q3 2024: sales refresh - reactive CEO interventions"
+      ]
+    }
+  ]
+}

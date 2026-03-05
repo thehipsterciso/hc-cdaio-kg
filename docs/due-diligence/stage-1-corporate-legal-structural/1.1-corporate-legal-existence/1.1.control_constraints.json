@@ -1,0 +1,119 @@
+{
+  "control_constraints": [
+    {
+      "constraint_description": "First Lien Credit Agreement dated March 12, 2024: $1.3B term loan with springing financial maintenance covenant (5.0x super-priority net senior secured leverage ratio) applicable to revolving credit facility when utilization exceeds 35% of commitments.",
+      "constraint_type": "CONTRACTUAL",
+      "affected_entities": [
+        "Rackspace Finance, LLC (borrower)",
+        "Rackspace Finance Holdings, LLC (guarantor)",
+        "Rackspace Technology, Inc. (ultimate parent)",
+        "All subsidiary guarantors"
+      ],
+      "what_breaks_if_touched": "Altering ownership or control of Rackspace Technology, Inc. or borrower entity triggers change-of-control provisions requiring: (1) Mandatory offer to repay debt in full, or (2) Lender consent to ownership change. Failure to comply = immediate event of default and debt acceleration. Leverage covenant violation (if triggered) results in default, acceleration, and potential foreclosure on pledged collateral (substantially all assets). Interest rate: Term SOFR + 2.75% (floor 0.75%). Prepayment subject to make-whole premium until September 12, 2025. Maturity May 15, 2028.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "First Lien Credit Agreement terms disclosed in Rackspace IR press release dated March 12, 2024",
+        "Form 8-K filed March 7, 2024 with credit agreement as Exhibit 10.1",
+        "Globenewswire and Yahoo Finance coverage of March 2024 refinancing"
+      ]
+    },
+    {
+      "constraint_description": "Negative covenants under First Lien Credit Agreement restricting borrower and guarantors from: (1) incurring additional debt beyond specified baskets, (2) paying dividends or making restricted payments, (3) consolidating, merging, or selling substantially all assets, (4) creating additional liens beyond permitted liens.",
+      "constraint_type": "CONTRACTUAL",
+      "affected_entities": [
+        "Rackspace Finance, LLC",
+        "All subsidiary guarantors"
+      ],
+      "what_breaks_if_touched": "Attempting to: (1) Raise additional debt at operating subsidiary level without lender consent, (2) Pay dividends to Rackspace Technology, Inc. shareholders, (3) Sell material subsidiaries or asset portfolios (customer contracts, data centers, IP), or (4) Grant security interests to other creditors - all constitute covenant violations resulting in default and acceleration. Operating flexibility is constrained by these covenants until debt is repaid or refinanced.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Negative covenants described in Rackspace IR press release March 12, 2024",
+        "Standard first lien credit agreement structure (typical for leveraged loans)"
+      ]
+    },
+    {
+      "constraint_description": "Apollo Global Management majority ownership (53-57% of equity) provides effective control over shareholder decisions requiring simple majority, including: board elections, bylaw amendments, certain merger approvals, and other ordinary course matters.",
+      "constraint_type": "LEGAL",
+      "affected_entities": [
+        "Rackspace Technology, Inc."
+      ],
+      "what_breaks_if_touched": "Actions requiring shareholder approval cannot proceed without Apollo consent. Apollo can block or approve: (1) Board composition changes, (2) Executive compensation plans, (3) Equity incentive plans, (4) Certain M&A transactions. Dilutive equity issuances or secondary offerings could reduce Apollo's stake below majority, altering control dynamics and potentially triggering Apollo's contractual rights under investor agreements (if any exist - not disclosed publicly).",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Apollo ownership percentage: 53-57% per Yahoo Finance (Nov 2024) and ainvest.com (Jul 2025)",
+        "Standard Delaware corporate law majority voting thresholds"
+      ]
+    },
+    {
+      "constraint_description": "Board composition includes Apollo-affiliated directors (Aaron Sobel and Vikram Mahidhar), providing Apollo with direct governance participation and information rights. Board decisions require director votes; Apollo-affiliated directors can influence or veto board-level decisions.",
+      "constraint_type": "LEGAL",
+      "affected_entities": [
+        "Rackspace Technology, Inc."
+      ],
+      "what_breaks_if_touched": "Removing Apollo directors without Apollo consent would violate investor rights agreements (if any exist - typical for PE-backed public companies). Apollo representatives have access to board-level strategic discussions, financial information, and veto rights over material transactions. Diminishing Apollo board representation would require either: (1) Apollo voluntarily relinquishing seats, (2) Apollo's ownership falling below contractual thresholds (if specified in investor agreements), or (3) Shareholder vote to remove directors (which Apollo controls via majority stake).",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Board composition per Rackspace IR press release January 17, 2025",
+        "Apollo affiliations: Aaron Sobel (Principal, Apollo since 2011), Vikram Mahidhar (Operating Partner, Apollo since 2021)"
+      ]
+    },
+    {
+      "constraint_description": "NASDAQ listing requirements impose ongoing disclosure, governance, and financial compliance obligations. Delisting would require voluntary delisting application or going-private transaction complying with SEC Rule 13e-3.",
+      "constraint_type": "REGULATORY",
+      "affected_entities": [
+        "Rackspace Technology, Inc."
+      ],
+      "what_breaks_if_touched": "Taking company private or delisting requires: (1) Tender offer for all public shares, (2) Fairness opinion, (3) SEC Schedule 13E-3 filing, (4) Shareholder vote, (5) Compliance with appraisal rights. Maintaining listing requires: minimum bid price ($1.00), minimum market cap, audit committee, independent directors, annual meetings. Current stock price ($0.48 as of Feb 4, 2026) is below NASDAQ minimum - company may be at risk of delisting notice, which would trigger either price recovery plan or voluntary delisting.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "NASDAQ listing confirmed via public market data (RXT ticker)",
+        "Stock price $0.4757 per Yahoo Finance February 4, 2026",
+        "NASDAQ listing rules (publicly available)",
+        "SEC Rule 13e-3 going-private requirements (publicly available)"
+      ]
+    },
+    {
+      "constraint_description": "Subsidiary guarantee structure: multiple operating subsidiaries guarantee debt obligations. Release of guarantors requires lender consent or full debt repayment.",
+      "constraint_type": "CONTRACTUAL",
+      "affected_entities": [
+        "Rackspace Technology Global, Inc.",
+        "Rackspace US, Inc.",
+        "Other subsidiary guarantors (not fully enumerated in public sources)"
+      ],
+      "what_breaks_if_touched": "Selling, spinning off, or divesting any subsidiary guarantor requires: (1) Release from guarantee (lender consent required), or (2) Substitution of replacement guarantor with equivalent creditworthiness, or (3) Full repayment of debt. Operating subsidiaries cannot be separated from parent without addressing guarantee obligations. This constraint prevents asset sales, carve-outs, or restructurings that would diminish collateral pool securing lenders.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Guarantee structure described in March 12, 2024 press release: 'guaranteed on a senior secured basis, jointly and severally, by New Holdings and by certain of the New Borrower's subsidiaries'",
+        "Subsidiary guarantors comprise same entities that guaranteed prior credit facilities"
+      ]
+    },
+    {
+      "constraint_description": "Active litigation: Alpha Modus Ventures patent infringement lawsuit filed June 2024 in Western District of Texas against Rackspace US, Inc. Pending class action related to 2022 ransomware attack (most other suits resolved via arbitration/settlement).",
+      "constraint_type": "LEGAL",
+      "affected_entities": [
+        "Rackspace US, Inc. (patent defendant)",
+        "Rackspace Technology, Inc. (potential indemnitor or ultimate liability holder)"
+      ],
+      "what_breaks_if_touched": "Sale or transfer of Rackspace US, Inc. during pending litigation could: (1) Complicate litigation posture, (2) Trigger successor liability analysis, (3) Be perceived by court as attempt to evade judgment, (4) Require litigation stay or refiling against new owner. Material adverse judgment could create contingent liability affecting valuation or requiring disclosure in M&A transaction. Patent infringement involves FCoE technology potentially core to service offerings - adverse judgment could require licensing, design-around, or service discontinuation.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Alpha Modus lawsuit: Globenewswire June 24, 2025 and Stock Titan coverage",
+        "Ransomware litigation: SecurityWeek, Law Street Media, and San Antonio Express-News coverage (2022-2023)",
+        "Litigation status: most suits sent to arbitration or settled per San Antonio Express-News May 2023"
+      ]
+    },
+    {
+      "constraint_description": "Compliance certifications (ISO, SOC 2, HIPAA/HITRUST, FedRAMP) are entity-specific and likely held by operating subsidiaries. These certifications are contractually required by enterprise customers and government clients.",
+      "constraint_type": "OPERATIONAL",
+      "affected_entities": [
+        "Operating subsidiaries (likely Rackspace Technology Global, Inc. and Rackspace US, Inc.)"
+      ],
+      "what_breaks_if_touched": "Transferring assets or restructuring entities holding compliance certifications triggers recertification requirements. Customers with HIPAA BAAs, FedRAMP authorizations, or SOC 2 contractual requirements would need to re-approve new entity or certificate holder. Recertification timelines: SOC 2 (6-12 months), HITRUST (6-9 months), FedRAMP (12-18 months). During recertification gap, company cannot serve regulated customers (healthcare, government) - representing material revenue risk. Certifications likely cannot be 'transferred' but must be re-earned by successor entity.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Compliance certifications listed on Rackspace.com/compliance: ISO 27001, SOC 2, HIPAA/HITRUST, FedRAMP, FISMA, PCI",
+        "Certification entity-specificity and recertification requirements are standard in industry (ISO 27001 standard, FedRAMP guidelines, HITRUST CSF requirements)"
+      ]
+    }
+  ]
+}

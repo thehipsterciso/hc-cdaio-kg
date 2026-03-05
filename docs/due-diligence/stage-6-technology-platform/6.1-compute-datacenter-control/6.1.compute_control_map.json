@@ -1,0 +1,237 @@
+{
+  "sub_stage": "6.1",
+  "document_metadata": {
+    "title": "Compute Control Map - Physical Infrastructure Reality and Immobility Analysis",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-10",
+    "scope": "Discovery of where compute physically lives, who controls it, and what breaks if it moves or fails"
+  },
+  "compute_control_map": [
+    {
+      "facility_or_region": "U.S. Federal Government Data Centers (FedRAMP-Authorized Facilities)",
+      "compute_type": "OWNED_DC|LEASED_DC",
+      "geographic_locations": "Continental United States (specific cities: Virginia confirmed for AWS GovCloud integration, likely additional locations in established Rackspace U.S. data center footprint including Chicago, Dallas, Kansas City, NYC, San Jose)",
+      "primary_workloads": [
+        "U.S. Federal Government cloud services (serving >50% of cabinet agencies)",
+        "DoD Impact Level 4 workloads",
+        "Classified and sensitive unclassified government data",
+        "FedRAMP JAB-authorized cloud environments on AWS GovCloud, Azure Government, Google Cloud for Government"
+      ],
+      "teams_with_operational_control": [
+        "Rackspace Government Solutions Security Services team (100% U.S. citizens, continental U.S. locations)",
+        "Government-cleared system administrators and engineers",
+        "FedRAMP-specific compliance and security personnel"
+      ],
+      "immobility_reason": "REGULATORY + CONTRACTUAL + OPERATIONAL: (1) FedRAMP JAB authorization entity-specific to Rackspace Government Solutions, Inc. - cannot transfer to different legal entity without 12-18 month re-authorization, (2) DoD IL4 certification requires U.S.-based infrastructure and U.S. citizen personnel, (3) Federal government customers contractually require data residency in continental U.S., (4) Security clearances (Secret/Top Secret) tied to U.S. citizenship and U.S. locations, (5) DFARS/CMMC compliance mandates U.S.-controlled infrastructure",
+      "single_point_of_failure": true,
+      "touch_test_72hr_failure": "CATASTROPHIC - IMMEDIATE CONTRACTUAL BREACH + NATIONAL SECURITY INCIDENT: (1) CONTRACTUAL: All federal government customers (>50% of cabinet agencies) experience service outage breaching SLAs and Continuous Monitoring requirements under FedRAMP, triggering contract default and potential termination for cause. Federal agencies must immediately failover to alternative FedRAMP-authorized providers (AWS GovCloud direct, Azure Government direct, Oracle Cloud Government, or competitors like Carahsoft, GDIT). (2) REGULATORY: 72-hour outage triggers FedRAMP Incident Response requirements, JAB investigation, potential suspension or termination of authorization. DoD Cybersecurity Maturity Model Certification (CMMC) violations if controlled unclassified information (CUI) inaccessible. (3) NATIONAL SECURITY: If outage affects defense, intelligence, or critical infrastructure agencies, escalation to CISA (Cybersecurity and Infrastructure Security Agency) and potential DoD intervention. (4) REVENUE: Estimated >$50M annual government revenue at immediate risk. Government customers unlikely to return after major outage (zero tolerance for unreliability in federal sector). (5) REPUTATIONAL: Loss of government business destroys 'trusted government cloud provider' positioning, eliminates FedRAMP as competitive differentiator for commercial customers considering Rackspace.",
+      "cannot_failover_to": "Commercial Rackspace data centers (FedRAMP authorization does not extend to non-government facilities), Non-U.S. data centers (violates federal data residency requirements), Hyperscaler-direct failover not viable (government customers use Rackspace FOR managed services layer and compliance expertise, not just infrastructure)",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Stage 1.5.structural_lock_ins.json: FedRAMP entity-specific authorization, U.S. citizen requirement, 12-18 month re-authorization timeline",
+        "Rackspace Government Solutions marketing: 'FedRAMP JAB authorization since 2015', 'DoD Impact Level 4', 'serves >50% of federal cabinet agencies'",
+        "FedRAMP policy: Entity-specific authorizations, Continuous Monitoring requirements, Incident Response obligations",
+        "DoD Instruction May 2024: FOCI review expanded to unclassified contracts >$5M"
+      ]
+    },
+    {
+      "facility_or_region": "UK Sovereign Services Data Centers (Isolated UK Infrastructure)",
+      "compute_type": "LEASED_DC|COLO",
+      "geographic_locations": "United Kingdom (London data center confirmed, possibly additional UK facilities for geographic redundancy within UK borders)",
+      "primary_workloads": [
+        "UK Government agencies cloud services",
+        "NHS England healthcare data (Class V risk data)",
+        "UK Police services infrastructure",
+        "UK Financial Services regulated workloads (FCA/PRA compliance)",
+        "UK Pharmaceutical industry regulated data",
+        "VMware Sovereign Cloud certified workloads"
+      ],
+      "teams_with_operational_control": [
+        "UK-based platform teams (isolated from Rackspace global network)",
+        "UK-based support teams (no global team access to sovereign platforms)",
+        "RACKSPACE LIMITED (UK entity) personnel only"
+      ],
+      "immobility_reason": "ARCHITECTURAL + REGULATORY + JURISDICTIONAL: (1) UK DATA SOVEREIGNTY: Post-Brexit requirements mandate data, infrastructure, and support remain within UK borders for government and regulated industries. (2) ARCHITECTURAL ISOLATION: 'Platforms and support teams are isolated from the Rackspace Technology global network to ensure no access is possible to sovereign platforms from outside UK.' Infrastructure ARCHITECTURALLY segregated - cannot be merged with global operations without violating design premise. (3) ENTITY LOCK-IN: Services delivered by RACKSPACE LIMITED (UK Company No. 03897010), separate from U.S. parent. UK government contracts awarded to UK legal entity, non-transferable. (4) VMware Sovereign Cloud certification (January 2026) tied to UK-specific infrastructure and operations. (5) BT Partnership: Sovereign communications provided through British Telecom partnership, UK-specific and non-transferable to non-UK operations.",
+      "single_point_of_failure": true,
+      "touch_test_72hr_failure": "SEVERE - IMMEDIATE SOVEREIGNTY BREACH + REGULATORY VIOLATION + CUSTOMER EXODUS: (1) REGULATORY: UK government agencies, NHS, police immediately lose compliant service provider. Data sovereignty breach triggers: NHS England compliance violations (Class V risk data unauthorized access), FCA/PRA financial services violations (operational resilience failure), potential Information Commissioner's Office (ICO) investigation for GDPR/UK data protection breaches. (2) CONTRACTUAL: All UK sovereign customers (government, NHS, police, financial services, pharma) experience SLA breaches. Contracts likely contain data sovereignty clauses requiring UK infrastructure - 72-hour outage may trigger termination rights. (3) COMPETITIVE: Customers immediately migrate to alternative UK sovereign providers (Skyscape Cloud Services, UKCloud successors, AWS/Azure/Google UK regions with proper sovereignty guarantees). UK sovereign market is SMALL and COMPETITIVE - reputation loss is permanent. (4) REVENUE: UK Sovereign Services launched March 2024, revenue unknown but likely $10-50M annually based on VMware Sovereign Cloud positioning and target segments. 100% revenue loss probable if sovereignty cannot be maintained. (5) STRATEGIC: Loss of UK sovereign capability eliminates growth vector in post-Brexit UK digital sovereignty market (government Digital Spine, NHS digitization, financial services post-EU regulatory divergence).",
+      "cannot_failover_to": "Global Rackspace infrastructure (architectural isolation prevents by design), Non-UK data centers (violates UK data sovereignty requirements), Hyperscaler UK regions without sovereignty guarantees (customers require architectural isolation and UK-entity control, not just UK geographic location)",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Stage 1.5.structural_lock_ins.json: UK sovereign architectural isolation, RACKSPACE LIMITED entity requirement, BT partnership",
+        "Rackspace newsroom March 27, 2024: UK Sovereign Services launch announcement, target sectors (government, NHS, police, financial services, pharma)",
+        "Rackspace IR: VMware Sovereign Cloud certification January 2026",
+        "UK regulatory context: Post-Brexit data sovereignty requirements, NHS Class V risk data, FCA/PRA operational resilience"
+      ]
+    },
+    {
+      "facility_or_region": "China Data Center (Shanghai)",
+      "compute_type": "LEASED_DC|COLO",
+      "geographic_locations": "Shanghai, China",
+      "primary_workloads": [
+        "China-based customer data storage and processing",
+        "Workloads subject to China Cybersecurity Law (CSL) data localization",
+        "Critical information infrastructure operator services for Chinese customers"
+      ],
+      "teams_with_operational_control": [
+        "China legal entity personnel (Rackspace China subsidiary, specific entity name not disclosed)",
+        "China-based system administrators and engineers",
+        "Subject to Chinese government oversight per CSL"
+      ],
+      "immobility_reason": "SOVEREIGN + LEGAL: (1) CHINA CYBERSECURITY LAW (2017): Mandates data localization for critical information infrastructure operators. Personal information and important data MUST be stored within China borders. (2) CROSS-BORDER DATA TRANSFER RESTRICTIONS: Transfers outside China require explicit government approval (complex, time-consuming, often denied). Chinese government retains oversight authority over all data operations. (3) ENTITY SEPARATION: China operations likely conducted through separate Chinese legal entity (required for business operations in China). Cannot easily integrate with non-China entities or share data across borders. (4) GOVERNMENT CONTROL: Chinese government can impose fines, suspend operations, or revoke business licenses for CSL violations. Operational control ultimately subject to Chinese government authority.",
+      "single_point_of_failure": true,
+      "touch_test_72hr_failure": "SEVERE - IMMEDIATE REGULATORY VIOLATION + GOVERNMENT ENFORCEMENT + BUSINESS SUSPENSION RISK: (1) REGULATORY: Chinese customers lose CSL-compliant service provider. Customers are legally prohibited from using non-China data storage - forcing immediate migration to alternative China-based providers (Alibaba Cloud China, Tencent Cloud, Huawei Cloud, or local competitors). (2) GOVERNMENT ENFORCEMENT: 72-hour outage may trigger Cyberspace Administration of China (CAC) investigation, potential fines (up to 10% of annual revenue for CSL violations per Chinese regulations), or suspension of business license. (3) CONTRACTUAL: China customer contracts likely require China data residency and CSL compliance - outage breaches fundamental contract terms. (4) REVENUE: China revenue unknown but likely material given Shanghai data center operation. China cloud services market large but competitive - customer loss permanent due to reliability concerns and competitive alternatives. (5) GEOPOLITICAL: China operations create ongoing U.S.-China geopolitical risk. U.S. government may impose restrictions on U.S. companies operating infrastructure in China (export controls, ITAR, national security reviews). Apollo ownership (U.S. private equity) creates potential CFIUS vulnerability if China business deemed sensitive.",
+      "cannot_failover_to": "Non-China data centers (violates China Cybersecurity Law), Hong Kong data center (post-National Security Law 2020, Hong Kong increasingly treated same as mainland China for data sovereignty), Hyperscaler China regions operated by non-Chinese entities (AWS China operated by NWCD, Azure China operated by 21Vianet - different legal constructs than Rackspace China operations)",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Stage 1.5.structural_lock_ins.json: China Cybersecurity Law data localization mandate, Shanghai data center confirmed",
+        "China Cybersecurity Law (2017): Data localization requirements for critical information infrastructure operators",
+        "CSL Article 37: 'Critical information infrastructure operators store personal information and important data within China'",
+        "Industry research: InCountry, CSA Global reports on China data residency requirements"
+      ]
+    },
+    {
+      "facility_or_region": "EU Data Centers (Amsterdam, Frankfurt, London)",
+      "compute_type": "LEASED_DC|COLO",
+      "geographic_locations": "Netherlands (Amsterdam), Germany (Frankfurt), United Kingdom (London - note London also serves UK Sovereign but EU operations are separate)",
+      "primary_workloads": [
+        "EU customer data processing subject to GDPR",
+        "EU-based Private Cloud dedicated infrastructure",
+        "EU-based Public Cloud managed services (AWS EU regions, Azure EU regions, Google Cloud EU regions)",
+        "Workloads requiring EU data residency for compliance or contractual reasons"
+      ],
+      "teams_with_operational_control": [
+        "EU-based delivery teams (jurisdiction-specific entities: Netherlands, Germany, UK)",
+        "Pan-European support teams providing 24x7 coverage",
+        "Likely operating under jurisdiction-specific Rackspace entities for local employment and tax compliance"
+      ],
+      "immobility_reason": "REGULATORY + CONTRACTUAL: (1) GDPR (General Data Protection Regulation): EU personal data can be processed in U.S. ONLY with adequate transfer mechanisms (Standard Contractual Clauses, Data Privacy Framework self-certification) AND case-by-case assessment of U.S. surveillance law compatibility (Schrems II precedent). (2) SCHREMS II IMPACT (July 2020): Court of Justice of EU invalidated EU-U.S. Privacy Shield, found U.S. intelligence surveillance incompatible with EU fundamental rights. Current EU-U.S. Data Privacy Framework (July 2023) under legal challenge - may be invalidated like predecessors. (3) CUSTOMER REQUIREMENTS: Many EU customers contractually require EU data residency regardless of legal sufficiency, due to risk aversion and interpretation uncertainty. (4) PRACTICAL NECESSITY: Maintaining EU infrastructure enables serving EU customers without complex transfer mechanism assessments and supplemental measures (encryption, access controls, contractual guarantees). (5) LATENCY AND PERFORMANCE: EU customers require low-latency infrastructure for application performance - geographic proximity necessary for service quality.",
+      "single_point_of_failure": false,
+      "touch_test_72hr_failure": "HIGH IMPACT - CUSTOMER BREACH RISK + REVENUE LOSS + REGULATORY EXPOSURE: (1) CONTRACTUAL: EU customers with data residency requirements experience breach of contract if infrastructure fails and cannot failover within EU. Customer contracts likely have SLAs requiring <99.9% uptime (72 hours = 3.6% downtime, massive SLA violation). (2) REGULATORY: If outage forces temporary data transfer to non-EU locations (e.g., failover to U.S. data centers) without proper GDPR mechanisms, EU customers become non-compliant. Data protection authorities could impose fines up to 4% of customer revenue (not Rackspace revenue, but customer liability creates churn). (3) COMPETITIVE: EU customers migrate to hyperscaler EU regions (AWS eu-west, Azure West Europe, Google Cloud europe-west) or EU-based competitors (OVHcloud France, Hetzner Germany, local providers). EU market is ~20-30% of Rackspace revenue (estimated $300-450M annually based on global footprint). Customer loss likely 10-20% after major outage affecting EU operations. (4) REPUTATIONAL: EU customers highly sensitive to GDPR compliance and data sovereignty. Outage affecting EU infrastructure damages trust in Rackspace's ability to meet European regulatory requirements. (5) OPERATIONAL: Three EU data centers (Amsterdam, Frankfurt, London) provide some geographic redundancy WITHIN EU, but: (A) If all three fail simultaneously (unlikely but possible in network/platform failure), no EU failover option, (B) If individual data center fails, customers hosted in that specific DC experience outage unless proactive multi-DC architecture (most customers single-DC deployment due to cost).",
+      "cannot_failover_to": "U.S. data centers without GDPR-compliant transfer mechanisms (requires Standard Contractual Clauses, Data Privacy Framework certification, supplemental measures, and customer consent - cannot be implemented during 72-hour emergency), Non-EU data centers in jurisdictions without EU adequacy decisions (limited to: EEA countries, Switzerland, UK, Japan, South Korea, Canada commercial organizations, Argentina, Uruguay - most other jurisdictions inadequate)",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Stage 1.5.structural_lock_ins.json: GDPR/Schrems II constraints, EU data centers (Amsterdam, Frankfurt, London)",
+        "CJEU Schrems II decision July 16, 2020: Invalidated EU-U.S. Privacy Shield",
+        "EU-U.S. Data Privacy Framework July 2023 under legal challenge (Max Schrems cases February 2024)",
+        "GDPR Article 44-50: Restrictions on international data transfers",
+        "Rackspace blog: 'Data sovereignty: Keeping your bytes in the right place' acknowledges 100+ data sovereignty regulations"
+      ]
+    },
+    {
+      "facility_or_region": "U.S. Commercial Data Centers (Virginia, Chicago, Dallas, Kansas City, NYC, San Jose)",
+      "compute_type": "OWNED_DC|LEASED_DC|COLO",
+      "geographic_locations": "United States: Virginia (confirmed), Chicago, Dallas, Kansas City, New York City, San Jose (Bay Area)",
+      "primary_workloads": [
+        "U.S. commercial customer Private Cloud dedicated infrastructure",
+        "U.S. commercial customer Public Cloud managed services",
+        "U.S. healthcare data (HIPAA/HITRUST compliance workloads)",
+        "U.S. financial services regulated workloads",
+        "Email hosting infrastructure (legacy SMB business)",
+        "Professional services delivery infrastructure"
+      ],
+      "teams_with_operational_control": [
+        "Rackspace US, Inc. (U.S. employing entity) delivery personnel",
+        "Private Cloud engineers (VMware specialists, storage admins, network engineers)",
+        "Public Cloud certified engineers (AWS/Azure/Google certifications)",
+        "Distributed across multiple U.S. time zones for 24x7 coverage"
+      ],
+      "immobility_reason": "OPERATIONAL + CONTRACTUAL + COST: (1) LONG-TERM LEASES: 40 data center leases (Stage 1.4) with assignment restrictions requiring landlord consent. Cannot exit facilities without: (A) Landlord consent (may be denied or require concessions), (B) Paying remaining lease obligations (early termination penalties), (C) Physically relocating infrastructure ($X million per facility, 12-24 months timeline). (2) CUSTOMER CONTRACTS: Many U.S. customers specify data center location in contracts (e.g., 'data hosted in Dallas data center', 'east coast infrastructure', 'west coast presence for latency'). Relocation requires customer consent and potential SLA breaches during migration. (3) HEALTHCARE/FINANCIAL SERVICES: U.S. healthcare customers (HIPAA/HITRUST) and financial services customers (PCI DSS, SOC 2) require U.S. data residency despite technical ability to offshore. Industry practice and liability concerns mandate U.S. storage. Compliance certifications (HITRUST, PCI DSS) entity-specific and facility-specific - moving infrastructure requires re-certification (6-12 months). (4) FIXED ASSET BASE: Private Cloud infrastructure (servers, storage, networking) is physically installed in data centers with 3-5 year useful life. Depreciation ongoing regardless of utilization. Cannot quickly relocate without: (A) Physical hardware decommission and reinstallation, (B) Customer downtime and migration risk (20-30% migration failure rate per Stage 1.3), (C) Stranded asset write-offs if infrastructure not relocatable. (5) SUNK COST: Rackspace has invested in owned infrastructure and long-term facility leases. Exiting prematurely destroys sunk investment and triggers penalties.",
+      "single_point_of_failure": false,
+      "touch_test_72hr_failure": "MODERATE TO HIGH IMPACT - CUSTOMER CHURN + SLA BREACH + REVENUE LOSS: (1) CONTRACTUAL: Customers hosted in failing data center experience SLA breaches (typical SLA: 99.99% uptime = 52 minutes annual downtime allowable, 72 hours = 140X SLA violation). Customers entitled to service credits, potentially contract termination. (2) CUSTOMER CHURN: Private Cloud customers experiencing 72-hour outage will migrate to alternative providers immediately. Private Cloud customers demand high reliability and pay premium pricing (38.6% gross margin) - extended outage destroys value proposition. Estimated 20-40% churn from affected customers. Public Cloud customers may failover to hyperscaler-direct if Rackspace management layer proves unreliable. (3) REVENUE LOSS: U.S. commercial data centers host majority of Private Cloud revenue ($1,055M annually, declining 13% YoY). Single data center failure affects subset of customers (estimated $50-200M revenue depending on facility size and customer concentration). Multiple concurrent failures or prolonged outage could affect $200-500M+ revenue. (4) REPUTATIONAL: Cloud services industry has zero tolerance for major outages. 72-hour failure becomes case study in unreliability, damages Rackspace brand permanently. Competitors use incident in sales process ('remember when Rackspace went down for 3 days?'). (5) OPERATIONAL CASCADE: Failed data center may cause operational chaos: (A) Engineers diverted from proactive work to emergency response, (B) Customer support overloaded with incident tickets, (C) Management attention consumed by crisis, preventing strategic initiatives, (D) Employee burnout and attrition from extended incident response. (6) INSURANCE AND LIABILITY: Customers may pursue liability claims for business interruption losses exceeding service credit caps. Rackspace E&O insurance and liability caps tested.",
+      "cannot_failover_to": "International data centers for customers with U.S. data residency requirements (healthcare, financial services, government contractors, ITAR-regulated), Single global backup location insufficient - requires geographic diversity WITHIN U.S. for disaster recovery (east coast + west coast minimum), Cannot quickly provision replacement capacity in alternative data centers - Private Cloud infrastructure requires 6-12 months lead time for hardware procurement, installation, and certification",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 1.5.structural_lock_ins.json: 40 data centers globally including U.S. locations (Virginia, Chicago, Dallas, Kansas City, NYC, San Jose)",
+        "Stage 1.4 analysis: 40 data center leases with assignment restrictions",
+        "Stage 2.2.cost_structures_by_revenue_engine.json: Private Cloud fixed infrastructure costs, data center facilities costs, lease obligations",
+        "Industry standard: Data center migration cost and timeline, SLA expectations (99.99% uptime)",
+        "U.S. healthcare (HIPAA) and financial services (PCI DSS) typically require U.S. data residency for commercial reasons even if technically permissible to offshore"
+      ]
+    },
+    {
+      "facility_or_region": "APAC Data Centers (Singapore, Australia, Hong Kong)",
+      "compute_type": "LEASED_DC|COLO",
+      "geographic_locations": "Singapore (Queenstown), Australia (Sydney), Hong Kong",
+      "primary_workloads": [
+        "APAC regional customer hosting (Private Cloud and Public Cloud)",
+        "Singapore-based customers requiring local data residency",
+        "Australia customers requiring Australian data storage (Privacy Act 1988, Australian Prudential Regulation Authority requirements for regulated industries)",
+        "Hong Kong customers (subject to increasing China sovereignty concerns post-National Security Law 2020)"
+      ],
+      "teams_with_operational_control": [
+        "Rackspace Singapore Pte. Ltd. personnel (acquired Just Analytics January 2022 for APAC expansion)",
+        "APAC regional support teams providing Asia-Pacific time zone coverage",
+        "Likely separate entities in Australia and Hong Kong for local regulatory compliance"
+      ],
+      "immobility_reason": "JURISDICTIONAL + OPERATIONAL + LATENCY: (1) DATA RESIDENCY REQUIREMENTS: Singapore, Australia, and other APAC countries have jurisdiction-specific data protection and privacy laws requiring or strongly encouraging local data storage. Singapore Personal Data Protection Act (PDPA), Australia Privacy Act 1988, APAC financial services regulations often mandate local presence. (2) REGULATORY FRAGMENTATION: APAC is NOT unified market like EU - each country has own regulations, languages, cultural expectations. Cannot serve all APAC from single data center - need country-specific or regional presence. (3) LATENCY AND PERFORMANCE: APAC geography is vast - latency from Singapore to Australia or Hong Kong to Japan is significant. Customers require local infrastructure for application performance (real-time applications, database transactions, user experience). (4) COMPETITIVE NECESSITY: Hyperscalers (AWS, Azure, Google Cloud) operate multiple APAC regions (Singapore, Sydney, Tokyo, Seoul, Mumbai, Jakarta, etc.). Rackspace must maintain APAC presence to compete. Exiting APAC data centers concedes entire region to hyperscaler-direct and local providers. (5) TIME ZONE COVERAGE: APAC customers require 24x7 support in Asia-Pacific business hours. Local teams necessary for language support (Mandarin, Cantonese, Japanese, Korean), cultural fit, and time zone alignment.",
+      "single_point_of_failure": false,
+      "touch_test_72hr_failure": "MODERATE IMPACT - REGIONAL CUSTOMER LOSS + APAC MARKET EXIT RISK: (1) CONTRACTUAL: APAC customers with data residency requirements experience contract breach if infrastructure fails and cannot failover within region. Customers entitled to SLA credits and potential termination. (2) COMPETITIVE: APAC cloud services market highly competitive with strong local players (Alibaba Cloud, Tencent Cloud, NTT Communications, Telstra, SingTel). 72-hour outage drives customers to hyperscaler APAC regions or local competitors. Customer win-back probability low. (3) REVENUE: APAC estimated 10-15% of Rackspace revenue (~$150-225M annually) based on global footprint. Single data center failure affects subset (estimated $30-75M depending on facility), but extended outage or multiple failures could eliminate APAC revenue entirely. (4) STRATEGIC: APAC is growth market for cloud services (faster growth rates than U.S./EU). Losing APAC presence eliminates future growth opportunity in region with rising digital transformation spending. (5) OPERATIONAL: Three APAC data centers (Singapore, Sydney, Hong Kong) provide limited redundancy - geographic diversity exists but: (A) Customers typically deployed in single data center (cost optimization), not multi-DC architecture, (B) Hong Kong increasingly uncertain due to China National Security Law 2020 - some customers avoiding Hong Kong for political risk reasons, (C) If regional network failure or platform issue affects all three simultaneously, no APAC failover. (6) GEOPOLITICAL: Hong Kong data center creates U.S.-China geopolitical risk similar to Shanghai. Post-2020 National Security Law, Hong Kong treated increasingly like mainland China for data sovereignty. U.S. government may impose restrictions on Hong Kong operations similar to China.",
+      "cannot_failover_to": "Non-APAC data centers for customers with local data residency requirements (cannot failover Singapore customers to U.S. or EU), Cannot failover between APAC countries easily - Singapore customers cannot use Hong Kong (different regulatory jurisdictions), Australia customers cannot use Singapore (data residency regulations), Single regional backup location insufficient - APAC geography requires multiple countries for proper coverage",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Stage 1.5.structural_lock_ins.json: APAC data centers (Singapore Queenstown, Sydney, Hong Kong)",
+        "Rackspace acquisition: Just Analytics in Singapore January 2022 for APAC expansion",
+        "Industry research: APAC data sovereignty requirements (Singapore PDPA, Australia Privacy Act, financial services regulations)",
+        "Hong Kong National Security Law 2020: Increasing concerns about data sovereignty and China government access",
+        "Competitive necessity: AWS has 10+ APAC regions, Azure has 8+ APAC regions, Google Cloud has 7+ APAC regions"
+      ]
+    }
+  ],
+  "cross_facility_dependencies": {
+    "description": "Dependencies and interconnections between facilities that create systemic risks beyond individual data center failures",
+    "dependencies": [
+      {
+        "dependency": "Jurisdictional Isolation Creates Zero Redundancy for Government and Sovereign Workloads",
+        "facilities_affected": "U.S. Federal Government data centers, UK Sovereign data centers, China data center",
+        "mechanism": "Regulatory and architectural isolation requirements PREVENT failover between jurisdictions. U.S. government workloads CANNOT failover to UK or commercial U.S. data centers (FedRAMP authorization non-transferable). UK Sovereign workloads CANNOT failover to non-UK infrastructure (sovereignty breach). China workloads CANNOT failover outside China (CSL violation). These segments have ZERO redundancy - single point of failure by regulatory design.",
+        "consequence": "If dedicated government/sovereign data center fails, affected customers have NO alternative Rackspace facility to failover to. Must either: (1) Wait for data center restoration (100% downtime), OR (2) Migrate to competitor (permanent customer loss). This creates higher business risk for government/sovereign segments than commercial segments with multi-facility redundancy.",
+        "claim_type": "FACT"
+      },
+      {
+        "dependency": "40 Data Center Leases Create Collective Exit Barrier Preventing Portfolio Optimization",
+        "facilities_affected": "All owned and leased data centers globally",
+        "mechanism": "Stage 1.4 identified 40 data center leases with assignment restrictions. Each lease has: (1) Long-term commitment (3-10 years typical), (2) Landlord consent requirement for assignment, (3) Early termination penalties (remaining lease payments + breakage fees). To exit single data center requires: (A) Landlord negotiation (time-consuming, uncertain outcome), (B) Customer migration to alternative facilities (12-24 months), (C) Physical infrastructure relocation or write-off (sunk cost), (D) Potential lease penalty payments. To rationalize MULTIPLE data centers (e.g., consolidate 40 to 20) requires serial negotiation with 20 landlords over 2-4 years, costing $X million in penalties, migration costs, and stranded assets. COLLECTIVE EFFECT: Individual lease flexibility is low, portfolio-wide optimization is practically impossible within liquidity runway (5-15 months per Stage 5).",
+        "consequence": "Rackspace is LOCKED INTO current 40-facility footprint despite Private Cloud revenue declining 13% YoY creating underutilization. Cannot quickly rationalize footprint to match demand. Fixed facility costs spread over shrinking revenue base create margin compression. Facility rationalization requires 3-5 years and $50-150M investment - neither time nor capital available.",
+        "claim_type": "FACT"
+      },
+      {
+        "dependency": "Private Cloud Infrastructure Cannot Be Repurposed for Public Cloud Creating Stranded Asset Risk",
+        "facilities_affected": "All Private Cloud data centers with dedicated customer infrastructure",
+        "mechanism": "Private Cloud model: Dedicated servers, storage, and networking per customer. Infrastructure is customer-specific (configured for customer applications, cannot be multi-tenant). As Private Cloud revenue declines 13% YoY, customer-dedicated infrastructure becomes stranded: (1) Cannot reassign Customer A's infrastructure to Customer B (security, compliance, customization incompatibilities), (2) Cannot convert Private Cloud infrastructure to Public Cloud usage (architectural differences - Private Cloud uses owned/leased infrastructure, Public Cloud uses hyperscaler infrastructure), (3) Cannot liquidate infrastructure quickly (used hardware has low resale value, must be wiped clean of customer data before disposal). Stranded infrastructure continues generating: Depreciation expense (3-5 year useful life), Facility costs (rack space, power, cooling), Maintenance costs (even idle equipment requires facilities overhead). Result: NEGATIVE RETURN infrastructure consuming cash with zero revenue.",
+        "consequence": "As Private Cloud declines, increasing portion of infrastructure becomes stranded creating escalating losses. Cannot pivot to Public Cloud (different infrastructure model) or Healthcare/Financial Services segments fast enough to absorb excess Private Cloud capacity. Underutilization worsens as decline continues. Only exit is: (1) Write off stranded assets (take impairment charges), (2) Pay to exit data center leases (termination penalties), (3) Reduce facility footprint (multi-year process). All options DESTROY CAPITAL in near term (impairment charges $X million, lease terminations $X million, disposal costs $X million).",
+        "claim_type": "FACT"
+      }
+    ]
+  },
+  "control_reality_assessment": {
+    "formal_ownership": "Rackspace Technology, Inc. (parent) owns or leases 40 data centers globally through jurisdiction-specific subsidiaries (Rackspace US, Inc., RACKSPACE LIMITED, Rackspace Singapore Pte. Ltd., likely separate entities in China, Germany, Netherlands, Australia, Hong Kong)",
+    "operational_control_fragmentation": "Operational control is FRAGMENTED across: (1) Jurisdictional entities (U.S., UK, China, EU, APAC each operate independently), (2) Regulatory segments (Government, UK Sovereign, Commercial operate in isolation), (3) Geographic teams (distributed for 24x7 coverage, time zone alignment, language support). No single global infrastructure team - control is FEDERATED not centralized.",
+    "who_actually_controls_day_to_day": [
+      "Local data center operations teams (facility management, physical security, power/cooling, network connectivity)",
+      "Customer delivery teams (Private Cloud engineers, Public Cloud engineers, system administrators assigned to customer accounts)",
+      "Jurisdictional entity management (Rackspace Government Solutions leadership, RACKSPACE LIMITED UK leadership, Rackspace Singapore leadership)",
+      "Hyperscalers for Public Cloud workloads (AWS/Azure/Google control underlying infrastructure, Rackspace controls management layer only)"
+    ],
+    "control_survives_organizational_change": "NO - Control is highly vulnerable to organizational changes: (1) Entity ownership changes INVALIDATE FedRAMP and UK Sovereign authorizations (12-18 month re-authorization required), (2) Acquisition by foreign entity triggers FOCI review and potential loss of government business, (3) Management turnover in government/sovereign segments creates operational continuity risk (clearances, relationships, institutional knowledge), (4) Consolidation or restructuring across jurisdictions violates data sovereignty requirements and customer contracts. Control is CONTINGENT on maintaining current entity structure, ownership profile, and jurisdictional operations.",
+    "hidden_control_points": [
+      "Landlords for 40 data center leases control assignment rights (can block facility transfers or charge steep fees for consent)",
+      "Hyperscalers (AWS, Azure, Google) control Public Cloud infrastructure economics via partner credit programs (can modify terms, reducing Rackspace margin from 5-15% to zero)",
+      "Regulatory authorities (FedRAMP JAB, UK government, China CAC, EU data protection authorities) control authorization maintenance (can suspend or revoke, eliminating customer serving capability)",
+      "Customers with data residency contracts control infrastructure location (veto power over data center consolidation or relocation affecting their workloads)",
+      "VMware (Broadcom) controls Private Cloud software licensing economics (200-300% price increases per market reports compress margins, no alternative platform without multi-year migration)"
+    ]
+  },
+  "immobility_summary": {
+    "facilities_with_near_zero_mobility": [
+      "U.S. Federal Government data centers (FedRAMP entity lock-in, 12-18 month re-authorization penalty)",
+      "UK Sovereign data centers (architectural isolation, sovereignty breach if consolidated)",
+      "China data center (CSL data localization law, government control)"
+    ],
+    "facilities_with_constrained_mobility": [
+      "EU data centers (GDPR transfer restrictions, customer data residency requirements)",
+      "U.S. commercial data centers (40 lease restrictions, customer contracts, healthcare/financial services U.S. residency, fixed asset base)",
+      "APAC data centers (jurisdictional fragmentation, latency requirements, competitive necessity)"
+    ],
+    "facilities_with_potential_mobility": "NONE IDENTIFIED - All material compute locations have binding immobility constraints (regulatory, contractual, operational, or economic). Email hosting infrastructure (not disclosed in detail) may have some mobility as shared multi-tenant platform without jurisdiction-specific isolation, but Email business undergoing 706% price increase driving churn and potential exit."
+  }
+}

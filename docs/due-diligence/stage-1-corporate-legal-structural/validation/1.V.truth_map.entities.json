@@ -1,0 +1,66 @@
+{
+  "legal_operational_truth_map": {
+    "structurally_relevant_entities": [
+      {
+        "entity_or_construct": "Rackspace Technology, Inc. (Delaware C Corporation, NASDAQ: RXT)",
+        "why_structurally_relevant": "Public parent entity, SEC reporting company, ultimate consolidation point. Apollo holds 53-57% majority providing absolute governance control. Public shareholders 43-47% have economic exposure without control. Stock price $0.48 (market cap ~$120M) below NASDAQ $1.00 minimum creates delisting risk.",
+        "touch_test_what_breaks": "LEGAL/CONTRACTUAL: Change of control triggers First Lien debt acceleration ($1.3B mandatory repurchase or lender consent). REGULATORY: Sale/merger requires SEC disclosure, shareholder vote, Delaware law compliance. OPERATIONAL: Public market access and equity financing capability lost if delisted. Apollo cannot exit easily - 53% stake worth only $64-68M at current price.",
+        "evidence_refs": ["1.1.entities.json", "1.2.control_reality.json", "Stock price Yahoo Finance Feb 4, 2026"]
+      },
+      {
+        "entity_or_construct": "Rackspace Finance, LLC (Borrower) + Rackspace Finance Holdings, LLC (Guarantor)",
+        "why_structurally_relevant": "Debt issuance vehicles isolating $1.3B First Lien Term Loan from parent. Borrower-guarantor structure creates limited recourse. All subsidiary guarantors pledge assets. Creditors have first priority claim on substantially all assets. Covenant violations at this level trigger enterprise-wide default.",
+        "touch_test_what_breaks": "CONTRACTUAL (IMMEDIATE): Altering ownership triggers mandatory debt repurchase or lender consent requirement. Cannot separate from parent without restructuring $1.3B obligation. Dissolution violates credit agreement structure. Negative covenants prevent asset sales, additional debt, dividends, liens. Springing covenant (5.0x leverage) creates default risk if revolver drawn >35%.",
+        "evidence_refs": ["1.1.entities.json", "1.1.control_constraints.json", "1.2.control_reality.json"]
+      },
+      {
+        "entity_or_construct": "Rackspace Government Solutions, Inc. (U.S. Entity)",
+        "why_structurally_relevant": "Holds 23 FedRAMP authorizations (since 2015) and DoD Impact Level 4 certification. Serves >50% of cabinet agencies. ENTITY-SPECIFIC authorizations cannot transfer. Requires 100% U.S. citizen security team in continental U.S. Foreign acquisition triggers FOCI review (expanded May 2024 to all contracts >$5M). Government revenue $X million unknown but material.",
+        "touch_test_what_breaks": "LEGAL/OPERATIONAL: Change of control INVALIDATES FedRAMP immediately. Government customers lose authorized provider, forcing 12-18 month re-authorization with no service continuity. Foreign acquirer faces FOCI mitigation (proxy board eliminating control OR divestiture). U.S. citizen workforce requirement cannot be offshored. Government business separable only to U.S. buyer.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "1.4.contractual_constraints.json", "Rackspace newsroom FedRAMP authorization"]
+      },
+      {
+        "entity_or_construct": "RACKSPACE LIMITED (UK Company No. 03897010)",
+        "why_structurally_relevant": "Operates UK Sovereign Services (launched March 2024) for UK government, NHS, police, financial services. Infrastructure ARCHITECTURALLY ISOLATED from global Rackspace network by design to meet post-Brexit UK sovereignty requirements. VMware Sovereign Cloud certified January 2026. Partnership with BT for sovereign communications. Revenue $X million unknown.",
+        "touch_test_what_breaks": "LEGAL/REGULATORY/OPERATIONAL: Consolidation with non-UK operations IMMEDIATELY BREACHES UK data sovereignty requirements. UK government/NHS/police/regulated industry customers lose compliant provider. Cannot use non-UK personnel (teams isolated from global network). Cannot relocate data centers outside UK. BT partnership likely UK-entity-specific and non-transferable. Integration with global operations is PERMANENTLY PROHIBITED.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "Rackspace newsroom March 27, 2024", "UK Companies House registry"]
+      },
+      {
+        "entity_or_construct": "China Legal Entity (Specific Name Not Disclosed) + Shanghai Data Center",
+        "why_structurally_relevant": "Required for China operations under China Cybersecurity Law (2017) mandating in-country data storage and government oversight for critical infrastructure operators. Cross-border data transfers heavily restricted. May be joint venture with Chinese partner (typical for foreign cloud providers). Revenue $X million unknown.",
+        "touch_test_what_breaks": "LEGAL/SOVEREIGN: Consolidation with non-China entity or storing data outside China = IMMEDIATE VIOLATION of Cybersecurity Law. Chinese government can fine, suspend operations, revoke licenses. China customers legally prohibited from using non-China storage. Cannot eliminate entity without exiting China market entirely. Government retains oversight authority over operations.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "China Cybersecurity Law 2017", "Shanghai data center confirmed"]
+      },
+      {
+        "entity_or_construct": "Rackspace US, Inc.",
+        "why_structurally_relevant": "U.S. employing entity for executives and staff. Named defendant in Alpha Modus patent infringement lawsuit (June 2024, W.D. Texas) regarding FCoE technology potentially core to offerings. Likely holds or operates under material compliance certifications (SOC 2, HIPAA/HITRUST, ISO 27001).",
+        "touch_test_what_breaks": "OPERATIONAL: Separation requires employee transfer (WARN Act, benefit plan transfers, state employment law). CONTRACTUAL: Executive change-of-control provisions tied to parent but employment with this entity. LEGAL: Active patent litigation - sale could complicate settlement or be construed as judgment evasion. If entity holds certifications, transfer triggers 6-12 month recertification.",
+        "evidence_refs": ["1.1.entities.json", "Alpha Modus lawsuit Globenewswire June 24, 2025", "Executive employment agreements"]
+      },
+      {
+        "entity_or_construct": "Inception Parent, Inc. + Inception Intermediate, Inc. (Delaware)",
+        "why_structurally_relevant": "Legacy Apollo 2016 LBO acquisition vehicles retained post-2020 IPO. No apparent operating function. May hold tax attributes (NOLs, basis step-ups from 2016 transaction). Potentially required by Apollo for structural or tax reasons. Presence indicates incomplete post-IPO simplification.",
+        "touch_test_what_breaks": "TAX (CONDITIONAL): If entities hold tax attributes, ownership change >50% within 3 years triggers IRC Section 382 limitations on NOL utilization. STRUCTURAL: Apollo may require entities in structure per investor agreements (unknowable without internal documents). Removal could violate Apollo's contractual requirements or eliminate valuable tax assets.",
+        "evidence_refs": ["1.1.entities.json", "1.3.structural_debt_map.json", "Inception entities from 2016 Apollo LBO"]
+      },
+      {
+        "entity_or_construct": "Rackspace Singapore Pte. Ltd.",
+        "why_structurally_relevant": "Required for APAC operations. Acquired Just Analytics (January 2022). Separate legal entity necessary for local regulatory compliance, customer contracts, and operational licensing in Singapore/APAC region.",
+        "touch_test_what_breaks": "LEGAL/REGULATORY: Singapore operations cannot be conducted by U.S. entity without Singapore establishment. Customer contracts executed with Singapore entity require consent to transfer. Local regulatory authorizations and tax treatment entity-specific. Elimination requires exiting APAC market or restructuring all customer/vendor relationships.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "Rackspace acquired Just Analytics January 2022", "Singapore entity confirmed"]
+      },
+      {
+        "entity_or_construct": "Acquired Entities (Datapipe, Onica, TriCore, RelationEdge) - Integration Status Unknown",
+        "why_structurally_relevant": "$1.7B acquisition spend (2017-2019) creating multi-entity complexity. If entities remain separate: administrative burden, duplicate systems, customer fragmentation, technology platform multiplicity. If partially integrated: creates 'worst outcome' - paid full price, realized partial synergies, retained most complexity.",
+        "touch_test_what_breaks": "OPERATIONAL: Completing integration requires customer migrations (data loss risk, churn), employee terminations (redundancy), system cutover (outage risk), brand retirement. 20-30% failure rate for migrations. Abandoning integration accepts permanent 20-30% cost structure penalty. Carving out requires 'reverse integration' untangling shared dependencies.",
+        "evidence_refs": ["1.3.structural_debt_map.json", "1.3.path_dependency_risks.json", "Wikipedia acquisition history"]
+      },
+      {
+        "entity_or_construct": "Multi-Jurisdictional Entity Architecture (Portfolio Not Single Business)",
+        "why_structurally_relevant": "Rackspace operates through mandatory multi-jurisdictional structure: U.S. Government (Rackspace Government Solutions), UK Sovereign (RACKSPACE LIMITED isolated), China (local entity), EU Commercial (GDPR-compliant), U.S. Commercial, APAC (Singapore). Each operates under DIFFERENT LEGAL ENTITIES, DIFFERENT REGULATORY REGIMES, DIFFERENT CUSTOMER BASES, DIFFERENT INFRASTRUCTURE that cannot be shared. This is portfolio of separate businesses, not unified operation.",
+        "touch_test_what_breaks": "LEGAL/REGULATORY/CONTRACTUAL: Consolidation into single entity or jurisdiction = COMPLETE BUSINESS FAILURE in multiple markets. Loss of FedRAMP (government customers), UK Sovereign compliance (UK regulated industries), China operations (market exit), EU operations (GDPR violations). Cannot achieve integration synergies assumed in typical M&A. Must maintain separate P&Ls, management, infrastructure, support for each jurisdictionally-segregated business.",
+        "evidence_refs": ["1.5.false_mobility_assumptions.json", "1.5.structural_lock_ins.json", "Cross-stage synthesis of entity requirements"]
+      }
+    ]
+  }
+}

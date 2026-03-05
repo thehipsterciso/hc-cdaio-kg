@@ -1,0 +1,115 @@
+{
+  "sub_stage": "5.1",
+  "document_metadata": {
+    "title": "Uncertainty Register - Known Unknowns in Revenue Durability Assessment",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-09",
+    "scope": "Explicit documentation of what is UNKNOWN vs UNKNOWABLE regarding revenue quality and durability"
+  },
+  "uncertainty_register": [
+    {
+      "unknown": "Customer Concentration: Revenue contribution from top 10, 20, 50 customers",
+      "type": "UNKNOWN",
+      "why_unknown": "Rackspace has not disclosed customer concentration metrics in available materials. Standard 10-K disclosure requires reporting customers >10% of revenue, but no such disclosure found in analysis. Either (1) No customer exceeds 10% threshold, OR (2) Disclosure exists but was not accessible in materials reviewed. Customer count disclosed as '81,000+' (high count suggests diversification) but government serves '>50% of federal cabinet agencies' (small customer count, potentially high revenue per customer). Healthcare contract described as 'hundreds of millions TCV' indicates individual customer materiality possible.",
+      "decision_impact": "HIGH IMPACT on risk assessment. If top 10 customers represent 20-30% of revenue, creates CLIFF RISK—single large customer loss (M&A, bankruptcy, competitive displacement, service failure) materially impacts revenue with 30-90 days notice (month-to-month billing). If top 50 customers represent 40-60% of revenue, creates PORTFOLIO CONCENTRATION RISK. If diversified (top 50 <20% of revenue), reduces single-customer cliff risk but doesn't eliminate segment concentration risk (e.g., government sector concentration). UNKNOWN affects tail risk quantification—cannot assess maximum revenue loss from single event.",
+      "what_would_reduce_uncertainty": "Access to: (1) Customer-level revenue data with top 10/20/50/100 rankings, (2) Customer contract terms and renewal dates, (3) Customer tenure and churn history by cohort, (4) Sector/vertical concentration analysis, (5) Geographic concentration within segments. Standard diligence data room disclosure."
+    },
+    {
+      "unknown": "Actual Gross Churn Rate by Segment (customer losses before replacement)",
+      "type": "UNKNOWN",
+      "why_unknown": "Rackspace has not disclosed churn rates in available materials. Can INFER minimum gross churn from net revenue leakage math (21% leakage = at least 21% gross churn, likely higher accounting for downsell/contraction), but cannot precisely quantify. Can ESTIMATE churn by segment based on lock-in analysis (Stage 2.4 estimated SMB 25-40%, mid-market 15-25%, large enterprise 5-8%, government 5-10%, UK Sovereign 20-30%) but actual rates unknown. Email churn magnitude unknown (partners report 'immediate churn' and 'wave of churn' but percentage not quantified).",
+      "decision_impact": "MEDIUM-HIGH IMPACT on financial projections and customer lifetime value calculations. Gross churn determines: (1) Customer lifetime (20% churn = 5-year average, 25% = 4-year), (2) Acquisition requirements (must replace churned customers before achieving growth), (3) CAC payback viability (short lifetimes make acquisition uneconomical if payback >12-18 months), (4) Revenue trajectory volatility (high churn creates revenue instability). KNOWN: Churn is HIGH (21%+ minimum proven by leakage math). UNKNOWN: Exact magnitude by segment, trend over time, cohort differences. Cannot precisely quantify treadmill speed or lifetime economics without actual churn data.",
+      "what_would_reduce_uncertainty": "Access to: (1) Monthly/quarterly churn rates by segment for past 3-5 years, (2) Customer cohort retention curves (showing survival rates by tenure), (3) Churn decomposition (customer count vs revenue, voluntary vs involuntary), (4) Cohort LTV analysis showing actual realized customer lifetimes, (5) New customer first-year retention (early churn indicator). Management likely tracks internally but does not disclose publicly."
+    },
+    {
+      "unknown": "Bookings Composition: ARR vs TCV vs Professional Services breakdown",
+      "type": "UNKNOWN",
+      "why_unknown": "Management disclosed '14% YoY bookings growth' but did NOT disclose composition of bookings. Industry practices vary: some MSPs report ARR (annual recurring revenue) bookings only, some report TCV (total contract value) for multi-year deals, some include professional services (one-time project revenue). Cannot determine what proportion of Rackspace's 14% bookings growth converts to RECURRING REVENUE vs one-time revenue. Cannot assess timing of revenue realization (immediate vs deferred over multiple years). 21% net leakage suggests conversion issues, but cannot quantify whether problem is (1) bookings definition inflated, (2) conversion execution failing, or (3) combination.",
+      "decision_impact": "HIGH IMPACT on demand health assessment and revenue forecasting. If bookings are primarily ARR, then 14% growth indicates healthy recurring revenue pipeline despite 7% net decline (implies churn will moderate as new ARR onboards). If bookings include significant TCV (multi-year contracts counted upfront), then revenue realization deferred creating timing mismatch (14% bookings may become 3-5% annual revenue over contract term). If bookings include significant professional services, then growth is NON-RECURRING (project-based) and does NOT improve ARR base (may even indicate ARR bookings declining while professional services compensates). Cannot assess true demand trajectory without composition breakdown.",
+      "what_would_reduce_uncertainty": "Access to: (1) Bookings decomposition by type (ARR vs TCV vs professional services), (2) ARR bookings growth separately from total bookings, (3) Professional services conversion rate to managed services ARR (land-and-expand effectiveness), (4) Bookings-to-revenue conversion timeline analysis showing realization curves, (5) Backlog composition and burn rate. Standard SaaS/MSP metrics that growth-focused companies typically disclose."
+    },
+    {
+      "unknown": "Email Hosting Revenue Baseline and Post-Price-Increase Actual Churn",
+      "type": "UNKNOWN",
+      "why_unknown": "Email hosting revenue not separately disclosed. Estimated $135-275M (5-10% of total) based on typical MSP email mix and segment materiality, but actual revenue unknown. Post-price-increase churn magnitude unknown—partners report 'immediate churn' and 'wave of churn' but actual percentage not quantified. Price increase effective March 1, 2026, so full impact not yet visible in FY2024 financial results. Management has not disclosed email segment performance separately (suggesting may be immaterial <5% OR embarrassing to report).",
+      "decision_impact": "MEDIUM IMPACT on overall revenue trajectory and reputational damage assessment. If email revenue $200M (mid-estimate) and churn 60-70%, lose $120-140M revenue (4-5% of total revenue). If churn 40-50% (lower), lose $80-100M (3% of total). Both scenarios material but not existential. REPUTATIONAL IMPACT potentially larger than direct revenue impact—'706% price increase' negative publicity damages 'Fanatical Support' brand across all segments. Enterprise customers may question: 'If they did this to SMBs, what prevents similar treatment of us?' Trust erosion affects retention beyond email segment.",
+      "what_would_reduce_uncertainty": "Access to: (1) Email hosting revenue disclosed separately FY2023-2024, (2) Email customer count and ARPU (average revenue per user) trends, (3) Post-March 2026 churn data (requires Q1 2026 results not yet available), (4) Management commentary on email segment strategy and performance expectations, (5) Partner channel feedback on actual vs expected churn magnitude. Will become KNOWN after Q1 2026 earnings (estimated April 2026) unless management continues non-disclosure."
+    },
+    {
+      "unknown": "VMware Cost Pass-Through Decision and Customer Response",
+      "type": "UNKNOWN",
+      "why_unknown": "Broadcom VMware price increases (200-300%) occurred November 2023-2024. Estimated $100-210M annual cost increase for Rackspace. Management decision on cost pass-through not yet disclosed: (1) Full absorption (margin compression), (2) Full pass-through (customer price increases), (3) Partial hybrid. Customer response to any price increases not yet visible—implementation likely phased over 2024-2025 during customer renewal cycles. FY2024 results show Private Cloud margin 38.6% (pre-pass-through? or already compressed?), revenue declining 13% (pre-churn-acceleration? or already reflecting customer response?).",
+      "decision_impact": "VERY HIGH IMPACT on Private Cloud viability. Estimated $315-420M annual Private Cloud operating income at risk. If ABSORB costs fully, margin compresses from 38.6% to ~25-30% gross margin, operating margin from 30-40% to 15-20% or lower, eliminating most profitability. If PASS THROUGH costs (20-40% customer price increases), triggers customer exodus estimated 20-30% churn acceleration (customers justify $2-10M migration investment to avoid ongoing VMware premium). Hybrid creates BOTH margin compression AND churn acceleration (partial impact of both). NO GOOD OPTION—VMware shock forces choice between profitability destruction or revenue destruction. UNKNOWN: Which path management chose, customer response magnitude, timeline of impact realization.",
+      "what_would_reduce_uncertainty": "Access to: (1) Private Cloud customer pricing changes 2024-2025, (2) VMware license cost trend analysis, (3) Gross margin decomposition showing VMware impact, (4) Customer retention rates for customers receiving price increases, (5) Management communication on pass-through strategy. Requires detailed financial diligence including cost structure analysis and customer contract pricing review. Some information may become public in FY2025 results (estimated February 2027), but decision impact likely materializes earlier."
+    },
+    {
+      "unknown": "UK Sovereign Customer Acquisition Rate and Pilot-to-Production Conversion",
+      "type": "UNKNOWN",
+      "why_unknown": "Segment launched March 2024 (10 months old at analysis date). Revenue scale unknown (<$135M estimated, likely much lower in Year 1 of new market). Customer count unknown. Pilot vs production customer split unknown. Conversion rate from proof-of-concept to production deployment unknown. Competitive landscape unknown (AWS UK Sovereign Cloud status, other UK-only providers). Customer pipeline and sales momentum unknown. Segment immaturity means limited historical data available.",
+      "decision_impact": "MEDIUM IMPACT on growth narrative viability and investment return assessment. UK Sovereign is ONLY GROWTH INITIATIVE in otherwise declining portfolio (Public Cloud -3%, Private Cloud -13%, Email death spiral). If segment succeeds (reaches $100-150M revenue with 30-40% margin by Year 3-4), contributes $30-60M OI and validates compliance-moat business model internationally. If segment FAILS (unable to achieve critical mass, AWS competitive entry, service quality issues), $5-15M+ investment becomes sunk cost with zero recovery (architecturally isolated infrastructure cannot be repurposed). UNKNOWN whether segment on-track, stalled, or at-risk—too early to assess trajectory with confidence. Success probability estimate: 30-50% (high execution risk, competitive threat, new market dynamics).",
+      "what_would_reduce_uncertainty": "Access to: (1) UK Sovereign customer count, revenue, and pipeline by month since launch, (2) Customer type breakdown (government vs commercial, pilot vs production), (3) BT partnership economics and exclusivity terms, (4) Competitor analysis and market share estimates, (5) Customer satisfaction and Net Promoter Score tracking, (6) Investment committed and burn rate vs plan. Likely available through management discussion but requires direct access. Some information may emerge in FY2025 earnings if segment becomes material (>5% revenue) or management highlights strategically."
+    },
+    {
+      "unknown": "Professional Services Conversion Rate to Managed Services ARR",
+      "type": "UNKNOWN",
+      "why_unknown": "Professional services revenue not separately disclosed. Estimated $50-150M based on typical MSP mix and 14% bookings growth (which includes professional services component). Conversion rate from professional services project to ongoing managed services contract unknown. Industry norm 50-70% conversion for successful land-and-expand models, but Rackspace rate unknown. Time-to-convert also unknown (projects complete in 3-12 months, then customer decides on managed services—total sales cycle 6-18 months from initial professional services engagement to recurring ARR).",
+      "decision_impact": "MEDIUM-HIGH IMPACT on growth engine viability assessment. Professional services is CUSTOMER ACQUISITION VEHICLE—lose money or break-even on projects to win long-term managed services contracts. If conversion rate HIGH (60-70%), professional services is effective CAC (customer acquisition cost) investment despite low standalone margin. If conversion rate LOW (<40%), professional services DESTROYS value—spending on projects without generating recurring revenue follow-on. 21% net leakage suggests conversion may be failing—acquiring customers through professional services that churn quickly, or projects completing without managed services follow-on. Cannot assess growth engine health without conversion metrics.",
+      "what_would_reduce_uncertainty": "Access to: (1) Professional services revenue and margin separately disclosed, (2) Professional services bookings growth vs managed services bookings growth (decomposition), (3) Cohort analysis showing conversion rate by project type, (4) Time-to-convert distributions, (5) Converted customer retention rates (do professional services converts stay longer than direct-acquired customers?). Requires detailed sales pipeline and customer acquisition analysis. Management likely tracks conversion rates internally for sales effectiveness measurement."
+    },
+    {
+      "unknown": "Customer Acquisition Cost (CAC) and Payback Period by Segment",
+      "type": "UNKNOWN",
+      "why_unknown": "Sales and marketing expenses disclosed in aggregate ($X SG&A line item) but not allocated to customer acquisition specifically. Cannot quantify CAC per customer or per revenue dollar. Cannot assess CAC payback period (time to recover acquisition cost from customer revenue). Cannot determine whether customer acquisition is economically profitable (LTV > CAC) or value-destroying (LTV < CAC). Stage 4 identified sales booking unprofitable deals (adverse selection), suggesting CAC may exceed LTV for some customer cohorts.",
+      "decision_impact": "HIGH IMPACT on growth strategy viability and capital allocation assessment. If CAC payback >24 months and customer lifetime 4-5 years (implied by 20-25% churn), only 2-3 years of profitable customer relationship after payback—marginal LTV/CAC economics. If CAC payback >36 months, likely destroying value (CAC exceeds LTV). With 21% gross churn, acquiring $574M+ annually just to decline 7%—if acquisition uneconomical, spending hundreds of millions destroying value annually. Cannot assess whether growth achievable or advisable without CAC economics. UNKNOWN whether Rackspace CAN grow profitably or only unprofitably (adding customers that lose money lifetime).",
+      "what_would_reduce_uncertainty": "Access to: (1) Sales and marketing expense allocated to new customer acquisition vs existing customer retention, (2) CAC calculation by segment and channel, (3) Cohort LTV analysis showing actual realized customer value, (4) CAC payback period tracking by segment, (5) New customer cohort profitability analysis showing whether recent acquisitions profitable. Requires detailed sales operations and financial analytics. Standard SaaS/subscription company metrics but less commonly disclosed by infrastructure/MSP companies."
+    },
+    {
+      "unknown": "Deferred Revenue and Remaining Performance Obligations (RPO) Trends",
+      "type": "UNKNOWN",
+      "why_unknown": "Deferred revenue and RPO (contracted future revenue) not disclosed in available materials. Standard balance sheet item for subscription businesses, but either not present in excerpts reviewed or immaterial. Month-to-month billing (Stage 2.2) suggests LOW deferred revenue (customers prepay monthly not annually, creating minimal balance sheet liability). Multi-year government/enterprise contracts may create deferred revenue, but magnitude unknown. RPO disclosure would show contracted backlog giving forward revenue visibility.",
+      "decision_impact": "MEDIUM IMPACT on forward revenue visibility and bookings conversion assessment. If deferred revenue GROWING, indicates bookings converting to contracted future revenue (positive leading indicator). If deferred revenue FLAT or DECLINING, indicates bookings NOT converting to balance sheet commitments (confirms conversion concerns from 21% leakage). If RPO DISCLOSED and growing, provides revenue visibility and reduces forecast uncertainty. If RPO absent or declining, indicates LOW contractual revenue protection (month-to-month dominance). With month-to-month billing prevalent, likely deferred revenue is SMALL (immaterial), which INCREASES revenue volatility risk (no balance sheet buffer).",
+      "what_would_reduce_uncertainty": "Access to: (1) Deferred revenue balance sheet trends quarterly for 3+ years, (2) RPO disclosure showing total contracted future revenue, (3) Deferred revenue composition by segment (government annual contracts vs commercial monthly), (4) Revenue recognition policy details, (5) Contract asset/liability analysis. Standard 10-K/10-Q disclosures but may be condensed in public filings if immaterial. Full access to balance sheet and footnotes would resolve."
+    },
+    {
+      "unknown": "Government Revenue Absolute Dollar Amount and Specific Agency Concentration",
+      "type": "UNKNOWN",
+      "why_unknown": "Government revenue not separately disclosed as distinct line item. Subset of Private Cloud but exact allocation unknown. Estimated $270-410M (10-15% of total revenue) based on: (1) Government described as material to business, (2) Serves >50% of federal cabinet agencies (15 agencies), (3) FedRAMP investment and strategic emphasis, but actual revenue not disclosed. Which specific agencies are customers unknown (security classified likely). Revenue per agency unknown—if top 3-5 agencies represent 50% of government revenue, creates concentration risk.",
+      "decision_impact": "HIGH IMPACT on acquisition scenario analysis. If foreign buyer and government revenue $400M (high estimate) with 25-35% margin, lose $100-140M OI immediately (authorization invalidation). If domestic buyer and government revenue $270M (low estimate), still material but less existential. UNKNOWN: Precise dollar exposure to different acquisition scenarios. UNKNOWN: Which agencies are customers and their contract renewal dates—if large agencies up for renewal near acquisition timing, creates compounded risk (renewal uncertainty + acquisition uncertainty). Concentration within government sector amplifies cliff risk.",
+      "what_would_reduce_uncertainty": "Access to: (1) Government Solutions entity financial statements (revenue, operating income, customer count), (2) Agency customer list with revenue per agency (may be classified/restricted), (3) Contract terms, expiration dates, and renewal likelihood by agency, (4) Historical government segment growth and retention rates, (5) FedRAMP authorization scope and any limitations. Requires access to entity-level financial data and government customer details. Some information may be restricted for security reasons (agency identities, workload details)."
+    }
+  ],
+  "uncertainty_classification_summary": {
+    "total_unknowns_registered": 10,
+    "unknowns_resolvable_with_access": 10,
+    "unknowns_fundamentally_unknowable": 0,
+    "high_decision_impact_unknowns": 5,
+    "medium_decision_impact_unknowns": 5,
+    "low_decision_impact_unknowns": 0,
+    "uncertainty_impact_on_conclusions": "MODERATE impact on MAGNITUDE/TIMING of revenue deterioration, but LOW impact on DIRECTIONAL ASSESSMENT. Core diagnosis (revenue retention is constraint-based not loyalty-based, appears stable until triggered then collapses non-linearly, bookings growth masks deterioration) has HIGH CONFIDENCE despite unknowns. Unknowns primarily affect: (1) Tail risk quantification (customer concentration, government exposure to acquisition scenarios), (2) Acceleration timing (VMware pass-through, email churn magnitude, UK Sovereign trajectory), (3) Economics precision (CAC/LTV, cohort performance, segment profitability). KNOWN with high confidence: Revenue durability POOR, deterioration ACCELERATING, multiple failure modes IDENTIFIED. UNKNOWN: Exact speed of deterioration, precise magnitude of impacts, specific trigger timing. Unknowns do NOT reverse diagnosis, only affect precision of quantification."
+  },
+  "known_knowns_for_context": {
+    "high_confidence_facts": [
+      "21% net revenue leakage (FACT: 14% bookings - 7% revenue = 21 point gap)",
+      "Email 706% price increase triggered immediate churn (FACT: partner reports, effective March 2026)",
+      "Private Cloud declining 13% YoY fastest (FACT: disclosed segment performance)",
+      "Month-to-month billing universal (FACT: disclosed billing model, Stage 2.2)",
+      "Government authorization invalidates upon foreign ownership (FACT: FedRAMP regulations, Stage 1.5)",
+      "VMware 200-300% price increase occurred (FACT: public Broadcom actions)",
+      "CapEx declining 25%, headcount declining 12% (FACT: disclosed financial data)",
+      "Retention is lock-in-based not loyalty-based (HIGH CONFIDENCE: email natural experiment proves definitively)"
+    ],
+    "moderate_confidence_inferences": [
+      "Gross churn 21%+ annually (INFERENCE: from net leakage math, minimum bound)",
+      "Customer concentration material but unknown magnitude (INFERENCE: government sector concentration, healthcare contract materiality)",
+      "High-margin revenue least durable (INFERENCE: inverse correlation observed, mechanism understood)",
+      "Service quality degrading from understaffing (INFERENCE: headcount vs revenue, Stage 4 burnout risk)",
+      "Professional services conversion failing (INFERENCE: 21% leakage suggests acquisition not converting to retention)"
+    ],
+    "low_confidence_estimates": [
+      "Email revenue $135-275M (ESTIMATE: wide range, not disclosed)",
+      "Government revenue $270-410M (ESTIMATE: based on strategic importance and agency count)",
+      "Professional services revenue $50-150M (ESTIMATE: typical MSP mix)",
+      "Segment-specific churn rates (ESTIMATE: based on lock-in analysis, not actual data)"
+    ]
+  }
+}

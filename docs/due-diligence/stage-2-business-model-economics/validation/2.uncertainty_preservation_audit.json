@@ -1,0 +1,135 @@
+{
+  "uncertainty_preservation_audit": {
+    "total_unknowns_catalogued": 15,
+    "unknowns_by_category": {
+      "CUSTOMER_ECONOMICS": 5,
+      "PARTNER_TERMS": 3,
+      "MANAGEMENT_AWARENESS": 2,
+      "FINANCIAL_COVENANTS": 2,
+      "OPERATIONAL_METRICS": 3
+    },
+    "unknown_vs_unknowable_classification": {
+      "unknowns_classified_as_UNKNOWN": 15,
+      "unknowns_classified_as_UNKNOWABLE": 0,
+      "methodology": "UNKNOWN = Information exists but not available in current dataset (can be obtained through management interviews, document requests, data analysis). UNKNOWABLE = Information fundamentally cannot be determined (future events, counterfactuals, subjective assessments). All 15 items classified as UNKNOWN because all can be resolved through due diligence process (requesting cohort retention data, partner agreements, customer lists, covenant certificates, etc.).",
+      "notes": "No items classified as UNKNOWABLE. Even complex questions like 'Would customers accept contractual lock-in?' are UNKNOWN not UNKNOWABLE - can be tested through customer surveys, pilot programs, or analyzing comparable market behavior. Conservative classification: If information theoretically obtainable, marked UNKNOWN."
+    },
+    "critical_unknowns_with_decision_impact": [
+      {
+        "unknown": "Actual Net Revenue Retention (NRR) and Gross Revenue Retention (GRR) by segment",
+        "current_status": "UNKNOWN - Calculated net leakage of 21% overall but segment-specific retention metrics unavailable",
+        "decision_impact": "DETERMINES WHETHER CONTRADICTIONS ARE RESOLVABLE: If GRR/NRR data shows one or two segments driving ALL churn (e.g., SMB 60% GRR while others 85-95%), then business model can be made coherent by EXITING bad segments. If churn is DISTRIBUTED across all segments (all segments 75-85% GRR), then contradiction is SYSTEMIC and not resolvable by segment pruning.",
+        "how_uncertainty_preserved": "Used RANGES (estimated Mid-Market GRR 75-85%, SMB 60-75%) rather than point estimates. Explicitly documented as 'estimated' and 'calculated' not measured. Created unknowns request in 2.4.uncertainty_register.json specifying exact data needed (annual cohort retention analysis by segment).",
+        "evidence_ref": "2.4.uncertainty_register.json"
+      },
+      {
+        "unknown": "Management awareness of contradictions and resolution plan existence",
+        "current_status": "UNKNOWN - No access to internal strategy documents, board presentations, or management discussions of identified contradictions",
+        "decision_impact": "DETERMINES MANAGEMENT CREDIBILITY AND STRATEGY VIABILITY: If management AWARE with plan, business may be salvageable with different strategy. If UNAWARE, indicates incompetence requiring full management replacement. If AWARE but CONCEALING, indicates integrity issues and fraud risk.",
+        "how_uncertainty_preserved": "Did NOT assume management is either aware or unaware. Explicitly documented as UNKNOWN with three possible scenarios (aware/planning, unaware/incompetent, aware/concealing) and different implications for each. Created specific unknowns request for board strategic presentations, financial models, restructuring plans.",
+        "evidence_ref": "2.4.uncertainty_register.json"
+      },
+      {
+        "unknown": "Debt covenant headroom and financial distress timeline",
+        "current_status": "UNKNOWN - Covenant requirements, current compliance levels, and headroom calculations not available from Stage 1 financial data",
+        "decision_impact": "DETERMINES URGENCY AND TRANSACTION TIMELINE: If <6 months headroom, immediate distress requiring 3-4 month close. If >18 months, more time for strategic process. Affects seller leverage, valuation (30-50% distressed discount), and whether can execute segment exits without breaching covenants.",
+        "how_uncertainty_preserved": "Documented as UNKNOWN rather than assuming 'adequate headroom' or 'distressed situation'. Created specific unknowns request for debt agreements, covenant compliance certificates, and management projections. Analyzed scenarios (exit SMB, Private Cloud accelerates decline, hyperscaler credit reduction) WITHOUT assuming starting covenant position.",
+        "evidence_ref": "2.4.uncertainty_register.json"
+      },
+      {
+        "unknown": "Private Cloud customer-level economics and VMware exposure",
+        "current_status": "UNKNOWN - Don't know what % of Private Cloud is VMware-based vs alternatives, or which customers are VMware-dependent",
+        "decision_impact": "DETERMINES PRIVATE CLOUD SEGMENT VIABILITY: If 90% VMware-dependent with largest customers VMware-locked, segment has NO ESCAPE from Broadcom pricing (must absorb costs or face churn death spiral). If 60% VMware with large customers on alternatives, can PROTECT high-value customers while accepting VMware losses.",
+        "how_uncertainty_preserved": "Used RANGES (estimated 80-90% VMware exposure as high scenario, 50-60% as lower scenario) rather than single assumption. Explicitly documented migration feasibility as UNKNOWN (10-15% loss rate estimated but actual feasibility not determined). Created specific unknowns request for revenue breakdown by platform, VMware customer analysis, migration assessment.",
+        "evidence_ref": "2.6.uncertainty_register.json"
+      },
+      {
+        "unknown": "Actual hyperscaler partner agreement terms and concentration",
+        "current_status": "UNKNOWN - Partner credit rates (assumed 5-15% range), termination provisions, volume commitments, and hyperscaler revenue concentration (assumed 60-70% on primary) not available",
+        "decision_impact": "DETERMINES MARGIN VULNERABILITY: If credits at low end (5%) vs high end (15%), 10 percentage point swing in Public Cloud gross margin. If concentrated 70%+ on single hyperscaler, cannot credibly threaten to shift business (zero negotiating leverage). If balanced 30-40-30 across three, slightly more leverage.",
+        "how_uncertainty_preserved": "Used RANGES for partner credits (5-15%) and concentration (estimated 60-70% on primary) rather than point assumptions. Calculated value asymmetry using observable evidence (Public Cloud 10.4% implied margin from Stage 2.2, hyperscaler cloud gross margins 50-70%) but noted actual partner agreement terms UNKNOWN. Created specific unknowns request for partner agreements and concentration data.",
+        "evidence_ref": "2.5.uncertainty_register.json"
+      }
+    ],
+    "ranges_vs_point_estimates": {
+      "methodology": "When actual data UNKNOWN but inference required for analysis, used RANGES capturing reasonable scenarios rather than single point estimates. Ranges reflect genuine uncertainty about true value.",
+      "examples": [
+        "Private Cloud operating margin: 30-40% (not single point like 35%)",
+        "Government OI contribution: 15-25% of total (not 20%)",
+        "Top customer revenue concentration: 25-40% (not 32.5%)",
+        "Mid-Market customer churn: 15-25% annually (not 20%)",
+        "SMB customer lifetime: 2.5-4 years (not 3.25 years)",
+        "VMware Private Cloud exposure: 80-90% (high scenario) or 50-60% (lower scenario)",
+        "Hyperscaler concentration on primary: 60-70% (not 65%)"
+      ],
+      "notes": "Range methodology preserves uncertainty while enabling analysis. Allows testing scenarios (e.g., 'If Private Cloud margin is 40%, impact is X; if 30%, impact is Y') rather than false precision. When ranges used in calculations, typically used conservative end of range to avoid overstating value or understating risk."
+    },
+    "unknowns_not_smoothed_into_assumptions": {
+      "discipline_applied": true,
+      "examples_of_preservation": [
+        "Did NOT assume specific customer count - documented as UNKNOWN and used ranges (top 10-20 customers estimated 25-40% revenue) acknowledging uncertainty",
+        "Did NOT assume specific churn rates by segment - used hierarchy (SMB highest, Private Cloud lowest) and ranges (SMB 25-40%, Mid-Market 15-25%) based on lock-in analysis, not point estimates",
+        "Did NOT assume management has resolution plan - explicitly documented three scenarios (aware/planning, unaware, aware/concealing) without choosing one",
+        "Did NOT assume covenant headroom is adequate or inadequate - documented as UNKNOWN affecting urgency assessment",
+        "Did NOT assume VMware exposure is 100% or negligible - used scenario ranges (80-90% high exposure, 50-60% moderate) to bound analysis"
+      ],
+      "notes": "Resisted temptation to 'fill in blanks' with assumptions for analytical convenience. When unknowns encountered, either (1) Preserved explicitly as UNKNOWN with decision impact, OR (2) Used ranges to capture reasonable scenarios, OR (3) Made conservative inference with explicit 'INFERENCE' tag and reasoning. Never treated estimates as facts or smoothed uncertainty into assumed precision."
+    },
+    "unknowns_requests_created": {
+      "files_with_unknowns_requests": 3,
+      "files": [
+        "2.4.unknowns_for_management_diligence.json",
+        "2.5.unknowns_for_management_diligence.json",
+        "2.6.unknowns_for_management_diligence.json"
+      ],
+      "total_information_requests": 15,
+      "request_specificity": "Each unknowns request includes: (1) What data is needed, (2) Why it matters (decision impact), (3) How to obtain it (specific documents or analysis to request), (4) How to interpret it (calculation or analysis methodology). Requests are actionable for due diligence team - not vague 'provide more information' but specific 'REQUEST: Annual cohort retention analysis by segment showing % revenue retained + expansions/contractions for customers acquired in 2020-2023'.",
+      "notes": "Unknowns requests transform preserved uncertainty into actionable due diligence workstreams. Each UNKNOWN in uncertainty register has corresponding detailed request in unknowns_for_management_diligence files. This ensures uncertainty preservation leads to information gathering, not analytical paralysis."
+    },
+    "inference_vs_unknown_boundary": {
+      "methodology": "INFERENCE used when: (1) Sufficient indirect evidence exists to make reasoned estimate, AND (2) Inference is necessary for analysis, AND (3) Explicitly tagged as 'INFERENCE' with reasoning. UNKNOWN used when: (1) Insufficient evidence for reliable inference, OR (2) Information is critical and assumption risk too high, OR (3) Information directly obtainable through due diligence.",
+      "examples_of_inferences_made": [
+        "INFERENCE: 'Mid-Market churn estimated 15-25%' - Inferred from lock-in hierarchy (month-to-month = low lock-in → higher churn) + revenue dynamics (21% net leakage) + segment margin pressure. Could have preserved as UNKNOWN but inference necessary for segment viability analysis. Tagged as 'estimated' throughout.",
+        "INFERENCE: 'Top 10-20 customers 25-40% of revenue' - Inferred from typical MSP customer concentration patterns + profit concentration (55-75% OI from 2 segments suggests concentrated customers). Could have preserved as UNKNOWN but needed for dependency risk analysis. Used RANGE not point estimate.",
+        "INFERENCE: 'SMB likely has negative LTV' - Calculated from margin % (0-10%) + churn (25-40%) + lifetime (2.5-4 years) vs acquisition costs. Strong inference from available data but actual LTV/CAC UNKNOWN."
+      ],
+      "examples_preserved_as_unknown": [
+        "UNKNOWN: Actual customer count and concentration (top 10/50/100 revenue %) - Could have inferred '~1,000 customers' from revenue/ACV estimates but risk too high, information directly obtainable",
+        "UNKNOWN: Actual NRR/GRR by segment - Could have inferred from net leakage + churn estimates but precision required for segment exit decisions, data directly obtainable through cohort analysis",
+        "UNKNOWN: Covenant headroom - Could have inferred 'probably adequate' from continued operations but implications too severe if wrong, data directly obtainable from covenant certificates"
+      ],
+      "notes": "Maintained discipline: When critical decision depends on unknown, preserve as UNKNOWN and create information request. When analysis requires estimate and inference supportable, make INFERENCE with explicit tag. Boundary between inference and unknown based on: (1) Evidence sufficiency, (2) Decision criticality, (3) Obtainability of actual data."
+    },
+    "uncertainty_quantification": {
+      "explicit_confidence_levels_used": false,
+      "alternative_uncertainty_expression": "Used qualitative uncertainty expressions rather than quantified confidence levels. Examples: 'estimated', 'likely', 'appears', 'suggests', 'inferred from', 'calculated based on'. Also used ranges to express uncertainty numerically (e.g., 25-40% rather than 32.5% ± 7.5%).",
+      "notes": "Did not assign explicit confidence percentages (e.g., '70% confident that X') to avoid false precision. Qualitative expressions + ranges capture uncertainty while avoiding spurious quantification. Could enhance in future by assigning confidence levels (LOW/MEDIUM/HIGH confidence) to inferences based on evidence quality."
+    },
+    "impact_of_unknowns_on_analysis": {
+      "analysis_blocked_by_unknowns": false,
+      "analysis_qualified_by_unknowns": true,
+      "examples": [
+        "Coherence assessment: Reached 'INCOHERENT' conclusion despite unknowns because contradictions visible from available evidence. Unknowns (NRR, concentration, covenants) affect SEVERITY and URGENCY but not fundamental incoherence determination.",
+        "Segment viability: Could not definitively conclude 'SMB should be exited immediately' due to unknown actual profitability, but analysis shows LIKELY value-destroying. Unknown qualifies conclusion without blocking it.",
+        "Private Cloud resolution: Could not select specific resolution path (defend vs harvest vs exit) due to unknowns (VMware exposure, customer economics, covenant impact), but analysis shows ALL PATHS HAVE SIGNIFICANT RISKS. Unknowns increase decision difficulty but don't change fundamental dilemma."
+      ],
+      "notes": "Unknowns did not prevent Stage 2 analysis completion or coherence assessment. Unknowns affect precision, urgency assessment, and specific resolution path selection, but systemic patterns visible despite information gaps. This is APPROPRIATE - due diligence discovers what's knowable from available evidence while highlighting critical information gaps for further investigation. Analysis should not be blocked by unknowns, but unknowns should prevent false confidence in specific recommendations (hence discovery-only mandate)."
+    },
+    "overall_assessment": "RIGOROUS UNCERTAINTY PRESERVATION THROUGHOUT STAGE 2",
+    "compliance_with_stage_0_requirements": true,
+    "strengths": [
+      "15 critical unknowns explicitly catalogued with decision impact analysis",
+      "Systematic use of ranges rather than point estimates when actual values unknown (25-40%, not 32.5%)",
+      "No smoothing of unknowns into assumptions - unknowns preserved and documented",
+      "Clear boundary between INFERENCE (with tag and reasoning) vs UNKNOWN (with information request)",
+      "Unknowns transformed into actionable due diligence requests with specific data needs",
+      "Analysis qualified by unknowns but not blocked - appropriate balance",
+      "Cross-referenced unknowns with 'open_unknowns' in structural constraints register"
+    ],
+    "areas_for_improvement": [
+      "Could add explicit confidence levels (LOW/MEDIUM/HIGH) to inferences based on evidence quality",
+      "Could quantify impact ranges for unknowns (e.g., 'If NRR is 70-80%, segment exit justified; if 85-95%, retention strategy justified')",
+      "Could create sensitivity analysis showing how key conclusions change under different unknown scenarios"
+    ]
+  }
+}

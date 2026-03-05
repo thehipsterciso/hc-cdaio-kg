@@ -1,0 +1,155 @@
+{
+  "structural_lock_ins": [
+    {
+      "activity_or_asset": "FedRAMP-Authorized Cloud Services for U.S. Federal Government",
+      "locked_to_entity_or_jurisdiction": "Rackspace Government Solutions, Inc. (U.S. legal entity) + Continental United States operations",
+      "legal_basis": "FedRAMP Joint Authorization Board (JAB) authorization held since 2015, DoD Impact Level 4 authorization, DFARS/CMMC compliance. FedRAMP authorizations are ENTITY-SPECIFIC and cannot be transferred between legal entities without complete re-authorization process taking 12-18 months.",
+      "operational_constraint": "TOUCH TEST: If Rackspace Government Solutions, Inc. entity changes ownership or control, FedRAMP authorization becomes INVALID immediately. Federal government customers (serving >50% of cabinet agencies) lose authorized service provider, forcing migration to alternative FedRAMP-authorized vendors. All U.S. government revenue ($X million, exact figure unknown) is at immediate risk. Re-authorization requires 12-18 months with no guarantee of approval, during which government customers CANNOT use services. CONSTRAINT TYPE: LEGAL + OPERATIONAL. Cannot consolidate U.S. government business into non-U.S. entity. Cannot relocate operations outside continental U.S. Cannot use non-U.S. citizen personnel for security services (current requirement: 100% U.S. citizens in continental U.S. locations for Security Services team).",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Rackspace newsroom: 'Rackspace Government Solutions Receives Authorization to Operate on AWS in Federal Environment' (FedRAMP JAB since 2015, DoD IL4, DFARS)",
+        "Rackspace Government Solutions page: 'All members of the Rackspace Security Services for Government Clouds team are U.S. citizens based in continental U.S. locations'",
+        "FedRAMP policy: Entity-specific authorizations require re-authorization upon entity change (standard FedRAMP practice)",
+        "Stage 1.4 analysis: FedRAMP re-authorization timeline 12-18 months"
+      ]
+    },
+    {
+      "activity_or_asset": "UK Government, NHS, Police, and Regulated Industry Cloud Services (Healthcare, Financial Services)",
+      "locked_to_entity_or_jurisdiction": "RACKSPACE LIMITED (UK Company No. 03897010) + UK-based data centers + UK-isolated infrastructure",
+      "legal_basis": "UK data sovereignty requirements post-Brexit, UK National Cyber Security Centre requirements, NHS England Class V risk data requirements, UK financial services data residency regulations. Rackspace UK Sovereign Services launched March 2024 with VMware Sovereign Cloud certification (January 2026) specifically to meet UK regulatory requirements mandating data, support, and infrastructure remain within UK borders. Infrastructure is ARCHITECTURALLY ISOLATED from Rackspace global network to prevent any access to sovereign platforms from outside UK.",
+      "operational_constraint": "TOUCH TEST: If UK sovereign infrastructure is consolidated with global operations or moved outside UK, IMMEDIATE BREACH of UK data sovereignty requirements occurs. UK government agencies, NHS healthcare providers, police, and regulated financial services/pharma customers (revenue: $X million unknown) immediately lose compliant service provider. Separate multi-tenant PODs for UK healthcare, government, police, and regulated industries are physically segregated - compute and disk workloads never mixed with non-sovereign workloads. CONSTRAINT TYPE: LEGAL + REGULATORY + OPERATIONAL. Cannot consolidate UK sovereign services with non-UK operations. Cannot use non-UK support personnel (platform and support teams isolated from global network). Cannot relocate data centers outside UK. Cannot merge UK sovereign PODs with standard multi-tenant infrastructure. Partnership with BT for sovereign communications is UK-specific and likely non-transferable to non-UK entity.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Rackspace newsroom March 27, 2024: 'Rackspace Technology Launches Rackspace UK Sovereign Services for Secure, Cost-Effective Workloads in the UK Public Sector and Regulated Services'",
+        "Rackspace IR: VMware Sovereign Cloud certification January 2026, UK data stays local",
+        "Service description: 'Platforms and support teams are isolated from the Rackspace Technology global network to ensure no access is possible to sovereign platforms'",
+        "Target sectors: UK government, NHS healthcare (Class V risk data), police, financial services, pharma",
+        "UK regulatory context: Post-Brexit digital independence and sovereignty requirements for public sector and regulated industries"
+      ]
+    },
+    {
+      "activity_or_asset": "China-Based Cloud Services and Customer Data Storage",
+      "locked_to_entity_or_jurisdiction": "China legal entity (likely Rackspace subsidiary in China, specific entity name not disclosed) + China-based data centers (Shanghai data center confirmed)",
+      "legal_basis": "China Cybersecurity Law (CSL) implemented 2017, mandates data localization for critical information infrastructure operators. CSL requires personal information and important data to be stored within China and submit to Chinese government oversight. Cross-border data transfers are heavily restricted and require government approval.",
+      "operational_constraint": "TOUCH TEST: If China operations attempt to consolidate with non-China entity or store data outside China, IMMEDIATE VIOLATION of China Cybersecurity Law occurs. Chinese government can impose fines, suspend operations, or revoke business licenses. China customers (revenue: $X million unknown) lose compliant service provider and are legally prohibited from using non-China data storage. CONSTRAINT TYPE: LEGAL + SOVEREIGN. Cannot consolidate China entity with non-China entities. Cannot store China customer data outside China borders. Cannot transfer data cross-border without explicit government approval (complex, time-consuming, often denied). Cannot eliminate China legal entity without exiting China market entirely. China government retains oversight authority over all data operations within China.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "China Cybersecurity Law (CSL) 2017: Data localization mandate for critical infrastructure operators",
+        "Rackspace data center locations: Shanghai data center confirmed",
+        "CSL requirements: 'Critical information infrastructure operators store personal information and important data within China and submit to Chinese government oversight'",
+        "Industry research: InCountry, CSA Global Data Sovereignty reports on China data localization requirements"
+      ]
+    },
+    {
+      "activity_or_asset": "EU Personal Data Processing and Cross-Border Transfers to U.S.",
+      "locked_to_entity_or_jurisdiction": "EU-based operations (Netherlands: Amsterdam data center, Germany: Frankfurt data center, UK: London data center) + Compliance with GDPR Article 46 transfer mechanisms",
+      "legal_basis": "GDPR (General Data Protection Regulation) + Schrems II decision (July 2020) invalidating EU-U.S. Privacy Shield + EU-U.S. Data Privacy Framework (July 2023 adequacy decision, but under legal challenge). GDPR permits EU personal data to be processed in U.S. ONLY if: (1) Adequate transfer mechanism exists (Standard Contractual Clauses, Data Privacy Framework self-certification), AND (2) Case-by-case assessment confirms U.S. intelligence laws (FISA Section 702) do not impinge on data protection, AND (3) Supplemental measures implemented where necessary. Schrems II decision found that U.S. intelligence surveillance is incompatible with EU fundamental rights.",
+      "operational_constraint": "TOUCH TEST: If Rackspace consolidates EU and U.S. operations without maintaining GDPR-compliant transfer mechanisms, EU customers (estimated 20-30% of revenue = $300-450M) are IN BREACH of GDPR when using services. EU data protection authorities can impose fines up to 4% of global revenue ($60M based on $1.5B revenue) and order suspension of data transfers. If acquirer is subject to U.S. FISA Section 702 surveillance (e.g., large U.S. tech company), may be IMPOSSIBLE to maintain compliant data transfers under Schrems II precedent. CONSTRAINT TYPE: LEGAL + REGULATORY. Cannot freely transfer EU customer data to U.S. without compliant mechanisms. Cannot consolidate EU operations with U.S. cloud providers subject to broad surveillance. Must maintain EU-based infrastructure and operations to serve EU customers. EU-U.S. Data Privacy Framework is under legal challenge (Max Schrems filed new cases February 2024) and may be invalidated like previous frameworks.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "CJEU Schrems II decision July 16, 2020: Invalidated EU-U.S. Privacy Shield due to U.S. intelligence surveillance laws",
+        "European Commission adequacy decision July 10, 2023: EU-U.S. Data Privacy Framework adopted",
+        "Schrems legal challenges: February 2024 Ireland High Court approved participation in cases against Meta data transfers",
+        "EDPB Recommendations post-Schrems II: Case-by-case assessments required, cloud providers with access to data in clear may not be compliant",
+        "Rackspace data centers: Amsterdam, Frankfurt, London confirmed for EU operations",
+        "Rackspace blog: 'Data sovereignty: Keeping your bytes in the right place' acknowledges 100+ different data sovereignty regulations worldwide"
+      ]
+    },
+    {
+      "activity_or_asset": "DoD and U.S. Defense Contractor Business (Impact Level 4 and Classified Work)",
+      "locked_to_entity_or_jurisdiction": "Rackspace Government Solutions, Inc. (U.S. entity) + U.S. ownership and control (no Foreign Ownership, Control, or Influence - FOCI)",
+      "legal_basis": "DoD Instruction (May 2024 expansion): FOCI review process now applies to ALL U.S. government contractors performing unclassified contracts >$5 million (previously only classified contracts). 32 CFR § 2004.34 FOCI regulations require contractors to be free of foreign ownership, control, or influence OR implement FOCI mitigation measures (Special Security Agreements, proxy boards, etc.). U.S. government contracts requiring classified information access will NOT be awarded to companies under FOCI unless adequate safeguards are in place. Security clearances (Secret, Top Secret) require U.S. citizenship.",
+      "operational_constraint": "TOUCH TEST: If Rackspace is acquired by foreign entity (non-U.S. company or foreign private equity fund), IMMEDIATE FOCI DETERMINATION occurs. DoD contracts >$5 million (total DoD/government revenue unknown but material given 23 FedRAMP authorizations and service to >50% of cabinet agencies) become subject to FOCI mitigation requirements. Mitigation options: (1) Special Security Agreement with proxy board giving foreign owner NO operational control (defeats acquisition purpose), (2) Voting Trust Agreement segregating sensitive operations, (3) Divest DoD business entirely. FOCI mitigation is COSTLY, TIME-CONSUMING (6-12 months), and may be DENIED by DoD if foreign entity is from adversarial nation or has conflicting interests. Many foreign acquirers cannot meet FOCI requirements. CONSTRAINT TYPE: LEGAL + NATIONAL SECURITY. Cannot be acquired by foreign entity without triggering FOCI review. Cannot maintain current DoD business if foreign ownership creates unacceptable risks. May require structural separation of government business from commercial business (creates two separate companies).",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "DoD Instruction May 2024: FOCI review expanded to unclassified contracts >$5 million",
+        "32 CFR § 2004.34: FOCI regulations for government contractors",
+        "Rackspace Government Solutions: DoD Impact Level 4 authorization held",
+        "Security clearance requirements: Secret/Top Secret require U.S. citizenship",
+        "Current ownership: Apollo Global Management (U.S. private equity) 53-57%, so NO current FOCI issue",
+        "FOCI mitigation guidance: Special Security Agreements, Voting Trusts, or divestiture required for foreign acquisition"
+      ]
+    },
+    {
+      "activity_or_asset": "Healthcare Data Processing (HIPAA/HITRUST Compliance)",
+      "locked_to_entity_or_jurisdiction": "U.S.-based operations for U.S. healthcare customers + Jurisdiction-specific compliance for healthcare customers in other regions (UK NHS, EU healthcare)",
+      "legal_basis": "HIPAA (Health Insurance Portability and Accountability Act) applies to U.S. healthcare data regardless of storage location, but PRACTICAL CONSTRAINT exists: U.S. healthcare customers typically require U.S.-based data storage due to liability concerns and regulatory interpretation. HITRUST certification is entity-specific and must be re-certified if entity changes. UK NHS has separate requirements (Class V risk data, UK sovereign services). EU healthcare data subject to GDPR plus sector-specific regulations.",
+      "operational_constraint": "TOUCH TEST: If healthcare operations are consolidated across jurisdictions or entity changes, HIPAA Business Associate Agreements (BAAs) may require customer consent and re-execution. HITRUST certification requires re-certification (timeline: 6-12 months, cost: $X unknown). U.S. healthcare customers may refuse to use non-U.S. data storage even if technically HIPAA-compliant due to regulatory interpretation risk and liability concerns. UK NHS customers REQUIRE UK sovereign services (data cannot leave UK). CONSTRAINT TYPE: LEGAL + CONTRACTUAL + OPERATIONAL. Cannot freely consolidate healthcare operations across jurisdictions. Cannot relocate U.S. healthcare data to non-U.S. locations without customer consent (likely to be denied). Must maintain jurisdiction-specific healthcare compliance certifications. Healthcare customer churn risk 20-40% upon entity change or cross-border consolidation.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "HIPAA regulations: Apply to Protected Health Information (PHI) for U.S. healthcare entities",
+        "Industry practice: U.S. healthcare customers typically require U.S. data residency despite HIPAA permitting offshore storage",
+        "HITRUST certification: Entity-specific, re-certification required upon material entity change",
+        "UK NHS requirements: Class V risk data must use UK sovereign services (Rackspace announcement March 2024)",
+        "Stage 1.4 analysis: Compliance certification transfer timeline 6-12 months for HIPAA/HITRUST"
+      ]
+    },
+    {
+      "activity_or_asset": "Financial Services Data Processing (PCI DSS, Sector-Specific Regulations)",
+      "locked_to_entity_or_jurisdiction": "Jurisdiction-specific operations required for regulated financial services: U.S. (state banking regulations, SEC, FINRA), UK (FCA, PRA), EU (MiFID II, PSD2), and others",
+      "legal_basis": "Financial services sector has jurisdiction-specific licensing and data residency requirements. UK FCA (Financial Conduct Authority) and PRA (Prudential Regulation Authority) require data localization for critical UK financial services operations. EU financial services regulations (MiFID II, PSD2) impose data protection and operational resilience requirements. PCI DSS (Payment Card Industry Data Security Standard) certification is entity-specific and requires re-validation upon entity change.",
+      "operational_constraint": "TOUCH TEST: If financial services operations are consolidated across jurisdictions, VIOLATION of jurisdiction-specific regulations occurs. UK financial services customers require UK data residency (Rackspace UK Sovereign Services launched specifically for this requirement). EU financial services customers require EU data residency or compliant cross-border transfer mechanisms. PCI DSS re-validation requires 3-6 months upon entity change, during which payment processing customers may be non-compliant. CONSTRAINT TYPE: LEGAL + REGULATORY. Cannot consolidate financial services operations globally into single jurisdiction. Must maintain jurisdiction-specific infrastructure and compliance certifications. Financial services customer churn risk 25-40% if jurisdiction requirements cannot be met post-acquisition.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Rackspace UK Sovereign Services announcement March 2024: 'alignment with regulatory compliance mandates, such as data residency, is a critical factor for financial institutions'",
+        "UK regulatory requirements: FCA/PRA operational resilience and data localization for critical operations",
+        "EU financial services regulations: MiFID II, PSD2 impose data protection requirements",
+        "PCI DSS: Entity-specific certification, re-validation required upon material change",
+        "Industry practice: Financial services heavily regulated with jurisdiction-specific requirements"
+      ]
+    },
+    {
+      "activity_or_asset": "Physical Data Center Infrastructure (40 Data Centers Globally)",
+      "locked_to_entity_or_jurisdiction": "13+ jurisdictions: U.S. (Virginia, Chicago, Dallas, Kansas City, NYC, San Jose), Netherlands (Amsterdam), UK (London), Germany (Frankfurt), China (Shanghai), Singapore (Queenstown), Australia (Sydney), Hong Kong",
+      "legal_basis": "Data centers are FIXED ASSETS tied to physical locations with long-term leases (from Stage 1.4: 40 data center leases with assignment restrictions). Real estate cannot be moved without: (1) Landlord consent for assignment (may be denied or require concessions), (2) Physical relocation of servers and infrastructure ($X million cost, 12+ months timeline), (3) Customer disruption causing SLA breaches and churn, (4) Loss of jurisdiction-specific compliance tied to data center location (FedRAMP, UK Sovereign, China data localization all tied to specific data centers).",
+      "operational_constraint": "TOUCH TEST: If data centers are consolidated, relocated, or infrastructure is moved, MULTIPLE FAILURES occur simultaneously: (1) Landlord consent required for 40 leases - delays and potential denials, (2) Customer SLA breaches during migration causing 10-30% churn, (3) Loss of jurisdiction-specific authorizations (FedRAMP tied to specific U.S. data centers, UK Sovereign tied to UK data centers, China operations tied to Shanghai data center), (4) Physical relocation cost $X million and 12-24 months per data center, (5) Customers contractually tied to specific data center locations cannot be served during migration. CONSTRAINT TYPE: OPERATIONAL + LEGAL + CONTRACTUAL. Cannot consolidate 40 data centers without massive disruption. Cannot relocate data centers across jurisdictions without losing compliance authorizations. Cannot move infrastructure without landlord consent. Physical assets create structural immobility.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Rackspace data center locations: 13 cities across U.S., EU, APAC confirmed",
+        "Stage 1.4 analysis: 40 data center leases with assignment restrictions and financial covenants",
+        "Industry standard: Data center migration timeline 12-24 months, cost $X per facility",
+        "Jurisdictional lock-in: FedRAMP, UK Sovereign, China data localization all require specific data center locations"
+      ]
+    },
+    {
+      "activity_or_asset": "U.S. Citizen Workforce for Government Cloud Security Services",
+      "locked_to_entity_or_jurisdiction": "Continental United States locations + U.S. citizenship requirement",
+      "legal_basis": "Rackspace Government Solutions requires 100% U.S. citizen personnel for Security Services for Government Clouds team, based in continental U.S. locations. This is operational requirement to maintain FedRAMP authorization and serve federal government customers. Security clearances (Secret, Top Secret) require U.S. citizenship per U.S. government regulations. Limited Access Authorization (LAA) may be granted to non-citizens in rare circumstances but is not substitute for clearances.",
+      "operational_constraint": "TOUCH TEST: If government cloud security team uses non-U.S. citizens or relocates outside continental U.S., IMMEDIATE LOSS of FedRAMP authorization eligibility occurs. Federal government customers requiring U.S. citizen support cannot be served. Security clearances held by team members become invalid if personnel relocated outside U.S. CONSTRAINT TYPE: LEGAL + OPERATIONAL. Cannot offshore or outsource government cloud security team. Cannot use non-U.S. citizen personnel regardless of skill level. Cannot relocate team to U.S. territories (must be continental U.S.). Workforce is jurisdictionally locked and cannot be consolidated with global support teams.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "Rackspace Government Solutions page: 'All members of the Rackspace Security Services for Government Clouds team are U.S. citizens based in continental U.S. locations'",
+        "Security clearance requirements: Secret/Top Secret require U.S. citizenship",
+        "Limited Access Authorization (LAA): May be granted to non-citizens in rare circumstances but not substitute for clearances",
+        "FedRAMP operational requirements: U.S.-based operations and personnel required for federal government services"
+      ]
+    },
+    {
+      "activity_or_asset": "Multi-Jurisdictional Legal Entity Structure",
+      "locked_to_entity_or_jurisdiction": "Separate legal entities required in multiple jurisdictions: Rackspace Government Solutions, Inc. (U.S.), RACKSPACE LIMITED (UK Company No. 03897010), Rackspace Singapore Pte. Ltd., likely separate entities in China, Netherlands, Germany, and other operating jurisdictions",
+      "legal_basis": "Corporate law, tax law, and regulatory requirements mandate separate legal entities for operations in different jurisdictions. UK operations cannot be conducted by U.S. entity without UK establishment. Singapore operations require Singapore entity. Government contracts (U.S. FedRAMP, UK Sovereign) are awarded to specific legal entities and cannot be transferred to different entities without re-authorization. Licenses, authorizations, and customer contracts are entity-specific.",
+      "operational_constraint": "TOUCH TEST: If jurisdictional entities are consolidated or eliminated, COMPLETE BUSINESS FAILURE in affected jurisdictions occurs: (1) UK customers require contracts with UK legal entity (RACKSPACE LIMITED) for local liability and enforcement, (2) FedRAMP authorization held by Rackspace Government Solutions, Inc. cannot be transferred to parent or other subsidiary, (3) Singapore entity required for APAC operations and local regulatory compliance, (4) Tax treatment depends on entity structure - consolidation triggers tax consequences, (5) Customer contracts, vendor agreements, data center leases, and software licenses are executed by specific legal entities and require consent/re-execution to transfer. CONSTRAINT TYPE: LEGAL + REGULATORY + CONTRACTUAL. Cannot consolidate into single global entity without losing jurisdictional authorizations. Cannot eliminate local entities without exiting local markets. Entity structure creates permanent multi-jurisdictional complexity.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "UK Companies House: RACKSPACE LIMITED Company No. 03897010 incorporated December 20, 1999",
+        "Corporate structure: Rackspace Government Solutions, Inc. confirmed as separate U.S. entity",
+        "Singapore operations: Rackspace Singapore Pte. Ltd. confirmed, acquired Just Analytics January 2022",
+        "FedRAMP policy: Entity-specific authorizations",
+        "UK Sovereign Services: Requires UK legal entity for UK government/regulated industry contracts",
+        "Stage 1.1 analysis: Multi-tier entity structure with jurisdiction-specific subsidiaries"
+      ]
+    },
+    {
+      "activity_or_asset": "Sovereign Cloud Partnership Requirements (BT Partnership for UK)",
+      "locked_to_entity_or_jurisdiction": "UK operations + British Telecom (BT) partnership for sovereign communications",
+      "legal_basis": "Rackspace UK Sovereign Services uses partnership with BT to provide 'secure and fully sovereign communication services into its secure data centres.' This partnership is likely UK-specific and tied to UK telecommunications regulations and infrastructure. BT partnership may contain change-of-control provisions or UK entity requirements.",
+      "operational_constraint": "TOUCH TEST: If UK sovereign services are moved outside UK or consolidated with non-UK operations, BT partnership is likely TERMINATED or INVALID. UK sovereign cloud customers lose compliant communications services. Replacement telecommunications provider must meet UK sovereignty requirements (UK-owned, UK-based, UK-regulated) - limits options to handful of UK telecommunications companies. Re-establishing partnership requires 6-12 months negotiation and integration. CONSTRAINT TYPE: CONTRACTUAL + OPERATIONAL. Cannot relocate UK sovereign services without losing BT partnership. Cannot replace BT with non-UK telecommunications provider for sovereign services. Partnership creates dependency on UK-specific infrastructure.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": [
+        "Rackspace UK Sovereign Services announcement: 'Through Rackspace Technology's extensive partnership with BT, it provides secure and fully sovereign communication services into its secure data centres'",
+        "UK sovereignty requirements: Communications infrastructure must be UK-based for sovereign cloud services",
+        "Industry practice: Telecommunications partnerships typically contain jurisdictional restrictions and change-of-control provisions"
+      ]
+    }
+  ]
+}

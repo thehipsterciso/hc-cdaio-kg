@@ -1,0 +1,118 @@
+{
+  "hypothesis_framework": [
+    {
+      "hypothesis": "H1: Rackspace operates under MANDATORY MULTI-JURISDICTIONAL STRUCTURE where operations cannot be consolidated into single jurisdiction or entity without losing material customer segments and revenue",
+      "supporting_evidence_sought": [
+        "Jurisdiction-specific regulatory requirements (FedRAMP U.S.-only, UK Sovereign UK-only, China data localization)",
+        "Entity-specific authorizations and licenses that cannot be transferred",
+        "Customer contracts executed with specific legal entities in specific jurisdictions",
+        "Regulatory prohibitions on cross-border data transfers or service delivery",
+        "Evidence that consolidation attempts would trigger loss of authorizations or customer non-compliance"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence that regulatory authorizations can be transferred between entities or jurisdictions without re-authorization",
+        "Evidence that customers accept service delivery from any jurisdiction regardless of data residency requirements",
+        "Evidence that Rackspace has successfully consolidated operations across jurisdictions without losing authorizations",
+        "Evidence that 'cloud' services can be delivered globally from consolidated infrastructure to regulated customers",
+        "Regulatory frameworks that permit unified global operations without jurisdiction-specific requirements"
+      ],
+      "status": "STRONGLY SUPPORTED",
+      "notes": "FedRAMP is U.S.-only and entity-specific (Rackspace Government Solutions, Inc.). UK Sovereign Services launched March 2024 specifically because UK operations CANNOT be delivered from non-UK infrastructure or non-UK entities. China Cybersecurity Law mandates in-country data storage. GDPR/Schrems II restricts EU-U.S. data transfers. Multi-entity structure with RACKSPACE LIMITED (UK), Rackspace Singapore, Rackspace Government Solutions (U.S.) confirmed. NO DISCONFIRMING EVIDENCE FOUND. Consolidation is legally and operationally impossible without exiting multiple markets."
+    },
+    {
+      "hypothesis": "H2: Licensing, certifications, and authorizations are ENTITY-SPECIFIC and NON-TRANSFERABLE, requiring complete re-authorization if entities change ownership or structure",
+      "supporting_evidence_sought": [
+        "FedRAMP policy stating authorizations are entity-specific and require re-authorization upon entity change",
+        "Compliance certification policies (HITRUST, SOC 2, PCI DSS) requiring re-certification upon material entity change",
+        "Historical examples of authorization invalidation upon ownership change",
+        "Re-authorization timelines and costs (months, significant expense)",
+        "Risk of re-authorization denial or customer churn during re-authorization gap"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence that FedRAMP or other authorizations automatically transfer to new owner",
+        "Evidence that compliance certifications remain valid regardless of entity changes",
+        "Policies allowing expedited re-authorization or 'grandfathering' of existing authorizations post-acquisition",
+        "Examples of acquisitions where authorizations transferred seamlessly without re-certification",
+        "Regulatory frameworks treating authorizations as transferable assets rather than entity-specific permissions"
+      ],
+      "status": "STRONGLY SUPPORTED",
+      "notes": "FedRAMP authorizations are entity-specific per FedRAMP policy - change of control triggers re-authorization requirement taking 12-18 months. HITRUST, SOC 2, PCI DSS all require re-certification upon material entity change per industry practice. UK Sovereign Services authorization tied to specific UK entity and infrastructure isolation. NO EVIDENCE FOUND of automatic transfer or expedited re-authorization. Re-authorization timelines create service delivery gaps causing customer churn. Foreign acquirers face additional FOCI barriers for U.S. government authorizations."
+    },
+    {
+      "hypothesis": "H3: Jurisdictional and licensing constraints are CO-PRIMARY with financing and contractual constraints (from Stages 1.1-1.4) in limiting M&A flexibility, making Rackspace effectively UN-ACQUIRABLE by most buyer types",
+      "supporting_evidence_sought": [
+        "Evidence that jurisdictional constraints independently block acquisitions even if financing/contracts resolved",
+        "Buyer types excluded by FOCI requirements (foreign entities, competitors with conflicting interests)",
+        "Regulatory approval timelines exceeding financing and contractual consent timelines",
+        "Revenue at risk from jurisdictional constraints (government, UK sovereign, China, regulated industries) comparable to or exceeding contractual churn risk",
+        "Acquirer capability requirements (must be able to maintain multi-jurisdictional operations, obtain regulatory approvals in multiple countries, segregate businesses)"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence that jurisdictional constraints are easily overcome with regulatory approvals",
+        "Examples of foreign acquirers successfully obtaining FOCI clearance and maintaining U.S. government business",
+        "Examples of cloud service providers successfully consolidating multi-jurisdictional operations post-acquisition",
+        "Evidence that regulatory approval processes are routine and non-blocking",
+        "Evidence that jurisdictional constraints are less material than financing/contractual constraints from prior stages"
+      ],
+      "status": "STRONGLY SUPPORTED",
+      "notes": "Jurisdictional constraints are INDEPENDENTLY SUFFICIENT to block most acquisitions: Foreign acquirers blocked by FOCI for government business. Strategic acquirers (cloud providers, tech companies) blocked by UK Sovereign isolation requirements, FOCI concerns, and data sovereignty conflicts. Only viable buyers are: (1) U.S.-based financial sponsors willing to maintain segregated multi-jurisdictional structure, OR (2) Non-cloud U.S. strategics (IT services firms) without FOCI concerns. From Stage 1.4: financing veto blocks all buyers. Jurisdictional veto ADDITIONALLY blocks foreign and strategic buyers. Constraints compound to make acquisition effectively impossible for 90%+ of potential buyers."
+    },
+    {
+      "hypothesis": "H4: Foreign acquisition of Rackspace faces INSURMOUNTABLE barriers due to FOCI requirements, with government business divestiture or operational segregation being ONLY viable paths",
+      "supporting_evidence_sought": [
+        "DoD FOCI regulations requiring foreign acquirers to implement Special Security Agreements, Voting Trusts, or divest government business",
+        "FOCI review timeline (6-12 months) and approval uncertainty",
+        "Restrictions on foreign owner operational control over government business under FOCI mitigation (proxy boards eliminate owner control)",
+        "Examples of foreign acquisitions of U.S. government contractors requiring FOCI mitigation or divestiture",
+        "May 2024 DoD expansion of FOCI to unclassified contracts >$5M (previously only classified)"
+      ],
+      "disconfirming_evidence_sought": [
+        "Examples of foreign acquirers obtaining FOCI clearance and maintaining full control of U.S. government contractor business",
+        "Evidence that FOCI mitigation is routine and non-burdensome",
+        "Evidence that foreign owners can exercise meaningful control over government business under Special Security Agreements",
+        "Expedited FOCI approval processes or 'safe harbor' provisions for certain foreign acquirer nationalities",
+        "Evidence that U.S. government business is small/immaterial and can be easily divested without affecting deal economics"
+      ],
+      "status": "STRONGLY SUPPORTED",
+      "notes": "DoD FOCI regulations 32 CFR § 2004.34 require foreign acquirers to implement mitigation measures. May 2024 DoD expansion applies FOCI to ALL contracts >$5M, not just classified (significantly expands scope). Rackspace Government Solutions has 23 FedRAMP authorizations serving >50% of cabinet agencies - material business. FOCI mitigation options: (1) Special Security Agreement with proxy board gives foreign owner NO control (defeats acquisition purpose), (2) Voting Trust segregates government business (requires independent operation), (3) Divestiture (must sell government business to U.S. buyer). NO EVIDENCE FOUND of foreign acquirers maintaining full control over material U.S. government contractor business. FOCI is NEAR-ABSOLUTE BARRIER for foreign acquisition unless government business divested."
+    },
+    {
+      "hypothesis": "H5: Cloud services are MORE jurisdictionally constrained than traditional on-premises operations due to data sovereignty laws, creating PERMANENT MULTI-JURISDICTIONAL COMPLEXITY that cannot be resolved through restructuring",
+      "supporting_evidence_sought": [
+        "Data sovereignty laws requiring in-country data storage (China CSL, UK post-Brexit, sector-specific regulations)",
+        "Cross-border data transfer restrictions (GDPR/Schrems II, U.S. FISA Section 702 conflicts with EU law)",
+        "100+ different data sovereignty regulations worldwide creating fragmented cloud market",
+        "Customer requirements for data residency regardless of technical compliance (contractual/liability concerns)",
+        "Evidence that cloud providers cannot consolidate globally like traditional enterprises due to regulatory boundaries"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence that data sovereignty laws are loosening or harmonizing globally",
+        "Evidence that cloud services can be delivered cross-border without regulatory restrictions",
+        "Examples of cloud providers successfully operating from consolidated global infrastructure serving all markets",
+        "Evidence that customers accept cloud services from any location regardless of jurisdiction",
+        "Regulatory frameworks permitting borderless cloud operations (like pre-Schrems II era)"
+      ],
+      "status": "STRONGLY SUPPORTED",
+      "notes": "Rackspace acknowledges 'over 100 different sets of regulations worldwide' for data sovereignty. China CSL mandates in-country storage for critical infrastructure. UK Sovereign Services launched specifically because UK customers CANNOT use non-UK cloud services post-Brexit. GDPR/Schrems II restricts EU-U.S. data transfers - Privacy Shield invalidated 2020, Data Privacy Framework (2023) under legal challenge and may be invalidated 2025-2027. FedRAMP requires U.S.-only operations. Financial services and healthcare have jurisdiction-specific requirements globally. Cloud model INCREASES jurisdictional constraints because data location is visible and regulatable (vs traditional on-premises where data location is opaque). NO DISCONFIRMING EVIDENCE of global regulatory harmonization - trend is INCREASING fragmentation and localization requirements. Multi-jurisdictional complexity is PERMANENT structural feature of cloud services business."
+    },
+    {
+      "hypothesis": "H6: U.S. citizenship and location requirements for government business create PERMANENT WORKFORCE SEGREGATION that cannot be overcome through offshoring, global talent sourcing, or organizational consolidation",
+      "supporting_evidence_sought": [
+        "Rackspace requirement that 100% of Government Cloud Security Services team are U.S. citizens in continental U.S. locations",
+        "Security clearance requirements mandating U.S. citizenship for Secret/Top Secret access",
+        "FedRAMP operational requirements for U.S.-based personnel",
+        "Limitations on offshoring or using non-U.S. talent regardless of skill level or cost",
+        "Evidence that workforce requirements are MANDATORY for FedRAMP authorization, not optional"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence that FedRAMP permits non-U.S. citizen personnel in operational roles",
+        "Examples of U.S. government contractors successfully offshoring support functions for classified/FedRAMP work",
+        "Regulatory changes loosening citizenship or location requirements",
+        "Evidence that Limited Access Authorization (LAA) for non-citizens is routinely granted and provides equivalent access to clearances",
+        "Examples of global workforce consolidation in government contractor businesses"
+      ],
+      "status": "STRONGLY SUPPORTED",
+      "notes": "Rackspace Government Solutions explicitly states: 'All members of the Rackspace Security Services for Government Clouds team are U.S. citizens based in continental U.S. locations.' Security clearances require U.S. citizenship per U.S. government regulations - Limited Access Authorization (LAA) for non-citizens is rare exception, not norm. UK Sovereign Services similarly requires UK-isolated teams separate from global network. NO EVIDENCE FOUND of offshoring or non-U.S. citizens in FedRAMP operational roles. Workforce segregation is LEGAL REQUIREMENT tied to authorizations, not organizational preference. Acquirer cannot consolidate government workforce with global teams, cannot offshore to reduce costs, cannot use non-U.S. talent. Labor cost structure for government business is FIXED and cannot be optimized through global workforce strategies."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "sub_stage": "5.4",
+  "document_metadata": {
+    "title": "Uncertainty Register - Critical Unknowns in Control Transfer Assessment",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-10",
+    "scope": "Documentation of unknowns preventing precise control transfer timeline calculation and lender discretion assessment"
+  },
+  "uncertainty_register": [
+    {
+      "unknown": "Financial Covenant Levels, Current Compliance Ratios, and Cushion to Breach",
+      "type": "UNKNOWN (resolvable with credit agreement access)",
+      "decision_impact": "Cannot determine PRECISE TIMING of covenant breach without knowing: (1) Total Leverage Ratio maximum (5.5x? 6.0x? 6.5x?), (2) Interest Coverage Ratio minimum (1.5x? 2.0x? 2.5x?), (3) Current actual ratios (e.g., leverage currently 5.2x? 5.8x?), (4) Cushion to breach (0.3x? 0.8x? 1.2x?). IMPACT ON TIMELINE: If cushion <0.5x, breach in 2-4 quarters (6-12 months). If cushion >1.0x, breach in 4-8 quarters (12-24 months). 2X VARIANCE in control transfer timing. DIRECTIONAL CONCLUSION UNCHANGED (breach probable given trajectory) but URGENCY varies significantly.",
+      "what_would_reduce_uncertainty": "Access to: (1) First Lien Credit Agreement full document with financial covenant definitions and levels, (2) Most recent quarterly compliance certificate filed with lenders (shows actual covenant calculations Q4 2024), (3) Management discussion of covenant headroom in earnings calls or investor meetings (qualitative assessment 'tight' vs 'comfortable'), (4) Lender reporting package showing covenant trend over past 4-8 quarters (is cushion stable, expanding, or contracting?). With these, can calculate PRECISE quarters to breach given current trajectory."
+    },
+    {
+      "unknown": "EBITDA Definition Specifics - Permitted Adjustments, Lender Discretion Clauses, and Historical Add-Back Approval",
+      "type": "UNKNOWN (resolvable with credit agreement and compliance certificates)",
+      "decision_impact": "Cannot assess DEGREE OF LENDER CONTROL through EBITDA manipulation without knowing: (1) Which add-backs permitted (restructuring? pro forma synergies? run-rate savings? stock-based comp? asset impairments?), (2) Whether add-backs require lender approval ('as Administrative Agent reasonably approves') or mechanical, (3) Historical pattern: Has company claimed add-backs? Have lenders challenged? (4) Current add-backs: Is Adjusted EBITDA materially higher than cash-based EBITDA (e.g., 20-30% inflated)? IMPACT: If EBITDA heavily adjusted WITH lender discretion, lenders can manufacture covenant breach by disallowing add-backs. If EBITDA minimally adjusted or mechanical, lender discretion limited. Determines whether control transfer is GRADUAL (lenders use discretion pre-breach) or EPISODIC (only formal breach transfers control).",
+      "what_would_reduce_uncertainty": "Access to: (1) Credit agreement Section on 'Consolidated EBITDA' or 'Adjusted EBITDA' definition with all permitted adjustments listed, (2) Compliance certificates showing GAAP EBITDA vs Adjusted EBITDA reconciliation (reveals magnitude of add-backs), (3) Lender correspondence regarding add-back approvals or challenges (if disputes occurred), (4) Management accounting showing 'cash EBITDA' vs 'covenant EBITDA' (internal tracking of adjustments). Reveals lender discretion leverage and pre-default control mechanisms."
+    },
+    {
+      "unknown": "Excess Cash Flow Sweep Percentage, Leverage Step-Downs, and Calculation Methodology",
+      "type": "UNKNOWN (resolvable with credit agreement)",
+      "decision_impact": "Cannot assess CASH RETENTION IF company generates positive FCF (currently negative but possible if turnaround occurs) without knowing: (1) Sweep percentage by leverage tier (e.g., 75% if leverage >5.0x, 50% if 4.0-5.0x, 25% if 3.0-4.0x, 0% if <3.0x?), (2) Calculation of 'excess cash flow' (which deductions allowed before sweep calculated?), (3) Minimum repayment thresholds (first $X million exempt from sweep?). IMPACT: If sweep is 75-100% at current leverage levels, ANY positive cash generation captured by lenders—prevents cash accumulation for growth, strategic investments, or equity returns. If sweep is 25-50%, partial cash retention possible. Determines whether turnaround scenario benefits EQUITY (partial retention) or ONLY LENDERS (full sweep).",
+      "what_would_reduce_uncertainty": "Access to: (1) Credit agreement Section on 'Mandatory Prepayments - Excess Cash Flow' with percentage grid by leverage ratio, (2) Historical precedents: Has company generated positive ECF in past? What was sweep percentage? (3) Lender projections: At what leverage level does sweep reduce to 0%? (total paydown required for cash retention). Clarifies whether equity has upside potential or lenders capture all value creation until substantial deleveraging."
+    },
+    {
+      "unknown": "Cross-Default Materiality Threshold and Excluded Obligations",
+      "type": "UNKNOWN (resolvable with credit agreement)",
+      "decision_impact": "Cannot assess AMPLIFICATION RISK from minor failures without knowing: (1) Dollar threshold for cross-default ($25M? $50M? $75M?), (2) Which obligations are EXCLUDED from cross-default (purchase money debt? capital leases? performance bonds?), (3) Whether threshold is PER OBLIGATION or AGGREGATE (one $30M failure triggers? or cumulative $75M across multiple obligations?), (4) Cure period before cross-default declared (0 days? 30 days? 60 days?). IMPACT: LOW threshold ($25M) with broad definition and short cure creates HIGH BRITTLENESS—many potential triggers exceed threshold. HIGH threshold ($75-100M) with carve-outs creates LOWER RISK—fewer failures reach threshold. Determines whether company can tolerate MINOR FAILURES (negotiate specific defaults) or must maintain PERFECT PERFORMANCE (any failure cascades).",
+      "what_would_reduce_uncertainty": "Access to: (1) Credit agreement Section on 'Events of Default - Cross-Default' with threshold amount and definition, (2) Schedule of excluded obligations or carve-outs (which debts/obligations NOT subject to cross-default), (3) Notice and cure provisions (how long before cross-default declared?). Quantifies fragility—how close is company to cross-default trigger given known risks (litigation, leases, partnerships)."
+    },
+    {
+      "unknown": "Reporting Covenant Requirements, Budget Approval Process, and Lender Information Rights",
+      "type": "UNKNOWN (resolvable with credit agreement)",
+      "decision_impact": "Cannot assess DEGREE OF LENDER OPERATIONAL OVERSIGHT without knowing: (1) Reporting frequency (monthly? quarterly? annual only?), (2) Types of reports required (financial statements, compliance certificates, budgets, variance reports, customer concentration, KPIs?), (3) Lender approval rights over budgets/projections (informational only? require approval? require 're-forecasting' if variance?), (4) Field audit rights (can lenders demand on-site visits? appoint monitors? require management presentations?), (5) Material event notification requirements (what triggers notice? within how many days?). IMPACT: EXTENSIVE reporting with budget approval creates CONTINUOUS LENDER SUPERVISION—de facto operational oversight even without formal default. MINIMAL reporting (quarterly financials only) creates EPISODIC interaction—lenders less involved until breach. Determines whether lender control is ALREADY PRESENT (through information leverage) or FUTURE EVENT (only upon breach).",
+      "what_would_reduce_uncertainty": "Access to: (1) Credit agreement Section on 'Affirmative Covenants - Financial Reporting and Information' listing all required reports, (2) Section on 'Lender Rights - Audits, Inspections, Management Meetings' defining field audit and access rights, (3) Historical practice: How often do lenders request meetings? Do they attend board meetings? Do they review/approve budgets in practice? (behavioral evidence vs contractual rights). Reveals hidden operational governance through information asymmetry."
+    },
+    {
+      "unknown": "Default Remedies, Acceleration Mechanics, and Waiver/Amendment Precedents",
+      "type": "UNKNOWN (resolvable with credit agreement and lender relationship history)",
+      "decision_impact": "Cannot predict LENDER BEHAVIOR upon covenant breach without knowing: (1) Cure periods for different default types (financial covenant 30-60 days? negative covenant 0 days?), (2) Lender voting requirements (majority? supermajority? unanimous?) for waiver vs acceleration decisions, (3) Historical relationship: Has company had covenant issues before? How did lenders respond (supportive? extractive? aggressive?), (4) Amendment precedents: What fees/concessions did lenders demand in past modifications (if any)? IMPACT: SUPPORTIVE lenders with amendment history likely WAIVE breach with moderate fees (1-2%, 100-150bps rate increase). EXTRACTIVE lenders or first-time breach likely demand HEAVY CONCESSIONS (3% fees, 300bps rates, CRO appointment, equity warrants). Determines COST of covenant breach—moderate (navigable) vs severe (dilutive, transfers control).",
+      "what_would_reduce_uncertainty": "Access to: (1) Credit agreement Section on 'Events of Default' and 'Acceleration' mechanics, (2) Historical amendments or waivers to prior credit agreements (pre-March 2024 refinancing), shows lender behavior patterns, (3) Lender syndicate composition: Who are major holders? (banks? credit funds? distressed debt funds?) Different lender types have different recovery strategies, (4) Industry intelligence: How have these specific lenders treated other distressed credits? Predictive of behavior in Rackspace situation."
+    }
+  ],
+  "uncertainty_impact_summary": {
+    "critical_unknowns_count": 6,
+    "resolvable_unknowns": "6 of 6 - All unknowns resolvable with credit agreement access, compliance certificates, and lender relationship information",
+    "unknowable_unknowns": "0 - No fundamental unknowables, only information access gaps",
+    "impact_on_control_transfer_timing": "Unknowns create 2X-3X VARIANCE in timing precision: Breach could occur in 6 months (if cushion thin) or 18 months (if cushion thick). Directional conclusion (breach probable, lenders gain control) is HIGH CONFIDENCE (85-90%) despite unknowns. Timing precision is MEDIUM CONFIDENCE (60-70%) due to unknowns.",
+    "impact_on_lender_behavior_assessment": "Cannot predict WHETHER lenders will waive vs accelerate upon breach (unknown #6), or HOW MUCH control they currently exercise through EBITDA discretion and reporting leverage (unknowns #2, #5). Structural control transfer mechanisms (change of control veto, cross-default cascade) are FACTS independent of unknowns. Hidden pre-default control (EBITDA manipulation, reporting oversight) is LIKELY but magnitude UNKNOWN.",
+    "directional_confidence_despite_unknowns": "HIGH (85-90%) that control transfer WILL OCCUR within 6-18 months. Unknowns affect TIMING and MAGNITUDE, not DIRECTION. Even with maximum uncertainty (thick cushion, supportive lenders, mechanical covenants), trajectory leads to breach eventually—question is WHEN (2-8 quarters) and COST (moderate vs severe concessions). With minimum uncertainty (thin cushion, extractive lenders, discretionary covenants), breach is IMMINENT (1-3 quarters) and COSTLY (CRO appointment, heavy dilution). RANGE is wide but OUTCOME convergent."
+  },
+  "evidence_sources": [
+    "Stage 1.1, 1.4, 5.3: Credit agreement structure, covenant restrictions, unknown specific terms",
+    "Industry standards: Typical covenant levels, thresholds, reporting requirements for distressed credits (S&P LCD, Moody's)",
+    "Distressed credit precedents: Lender behavior patterns in similar situations (amendment fees, control extraction tactics)",
+    "Information gaps: Q4 2024 earnings did not disclose covenant compliance, cushion, or lender relationship details"
+  ]
+}

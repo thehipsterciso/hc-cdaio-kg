@@ -1,0 +1,49 @@
+{
+  "sub_stage": "4.3",
+  "document_metadata": {
+    "title": "Dependency & Failure Propagation Hypotheses",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09"
+  },
+  "hypothesis_framework": [
+    {
+      "hypothesis_id": "H4.3-A",
+      "hypothesis": "Dependency density (number and complexity of cross-functional dependencies) is primary driver of execution failure—not functional capacity or skill deficits",
+      "type": "STRUCTURAL",
+      "supporting_evidence_sought": ["Customer issues requiring cross-functional coordination stalling despite functional expertise available", "Sales-delivery handoff failures despite both functions having capacity", "Security incident response delays from coordination not technical capability", "CEO bottleneck from coordination load not decision quality"],
+      "disconfirming_evidence_sought": ["Evidence of execution failures from functional skill/capacity deficits rather than coordination", "Successful cross-functional coordination examples", "Throughput improvements from adding functional capacity without addressing coordination"],
+      "evidence_found": {
+        "supporting": ["BBB: dozens of engineers (capacity exists) but coordination fails", "Sales 400+ reps, delivery has capacity, but handoff creates margin erosion", "Security incidents require multi-function coordination creating extended remediation", "CEO coordination load limits throughput despite functional teams having capacity"],
+        "disconfirming": ["No evidence of functional skill deficits as primary constraint", "No successful cross-functional coordination examples found", "Layoffs reduced capacity but throughput worsened—suggests coordination not capacity is constraint"]
+      },
+      "status": "SUPPORTED",
+      "notes": "Multiple failure patterns indicate coordination, not functional capacity/skill, drives failure. Adding capacity (sales reps, support staff) doesn't improve throughput when coordination constrains."
+    },
+    {
+      "hypothesis_id": "H4.3-B",
+      "hypothesis": "Bottlenecks are structural (authority architecture, regulatory constraints, capital structure) not incidental (temporary resource constraints or process inefficiencies)—cannot be resolved through process improvement or temporary capacity additions",
+      "type": "STRUCTURAL",
+      "supporting_evidence_sought": ["Bottlenecks persisting across leadership changes (three CEOs)", "Bottlenecks persisting despite process changes (reorganization, layoffs)", "Bottlenecks rooted in external constraints (debt, Apollo, regulations)", "Attempted fixes failing (sales refresh, walk away policy—symptoms addressed not root causes)"],
+      "disconfirming_evidence_sought": ["Bottlenecks resolved through process improvements", "Bottlenecks eliminated by capacity additions", "Temporary resource constraints causing bottlenecks", "Leadership changes resolving bottlenecks"],
+      "evidence_found": {
+        "supporting": ["CEO bottleneck persists across three CEOs—Jones, Maletira, Kandiah", "Sales-delivery bottleneck persists despite sales refresh Q3 2024", "Capital allocation bottleneck rooted in debt structure ($1.3B) and Apollo control", "Multi-jurisdictional bottleneck rooted in regulatory mandates (FedRAMP, UK, China)", "Strategic review 2022-2023, reorganization 2023, layoffs 2021/2023—none resolved bottlenecks"],
+        "disconfirming": ["No evidence of bottlenecks resolved through process/capacity fixes", "No evidence of temporary constraints—all persist over years"]
+      },
+      "status": "SUPPORTED",
+      "notes": "Bottlenecks persist despite leadership changes, reorganizations, process improvements—indicates structural not incidental. Rooted in authority architecture, regulatory constraints, capital structure—cannot fix without structural redesign."
+    },
+    {
+      "hypothesis_id": "H4.3-C",
+      "hypothesis": "Failure absorption through heroics masks systemic fragility—creates illusion of operational stability while structural failures accumulate invisibly until crisis forces recognition",
+      "type": "STRUCTURAL",
+      "supporting_evidence_sought": ["Support staff heroics masking coordination authority gap", "Delivery absorbing sales failures through margin erosion", "CEO absorbing all cross-functional coordination personally", "Operations absorbing security governance absence through reactive crisis management", "Activity metrics stable while outcome metrics degrade"],
+      "disconfirming_evidence_sought": ["Failure surfacing promptly without heroics masking", "Outcome metrics aligned with activity metrics", "Management visibility into masked failures", "Proactive problem recognition before crisis"],
+      "evidence_found": {
+        "supporting": ["SLA response times met (activity) while customer satisfaction declining (outcome)", "Sales bookings stable (activity) while margins eroding (outcome)", "Support processing tickets (activity) while customers complaining unresolved (outcome)", "CEO intervention masking governance absence until three CEOs in three years indicates unsustainable", "Failure recognition delayed until crisis: FY2024 -7%, CEO walk away policy, sales refresh"],
+        "disconfirming": ["No evidence of proactive failure recognition", "No evidence of activity/outcome alignment", "Crisis-driven recognition pattern (walk away, sales refresh) confirms masking until severe"]
+      },
+      "status": "SUPPORTED",
+      "notes": "Multiple failure absorption mechanisms identified. Heroics create stability illusion—activity metrics stable, outcome metrics degrading. Recognition delayed until crisis (revenue decline, margin erosion, CEO intervention required). Dangerous pattern—post-close integration will disrupt heroics, exposing masked failures suddenly."
+    }
+  ]
+}

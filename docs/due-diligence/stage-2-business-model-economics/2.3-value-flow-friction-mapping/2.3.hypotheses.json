@@ -1,0 +1,58 @@
+{
+  "hypothesis_framework": [
+    {
+      "hypothesis": "H1: Value leakage through customer churn is SYSTEMIC and ACCELERATING, with implied gross churn 20-25% annually (inferred from bookings growth 14% YoY vs revenue decline 7% YoY), making business model unsustainable without dramatic churn reduction.",
+      "supporting_evidence_sought": [
+        "Revenue declining 7% YoY despite bookings growth 14% YoY - FOUND, suggests net churn ~21%",
+        "Month-to-month billing creates zero lock-in - FOUND in Stage 2.2",
+        "Email hosting 'immediate churn' from price increase demonstrates zero stickiness - FOUND in Stage 2.1",
+        "Headcount cuts 12% while revenue declined 7% may degrade service quality driving more churn - INFERRED",
+        "Public Cloud margin 10.4% suggests low differentiation = high churn risk - FOUND in Stage 2.2"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence of customer retention metrics showing LOW churn (e.g., <10% annually) - NOT FOUND",
+        "Evidence of high NPS or customer satisfaction scores indicating loyalty - NOT FOUND",
+        "Evidence of long average customer lifetime or high LTV/CAC ratios - NOT FOUND",
+        "Evidence of contractual lock-ins, switching costs, or retention mechanisms - NOT FOUND (month-to-month standard)"
+      ],
+      "status": "SUPPORTED",
+      "notes": "All supporting evidence found. No disconfirming evidence discovered. Math strongly suggests high churn: 14% bookings growth + 7% revenue decline = 21% net leakage. Without disclosed churn rates, cannot confirm exact magnitude, but directional evidence is clear: business is LEAKING customers faster than acquiring new ones."
+    },
+    {
+      "hypothesis": "H2: Private Cloud long revenue realization cycle (8-20 weeks procurement/deployment/migration) creates STRUCTURAL COMPETITIVE DISADVANTAGE vs public cloud alternatives (minutes-hours provisioning), contributing to 13% YoY revenue decline and secular customer migration.",
+      "supporting_evidence_sought": [
+        "Private Cloud requires CapEx procurement (4-12 weeks) + deployment (2-6 weeks) + migration (2-8 weeks) - INFERRED from industry standard",
+        "Public cloud alternatives (AWS/Azure/Google) provision in minutes-hours - FACT (well-known)",
+        "Private Cloud declining 13% YoY (fastest decline of any segment) - FOUND in Stage 2.1",
+        "Customer time-to-value comparison favors public cloud dramatically - INFERRED",
+        "CapEx $136M declining 25% suggests Rackspace reducing Private Cloud investment - FOUND in Stage 2.2"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence of Private Cloud revenue growth or stabilization - NOT FOUND (declining 13% YoY)",
+        "Evidence of customer preference for Private Cloud despite longer lead times - NOT FOUND",
+        "Evidence of Rackspace reducing procurement cycle through pre-provisioned capacity - NOT FOUND",
+        "Evidence of Private Cloud customers citing fast deployment as satisfaction driver - NOT FOUND"
+      ],
+      "status": "SUPPORTED",
+      "notes": "Supporting evidence found. No disconfirming evidence. Private Cloud's 8-20 week lag is STRUCTURAL DISADVANTAGE that cannot be eliminated without abandoning CapEx model (moving to pre-provisioned capacity with higher carrying costs and stranded asset risk). Time disadvantage vs public cloud is PERMANENT under current model."
+    },
+    {
+      "hypothesis": "H3: Multi-entity jurisdictional fragmentation creates SYSTEMIC OPERATIONAL FRICTION (duplicative overhead, coordination complexity, talent silos) adding 15-25% cost penalty that CANNOT be eliminated without exiting markets, making Rackspace permanently cost-disadvantaged vs unified competitors.",
+      "supporting_evidence_sought": [
+        "Stage 1 identified mandatory multi-entity structure (US, Government, UK Sovereign, China, Singapore) - FOUND",
+        "Government and UK Sovereign require ISOLATED operations (cannot share infrastructure/personnel) - FOUND in Stage 1",
+        "SG&A 25.9% of revenue vs industry competitive 15-20% suggests 5-10pp overhead penalty - FOUND in Stage 2.2",
+        "Estimated 15-25% cost penalty from fragmentation - CALCULATED in Stage 2.2",
+        "Cannot consolidate without losing authorizations/customers - FOUND in Stage 1 (touch tests)"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence of entity consolidation or structural simplification - NOT FOUND",
+        "Evidence of shared services or cost synergies across entities - NOT FOUND (isolation prevents sharing)",
+        "Evidence of SG&A efficiency approaching industry competitive levels - NOT FOUND (25.9% flat)",
+        "Evidence of operational coordination mechanisms reducing friction - NOT FOUND"
+      ],
+      "status": "SUPPORTED",
+      "notes": "All supporting evidence found. No disconfirming evidence. Multi-entity fragmentation is PERMANENT by regulatory/compliance mandate. Cost penalty cannot be eliminated through operational improvements - it is STRUCTURAL TAX on Rackspace business model. Acquirer inherits this disadvantage."
+    }
+  ]
+}

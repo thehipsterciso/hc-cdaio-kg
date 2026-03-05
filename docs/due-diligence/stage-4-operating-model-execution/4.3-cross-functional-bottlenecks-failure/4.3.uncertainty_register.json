@@ -1,0 +1,34 @@
+{
+  "sub_stage": "4.3",
+  "document_metadata": {
+    "title": "Uncertainty Register - Dependencies & Failure Propagation",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09"
+  },
+  "uncertainty_register": [
+    {
+      "unknown": "Dependency mapping completeness—which dependencies undisclosed or underestimated",
+      "type": "UNKNOWN",
+      "decision_impact": "May have missed critical dependencies that will surface post-close. Vendor dependencies partially known (ScienceLogic monitoring) but complete vendor landscape unknown. Technology platform dependencies (shared services, central infrastructure) unknown. Data dependencies (which teams depend on which data sources) unknown. Cannot fully assess failure propagation without complete dependency map.",
+      "what_would_reduce_uncertainty": "Complete dependency mapping: Vendor relationships and contracts, Shared services utilization, Technology platform architecture (central vs distributed), Data flow dependencies, Critical path analysis for major workflows"
+    },
+    {
+      "unknown": "Failure absorption capacity quantification—how much heroics capacity remains before collapse",
+      "type": "UNKNOWN",
+      "decision_impact": "Heroics masking failures, but unknown how close to capacity exhaustion. Support staff burnout timeline unknown. CEO coordination capacity utilization unknown (50%? 90%? 150%?). Delivery team margin absorption capacity unknown. Cannot predict when masking fails and crisis emerges. Post-close integration will stress heroics capacity—unknown if capacity exists to absorb integration load.",
+      "what_would_reduce_uncertainty": "Heroics capacity assessment: Employee burnout indicators (turnover rates, engagement scores), CEO time allocation analysis (coordination load percentage), Delivery margin absorption history (how much erosion sustainable), Support escalation queue depth trends (growing or stable), Operations team incident response capacity (number of concurrent incidents manageable)"
+    },
+    {
+      "unknown": "Failure propagation velocity—how quickly localized failures cascade systemically",
+      "type": "UNKNOWN",
+      "decision_impact": "Some failures cascade quickly (security incidents), others slowly (margin erosion). Cannot predict crisis timing without understanding propagation velocity. Customer churn from support failures—how quickly does individual churn aggregate to material revenue impact? Sales-delivery failures—at what volume do unprofitable deals overwhelm profitable ones? Cannot assess urgency of corrective actions without velocity understanding.",
+      "what_would_reduce_uncertainty": "Failure velocity metrics: Customer churn acceleration patterns, Margin erosion rates and tipping points, Support quality degradation trends (linear or exponential), Sales-delivery failure accumulation rate, Security incident frequency trends"
+    },
+    {
+      "unknown": "Post-close integration impact on dependencies and heroics",
+      "type": "UNKNOWABLE",
+      "decision_impact": "Integration will stress dependencies (additional coordination load) and disrupt heroics (informal networks broken, personnel changes). Cannot predict severity without knowing acquirer integration approach. CEO coordination capacity already constrained—integration load may overwhelm completely. Support heroics dependent on informal relationships—integration disrupts, failures surface. Cannot model integration risk without knowing acquirer strategy.",
+      "what_would_reduce_uncertainty": "UNKNOWABLE—depends on future acquirer integration strategy. Can model scenarios (light touch vs full integration) but cannot predict which approach taken until transaction negotiated."
+    }
+  ]
+}

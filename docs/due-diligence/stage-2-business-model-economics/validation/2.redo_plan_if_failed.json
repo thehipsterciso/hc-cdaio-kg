@@ -1,0 +1,113 @@
+{
+  "redo_plan_if_failed": {
+    "stage_2_status": "PASSED - This redo plan is CONDITIONAL and not executed",
+    "notes": "Stage 2 met all 6 exit criteria and PASSED validation. This redo plan documents what would be required if any criterion had FAILED. Plan is preserved for process documentation but not executed.",
+    "exit_criteria_and_conditional_redo_plans": [
+      {
+        "criterion": "1. Revenue engines identified (minimum 3 distinct engines with revenue, growth rates, margin profiles)",
+        "status": "PASSED - 6 revenue engines identified",
+        "conditional_redo_if_failed": {
+          "failure_scenario": "If fewer than 3 distinct revenue engines identified, or engines lack revenue/growth/margin data",
+          "required_actions": [
+            "Return to Stage 2.1 (Business Model & Revenue Engine Reality)",
+            "Re-segment business using different criteria: (a) By customer segment instead of product/service, (b) By delivery model (cloud vs managed hosting vs professional services), (c) By geography if revenue geographically distinct",
+            "Request additional financial data from Stage 1 team: segment revenue breakdowns from management reporting, product/service revenue details, geographic revenue distribution",
+            "Expand revenue engine definition to capture smaller engines if only 1-2 large engines exist (e.g., break 'Public Cloud' into 'AWS Public Cloud', 'Azure Public Cloud', 'GCP Public Cloud' if needed)",
+            "Document why traditional segmentation doesn't apply if business truly has <3 engines (e.g., single-product company)"
+          ],
+          "output_files_to_revise": ["2.1.revenue_engines.json"],
+          "estimated_rework_effort": "2-4 hours"
+        }
+      },
+      {
+        "criterion": "2. Material cost/margin constraints identified and quantified",
+        "status": "PASSED - Multiple material constraints documented",
+        "conditional_redo_if_failed": {
+          "failure_scenario": "If no material cost constraints identified, or constraints not quantified (%, $ amounts, impacts)",
+          "required_actions": [
+            "Return to Stage 2.2 (Cost Structure & Margin Physics Reality)",
+            "Re-analyze cost structure focusing on: (a) Fixed vs variable cost breakdown, (b) Cost per revenue dollar by segment, (c) Overhead allocation and efficiency ratios, (d) CapEx trends and intensity",
+            "Identify constraints through benchmarking: Compare SG&A %, gross margins, CapEx intensity to industry benchmarks (MSP, cloud reseller, managed services) to identify outliers",
+            "Request additional data: Detailed P&L by segment if available, cost allocation methodologies, benchmark data sources",
+            "Quantify constraints: For each identified constraint, calculate $ impact (e.g., 'SG&A is $X above benchmark = $Y excess cost'), % impact on margins, and structural vs addressable components"
+          ],
+          "output_files_to_revise": ["2.2.cost_structures_by_revenue_engine.json", "2.2.margin_constraints_and_physics.json"],
+          "estimated_rework_effort": "3-5 hours"
+        }
+      },
+      {
+        "criterion": "3. Systemic value frictions or leakage points mapped (minimum 2 material frictions)",
+        "status": "PASSED - 3 frictions + 7 systemic contradictions identified",
+        "conditional_redo_if_failed": {
+          "failure_scenario": "If fewer than 2 systemic value frictions identified, or frictions not material/quantified",
+          "required_actions": [
+            "Return to Stage 2.3 (End-to-End Value Flow & Friction Mapping)",
+            "Expand value flow analysis: Map complete end-to-end flows for each revenue engine from customer acquisition → delivery → retention/expansion → churn",
+            "Identify frictions systematically: At each flow step, ask 'What reduces value capture? What causes leakage? What creates inefficiency?' Examples: long sales cycles (time friction), high CAC (cost friction), customer onboarding delays (time-to-value friction), churn (retention friction), partner extraction (value transfer friction)",
+            "Quantify frictions: For each friction, estimate $ or % impact (e.g., 'Partner extraction: $XM annually', '21% net leakage: $YM revenue loss', 'Multi-entity friction: Z% SG&A overhead')",
+            "Validate materiality: Friction is material if impact >5% of segment revenue/profit or >2% of total company revenue/profit"
+          ],
+          "output_files_to_revise": ["2.3.value_flow_maps.json", "2.3.value_frictions_and_leakage.json"],
+          "estimated_rework_effort": "4-6 hours"
+        }
+      },
+      {
+        "criterion": "4. Customer dependency or concentration risk assessed",
+        "status": "PASSED - 55-75% OI concentration documented",
+        "conditional_redo_if_failed": {
+          "failure_scenario": "If customer dependency/concentration not assessed, or assessment lacks quantification",
+          "required_actions": [
+            "Return to Stage 2.4 (Customer Segmentation Reality & Economic Dependence)",
+            "Analyze profit concentration: Calculate what % of operating income comes from top segments, and what % of revenue those segments represent (concentration = OI% >> Revenue%)",
+            "Estimate customer concentration: If actual customer data unavailable, infer from: (a) Segment type (Government/Enterprise = likely concentrated, SMB = likely fragmented), (b) Revenue per customer ranges, (c) Industry patterns (MSPs typically have top 10 customers = 20-40% revenue)",
+            "Assess dependency impact: Use touch test - 'What happens if top segment lost? Top 10 customers lost?' If impact is >25% OI or creates financial distress, dependency is HIGH",
+            "Document lock-in analysis: What keeps customers from leaving? Contractual lock-in, switching costs, technical integration, compliance requirements? Low lock-in + high concentration = maximum risk"
+          ],
+          "output_files_to_revise": ["2.4.customer_segments.json", "2.4.economic_dependence_and_concentration.json", "2.4.customer_contract_and_lock_in_dynamics.json"],
+          "estimated_rework_effort": "3-5 hours"
+        }
+      },
+      {
+        "criterion": "5. Partner/channel value capture asymmetry documented (if partner-dependent model)",
+        "status": "PASSED - 20-30X profit asymmetry documented",
+        "conditional_redo_if_failed": {
+          "failure_scenario": "If business is partner-dependent but asymmetry not documented, or asymmetry not quantified",
+          "required_actions": [
+            "Return to Stage 2.5 (Partner, Channel, and Value Capture Asymmetry)",
+            "Identify material partners: Who are critical partners without whom business cannot operate? (platforms, technology vendors, channels, compliance gatekeepers)",
+            "Quantify value split: For each $100 customer spends, how much goes to partner vs Rackspace? What are partner gross margins vs Rackspace margins? Calculate profit per $100 customer spend for each party to determine asymmetry ratio",
+            "Assess dependency symmetry: What % of Rackspace revenue depends on partner? What % of partner revenue comes from Rackspace? Asymmetry = Rackspace highly dependent but partner not dependent = zero leverage",
+            "Document leverage: Can Rackspace negotiate? Can Rackspace exit? Can partner unilaterally change terms? Recent partner actions (price increases, program changes) reveal leverage dynamics",
+            "Test materiality: Asymmetry is material if: (a) Affects >25% of revenue, (b) Partner has demonstrated willingness to extract value (recent price shocks), (c) Rackspace has zero leverage to resist"
+          ],
+          "output_files_to_revise": ["2.5.material_partners_and_channels.json", "2.5.value_capture_and_asymmetry.json", "2.5.dependency_and_leverage.json"],
+          "estimated_rework_effort": "4-6 hours"
+        }
+      },
+      {
+        "criterion": "6. Business model contradictions or tensions identified (if any exist)",
+        "status": "PASSED - 8 contradictions identified (7 systemic, 6 active)",
+        "conditional_redo_if_failed": {
+          "failure_scenario": "If no contradictions identified when business shows incoherence signals (declining revenue + growth claims, profit concentration + margin pressure, partner dependency + extraction, etc.)",
+          "required_actions": [
+            "Return to Stage 2.6 (Business Model Coherence & Internal Contradictions)",
+            "Systematic contradiction search: For each business model component, identify what CONDITIONS are required for success, then check if OTHER components require CONTRADICTORY conditions. Examples: (a) Need scale BUT fragmentation blocks scale, (b) Need stability BUT zero lock-in allows rapid loss, (c) Need profit focus BUT revenue requires low-margin growth",
+            "Apply touch test methodology: For each potential contradiction, ask 'What breaks if I try to resolve this by optimizing for Component A? What breaks if I optimize for Component B?' If BOTH paths break something critical, it's a real contradiction",
+            "Test resolution paths: For each contradiction, enumerate possible resolutions (defend A, optimize B, exit one, invest in both, accept tension). If ALL paths lead to financial distress, operational collapse, or strategic failure, contradiction is UNRESOLVABLE and business model is incoherent",
+            "Classify contradictions: ACTIVE (currently breaking, visible in financial results) vs LATENT (not yet breaking but creating vulnerability). SYSTEMIC (affects entire business model) vs LOCALIZED (confined to one segment/function)",
+            "Formulate coherence assessment: Business model is COHERENT if contradictions are manageable trade-offs being successfully navigated. STRAINED if contradictions exist but resolution paths viable. INCOHERENT if multiple systemic contradictions with no viable resolution paths."
+          ],
+          "output_files_to_revise": ["2.6.identified_contradictions.json", "2.6.contradiction_impact_analysis.json", "2.6.coherence_assessment_summary.json"],
+          "estimated_rework_effort": "5-8 hours"
+        }
+      }
+    ],
+    "general_redo_principles": {
+      "if_single_criterion_fails": "Revise only the specific sub-stage(s) related to failed criterion. Example: If criterion 2 fails (cost constraints), redo Stage 2.2 only, not entire Stage 2.",
+      "if_multiple_criteria_fail": "If 3+ criteria fail, indicates fundamental analytical gap. Recommend: (1) Return to Stage 1 to verify data quality and completeness, (2) Request additional financial/operational data from management, (3) Redo all of Stage 2 with enhanced data set, (4) Consider whether business model is too opaque for effective analysis (missing segments, consolidated reporting hiding reality).",
+      "cross_stage_consistency_check": "After any redo, must verify: (1) Revised analysis consistent with other Stage 2 sub-stages, (2) Revised claims properly sourced to Stage 1 evidence, (3) Hypothesis discipline maintained (supporting + disconfirming evidence), (4) Uncertainty preserved (unknowns not smoothed into assumptions).",
+      "escalation_criteria": "If after redo attempt, criterion still fails: (1) Document WHY criterion cannot be met (data unavailable? business model doesn't fit framework? criterion not applicable?), (2) Request user guidance on whether to: (a) Proceed with WAIVED criterion (document limitation), (b) Request additional data to meet criterion, (c) Modify criterion to fit business reality."
+    },
+    "process_notes": "Stage 2 PASSED all exit criteria, so no redo required. This redo plan serves as: (1) Process documentation for future due diligence projects, (2) Quality assurance framework showing what would constitute failure and how to remediate, (3) Demonstration of analytical rigor - knowing what 'good' looks like by defining what 'failed' would require."
+  }
+}

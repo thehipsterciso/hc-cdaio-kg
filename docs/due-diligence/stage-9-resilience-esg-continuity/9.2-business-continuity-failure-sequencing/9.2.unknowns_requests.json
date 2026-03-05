@@ -1,0 +1,113 @@
+{
+  "sub_stage": "9.2",
+  "document_metadata": {
+    "title": "Unknowns Requests - Information Needed to Complete Continuity Assessment",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-16",
+    "scope": "Priority information requests to reduce decision-critical uncertainties"
+  },
+  "unknowns_requests": [
+    {
+      "request": "Comprehensive Business Continuity and Disaster Recovery Program Documentation Package",
+      "why_needed": "CRITICAL for assessing whether continuity capability matches business scale and customer commitments. Current analysis identifies: (1) Eight platform single points of failure (Stage 6.3), (2) Stated RTO/RPO likely unachievable during dependency failures (Stage 9.2), (3) December 2022 Exchange discontinuation rather than recovery (Stage 8.1), (4) Three incidents in 36 months demonstrating vulnerabilities (Stage 8.1), (5) Zero evidence of comprehensive BCP program across nine stages of analysis. Cannot determine if: (a) Program exists but undisclosed, (b) Program has major gaps, or (c) Program is immature/ad hoc. All three interpretations are concerning. Need documentation to assess actual vs stated capability before valuation/acquisition decisions.",
+      "highest_value_source_types": [
+        "BCP/DR Master Plan and Policy (scope, objectives, governance, accountability)",
+        "Annual DR Test Reports (last 3 years) with scenarios tested, results, pass/fail, lessons learned, remediation actions",
+        "RTO/RPO Matrix by service tier, customer segment, and critical business service",
+        "Platform Infrastructure DR Plans specifically for billing, IAM, monitoring, provisioning systems",
+        "DR Test Schedule and Results Database (test frequency, coverage, pass rates over time)",
+        "BCP Program Audit Results (internal audit, external assessor, SOC 2/ISO 22301 findings)",
+        "Executive BCP Reporting (board presentations, risk committee updates showing leadership oversight)",
+        "CapEx Allocation for Continuity (redundancy infrastructure, backup systems, alternative facilities)",
+        "Third-Party Dependencies Map (hyperscaler SLAs, vendor commitments, supply chain continuity)",
+        "Geographic/Segment-Specific DR Capabilities (US, UK, Singapore; Government, Commercial, SMB)"
+      ],
+      "blocking_for_stage_progression": true
+    },
+    {
+      "request": "Historical Incident Response Package - Timelines, Decisions, Impacts, and Recovery for All Major Incidents 2022-2025",
+      "why_needed": "CRITICAL for calibrating failure sequence models and churn sensitivity. Stage 9.2 failure sequences are INFERENCES based on dependency analysis and industry patterns. Need empirical data from actual Rackspace incidents to validate/refine models. Specifically need: (1) Detailed timeline from T+0 (detection) through T+final (full recovery or discontinuation) for December 2022 Exchange, September 2024 ScienceLogic, October 2024 CL0P, and any other material incidents, (2) Decision points and decision lag (when did executives engage? what decisions required? how long to decide?), (3) Customer impact quantification (how many customers affected? revenue at risk? SLA breaches? credits paid?), (4) Post-incident churn (what % of affected customers churned within 3/6/12 months? what % of unaffected customers churned as contagion?), (5) Recovery costs (forensics, legal, PR, customer credits, insurance recovery, uninsured losses). This data enables: (a) Validating Stage 9.2 churn estimates (are 15-50% estimates realistic or too high/low?), (b) Assessing leadership response speed (does decision lag amplify failures?), (c) Quantifying insurance gap (consistent 50% recovery or variable?), (d) Calibrating future incident cost/impact models for valuation.",
+      "highest_value_source_types": [
+        "Incident Post-Mortem Reports (root cause analysis, timeline, impact assessment, lessons learned)",
+        "Executive Incident Logs (when did CEO/CFO/CTO engage? what decisions made? communication strategy?)",
+        "Customer Impact Analysis (affected customers, revenue at risk, SLA breaches, credits paid, churn within 3/6/12 months)",
+        "Insurance Claims Documentation (costs incurred, covered amounts, denied amounts, recovery timeline)",
+        "Financial Impact Assessments (direct costs, revenue loss, margin impact, covenant stress)",
+        "Customer Communications (incident notifications, status updates, post-incident letters)",
+        "War Room Logs or Incident Command Records (real-time decision-making and coordination)",
+        "Regulatory Filings (8-K cybersecurity disclosures, FedRAMP incident reports, breach notifications)",
+        "Post-Incident Churn Analysis (termination reasons, competitive displacement patterns, recovery efforts)",
+        "Remediation Plans and Status (what did Rackspace commit to fix? what was actually fixed? cost? timeline?)"
+      ],
+      "blocking_for_stage_progression": true
+    },
+    {
+      "request": "Customer Contract and SLA Terms Library - Top 100 Customers by Revenue",
+      "why_needed": "CRITICAL for quantifying SLA breach exposure and customer termination rights. Cannot assess continuity risk without knowing contractual commitments. Need: (1) RTO/RPO commitments in SLAs (are they 1 hour, 4 hours, 24 hours? vary by tier?), (2) SLA breach penalties (5%, 10%, 25% MRR credits? cumulative or capped?), (3) Termination rights (can customer terminate for single breach? multiple breaches? material breach definition?), (4) Early termination fees (if any - do they actually prevent exits or just extract exit cost?), (5) Liability caps (is Rackspace liability capped at MRR, annual contract value, or unlimited?), (6) Service discontinuation rights (can Rackspace discontinue service like Exchange? with what notice? what customer remedies?). Top 100 customers cover estimated 50-70% of revenue per typical enterprise distribution. Sample enables: (a) Estimating SLA credit exposure for major incidents affecting broad customer base, (b) Modeling customer termination risk (how many could terminate vs locked in), (c) Assessing liability risk (unlimited liability exposure or capped?), (d) Understanding termination cost (high fees deter exits or customers pay to leave?).",
+      "highest_value_source_types": [
+        "Master Service Agreements (MSAs) for top 100 customers by annual revenue",
+        "Service Level Agreements (SLAs) with specific uptime, RTO/RPO, response time commitments",
+        "SLA Credit Calculation Methodologies (how are breaches measured? what credits trigger?)",
+        "Termination Rights and Early Termination Fee Schedule by customer segment",
+        "Liability and Indemnification Terms (caps, exclusions, insurance requirements)",
+        "Customer Escalation History (how many customers have invoked SLA breach clauses? termination rights?)",
+        "Standard SLA Terms by Service Tier (Managed Infrastructure vs Managed Operations vs Fanatical Support)",
+        "Government Contract Terms (particularly termination for convenience language, FedRAMP obligations)",
+        "Recent Contract Negotiations (are customers tightening SLAs? increasing penalties? demanding better terms?)",
+        "SLA Credit Payout History (demonstrates actual vs contractual achievement gap)"
+      ],
+      "blocking_for_stage_progression": true
+    },
+    {
+      "request": "Platform Infrastructure Architecture and Dependency Documentation",
+      "why_needed": "HIGH PRIORITY for assessing single points of failure and integration risk. Stage 6.3 identifies eight 'untouchable platforms' with 'catastrophic blast radius' but lacks architectural detail to assess DR capability or integration feasibility. Need: (1) Architecture diagrams showing billing, IAM, monitoring, and provisioning system components and dependencies, (2) Redundancy and failover mechanisms (if any) - hot standby? active-active? geographic distribution?, (3) External dependencies on hyperscaler APIs, third-party vendors, network connectivity, (4) Data flows and integration points with other systems, (5) Technology stack (commercial software vs custom-built? vendor support availability?), (6) Change history (when last significantly updated? technical debt accumulation?), (7) Personnel dependencies (key architects, tribal knowledge holders). Enables: (a) Assessing whether platforms can be recovered within business-acceptable timelines or are true SPOFs, (b) Estimating cost to build redundancy post-acquisition if capabilities don't exist, (c) Planning integration if buyer intends to migrate platforms to buyer infrastructure, (d) Identifying key person dependencies requiring retention or knowledge transfer.",
+      "highest_value_source_types": [
+        "IT Architecture Diagrams (network topology, system dependencies, data flows)",
+        "Platform Technology Stack Documentation (software, versions, vendors, licenses, support agreements)",
+        "Redundancy and Failover Design Documents (if they exist - how do platforms handle failures?)",
+        "Integration Maps (which systems depend on billing/IAM/monitoring/provisioning? how tightly coupled?)",
+        "Platform Vendor Contracts (SLAs from AWS, Azure, Google, VMware, Broadcom that Rackspace depends on)",
+        "Change Management History (major platform changes, upgrades, outages, lessons learned)",
+        "Platform Incident History (failures affecting billing/IAM/monitoring - how handled? recovery time?)",
+        "CapEx Requests for Platform Improvements (shows whether redundancy/DR investments planned or deferred)",
+        "Personnel Documentation (who are platform architects? what is tribal knowledge risk?)",
+        "SOC 2 Type II Audit Controls for Platform Systems (do they have equivalent rigor to customer-facing?)"
+      ],
+      "blocking_for_stage_progression": false
+    },
+    {
+      "request": "Cyber Insurance Policy and Claims History Documentation",
+      "why_needed": "MEDIUM-HIGH PRIORITY for assessing incident cost absorption capacity and future insurability. Stage 8.1 shows Exchange incident recovered 50% from insurance ($5.4M of $10.8-12M). Stage 9.2 projects potential 200-500% premium increases or non-renewal after three incidents in 36 months. Need: (1) Current cyber insurance policy with limits, deductibles, exclusions, (2) Claims history for Exchange, ScienceLogic, CL0P showing covered vs denied amounts and denial reasons, (3) Renewal communications from incumbent carrier (will they renew? at what terms?), (4) Alternative quotes or declination letters if market shopping, (5) Underwriter risk assessment of Rackspace (how do they view incident pattern and risk profile?), (6) Board or risk committee discussions about insurance adequacy. Enables: (a) Modeling uninsured portion of future incidents (if 50% recovery continues, need capital reserves for other 50%), (b) Forecasting insurance cost trajectory (if premiums 2-5X, affects operating costs), (c) Assessing insurability risk (if approaching uninsurable status, fundamentally changes risk profile), (d) Evaluating coverage gaps (what types of losses explicitly excluded? revenue loss? reputational damage?).",
+      "highest_value_source_types": [
+        "Current Cyber Insurance Policy (declarations page, coverage terms, limits, deductibles, exclusions)",
+        "Insurance Claims Files (Exchange, ScienceLogic, CL0P) with covered amounts, denied amounts, denial reasons",
+        "Insurance Carrier Communications (renewal terms, premium quotes, coverage changes, non-renewal notices)",
+        "Insurance Broker Reports (market conditions, carrier appetite, alternative options, risk assessment)",
+        "Underwriter Risk Assessments (how do carriers view Rackspace risk profile given incident history?)",
+        "Board or Risk Committee Insurance Reviews (adequacy discussions, coverage limit decisions, cost-benefit)",
+        "Premium Payment History (demonstrating cost trend over time, particularly post-incidents)",
+        "Alternative Quotes or Declination Letters (if incumbent non-renewing, what are options? at what cost?)",
+        "Insurance Program Design Documentation (layers of coverage, self-insured retention, captive insurance usage)",
+        "Post-Incident Insurance Recoveries Timeline (how long from claim to payment? cash flow impact?)"
+      ],
+      "blocking_for_stage_progression": false
+    },
+    {
+      "request": "Post-Incident Customer Churn Analysis by Cohort and Reason",
+      "why_needed": "MEDIUM PRIORITY for calibrating revenue impact models. Stage 9.2 failure sequences estimate 15-50% churn from major incidents, but these are inferences not empirical measurements. Need customer retention data segmented by: (1) Cohorts (affected by incident vs unaffected, large enterprise vs mid-market vs government vs SMB), (2) Timeline (retention at 30/90/180/365 days post-incident), (3) Termination reasons (explicit incident citation vs general dissatisfaction vs competitive offering), (4) Contract status (month-to-month vs annual vs multi-year with ETF), (5) Revenue recovery (did any churned customers return? after how long?). Enables: (a) Validating Stage 9.2 churn estimates (15-50% reasonable or need adjustment?), (b) Identifying highest-churn segments (target for retention efforts or accept as lost?), (c) Measuring contagion (how much churn in unaffected customers from reputation damage?), (d) Assessing recovery potential (are churned customers gone forever or recoverable?), (e) Building segment-specific churn models for valuation (government churn different from commercial?).",
+      "highest_value_source_types": [
+        "Customer Cohort Retention Analysis (retention curves pre-incident vs post-incident by customer segment)",
+        "Termination Reason Codes (why did customers leave? explicit incident citation frequency?)",
+        "Revenue Waterfall from Affected Customers (baseline → incident → 30/90/180/365 days post)",
+        "Sales Team Win/Loss Reports (are incidents cited in competitive losses? how frequently?)",
+        "Customer Satisfaction Survey Results (NPS, CSAT pre-incident vs post-incident trends)",
+        "Customer Success Team Escalation Data (at-risk customer identification, save attempts, success rates)",
+        "Contract Renewal Analysis (renewal rates for customers affected by incidents vs unaffected controls)",
+        "Churn Recovery Program Results (efforts to win back churned customers, success rates, time to return)",
+        "Competitive Displacement Analysis (where do churned customers go? AWS direct? Azure? competitors?)",
+        "Customer Reference Program (are customers willing to provide references post-incident? what do they say?)"
+      ],
+      "blocking_for_stage_progression": false
+    }
+  ]
+}

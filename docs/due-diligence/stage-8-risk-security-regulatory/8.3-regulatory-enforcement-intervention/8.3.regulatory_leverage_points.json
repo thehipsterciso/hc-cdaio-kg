@@ -1,0 +1,188 @@
+{
+  "sub_stage": "8.3",
+  "document_metadata": {
+    "title": "Regulatory Leverage Points - Where Regulators Can Intervene Fastest and Hardest",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-15",
+    "scope": "Identification of regulators with demonstrated enforcement power, speed-to-impact, and material business leverage over operations"
+  },
+  "regulatory_leverage_points": [
+    {
+      "regulator": "FedRAMP Joint Authorization Board (JAB) - DoD, DHS, GSA",
+      "jurisdiction": "US Federal Government Cloud Services",
+      "lever_type": "LICENSING",
+      "affected_operations": [
+        "All FedRAMP-authorized services serving >50% of cabinet agencies (per Stage 1.5)",
+        "Rackspace Government Solutions, Inc. revenue stream",
+        "23 separate FedRAMP authorizations (per public disclosures)",
+        "DoD Impact Level 4 classified workloads"
+      ],
+      "severity": "HIGH",
+      "speed_to_impact": "IMMEDIATE (24-72 hours) - JAB can suspend Authority to Operate (ATO) upon discovering material control failure or unauthorized change discovered through continuous monitoring. ATO suspension means: (1) Federal customers CANNOT add new workloads or projects to Rackspace infrastructure (immediate expansion halt), (2) Existing federal customers must begin contract reviews and contingency planning (creates customer churn pressure), (3) New federal customer acquisition STOPS (cannot sell services without active ATO), (4) Re-authorization requires 3-12 months depending on violation severity. CRITICAL TIMING FACTOR: Continuous monitoring means JAB receives Rackspace security data in REAL-TIME via automated feeds - control failures, vulnerability scan results, configuration changes, incident detection all visible to JAB within 24-48 hours of occurrence. This is NOT quarterly assessment cycle - it is CONTINUOUS SURVEILLANCE. PRECEDENT: Three breaches in 36 months (Exchange Dec 2022, ScienceLogic Sept 2024, CL0P Oct 2024 per Stage 8.1) create HEIGHTENED SCRUTINY context - JAB likely reviewing each incident for FedRAMP impact, questions whether Rackspace security posture meets federal standards. Each incident is reported to JAB via continuous monitoring, JAB makes independent assessment of materiality.",
+      "claim_type": "FACT (JAB authority) + INFERENCE (heightened scrutiny from incident pattern)",
+      "evidence_sources": [
+        "FedRAMP.gov documentation: JAB authority to suspend/revoke ATO for material security failures",
+        "FedRAMP Continuous Monitoring requirements: Real-time security data feeds to JAB, monthly vulnerability scanning, annual assessments",
+        "Stage 1.5: FedRAMP authorization serves >50% cabinet agencies since 2015, DoD IL4 authorization",
+        "Stage 8.1: Three security incidents in 36 months create pattern visibility to JAB",
+        "Industry knowledge: FedRAMP ATO suspension is immediate operational change control (no 30-day cure period for material security failures)"
+      ]
+    },
+    {
+      "regulator": "US Securities and Exchange Commission (SEC)",
+      "jurisdiction": "Public Company Disclosure Obligations (Rackspace is NASDAQ: RXT)",
+      "lever_type": "APPROVAL_DELAY + FINES",
+      "affected_operations": [
+        "All cybersecurity incidents under Item 1.05 Form 8-K disclosure rules (effective December 2023)",
+        "M&A transactions requiring SEC approval or registration statements",
+        "Equity/debt capital raises requiring SEC registration",
+        "Periodic reporting obligations (10-K, 10-Q)"
+      ],
+      "severity": "MED-HIGH",
+      "speed_to_impact": "MIXED - Disclosure obligations are IMMEDIATE (4 business days for material cyber incidents per Item 1.05), but SEC enforcement investigations are SLOW (12-36 months). However, SEC investigation itself creates IMMEDIATE STRATEGIC LEVERAGE: (1) M&A transactions delayed 6-24 months pending investigation resolution (acquirers will not close under SEC cloud), (2) Capital raises complicated (prospectus must disclose ongoing SEC investigation, investor due diligence intensified), (3) D&O insurance premiums increase (investigation creates board liability exposure), (4) Securities litigation risk (shareholder suits for inadequate disclosure). NEW DISCLOSURE RULES (December 2023): Material cybersecurity incidents must be disclosed within 4 business days on Form 8-K. 'Material' determination is entity-specific but SEC guidance suggests incidents affecting operations, financial condition, or customer relationships are presumptively material. RACKSPACE POTENTIAL VIOLATION: Stage 8.1 documents CL0P ransomware incident October 2024 with leak site posting February 2025 - NO PUBLIC RACKSPACE 8-K DISCLOSURE FOUND. If incident was material (CL0P targeted file transfer systems typically used for customer data exchange per Stage 8.1 analysis), this is POTENTIAL DISCLOSURE VIOLATION. SEC enforcement pattern: SolarWinds investigation ongoing since 2020, demonstrates multi-year timeline but creates persistent strategic constraint.",
+      "claim_type": "FACT (disclosure rules) + INFERENCE (CL0P non-disclosure raises enforcement risk)",
+      "evidence_sources": [
+        "SEC Final Rule: Cybersecurity Risk Management, Strategy, Governance, and Incident Disclosure (effective December 2023)",
+        "Item 1.05 Form 8-K: Material cybersecurity incident disclosure within 4 business days",
+        "Stage 8.1: CL0P ransomware incident October 2024, leak site listing February 2025, no Rackspace 8-K filing found",
+        "SEC materiality guidance: Incidents affecting operations, customer relationships, or financial condition presumptively material",
+        "SEC enforcement precedent: SolarWinds investigation (2020-present) demonstrates timeline and strategic impact",
+        "Industry practice: SEC cyber disclosure investigations create M&A obstacles, capital market constraints"
+      ]
+    },
+    {
+      "regulator": "UK Information Commissioner's Office (ICO)",
+      "jurisdiction": "UK Data Protection (UK GDPR)",
+      "lever_type": "FINES + ENFORCEMENT_ORDERS",
+      "affected_operations": [
+        "UK Sovereign Services (launched March 2024, targeting £1B+ UK public sector market per Stage 1.5)",
+        "All UK customer operations processing personal data",
+        "RACKSPACE LIMITED (UK Company No. 03897010) legal entity operations",
+        "UK-based data centers and support teams"
+      ],
+      "severity": "HIGH",
+      "speed_to_impact": "FAST (3-6 months investigation to enforcement order) - ICO enforcement RAPIDLY ESCALATING in severity and speed. ENFORCEMENT DATA: £19.6M in first 7 fines of 2025 vs £2.7M in 18 fines throughout 2024 = 7x increase in average penalty severity. ICO has ACCELERATED investigation timelines - enforcement notices issued 3-6 months from complaint/breach notification vs historical 12-18 months. DIRECT PRECEDENT APPLICABLE TO RACKSPACE: Advanced Computer Software Group £3.07M fine (March 2025) for 2022 ransomware affecting 82 NHS organizations. Advanced is MSP serving 22,000 companies - ICO faulted 'failing to implement adequate security measures such as multi-factor authentication (MFA), vulnerability scanning, and patch management.' RACKSPACE VULNERABILITY IDENTICAL: Stage 8.1 documents Rackspace Exchange ransomware (December 2022) caused by FAILURE TO PATCH ProxyNotShell vulnerabilities despite patches available. This is SAME failure mode ICO penalized Advanced for (inadequate patch management). If Rackspace serves UK NHS customers via UK Sovereign Services and experiences security incident with similar root cause, ICO has DEMONSTRATED WILLINGNESS to fine MSPs £3M+ for patch management failures. ICO ENFORCEMENT POWERS: (1) Issue enforcement notice requiring immediate operational changes (criminal penalties for non-compliance), (2) Monetary penalty up to £17.5M or 4% global turnover (£108M based on $2.7B revenue), (3) Require detailed remediation plans with ongoing ICO monitoring (permanent compliance burden), (4) Issue public reprimand (reputational damage to UK market entry).",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "ICO enforcement statistics: £19.6M penalties in 7 cases (Jan-Mar 2025) vs £2.7M in 18 cases (full year 2024)",
+        "Advanced Computer Software Group penalty notice March 2025: £3.07M for MSP ransomware, NHS impact, patch management failure",
+        "Capita penalty October 2024: £14M for ransomware breach affecting 7M customers",
+        "Stage 8.1: Rackspace Exchange ransomware December 2022 via unpatched ProxyNotShell vulnerabilities",
+        "Stage 1.5: UK Sovereign Services launched March 2024, targets UK government, NHS, police, FCA/PRA financial services",
+        "UK GDPR penalty provisions: Up to £17.5M or 4% global revenue"
+      ]
+    },
+    {
+      "regulator": "EU Data Protection Authorities (27 Member State DPAs coordinated by EDPB)",
+      "jurisdiction": "EU GDPR Enforcement (27 EU Member States)",
+      "lever_type": "ENFORCEMENT_ORDERS + FINES",
+      "affected_operations": [
+        "All EU customer operations processing personal data",
+        "EU data centers (Amsterdam Netherlands, Frankfurt Germany per Stage 1.5)",
+        "Cross-border data transfers from EU to US or other third countries",
+        "EU customers estimated 20-30% of revenue base (per Stage 1.5 analysis)"
+      ],
+      "severity": "HIGH",
+      "speed_to_impact": "SLOW-TO-MODERATE (12-36 months formal investigation to final decision) BUT enforcement orders can be IMMEDIATE. EU DPAs have authority to: (1) Issue IMMEDIATE SUSPENSION of data processing operations (injunction), (2) Issue IMMEDIATE BAN on data transfers outside EU (destroys cross-border operations overnight), (3) Issue corrective orders with short compliance deadlines (30-90 days to implement changes or face escalating daily penalties), (4) Require deletion of unlawfully processed data (destroys data assets). PENALTY SCALE: Up to €20M or 4% global turnover (€108M based on $2.7B revenue) - LARGER maximum than UK ICO. TRANSFER ENFORCEMENT PRECEDENT: Austrian DPA banned Google Analytics transfers to US (2022), French DPA investigating Microsoft 365 US data transfers (ongoing 2024-2025), Italian DPA €15M penalty to OpenAI for GDPR violations. These demonstrate DPA WILLINGNESS to target US cloud providers for transfer violations. RACKSPACE EXPOSURE: Stage 8.2 documents Rackspace operates as 'processor' under GDPR, any EU customer data transferred to US for support, billing, security incident response, or analytics without valid legal mechanism (SCCs + supplementary measures, or Data Privacy Framework certification) is UNLAWFUL TRANSFER. Stage 1.5 documents EU-US Data Privacy Framework is under legal challenge (Max Schrems filed new cases February 2024) - if invalidated like predecessors (Safe Harbor 2015, Privacy Shield 2020), Rackspace faces IMMEDIATE compliance crisis. MULTI-JURISDICTION RISK: 27 separate DPAs can EACH investigate independently under GDPR cooperation mechanism. If 3 DPAs open parallel investigations, Rackspace faces TRIPLE compliance burden (separate legal responses, separate remediation plans, separate penalty exposure in each jurisdiction).",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "GDPR Article 58: DPA corrective powers including processing suspension, transfer bans, deletion orders",
+        "GDPR Article 83: Administrative fines up to €20M or 4% global turnover",
+        "Austrian DPA decision 2022: Banned Google Analytics US transfers under GDPR Article 60",
+        "French CNIL investigation of Microsoft 365: Ongoing scrutiny of US cloud provider transfer mechanisms",
+        "Italian DPA OpenAI penalty €15M: Demonstrates enforcement against US tech companies",
+        "Stage 1.5: EU data centers in Amsterdam and Frankfurt, EU-US Data Privacy Framework under legal challenge",
+        "Stage 8.2: Rackspace operates as GDPR processor, cross-border transfers require valid legal mechanisms",
+        "EDPB coordination: Article 60 consistency mechanism allows 27 DPAs to act independently or coordinately"
+      ]
+    },
+    {
+      "regulator": "US Department of Health and Human Services (HHS) Office for Civil Rights (OCR)",
+      "jurisdiction": "HIPAA Enforcement (US Healthcare Sector)",
+      "lever_type": "ENFORCEMENT + CORRECTIVE_ACTION_PLANS",
+      "affected_operations": [
+        "HIPAA/HITRUST-certified services for healthcare customers",
+        "Business Associate Agreements (BAAs) with covered entities (hospitals, health plans, providers)",
+        "Healthcare-specific infrastructure and operations teams"
+      ],
+      "severity": "MED-HIGH",
+      "speed_to_impact": "MODERATE (6-18 months investigation to settlement/corrective action plan) - OCR enforcement RAPIDLY ACCELERATING against Business Associates (cloud/IT service providers). ENFORCEMENT ACCELERATION: $7M in BA settlements 2024 vs $1M in 2022 = 7x increase. OCR launched 'Risk Analysis Initiative' fall 2024 resulting in 7 enforcement actions within 6 months - OCR is PROACTIVELY targeting BAs for security failures rather than waiting for breach complaints. BUSINESS ASSOCIATE PRECEDENTS DIRECTLY APPLICABLE: (1) Virginia data hosting provider (cloud services BA) ransomware affecting 12 covered entities = $90K settlement January 2025, (2) Massachusetts cloud-based EHR/billing provider ransomware affecting 31,248 patients = $80K settlement January 2025, (3) BST & Co business associate ransomware = $175K settlement plus mandatory corrective action plan, (4) Doctors Management Services unauthorized access = first-ever ransomware corrective action plan October 2023. ENFORCEMENT PATTERN: OCR targeting BAs for RANSOMWARE FAILURES with settlements $80K-$175K PLUS mandatory corrective action plans (multi-year monitoring, annual audits, technical safeguard improvements - costs $200K-$500K to implement). RACKSPACE EXPOSURE: Stage 8.1 documents THREE security incidents in 36 months (Exchange, ScienceLogic, CL0P). If ANY incident involved healthcare customer PHI (even if encrypted per Rackspace HIPAA requirements in Stage 8.2), OCR could investigate based on: (1) Customer breach notification to OCR (covered entities must report breaches affecting >500 individuals), (2) Patient complaints forwarded to OCR, (3) Media reports triggering proactive OCR inquiry, (4) Risk Analysis Initiative proactive targeting. OCR INVESTIGATION IMPACT: Investigation creates 6-18 month period of: (1) Customer concern triggering BAA reviews and termination considerations, (2) Competitive sales disadvantage ('Rackspace is under OCR investigation'), (3) Cyber insurance premium increases, (4) Legal/forensic costs $50K-$200K, (5) Management distraction. Even if investigation results in 'no violation' finding, INVESTIGATION ITSELF damages healthcare business.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "OCR enforcement statistics: $7M in BA settlements 2024 vs $1M in 2022",
+        "OCR Risk Analysis Initiative announcement fall 2024: 7 enforcement actions in 6 months against BAs",
+        "Virginia data hosting BA settlement press release January 2025: $90K penalty for cloud services ransomware",
+        "Massachusetts cloud EHR/billing BA settlement January 2025: $80K penalty for ransomware",
+        "BST & Co BA settlement: $175K plus corrective action plan for ransomware",
+        "Stage 8.1: Three Rackspace incidents in 36 months (Exchange ransomware, ScienceLogic breach, CL0P ransomware)",
+        "Stage 8.2: Rackspace operates as HIPAA Business Associate, customer must encrypt PHI before transmission",
+        "HIPAA Breach Notification Rule 45 CFR §164.410: Covered entities must report breaches >500 individuals to OCR"
+      ]
+    },
+    {
+      "regulator": "VMware/Broadcom (as UK Sovereign Cloud Certification Authority)",
+      "jurisdiction": "UK Sovereign Cloud Architecture Compliance Validation",
+      "lever_type": "LICENSING",
+      "affected_operations": [
+        "UK Sovereign Services for UK government, NHS, police, FCA/PRA financial services",
+        "VMware Sovereign Cloud-certified infrastructure (certified January 2026 per Stage 1.5)",
+        "Entire UK Sovereign business line (targeting £1B+ UK public sector market)"
+      ],
+      "severity": "HIGH",
+      "speed_to_impact": "FAST (30-90 days audit to decertification) - VMware Sovereign Cloud certification (awarded January 2026) is THIRD-PARTY VALIDATED architecture requiring demonstrable isolation from Rackspace global operations. VMware conducts: (1) Annual compliance audits verifying sovereignty controls, (2) Incident-triggered audits if security breach or sovereignty violation suspected, (3) Random spot audits with 30-day notice. CERTIFICATION REQUIREMENTS: UK data stays in UK, UK-only personnel access, no global network connection to sovereign platforms. CRITICAL VENDOR LEVERAGE: This is COMMERCIAL CERTIFICATION not government regulation - VMware/Broadcom CONTROLS certification and can REVOKE immediately upon audit failure without government oversight or appeal process. VENDOR ECONOMIC INCENTIVE TO ENFORCE STRICTLY: Broadcom acquisition of VMware (Stage 6.2 per prior analysis) created 200-300% price increases and vendor consolidation strategy - Broadcom has FINANCIAL INCENTIVE to enforce 'Sovereign Cloud' certification strictly because it maintains PREMIUM PRICING TIER (customers pay 2-3x standard VMware prices for sovereignty validation). If Broadcom/VMware allows sovereignty violations, certification loses credibility and premium pricing collapses. RACKSPACE VIOLATION SCENARIOS: (1) Global security team accesses UK Sovereign system during incident response (violates UK-only personnel requirement), (2) UK data temporarily copied to global infrastructure for backup/DR testing (violates data residency), (3) UK Sovereign platform connects to global network for software updates (violates network isolation). Even INADVERTENT violations discovered in audit trigger decertification. CUSTOMER CONTRACT CASCADE: UK Sovereign customers (government, NHS, FCA/PRA) contracted for VMware Sovereign Cloud CERTIFIED infrastructure - decertification is MATERIAL BREACH allowing immediate customer termination without penalty. Loss of certification = loss of UK Sovereign customer base = £1B+ market opportunity destroyed.",
+      "claim_type": "FACT (certification exists) + INFERENCE (enforcement strictness based on vendor economics)",
+      "evidence_sources": [
+        "VMware Sovereign Cloud certification announcement January 2026: Rackspace UK Sovereign Services certified",
+        "Rackspace March 27, 2024 announcement: 'Platforms and support teams isolated from global network' for sovereignty",
+        "Stage 1.5: UK Sovereign Services target UK government, NHS, police, FCA/PRA customers (£1B+ market)",
+        "Stage 6.2 (referenced): Broadcom VMware acquisition created 200-300% price increases, vendor consolidation",
+        "VMware Sovereign Cloud program documentation: Requires demonstrable isolation, annual audits, incident-triggered audits",
+        "Stage 8.1: UK Sovereign isolation prevents global security team access, creates operational constraints",
+        "Vendor economics: Sovereign Cloud premium pricing depends on certification credibility"
+      ]
+    },
+    {
+      "regulator": "State Attorneys General - Coordinated Multi-State Enforcement",
+      "jurisdiction": "State Consumer Protection and Data Breach Notification Laws (All 50 US States + DC, PR, VI)",
+      "lever_type": "FINES + ENFORCEMENT",
+      "affected_operations": [
+        "All US customer operations",
+        "Breach notification obligations under 50+ different state laws",
+        "Consumer data handling practices"
+      ],
+      "severity": "MED-HIGH",
+      "speed_to_impact": "MODERATE-TO-FAST (6-12 months investigation to settlement, but 20-30 state AGs can act SIMULTANEOUSLY creating massive legal burden). COORDINATED ENFORCEMENT TREND: State AGs increasingly coordinate investigations via National Association of Attorneys General (NAAG) Data Privacy Working Group - single breach can trigger PARALLEL investigations in 20-30 states simultaneously. EXAMPLE: Drizly data breach resulted in coordinated $2.5M settlement with FTC + state AG actions. COST MULTIPLIER: Each state investigation requires: (1) Separate legal response to AG inquiry (50 separate responses = $200K-$500K legal costs), (2) Separate settlement negotiation, (3) Separate compliance monitoring. 30-state investigation creates 30x legal burden vs single federal investigation. BREACH NOTIFICATION COMPLEXITY: 50+ different state breach notification laws with varying timelines (California 'without unreasonable delay', other states 30-90 days), varying notification content requirements, varying definitions of 'personal information'. Compliance errors in notification create SEPARATE enforcement exposure. RACKSPACE THREE-BREACH PATTERN: Stage 8.1 documents three incidents in 36 months. If ANY incident involved consumer personal information (not just business customer data), Rackspace had notification obligations in all states where affected consumers reside. Non-compliance or delayed notification in ANY state creates enforcement exposure. CALIFORNIA PRIVACY RIGHTS ACT (CPRA): Effective January 2023, creates private right of action for data breaches ($100-$750 per consumer per incident) PLUS California Privacy Protection Agency enforcement (fines up to $7,500 per intentional violation). If Rackspace California consumer breach occurs, faces BOTH class action litigation AND regulatory enforcement.",
+      "claim_type": "FACT",
+      "evidence_sources": [
+        "NAAG Data Privacy Working Group: Coordinates multi-state AG investigations",
+        "Drizly enforcement: $2.5M FTC settlement plus coordinated state AG actions demonstrate multi-regulator pattern",
+        "State breach notification laws: All 50 states + DC, PR, VI have breach notification statutes with varying requirements",
+        "California CPRA effective January 2023: Private right of action $100-$750 per consumer, CPPA enforcement up to $7,500 per violation",
+        "Stage 8.1: Three Rackspace incidents in 36 months create notification obligation risk",
+        "Industry practice: Multi-state breach investigations routinely involve 20-30 state AGs acting in parallel",
+        "Legal cost estimates: State AG investigations cost $200K-$500K in legal response across multiple jurisdictions"
+      ]
+    },
+    {
+      "regulator": "Payment Card Industry Security Standards Council (PCI SSC)",
+      "jurisdiction": "Payment Card Data Security (Global - Visa, Mastercard, Amex, Discover mandate)",
+      "lever_type": "LICENSING",
+      "affected_operations": [
+        "PCI DSS-compliant hosting services for e-commerce, retail, payment processing customers",
+        "Payment card data processing, transmission, or storage infrastructure",
+        "Service provider PCI DSS certification (Level 1 or Level 2)"
+      ],
+      "severity": "MED-HIGH",
+      "speed_to_impact": "FAST (immediate for breach, 3-6 months for compliance failure) - PCI DSS enforcement is DUAL-TRACK: (1) Card brand fines for breaches or compliance failures (Visa, Mastercard impose fines directly on acquiring banks, who pass through to merchants/service providers), (2) Loss of certification prevents accepting card payments (existential for e-commerce customers). BREACH PENALTIES: Visa/Mastercard fine $5K-$500K per MONTH during non-compliance period, PLUS per-card compromised penalties ($50-$90 per card for first 10K cards, escalating to $200+ per card beyond 1M cards). Large breach affecting 1M+ cards = $50M-$200M+ in card brand fines. CERTIFICATION LOSS: If Rackspace loses PCI DSS service provider certification, customers using Rackspace for payment card processing become NON-COMPLIANT immediately, forcing emergency migration to alternative provider. Customer contract terminations likely 80-100% (customers cannot accept cards without PCI-compliant infrastructure). VALIDATION REQUIREMENTS: Annual on-site assessment by Qualified Security Assessor (QSA), quarterly vulnerability scanning, continuous compliance monitoring. Assessment failure = 90-day remediation period, continued failure = certification loss. THREE-BREACH PATTERN RISK: Stage 8.1 documents three security incidents in 36 months. PCI SSC considers 'pattern of compromise' as HEIGHTENED RISK FACTOR - repeated breaches trigger enhanced scrutiny, more frequent assessments, potential certification restrictions. If any of three Rackspace breaches involved payment card data (unclear from public disclosures), PCI SSC and card brands would have been notified, Rackspace on heightened monitoring list.",
+      "claim_type": "FACT (PCI enforcement mechanisms) + INFERENCE (three-breach pattern impact)",
+      "evidence_sources": [
+        "PCI DSS v4.0 requirements: Service provider annual assessment, quarterly scanning, continuous compliance",
+        "Visa/Mastercard fine schedules: $5K-$500K per month non-compliance, $50-$200+ per compromised card",
+        "Industry enforcement examples: Target breach $202M settlement includes card brand fines, Equifax $425M includes card brand exposure",
+        "Stage 8.1: Three Rackspace incidents in 36 months (Exchange, ScienceLogic, CL0P) - payment card data exposure unclear",
+        "PCI SSC guidance: Repeated compromises trigger enhanced validation requirements",
+        "Service provider impact: Certification loss forces customer migration, contract terminations 80-100%"
+      ]
+    }
+  ]
+}

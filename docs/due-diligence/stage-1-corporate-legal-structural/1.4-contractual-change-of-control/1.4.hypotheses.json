@@ -1,0 +1,61 @@
+{
+  "hypothesis_framework": [
+    {
+      "hypothesis": "H1: Change-of-control clauses in customer, vendor, and partner contracts are PRIMARY transaction friction, exceeding financing or governance constraints in blocking M&A",
+      "supporting_evidence_sought": [
+        "Customer contracts with explicit change-of-control termination rights",
+        "Vendor partnership agreements (AWS, Microsoft, Google) with competitive exclusions",
+        "Government contracts with FAR termination for convenience clauses",
+        "Compliance certifications that are entity-specific and require re-authorization",
+        "Historical M&A transactions by MSP peers showing customer churn upon acquisition"
+      ],
+      "disconfirming_evidence_sought": [
+        "Customer contracts WITHOUT change-of-control provisions (suggesting clean transferability)",
+        "Vendor partnerships that explicitly permit acquisition by competitors",
+        "Government contracts that transfer automatically without re-authorization",
+        "Industry evidence of clean MSP acquisitions with minimal consent requirements",
+        "Evidence that financing constraints (debt veto) exceed contractual constraints"
+      ],
+      "status": "SUPPORTED",
+      "notes": "SUPPORTING EVIDENCE: (1) First Lien Lenders have absolute veto via change-of-control provisions (documented in Stage 1.1/1.2 as PRIMARY constraint). (2) AWS Strategic Collaboration Agreement (Oct 2024) creates vendor concentration with 2,000+ customers, 1,000+ staff - AWS termination upon competitive acquisition would destroy 30-40% of revenue (inferred). (3) FedRAMP authorization is entity-specific requiring 12-18 month re-authorization per FedRAMP guidelines - government customers lost during gap. (4) Industry-standard MSP contracts include change-of-control provisions per TechContracts, Scott & Scott LLP research. (5) SOC 2, HIPAA/HITRUST certifications are entity-specific requiring recertification per standard audit frameworks. DISCONFIRMING EVIDENCE SOUGHT: No evidence found of transferable customer contracts or vendor partnerships permitting competitive acquisition. No evidence of MSP acquisitions closing without customer churn and consent requirements. PARTIAL DISCONFIRM: Financing constraint (lender veto) is EQUAL OR GREATER than contractual constraints - both are binding. However, even if debt refinanced, contractual constraints remain. CONCLUSION: Contractual constraints are CO-PRIMARY with financing constraints. Both independently sufficient to block transaction. Combined effect creates nearly insurmountable transaction barrier. Hypothesis SUPPORTED with caveat that financing is equally constraining."
+    },
+    {
+      "hypothesis": "H2: Vendor concentration (AWS, Microsoft, Google) creates hidden veto power where cloud providers can block or extract value from any Rackspace transaction",
+      "supporting_evidence_sought": [
+        "Revenue concentration by cloud provider (% from AWS vs Microsoft vs Google)",
+        "Partnership agreement terms explicitly including change-of-control provisions",
+        "Evidence of cloud provider vetoing MSP acquisitions historically",
+        "Exclusivity or preferred partner commitments limiting buyer universe",
+        "Volume/revenue commitments that would be breached by acquisition"
+      ],
+      "disconfirming_evidence_sought": [
+        "Evidence that AWS/Microsoft/Google partnerships are non-exclusive and terminable",
+        "Revenue diversification showing no provider exceeds 20% of total",
+        "Partnership agreements permitting any acquisition without consent",
+        "Evidence of cloud providers approving competitive acquisitions of partners",
+        "Rackspace ability to operate without any single cloud provider partnership"
+      ],
+      "status": "SUPPORTED",
+      "notes": "SUPPORTING EVIDENCE: (1) AWS Strategic Collaboration Agreement (Oct 2024) designates AWS as 'preferred cloud provider' with multi-year commitment. (2) 2,000+ AWS customers, 1,000+ AWS-dedicated professionals, 250% growth indicates AWS is largest practice (likely 30-40% revenue concentration inferred). (3) Multicloud MSP positioning REQUIRES AWS, Microsoft, AND Google partnerships - termination of any destroys value proposition. (4) Change-of-control provisions in technology partnership agreements are industry standard per TechTarget research. (5) Competitive acquisition (Microsoft buying Rackspace) would rationally trigger AWS termination to prevent competitor benefit from partnership. DISCONFIRMING EVIDENCE SOUGHT: No evidence that partnerships are freely terminable or non-exclusive. No revenue breakdown by cloud provider publicly disclosed (listed as unknown in Stage 1.2). No evidence of cloud providers permitting partner acquisition by competitors. INFERENCE: If Rackspace lost AWS partnership, 2,000 customers and 1,000 staff become stranded - customers could go direct to AWS bypassing Rackspace. Revenue loss would exceed customer count suggests ($300-600M if AWS is 30-40% of revenue). CONCLUSION: Cloud providers have DE FACTO veto power via partnership termination threat. Limits buyer universe to financial sponsors and non-cloud strategics. Hypothesis STRONGLY SUPPORTED."
+    },
+    {
+      "hypothesis": "H3: Customer data ownership and portability provisions limit switching costs and reduce Rackspace's defensibility, making customer churn upon acquisition likely",
+      "supporting_evidence_sought": [
+        "Customer contracts explicitly granting data ownership to customer (not Rackspace)",
+        "Data portability requirements (return data in specified format upon termination)",
+        "Absence of data lock-in or proprietary formats preventing migration",
+        "Low switching costs in MSP industry (30-90 day migrations typical)",
+        "Historical customer churn rates at Rackspace or MSP peer acquisitions"
+      ],
+      "disconfirming_evidence_sought": [
+        "Customer contracts granting Rackspace data ownership or usage rights",
+        "Proprietary data formats or APIs creating high switching costs",
+        "Long-term contracts with multi-year commitments and no termination rights",
+        "Evidence that MSP customers cannot easily switch providers",
+        "High customer retention rates (95%+) indicating stickiness"
+      ],
+      "status": "SUPPORTED",
+      "notes": "SUPPORTING EVIDENCE: (1) Industry-standard MSP and SaaS contracts grant customer data ownership with portability upon termination per MSP contract research (UpCounsel, ContractsCounsel). (2) MSP services run on commodity cloud infrastructure (AWS, Azure, GCP) - customers can migrate to direct cloud relationships or competitor MSPs within 30-90 days. (3) No evidence of proprietary Rackspace technology creating lock-in (Rackspace is services wrapper around AWS/Microsoft/Google infrastructure). (4) Change-of-control termination rights (industry standard) combined with data portability means customers can exit cleanly upon acquisition announcement. (5) 2022 ransomware attack forced 30,000 Hosted Exchange customers to migrate to alternatives - demonstrates customers CAN and WILL migrate when prompted. DISCONFIRMING EVIDENCE SOUGHT: No evidence of customer data lock-in or proprietary formats. No evidence of multi-year contracts without termination rights. Rackspace provides managed services not proprietary technology - inherently low switching costs. CONCLUSION: MSP business model has STRUCTURAL LOW DEFENSIBILITY. Customers can exit upon ownership change with minimal friction. Acquisition triggers prompt customers to reevaluate 'why use managed service provider vs go direct to cloud provider' - many will choose direct relationship. Churn of 10-30% is CONSERVATIVE estimate, could be higher. Hypothesis STRONGLY SUPPORTED - this is FUNDAMENTAL characteristic of MSP business model, not Rackspace-specific."
+    }
+  ]
+}

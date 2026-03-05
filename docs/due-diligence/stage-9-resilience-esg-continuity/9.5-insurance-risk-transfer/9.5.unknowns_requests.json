@@ -1,0 +1,80 @@
+{
+  "sub_stage": "9.5",
+  "unknowns_requests": [
+    {
+      "request": "Complete Insurance Program Documentation Package - All Policies, Declarations, Endorsements, and Schedules",
+      "why_needed": "HIGHEST PRIORITY - Cannot assess actual vs assumed risk transfer without seeing ACTUAL POLICY TERMS. Stage 9.5 analysis currently based on: (1) Exchange precedent (50% recovery), (2) Industry standard policy terms, (3) Inference about exclusions and limitations. Must verify: (1) Actual limits (cyber, E&O, BI, D&O, property, etc.) vs assumed $X million, (2) Deductibles/SIF (how much Rackspace self-funds per claim before insurance pays), (3) Exclusions (which risks explicitly not covered), (4) Sub-limits (per-category caps within overall limit), (5) Territory (global vs US-only coverage), (6) Retroactive dates (claims-made policies only cover incidents after retroactive date). CRITICAL GAPS: (a) Does BI coverage require physical damage? (standard yes, but need confirmation), (b) Does E&O exclude contractual liability? (standard yes, need confirmation - means SLA credits uninsured), (c) Does cyber exclude unpatched vulnerabilities? (increasingly common, would have denied Exchange claim), (d) Annual aggregate vs per-occurrence limits? (three claims may have depleted aggregate). QUANTIFICATION: With actual policies, can calculate: Maximum insured loss per incident = MIN(policy limit, sub-limits) - deductible. Uninsured loss per incident = Total incident cost - Maximum insured loss. Can then test realistic scenarios against actual coverage, not industry assumptions.",
+      "highest_value_source_types": [
+        "Master insurance policy binders for cyber liability, E&O/professional liability, business interruption, D&O, property, and all other coverage types",
+        "Policy declarations pages showing limits, deductibles, policy period, insured entities, coverage territory",
+        "Endorsements and amendments modifying standard policy terms (exclusions added, coverage expanded, sub-limits imposed)",
+        "Insurance schedule or summary prepared by broker listing all policies in force with key terms",
+        "Coverage comparison showing changes at each renewal (2020→2021→2022→2023→2024→2025 terms)",
+        "Broker's coverage analysis and gap assessment prepared for management/board",
+        "Underwriting submissions showing what Rackspace disclosed to insurers to obtain coverage (controls, risk management, incident history)",
+        "Certificate of Insurance (COI) register showing what coverage Rackspace has certified to customers and when"
+      ],
+      "blocking_for_stage_progression": true
+    },
+    {
+      "request": "Insurance Claims History and Recovery Analysis - All Claims 2020-2025 with Submitted vs Recovered Amounts",
+      "why_needed": "HIGH PRIORITY - Exchange precedent ($10.8-12M costs, $5.4M recovery = 50%) is ONLY concrete datapoint on actual insurance effectiveness. Need complete claims history to determine: (1) Is 50% recovery PATTERN or OUTLIER? (If all claims recover 40-60%, validates conservative assumptions. If Exchange uniquely poor and others 80-90%, changes analysis), (2) What exclusions or disputes occurred? (If insurers consistently deny portions of claims citing specific exclusions, identifies coverage gaps to address), (3) How long did recoveries take? (If all claims settle 6-18 months post-incident, validates timing assumptions. If some faster, identifies what enables fast-pay), (4) Were claims paid in full, partially, or denied? (Settlement ratio critical for modeling future incidents). SPECIFIC INCIDENTS TO ANALYZE: Exchange December 2022 (known $5.4M recovery), ScienceLogic September 2024 (recovery unknown), CL0P October 2024/February 2025 (claim status unknown - was claim even filed?). Also need: Any prior incidents 2020-2022 not publicly disclosed, any non-cyber claims (E&O customer disputes, property damage, D&O shareholder suits, employment practices, etc.). PATTERN RECOGNITION: If three cyber claims in 36 months ALL recover only 40-60%, proves insurance provides COST SHARING not RISK TRANSFER - Rackspace self-funds 40-60% consistently. If pattern varies widely (Exchange 50%, ScienceLogic 90%, CL0P denied), suggests claim-specific factors (incident type, policy period, insurer relationship) determine outcome, creating UNPREDICTABILITY.",
+      "highest_value_source_types": [
+        "Claims register showing all insurance claims filed 2020-2025 (date, incident description, amount claimed, amount recovered, timing)",
+        "Loss runs prepared for insurance renewals (industry-standard report showing 5-10 year claims history from insurer perspective)",
+        "Claim file documentation for major incidents (Exchange, ScienceLogic, CL0P) showing adjuster correspondence, coverage disputes, settlement negotiations",
+        "Reservation of rights letters from insurers indicating coverage disputes or exclusion invocations",
+        "Settlement agreements and release forms showing final recovery amounts and payment terms",
+        "Finance team analysis of insurance recoveries vs incident costs (accounting for uninsured gaps)",
+        "Legal invoices for insurance claim disputes (if Rackspace sued insurer or insurer litigated coverage, indicates adversarial relationship)",
+        "Broker claim advocacy summaries (what role did broker play in maximizing recoveries?)"
+      ],
+      "blocking_for_stage_progression": true
+    },
+    {
+      "request": "Insurance Renewal History and Market Feedback - Premiums, Terms, and Insurer Commentary 2020-2025",
+      "why_needed": "HIGH PRIORITY - Must understand trajectory: Are premiums/terms IMPROVING (insurers view Rackspace as better risk), STABLE (mature relationship), or DETERIORATING (claims history creating insurer concern)? Key questions: (1) Premium trend - Are increases 5-10% annual (inflation-level, acceptable) or 50-300% post-incident (stress-level, unsustainable)?, (2) Coverage restrictions - Have limits decreased, deductibles increased, or exclusions added over time?, (3) Insurer continuity - Same insurers for years (positive) or churning annually (negative)?, (4) Competitive dynamics - Multiple quotes at each renewal (healthy market) or sole source (impaired access)?, (5) Broker market feedback - What do insurers say about Rackspace risk in non-binding feedback? Stage 9.5 infers that three incidents create 'high-risk' profile, but need actual renewal outcomes to confirm: If 2023 renewal (post-Exchange) saw 200% increase and 2024 renewal (post-ScienceLogic) saw further restrictions, validates hypothesis. If renewals remained stable despite incidents, hypothesis weakened. FORWARD-LOOKING: 2026 renewal status CRITICAL - When do policies expire? Has broker begun renewal marketing? What preliminary feedback from insurers? If renewal imminent and feedback negative ('we're non-renewing' or 'premium tripling'), creates IMMEDIATE CRISIS requiring emergency response (captive formation, self-insurance, business model changes).",
+      "highest_value_source_types": [
+        "Insurance renewal timeline showing policy expiration dates and renewal completion dates for all policies",
+        "Premium history 2020-2025 showing annual cost by policy type (cyber, E&O, BI, etc.) and total insurance spend",
+        "Renewal submission materials showing what broker presented to insurers (risk profile, controls, improvements, claims)",
+        "Insurer quote comparisons showing how many carriers bid, at what terms, and why Rackspace selected winner",
+        "Non-binding indication (NBI) feedback from insurers who declined to quote (why did they pass?)",
+        "Broker's market commentary at each renewal (is market hardening/softening? Rackspace-specific concerns?)",
+        "Board presentations on insurance renewals showing management's characterization of outcomes (routine vs challenging)",
+        "2026 renewal strategy document showing broker's plan, timeline, and expected outcomes (if renewal underway)"
+      ],
+      "blocking_for_stage_progression": false
+    },
+    {
+      "request": "Customer Contractual Insurance Requirements - Standard Terms and Compliance Verification",
+      "why_needed": "MEDIUM-HIGH PRIORITY - If Rackspace falls out of compliance with customer-mandated insurance requirements, creates CONTRACT BREACH affecting potentially 100s of customers and $X billion revenue. Must identify: (1) What insurance do enterprise customers REQUIRE per contracts? (typical: $50-100M cyber, $25-50M E&O, financial strength rating A- or better), (2) Does Rackspace CURRENTLY MEET requirements? (compare required vs actual), (3) What happens if fall out of compliance? (immediate termination vs cure period vs negotiate waiver), (4) Has Rackspace certified compliance when actually non-compliant? (fraud risk if provided false certificates of insurance). SPECIFIC CONCERNS: (a) Government contracts via FAR clauses CERTAINLY require specific insurance (workers comp, auto liability, cyber for CUI/FCI, professional liability) - FedRAMP authorization may depend on maintaining coverage, (b) Enterprise customers negotiating custom insurance requirements (Fortune 500 may demand $100M+ limits, financial services may require E&O with regulatory defense coverage), (c) Multi-year contracts signed when coverage was $X million but renewals reduced to $Y million - now in breach of original contract terms. QUANTIFICATION: If 20% of enterprise customers have insurance requirements Rackspace doesn't meet, $100-300M revenue AT IMMEDIATE RISK if customers audit compliance and terminate. Creates FORCED CAPITAL ALLOCATION - must increase insurance to meet requirements even if economically undesirable.",
+      "highest_value_source_types": [
+        "Customer contract template library showing standard insurance requirements by customer segment (enterprise, mid-market, government)",
+        "Top 50 customer contracts (by revenue) showing negotiated insurance terms and verification processes",
+        "Certificate of Insurance (COI) requests and responses showing what Rackspace has certified to customers",
+        "Customer audit responses where insurance verification requested (did customers check? what did Rackspace provide?)",
+        "Legal team analysis of 'insurance compliance risk' by customer segment",
+        "Government contract FAR clauses showing federal acquisition regulation insurance requirements",
+        "Sales playbook showing what insurance coverage sales team represents to prospects (does sales promise more than exists?)",
+        "Finance/legal correspondence addressing insurance compliance gaps (any known issues? how handled?)"
+      ],
+      "blocking_for_stage_progression": false
+    },
+    {
+      "request": "Captive Insurance or Self-Insurance Feasibility Analysis - Economics and Regulatory Requirements",
+      "why_needed": "MEDIUM PRIORITY (elevated if renewal indicates crisis) - If commercial insurance becomes unaffordable or unavailable, captive/self-insurance may be NECESSARY not optional. Need to understand: (1) Capital requirement - How much must be contributed to captive or self-insurance reserve to adequately fund expected losses? (Actuarial models required, typically $20-100M for $2.7B revenue company with elevated risk), (2) Ongoing costs - Captive operation, actuarial, regulatory compliance, reinsurance (estimate $500K-$2M annually), (3) Regulatory feasibility - Which domicile (Bermuda, Cayman, Vermont)? What requirements (capital minimums, regulatory approvals, annual reporting)?, (4) Timeline - How long to form? (6-12 months typical, cannot be done quickly), (5) Tax implications - Benefits vs costs of captive structure, (6) Reinsurance access - Can captive buy reinsurance for tail risks, or is reinsurance market equally restrictive? STRATEGIC DECISION: With EBITDA margin 3.1%, cash $173M, discretionary capital $10-35M annually (Stage 5), allocating $20-100M to captive MATERIALLY IMPACTS financial flexibility. Apollo must decide: Fund captive reducing returns OR accept uninsurability risk. If analysis shows captive uneconomic, forces BUSINESS MODEL CHANGES - exit high-risk services, relax SLAs, increase prices to self-fund reserves.",
+      "highest_value_source_types": [
+        "Captive insurance feasibility study by broker, consultant, or actuary (has this been evaluated? recommendations?)",
+        "Self-insurance reserve requirements by risk type (cyber, E&O, BI, etc.) with actuarial confidence levels",
+        "Regulatory requirements for captive formation in preferred domicile (capital, licensing, reporting, taxation)",
+        "Reinsurance market assessment for tail risk transfer (can captive buy reinsurance? at what cost?)",
+        "Competitor intelligence on captive usage (do comparable MSPs have captives? effective? costs?)",
+        "Apollo's view on captive formation and capital allocation (supportive? resistant? conditions?)",
+        "Tax analysis of captive structure (deductibility of premiums, profit taxation, repatriation)",
+        "Alternative risk transfer mechanisms (risk retention groups, mutual insurance, pooling with peers)"
+      ],
+      "blocking_for_stage_progression": false
+    }
+  ]
+}

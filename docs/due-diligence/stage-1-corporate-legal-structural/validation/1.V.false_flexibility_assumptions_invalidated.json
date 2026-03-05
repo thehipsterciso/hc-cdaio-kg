@@ -1,0 +1,54 @@
+{
+  "false_flexibility_assumptions_invalidated": [
+    {
+      "assumption": "Rackspace operations are globally flexible and can be consolidated into single jurisdiction post-acquisition",
+      "explicit_invalidation_statement": "FALSE. Rackspace operates under MANDATORY MULTI-JURISDICTIONAL STRUCTURE. U.S. government requires Rackspace Government Solutions, Inc. with U.S. personnel (FedRAMP). UK government/regulated requires RACKSPACE LIMITED with isolated infrastructure (UK Sovereign). China requires local entity with in-country storage (Cybersecurity Law). Consolidation is LEGALLY IMPOSSIBLE without exiting markets representing 30-50% revenue ($450-750M).",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "1.5.structural_lock_ins.json"]
+    },
+    {
+      "assumption": "FedRAMP and government authorizations transfer automatically to new owner",
+      "explicit_invalidation_statement": "FALSE. FedRAMP authorizations are ENTITY-SPECIFIC and DO NOT TRANSFER. Change of control INVALIDATES immediately. Re-authorization takes 12-18 months with no service continuity. Government customers lose authorized provider, forcing migration to alternatives. 100% government customer churn during re-authorization gap. Government revenue permanently lost if customers migrate or re-authorization denied.",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "1.5.structural_lock_ins.json", "FedRAMP policy"]
+    },
+    {
+      "assumption": "UK operations can be integrated with broader European/global operations for efficiency",
+      "explicit_invalidation_statement": "FALSE. UK Sovereign Services are ARCHITECTURALLY ISOLATED from global network BY DESIGN to meet UK sovereignty requirements. Integration with non-UK operations would IMMEDIATELY VIOLATE UK government/NHS/police/regulated industry requirements. Platforms and support teams isolated - integration is PERMANENTLY PROHIBITED. Must maintain separate UK infrastructure and support teams in perpetuity.",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "Rackspace UK Sovereign March 27, 2024"]
+    },
+    {
+      "assumption": "Data centers can be consolidated or relocated post-acquisition to optimize footprint",
+      "explicit_invalidation_statement": "FALSE. Data centers are STRUCTURALLY IMMOBILE. 40 leases contain assignment restrictions requiring landlord consent. Jurisdiction-specific authorizations TIED TO SPECIFIC DATA CENTERS (FedRAMP to U.S., UK Sovereign to UK, China to Shanghai). Consolidation breaks multiple contractual, regulatory, operational dependencies simultaneously. Physical relocation costs $X million, takes 12-24 months, causes customer churn.",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "1.5.structural_lock_ins.json", "Stage 1.4 lease analysis"]
+    },
+    {
+      "assumption": "Cloud services are inherently portable and can serve customers from any location globally",
+      "explicit_invalidation_statement": "FALSE. Cloud services are JURISDICTIONALLY BOUND by 100+ data sovereignty regulations worldwide. Cannot serve UK government from U.S. data centers, cannot serve China customers from non-China data centers, cannot serve U.S. government from non-U.S. data centers. Jurisdictional boundaries are MORE binding in cloud than traditional on-premises due to data transfer restrictions. 'Cloud' does not mean 'borderless'.",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "100+ data sovereignty regulations acknowledged by Rackspace"]
+    },
+    {
+      "assumption": "Entity structure is administrative and can be simplified post-acquisition",
+      "explicit_invalidation_statement": "FALSE. Entity structure is OPERATIONALLY CRITICAL and CANNOT be simplified. Rackspace Government Solutions holds FedRAMP (cannot merge without losing authorizations). RACKSPACE LIMITED holds UK customer contracts (cannot eliminate without losing UK market). Each entity holds specific authorizations, licenses, contracts, regulatory approvals that are NON-TRANSFERABLE. Entity simplification equals business exit in multiple markets.",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "Entity analysis across all Stage 1 sub-stages"]
+    },
+    {
+      "assumption": "Support and operations teams can be globally consolidated for efficiency",
+      "explicit_invalidation_statement": "FALSE. Teams are JURISDICTIONALLY LOCKED. U.S. government security team MUST BE 100% U.S. citizens in continental U.S. (cannot offshore, cannot use non-U.S. citizens). UK Sovereign teams MUST BE isolated from global network (cannot integrate). This is LEGAL REQUIREMENT not operational preference. Team consolidation equals loss of authorization to serve regulated customers.",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "Rackspace Government Solutions workforce requirements"]
+    },
+    {
+      "assumption": "Compliance certifications remain valid post-acquisition",
+      "explicit_invalidation_statement": "FALSE. Certifications are ENTITY-SPECIFIC requiring RE-CERTIFICATION upon material entity change. FedRAMP 12-18 months, HITRUST 6-12 months, SOC 2 re-audit required, PCI DSS 3-6 months. During re-certification gaps, customers requiring certifications potentially non-compliant and may churn. Re-certification not guaranteed - can be DENIED if entity doesn't meet requirements.",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "Industry certification practices"]
+    },
+    {
+      "assumption": "Rackspace can be acquired and operated as single unified business",
+      "explicit_invalidation_statement": "FALSE. Rackspace is PORTFOLIO OF JURISDICTIONALLY-SEGREGATED BUSINESSES that cannot be fully integrated. Must operate: U.S. Government (separate entity/isolated), UK Sovereign (isolated infrastructure), China (localized), EU Commercial (GDPR-restricted), U.S. Commercial, APAC (Singapore entity). Different legal entities, different regulatory regimes, different customer bases, different infrastructure that cannot be shared. Unified operations model is STRUCTURALLY IMPOSSIBLE.",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "Multi-jurisdictional structure throughout Stage 1"]
+    },
+    {
+      "assumption": "Foreign acquirer can own and operate Rackspace with minimal restructuring",
+      "explicit_invalidation_statement": "FALSE. Foreign acquisition triggers MANDATORY FOCI review (expanded May 2024 to contracts >$5M). Options: Special Security Agreement with proxy board (foreign owner has NO control), Voting Trust (government business independent), or complete divestiture. FOCI review takes 6-12 months with uncertain outcome. Many foreign acquirers CANNOT meet requirements. Government revenue ($X million material) is AT RISK for foreign acquirer.",
+      "evidence_refs": ["1.5.false_mobility_assumptions.json", "DoD FOCI regulations", "32 CFR § 2004.34"]
+    }
+  ]
+}

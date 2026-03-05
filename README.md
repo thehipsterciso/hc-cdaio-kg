@@ -19,7 +19,7 @@ This is not a polished final product. It is a working artifact from a rapid eval
 ```
 entities/              26 per-type JSON files (3,000+ entities)
 relationships/         40 per-type JSON files (7,600+ relationships)
-due-diligence/         10-stage structured analysis (401 JSON documents)
+docs/due-diligence/    10-stage structured analysis (401 JSON documents)
 docs/dcam/             DCAM v2 data maturity assessment and capability deep-dives
 docs/ledgers/          OSINT research session logs and methodology
 scripts/               Sync, build, and quality automation

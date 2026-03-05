@@ -1,0 +1,131 @@
+{
+  "sub_stage": "7.5",
+  "document_metadata": {
+    "title": "Hypotheses - Information Access Asymmetry and Power Distribution",
+    "analysis_date": "2026-02-15"
+  },
+  "hypotheses": [
+    {
+      "hypothesis": "H7.5-A: Executives have equal access to decision data—no material information asymmetries exist within leadership team",
+      "supporting_evidence_sought": [
+        "Common data platforms accessible to all C-level executives with uniform permissions",
+        "Uniform reporting timelines (all executives receive reports simultaneously)",
+        "Documented information sharing protocols ensuring cross-functional visibility",
+        "Executive meeting structures systematically sharing information (operating committee, management committee with information exchange mandate)",
+        "No evidence of executives learning information late or from external sources"
+      ],
+      "disconfirming_evidence_sought": [
+        "Finance sees operational forecasts before and after adjustment operations doesn't see (adjustment methodology opaque)",
+        "Sales sees CRM deal-level detail while other executives see only aggregates",
+        "CEO sees deal filtering criteria and rejection decisions others don't (walk away policy criteria undocumented, decisions not shared)",
+        "Operations sees incident frequency patterns executives don't see systematically (frequency tracking absent)",
+        "Board/executives see different operational realities (Board sees finance-filtered, operations sees raw)",
+        "Information timing differentials (privileged viewers see first, restricted parties see later or never)"
+      ],
+      "evidence_found": {
+        "supporting": "NONE FOUND. No evidence of common platforms with uniform access, no operating committee systematizing cross-functional information sharing per Stage 4.1, no documented information sharing protocols.",
+        "disconfirming": [
+          "Finance adjustment methodology opaque to operations (Stage 7.2 finance conservative adjustment, operations doesn't see methodology or understand divergence between internal forecast and external guidance)",
+          "Sales CRM monopoly over deal detail (sales sees all opportunities continuously, delivery sees when engaged selectively, finance sees aggregates for forecasting, CEO sees subset during walk away policy reviews, Board sees portfolio metrics only)",
+          "CEO filtering criteria undocumented (Stage 7.1 walk away policy case-by-case judgment, sales/finance/delivery/Board don't see rejection logic or implementation metrics)",
+          "Operations controls incident frequency measurement (Stage 7.3 incident frequency 'tracking absent', executives/Board may see major incidents episodically but not frequency patterns systematically)",
+          "Board sees finance-filtered operational reality (Board receives finance-produced dashboards with finance-selected metrics and calculations, not raw operational data)",
+          "Timing differentials pervasive (Finance sees operational data at T0 applies adjustment T0→T1 external parties see T1, Sales sees deals T0 continuously others see T1+ delayed/aggregated, Operations sees incidents T0 real-time executives see episodically, CEO sees walk away decisions T5 before sales/Board T6-T8)"
+        ]
+      },
+      "status": "REFUTED",
+      "notes": "Information asymmetry pervasive within leadership—finance, sales, CEO, operations all control information other executives lack access to. Gatekeeping creates decision disadvantage for restricted parties. No governance infrastructure (operating committee, data governance committee per Stage 7.1 H7.1-B) to enforce information equality. CEO bottleneck reinforces vertical information flow through CEO not horizontal cross-functional sharing per Stage 4.2."
+    },
+    {
+      "hypothesis": "H7.5-B: Access restrictions are purely risk-driven (security, compliance, confidentiality requirements)—not power preservation or accountability avoidance",
+      "supporting_evidence_sought": [
+        "Access controls documented as security requirements (data classification, role-based access tied to security risk)",
+        "Restrictions apply uniformly by data sensitivity regardless of organizational politics (sensitive data restricted, non-sensitive data broadly accessible)",
+        "No organizational benefit to gatekeepers from restriction (gatekeepers don't gain power, narrative control, or accountability protection from access limits)",
+        "Restrictions prevent genuine risks (data breach, regulatory violation, competitive intelligence leakage) not oversight or challenge",
+        "Access expansion initiatives when security allows (data democratization efforts, governance building to broaden access safely)"
+      ],
+      "disconfirming_evidence_sought": [
+        "Restrictions create narrative control for gatekeepers (finance adjustment opacity preserves narrative power, CEO criteria opacity preserves discretion)",
+        "Gatekeepers gain power from information monopoly (sales CRM ownership creates deal reality control, operations incident data control enables blame externalization)",
+        "Restrictions prevent oversight or challenge (Board operational oversight impaired by finance filtering, delivery cannot challenge sales profitability claims without CRM access, executives cannot question operations prevention without frequency data)",
+        "Measurement absence protects from accountability (satisfaction measurement absence protects support from outcome accountability, incident frequency tracking absence protects operations from prevention accountability)",
+        "No access expansion initiatives despite no clear security barriers (customer satisfaction measurement not established despite no security reason preventing, deal profitability validation gap not addressed, incident frequency tracking not implemented)"
+      ],
+      "evidence_found": {
+        "supporting": "LIMITED. Some restrictions likely legitimate (customer PII protection, contract confidentiality, competitive intelligence security). But legitimacy doesn't explain full pattern.",
+        "disconfirming": [
+          "Finance adjustment opacity preserves narrative control—operations cannot contest adjustment without seeing methodology, finance determines whether operations appears reliable vs unreliable to investors through adjustment magnitude, narrative power not security requirement",
+          "Sales CRM monopoly prevents delivery profitability challenge—delivery discovers cost reality post-signature, cannot validate sales estimates pre-commitment, prevents challenge not protects security (deal economics not PII or competitive intelligence requiring restriction)",
+          "CEO criteria opacity preserves discretion—walk away policy criteria undocumented per Stage 7.1, CEO can apply judgment without codifying rules constraining future decisions, discretion preservation not security requirement",
+          "Satisfaction measurement absence protects support from accountability—Stage 7.4 support optimizes SLA not satisfaction, satisfaction measurement would expose activity-outcome divergence tightening support accountability, measurement absence is accountability avoidance not security requirement (surveys don't pose security risk)",
+          "Incident frequency tracking absence protects operations from prevention accountability—operations praised for response capability without frequency context, frequency tracking would shift accountability from response to prevention, tracking absence enables operations to emphasize controllable response metrics not less-controllable prevention outcomes per Stage 7.4, 7.3 (frequency tracking doesn't pose security risk)",
+          "Operations monitoring control enables visibility management—monitoring offline Sept 2024 during zero-day incident per Stage 6, monitoring reliability affects incident visibility, operations controls monitoring architecture determining organizational incident awareness, visibility control serves operations interests not security requirements",
+          "Board operational oversight impaired by finance filtering—Board sees finance-aggregated not operational granularity, oversight impairment creates governance gap, filtering serves finance gatekeeping not Board information security"
+        ]
+      },
+      "status": "REFUTED",
+      "notes": "Access asymmetries serve organizational power, efficiency, and accountability avoidance—not purely security/compliance. Gatekeepers benefit from information control through narrative power, challenge prevention, accountability protection. Restrictions impair oversight without clear security justification (Board operational detail, delivery CRM access, satisfaction measurement, frequency tracking—none pose security risks preventing access/measurement, yet all restricted/absent). Pattern indicates information architecture designed for gatekeeper advantage and organizational efficiency (speed over equality) not security requirements."
+    },
+    {
+      "hypothesis": "H7.5-C: Board oversight not impaired by information asymmetry—Board sees information necessary for governance and can effectively challenge management",
+      "supporting_evidence_sought": [
+        "Board sees operational granularity sufficient for operational governance (deal-level detail, customer-level data, incident patterns, data quality issues)",
+        "Board aware of data quality issues affecting operational metrics (CRM profitability overstatement, customer count ambiguity, satisfaction measurement absence, incident frequency tracking absence)",
+        "Board receives unfiltered operational information (direct from operational managers, not only through finance/CEO mediation)",
+        "Board can independently validate management claims (Board has information access to verify operational representations, not dependent on management-produced reports only)",
+        "Board operational discussions informed by operational reality (Board knows orphaned domains, coordination gaps, data quality limitations when making operational strategy decisions)"
+      ],
+      "disconfirming_evidence_sought": [
+        "Board sees aggregates not operational detail (segment margins not deal-level profitability, portfolio pipeline metrics not deal-level risk, incident episodically not frequency patterns)",
+        "Board unaware of orphaned domains and data quality issues (Stage 7.3, 7.4 uncertainties whether Board knows customer count unreconciled, satisfaction unmeasured, incident frequency not tracked, deal profitability validation gap, escalation process unsystematized)",
+        "Board receives finance-filtered not direct operational data (Board operational dashboards produced by finance, metrics selected and calculated by finance, Board sees operations through finance lens)",
+        "Board lacks operational granularity to assess portfolio risks (cannot assess deal concentration, customer type profitability, incident recurrence patterns, satisfaction trends without granular data Board doesn't see)",
+        "Board governance gaps from information architecture (Board makes operational strategy decisions without knowing data quality limitations, orphaned domains, coordination failures visible at operational level but not Board level)"
+      ],
+      "evidence_found": {
+        "supporting": "LIMITED. Board sees external financials accurately (audit-enforced per Stage 7.3 selective quality enforcement), Board financial governance adequate for investor protection. Board likely sees major incidents when they occur (ransomware, zero-day significant enough for Board visibility).",
+        "disconfirming": [
+          "Board operational visibility through finance filter—Board receives operational dashboards produced by finance using finance-selected metrics and finance-applied calculations per gatekeepers analysis, Board sees operations through finance lens not direct operational granularity, Board operational oversight shaped by finance information architecture",
+          "Board likely unaware of data quality issues—Stage 7.3, 7.4 uncertainties indicate Board awareness of CRM 13-15% profitability overstatement unknown, customer count ambiguity (N≠M≠K) Board visibility uncertain, satisfaction measurement absence ('gap indefinite' whether Board knows), incident frequency tracking absence ('tracking absent' whether Board informed). If Board aware, Board hasn't mandated remediation suggesting either unawareness or acceptance",
+          "Board sees aggregates not operational detail—Board sees segment-level margins not deal-level profitability distribution (cannot assess which deals profitable/unprofitable or concentration risk), Board sees portfolio pipeline metrics (total value, win rates) not deal-level customer/profitability/risk detail (cannot assess portfolio composition or concentration), Board sees incident episodically during major incidents not frequency patterns systematically (cannot assess recurrence or prevention effectiveness)",
+          "Board walk away policy oversight gap—Board may know policy exists but implementation metrics unclear (rejection rate, rejection reasons, margin improvement attribution, CEO bandwidth consumption) per Stage 7.1, 7.4 uncertainties, Board cannot assess policy effectiveness without metrics",
+          "Board governance gap from information asymmetry—Board makes operational strategy decisions (market focus, customer targeting, competitive positioning, service quality investment) based on incomplete information (satisfaction declining externally Board may not see, deal profitability issues prolonged Board operational visibility didn't catch, incident recurrence normalized Board frequency visibility absent), Board operational discussions uninformed by operational data quality reality (orphaned domains, coordination gaps, data quality limitations not visible to Board per evidence gaps)"
+        ]
+      },
+      "status": "WEAKENED",
+      "notes": "Board financial oversight adequate (external reporting accurate, audit-enforced), Board operational oversight impaired by information architecture. Board sees finance-filtered aggregated operational reality, not raw operational granularity. Board likely unaware of operational data quality issues (orphaned domains, measurement gaps, data quality tolerances) affecting operational metrics Board relies on. Board operational governance limited by gatekeeping—Board cannot effectively challenge management operational claims without operational detail Board doesn't see. Asymmetry serves Board efficiency (aggregated information faster to consume, reduces Board information processing burden) but creates governance gap (Board operational strategy discussions uninformed by operational data quality reality, Board oversight reactive to crises not proactive from pattern visibility)."
+    },
+    {
+      "hypothesis": "H7.5-D: Information asymmetries are being corrected—organization recognizes gaps and actively democratizing access or building governance",
+      "supporting_evidence_sought": [
+        "Data governance initiatives building (Chief Data Officer hired, data governance committee established, data stewardship roles created)",
+        "Operating committee or management committee established systematizing cross-functional information sharing (governance infrastructure addressing coordination gaps per Stage 4.1)",
+        "Transparency improvements documented (finance documenting adjustment methodology for operations visibility, CEO codifying walk away criteria, sales providing delivery early CRM access, operations implementing incident frequency tracking)",
+        "Asymmetry reduction trend over time (gaps closing, more parties gaining visibility, gatekeeping declining)",
+        "Satisfaction measurement infrastructure being built (NPS/CSAT program established, satisfaction owner identified, Board satisfaction reporting initiated)",
+        "Orphaned domains being assigned owners (customer count reconciliation owner designated, deal profitability validation process established, incident prevention steward identified per Stage 7.4 orphaned domains)"
+      ],
+      "disconfirming_evidence_sought": [
+        "Governance void persists (no CDO, no data governance committee, no operating committee, Stage 7.1 H7.1-B governance infrastructure absent)",
+        "Transparency improvements not documented (finance adjustment methodology remains undocumented per Stage 7.2 uncertainty, walk away criteria undocumented per Stage 7.1 uncertainty, incident frequency tracking absent per Stage 7.3)",
+        "Asymmetries persist or worsen over time (satisfaction information inversion continues with Trustpilot 'consistently worse' 2024, CRM-delivery gap persists enabling profitability overstatement, Board operational visibility gaps unchanged)",
+        "Three CEOs three years without asymmetry reduction across tenures (no information democratization initiatives visible across CEO transitions, each CEO operates within same gatekeeping architecture, suggests systemic acceptance per Stage 4.5)",
+        "Orphaned domains remain orphaned (satisfaction measurement not established despite prolonged absence, deal profitability validation gap not addressed despite margin erosion Q1-Q3 2024, incident prevention accountability not assigned despite recurrence, customer count reconciliation not forced despite ambiguity indefinite per Stage 7.4)"
+      ],
+      "evidence_found": {
+        "supporting": "NONE FOUND. Walk away policy Q4 2024 could be interpreted as CEO attempting to address deal profitability gap, but policy is reactive filtering not proactive validation gap closure, criteria remain undocumented, implementation metrics not systematized per Stage 7.1.",
+        "disconfirming": [
+          "Governance void persists—no data governance building visible per Stage 7.1 H7.1-B (no CDO, no data governance committee, no data stewardship roles created per Stage 7.4 orphaned domains), no operating committee per Stage 4.1 (coordination infrastructure absent, no cross-functional information sharing systematization)",
+          "Transparency improvements not documented—finance adjustment methodology remains opaque per Stage 7.2 uncertainty ('methodology not documented'), walk away criteria remain undocumented per Stage 7.1 uncertainty ('case-by-case judgment, threshold criteria not documented'), satisfaction measurement not established per Stage 7.3 ('gap indefinite'), incident frequency tracking not implemented per Stage 7.3 ('tracking absent')",
+          "Asymmetries persist or worsen—satisfaction information inversion continues (Trustpilot 'consistently worse' 2024 ongoing external deterioration, internal measurement absent), CRM-delivery profitability gap persists (13-15% overstatement per Stage 7.3 enabled by sales gatekeeping, walk away policy Q4 2024 treats symptoms not causes, gap unaddressed), Board operational visibility gaps unchanged (no evidence Board receiving operational granularity or data quality transparency)",
+          "Three CEOs three years no asymmetry reduction—consistent gatekeeping pattern across CEO tenures per Stage 4.5 (each CEO operates within same information architecture, no CEO built satisfaction infrastructure, no CEO institutionalized walk away criteria, no CEO established operating committee sharing information cross-functionally), suggests organizational acceptance of asymmetries not temporary gaps awaiting correction",
+          "Orphaned domains remain orphaned—satisfaction measurement not established despite prolonged absence (three CEOs none built satisfaction infrastructure, measurement externalized to customers persists per Stage 7.4), deal profitability validation gap not addressed (margin erosion Q1-Q3 2024 before Q4 walk away policy, policy reactive not preventive, validation at entry gap remains orphaned), incident prevention not assigned owner (prevention orphaned across operations/delivery/vendors/security per Stage 7.4, no prevention steward consolidating), customer count reconciliation not forced (ambiguity tolerated indefinitely per Stage 7.3, 7.4, no owner assigned reconciling CRM vs billing vs support definitions)"
+        ]
+      },
+      "status": "REFUTED",
+      "notes": "No correction efforts visible—asymmetries accepted as organizational operating model not problems requiring resolution. Current asymmetries serve organizational purposes: Finance narrative control and Board information processing efficiency, sales cycle velocity and autonomy, CEO discretion and decision authority, operations response emphasis without prevention accountability, support SLA optimization without satisfaction accountability. Asymmetries deprioritized because serve gatekeeper interests and organizational efficiency (speed over equality, velocity over coordination, autonomy over oversight) despite costs (decision quality degradation, strategic blindness, oversight impairment). Three CEOs three years without asymmetry reduction suggests systemic institutionalization not individual CEO oversight. M&A risk: Acquirer expects information democratization norms different from Rackspace practices, integration requires culture change (access expectations clash, gatekeeping challenged), asymmetries prevent integration data quality (acquirer needs operational granularity for integration decisions, Rackspace operational data quality poor and visibility restricted creating integration impediment)."
+    }
+  ],
+  "synthesis_notes": "Four hypotheses tested, all REFUTED or WEAKENED. FINDING: Information asymmetry is pervasive, structural, and institutionalized—not temporary gaps or security requirements. Asymmetries serve organizational purposes: (1) Gatekeeper power preservation (narrative control, discretion protection, accountability avoidance), (2) Organizational efficiency optimization (speed over coordination, velocity over quality, autonomy over oversight), (3) Board information processing efficiency (aggregated data faster to consume than granularity, finance filtering reduces Board burden). ASYMMETRY MECHANISMS CONFIRMED: System ownership (finance owns investor relations, sales owns CRM, operations owns monitoring—ownership creates control), authority-based gatekeeping (CEO ultimate decision authority, finance regulatory authority, sales booking authority enable legitimate filtering), technical expertise asymmetry (operations security/infrastructure knowledge creates challenge barriers), first-mover advantage (sales establishes deal truth proactively, corrections come late reactively), measurement absence enabling externalization (satisfaction measurement absent internally allows customer/external platform control). ASYMMETRY PERSISTENCE EXPLAINED: No governance correcting (no CDO, no data governance committee, no operating committee per Stage 7.1, 4.1), three CEOs three years without correction initiatives (systemic acceptance not individual oversight, asymmetries survive CEO transitions indicating institutional embedding per Stage 4.5), orphaned domains remain orphaned (satisfaction, profitability validation, prevention, customer count reconciliation—no owners assigned despite prolonged gaps per Stage 7.4), current architecture serves organizational interests (efficiency, autonomy, power) outweighing costs (decision quality, oversight, coordination) in organizational prioritization. DISCONFIRMING EVIDENCE SEARCHES COMPREHENSIVE: Searched for common platforms (none found), operating committee (absent), transparency initiatives (none documented), asymmetry reduction trend (none visible, gaps persist/worsen), governance building (void continues), orphaned domain ownership assignment (none assigned), correction efforts (none visible except walk away policy Q4 2024 which is reactive symptom treatment not proactive gap closure). HYPOTHESIS TESTING METHODOLOGY: For each hypothesis, stated what evidence would SUPPORT (demonstrate information equality, security-only restrictions, adequate Board oversight, active correction), stated what evidence would DISCONFIRM (demonstrate asymmetry, power-based restrictions, Board impairment, persistent gaps), actively searched for disconfirming evidence through earlier stage outputs and available data, updated hypothesis status based on evidence balance. UNCERTAINTY PRESERVED: Where evidence insufficient to determine (Board awareness of specific data quality issues, finance visibility to deal-level CRM, customer success CRM access), uncertainty explicitly noted in evidence assessment rather than resolved through assumption. M&A IMPLICATIONS: Asymmetries create diligence complexity (acquirer requests data operational managers don't routinely see exposing internal gaps), valuation uncertainty (Board oversight impairment means acquirer cannot rely on Board operational governance quality, must independently assess operational reality), integration impediment (acquirer information norms likely different, culture clash from access expectations, integration requires either Rackspace adoption of acquirer information practices—culture change—or acquirer tolerance of Rackspace asymmetries—suboptimal integration)."
+}

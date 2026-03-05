@@ -1,0 +1,78 @@
+{
+  "sub_stage": "8.1",
+  "document_metadata": {
+    "title": "Stage 8.1 Disconfirming Evidence Search Record",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-15",
+    "scope": "Documentation of evidence sought that would contradict or weaken Stage 8.1 conclusions"
+  },
+  "disconfirming_evidence_searched": [
+    {
+      "claim_being_tested": "Rackspace security posture is weak, as evidenced by three successful breaches in 36 months",
+      "disconfirming_evidence_sought": "Examples of Rackspace successfully defending against sophisticated attacks (proactive threat hunting, early breach detection, attacker eviction before data loss)",
+      "search_method": "Web search for 'Rackspace threat detection,' 'Rackspace security defends against attack,' 'Rackspace incident response success'",
+      "result": "NOT FOUND - No public examples of successful defense found. All security-related coverage focuses on breaches (Exchange, ScienceLogic, CL0P), not defenses. This is NORMAL (companies rarely publicize defended attacks) but absence of evidence leaves only breach evidence, supporting 'weak posture' conclusion."
+    },
+    {
+      "claim_being_tested": "Rackspace patch management discipline failed with Exchange incident and likely remains weak",
+      "disconfirming_evidence_sought": "Post-Exchange announcements of improved patch management processes, patch compliance metrics showing >95% on-time patching, security certifications requiring rigorous patch discipline",
+      "search_method": "Web search for 'Rackspace patch management improvement 2023 2024,' 'Rackspace security posture enhancements post-ransomware'",
+      "result": "NOT FOUND - No announcements of patch management improvements found. No patch compliance metrics disclosed. FedRAMP/SOC 2/ISO 27001 certifications require patch management controls but do NOT guarantee actual compliance (Exchange had these certifications when breach occurred). Absence of evidence suggests patch discipline may not have materially changed."
+    },
+    {
+      "claim_being_tested": "Supply chain attack surface is uncontrollable and will produce recurring breaches",
+      "disconfirming_evidence_sought": "Architectural isolation limiting blast radius of tool compromises, vendor security audits before deployment, rapid detection of supply chain compromises, supply chain risk as primary vendor selection criterion",
+      "search_method": "Analysis of ScienceLogic and CL0P incident disclosures for evidence of isolation/detection capabilities",
+      "result": "NOT FOUND - ScienceLogic incident accessed customer data across 3 monitoring servers, suggesting LACK of isolation. No evidence of rapid detection (breach discovered after vendor disclosed vulnerability, not through Rackspace monitoring). No public statements about enhanced vendor security requirements post-incidents. Evidence supports 'uncontrollable' claim rather than refuting it."
+    },
+    {
+      "claim_being_tested": "Compliance requirements (FedRAMP, UK Sovereign) freeze security controls and prevent rapid threat response",
+      "disconfirming_evidence_sought": "Examples of compliance environments receiving security updates FASTER than commercial environments, streamlined change approval for security-critical updates, compliance teams facilitating rather than blocking security improvements",
+      "search_method": "Review of FedRAMP change management documentation, analysis of UK Sovereign isolation requirements",
+      "result": "NOT FOUND - FedRAMP documentation confirms change management requirements (JAB notification, supplemental assessment) that create 3-12 month timelines. UK Sovereign isolation prevents global security tool/intelligence sharing. No evidence of expedited security processes for compliance environments. Evidence supports 'frozen controls' claim."
+    },
+    {
+      "claim_being_tested": "Rackspace incident response capability is Tier 2 (adequate) not Tier 1 (elite), limiting addressable market",
+      "disconfirming_evidence_sought": "Elite security partnerships (Mandiant retainer, CrowdStrike alliance), security team composition with elite talent, high-profile customers with stringent security requirements choosing Rackspace",
+      "search_method": "Web search for 'Rackspace Mandiant partnership,' 'Rackspace CrowdStrike,' review of Rackspace leadership team for security executives from elite firms",
+      "result": "NOT FOUND - No elite security partnerships disclosed. Karen O'Reilly-Smith (CSO) background from Aetna/CVS (insurance CISO) not elite security firm. No evidence of Tier 1 capability. Product discontinuation after Exchange (rather than remediation) suggests capability ceiling. Evidence supports 'Tier 2' classification."
+    },
+    {
+      "claim_being_tested": "Legacy platform technical debt (like Exchange) exists across other Rackspace platforms, creating systemic breach risk",
+      "disconfirming_evidence_sought": "Evidence of aggressive platform modernization, legacy platform retirement programs, migration of customers from old to new infrastructure, investment in technical debt reduction",
+      "search_method": "Review of Stage 6.3 untouchable systems analysis, search for Rackspace modernization initiatives",
+      "result": "CONTRADICTORY EVIDENCE FOUND - Stage 6.3 documents that VMware, IAM, and other platforms are UNTOUCHABLE due to customer dependencies, compliance constraints, and operational risk. This SUPPORTS 'systemic debt' claim rather than refuting it. No evidence of aggressive modernization found - instead, evidence shows platforms frozen in place. Hypothesis strengthened rather than weakened."
+    },
+    {
+      "claim_being_tested": "CL0P/Cleo incident is material security breach being concealed by Rackspace's silence",
+      "disconfirming_evidence_sought": "Rackspace public statement denying CL0P incident, explanation that leaked data was non-sensitive test data, SEC 8-K filing explaining non-materiality, customer notifications indicating limited/no customer data exposure",
+      "search_method": "Web search for 'Rackspace CL0P statement,' 'Rackspace Cleo breach disclosure,' review of SEC filings Q4 2024",
+      "result": "NOT FOUND - No Rackspace statement found (neither confirming nor denying). No SEC 8-K filing found. Absence of denial when listed on CL0P leak site is conspicuous - typical response would be either (a) immediate denial if false, or (b) acknowledgment with minimization if true. Silence suggests incident is real but Rackspace assessing as non-material or using legal strategy of non-confirmation. Cannot definitively confirm breach, but cannot find disconfirming evidence either."
+    },
+    {
+      "claim_being_tested": "Three breaches in 36 months represents PATTERN indicating systemic security weaknesses rather than bad luck",
+      "disconfirming_evidence_sought": "Industry data showing MSPs average 3+ breaches per 36 months (making Rackspace typical not outlier), evidence that breaches were due to unavoidable zero-days affecting entire industry (not Rackspace-specific failures), competitor breach frequencies showing Rackspace is average or better than peers",
+      "search_method": "Web search for MSP breach statistics, comparison of Rackspace vs IBM/Accenture/Wipro breach frequency",
+      "result": "PARTIALLY DISCONFIRMING - Industry data shows MSPs do experience supply chain breaches at 1-2/year rate (ScienceLogic and Cleo are industry-wide issues, not Rackspace-specific). HOWEVER, Exchange breach was RACKSPACE-SPECIFIC failure (patches available, not applied) making it self-inflicted rather than unavoidable. Conclusion: 2 of 3 breaches (ScienceLogic, CL0P) are industry pattern, 1 of 3 (Exchange) is Rackspace failure. This PARTIALLY WEAKENS 'systemic weakness' claim - suggests Rackspace has supply chain risk (like all MSPs) PLUS patch discipline issues (Rackspace-specific). Still concerning, but slightly less damning than 'all three breaches show unique Rackspace failures.'"
+    },
+    {
+      "claim_being_tested": "Cyber insurance coverage has been reduced or exclusions added following three incidents, creating uninsured risk exposure",
+      "disconfirming_evidence_sought": "SEC 10-K disclosure of unchanged or increased cyber insurance coverage, statements that premiums remain stable, evidence that all three incidents were fully covered by insurance",
+      "search_method": "Review of Rackspace 2023 and 2024 SEC 10-K filings risk factors and insurance disclosures",
+      "result": "UNABLE TO VERIFY - SEC filings typically disclose cyber insurance coverage but specific policy limits and premium amounts often not detailed. Exchange incident showed $5.4M insurance recovery vs $10.8-12M costs (~50% coverage) suggesting either under-insurance or exclusions. Cannot find evidence that coverage unchanged, but also cannot find evidence of reduction. This remains UNKNOWN rather than confirmed or refuted."
+    },
+    {
+      "claim_being_tested": "Security risk is being used as veto mechanism preventing business initiatives post-Exchange",
+      "disconfirming_evidence_sought": "Business initiatives proceeding despite security objections, security team being overruled on risk acceptance decisions, evidence of 'move fast' culture overriding security approvals",
+      "search_method": "Analysis of Stage 6.3 untouchable systems for evidence of business vs security decision dynamics",
+      "result": "INCONCLUSIVE - Stage 6.3 shows multiple platforms frozen due to risk concerns, consistent with 'security veto' hypothesis. However, cannot determine if this is POST-Exchange change or PRE-EXISTING pattern (platforms may have been untouchable before Exchange for other reasons). Cannot find evidence of security being overruled, but absence of evidence is not evidence of absence - these decisions are internal and not disclosed. Claim remains UNVERIFIED - plausible but not proven."
+    }
+  ],
+  "disconfirming_evidence_search_summary": {
+    "total_claims_tested": 10,
+    "claims_with_disconfirming_evidence_found": 1,
+    "claims_strengthened_by_search": 6,
+    "claims_remaining_uncertain": 3,
+    "overall_assessment": "Disconfirming evidence search STRENGTHENED original conclusions in most cases rather than weakening them. Out of 10 claims tested, only 1 found PARTIAL disconfirming evidence (supply chain breaches are industry-wide pattern, not unique to Rackspace), 6 claims were STRENGTHENED by absence of expected positive evidence (e.g., if patch management had improved, Rackspace would publicize this - silence suggests no improvement), and 3 claims remain UNCERTAIN due to lack of public information (insurance coverage changes, security veto dynamics, CL0P incident details). This pattern suggests EITHER: (1) Rackspace security posture is genuinely weak and our analysis is accurate, OR (2) Rackspace is failing to communicate security improvements that have been made, creating perception gap. Given that security improvements are POSITIVE news that companies typically publicize (rebuilding trust after breach), Option 1 (genuine weakness) is more probable than Option 2 (hidden strength)."
+  }
+}

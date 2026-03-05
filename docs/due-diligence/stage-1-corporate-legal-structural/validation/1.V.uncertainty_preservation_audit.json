@@ -1,0 +1,132 @@
+{
+  "uncertainty_preservation_audit": {
+    "overall_assessment": "Stage 1 SUCCESSFULLY preserved uncertainty where evidence was insufficient, ambiguous, or contradictory. Did not artificially force conclusions or smooth over unknowns. Multiple instances of explicit 'UNKNOWN', 'inferred', 'likely', and 'estimated' labels throughout analysis. Unknowns files in Stages 1.1 and 1.5 explicitly cataloged gaps requiring data room access. Claim_type labels (FACT vs INFERENCE) consistently distinguished documented evidence from analytical interpretation. Uncertainty preservation is EXCELLENT and Investment Committee-appropriate.",
+    "knowns_vs_unknowns_categorization": {
+      "knowns_high_confidence": [
+        "Apollo holds 53-57% equity ownership (multiple sources confirm range)",
+        "First Lien Credit Agreement: $1.3B term loan, Term SOFR + 2.75%, May 2028 maturity (disclosed in press release)",
+        "FedRAMP authorization is entity-specific and non-transferable (FedRAMP policy published)",
+        "UK Sovereign Services launched March 27, 2024 with isolated infrastructure (Rackspace press release)",
+        "2022 ransomware attack affected 30,000 customers, Hosted Exchange discontinued (multiple news sources)",
+        "AWS Strategic Collaboration Agreement October 2024 with 2,000+ customers and 1,000+ staff (disclosed)",
+        "Stock price $0.48 and market cap ~$120M as of Feb 4, 2026 (Yahoo Finance)",
+        "Negative covenants restrict debt incurrence, dividends, asset sales, liens per March 2024 credit agreement",
+        "China Cybersecurity Law Article 37 requires in-country data storage (statute text)",
+        "FOCI regulations expanded May 2024 to contracts >$5M (32 CFR § 2004.34)"
+      ],
+      "knowns_medium_confidence": [
+        "AWS represents 30-40% of revenue (INFERRED from 2,000+ customers and 1,000+ staff, not disclosed)",
+        "Customer churn upon change-of-control likely 10-30% (industry standard for enterprise MSP, not company-specific)",
+        "Integration of acquired entities ~50% complete (INFERRED from entities remaining separate, not disclosed)",
+        "Re-certification timelines: FedRAMP 12-18 months, HITRUST 6-12 months, SOC 2 3-6 months (industry standards)",
+        "Management equity ownership likely <5% (typical for non-founder executives, not disclosed)",
+        "Data center count approximately 40 facilities globally (sourced from multiple references, not official list)",
+        "Apollo economic exposure $64-68M (CALCULATED from 53-57% of $120M market cap)",
+        "Public shareholder ownership 43-47% (CALCULATED as residual from Apollo 53-57%)",
+        "Government revenue material but percentage undisclosed (mentioned in multiple contexts, not quantified)"
+      ],
+      "unknowns_likely_discoverable_in_diligence": [
+        "CRITICAL: Government revenue breakdown - U.S. Federal, State/Local, UK gov, other (determines FOCI materiality and UK Sovereign traction). Data room request: Revenue by customer segment, government contract schedules.",
+        "CRITICAL: Customer concentration - top 10/20 customers as percentage of revenue (informs churn risk magnitude). Data room request: Customer concentration schedules.",
+        "HIGH: UK Sovereign Services traction - customers signed, revenue contribution, pipeline (launched March 2024, 10 months of performance data should exist). Data room request: UK Sovereign customer list, revenue reports.",
+        "HIGH: China operations structure - wholly-owned subsidiary vs joint venture, revenue contribution, regulatory approvals held. Data room request: China entity formation documents, regulatory licenses.",
+        "HIGH: Data center lease terms - assignment restrictions language, remaining lease terms, termination rights. Data room request: All data center lease agreements.",
+        "MEDIUM: AWS/Microsoft/Google partnership agreements - termination provisions upon change-of-control, exclusivity terms, revenue sharing. Data room request: Strategic partnership agreements.",
+        "MEDIUM: Management equity ownership - RSU grants, option pools, vesting schedules, change-of-control acceleration. Data room request: Equity compensation plans, executive employment agreements.",
+        "MEDIUM: Integration roadmap for acquired entities - planned completion timeline, investment required, customer migration status. Data room request: Post-merger integration plans, synergy tracking."
+      ],
+      "unknowns_partially_unknowable": [
+        "Customer reaction to specific acquirer identity - will customers churn more/less if acquired by financial sponsor vs strategic? Depends on acquirer-specific factors not predictable in advance. Approach: Scenario analysis with 10-30% range.",
+        "Lender consent probability for specific transaction structure - will lenders approve change-of-control at what price/terms? Depends on negotiation dynamics. Approach: Engage lenders early in controlled process.",
+        "AWS/Microsoft/Google partnership continuation - will hyperscalers approve specific acquirer? Depends on competitive dynamics and acquirer identity. Approach: Pre-clearance discussions before LOI.",
+        "FedRAMP re-authorization success probability post-acquisition - will new entity qualify? Depends on acquirer's security posture and government relationships. Approach: Pre-certification assessment with FedRAMP office.",
+        "Patent infringement damages in Alpha Modus case - case filed June 2024, no judgment, damages unknown. Depends on claim construction, validity challenges, willfulness findings. Approach: Retain technical expert and IP litigator for assessment.",
+        "Remaining ransomware class action settlement value - most cases resolved, one pending. Settlement value depends on plaintiff negotiating posture. Approach: Insurance coverage analysis, reserve estimate."
+      ],
+      "unknowables_requiring_acceptance": [
+        "Future regulatory changes - EU Data Privacy Framework may be invalidated (under legal challenge), China Cybersecurity Law may be amended, FedRAMP requirements may evolve. Cannot predict regulatory changes. Approach: Scenario planning with regulatory flexibility/rigidity scenarios.",
+        "Macroeconomic impact on cloud spending - recession could reduce customer cloud budgets, affecting revenue regardless of operational improvements. Cannot control macro. Approach: Downside case modeling with revenue sensitivity analysis.",
+        "Competitive dynamics evolution - AWS/Microsoft/Google may change partner programs, new entrants may disrupt MSP model. Cannot predict competitive moves. Approach: Competitive positioning assessment, scenario planning.",
+        "Technology disruption - AI-driven cloud management tools may automate MSP services, reducing TAM. Long-term technology risk. Approach: Product roadmap review, innovation pipeline assessment.",
+        "Apollo's true exit timing - when will Apollo decide it needs liquidity vs can wait for recovery? Depends on fund lifecycle, LP pressure, alternative investment opportunities. Cannot know sponsor's internal decision criteria. Approach: Assume Apollo willing to transact given public signals (stock distress, failed IPO monetization)."
+      ]
+    },
+    "uncertainty_preservation_evidence": [
+      {
+        "sub_stage": "1.1",
+        "preservation_examples": [
+          "H4 litigation: 'exposure magnitude is UNKNOWN' - did not assume materiality",
+          "H3 regulatory: marked 'WEAKENED' when evidence insufficient rather than forcing SUPPORTED or REFUTED",
+          "Subsidiary count: documented 'at least 8 material entities' rather than claiming exhaustive list",
+          "Unknowns file (1.1.unknowns_requests.json) explicitly listed 8 gaps requiring data room"
+        ]
+      },
+      {
+        "sub_stage": "1.2",
+        "preservation_examples": [
+          "Apollo economic exposure: calculated range $64-68M from 53-57% ownership, preserved range rather than point estimate",
+          "Public shareholder percentage: 43-47% calculated as residual, acknowledged imprecision",
+          "Management equity stake: 'not publicly disclosed but typically <5%' - did not force estimate",
+          "All claims labeled FACT vs INFERENCE with evidence sources cited"
+        ]
+      },
+      {
+        "sub_stage": "1.3",
+        "preservation_examples": [
+          "Integration completion: '~50% completion (inferred)' - clearly marked as inference not fact",
+          "Apollo IPO 'intended as temporary' - reasoned interpretation but not directly evidenced",
+          "Layoff impact: 'institutional knowledge loss' described mechanistically not quantified",
+          "Rehiring costs: '$50-100M annually' range estimate, not false precision"
+        ]
+      },
+      {
+        "sub_stage": "1.4",
+        "preservation_examples": [
+          "AWS revenue: '30-40% likely' - range estimate not point value",
+          "Customer churn: '10-30%' range based on industry standards, not company-specific",
+          "Transaction failure probability: '20-40%' professional judgment clearly labeled",
+          "Government revenue: 'material but undisclosed' - acknowledged gap rather than estimating"
+        ]
+      },
+      {
+        "sub_stage": "1.5",
+        "preservation_examples": [
+          "Unknowns file listed 8 critical gaps with materiality assessments and data room requests",
+          "UK Sovereign traction: 'launched March 2024, performance data unavailable' - did not estimate revenue",
+          "China structure: 'wholly-owned vs JV unclear' - acknowledged ambiguity",
+          "Government revenue breakdown: marked CRITICAL unknown affecting FOCI analysis",
+          "Data Privacy Framework: 'under legal challenge, likely temporary' - flagged instability risk"
+        ]
+      }
+    ],
+    "false_precision_avoided": [
+      "Did NOT force point estimates where ranges appropriate: Apollo 53-57%, AWS 30-40%, churn 10-30%, integration ~50%",
+      "Did NOT extrapolate missing data: Government revenue undisclosed, left as unknown rather than estimating from indirect sources",
+      "Did NOT smooth uncertainty into deterministic outcomes: Customer reaction 'depends on acquirer identity', lender consent 'requires negotiation'",
+      "Did NOT treat inferences as facts: Consistently labeled calculations (Apollo $64-68M exposure), inferences (integration stall), and industry standards (churn rates) as such",
+      "Did NOT claim exhaustive data: 'At least 8 entities', '40 data centers globally', 'multiple entities' - language acknowledges possible omissions"
+    ],
+    "uncertainty_impact_on_conclusions": {
+      "high_confidence_conclusions_despite_uncertainty": [
+        "CONCLUSION: Multi-jurisdictional structure is mandatory and cannot be consolidated. CONFIDENCE: HIGH. Based on specific statutes (FedRAMP policy, China Cybersecurity Law, UK gov requirements) not subject to interpretation. Unknowns (government revenue %, UK traction) do not change legal impossibility of consolidation.",
+        "CONCLUSION: $1.3B debt creates absolute veto on change-of-control via mandatory repurchase provision. CONFIDENCE: HIGH. Credit agreement terms disclosed in press release. Unknown lender consent probability does not change existence of contractual veto.",
+        "CONCLUSION: Apollo controls governance via 53-57% majority and board representation. CONFIDENCE: HIGH. Ownership confirmed across multiple sources. Apollo's internal exit timing (unknowable) does not change current control reality.",
+        "CONCLUSION: FedRAMP authorization is entity-specific and 12-18 month re-authorization required. CONFIDENCE: HIGH. FedRAMP policy explicitly states this. Unknown re-authorization success probability does not change process requirement."
+      ],
+      "conclusions_qualified_by_uncertainty": [
+        "CONCLUSION: AWS represents 30-40% of revenue. CONFIDENCE: MEDIUM. Inferred from 2,000+ customers and 1,000+ staff, not disclosed. Actual percentage discoverable in diligence. Material impact: If AWS is >40%, partnership termination risk is more severe. If <30%, less critical.",
+        "CONCLUSION: Customer churn likely 10-30% upon change-of-control. CONFIDENCE: MEDIUM. Industry standard range, not company-specific. Actual customer sentiment and contract terms discoverable. Material impact: 40%+ churn would destroy deal economics, <10% churn significantly improves returns.",
+        "CONCLUSION: Integration of acquired entities ~50% complete. CONFIDENCE: LOW-MEDIUM. Inferred from entities remaining separate, not disclosed. Integration roadmap and status discoverable. Material impact: If 80% complete, less investment required to finish. If 20% complete, permanent inefficiency likely.",
+        "CONCLUSION: Government revenue material, FOCI review required for foreign acquirer. CONFIDENCE: MEDIUM-HIGH. Multiple sources mention government business, FOCI regulations clear. Actual percentage discoverable. Material impact: If gov revenue <20%, foreign acquirer may be viable. If >50%, foreign acquirer essentially disqualified."
+      ],
+      "unknowns_that_could_change_investment_decision": [
+        "CRITICAL: Government revenue breakdown. If >50% of revenue, foreign acquirer disqualified, dramatically limiting buyer universe. If <20%, foreign acquirer viable, expanding buyer pool.",
+        "CRITICAL: Customer concentration. If top 10 customers are >60% of revenue, churn of 2-3 key customers could destroy value. If well-distributed, churn risk is manageable portfolio effect.",
+        "HIGH: UK Sovereign traction. If strong traction (£50M+ revenue run-rate 10 months post-launch), validates growth strategy and reduces AWS dependency. If minimal traction, suggests market rejection of isolated infrastructure.",
+        "HIGH: Lender consent terms. If lenders demand full repayment or significant paydown ($500M+) as condition of change-of-control consent, dramatically increases transaction financing requirement. If lenders accept debt continuation at modest pricing adjustment, manageable.",
+        "MEDIUM: AWS partnership termination provisions. If AWS has unilateral termination right upon competitive acquisition, Microsoft/Google/Oracle buyers completely disqualified. If termination requires 'reasonable' objection, negotiation possible."
+      ]
+    },
+    "recommendation": "Stage 1 uncertainty preservation is EXCELLENT. Knowns clearly distinguished from unknowns. Ranges used appropriately rather than false precision. Critical unknowns explicitly flagged with data room requests. Investment Committee presentation should include: (1) Confidence-tiered findings (HIGH/MEDIUM/LOW), (2) Explicit unknowns list with materiality, (3) Scenario analysis spanning uncertainty ranges (government revenue 20-60%, customer churn 10-40%), (4) Data room priorities ranked by ability to resolve critical uncertainties. Stage 1 provides SUFFICIENT FOUNDATION for Investment Committee decision on whether to proceed to Stage 2 diligence, with clear roadmap of what must be discovered to complete investment decision."
+  }
+}

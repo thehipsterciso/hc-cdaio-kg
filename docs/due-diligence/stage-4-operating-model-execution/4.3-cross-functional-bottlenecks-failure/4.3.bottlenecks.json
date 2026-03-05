@@ -1,0 +1,50 @@
+{
+  "sub_stage": "4.3",
+  "document_metadata": {
+    "title": "Structural Bottlenecks - Rackspace Technology, Inc.",
+    "target_entity": "Rackspace Technology, Inc. (NASDAQ: RXT)",
+    "analysis_date": "2026-02-09"
+  },
+  "bottlenecks": [
+    {
+      "bottleneck_location": "CEO as sole cross-functional coordinator",
+      "why_it_is_structural": "Per Stage 4.1: BU Presidents lack authority (Lillie departure, CEO backfill), no standing governance forums (no operating committee, deal review board, risk committee). All cross-functional conflicts, customer escalations, major deals, risk decisions route to CEO for adjudication. Three CEOs in three years indicates role overload persists across leadership changes—not personality-dependent but structurally embedded. Attempts to fix through CEO hiring failed—pattern recurs. Root cause: Authority concentrated at CEO level upward (Apollo controls strategic decisions) and cannot delegate downward (BU Presidents/VPs lack cross-functional authority).",
+      "failure_symptoms": "Decision delays (issues queue for CEO availability), Throughput ceiling (organizational volume limited by CEO coordination capacity per Stage 4.2), Strategic distraction (CEO consumed by operational escalations), Inconsistent decisions (no governance forum precedents), Customer escalations stall ('cannot reach senior management' per BBB), Major deals require CEO (healthcare $100M+ TCV), Executive turnover (three CEOs suggests overload)",
+      "systemic_impact": "Organizational unscalability—cannot add volume/complexity without overwhelming CEO. Post-close integration risk—if CEO changes, coordination collapses. Competitive disadvantage—decision velocity slower than competitors with federated authority. Revenue ceiling—large deal throughput limited by CEO capacity. Customer churn—escalations cannot reach decision-maker.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": ["Stage 4.1: CEO authority concentration", "Stage 4.2: CEO serial bottleneck", "Three CEOs three years", "Healthcare deal CEO involvement", "BBB: cannot escalate"]
+    },
+    {
+      "bottleneck_location": "CFO capital allocation under debt covenant and Apollo constraints",
+      "why_it_is_structural": "Debt service ($1.3B First Lien) mandatory and non-discretionary. Apollo performance targets enforced through board oversight. CFO allocates RESIDUAL capital after external obligations met. Not CFO discretion problem—capital shortage problem. Layoffs 2021, 2023 executed quickly (Stage 4.2) but operational investments deferred (AI strategy unfunded Stage 4.2). Root cause: Capital structure (debt burden) and ownership structure (Apollo control with stranded capital) constrain available capital regardless of CFO allocation decisions.",
+      "failure_symptoms": "Customer support degradation (complaints increasing 2024), Technology investment lag (AI strategy unfunded), Security investments reactive only (post-incident), Repeated layoffs without resolving cost structure (2021, 2023), Revenue decline (-7% FY2024), Competitive gap widening (hyperscalers outpacing investment)",
+      "systemic_impact": "Operational underinvestment spiral—customer satisfaction degrades, technology lags, security reactive, creating customer churn, revenue decline, financial pressure, requiring more cuts. Competitive disadvantage permanent—cannot invest at pace to differentiate. Post-close value creation impossible—no capital for improvements.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": ["Stage 4.1: Debt/Apollo constraints", "Stage 4.2: Budget fast cuts, slow investments", "$1.3B First Lien", "Customer complaints 2024", "AI unfunded", "FY2024 -7%"]
+    },
+    {
+      "bottleneck_location": "Sales-delivery handoff without profitability enforcement",
+      "why_it_is_structural": "Per Stage 4.1: Sales has authority to book deals, delivery has accountability for profitability without pre-sale veto authority. Sales organization 400+ reps operate semi-autonomously. CEO 'walk away' policy Q4 2024 attempts centralized profitability discipline but enforcement mechanism unclear at scale. Sales 'refresh' Q3 2024 indicates personnel changes attempted but structural authority gap remains. Root cause: Incentive misalignment (sales rewarded for bookings, delivery accountable for profitability) plus authority mismatch (sales can commit, delivery cannot refuse).",
+      "failure_symptoms": "Margin erosion (Private Cloud -13%, Public Cloud -3%), Customer execution failures (deals sold delivery cannot profitably execute), Revenue sacrifice (CEO walking away from unprofitable renewals), Sales force turnover/refresh (Q3 2024), FY2024 revenue decline (-7%)",
+      "systemic_impact": "Negative-value throughput—sales books deals that destroy rather than create value. Delivery capacity consumed serving unprofitable customers. Customer churn from execution failures. Revenue decline as CEO exits unprofitable business. Financial deterioration accelerates despite sales activity.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": ["Stage 4.1: Sales/delivery authority mismatch", "Stage 4.2: Negative-value cascade", "Q4 2024: walk away policy", "Q3 2024: sales refresh", "Margins -13%/-3%", "FY2024 -7%"]
+    },
+    {
+      "bottleneck_location": "Customer support multi-tier escalation without empowered cross-functional coordinator",
+      "why_it_is_structural": "Per Stage 4.1: No VP Customer Support or Chief Customer Officer disclosed. BU Presidents lack operational authority (Lillie departure suggests). Support tiers have functional authority (process tickets) but lack cross-functional authority (cannot compel billing waiver, delivery prioritization, engineering expedite). Issues requiring cross-functional coordination have no empowered owner below CEO, but CEO cannot scale to individual customer issues. Root cause: Organizational authority gap—coordinator role needed but doesn't exist or lacks authority.",
+      "failure_symptoms": "Customer complaints: 'multiple tickets, dozens of engineers, no ownership, cannot escalate' (BBB), 'consistently getting worse' (Trustpilot 2024), 'conflicting advice from multiple engineers' (Gartner), Resolution time unbounded for complex issues, SLA gaming (response times met, resolution ignored)",
+      "systemic_impact": "Customer churn—unresolved issues force migration. Brand damage—public complaints accumulate. Support staff burnout—accountable without authority. Competitive vulnerability—customers experience degrading service. Revenue risk—churn from support failures.",
+      "claim_type": "INFERENCE",
+      "evidence_sources": ["Stage 4.1: No VP Support/CCO, escalation authority gap", "Stage 4.2: Coordination overhead exceeds productive work", "BBB complaints 2024", "Trustpilot: consistently worse", "Gartner: conflicting advice"]
+    },
+    {
+      "bottleneck_location": "Multi-jurisdictional deployment requiring separate execution per jurisdiction",
+      "why_it_is_structural": "Per Stage 1: Regulatory regimes MANDATE isolation—FedRAMP entity-specific, UK Sovereign architecturally isolated, China in-country requirements. Not coordination issue but legal/regulatory ABSOLUTE CONSTRAINT. Cannot consolidate operations without compliance violations. Cannot create shared services across jurisdictions. Every enterprise initiative must be decomposed and executed 5-6 times separately. Root cause: Regulatory frameworks are unchangeable—cannot negotiate with FedRAMP, UK sovereignty requirements, China Cybersecurity Law.",
+      "failure_symptoms": "5-6x deployment multiplier (Stage 4.2), Persistent high cost structure despite layoffs (2021, 2023), Technology deployment delays, Security patch coordination overhead, Talent deployment inflexibility (US Government US citizens only, UK Sovereign UK-isolated), M&A integration barriers (acquired entities potentially jurisdictionally fragmented)",
+      "systemic_impact": "Permanent competitive disadvantage—deployment speed, technology investment pace slower than unified competitors. Permanent cost penalty—cannot achieve economies of scale. Operational complexity—every initiative multiplied 5-6x. Stage 1 conclusion: 'Portfolio of separate businesses, not unified operation'—fundamentally unintegrable.",
+      "claim_type": "STRUCTURAL_INFERENCE",
+      "evidence_sources": ["Stage 1: FedRAMP/UK Sovereign/China isolation requirements", "Stage 4.2: 5-6x deployment multiplier", "Stage 1: Portfolio not unified operation", "Layoffs 2021, 2023: costs remain high"]
+    }
+  ]
+}

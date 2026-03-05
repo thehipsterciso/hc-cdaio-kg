@@ -1,0 +1,273 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \{\
+  "document_metadata": \{\
+    "title": "Stage 3 Orientation - External Forces, Market Power & Survivability",\
+    "version": "1.0",\
+    "created_date": "2026-02-10",\
+    "status": "ORIENTATION_COMPLETE_EXECUTION_PENDING",\
+    "target_entity": "TBD",\
+    "stage_type": "ORIENTATION",\
+    "governed_by": "STAGE_0_DILIGENCE_CONSTITUTION.json"\
+  \},\
+\
+  "stage_3_intent": \{\
+    "primary_purpose": "Determine how external forces constrain, reshape, or overwhelm the enterprise\'92s internal intent. This stage exists to test whether the business model uncovered in Stages 1 and 2 survives contact with external reality.",\
+    "non_negotiable_focus": "External power, asymmetry, inevitability, and survivability. Not narrative. Not positioning.",\
+    "forbidden_drift": [\
+      "Strategy formulation",\
+      "Market opportunity framing",\
+      "Competitive positioning narratives",\
+      "Analyst-style market descriptions"\
+    ]\
+  \},\
+\
+  "stage_3_atomic_sub_stages": \{\
+\
+    "3.1": \{\
+      "name": "Market Structure, Power Distribution & Value Migration",\
+      "agent_role": "Market Power & Structure Analyst",\
+      "mission": "Determine who sets terms in the market, who absorbs pressure, and where economic value is structurally migrating away from the enterprise. You are not describing the market. You are mapping power.",\
+      "analytical_burden": [\
+        "Identify where pricing power resides upstream or downstream",\
+        "Determine which actors can pass costs and which must absorb them",\
+        "Map structural winners and losers independent of execution quality",\
+        "Identify mechanisms of value migration (not outcomes)"\
+      ],\
+      "mandatory_evidence": [\
+        "Industry pricing trends over time",\
+        "Supplier and buyer concentration data",\
+        "Margin distribution across value chain",\
+        "Regulatory or standards bodies influencing market structure",\
+        "Contractual norms that shift leverage"\
+      ],\
+      "mandatory_adversarial_tests": [\
+        "Who can raise prices without losing volume?",\
+        "Who absorbs shocks when costs rise?",\
+        "Where does margin disappear first?",\
+        "Who benefits when demand contracts?"\
+      ],\
+      "output_schema": \{\
+        "sub_stage": "3.1",\
+        "power_map": [\
+          \{\
+            "market_domain": "",\
+            "dominant_actors": [],\
+            "pressure_absorbers": [],\
+            "value_migration_direction": "",\
+            "mechanism": "",\
+            "evidence": [\{"source_ids": ["SRC-####"], "claim_type": "INFERENCE"\}]\
+          \}\
+        ],\
+        "disconfirming_evidence_searched": [],\
+        "unknowns_requests": []\
+      \},\
+      "fail_condition": "If market forces are described without identifying power asymmetry, the stage fails"\
+    \},\
+\
+    "3.2": \{\
+      "name": "Competitive Landscape as Threat Vectors",\
+      "agent_role": "Asymmetric Competition Analyst",\
+      "mission": "Identify who can damage the enterprise\'92s economics, how, and without requiring direct head-to-head competition. You are not listing competitors. You are identifying threat mechanics.",\
+      "analytical_burden": [\
+        "Identify non-peer actors capable of economic harm",\
+        "Determine indirect competition pathways",\
+        "Map substitution, bypass, and enclosure threats",\
+        "Assess damage mechanisms independent of win/loss narratives"\
+      ],\
+      "mandatory_evidence": [\
+        "Customer switching behavior data",\
+        "Platform or ecosystem rule changes",\
+        "Pricing compression events",\
+        "Technology substitution patterns",\
+        "Historical margin erosion episodes"\
+      ],\
+      "mandatory_adversarial_tests": [\
+        "Who can erode margins without stealing customers?",\
+        "Who can commoditize value indirectly?",\
+        "Who changes rules the enterprise must accept?",\
+        "Who benefits when the enterprise grows?"\
+      ],\
+      "output_schema": \{\
+        "sub_stage": "3.2",\
+        "threat_vectors": [\
+          \{\
+            "actor": "",\
+            "threat_mechanism": "",\
+            "economic_damage_type": "",\
+            "requires_direct_competition": false,\
+            "evidence": [\{"source_ids": ["SRC-####"], "claim_type": "INFERENCE"\}]\
+          \}\
+        ],\
+        "disconfirming_evidence_searched": [],\
+        "unknowns_requests": []\
+      \},\
+      "fail_condition": "If competition is framed symmetrically or as peer rivalry, the stage fails"\
+    \},\
+\
+    "3.3": \{\
+      "name": "Customer Buying Behavior, Switching Physics & Inertia",\
+      "agent_role": "Customer Power & Switching Analyst",\
+      "mission": "Determine why customers stay, leave, or tolerate dissatisfaction. You are not measuring satisfaction. You are identifying captivity, inertia, and exit physics.",\
+      "analytical_burden": [\
+        "Separate loyalty from friction",\
+        "Identify economic, operational, and contractual switching costs",\
+        "Determine tolerated pain thresholds",\
+        "Identify true exit triggers"\
+      ],\
+      "mandatory_evidence": [\
+        "Customer contracts and termination clauses",\
+        "Churn data with causal attribution",\
+        "Price sensitivity evidence",\
+        "Customer concentration analysis",\
+        "Customer complaints versus retention patterns"\
+      ],\
+      "mandatory_adversarial_tests": [\
+        "What would cause customers to leave tomorrow?",\
+        "What pain do customers tolerate today?",\
+        "Who has leverage at renewal?",\
+        "Who cannot leave even if dissatisfied?"\
+      ],\
+      "output_schema": \{\
+        "sub_stage": "3.3",\
+        "customer_segments": [\
+          \{\
+            "segment": "",\
+            "retention_driver": "",\
+            "switching_cost_type": "",\
+            "exit_trigger": "",\
+            "evidence": [\{"source_ids": ["SRC-####"], "claim_type": "INFERENCE"\}]\
+          \}\
+        ],\
+        "disconfirming_evidence_searched": [],\
+        "unknowns_requests": []\
+      \},\
+      "fail_condition": "If retention is equated with loyalty, the stage fails"\
+    \},\
+\
+    "3.4": \{\
+      "name": "Pricing Dynamics, Discounting & Market Signaling",\
+      "agent_role": "Pricing Power & Signal Analyst",\
+      "mission": "Interpret pricing behavior as a signal of power, weakness, or desperation. You are not evaluating price levels. You are interpreting what pricing reveals.",\
+      "analytical_burden": [\
+        "Identify patterns of discounting and concession",\
+        "Determine who initiates price changes",\
+        "Interpret pricing responses to stress",\
+        "Separate list price from realized price power"\
+      ],\
+      "mandatory_evidence": [\
+        "Historical pricing and discount data",\
+        "Contract renegotiation patterns",\
+        "Competitor pricing responses",\
+        "Gross-to-net revenue trends"\
+      ],\
+      "mandatory_adversarial_tests": [\
+        "Who concedes price first?",\
+        "Who refuses to discount?",\
+        "What happens to price under stress?",\
+        "Who dictates pricing terms?"\
+      ],\
+      "output_schema": \{\
+        "sub_stage": "3.4",\
+        "pricing_signals": [\
+          \{\
+            "pricing_behavior": "",\
+            "interpreted_signal": "",\
+            "implication_for_power": "",\
+            "evidence": [\{"source_ids": ["SRC-####"], "claim_type": "INFERENCE"\}]\
+          \}\
+        ],\
+        "disconfirming_evidence_searched": [],\
+        "unknowns_requests": []\
+      \},\
+      "fail_condition": "If pricing is discussed without signal interpretation, the stage fails"\
+    \},\
+\
+    "3.5": \{\
+      "name": "Partner, Platform & Channel Power",\
+      "agent_role": "Ecosystem Power Analyst",\
+      "mission": "Determine how intermediaries extract value, constrain agency, or dictate outcomes. You are not cataloging partners. You are mapping dependency leverage.",\
+      "analytical_burden": [\
+        "Identify dependency concentration",\
+        "Assess extractive versus enabling relationships",\
+        "Determine unilateral rule-setting authority",\
+        "Identify exit barriers from partnerships"\
+      ],\
+      "mandatory_evidence": [\
+        "Partner contracts and revenue shares",\
+        "Platform rule changes",\
+        "Channel concentration metrics",\
+        "Historical partner disputes or renegotiations"\
+      ],\
+      "mandatory_adversarial_tests": [\
+        "Who can change terms unilaterally?",\
+        "Who captures incremental value?",\
+        "Who cannot be exited?",\
+        "Who benefits if the enterprise grows?"\
+      ],\
+      "output_schema": \{\
+        "sub_stage": "3.5",\
+        "partner_dependencies": [\
+          \{\
+            "partner": "",\
+            "dependency_type": "",\
+            "leverage_holder": "",\
+            "exit_feasibility": "",\
+            "evidence": [\{"source_ids": ["SRC-####"], "claim_type": "INFERENCE"\}]\
+          \}\
+        ],\
+        "disconfirming_evidence_searched": [],\
+        "unknowns_requests": []\
+      \},\
+      "fail_condition": "If partners are framed only as growth enablers, the stage fails"\
+    \},\
+\
+    "3.6": \{\
+      "name": "External Shock Sensitivity & Market Stress Response",\
+      "agent_role": "Shock & Survivability Analyst",\
+      "mission": "Determine how the business behaves under macro, regulatory, or technological shock and whether damage is reversible. You are not modeling scenarios. You are identifying breakage.",\
+      "analytical_burden": [\
+        "Identify irreversible versus temporary damage",\
+        "Map power transfer during stress",\
+        "Assess fragility of revenue engines",\
+        "Determine which shocks permanently change leverage"\
+      ],\
+      "mandatory_evidence": [\
+        "Historical shock impacts",\
+        "Regulatory changes and compliance costs",\
+        "Technology discontinuity effects",\
+        "Demand contraction responses"\
+      ],\
+      "mandatory_adversarial_tests": [\
+        "What breaks first under stress?",\
+        "What never recovers?",\
+        "Who gains power during shock?",\
+        "Who absorbs losses?"\
+      ],\
+      "output_schema": \{\
+        "sub_stage": "3.6",\
+        "shock_responses": [\
+          \{\
+            "shock_type": "",\
+            "primary_damage": "",\
+            "reversibility": "",\
+            "power_transfer": "",\
+            "evidence": [\{"source_ids": ["SRC-####"], "claim_type": "INFERENCE"\}]\
+          \}\
+        ],\
+        "disconfirming_evidence_searched": [],\
+        "unknowns_requests": []\
+      \},\
+      "fail_condition": "If shocks are treated as temporary by default, the stage fails"\
+    \}\
+  \},\
+\
+  "global_stage_3_fail_condition": "If narrative replaces power, inevitability, or constraint at any point, Stage 3 fails",\
+\
+  "stage_3_next_action": "AWAIT_ATOMIC_EXECUTION_PROMPT_3.1"\
+\}}

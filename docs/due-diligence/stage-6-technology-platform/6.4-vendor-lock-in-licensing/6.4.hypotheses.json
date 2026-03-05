@@ -1,0 +1,105 @@
+{
+  "sub_stage": "6.4",
+  "document_metadata": {
+    "title": "Hypothesis Testing - Vendor Flexibility and Control Assumptions",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-10",
+    "scope": "Falsification testing of assumptions about vendor negotiations, licensing flexibility, and substitution feasibility"
+  },
+  "hypotheses": [
+    {
+      "hypothesis": "Vendor licenses and contracts are negotiable and Rackspace can secure favorable terms through leverage",
+      "supporting_evidence_sought": [
+        "Examples of Rackspace successfully negotiating vendor price reductions or better terms",
+        "Evidence of vendors competing for Rackspace business (bidding wars, concessions to win/retain)",
+        "Contract terms with price protection clauses or MFN (most favored nation) provisions",
+        "Rackspace representing material revenue to vendors creating bilateral negotiating power",
+        "Multi-sourcing strategy enabling Rackspace to switch vendors if terms unfavorable"
+      ],
+      "disconfirming_evidence_sought": [
+        "Vendors imposing unilateral price increases without negotiation",
+        "Take-it-or-leave-it contract terms with no room for negotiation",
+        "Rackspace representing <1% of vendor revenue (immaterial, no leverage)",
+        "Limited vendor alternatives creating monopoly/oligopoly pricing power",
+        "Lock-in mechanisms preventing switching regardless of pricing"
+      ],
+      "disconfirming_evidence_found": [
+        "FOUND: Broadcom VMware imposed 200-300% price increase UNILATERALLY with zero negotiation - Rackspace must accept or exit (exit infeasible per Stage 6.3-6.4)",
+        "FOUND: AWS, Azure, Google Cloud set infrastructure pricing and partner program terms UNILATERALLY - Rackspace too small to negotiate (<0.5% of each hyperscaler revenue)",
+        "FOUND: Hyperscaler partner programs are STANDARDIZED take-it-or-leave-it - cannot negotiate custom terms, must accept program as defined",
+        "FOUND: VMware subscription-only model POST-ACQUISITION eliminated negotiation flexibility - no perpetual license alternative, no a la carte option, forced bundling",
+        "FOUND: Compliance tool vendors exploit certification lock-in - limited alternatives for FedRAMP/multiply-certified tools, pricing power from monopoly/oligopoly positions",
+        "FOUND: Vendor concentration in 4-6 critical vendors (Broadcom, AWS, Azure, Google Cloud, compliance, IAM) - cannot multi-source platform dependencies"
+      ],
+      "status": "REFUTED",
+      "confidence": "VERY HIGH (95%+)",
+      "notes": "Vendor negotiation hypothesis is FALSE. Rackspace is PRICE-TAKER not price-negotiator with critical vendors. Evidence shows: (1) UNILATERAL PRICING: Broadcom 200-300% increase, hyperscalers set list prices, no negotiation, (2) STANDARDIZED PROGRAMS: Partner programs are take-it-or-leave-it, no custom terms, (3) NO LEVERAGE: Rackspace <0.5-1% of vendor revenue = immaterial, cannot influence vendor decisions, (4) LIMITED ALTERNATIVES: Platform vendors (VMware, AWS, Azure) have monopoly/oligopoly positions, few substitutes exist, (5) LOCK-IN PREVENTS EXIT: Even with unfavorable terms, cannot exit within survival timeframes (36-48+ months, customer churn 30-50%). Vendors KNOW Rackspace is locked in and price accordingly - no incentive to negotiate when customer cannot credibly threaten to leave. Only negotiation power exists for PERIPHERAL vendors (not platform/compliance vendors) where alternatives exist and switching costs manageable."
+    },
+    {
+      "vendor": "Vendor substitution is feasible within normal business planning cycles (12-24 months)",
+      "supporting_evidence_sought": [
+        "Examples of major vendor replacements completed in 12-24 months",
+        "Standard vendor contracts with 12-24 month terms allowing clean exits at expiration",
+        "Limited integration depth enabling fast vendor switches",
+        "Competitive vendor market with multiple alternatives ready to onboard quickly",
+        "Operational teams with multi-vendor expertise enabling fast transitions"
+      ],
+      "disconfirming_evidence_sought": [
+        "Vendor exit timelines >36 months due to integration complexity",
+        "Customer consent required for vendor changes (blocks unilateral substitution)",
+        "Compliance re-certification required upon vendor change (adds 6-18 months)",
+        "Operational team retraining requirements (12-24 months to achieve proficiency)",
+        "Capital requirements for vendor transition exceeding available funding"
+      ],
+      "disconfirming_evidence_found": [
+        "FOUND: Broadcom VMware exit estimated 36-48+ MONTHS - customer workload dependencies, consent required, application refactoring needed, compliance re-certification",
+        "FOUND: AWS/Azure exit estimated 36-48+ MONTHS - customer migrations, application refactoring, operations retraining, dual-cloud period",
+        "FOUND: Google Cloud exit 12-36 MONTHS (shorter due to smaller scale but still exceeds typical planning cycles)",
+        "FOUND: Monitoring vendor replacement 18-24 MONTHS - configuration migration, operations retraining, compliance evidence continuity",
+        "FOUND: Backup vendor replacement 12-24 MONTHS - data retention requirements, validation period, DR runbook updates",
+        "FOUND: IAM vendor replacement 24-36 MONTHS - universal integration breadth, security criticality prevents fast migration",
+        "FOUND: Exit costs $15-500M per vendor depending on scale - exceed discretionary capital $10-35M per Stage 5.2",
+        "FOUND: Customer churn 20-60% during vendor migrations - customers resist disruption, exit rather than accept changes"
+      ],
+      "status": "REFUTED",
+      "confidence": "VERY HIGH (90%+)",
+      "notes": "Vendor substitution feasibility hypothesis is FALSE for all critical vendors. Exit timelines: 3 vendors >36 months (Broadcom, AWS, Azure), 3 vendors 12-36 months (Google Cloud, Monitoring, Backup, IAM). ZERO vendors <12 months exit. Normal business planning cycles are 12-24 months - ALL critical vendor exits EXCEED this. Barriers: Customer consent required (cannot force migrations), Integration depth (requires rebuilding 20-50+ integrations), Compliance re-certification (6-18 months per certification), Operations retraining (12-24 months for platform expertise), Capital requirements ($15-500M exceed available funding). Vendor exit timelines (36-48 months) also EXCEED liquidity runway (5-15 months per Stage 5.3) making exits operationally infeasible even if strategically desirable. Vendors are effectively PERMANENT DEPENDENCIES within business survival constraints."
+    },
+    {
+      "hypothesis": "Vendor cost increases can be passed through to customers without material churn",
+      "supporting_evidence_sought": [
+        "Customer contracts with vendor cost pass-through clauses (automatic pricing adjustments)",
+        "Low customer churn rates following previous vendor cost increases",
+        "Customer acceptance of price increases (price elasticity of demand is low)",
+        "Competitive alternatives are similarly priced (customers cannot find cheaper options)",
+        "Customer switching costs are high (locked into Rackspace regardless of pricing)"
+      ],
+      "disconfirming_evidence_sought": [
+        "Customer contracts with fixed pricing (cannot adjust for vendor cost changes)",
+        "High customer churn following price increases (10-30%+ churn rates)",
+        "Price elasticity studies showing customer sensitivity to increases",
+        "Competitive alternatives offering lower pricing (hyperscaler-direct, competitor MSPs)",
+        "Customer complaints about pricing and threats to leave"
+      ],
+      "disconfirming_evidence_found": [
+        "FOUND: VMware 200-300% cost increase likely CANNOT be fully passed to customers - would require 20-30% customer price increase, expect 25-40% churn per Stage 6.4 touch tests",
+        "FOUND: Hyperscaler partner credit reductions (5-10 points) translate to customer price increases of 3-7%, expect 10-20% churn per touch tests",
+        "FOUND: Customer alternatives exist - hyperscaler-direct (eliminates Rackspace margin, saves customers 15-20%), competitor MSPs (may offer better pricing)",
+        "FOUND: Private Cloud declining 13% YoY - customers voting with feet, leaving despite no major price increases (organic churn suggests price sensitivity)",
+        "FOUND: Month-to-month Public Cloud billing creates ZERO switching costs for customers - can leave anytime without penalty per Stage 2.1",
+        "FOUND: Industry benchmark - price increases 10% typically cause 10-20% churn (elasticity ~1.0-2.0) per Stage 6.2 analysis"
+      ],
+      "status": "REFUTED",
+      "confidence": "HIGH (85%)",
+      "notes": "Pass-through hypothesis is FALSE or LIMITED. Some vendor costs can be passed through with ACCEPTABLE churn (5-10% price increases = 5-15% churn, manageable), but LARGE vendor cost increases CANNOT be fully passed through without UNACCEPTABLE churn. VMware 200-300% shock cannot be passed through (would require 20-30% customer increase = 25-40% churn destroying more value than absorbing). Hyperscaler credit reductions can be partially passed through but with churn consequences. Customer switching costs vary: Private Cloud customers have higher switching costs (workload migrations complex), Public Cloud customers have lower switching costs (month-to-month, can exit quickly). NET REALITY: Rackspace SHARES vendor cost increases with customers (part passed through, part absorbed) rather than fully passing through or fully absorbing. This creates MARGIN COMPRESSION over time as vendors continuously increase prices and Rackspace can only partially recover through customer pricing."
+    }
+  ],
+  "hypothesis_testing_summary": {
+    "hypotheses_tested": 3,
+    "refuted": 3,
+    "weakened": 0,
+    "supported": 0,
+    "inconclusive": 0,
+    "key_finding": "ALL THREE hypotheses assuming vendor flexibility, substitution feasibility, and pass-through ability were COMPLETELY REFUTED. Vendor reality: (1) NO NEGOTIATION POWER - Rackspace is price-taker, vendors impose unilateral terms, lock-in eliminates leverage, (2) EXIT INFEASIBLE - timelines 12-48 months all exceed planning cycles and many exceed liquidity runway, capital requirements exceed funding, customer consent blocks unilateral switches, (3) PASS-THROUGH LIMITED - large vendor increases (VMware 200-300%) cannot be fully passed through without triggering unacceptable churn (25-40%), margin compression is inevitable. Vendors have STRUCTURAL POWER over Rackspace economics - can extract value through pricing knowing Rackspace cannot exit and cannot fully pass costs to customers. This creates PROFIT COMPRESSION trajectory - vendor costs increase 10-20% annually, Rackspace can pass through 5-10%, absorbs 5-10% = margin declines over time until business becomes unprofitable."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "stage": "2",
+  "structural_value_constraints_register": [
+    {
+      "constraint": "21% Net Revenue Leakage (14% bookings growth - 7% revenue decline)",
+      "category": "REVENUE",
+      "severity": "HIGH",
+      "why_severity": "Mathematical proof of business model dysfunction. Implies churn + contraction rate of ~21% annually exceeding new customer acquisition at 14%. Affects entire $2,737M revenue base. Cannot be sustained - requires either eliminating 21% leakage (impossible without multi-year structural transformation) or accelerating bookings growth to 28%+ to offset (requires doubling sales investment). Neither financially viable with current constraints.",
+      "what_breaks_if_touched": "If attempt to reduce churn 21% → <5%: Requires massive retention investment ($100-200M+ annually), building differentiation/lock-in (years + $50-100M), or implementing contractual lock-in (triggers 30-40% customer exit wave rejecting bait-and-switch). All paths financially impossible or counterproductive. If accept leakage: Revenue declines 5-10% annually compounding until financial distress (SG&A $709M becomes unsustainable as % of shrinking revenue).",
+      "evidence_refs": ["2.1.revenue_engines.json", "2.6.identified_contradictions.json"],
+      "open_unknowns": ["Actual NRR/GRR by segment to determine if leakage localized or systemic", "Churn drivers by segment to identify if any are addressable vs structural"]
+    },
+    {
+      "constraint": "Hyperscaler Value Capture Asymmetry (89.6% vs 10.4%)",
+      "category": "PARTNER",
+      "severity": "HIGH",
+      "why_severity": "Affects $1,683M Public Cloud (61% of revenue). Hyperscalers capture 89.6% of customer value while Rackspace captures 10.4%. Partner credits (5-15%) constitute Rackspace infrastructure margin - modifiable unilaterally by hyperscalers. If credits reduced from 10% to 5%, Public Cloud margin falls from 10.4% to 5.4% (potentially loss-making after overhead). Rackspace has ZERO negotiating leverage (< 0.5% of hyperscaler revenue). Structural asymmetry cannot be eliminated without fundamentally different business model (owning infrastructure vs reselling).",
+      "what_breaks_if_touched": "If hyperscalers reduce partner credits: Public Cloud becomes unprofitable, must exit 61% of business. If attempt to pass credit reductions to customers: Triggers churn (customers go direct to hyperscaler). If exit hyperscaler partnerships: $1,683M revenue disappears immediately (cannot deliver Public Cloud without AWS/Azure/Google). Constraint is IRREVERSIBLE TRAP - business model requires partners who control economics.",
+      "evidence_refs": ["2.5.value_capture_and_asymmetry.json", "2.5.dependency_and_leverage.json"],
+      "open_unknowns": ["Actual hyperscaler partner agreement terms (credit rates, termination provisions, volume commitments)", "Hyperscaler concentration (if 60-70% on primary, concentration risk compounds asymmetry)"]
+    },
+    {
+      "constraint": "VMware (Broadcom) Price Shock + Vendor Lock-In",
+      "category": "PARTNER",
+      "severity": "HIGH",
+      "why_severity": "Affects $1,055M Private Cloud (39% of revenue) providing 40-50% of operating income. Broadcom raised VMware prices 200-300%, estimated $100-210M value transfer from Rackspace to VMware. Private Cloud margin compressed from 38.6% to estimated 25-30% if absorbed, OR revenue decline accelerates if passed through. Cannot exit VMware without 20-30% customer loss (migration failure rate). Constraint threatens viability of most profitable segment.",
+      "what_breaks_if_touched": "If absorb VMware costs: Private Cloud operating margin drops from estimated 30-40% to 10-15%, OI contribution falls from $315-420M to $105-160M (loss of $210-260M profit = 50-60% of total OI). Business becomes unprofitable. If pass through costs: Customer churn accelerates from -13% to -20-30% YoY (death spiral). If exit VMware via customer migration: 20-30% customer loss = $210-315M revenue impact plus operational disruption. All paths destroy value.",
+      "evidence_refs": ["2.2.cost_structures_by_revenue_engine.json", "2.5.value_capture_and_asymmetry.json", "2.6.contradiction_impact_analysis.json"],
+      "open_unknowns": ["Actual VMware cost increase amount and timing", "Private Cloud VMware exposure (% of segment using VMware vs alternatives)", "Customer migration feasibility and expected loss rate"]
+    },
+    {
+      "constraint": "SG&A Structural Inefficiency ($709M at 25.9% vs healthy 15-18%)",
+      "category": "COST",
+      "severity": "HIGH",
+      "why_severity": "Overhead 25.9% of revenue vs healthy MSP benchmark 15-18%. Implies business needs $4-5B revenue (48-72% above current) to efficiently amortize $709M SG&A. Multi-entity fragmentation (Government isolation, UK Sovereign separation, jurisdictional requirements) prevents consolidation and economies of scale. SG&A flat as % despite revenue decline - NO OPERATING LEVERAGE. Structural constraint that cannot be resolved without exiting fragmented segments or selling business.",
+      "what_breaks_if_touched": "If reduce SG&A to match revenue ($400-500M target = 30-40% cut): Requires exiting entity operations (Government, UK Sovereign), massive headcount reductions (1,500-2,000 FTEs from 5,100), potentially delisting (eliminate public company overhead). All paths trigger operational collapse and customer exodus. If grow revenue to match SG&A ($4B target = 48% growth): Blocked by 21% net leakage and commoditization. Cannot achieve either scale or efficiency. TRAPPED.",
+      "evidence_refs": ["2.2.cost_structures_by_revenue_engine.json", "2.6.identified_contradictions.json"],
+      "open_unknowns": ["Detailed SG&A breakdown by function to identify reduction opportunities", "Segment exit modeling - if exit SMB, what SG&A can be eliminated vs stranded?"]
+    },
+    {
+      "constraint": "Profit Concentration (55-75% OI from 30-45% revenue)",
+      "category": "CUSTOMER",
+      "severity": "HIGH",
+      "why_severity": "Operating income concentrated in Private Cloud (40-50% of OI from 39% revenue) and Government (15-25% of OI from 10-15% revenue). Business depends on two segments for majority of profit. Within segments, estimated high customer concentration (top 10-15 customers 20-40% of segment revenue). Loss of either segment or top customers is existentially threatening. Creates unresolvable resource allocation conflict - cannot optimize for both profit (defend high-margin) AND revenue scale (grow low-margin) with limited resources.",
+      "what_breaks_if_touched": "If lose Private Cloud segment: Eliminate $315-420M OI (40-50% of total), remaining business has $1,682M revenue with $310-420M OI but $709M SG&A = operating margin -23% to -5% (deep losses). Financial collapse. If lose top 10-15 customers across high-margin segments: Estimated $410-685M revenue loss (15-25% of total), $100-200M OI impact (30-50% of total), business becomes marginally profitable or loss-making. Month-to-month billing means this can occur in 3-6 months.",
+      "evidence_refs": ["2.4.economic_dependence_and_concentration.json", "2.6.contradiction_impact_analysis.json"],
+      "open_unknowns": ["Actual customer concentration by segment (top 10/50/100 customer revenue %)", "Customer identification (who are largest customers? what dependency characteristics?)"]
+    },
+    {
+      "constraint": "Zero Contractual Lock-In + Fixed Cost Structure",
+      "category": "CONTRACTUAL",
+      "severity": "HIGH",
+      "why_severity": "Month-to-month billing universal eliminates contractual protection. Customers can exit with 30-day notice, no early termination fees. Meanwhile, massive fixed/semi-fixed costs ($709M SG&A, data centers, infrastructure) require revenue stability. Top 10-20 customers could exit in 3-6 months eliminating 25-40% of revenue while costs remain fixed. Creates MAXIMUM VULNERABILITY to rapid revenue loss.",
+      "what_breaks_if_touched": "If implement contractual lock-in (shift to annual/multi-year contracts with ETFs): Existing customers reject (30-40% estimated churn wave rather than accept new terms), new customers resist (competitors offering month-to-month gain advantage), enterprise customers demand price discounts for commitment (20-30% typical, destroying margins). Net result: churn wave offsets any stability benefit. Cannot reverse month-to-month without triggering exit wave. IRREVERSIBLE TRAP.",
+      "evidence_refs": ["2.4.customer_contract_and_lock_in_dynamics.json", "2.6.identified_contradictions.json"],
+      "open_unknowns": ["Contract terms distribution - what % pure month-to-month vs committed spend vs multi-year?", "Would customers accept contractual changes if offered incentives?"]
+    },
+    {
+      "constraint": "Private Cloud Declining 13% YoY While Providing 40-50% OI",
+      "category": "CONTRADICTION",
+      "severity": "HIGH",
+      "why_severity": "Most profitable segment (Private Cloud estimated 30-40% operating margin, 40-50% of total OI) declining FASTEST at 13% YoY while business UNDERINVESTS (CapEx down 25% from $181M to $136M). Actions contradict dependency - should be increasing investment to defend critical profit source, instead cutting investment. Indicates either management incompetence (doesn't understand dependency) or capitulation (given up on segment, harvesting).",
+      "what_breaks_if_touched": "If invest to defend ($170-395M annually for increased CapEx, VMware absorption, service quality): Consumes 40-125% of segment profit making segment unprofitable to defend. If harvest (continue underinvestment): Decline accelerates to -20-30% YoY, segment revenue falls to $700-850M over 2-3 years, OI contribution drops $105-125M (15-20% of total OI). If exit: Immediate loss of 40-50% of total OI, remaining business unprofitable. ALL PATHS LEAD TO DISTRESS. No viable resolution.",
+      "evidence_refs": ["2.1.revenue_engines.json", "2.4.economic_dependence_and_concentration.json", "2.6.identified_contradictions.json", "2.6.contradiction_impact_analysis.json"],
+      "open_unknowns": ["Management strategic plan for Private Cloud - defend, harvest, or exit?", "Private Cloud customer economics - which customers driving decline? Can any be retained?"]
+    },
+    {
+      "constraint": "Multi-Entity Structural Fragmentation",
+      "category": "FLOW",
+      "severity": "MEDIUM-HIGH",
+      "why_severity": "Government entity isolation (FedRAMP requirement), UK Sovereign architectural separation (sovereignty requirement), jurisdictional entities (regulatory requirements) prevent consolidation. Creates duplicate overhead (finance, HR, legal, compliance per entity), prevents sales/operations consolidation, blocks economies of scale. Fragmentation is LEGALLY/REGULATORILY MANDATED - cannot be eliminated without exiting segments or losing authorizations. Contributes to SG&A inefficiency (25.9% vs 15-18% benchmark).",
+      "what_breaks_if_touched": "If consolidate Government entity: FedRAMP authorization LOST, $270-410M revenue eliminated, $70-145M OI impact (15-25% of total). If consolidate UK Sovereign: Architectural isolation BREACHED, UK government/regulated customers lost, segment failure, $5-15M+ investment sunk cost. If exit fragmented segments to simplify: Lose revenue and profit, but SG&A doesn't reduce proportionally (stranded overhead). Fragmentation cannot be resolved without destroying business or segments.",
+      "evidence_refs": ["Stage 1 multi-entity structure", "2.3.value_frictions_and_leakage.json", "2.6.identified_contradictions.json"],
+      "open_unknowns": ["Quantified cost of fragmentation - how much SG&A is duplicate overhead vs necessary?", "Could entities be consolidated post-acquisition if acquirer already has similar entities?"]
+    }
+  ]
+}

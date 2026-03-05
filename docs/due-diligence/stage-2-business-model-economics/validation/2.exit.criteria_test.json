@@ -1,0 +1,66 @@
+{
+  "stage": "2",
+  "exit_criteria_test": {
+    "revenue_engines_identified": {
+      "met": true,
+      "evidence_refs": [
+        "2.1.revenue_engines.json: 6 distinct revenue engines identified - Public Cloud Managed Services ($1,683M, 61% revenue), Private Cloud Managed Services ($1,055M, 39% revenue), Government (subset of Private Cloud, estimated $270-410M), UK Sovereign Services (subset of Private Cloud, launched March 2024), Email Hosting (estimated $135-275M, 5-10% revenue), Professional Services & Migrations (lumpy project revenue)",
+        "2.1.revenue_engines.json: Each engine has distinct pricing logic, revenue triggers, key dependencies, and structural constraints documented",
+        "2.1.revenue_concentration_and_fragility.json: Revenue concentration and fragility drivers mapped for each engine"
+      ],
+      "notes": "EXCEEDS MINIMUM: 6 revenue engines identified with comprehensive evidence (pricing mechanisms, dependencies, constraints, fragility risks). Engines span $2,737M total revenue across diverse business models (consumption-based Public Cloud, committed capacity Private Cloud, compliance-driven Government/UK Sovereign, legacy Email, project-based Professional Services)."
+    },
+    "material_cost_or_margin_constraints": {
+      "met": true,
+      "evidence_refs": [
+        "2.2.cost_structures_by_revenue_engine.json: 9 cost categories identified including hyperscaler pass-through (80-90% of Public Cloud COGS), VMware licensing (SEMI-FIXED creating Private Cloud constraint), delivery personnel (SEMI-FIXED 1,500-2,000 FTEs), SG&A overhead ($709M, 25.9% revenue - FIXED constraint)",
+        "2.2.margin_physics_summary.json: Public Cloud margin COMPRESSES (10.4% thin margin under hyperscaler pricing pressure), Private Cloud COMPRESSES (38.6% under VMware 200-300% price shock), SMB Email likely loss-making (0-10% or negative)",
+        "2.2.structural_margin_constraints.json: 6 binding constraints identified - multi-entity fragmentation preventing economies of scale, fixed infrastructure depreciation, VMware vendor lock-in, hyperscaler dependency, zero customer lock-in, SG&A inflexibility",
+        "2.5.value_capture_and_asymmetry.json: Hyperscalers capture 89.6% of Public Cloud customer spend (Rackspace 10.4%), VMware price shock shifting $100-210M value from Rackspace to Broadcom"
+      ],
+      "notes": "EXCEEDS MINIMUM: Multiple material constraints identified across cost structure, margin physics, and structural barriers. TWO DOMINANT CONSTRAINTS: (1) Partner value extraction - hyperscalers capture 89.6%, VMware raised prices 200-300%, compressing margins across 100% of business ($2,737M revenue), (2) SG&A structural inefficiency - $709M (25.9% vs healthy 15-18% benchmark) requires scale business cannot achieve due to fragmentation. Both constraints are BINDING and MATERIAL to value capture."
+    },
+    "systemic_value_frictions": {
+      "met": true,
+      "evidence_refs": [
+        "2.3.value_frictions_and_leakage.json: 3 systemic frictions identified - (1) Multi-entity fragmentation friction affecting $2,737M total revenue (cannot consolidate sales, operations, overhead across jurisdictions), (2) Private Cloud 8-20 week revenue realization lag creating working capital burden and customer acquisition friction, (3) Customer churn leakage - implied 21% net leakage (14% bookings growth - 7% revenue decline) affecting entire business",
+        "2.3.friction_classification_summary.json: 8 total frictions classified by type (STRUCTURAL, OPERATIONAL, CONTRACTUAL, JURISDICTIONAL) and severity",
+        "2.6.identified_contradictions.json: 7 SYSTEMIC contradictions identified (vs 1 LOCALIZED), 6 classified as ACTIVE (currently breaking)"
+      ],
+      "notes": "EXCEEDS MINIMUM: 3 systemic frictions plus 7 systemic contradictions identified. MOST MATERIAL FRICTION: 21% net revenue leakage (calculated from Stage 2.1 bookings growth 14% vs revenue decline 7%) represents SYSTEMIC value destruction - business acquiring customers at 14% rate but losing value at 21% rate through churn and contraction. This friction affects entire $2,737M revenue base and proves business model incoherence."
+    },
+    "customer_dependency_risk": {
+      "met": true,
+      "evidence_refs": [
+        "2.4.customer_segments.json: 5 economically distinct segments identified with relative revenue and margin contributions",
+        "2.4.economic_dependence_and_concentration.json: PROFIT CONCENTRATION RISK - 55-75% of operating income concentrated in two segments (Large Enterprise Private Cloud + Government) representing only 30-45% of revenue. Top 10-15 customers across these segments estimated to contribute 20-40% of segment revenue, creating EXISTENTIAL SINGLE-CUSTOMER DEPENDENCY",
+        "2.4.economic_dependence_and_concentration.json: Touch tests show losing largest Private Cloud customer (estimated 5-10% of segment = $30-80M revenue) impacts $9-32M operating income plus stranded infrastructure. Losing entire Large Enterprise segment eliminates $165-330M OI (60-80% of total estimated OI)",
+        "2.4.customer_contract_and_lock_in_dynamics.json: Month-to-month billing UNIVERSAL creates ZERO contractual lock-in - top 10-20 customers could exit with 30-60 day notice eliminating 25-40% of revenue while $709M SG&A remains fixed"
+      ],
+      "notes": "EXCEEDS MINIMUM: Multiple customer dependency risks identified. PRIMARY RISK: Operating income 55-75% concentrated in two segments (Private Cloud + Government) with estimated high customer concentration within segments (top 10-15 customers potentially 20-40% of segment revenue). COMPOUNDED BY: Universal month-to-month billing eliminating contractual protection - customers can exit rapidly while fixed costs remain. Touch test: Loss of top 10 customers across high-margin segments could eliminate $80-200M OI (30-50% of total), potentially rendering business unprofitable."
+    },
+    "partner_value_capture_asymmetry": {
+      "met": true,
+      "evidence_refs": [
+        "2.5.material_partners_and_channels.json: 7 material partners identified - Hyperscalers (AWS/Azure/Google), VMware (Broadcom), FedRAMP JAB, UK Certification Bodies, Email Reseller Channel, Hardware Vendors, Hyperscaler Migration Programs",
+        "2.5.value_capture_and_asymmetry.json: MAXIMUM ASYMMETRY in hyperscaler relationships - hyperscalers capture 89.6% of Public Cloud customer spend ($1,683M × 89.6% = $1,508M), Rackspace captures 10.4% ($175M). Per $100 customer spend: Hyperscaler profit $55-65, Rackspace profit $2-3 (20-30X asymmetry)",
+        "2.5.value_capture_and_asymmetry.json: VMware (Broadcom) value extraction - 200-300% price increase captured $100-210M incremental profit from Rackspace, shifting value from Rackspace margins to VMware licensing costs",
+        "2.5.dependency_and_leverage.json: EXISTENTIAL DEPENDENCY with ZERO LEVERAGE - Rackspace 100% dependent on partners (61% hyperscalers, 39% VMware/infrastructure), partners <0.5% dependent on Rackspace revenue"
+      ],
+      "notes": "EXCEEDS MINIMUM: Extreme partner value capture asymmetry documented across multiple relationships. DOMINANT ASYMMETRY: Hyperscalers capture 89.6% vs Rackspace 10.4% of Public Cloud value (61% of total revenue, $1,683M). Profit asymmetry even more severe: 20-30X difference in profit per customer dollar. COMPOUNDED BY: (1) Rackspace existentially dependent on partners (cannot deliver services without them), (2) Partners not dependent on Rackspace (<0.5% of partner revenue), (3) Partners have unilateral pricing power (VMware 200-300% increase, hyperscaler credit control), (4) Rackspace has ZERO negotiating leverage. Asymmetry is STRUCTURAL and IRREVERSIBLE under current business model."
+    },
+    "business_model_contradiction": {
+      "met": true,
+      "evidence_refs": [
+        "2.6.identified_contradictions.json: 8 internal contradictions identified - 7 SYSTEMIC (affecting entire business model), 1 LOCALIZED; 6 ACTIVE (currently breaking), 2 LATENT",
+        "2.6.identified_contradictions.json: Growth narrative vs death spiral reality - 21% net leakage (14% bookings growth - 7% revenue decline) mathematically proves business model dysfunction",
+        "2.6.identified_contradictions.json: Scale economics requirement vs structural fragmentation constraint - business needs $4B+ revenue to amortize $709M SG&A efficiently, but multi-entity structure prevents achieving scale",
+        "2.6.identified_contradictions.json: Profit concentration vs revenue distribution misalignment - 55-75% OI from 30-45% revenue (high-margin segments) while 50-65% revenue from low-margin segments creates unresolvable resource allocation conflict",
+        "2.6.identified_contradictions.json: Partner dependency vs partner value extraction - 100% dependent on partners who capture 70-90% of value and have pricing power to compress Rackspace margins",
+        "2.6.contradiction_impact_analysis.json: Touch tests show NO VIABLE RESOLUTION PATHS - every option (defend, harvest, exit, invest, cut) triggers financial distress or operational collapse",
+        "2.6.coherence_assessment_summary.json: Overall assessment INCOHERENT - business model requires mutually exclusive conditions to succeed simultaneously"
+      ],
+      "notes": "DRAMATICALLY EXCEEDS MINIMUM: 8 contradictions identified with 7 being SYSTEMIC and 6 ACTIVE. MATHEMATICAL PROOF OF INCOHERENCE: 21% net revenue leakage (14% bookings growth - 7% revenue decline) is IMPOSSIBLE TO SUSTAIN - proves business cannot have both 'growth' (positive bookings) and contraction reality (net revenue loss) without fundamental dysfunction. Touch test analysis shows contradictions are UNRESOLVABLE - no path to resolution that doesn't trigger distress. Overall coherence assessment: INCOHERENT business model entering terminal phase."
+    }
+  }
+}

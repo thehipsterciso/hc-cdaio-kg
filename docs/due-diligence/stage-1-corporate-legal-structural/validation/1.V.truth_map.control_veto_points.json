@@ -1,0 +1,62 @@
+{
+  "legal_operational_truth_map": {
+    "control_and_veto_points": [
+      {
+        "actor": "Apollo Global Management (53-57% Equity + Board Control)",
+        "type": "SHAREHOLDER",
+        "what_they_can_block_or_force": "BLOCK via majority vote: Director elections, bylaw amendments, certain mergers/asset sales, certificate amendments, dissolution. FORCE via majority vote: Going-private transaction (subject to fairness opinion), sale if buyer acceptable, replacement of independent directors. INFLUENCE via board: Apollo affiliates Aaron Sobel and Vikram Mahidhar serve as directors, control board agenda and strategic direction. Apollo economic exposure ~$64-68M (53-57% of $120M market cap) is <6% of enterprise value including $1.3B debt - creates asymmetric control without proportionate economic risk.",
+        "touch_test_what_breaks": "Removing Apollo majority would require Apollo voluntarily selling stake (current illiquid - only $64-68M value vs $703M IPO proceeds) OR massive dilution buying Apollo out (expensive, creates value transfer). Apollo TRAPPED at majority - cannot exit easily but retains control. Fragmented control means NO party can unilaterally execute - Apollo blocked by lender covenants, lenders blocked by Apollo governance control.",
+        "evidence_refs": ["1.2.control_reality.json", "1.2.misalignment_risks.json", "Yahoo Finance Apollo ownership Nov 2024"]
+      },
+      {
+        "actor": "First Lien Credit Agreement Lenders ($1.3B Debt)",
+        "type": "CREDITOR",
+        "what_they_can_block_or_force": "BLOCK: Change-of-control (mandatory repurchase or consent required), material asset sales reducing collateral, dividend payments/restricted payments, incurrence of additional debt, mergers/consolidations affecting borrower, liens on assets. FORCE: Full debt repayment upon change-of-control if mandatory offer not accepted, acceleration upon default, foreclosure on substantially all assets. Lenders have FIRST PRIORITY claim - creates conservatism bias. Negative covenants provide operational veto even if Apollo approves transaction.",
+        "touch_test_what_breaks": "Lender consent REQUIRED for most M&A and capital structure changes. Lenders optimize for credit preservation not equity value - may block value-creating transactions if increase risk. Creditor-equity misalignment ACUTE given stressed stock ($0.48) and substantial debt ($1.3B). To eliminate lender veto requires refinancing $1.3B debt (unlikely without business improvement) or full repayment (impossible - company lacks cash).",
+        "evidence_refs": ["1.2.control_reality.json", "1.1.control_constraints.json", "First Lien Credit Agreement March 12, 2024"]
+      },
+      {
+        "actor": "Cloud Providers (AWS, Microsoft Azure, Google Cloud Platform)",
+        "type": "PARTNER",
+        "what_they_can_block_or_force": "BLOCK competitive acquisition via partnership termination rights. AWS Strategic Collaboration Agreement (October 2024) likely contains change-of-control provisions - AWS can terminate if Rackspace acquired by Microsoft, Google, Oracle, or other cloud competitor. Microsoft and Google partnerships have similar provisions. Multicloud positioning REQUIRES maintaining all three partnerships - loss of any one collapses value proposition. AWS represents estimated 30-40% of Rackspace revenue (2,000+ customers, 1,000+ staff). Microsoft/Google material but percentages unknown.",
+        "touch_test_what_breaks": "Strategic acquirers (cloud providers, large tech companies) effectively BLOCKED from acquiring Rackspace due to partnership termination risk. If AWS terminates: lose 30-40% of revenue ($450-600M), cannot position as AWS Premier Partner, lose 1,000 AWS-dedicated employees, lose co-marketing and technical support. Limits buyer universe to financial sponsors and non-cloud strategics (IT services firms). Partners have de facto veto over transaction structure.",
+        "evidence_refs": ["1.4.contractual_constraints.json", "1.5.structural_lock_ins.json", "AWS SCA October 2024 announcement"]
+      },
+      {
+        "actor": "U.S. Department of Defense / FOCI Review Process",
+        "type": "REGULATOR",
+        "what_they_can_block_or_force": "BLOCK foreign acquisition via FOCI (Foreign Ownership, Control, or Influence) review expanded May 2024 to ALL government contracts >$5M (not just classified). Foreign acquirer triggers mandatory review taking 6-12 months with uncertain outcome. FOCI mitigation options: Special Security Agreement with proxy board (foreign owner has NO operational control), Voting Trust Agreement (government business segregated), or complete divestiture. Many foreign acquirers CANNOT meet FOCI requirements. DoD can DENY transaction outright if national security concerns.",
+        "touch_test_what_breaks": "Foreign acquirers effectively BLOCKED from owning Rackspace Government Solutions business. Must divest government revenue stream ($X million unknown but material given 23 FedRAMP authorizations) to U.S. buyer OR accept proxy board eliminating acquisition control. Rackspace serves >50% of cabinet agencies - material national security implications. Foreign PE funds or foreign strategics face insurmountable FOCI barriers unless willing to divest government segment.",
+        "evidence_refs": ["1.5.structural_lock_ins.json", "DoD Instruction May 2024 FOCI expansion", "32 CFR § 2004.34"]
+      },
+      {
+        "actor": "Public Shareholders (43-47% Economic Ownership, Zero Control)",
+        "type": "SHAREHOLDER",
+        "what_they_can_block_or_force": "BLOCK supermajority transactions (certificate amendments requiring 66.7-80%, going-private if supermajority required). FORCE appraisal proceedings if taken private (right to judicial valuation), derivative claims for breach of fiduciary duty, class actions for disclosure violations. Economic exposure ~$52-56M without governance control. Cannot block director elections, simple majority mergers, operational changes. Minority shareholder rights limited to litigation and appraisal.",
+        "touch_test_what_breaks": "Going-private transaction requires fairness opinion, special committee review, and appraisal rights - adds cost ($5-10M legal/advisory) and time (6-12 months process). Public shareholders can generate litigation risk even if cannot block transaction. Stock price $0.48 creates cheap buyout opportunity for Apollo (~$52-56M to eliminate public float) but requires regulatory process. Public listing adds SEC compliance costs ($5-10M annually) with minimal benefit at $120M market cap.",
+        "evidence_refs": ["1.2.control_reality.json", "1.2.misalignment_risks.json", "Delaware appraisal rights DGCL Section 262"]
+      },
+      {
+        "actor": "NASDAQ Stock Market (Listing Standards)",
+        "type": "REGULATOR",
+        "what_they_can_block_or_force": "BLOCK continued public trading if listing standards violated. Stock price $0.48 is BELOW $1.00 minimum bid price requirement. NASDAQ can issue deficiency notice, grant 180-day cure period, then delist if non-compliance persists. Delisting FORCES either: reverse stock split to boost price, going-private transaction to voluntarily delist, or OTC trading (illiquid, reputation harm). Institutional investors with listing requirements would be forced to sell.",
+        "touch_test_what_breaks": "Company may receive NASDAQ deficiency notice imminently if $0.48 price persists. To cure: reverse split (cosmetic, doesn't address fundamentals), capital raise to increase market cap (impossible at distressed valuation), or business recovery to boost stock price organically (uncertain timeline). Voluntary delisting to avoid deficiency notice requires going-private process (expensive for Apollo to buy out public). Delisting creates forced selling, reputation damage, potential debt covenant violation if credit agreement contains listing maintenance requirement.",
+        "evidence_refs": ["1.2.control_reality.json", "Stock price $0.4757 Yahoo Finance Feb 4, 2026", "NASDAQ Listing Rules"]
+      },
+      {
+        "actor": "Management (Operational Control, Information Advantage, Minimal Economic Stake)",
+        "type": "MANAGEMENT",
+        "what_they_can_block_or_force": "INFORMALLY OBSTRUCT: Acquisition due diligence via withholding cooperation, operational changes via slow implementation, board initiatives via pessimistic projections, talent retention via signaling instability. THREATEN: Resignation (creates customer disruption, employee departures, operational knowledge loss). FORCE: Severance payments if terminated without cause or post-change-of-control (golden parachutes). Management has DAY-TO-DAY OPERATIONAL CONTROL but likely <5% equity ownership - principal-agent misalignment where management optimizes for employment stability not shareholder value.",
+        "touch_test_what_breaks": "Acquirer REQUIRES management cooperation for due diligence, integration, customer retention, employee stability. Hostile management can derail transaction via selective disclosure, implementation delays, or departures. Must secure management via retention agreements or change-of-control severance packages (adds transaction cost). Key person risk if executives hold irreplaceable customer relationships. Management informational advantage means board/acquirer dependent on management's characterization of business reality.",
+        "evidence_refs": ["1.2.control_reality.json", "1.2.misalignment_risks.json", "Executive employment agreements filed with SEC"]
+      },
+      {
+        "actor": "Enterprise Customers (Government FedRAMP, Healthcare HIPAA, Financial Services SOC 2)",
+        "type": "CUSTOMER",
+        "what_they_can_block_or_force": "BLOCK transaction economics via exercising change-of-control termination rights. Industry-standard MSP contracts contain: notification requirements (30-90 days), termination for convenience upon change-of-control, right to renegotiate pricing/terms. Government customers have FAR termination for convenience as standard provision. If 10-30% of customer base exercises termination (reasonable assumption), revenue loss $150-450M destroys deal economics. Customer consent requirements create 60-180 day transaction timeline risk.",
+        "touch_test_what_breaks": "Customer churn upon acquisition announcement is EXPECTED not exceptional. Must contact potentially thousands of customers requesting assignment consent - any refusals reduce revenue. Customers use termination threat to extract concessions (price reductions, enhanced SLAs). Re-certification periods (FedRAMP 12-18 months, HITRUST 6-12 months) force immediate customer migration if cannot maintain service continuity. Regulated customers (government, healthcare, financial services) represent estimated 40-60% of revenue at risk.",
+        "evidence_refs": ["1.4.contractual_constraints.json", "1.4.change_of_control_risk_summary.json", "Industry standard MSP contract terms"]
+      }
+    ]
+  }
+}

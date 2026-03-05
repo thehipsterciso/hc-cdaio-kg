@@ -1,0 +1,69 @@
+{
+  "sub_stage": "6.1",
+  "document_metadata": {
+    "title": "Uncertainty Register - Critical Unknowns in Compute Control Reality",
+    "target_entity": "Rackspace Technology, Inc.",
+    "analysis_date": "2026-02-10",
+    "scope": "Documentation of information gaps that create decision uncertainty in compute control analysis"
+  },
+  "uncertainty_register": [
+    {
+      "unknown": "Exact revenue allocation by facility and jurisdiction",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot precisely quantify revenue at risk from specific facility failures or jurisdictional exits. Analysis uses estimates: Government ~5-10%, UK Sovereign ~1-5%, China ~1-5%, EU ~20-30%, U.S. Commercial ~50-60%, APAC ~10-15%. Ranges are WIDE (2-3X variance) due to lack of facility-level revenue disclosure. Imprecision affects: (1) Facility rationalization prioritization (which to exit first?), (2) Risk assessment accuracy (which failures are most damaging?), (3) Investment allocation (where to strengthen redundancy?). With precise facility revenue data, could optimize portfolio more effectively. Without it, must use conservative assumptions increasing perceived risk.",
+      "what_would_reduce_uncertainty": "Access to: (1) Revenue by data center facility, (2) Revenue by legal entity (Rackspace Government Solutions, RACKSPACE LIMITED, etc.), (3) Customer count and concentration by facility, (4) Contract value distribution across geographic locations. Internal management reporting likely contains this data but not publicly disclosed."
+    },
+    {
+      "unknown": "Specific terms of 40 data center leases (rent, duration, termination penalties, assignment restrictions)",
+      "type": "UNKNOWN",
+      "decision_impact": "Stage 1.4 identified 40 leases with assignment restrictions, but SPECIFIC TERMS unknown: (1) Remaining lease duration (1 year? 5 years? 10 years? affects exit timing flexibility), (2) Annual rent per facility (affects ongoing cost burden), (3) Early termination penalty formulas (50% of remaining? 100%? affects exit cost), (4) Assignment consent requirements (landlord discretion? objective standards? affects transferability). Without lease terms, can only estimate exit costs with very wide ranges ($50-150M termination penalties = 3X variance). Precise exit analysis impossible - must assume worst-case terms for conservatism. Decision impact: Cannot accurately model facility rationalization business case (costs too uncertain to justify approval), cannot prioritize which leases to exit first (terms unknown), cannot negotiate strategically with landlords (don't know comparative leverage).",
+      "what_would_reduce_uncertainty": "Access to: (1) Data center lease agreements (full contracts), (2) Lease abstract summary (key terms, expiration dates, options), (3) Real estate counsel legal analysis of assignment restrictions and termination provisions. This information is CONFIDENTIAL and not publicly available - would require company access or due diligence data room."
+    },
+    {
+      "unknown": "Customer contract terms regarding data center location, migration rights, and consent requirements",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot determine which customers have contractual rights to specific data center locations vs flexible deployment. Analysis infers from industry practice that many customers specify location, but EXACT PERCENTAGE unknown. If 90% of customers have location clauses, facility migration nearly impossible. If only 30% have clauses, migration more feasible with selective customer consent efforts. Uncertainty affects: (1) Facility exit feasibility assessment, (2) Customer churn estimation during migrations (consent refusal rate unknown), (3) Contract amendment cost (how much to pay customers for location change consent?). Conservative assumption: Most customers have some location specification or expectation - prevents overconfidence in mobility. Reality may be better or worse than assumed.",
+      "what_would_reduce_uncertainty": "Access to: (1) Sample customer contracts (Private Cloud MSAs, SOWs with infrastructure specifications), (2) Contract management system analysis (search for 'data center', 'location', 'facility' clauses), (3) Customer Success team interviews (do customers care about location? has Rackspace attempted facility migrations?). Information exists in contract repositories and institutional knowledge but not accessible externally."
+    },
+    {
+      "unknown": "Facility utilization rates and capacity headroom by data center",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot assess which facilities are underutilized vs at capacity. Private Cloud declining 13% YoY creates underutilization, but DISTRIBUTION unknown: Is underutilization spread across all 40 facilities (each at 75-85% capacity)? Or concentrated in specific facilities (some at 50% capacity, others at 95%+)? If concentrated, can target underutilized facilities for exit while maintaining well-utilized facilities. If diffuse, must exit facilities based on other criteria (lease terms, geography, customer concentration). Utilization data critical for: (1) Identifying exit candidates (close most underutilized first), (2) Capacity planning (can accommodate growth without new facilities?), (3) Economics modeling (stranded cost quantification). Without utilization data, facility rationalization is blind optimization - cannot target highest-value consolidations.",
+      "what_would_reduce_uncertainty": "Access to: (1) Infrastructure asset management system data (servers, storage, networking deployed by facility), (2) Customer footprint mapping (which customers in which facilities, resource consumption), (3) Capacity planning models (forecasted vs actual utilization). Internal operations teams have this data for day-to-day management but not externally disclosed."
+    },
+    {
+      "unknown": "Hyperscaler partner program terms, economics, and change-of-control provisions",
+      "type": "UNKNOWN",
+      "decision_impact": "Public Cloud economics depend on hyperscaler partner credits/rebates (estimated 5-15% of infrastructure spend provides margin). Exact terms UNKNOWN: (1) AWS Advanced Partner benefits (what credits? what requirements to maintain status?), (2) Azure CSP 2-Tier Distributor Program PEC rate (15% disclosed in industry sources, but Rackspace-specific rate unknown, could be higher or lower), (3) Google Cloud Partner program terms, (4) Change-of-control provisions (do partnerships survive acquisition? by whom? foreign acquirer acceptable?). If hyperscalers can terminate partnerships upon acquisition, Public Cloud margin evaporates (cannot bill infrastructure at list rates without reseller agreement). Uncertainty affects: (1) Acquisition viability assessment (foreign acquirer may lose hyperscaler partnerships), (2) Public Cloud business model sustainability (margin depends on partner terms that can change), (3) Competitive positioning (if lose Advanced Partner status, relegated to lower tier with reduced benefits). Conservative assumption: Hyperscaler partnerships have change-of-control risk and can be modified unilaterally - prevents overconfidence in Public Cloud stability.",
+      "what_would_reduce_uncertainty": "Access to: (1) AWS reseller/partner agreement, (2) Microsoft Azure CSP 2-Tier Distributor agreement, (3) Google Cloud Partner agreement, (4) Hyperscaler account team communications (relationship health, strategic alignment). These agreements are CONFIDENTIAL (hyperscalers protect partner program terms) and not publicly disclosed. Would require company access or hyperscaler channel checks."
+    },
+    {
+      "unknown": "Government and UK Sovereign revenue amounts (absolute $ and as % of total)",
+      "type": "UNKNOWN",
+      "decision_impact": "Government and UK Sovereign are most immobile segments (FedRAMP entity lock-in, UK architectural isolation) but revenue UNKNOWN. If Government is $200M (7% of revenue), immobility is material but manageable - can exit segment if necessary (painful but survivable). If Government is $500M (18% of revenue), immobility is CRITICAL - cannot afford to lose segment, entity structure changes highly constrained. Similarly UK Sovereign: If $10M (launched 2024, small new segment), exit is low-cost option if economics unfavorable. If $50M+ with rapid growth, strategic commitment required. Revenue uncertainty affects: (1) Entity structure change feasibility (foreign acquisition prohibited if government revenue material and acquirer cannot meet FOCI requirements), (2) Facility rationalization options (must preserve government and UK Sovereign facilities regardless of utilization if revenue material), (3) Strategic prioritization (invest in high-revenue segments, divest low-revenue). Conservative assumption: Government revenue material enough to constrain (likely $50-200M), UK Sovereign small but growing (likely $10-50M).",
+      "what_would_reduce_uncertainty": "Public disclosure of: (1) Revenue by customer type (Government, Healthcare, Financial Services, Commercial), (2) Revenue by legal entity (Rackspace Government Solutions, RACKSPACE LIMITED), (3) Entity-level financial statements (if consolidated, entity contributions to group revenue). Rackspace does NOT break out Government or UK Sovereign revenue in public filings (privacy, competitive sensitivity). Would require company access or regulatory filing review (UK entity file UK accounts at Companies House - may contain RACKSPACE LIMITED revenue)."
+    },
+    {
+      "unknown": "Whether Rackspace has attempted facility consolidations historically and what outcomes resulted",
+      "type": "UNKNOWN",
+      "decision_impact": "Cannot learn from precedent. If Rackspace previously consolidated facilities successfully (low customer churn, smooth migrations, cost savings realized), provides confidence future consolidations feasible. If attempted and failed (high churn, operational chaos, cost overruns), indicates facility consolidation more difficult than modeled. If never attempted (current 40-facility footprint maintained for years despite market changes), reveals: (1) Management risk aversion (unwilling to disrupt customers), OR (2) Contractual/operational constraints already known to management preventing consolidation, OR (3) Economics unfavorable (consolidation costs exceed savings). Historical attempts/outcomes would inform: (1) Consolidation feasibility assessment, (2) Customer churn rate expectations, (3) Operational execution complexity estimates. Unknown history forces conservative assumptions (assume high difficulty, high churn, high cost).",
+      "what_would_reduce_uncertainty": "Access to: (1) Historical infrastructure strategy documents, (2) Past facility exit or consolidation projects (lessons learned, post-mortems), (3) Management interviews (why maintain 40 facilities? what prevents optimization?). Would require company operational history access or management discussions."
+    }
+  ],
+  "uncertainty_impact_assessment": {
+    "high_impact_unknowns": [
+      "Government and UK Sovereign revenue (affects entity change feasibility and facility prioritization)",
+      "Data center lease terms (affects facility exit cost and timeline with 3X estimation variance)",
+      "Hyperscaler partner program terms (affects Public Cloud business model sustainability and acquisition viability)"
+    ],
+    "medium_impact_unknowns": [
+      "Facility revenue allocation (affects risk assessment precision)",
+      "Customer contract location terms (affects facility migration feasibility)",
+      "Facility utilization rates (affects rationalization targeting)"
+    ],
+    "low_impact_unknowns": [
+      "Historical consolidation attempts (provides context but doesn't change current constraints)"
+    ],
+    "overall_confidence_despite_uncertainties": "HIGH (85%) on DIRECTIONAL conclusions despite unknowns. Uncertainties affect PRECISION (exact costs, exact timelines, exact revenue at risk) but NOT DIRECTION (facilities are immobile, optimization is constrained, regulatory lock-ins are binding). Wide estimation ranges capture uncertainty appropriately - facility exit costs $200-500M+ (2.5X range), government revenue $50-200M (4X range), utilization unknown so assume worst-case. Directional findings ROBUST to uncertainty: (1) Compute is immobile (true regardless of specific lease terms), (2) 40 facilities exceeds optimal footprint (true regardless of exact utilization rates), (3) Regulatory lock-ins are binding (true regardless of exact revenue amounts). Precision would improve with additional information, but strategic assessment already clear - Rackspace has EXCESSIVE immobile infrastructure creating permanent cost burden and operational inflexibility."
+  }
+}
