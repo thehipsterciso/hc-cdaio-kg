@@ -66,15 +66,15 @@ Structured assessment of the subject organization's data management maturity usi
 
 | Document | Description |
 |----------|-------------|
-| [DCAM v2 Assessment — Rackspace Technology (March 2026)](docs/deliverable-2-data-maturity/DCAM_v2_Assessment_Rackspace_Technology_March_2026.docx) | Full scored assessment across all 8 DCAM capabilities |
-| [Capability 1: Data Management Strategy](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_1_Data_Management_Strategy.docx) | Strategy alignment, ownership, and roadmap maturity |
-| [Capability 2: Data Governance](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_2_Data_Governance.docx) | Governance structures, policies, and accountability |
-| [Capability 3: Data Quality Management](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_3_Data_Quality_Management.docx) | Quality dimensions, profiling, and remediation |
-| [Capability 4: Data Architecture & Integration](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_4_Data_Architecture_and_Integration.docx) | Architecture patterns, integration maturity, and debt |
-| [Capability 5: Data Lifecycle Management](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_5_Data_Lifecycle_Management.docx) | Retention, archival, and data lifecycle controls |
-| [Capability 6: Data Privacy & Protection](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_6_Data_Privacy_and_Protection.docx) | Privacy posture, classification, and protection controls |
-| [Capability 7: Data & Analytics Enablement](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_7_Data_and_Analytics_Enablement.docx) | Analytics maturity, self-service, and AI readiness |
-| [Capability 8: Data Management Operations](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_8_Data_Management_Operations.docx) | Operational processes, tooling, and delivery capability |
+| [DCAM v2 Assessment — Rackspace Technology (March 2026)](docs/deliverable-2-data-maturity/DCAM_v2_Assessment_Rackspace_Technology_March_2026.md) | Full scored assessment across all 8 DCAM capabilities |
+| [Capability 1: Data Management Strategy](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_1_Data_Management_Strategy.md) | Strategy alignment, ownership, and roadmap maturity |
+| [Capability 2: Data Governance](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_2_Data_Governance.md) | Governance structures, policies, and accountability |
+| [Capability 3: Data Quality Management](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_3_Data_Quality_Management.md) | Quality dimensions, profiling, and remediation |
+| [Capability 4: Data Architecture & Integration](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_4_Data_Architecture_and_Integration.md) | Architecture patterns, integration maturity, and debt |
+| [Capability 5: Data Lifecycle Management](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_5_Data_Lifecycle_Management.md) | Retention, archival, and data lifecycle controls |
+| [Capability 6: Data Privacy & Protection](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_6_Data_Privacy_and_Protection.md) | Privacy posture, classification, and protection controls |
+| [Capability 7: Data & Analytics Enablement](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_7_Data_and_Analytics_Enablement.md) | Analytics maturity, self-service, and AI readiness |
+| [Capability 8: Data Management Operations](docs/deliverable-2-data-maturity/DCAM_v2_DeepDive_Capability_8_Data_Management_Operations.md) | Operational processes, tooling, and delivery capability |
 
 See also: [Financial Enrichment Report (2026-03-05)](docs/Financial_Enrichment_Report_2026-03-05.docx) — KG enrichment run covering financial entity attributes.
 
