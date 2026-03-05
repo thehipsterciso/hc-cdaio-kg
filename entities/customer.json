@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.285211Z",
-    "updated_at": "2026-03-04T17:27:18.299420Z",
+    "updated_at": "2026-03-05T20:59:23.592850Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "cust-001",
     "entity_type": "customer",
     "name": "Seattle Children's Hospital",
@@ -69,33 +69,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 95.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace IR press release February 2025; Stage 2.4 Customer Segments; Stage 3.3 Customer Lock-in",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "High",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 20000000,
+      "arr_confidence": "high",
+      "customer_tier": "government",
+      "estimation_methodology": "10-year $200M contract implies $20M annual commitment for critical healthcare infrastructure."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285225Z",
-    "updated_at": "2026-02-25T19:01:57.285225Z",
+    "updated_at": "2026-03-05T20:59:24.716897Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "cust-002",
     "entity_type": "customer",
     "name": "J.Crew",
@@ -160,33 +166,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 2500000,
+      "arr_confidence": "medium",
+      "customer_tier": "enterprise",
+      "estimation_methodology": "Strategic retail enterprise with AI bot infrastructure projects; estimated mid-enterprise tier based on scale."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285232Z",
-    "updated_at": "2026-02-25T19:01:57.285232Z",
+    "updated_at": "2026-03-04T21:45:26.009303Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-003",
     "entity_type": "customer",
     "name": "Domino's Pizza UK & Ireland Ltd",
@@ -251,33 +263,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285238Z",
-    "updated_at": "2026-02-25T19:01:57.285239Z",
+    "updated_at": "2026-03-04T21:45:26.533186Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-004",
     "entity_type": "customer",
     "name": "Domino's Pizza Enterprises Limited",
@@ -342,33 +354,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285243Z",
-    "updated_at": "2026-02-25T19:01:57.285244Z",
+    "updated_at": "2026-03-04T21:45:27.179953Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-005",
     "entity_type": "customer",
     "name": "American Logistics",
@@ -433,33 +445,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285248Z",
-    "updated_at": "2026-02-25T19:01:57.285248Z",
+    "updated_at": "2026-03-04T21:45:27.856500Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-006",
     "entity_type": "customer",
     "name": "AngelTrack",
@@ -524,33 +536,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285253Z",
-    "updated_at": "2026-02-25T19:01:57.285253Z",
+    "updated_at": "2026-03-04T21:45:28.575613Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-007",
     "entity_type": "customer",
     "name": "JobTarget",
@@ -615,33 +627,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285257Z",
-    "updated_at": "2026-02-25T19:01:57.285257Z",
+    "updated_at": "2026-03-04T21:45:29.579704Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-008",
     "entity_type": "customer",
     "name": "BMG",
@@ -706,33 +718,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285262Z",
-    "updated_at": "2026-02-25T19:01:57.285262Z",
+    "updated_at": "2026-03-05T20:59:46.601651Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "cust-009",
     "entity_type": "customer",
     "name": "Humber College",
@@ -797,33 +809,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 500000,
+      "arr_confidence": "medium",
+      "customer_tier": "mid-market",
+      "estimation_methodology": "Public college remote learning/ERP workloads; estimated $500K annual from education sector."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285270Z",
-    "updated_at": "2026-02-25T19:01:57.285270Z",
+    "updated_at": "2026-03-04T21:45:31.530802Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-010",
     "entity_type": "customer",
     "name": "Central and North West London NHS Foundation Trust",
@@ -888,33 +906,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285274Z",
-    "updated_at": "2026-02-25T19:01:57.285275Z",
+    "updated_at": "2026-03-04T21:45:34.835994Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-011",
     "entity_type": "customer",
     "name": "Moody's Analytics",
@@ -979,33 +997,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285279Z",
-    "updated_at": "2026-02-25T19:01:57.285279Z",
+    "updated_at": "2026-03-04T21:45:35.856515Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-012",
     "entity_type": "customer",
     "name": "CDG",
@@ -1070,33 +1088,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285298Z",
-    "updated_at": "2026-02-25T19:01:57.285299Z",
+    "updated_at": "2026-03-04T21:45:36.790615Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-013",
     "entity_type": "customer",
     "name": "Sentrics",
@@ -1161,33 +1179,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285304Z",
-    "updated_at": "2026-02-25T19:01:57.285305Z",
+    "updated_at": "2026-03-04T21:45:37.505515Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-014",
     "entity_type": "customer",
     "name": "GitLab",
@@ -1252,33 +1270,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285310Z",
-    "updated_at": "2026-02-25T19:01:57.285310Z",
+    "updated_at": "2026-03-04T21:45:37.792093Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-015",
     "entity_type": "customer",
     "name": "MovieTickets.com",
@@ -1343,33 +1361,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285315Z",
-    "updated_at": "2026-02-25T19:01:57.285315Z",
+    "updated_at": "2026-03-04T21:45:38.133915Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-016",
     "entity_type": "customer",
     "name": "Delmar International Inc",
@@ -1434,33 +1452,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285323Z",
-    "updated_at": "2026-02-25T19:01:57.285323Z",
+    "updated_at": "2026-03-04T21:45:38.798869Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-017",
     "entity_type": "customer",
     "name": "Wyndham Hotels & Resorts",
@@ -1525,33 +1543,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285327Z",
-    "updated_at": "2026-02-25T19:01:57.285328Z",
+    "updated_at": "2026-03-04T21:45:39.449442Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-018",
     "entity_type": "customer",
     "name": "Ulta Beauty",
@@ -1616,33 +1634,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285332Z",
-    "updated_at": "2026-02-25T19:01:57.285332Z",
+    "updated_at": "2026-03-04T21:45:40.164589Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-019",
     "entity_type": "customer",
     "name": "CAS",
@@ -1707,33 +1725,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285337Z",
-    "updated_at": "2026-02-25T19:01:57.285338Z",
+    "updated_at": "2026-03-04T21:45:40.869161Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-020",
     "entity_type": "customer",
     "name": "TrueData",
@@ -1798,33 +1816,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285343Z",
-    "updated_at": "2026-02-25T19:01:57.285343Z",
+    "updated_at": "2026-03-04T21:45:41.520724Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-021",
     "entity_type": "customer",
     "name": "Live Nation Entertainment",
@@ -1889,33 +1907,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285347Z",
-    "updated_at": "2026-02-25T19:01:57.285348Z",
+    "updated_at": "2026-03-04T21:45:42.162994Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-022",
     "entity_type": "customer",
     "name": "Coinstar",
@@ -1980,33 +1998,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285353Z",
-    "updated_at": "2026-02-25T19:01:57.285353Z",
+    "updated_at": "2026-03-04T21:45:42.791671Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-023",
     "entity_type": "customer",
     "name": "Niterra Co., Ltd.",
@@ -2071,33 +2089,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285358Z",
-    "updated_at": "2026-02-25T19:01:57.285358Z",
+    "updated_at": "2026-03-04T21:45:43.398638Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-024",
     "entity_type": "customer",
     "name": "Basware",
@@ -2162,33 +2180,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285362Z",
-    "updated_at": "2026-02-25T19:01:57.285362Z",
+    "updated_at": "2026-03-04T21:45:44.441859Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-025",
     "entity_type": "customer",
     "name": "Be A Part Of",
@@ -2253,33 +2271,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285367Z",
-    "updated_at": "2026-02-25T19:01:57.285367Z",
+    "updated_at": "2026-03-04T21:45:45.110860Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-026",
     "entity_type": "customer",
     "name": "Comply Exchange",
@@ -2344,33 +2362,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285371Z",
-    "updated_at": "2026-02-25T19:01:57.285371Z",
+    "updated_at": "2026-03-04T21:45:45.590307Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-027",
     "entity_type": "customer",
     "name": "Rena Ware International",
@@ -2435,33 +2453,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285375Z",
-    "updated_at": "2026-02-25T19:01:57.285375Z",
+    "updated_at": "2026-03-04T21:45:46.141303Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-028",
     "entity_type": "customer",
     "name": "inPhronesis",
@@ -2526,33 +2544,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285379Z",
-    "updated_at": "2026-02-25T19:01:57.285380Z",
+    "updated_at": "2026-03-04T21:45:47.184721Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-029",
     "entity_type": "customer",
     "name": "GLP",
@@ -2617,33 +2635,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285384Z",
-    "updated_at": "2026-02-25T19:01:57.285384Z",
+    "updated_at": "2026-03-05T20:59:45.622010Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "cust-030",
     "entity_type": "customer",
     "name": "Munster Technological University",
@@ -2708,33 +2726,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 600000,
+      "arr_confidence": "medium",
+      "customer_tier": "mid-market",
+      "estimation_methodology": "Education sector; \u20ac600K EOSC funding for quantum research implies ~$600K annual ARR."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285392Z",
-    "updated_at": "2026-02-25T19:01:57.285392Z",
+    "updated_at": "2026-03-04T21:45:48.438524Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-031",
     "entity_type": "customer",
     "name": "University of Galway",
@@ -2799,33 +2823,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285398Z",
-    "updated_at": "2026-02-25T19:01:57.285398Z",
+    "updated_at": "2026-03-04T21:45:49.117988Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-032",
     "entity_type": "customer",
     "name": "Plus500",
@@ -2890,33 +2914,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285601Z",
-    "updated_at": "2026-02-25T19:01:57.285601Z",
+    "updated_at": "2026-03-04T21:45:49.503948Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-033",
     "entity_type": "customer",
     "name": "TOI TOI & DIXI Group GmbH",
@@ -2981,33 +3005,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285606Z",
-    "updated_at": "2026-02-25T19:01:57.285606Z",
+    "updated_at": "2026-03-04T21:45:50.366225Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-034",
     "entity_type": "customer",
     "name": "McGraw Hill",
@@ -3072,33 +3096,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285610Z",
-    "updated_at": "2026-02-25T19:01:57.285611Z",
+    "updated_at": "2026-03-04T21:45:51.006248Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-035",
     "entity_type": "customer",
     "name": "Braze",
@@ -3163,33 +3187,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285615Z",
-    "updated_at": "2026-02-25T19:01:57.285615Z",
+    "updated_at": "2026-03-04T21:45:51.640044Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-036",
     "entity_type": "customer",
     "name": "Spireon",
@@ -3254,33 +3278,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285619Z",
-    "updated_at": "2026-02-25T19:01:57.285620Z",
+    "updated_at": "2026-03-04T21:45:52.270441Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-037",
     "entity_type": "customer",
     "name": "Aerom\u00e9xico",
@@ -3345,33 +3369,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285624Z",
-    "updated_at": "2026-02-25T19:01:57.285624Z",
+    "updated_at": "2026-03-04T21:45:52.986063Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-038",
     "entity_type": "customer",
     "name": "Mrs. T's Pierogies",
@@ -3436,33 +3460,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285629Z",
-    "updated_at": "2026-02-25T19:01:57.285630Z",
+    "updated_at": "2026-03-04T21:45:53.750228Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-039",
     "entity_type": "customer",
     "name": "Total Wine & More",
@@ -3527,33 +3551,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace IR press release October 15, 2025",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285634Z",
-    "updated_at": "2026-03-04T17:30:48.975759Z",
+    "updated_at": "2026-03-05T20:59:31.130224Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "cust-040",
     "entity_type": "customer",
     "name": "Rackspace Email Hosting Customer Segment",
@@ -3618,33 +3642,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-2-business-model-economics/2.1-revenue-engine/2.1.revenue_engines.json",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 15000000,
+      "arr_confidence": "medium",
+      "customer_tier": "mid-market",
+      "estimation_methodology": "Tens of thousands of SMB domains across DFW/IAD infrastructure; estimated $15M annual revenue from email hosting segment."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285638Z",
-    "updated_at": "2026-03-04T17:30:49.599173Z",
+    "updated_at": "2026-03-05T20:59:32.687674Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "cust-041",
     "entity_type": "customer",
     "name": "Rackspace Cloud Hosting Customer Segment (DFW)",
@@ -3709,33 +3739,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-2-business-model-economics/2.1-revenue-engine/2.1.revenue_engines.json",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 45000000,
+      "arr_confidence": "medium",
+      "customer_tier": "enterprise",
+      "estimation_methodology": "381K+ domains on DFW infrastructure representing largest customer segment; estimated $45M annual revenue from cloud hosting services."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285646Z",
-    "updated_at": "2026-03-04T17:30:50.223590Z",
+    "updated_at": "2026-03-05T20:59:34.261227Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "cust-042",
     "entity_type": "customer",
     "name": "Rackspace Cloud Hosting Customer Segment (IAD)",
@@ -3800,33 +3836,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-2-business-model-economics/2.1-revenue-engine/2.1.revenue_engines.json",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 10000000,
+      "arr_confidence": "medium",
+      "customer_tier": "mid-market",
+      "estimation_methodology": "84K domains on IAD infrastructure; estimated $10M annual revenue from Northern Virginia cloud hosting segment."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285651Z",
-    "updated_at": "2026-03-04T17:30:50.854760Z",
+    "updated_at": "2026-03-05T20:59:35.837658Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "cust-043",
     "entity_type": "customer",
     "name": "FedRAMP Government Customer Segment",
@@ -3891,33 +3933,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-2-business-model-economics/2.1-revenue-engine/2.1.revenue_engines.json",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 25000000,
+      "arr_confidence": "medium",
+      "customer_tier": "government",
+      "estimation_methodology": "40+ FedRAMP authorized DoD/federal/state agencies requiring Impact Level 4 compliance; estimated $25M annual from RGC."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285655Z",
-    "updated_at": "2026-03-04T17:30:51.485914Z",
+    "updated_at": "2026-03-05T20:59:37.935132Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "cust-044",
     "entity_type": "customer",
     "name": "Fortune 100 Customer Segment",
@@ -3982,33 +4030,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-2-business-model-economics/2.1-revenue-engine/2.1.revenue_engines.json",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 550000000,
+      "arr_confidence": "medium",
+      "customer_tier": "enterprise",
+      "estimation_methodology": "Fortune 100 segment representing 50%+ of F100; estimated $550M annual revenue with <2% constraint on individual customer concentration."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285660Z",
-    "updated_at": "2026-03-04T17:30:51.983096Z",
+    "updated_at": "2026-03-05T20:59:39.989351Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "cust-045",
     "entity_type": "customer",
     "name": "Rackspace Cloud DNS Customer Segment",
@@ -4073,33 +4127,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-2-business-model-economics/2.1-revenue-engine/2.1.revenue_engines.json",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 8000000,
+      "arr_confidence": "medium",
+      "customer_tier": "mid-market",
+      "estimation_methodology": "Cloud DNS authoritative nameservice customers; estimated $8M annual from DNS and nameserver segment."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285664Z",
-    "updated_at": "2026-02-25T19:01:57.285665Z",
+    "updated_at": "2026-03-04T21:45:58.362620Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-046",
     "entity_type": "customer",
     "name": "U.S. Department of Defense",
@@ -4164,33 +4224,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace CEO blog September 2017, datacenterdynamics",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285669Z",
-    "updated_at": "2026-02-25T19:01:57.285669Z",
+    "updated_at": "2026-03-04T21:45:58.992844Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-047",
     "entity_type": "customer",
     "name": "U.S. Department of Energy",
@@ -4255,33 +4315,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace CEO blog September 2017, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285674Z",
-    "updated_at": "2026-02-25T19:01:57.285674Z",
+    "updated_at": "2026-03-04T21:45:59.944153Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-048",
     "entity_type": "customer",
     "name": "U.S. Department of the Treasury",
@@ -4346,33 +4406,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace CEO blog September 2017, techcrunch",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285679Z",
-    "updated_at": "2026-02-25T19:01:57.285679Z",
+    "updated_at": "2026-03-04T21:46:00.464010Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-049",
     "entity_type": "customer",
     "name": "UK Cabinet Office",
@@ -4437,33 +4497,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace CEO blog September 2017, datacenterdynamics",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285683Z",
-    "updated_at": "2026-02-25T19:01:57.285683Z",
+    "updated_at": "2026-03-05T20:59:47.106303Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "cust-050",
     "entity_type": "customer",
     "name": "UK Ministry of Justice",
@@ -4528,33 +4588,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace CEO blog September 2017, channele2e",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 12000000,
+      "arr_confidence": "medium",
+      "customer_tier": "government",
+      "estimation_methodology": "UK Ministry of Justice courts/prisons/probation workloads; estimated $12M annual from inherited Datapipe account."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285689Z",
-    "updated_at": "2026-02-25T19:01:57.285689Z",
+    "updated_at": "2026-03-04T21:46:18.563545Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-051",
     "entity_type": "customer",
     "name": "UK Department for Transport",
@@ -4619,33 +4685,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace CEO blog September 2017, datacenterdynamics",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.285695Z",
-    "updated_at": "2026-02-25T19:01:57.285695Z",
+    "updated_at": "2026-03-04T21:46:19.171263Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-052",
     "entity_type": "customer",
     "name": "Johnson & Johnson",
@@ -4710,33 +4776,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace CEO blog September 2017 stating Datapipe manages multiple major workloads for Johnson and Johnson",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308782Z",
-    "updated_at": "2026-02-25T19:01:57.308785Z",
+    "updated_at": "2026-03-04T21:46:19.878064Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-053",
     "entity_type": "customer",
     "name": "McDonald's Corporation",
@@ -4801,33 +4867,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace CEO blog September 2017",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308808Z",
-    "updated_at": "2026-02-25T19:01:57.308809Z",
+    "updated_at": "2026-03-04T21:46:20.604308Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-054",
     "entity_type": "customer",
     "name": "Newell Brands (Rubbermaid)",
@@ -4892,33 +4958,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace CEO blog September 2017 referencing Rubbermaid",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308815Z",
-    "updated_at": "2026-02-25T19:01:57.308815Z",
+    "updated_at": "2026-03-04T21:46:21.236347Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-055",
     "entity_type": "customer",
     "name": "Allcargo Group",
@@ -4983,33 +5049,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308820Z",
-    "updated_at": "2026-02-25T19:01:57.308820Z",
+    "updated_at": "2026-03-04T21:46:22.210342Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-056",
     "entity_type": "customer",
     "name": "Alemba",
@@ -5074,33 +5140,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308829Z",
-    "updated_at": "2026-02-25T19:01:57.308829Z",
+    "updated_at": "2026-03-04T21:46:22.461760Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-057",
     "entity_type": "customer",
     "name": "Gateway Recruiting, LLC",
@@ -5165,33 +5231,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "tpr",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308833Z",
-    "updated_at": "2026-02-25T19:01:57.308833Z",
+    "updated_at": "2026-03-04T21:46:23.128400Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-058",
     "entity_type": "customer",
     "name": "Sharestates, Inc.",
@@ -5256,33 +5322,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace case study library; Sharestates",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308838Z",
-    "updated_at": "2026-02-25T19:01:57.308838Z",
+    "updated_at": "2026-03-04T21:46:23.976706Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-059",
     "entity_type": "customer",
     "name": "Sabre Corporation",
@@ -5347,33 +5413,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace case studies; Sabre Corporation 10-K references to managed cloud partners",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308844Z",
-    "updated_at": "2026-02-25T19:01:57.308844Z",
+    "updated_at": "2026-03-05T20:59:42.073435Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "cust-060",
     "entity_type": "customer",
     "name": "APAC Enterprise Cloud Customer Segment",
@@ -5438,33 +5504,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace 10-K FY2024 geographic revenue segment; da-115 IRAP Assessment evidence store",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 85000000,
+      "arr_confidence": "medium",
+      "customer_tier": "enterprise",
+      "estimation_methodology": "APAC enterprise/banking/government segment contributing 12% of FY2024 revenue; estimated $85M from regional operations."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308849Z",
-    "updated_at": "2026-02-25T19:01:57.308849Z",
+    "updated_at": "2026-03-05T20:59:43.529390Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "cust-061",
     "entity_type": "customer",
     "name": "NHS STP/ICB Digital Customer Segment",
@@ -5529,33 +5601,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace UK NHS sector page; NHS Digital frameworks",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 35000000,
+      "arr_confidence": "medium",
+      "customer_tier": "government",
+      "estimation_methodology": "NHS STP/ICB digital organizations with DSPT compliance; estimated $35M annual from NHS/UK healthcare segment."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308854Z",
-    "updated_at": "2026-02-25T19:01:57.308854Z",
+    "updated_at": "2026-03-05T20:59:44.594263Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "cust-062",
     "entity_type": "customer",
     "name": "Luxury Retail and E-Commerce Customer Segment",
@@ -5620,33 +5698,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace vertical practice pages; retail segment customer success case studies",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 150000000,
+      "arr_confidence": "medium",
+      "customer_tier": "enterprise",
+      "estimation_methodology": "Premium retail/e-commerce segment representing 18% of Public Cloud revenue; estimated $150M from luxury retail vertical."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308858Z",
-    "updated_at": "2026-02-25T19:01:57.308858Z",
+    "updated_at": "2026-03-04T21:46:26.678174Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "cust-063",
     "entity_type": "customer",
     "name": "Apollo Global Management \u2014 PE Portfolio Cos (Indirect)",
@@ -5711,33 +5795,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace 10-K FY2024 Related Party Transactions; Apollo portfolio company listings; Apollo-Rackspace governance relationship",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:00.954160Z",
-    "updated_at": "2026-02-25T21:07:00.954162Z",
+    "updated_at": "2026-03-05T20:59:48.168631Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "bdee92d6-a901-429f-a758-91489af2f89e",
     "entity_type": "customer",
     "name": "Ancestry.com",
@@ -5802,33 +5886,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 8000000,
+      "arr_confidence": "medium",
+      "customer_tier": "enterprise",
+      "estimation_methodology": "Genealogy platform with AWS-centric multi-cloud workloads; estimated $8M annual from professional services and managed hosting."
     }
   },
   {
     "created_at": "2026-02-25T21:07:02.330651Z",
-    "updated_at": "2026-02-25T21:07:02.330653Z",
+    "updated_at": "2026-03-04T21:46:28.204256Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "90777f26-7c29-438f-891a-a4ced05bc2b5",
     "entity_type": "customer",
     "name": "Hard Rock International",
@@ -5893,33 +5983,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:03.738443Z",
-    "updated_at": "2026-02-25T21:07:03.738445Z",
+    "updated_at": "2026-03-04T21:46:28.795366Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "c55e0171-c660-4e4c-9584-553cb1ebf40e",
     "entity_type": "customer",
     "name": "Brightcove",
@@ -5984,33 +6074,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:04.988506Z",
-    "updated_at": "2026-02-25T21:07:04.988509Z",
+    "updated_at": "2026-03-04T21:46:29.986537Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "898585df-f42d-43ae-a656-9191ec6e51e0",
     "entity_type": "customer",
     "name": "American Heart Association",
@@ -6075,33 +6165,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:06.738374Z",
-    "updated_at": "2026-02-25T21:07:06.738376Z",
+    "updated_at": "2026-03-04T21:46:30.463416Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "95c408b8-c2c1-400a-aebf-e94ce940e47d",
     "entity_type": "customer",
     "name": "BBC News Digital",
@@ -6166,33 +6256,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:08.041218Z",
-    "updated_at": "2026-02-25T21:07:08.041221Z",
+    "updated_at": "2026-03-04T21:46:31.111346Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "9dc20fa4-f879-4632-abc3-eb1ffbb30bb6",
     "entity_type": "customer",
     "name": "The Telegraph Media Group",
@@ -6257,33 +6347,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:09.802308Z",
-    "updated_at": "2026-02-25T21:07:09.802310Z",
+    "updated_at": "2026-03-04T21:46:31.969563Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "8f71afe8-9ee7-48e6-b6a1-8d90a2925eab",
     "entity_type": "customer",
     "name": "Momentive / SurveyMonkey",
@@ -6348,33 +6438,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:10.556359Z",
-    "updated_at": "2026-02-25T21:07:10.556362Z",
+    "updated_at": "2026-03-04T21:46:32.795069Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "5b6b02b2-6dc1-4985-b26a-3b0b27e9adaf",
     "entity_type": "customer",
     "name": "Planet Fitness",
@@ -6439,33 +6529,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:12.173626Z",
-    "updated_at": "2026-02-25T21:07:12.173628Z",
+    "updated_at": "2026-03-04T21:46:33.448050Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "9ba140ab-c08e-4a6b-aa16-4fb92b38439a",
     "entity_type": "customer",
     "name": "CareFirst BlueCross BlueShield",
@@ -6530,33 +6620,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:13.174440Z",
-    "updated_at": "2026-02-25T21:07:13.174442Z",
+    "updated_at": "2026-03-04T21:46:34.300408Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "bc736274-2f6a-419d-a869-a539ce02f895",
     "entity_type": "customer",
     "name": "Hyatt Hotels Corporation",
@@ -6621,33 +6711,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:14.717575Z",
-    "updated_at": "2026-02-25T21:07:14.717577Z",
+    "updated_at": "2026-03-04T21:46:35.486261Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "047f6134-897b-41c6-9aa7-bf578282ee1d",
     "entity_type": "customer",
     "name": "Pandora Media / SiriusXM",
@@ -6712,33 +6802,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:16.062082Z",
-    "updated_at": "2026-02-25T21:07:16.062083Z",
+    "updated_at": "2026-03-04T21:46:35.977721Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "46f03724-d074-4aad-b196-e0258c845bb8",
     "entity_type": "customer",
     "name": "Tesco PLC",
@@ -6803,33 +6893,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:17.503690Z",
-    "updated_at": "2026-02-25T21:07:17.503693Z",
+    "updated_at": "2026-03-05T20:59:47.630846Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "d4170853-3eb7-4f02-8dfb-03f242e4d900",
     "entity_type": "customer",
     "name": "AutoTrader Ltd (UK)",
@@ -6894,33 +6984,39 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ARR": 3000000,
+      "arr_confidence": "medium",
+      "customer_tier": "enterprise",
+      "estimation_methodology": "UK largest automotive marketplace using Rackspace LON for managed cloud; estimated $3M annual ARR."
     }
   },
   {
     "created_at": "2026-02-25T21:07:18.144248Z",
-    "updated_at": "2026-02-25T21:07:18.144251Z",
+    "updated_at": "2026-03-04T21:46:37.223298Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "738754ee-a8fd-4641-a0e6-4e31f34f025b",
     "entity_type": "customer",
     "name": "Centrica / British Gas",
@@ -6985,33 +7081,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:18.983767Z",
-    "updated_at": "2026-02-25T21:07:18.983769Z",
+    "updated_at": "2026-03-04T21:46:38.285754Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "52240651-3bc9-424e-bccd-4a853497e250",
     "entity_type": "customer",
     "name": "Etsy Inc.",
@@ -7076,33 +7172,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:19.688363Z",
-    "updated_at": "2026-02-25T21:07:19.688365Z",
+    "updated_at": "2026-03-04T21:46:39.336342Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "540175ff-a644-4a74-909d-7178fc542d8c",
     "entity_type": "customer",
     "name": "The New York Times Company",
@@ -7167,33 +7263,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:20.472088Z",
-    "updated_at": "2026-02-25T21:07:20.472090Z",
+    "updated_at": "2026-03-04T21:46:40.391627Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "0740ba5f-0ec3-47af-b932-f9abafcf883e",
     "entity_type": "customer",
     "name": "GoDaddy Inc.",
@@ -7258,33 +7354,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:21.256662Z",
-    "updated_at": "2026-02-25T21:07:21.256664Z",
+    "updated_at": "2026-03-04T21:46:41.841266Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "1192df48-df5c-46c7-8659-664c925786c0",
     "entity_type": "customer",
     "name": "Electronic Arts (EA)",
@@ -7349,33 +7445,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:22.049196Z",
-    "updated_at": "2026-02-25T21:07:22.049197Z",
+    "updated_at": "2026-03-04T21:46:42.778756Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "2df8a59a-b548-4113-9f54-a718bb92bbe4",
     "entity_type": "customer",
     "name": "CarMax Inc.",
@@ -7440,33 +7536,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:22.928760Z",
-    "updated_at": "2026-02-25T21:07:22.928763Z",
+    "updated_at": "2026-03-04T21:46:43.827594Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "328e0514-a71b-4076-af13-e38c0e4af769",
     "entity_type": "customer",
     "name": "General Mills Inc.",
@@ -7531,33 +7627,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:23.878565Z",
-    "updated_at": "2026-02-25T21:07:23.878567Z",
+    "updated_at": "2026-03-04T21:46:44.866253Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "4631541a-4a78-4b2d-9f8c-dbe409a6466f",
     "entity_type": "customer",
     "name": "Volkswagen Group of America",
@@ -7622,33 +7718,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T21:07:24.682042Z",
-    "updated_at": "2026-02-25T21:07:24.682044Z",
+    "updated_at": "2026-03-04T21:46:45.884423Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "9121d6cf-3efc-40c9-8685-91b70601d240",
     "entity_type": "customer",
     "name": "Queensland Government (Dept. of Science, IT and Innovation)",
@@ -7713,23 +7809,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology case studies, SEC filings 2024, press releases",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Customer Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": []
     }

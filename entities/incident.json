@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T21:17:36.817474Z",
-    "updated_at": "2026-03-04T08:42:52.897266Z",
+    "updated_at": "2026-03-05T20:59:26.332214Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "de4f1c0f-e407-4528-a98d-4117fc5033be",
     "entity_type": "incident",
     "name": "PLAY Ransomware Attack on Hosted Exchange (November 2023)",
@@ -54,14 +54,20 @@
           "priority": "Medium"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_total_cost": 85000000,
+      "cost_components": "remediation ($10.8M per SEC), legal settlement/litigation ($20-30M estimated), customer churn/lost revenue ($40-50M), reputation damage ($5-10M)",
+      "cost_confidence": "medium",
+      "estimation_methodology": "PLAY ransomware incident with disclosed $10.8M remediation plus estimated legal, revenue loss, and reputation costs based on product decommissioning and NPS impact."
     }
   },
   {
     "created_at": "2026-02-25T21:17:41.084699Z",
-    "updated_at": "2026-03-04T08:42:53.961165Z",
+    "updated_at": "2026-03-05T20:59:27.839750Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "724d85b3-2637-441a-9541-63fe63fcf263",
     "entity_type": "incident",
     "name": "Texas Winter Storm Uri Data Center Power Degradation (February 2021)",
@@ -111,14 +117,20 @@
           "priority": "Medium"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_total_cost": 3500000,
+      "cost_components": "remediation (generator/UPS upgrades), infrastructure hardening, SLA credits issued, operational response costs",
+      "cost_confidence": "medium",
+      "estimation_methodology": "Extended power outage (4 hours degradation) affecting regional data center with SLA credits; estimated at lower end of service outage range due to limited data loss."
     }
   },
   {
     "created_at": "2026-02-25T21:17:45.942471Z",
-    "updated_at": "2026-03-04T08:42:55.280303Z",
+    "updated_at": "2026-03-05T20:59:29.777982Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "fb1efcd7-fdc7-4256-8ae8-ecaab4d808c5",
     "entity_type": "incident",
     "name": "Log4Shell Emergency Remediation Across Managed Customer Environments (December 2021)",
@@ -168,14 +180,20 @@
           "priority": "Medium"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_total_cost": 5000000,
+      "cost_components": "emergency change management, customer communication/support, SBOM tooling investment, software composition analysis platform implementation",
+      "cost_confidence": "medium",
+      "estimation_methodology": "Critical CVE (Log4Shell) requiring emergency patching across 160+ systems and MSP customer estate; cost driven by operational response and post-incident tooling investment rather than data loss."
     }
   },
   {
     "created_at": "2026-02-25T21:17:48.558208Z",
-    "updated_at": "2026-03-04T08:42:56.988318Z",
+    "updated_at": "2026-03-05T20:59:32.152312Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "b6e0e98b-84e0-4b37-8065-8e923953a47d",
     "entity_type": "incident",
     "name": "Rackspace Cloud Files Unauthorized Access Vulnerability (2015)",
@@ -225,14 +243,20 @@
           "priority": "Medium"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_total_cost": 2500000,
+      "cost_components": "data breach notification, access control remediation, customer affected support, potential regulatory fines, bug bounty program expansion",
+      "cost_confidence": "medium",
+      "estimation_methodology": "Data breach with limited exposure (2015 vintage); costs include breach notification obligations and post-incident security program investments."
     }
   },
   {
     "created_at": "2026-02-25T21:17:50.189114Z",
-    "updated_at": "2026-03-04T08:42:58.475301Z",
+    "updated_at": "2026-03-05T20:59:33.747391Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "f16d55c0-631b-47ee-8cab-d6ff974012c6",
     "entity_type": "incident",
     "name": "IAD Data Center Network Connectivity Incident (2016)",
@@ -282,14 +306,20 @@
           "priority": "Medium"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_total_cost": 2000000,
+      "cost_components": "SLA credits issued, operational response, network change management process improvements, redundancy infrastructure investments",
+      "cost_confidence": "medium",
+      "estimation_methodology": "4-hour network outage in regional data center affecting cloud and dedicated customers; costs include SLA credits and preventive infrastructure investment."
     }
   },
   {
     "created_at": "2026-02-25T21:17:51.892096Z",
-    "updated_at": "2026-03-04T08:43:00.024574Z",
+    "updated_at": "2026-03-05T20:59:35.335710Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "2cf51b51-3264-4534-bf0d-b74c7eed61a5",
     "entity_type": "incident",
     "name": "Phishing Campaign Targeting Rackspace Customer Credentials (2020)",
@@ -339,14 +369,20 @@
           "priority": "Medium"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_total_cost": 1500000,
+      "cost_components": "customer support and incident response, MFA enforcement rollout, security awareness program, domain monitoring service, phishing simulation investment",
+      "cost_confidence": "medium",
+      "estimation_methodology": "Phishing campaign compromising multiple customer accounts; costs driven by MFA rollout, customer communication, and security awareness programs rather than direct data loss."
     }
   },
   {
     "created_at": "2026-02-25T21:17:53.844629Z",
-    "updated_at": "2026-03-04T08:43:01.442386Z",
+    "updated_at": "2026-03-05T20:59:36.931026Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "00e00102-a705-4d67-b4fa-7a92556b2dad",
     "entity_type": "incident",
     "name": "Third-Party Software Supply Chain Compromise \u2014 SolarWinds Orion Exposure (2020)",
@@ -396,14 +432,20 @@
           "priority": "Medium"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_total_cost": 4000000,
+      "cost_components": "emergency audit of SolarWinds deployments, platform remediation and replacement, vendor risk management improvements, threat intelligence sharing program expansion",
+      "cost_confidence": "medium",
+      "estimation_methodology": "Supply chain compromise (SolarWinds SUNBURST) requiring emergency assessment across internal and customer environments; costs include audit, remediation, and vendor management infrastructure."
     }
   },
   {
     "created_at": "2026-03-04T17:14:50.692947Z",
-    "updated_at": "2026-03-04T17:14:50.692949Z",
+    "updated_at": "2026-03-05T20:59:38.984407Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "0025ecf8-4664-4aa8-9356-1b4e82e65f2f",
     "entity_type": "incident",
     "name": "ScienceLogic SL1 Zero-Day Exploitation (September 2024)",
@@ -451,14 +493,20 @@
     "pattern_indicator": "Second supply chain incident in 12 months (after CL0P)",
     "business_impact": "Data exposure (limited per Rackspace), customer trust erosion, regulatory notification obligation",
     "defensive_narrative": "Rackspace blamed vendor, vendors blamed undocumented utility (liability positioning)",
-    "customer_notification": "Required per contractual obligations, likely caused customer trust review"
+    "customer_notification": "Required per contractual obligations, likely caused customer trust review",
+    "financial_profile": {
+      "estimated_total_cost": 15000000,
+      "cost_components": "remediation and containment, customer notification and support, regulatory notification obligations, potential litigation/settlement, reputation damage, monitoring infrastructure isolation improvements",
+      "cost_confidence": "medium",
+      "estimation_methodology": "Supply chain breach via ScienceLogic zero-day affecting monitoring infrastructure with customer account/credential exposure; estimated as elevated supply chain incident due to credential exfiltration scope."
+    }
   },
   {
     "created_at": "2026-03-04T17:14:55.343782Z",
-    "updated_at": "2026-03-04T17:14:55.343784Z",
+    "updated_at": "2026-03-05T20:59:41.025004Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "f5837616-085b-461b-8693-53d34eea7e6d",
     "entity_type": "incident",
     "name": "CL0P Ransomware via Cleo File Transfer Exploitation (October 2024)",
@@ -505,6 +553,12 @@
     "disclosed_by_attacker": "2025-02-01",
     "rackspace_disclosure": "None found as of 2026-03-04",
     "pattern_concern": "Three incidents in 36 months (Exchange Dec 2022, ScienceLogic Sept 2024, CL0P Oct 2024) establishes pattern",
-    "disclosure_risk": "Potential SEC Item 1.05 violation if CL0P incident is material and not disclosed within 4 business days of determination"
+    "disclosure_risk": "Potential SEC Item 1.05 violation if CL0P incident is material and not disclosed within 4 business days of determination",
+    "financial_profile": {
+      "estimated_total_cost": 60000000,
+      "cost_components": "potential ransom/extortion (if negotiations occurred), customer data loss compensation potential, legal liability, incident response and forensics, regulatory notification costs, reputation/brand damage, supply chain vendor management costs",
+      "cost_confidence": "medium",
+      "estimation_methodology": "CL0P ransomware via Cleo file transfer exploitation with files leaked to dark web; estimated at upper-middle range due to potential customer data in transit exposure and lack of public disclosure indicating sensitivity/ongoing negotiations."
+    }
   }
 ]

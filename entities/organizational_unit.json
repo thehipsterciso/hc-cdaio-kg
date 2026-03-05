@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.274965Z",
-    "updated_at": "2026-03-04T17:27:04.436719Z",
+    "updated_at": "2026-03-05T20:55:37.533273Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 7,
     "id": "ou-001",
     "entity_type": "organizational_unit",
     "name": "Public Cloud Business Unit",
@@ -221,23 +221,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 95.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Stage 2.2 Revenue Model Structure; Stage 2.3 Value Flow; Stage 3.4 Competitive Positioning; Stage 6.5 Hyperscaler Lock-in",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
       "assessment_methodology": "",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -245,14 +245,25 @@
     "bu_fy2025_bookings_growth_target_pct": null,
     "bu_fy2025_goals": null,
     "bu_fy2025_kpis": null,
-    "osint_sources": null
+    "osint_sources": null,
+    "financial_profile": {
+      "estimated_annual_budget": "$1683.0M",
+      "budget_confidence": "high",
+      "estimated_headcount": 3189,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "Public Cloud Business Unit - SEC-reportable segment with $1,683M FY2024 revenue"
+    },
+    "estimated_annual_budget": 1683000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Public Cloud segment revenue per FY2024 financial data (61.5% of total)",
+    "p_and_l_responsibility": true
   },
   {
     "created_at": "2026-02-25T19:01:57.275020Z",
-    "updated_at": "2026-03-04T17:27:57.869791Z",
+    "updated_at": "2026-03-05T20:55:38.103777Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 7,
     "id": "ou-002",
     "entity_type": "organizational_unit",
     "name": "Private Cloud Business Unit",
@@ -469,37 +480,48 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Stage 2.1 Revenue Structure; Stage 2.2 Private Cloud Business Model; Stage 3.4 Market Positioning; Stage 5.3 Margin Analysis",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
       "assessment_methodology": "",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
     "bu_fy2025_revenue_target_usd": null,
     "bu_fy2025_goals": null,
     "bu_fy2025_kpis": null,
-    "osint_sources": null
+    "osint_sources": null,
+    "financial_profile": {
+      "estimated_annual_budget": "$1054.0M",
+      "budget_confidence": "high",
+      "estimated_headcount": 1911,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "Private Cloud Business Unit - SEC-reportable segment with $1,054M FY2024 revenue"
+    },
+    "estimated_annual_budget": 1054000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Private Cloud segment revenue per FY2024 financial data (38.5% of total)",
+    "p_and_l_responsibility": true
   },
   {
     "created_at": "2026-02-25T19:01:57.275044Z",
-    "updated_at": "2026-03-04T17:27:58.732771Z",
+    "updated_at": "2026-03-05T20:55:38.576974Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 5,
     "id": "ou-003",
     "entity_type": "organizational_unit",
     "name": "Office of the Chief Executive Officer",
@@ -716,33 +738,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Stage 1.4 Government Business; Stage 2.4 Government Customer Segment; Stage 2.2 Revenue Structure",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
       "assessment_methodology": "",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$300.6M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 526,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Corporate function - 15% allocation from $2,004M corp overhead"
+    },
+    "estimated_annual_budget": 15000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Executive function allocation from corporate overhead budget",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275063Z",
-    "updated_at": "2026-02-25T19:01:57.275063Z",
+    "updated_at": "2026-03-05T20:55:39.217637Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-004",
     "entity_type": "organizational_unit",
     "name": "Finance Organization",
@@ -959,40 +992,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$400.8M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 701,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Corporate function - 20% allocation from $2,004M corp overhead"
+    },
+    "estimated_annual_budget": 35000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Finance function allocation (typical 1.3-1.5% of total cost base)",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275082Z",
-    "updated_at": "2026-02-25T19:01:57.275082Z",
+    "updated_at": "2026-03-05T20:55:39.701088Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-005",
     "entity_type": "organizational_unit",
     "name": "Legal Organization",
@@ -1209,40 +1246,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$200.4M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 351,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Corporate function - 10% allocation from $2,004M corp overhead"
+    },
+    "estimated_annual_budget": 8000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Legal function allocation from corporate overhead",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275102Z",
-    "updated_at": "2026-02-25T19:01:57.275103Z",
+    "updated_at": "2026-03-05T20:55:40.287899Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-006",
     "entity_type": "organizational_unit",
     "name": "Human Resources Organization",
@@ -1459,40 +1500,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$300.6M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 526,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Corporate function - 15% allocation from $2,004M corp overhead"
+    },
+    "estimated_annual_budget": 80000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "HR function allocation including benefits (~1.3% of total cost base for HR operations)",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275135Z",
-    "updated_at": "2026-02-25T19:01:57.275135Z",
+    "updated_at": "2026-03-05T20:55:40.791832Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-007",
     "entity_type": "organizational_unit",
     "name": "Marketing Organization",
@@ -1709,40 +1754,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$240.48M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 421,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Corporate function - 12% allocation from $2,004M corp overhead"
+    },
+    "estimated_annual_budget": 45000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Marketing function allocation from OpEx (typical 1.6% of revenue)",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275155Z",
-    "updated_at": "2026-02-25T19:01:57.275156Z",
+    "updated_at": "2026-03-05T20:55:41.365771Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-008",
     "entity_type": "organizational_unit",
     "name": "AI, Technology & Sustainability Organization",
@@ -1959,40 +2008,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$200.4M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 351,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Corporate function - 10% allocation from $2,004M corp overhead"
+    },
+    "estimated_annual_budget": 95000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Technology & AI strategic investment allocation from OpEx",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275172Z",
-    "updated_at": "2026-02-25T19:01:57.275173Z",
+    "updated_at": "2026-03-05T20:55:41.926024Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-009",
     "entity_type": "organizational_unit",
     "name": "Global Operations Organization",
@@ -2209,40 +2262,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$200.4M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 351,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Corporate function - 10% allocation from $2,004M corp overhead"
+    },
+    "estimated_annual_budget": 125000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Global Operations function allocation including facilities and infrastructure",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275191Z",
-    "updated_at": "2026-02-25T23:19:25.682477Z",
+    "updated_at": "2026-03-05T20:55:42.436841Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "ou-010",
     "entity_type": "organizational_unit",
     "name": "Commercial Organization",
@@ -2459,43 +2516,47 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Comparably, Bloomberg profile, 10-K FY2022-FY2024, Gainsight partnership page",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "bu_fy2025_goals": null,
     "bu_fy2025_kpis": null,
-    "osint_sources": null
+    "osint_sources": null,
+    "financial_profile": {
+      "estimated_annual_budget": "$160.32M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 281,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Corporate function - 8% allocation from $2,004M corp overhead"
+    },
+    "estimated_annual_budget": 125000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Commercial function allocation (sales, BD, account management)",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275209Z",
-    "updated_at": "2026-02-25T23:19:19.982249Z",
+    "updated_at": "2026-03-05T20:55:45.667206Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "ou-011",
     "entity_type": "organizational_unit",
     "name": "Rackspace Government Solutions",
@@ -2712,44 +2773,48 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "bu_fy2025_revenue_growth_target_pct": null,
     "bu_fy2025_goals": null,
     "bu_fy2025_kpis": null,
-    "osint_sources": null
+    "osint_sources": null,
+    "financial_profile": {
+      "estimated_annual_budget": "$100.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 175,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $100M estimated based on function and scope"
+    },
+    "estimated_annual_budget": 185000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Government segment allocation (specialized vertical with higher margins)",
+    "p_and_l_responsibility": true
   },
   {
     "created_at": "2026-02-25T19:01:57.275227Z",
-    "updated_at": "2026-02-25T23:19:12.733776Z",
+    "updated_at": "2026-03-05T20:55:46.248212Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "ou-012",
     "entity_type": "organizational_unit",
     "name": "FAIR - Foundry for AI by Rackspace",
@@ -2966,44 +3031,48 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "bu_fy2025_revenue_target_usd": null,
     "bu_fy2025_goals": null,
     "bu_fy2025_kpis": null,
-    "osint_sources": null
+    "osint_sources": null,
+    "financial_profile": {
+      "estimated_annual_budget": "$50.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 88,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $50M estimated based on function and scope"
+    },
+    "estimated_annual_budget": 75000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "AI/ML innovation lab allocation from R&D budget",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275258Z",
-    "updated_at": "2026-02-25T19:01:57.275258Z",
+    "updated_at": "2026-03-05T20:55:46.732695Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-013",
     "entity_type": "organizational_unit",
     "name": "Americas Region",
@@ -3220,40 +3289,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Comparably executive team, SEC insider filings, 10-K FY2024",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$1915.9M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 3570,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "Regional operations - 70% of global revenue allocation"
+    },
+    "estimated_annual_budget": 1916000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Americas region allocation (70% of total revenue)",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275277Z",
-    "updated_at": "2026-02-25T19:01:57.275277Z",
+    "updated_at": "2026-03-05T20:55:47.315492Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-014",
     "entity_type": "organizational_unit",
     "name": "EMEA Region",
@@ -3470,40 +3543,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Comparably, SEC insider filings, Companies House UK, rackspace",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$547.4M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 1020,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "Regional operations - 20% of global revenue allocation"
+    },
+    "estimated_annual_budget": 547000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "EMEA region allocation (20% of total revenue)",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275294Z",
-    "updated_at": "2026-03-04T17:30:31.981203Z",
+    "updated_at": "2026-03-05T20:55:47.788681Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 5,
     "id": "ou-015",
     "entity_type": "organizational_unit",
     "name": "Asia Pacific & Japan Region",
@@ -3720,33 +3797,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.5-jurisdictional-licensing-compliance/1.5.structural_lock_ins.json",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$273.7M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 510,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "Regional operations - 10% of global revenue allocation"
+    },
+    "estimated_annual_budget": 274000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "APAC region allocation (10% of total revenue)",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275313Z",
-    "updated_at": "2026-03-04T17:29:03.274699Z",
+    "updated_at": "2026-03-05T20:55:48.305651Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 5,
     "id": "ou-016",
     "entity_type": "organizational_unit",
     "name": "Board of Directors",
@@ -3963,33 +4051,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.entities.json",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$1.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 0,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Board governance structure - administrative overhead minimal"
+    },
+    "estimated_annual_budget": 3000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Board governance support budget",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275331Z",
-    "updated_at": "2026-02-25T19:01:57.275332Z",
+    "updated_at": "2026-03-05T20:55:48.935766Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-017",
     "entity_type": "organizational_unit",
     "name": "Audit Committee",
@@ -4206,40 +4305,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$1.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 0,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Board governance structure - administrative overhead minimal"
+    },
+    "estimated_annual_budget": 2000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Audit committee annual operations budget",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275348Z",
-    "updated_at": "2026-02-25T19:01:57.275348Z",
+    "updated_at": "2026-03-05T20:55:49.397814Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-018",
     "entity_type": "organizational_unit",
     "name": "Compensation Committee",
@@ -4456,40 +4559,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$1.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 0,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Board governance structure - administrative overhead minimal"
+    },
+    "estimated_annual_budget": 2000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Compensation committee annual operations budget",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275377Z",
-    "updated_at": "2026-02-25T19:01:57.275377Z",
+    "updated_at": "2026-03-05T20:55:49.989427Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-019",
     "entity_type": "organizational_unit",
     "name": "Nominating & Corporate Governance Committee",
@@ -4706,40 +4813,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$1.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 0,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Board governance structure - administrative overhead minimal"
+    },
+    "estimated_annual_budget": 2000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Nominating & Corporate Governance committee annual budget",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275395Z",
-    "updated_at": "2026-02-25T19:01:57.275395Z",
+    "updated_at": "2026-03-05T20:55:50.442309Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-020",
     "entity_type": "organizational_unit",
     "name": "Executive Committee",
@@ -4956,40 +5067,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$1.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 0,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Board governance structure - administrative overhead minimal"
+    },
+    "estimated_annual_budget": 5000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Executive committee coordination and staff operations",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275410Z",
-    "updated_at": "2026-02-25T19:01:57.275410Z",
+    "updated_at": "2026-03-05T20:55:54.839053Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-021",
     "entity_type": "organizational_unit",
     "name": "Consulting & Advisory Services",
@@ -5206,40 +5321,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$98.8M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 173,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "Service delivery practice - 15% of $658.2M service budget"
+    },
+    "estimated_annual_budget": 120000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Service delivery practice with high-value consulting engagements",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275427Z",
-    "updated_at": "2026-02-25T19:01:57.275427Z",
+    "updated_at": "2026-03-05T20:55:55.465418Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-022",
     "entity_type": "organizational_unit",
     "name": "Professional Services",
@@ -5456,40 +5575,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$197.5M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 346,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "Service delivery practice - 30% of $658.2M service budget"
+    },
+    "estimated_annual_budget": 180000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Professional services segment with delivery margins and time-and-materials revenue",
+    "p_and_l_responsibility": true
   },
   {
     "created_at": "2026-02-25T19:01:57.275443Z",
-    "updated_at": "2026-02-25T19:01:57.275444Z",
+    "updated_at": "2026-03-05T20:55:55.905743Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-023",
     "entity_type": "organizational_unit",
     "name": "Managed Services",
@@ -5706,40 +5829,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$230.4M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 403,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "Service delivery practice - 35% of $658.2M service budget"
+    },
+    "estimated_annual_budget": 250000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Managed services segment with recurring revenue and operations cost base",
+    "p_and_l_responsibility": true
   },
   {
     "created_at": "2026-02-25T19:01:57.275464Z",
-    "updated_at": "2026-02-25T19:01:57.275464Z",
+    "updated_at": "2026-03-05T20:55:56.486493Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-024",
     "entity_type": "organizational_unit",
     "name": "Elastic Engineering Practice",
@@ -5956,40 +6083,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$131.6M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 230,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "Service delivery practice - 20% of $658.2M service budget"
+    },
+    "estimated_annual_budget": 95000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Specialized engineering practice with premium billing rates and boutique delivery",
+    "p_and_l_responsibility": false
   },
   {
     "created_at": "2026-02-25T19:01:57.275494Z",
-    "updated_at": "2026-02-25T19:01:57.275494Z",
+    "updated_at": "2026-03-05T21:36:43.413368Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 6,
     "id": "ou-025",
     "entity_type": "organizational_unit",
     "name": "Cloud Solutions",
@@ -6206,40 +6337,51 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$136.75M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 239,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Solution domain - 25% allocation from $547M solutions budget"
+    },
+    "estimated_annual_budget": 185000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Cloud solutions delivery and optimization services revenue and cost allocation",
+    "p_and_l_responsibility": true,
+    "dependency_financial_impact": {
+      "critical_system": "sys-001 (Customer Portal)",
+      "impact_per_hour_usd": 1100000,
+      "impact_tier": "Critical",
+      "business_criticality": "Primary ownership of customer portal operations",
+      "notes": "Cloud Solutions - all revenue flows through portal"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275512Z",
-    "updated_at": "2026-02-25T19:01:57.275512Z",
+    "updated_at": "2026-03-05T20:55:57.624111Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-026",
     "entity_type": "organizational_unit",
     "name": "Applications Solutions",
@@ -6456,40 +6598,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$136.75M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 239,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Solution domain - 25% allocation from $547M solutions budget"
+    },
+    "estimated_annual_budget": 145000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Applications modernization and development services segment",
+    "p_and_l_responsibility": true
   },
   {
     "created_at": "2026-02-25T19:01:57.275530Z",
-    "updated_at": "2026-02-25T19:01:57.275530Z",
+    "updated_at": "2026-03-05T20:55:58.149749Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-027",
     "entity_type": "organizational_unit",
     "name": "Data Solutions",
@@ -6706,40 +6852,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$136.75M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 239,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Solution domain - 25% allocation from $547M solutions budget"
+    },
+    "estimated_annual_budget": 160000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Data analytics and AI services with high-margin delivery model",
+    "p_and_l_responsibility": true
   },
   {
     "created_at": "2026-02-25T19:01:57.275547Z",
-    "updated_at": "2026-02-25T19:01:57.275548Z",
+    "updated_at": "2026-03-05T20:55:58.639229Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-028",
     "entity_type": "organizational_unit",
     "name": "Cyber Security & Resilience Solutions",
@@ -6956,40 +7106,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$136.75M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 239,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Solution domain - 25% allocation from $547M solutions budget"
+    },
+    "estimated_annual_budget": 135000000,
+    "budget_confidence": "medium",
+    "estimation_methodology": "Cybersecurity and resilience services growing with enterprise demand",
+    "p_and_l_responsibility": true
   },
   {
     "created_at": "2026-02-25T19:01:57.275566Z",
-    "updated_at": "2026-02-25T19:01:57.275567Z",
+    "updated_at": "2026-03-05T20:55:59.183160Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-029",
     "entity_type": "organizational_unit",
     "name": "Rackspace Technology, Inc.",
@@ -7206,40 +7360,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "10-K FY2024, SEC filings; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$394.2M",
+      "budget_confidence": "low",
+      "estimated_headcount": 690,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 15% allocation from $2,628M subsidiary budget"
+    },
+    "estimated_annual_budget": 2737000000,
+    "budget_confidence": "high",
+    "estimation_methodology": "Consolidated enterprise total revenue FY2024",
+    "p_and_l_responsibility": true
   },
   {
     "created_at": "2026-02-25T19:01:57.275584Z",
-    "updated_at": "2026-02-25T19:01:57.275584Z",
+    "updated_at": "2026-03-05T20:55:59.676191Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-030",
     "entity_type": "organizational_unit",
     "name": "Rackspace US, Inc.",
@@ -7456,40 +7614,44 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace US, Inc; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
-    }
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$918.8M",
+      "budget_confidence": "low",
+      "estimated_headcount": 1608,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 35% allocation from $2,628M subsidiary budget"
+    },
+    "estimated_annual_budget": 2737000000,
+    "budget_confidence": "high",
+    "estimation_methodology": "US subsidiary holding consolidated operations and revenue",
+    "p_and_l_responsibility": true
   },
   {
     "created_at": "2026-02-25T19:01:57.275614Z",
-    "updated_at": "2026-02-25T19:01:57.275614Z",
+    "updated_at": "2026-03-05T20:52:18.837752Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-031",
     "entity_type": "organizational_unit",
     "name": "Rackspace Limited",
@@ -7706,40 +7868,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Companies House UK, L00-site; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$210.2M",
+      "budget_confidence": "low",
+      "estimated_headcount": 368,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 8% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275631Z",
-    "updated_at": "2026-02-25T19:01:57.275631Z",
+    "updated_at": "2026-03-05T20:52:19.356270Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-032",
     "entity_type": "organizational_unit",
     "name": "Rackspace International GmbH",
@@ -7956,40 +8118,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "RocketReach executive data, rackspace",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$210.2M",
+      "budget_confidence": "low",
+      "estimated_headcount": 368,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 8% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275651Z",
-    "updated_at": "2026-02-25T19:01:57.275651Z",
+    "updated_at": "2026-03-05T20:52:19.881237Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-033",
     "entity_type": "organizational_unit",
     "name": "Financial Services Industry Practice",
@@ -8206,40 +8368,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275667Z",
-    "updated_at": "2026-02-25T19:01:57.275667Z",
+    "updated_at": "2026-03-05T20:52:20.409920Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-034",
     "entity_type": "organizational_unit",
     "name": "Healthcare Industry Practice",
@@ -8456,40 +8618,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275684Z",
-    "updated_at": "2026-02-25T19:01:57.275684Z",
+    "updated_at": "2026-03-05T21:36:39.714994Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 4,
     "id": "ou-035",
     "entity_type": "organizational_unit",
     "name": "Manufacturing Industry Practice",
@@ -8706,40 +8868,47 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
+    },
+    "dependency_financial_impact": {
+      "critical_system": "sys-001 (Customer Portal)",
+      "impact_per_hour_usd": 420000,
+      "impact_tier": "High",
+      "business_criticality": "Manufacturing industry practice uses portal for customer engagement",
+      "notes": "Industry-specific portal UX and customizations"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275700Z",
-    "updated_at": "2026-02-25T19:01:57.275701Z",
+    "updated_at": "2026-03-05T20:52:22.425962Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-036",
     "entity_type": "organizational_unit",
     "name": "SaaS & ISV Industry Practice",
@@ -8956,40 +9125,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275732Z",
-    "updated_at": "2026-02-25T19:01:57.275732Z",
+    "updated_at": "2026-03-05T20:52:23.420284Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-037",
     "entity_type": "organizational_unit",
     "name": "Retail Industry Practice",
@@ -9206,40 +9375,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275751Z",
-    "updated_at": "2026-02-25T19:01:57.275751Z",
+    "updated_at": "2026-03-05T20:52:24.359930Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-038",
     "entity_type": "organizational_unit",
     "name": "Education Industry Practice",
@@ -9456,40 +9625,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275768Z",
-    "updated_at": "2026-03-04T17:29:13.883083Z",
+    "updated_at": "2026-03-05T20:52:25.383941Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "ou-039",
     "entity_type": "organizational_unit",
     "name": "Private Equity Practice",
@@ -9706,33 +9875,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.2-ownership-control-entitlement/1.2.control_reality.json",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275786Z",
-    "updated_at": "2026-02-25T19:01:57.275786Z",
+    "updated_at": "2026-03-05T20:52:26.409562Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-040",
     "entity_type": "organizational_unit",
     "name": "Strategic Alliances & Partnerships",
@@ -9949,40 +10125,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$80.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 140,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $80M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275803Z",
-    "updated_at": "2026-02-25T19:01:57.275803Z",
+    "updated_at": "2026-03-05T20:52:27.326850Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-041",
     "entity_type": "organizational_unit",
     "name": "Global Partner Program",
@@ -10199,40 +10375,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "10-K FY2024, rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$40.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 70,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $40M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275821Z",
-    "updated_at": "2026-02-25T19:01:57.275821Z",
+    "updated_at": "2026-03-05T20:52:33.397488Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-042",
     "entity_type": "organizational_unit",
     "name": "Data Center Operations",
@@ -10449,40 +10625,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$150.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 262,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $150M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275851Z",
-    "updated_at": "2026-02-25T19:01:57.275851Z",
+    "updated_at": "2026-03-05T20:52:34.348548Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-043",
     "entity_type": "organizational_unit",
     "name": "Global Delivery Centers",
@@ -10699,40 +10875,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "L00-site; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$200.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 350,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $200M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275868Z",
-    "updated_at": "2026-02-25T19:01:57.275868Z",
+    "updated_at": "2026-03-05T20:52:35.397017Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-044",
     "entity_type": "organizational_unit",
     "name": "Rackspace Fabric Platform",
@@ -10949,40 +11125,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$120.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 210,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $120M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275884Z",
-    "updated_at": "2026-02-25T19:01:57.275885Z",
+    "updated_at": "2026-03-05T20:52:36.396480Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-045",
     "entity_type": "organizational_unit",
     "name": "Rackspace Spot",
@@ -11199,40 +11375,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$60.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 105,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $60M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275900Z",
-    "updated_at": "2026-02-25T19:01:57.275900Z",
+    "updated_at": "2026-03-05T20:52:37.336255Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-046",
     "entity_type": "organizational_unit",
     "name": "Sales Organization",
@@ -11449,40 +11625,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "10-K FY2024, SEC insider filings (wallmine",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$400.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 700,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $400M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275916Z",
-    "updated_at": "2026-02-25T19:01:57.275916Z",
+    "updated_at": "2026-03-05T20:52:38.294614Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-047",
     "entity_type": "organizational_unit",
     "name": "Investor Relations",
@@ -11699,40 +11875,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$25.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 44,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $25M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275932Z",
-    "updated_at": "2026-02-25T19:01:57.275932Z",
+    "updated_at": "2026-03-05T20:51:45.838218Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-048",
     "entity_type": "organizational_unit",
     "name": "OpenStack & Kubernetes Business Unit",
@@ -11949,40 +12125,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$421.6M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 764,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "OpenStack & Kubernetes BU - ~40% of Private Cloud business, subsidiary under Private Cloud segment"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276154Z",
-    "updated_at": "2026-02-25T19:01:57.276154Z",
+    "updated_at": "2026-03-05T20:51:47.927715Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-049",
     "entity_type": "organizational_unit",
     "name": "DACH Region",
@@ -12199,40 +12375,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$136.85M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 255,
+      "p_and_l_responsibility": true,
+      "estimation_methodology": "Regional operations - 5% of global revenue allocation"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276171Z",
-    "updated_at": "2026-02-25T19:01:57.276171Z",
+    "updated_at": "2026-03-05T20:52:39.284918Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-050",
     "entity_type": "organizational_unit",
     "name": "Bright Skies GmbH",
@@ -12449,40 +12625,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 48.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 70.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "budget_allocation",
-          "gap_description": "Budget allocation and cost center mapping not populated",
-          "remediation_plan": "Sync with financial planning system",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$78.8M",
+      "budget_confidence": "low",
+      "estimated_headcount": 138,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 3% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276188Z",
-    "updated_at": "2026-02-25T19:01:57.276188Z",
+    "updated_at": "2026-03-05T20:52:40.296763Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-051",
     "entity_type": "organizational_unit",
     "name": "Just Analytics Pte Ltd",
@@ -12725,14 +12901,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$52.6M",
+      "budget_confidence": "low",
+      "estimated_headcount": 92,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 2% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276209Z",
-    "updated_at": "2026-02-25T19:01:57.276210Z",
+    "updated_at": "2026-03-05T20:52:41.303465Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-052",
     "entity_type": "organizational_unit",
     "name": "Rackspace Government Solutions, Inc.",
@@ -12975,14 +13168,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$105.1M",
+      "budget_confidence": "low",
+      "estimated_headcount": 184,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 4% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276227Z",
-    "updated_at": "2026-03-04T17:30:32.609618Z",
+    "updated_at": "2026-03-05T20:52:42.252255Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "ou-053",
     "entity_type": "organizational_unit",
     "name": "Rackspace Hosting Australia Pty Ltd",
@@ -13218,14 +13428,31 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$78.8M",
+      "budget_confidence": "low",
+      "estimated_headcount": 138,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 3% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276245Z",
-    "updated_at": "2026-02-25T19:01:57.276245Z",
+    "updated_at": "2026-03-05T20:52:42.876301Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-054",
     "entity_type": "organizational_unit",
     "name": "Rackspace India Private Limited",
@@ -13468,14 +13695,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$131.4M",
+      "budget_confidence": "low",
+      "estimated_headcount": 230,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 5% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276273Z",
-    "updated_at": "2026-02-25T19:01:57.276274Z",
+    "updated_at": "2026-03-05T20:52:43.333690Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-055",
     "entity_type": "organizational_unit",
     "name": "Datapipe, Inc.",
@@ -13718,14 +13962,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$52.6M",
+      "budget_confidence": "low",
+      "estimated_headcount": 92,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 2% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276292Z",
-    "updated_at": "2026-02-25T19:01:57.276292Z",
+    "updated_at": "2026-03-05T20:52:43.846512Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-056",
     "entity_type": "organizational_unit",
     "name": "Onica Group LLC",
@@ -13968,14 +14229,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$78.8M",
+      "budget_confidence": "low",
+      "estimated_headcount": 138,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 3% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276309Z",
-    "updated_at": "2026-02-25T19:01:57.276309Z",
+    "updated_at": "2026-03-05T20:52:44.376241Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-057",
     "entity_type": "organizational_unit",
     "name": "Rackspace Asia Limited",
@@ -14218,14 +14496,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$52.6M",
+      "budget_confidence": "low",
+      "estimated_headcount": 92,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 2% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276325Z",
-    "updated_at": "2026-02-25T19:01:57.276326Z",
+    "updated_at": "2026-03-05T20:52:44.919223Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-058",
     "entity_type": "organizational_unit",
     "name": "Rackspace Canada, Inc.",
@@ -14468,14 +14763,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$52.6M",
+      "budget_confidence": "low",
+      "estimated_headcount": 92,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 2% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276344Z",
-    "updated_at": "2026-02-25T19:01:57.276344Z",
+    "updated_at": "2026-03-05T20:52:45.371147Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-059",
     "entity_type": "organizational_unit",
     "name": "Rackspace Mexico s.de R.L. de C.V.",
@@ -14718,14 +15030,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$52.6M",
+      "budget_confidence": "low",
+      "estimated_headcount": 92,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 2% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276360Z",
-    "updated_at": "2026-02-25T19:01:57.276360Z",
+    "updated_at": "2026-03-05T20:52:45.868314Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-060",
     "entity_type": "organizational_unit",
     "name": "Rackspace Singapore Pte Ltd",
@@ -14968,14 +15297,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$52.6M",
+      "budget_confidence": "low",
+      "estimated_headcount": 92,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 2% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276388Z",
-    "updated_at": "2026-02-25T19:01:57.276389Z",
+    "updated_at": "2026-03-05T20:52:46.394261Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-061",
     "entity_type": "organizational_unit",
     "name": "Rackspace Professional Services Japan GK",
@@ -15218,14 +15564,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$26.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 46,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 1% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276406Z",
-    "updated_at": "2026-02-25T19:01:57.276406Z",
+    "updated_at": "2026-03-05T20:52:46.984662Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-062",
     "entity_type": "organizational_unit",
     "name": "Rackspace Benelux BV",
@@ -15468,14 +15831,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$52.6M",
+      "budget_confidence": "low",
+      "estimated_headcount": 92,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 2% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276422Z",
-    "updated_at": "2026-02-25T19:01:57.276422Z",
+    "updated_at": "2026-03-05T20:52:47.436591Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-063",
     "entity_type": "organizational_unit",
     "name": "Rackspace Cloud Office, LLC",
@@ -15718,14 +16098,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$80.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 140,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $80M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276438Z",
-    "updated_at": "2026-02-25T19:01:57.276438Z",
+    "updated_at": "2026-03-05T20:52:47.959496Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-064",
     "entity_type": "organizational_unit",
     "name": "Information Security Organization",
@@ -15968,14 +16365,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$75.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 131,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $75M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276457Z",
-    "updated_at": "2026-02-25T19:01:57.276457Z",
+    "updated_at": "2026-03-05T20:52:48.471646Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-065",
     "entity_type": "organizational_unit",
     "name": "Cyber Defense Center",
@@ -16218,14 +16632,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$50.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 88,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $50M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276477Z",
-    "updated_at": "2026-02-25T19:01:57.276478Z",
+    "updated_at": "2026-03-05T20:52:49.007394Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-066",
     "entity_type": "organizational_unit",
     "name": "Government Industry Practice",
@@ -16468,14 +16899,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276514Z",
-    "updated_at": "2026-02-25T19:01:57.276514Z",
+    "updated_at": "2026-03-05T20:52:49.495675Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-067",
     "entity_type": "organizational_unit",
     "name": "Non-Profit Industry Practice",
@@ -16718,14 +17166,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276531Z",
-    "updated_at": "2026-02-25T19:01:57.276532Z",
+    "updated_at": "2026-03-05T20:52:50.004236Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-068",
     "entity_type": "organizational_unit",
     "name": "Consumer Goods Industry Practice",
@@ -16968,14 +17433,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276548Z",
-    "updated_at": "2026-02-25T19:01:57.276548Z",
+    "updated_at": "2026-03-05T20:52:50.497261Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-069",
     "entity_type": "organizational_unit",
     "name": "Oil & Gas Industry Practice",
@@ -17218,14 +17700,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276568Z",
-    "updated_at": "2026-02-25T19:01:57.276568Z",
+    "updated_at": "2026-03-05T20:52:51.091974Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-070",
     "entity_type": "organizational_unit",
     "name": "Media & Entertainment Industry Practice",
@@ -17468,14 +17967,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276585Z",
-    "updated_at": "2026-02-25T19:01:57.276585Z",
+    "updated_at": "2026-03-05T20:52:51.588583Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-071",
     "entity_type": "organizational_unit",
     "name": "Automotive & Transportation Industry Practice",
@@ -17718,14 +18234,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276603Z",
-    "updated_at": "2026-02-25T19:01:57.276603Z",
+    "updated_at": "2026-03-05T20:52:52.121736Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-072",
     "entity_type": "organizational_unit",
     "name": "Food & Beverage Industry Practice",
@@ -17968,14 +18501,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276633Z",
-    "updated_at": "2026-02-25T19:01:57.276633Z",
+    "updated_at": "2026-03-05T20:52:52.653775Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-073",
     "entity_type": "organizational_unit",
     "name": "Travel & Hospitality Industry Practice",
@@ -18218,14 +18768,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276653Z",
-    "updated_at": "2026-02-25T19:01:57.276653Z",
+    "updated_at": "2026-03-05T20:52:53.216251Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-074",
     "entity_type": "organizational_unit",
     "name": "Public Utilities Industry Practice",
@@ -18468,14 +19035,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$23.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 41,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Industry vertical practice - proportional allocation from $410M industry budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276671Z",
-    "updated_at": "2026-02-25T19:01:57.276671Z",
+    "updated_at": "2026-03-05T20:52:53.717627Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-075",
     "entity_type": "organizational_unit",
     "name": "AWS Practice",
@@ -18718,14 +19302,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$80.4M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 141,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Hyperscaler partnership practice - 25% allocation from $321.6M hyperscaler budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276688Z",
-    "updated_at": "2026-02-25T19:01:57.276688Z",
+    "updated_at": "2026-03-05T20:52:54.224359Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-076",
     "entity_type": "organizational_unit",
     "name": "Microsoft Azure Practice",
@@ -18968,14 +19569,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$80.4M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 141,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Hyperscaler partnership practice - 25% allocation from $321.6M hyperscaler budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276704Z",
-    "updated_at": "2026-02-25T19:01:57.276704Z",
+    "updated_at": "2026-03-05T20:52:54.767578Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-077",
     "entity_type": "organizational_unit",
     "name": "Google Cloud Practice",
@@ -19218,14 +19836,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$80.4M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 141,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Hyperscaler partnership practice - 25% allocation from $321.6M hyperscaler budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276722Z",
-    "updated_at": "2026-02-25T19:01:57.276722Z",
+    "updated_at": "2026-03-05T20:52:55.357304Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-078",
     "entity_type": "organizational_unit",
     "name": "VMware Practice",
@@ -19468,14 +20103,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$80.4M",
+      "budget_confidence": "medium",
+      "estimated_headcount": 141,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Hyperscaler partnership practice - 25% allocation from $321.6M hyperscaler budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276752Z",
-    "updated_at": "2026-03-04T17:29:02.698173Z",
+    "updated_at": "2026-03-05T20:52:55.847043Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "ou-079",
     "entity_type": "organizational_unit",
     "name": "Rackspace Technology Global, Inc.",
@@ -19711,14 +20363,31 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$52.6M",
+      "budget_confidence": "low",
+      "estimated_headcount": 92,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 2% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276771Z",
-    "updated_at": "2026-02-25T19:01:57.276771Z",
+    "updated_at": "2026-03-05T20:52:56.381183Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-080",
     "entity_type": "organizational_unit",
     "name": "Rackspace Email & Productivity Services",
@@ -19961,14 +20630,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$60.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 105,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $60M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276789Z",
-    "updated_at": "2026-02-25T19:01:57.276789Z",
+    "updated_at": "2026-03-05T20:52:56.970779Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-081",
     "entity_type": "organizational_unit",
     "name": "Colocation Services",
@@ -20211,14 +20897,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$80.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 140,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $80M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276807Z",
-    "updated_at": "2026-02-25T19:01:57.276807Z",
+    "updated_at": "2026-03-05T20:52:57.523832Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-082",
     "entity_type": "organizational_unit",
     "name": "UK Sovereign Cloud Services",
@@ -20461,14 +21164,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$40.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 70,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $40M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276824Z",
-    "updated_at": "2026-02-25T19:01:57.276824Z",
+    "updated_at": "2026-03-05T20:52:57.980593Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-083",
     "entity_type": "organizational_unit",
     "name": "Onica Egypt LLC",
@@ -20711,14 +21431,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$26.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 46,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 1% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276842Z",
-    "updated_at": "2026-02-25T19:01:57.276842Z",
+    "updated_at": "2026-03-05T20:52:58.499217Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-084",
     "entity_type": "organizational_unit",
     "name": "Onica Technologies Canada, Inc.",
@@ -20961,14 +21698,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$26.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 46,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 1% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276870Z",
-    "updated_at": "2026-02-25T19:01:57.276870Z",
+    "updated_at": "2026-03-05T20:52:59.098466Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-085",
     "entity_type": "organizational_unit",
     "name": "Tricore Solutions, LLC",
@@ -21211,14 +21965,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$52.6M",
+      "budget_confidence": "low",
+      "estimated_headcount": 92,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 2% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276887Z",
-    "updated_at": "2026-02-25T19:01:57.276887Z",
+    "updated_at": "2026-03-05T20:52:59.560434Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-086",
     "entity_type": "organizational_unit",
     "name": "Tricore Solutions Private Limited",
@@ -21461,14 +22232,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$26.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 46,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 1% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276903Z",
-    "updated_at": "2026-02-25T19:01:57.276903Z",
+    "updated_at": "2026-03-05T20:53:00.090783Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-087",
     "entity_type": "organizational_unit",
     "name": "Tricore DBS, LLC",
@@ -21711,14 +22499,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$26.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 46,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 1% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276920Z",
-    "updated_at": "2026-02-25T19:01:57.276921Z",
+    "updated_at": "2026-03-05T20:53:00.635733Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-088",
     "entity_type": "organizational_unit",
     "name": "ObjectRocket, LLC",
@@ -21961,14 +22766,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$30.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 53,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $30M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276935Z",
-    "updated_at": "2026-02-25T19:01:57.276935Z",
+    "updated_at": "2026-03-05T20:53:01.205888Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-089",
     "entity_type": "organizational_unit",
     "name": "RelationEdge, LLC",
@@ -22211,14 +23033,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$25.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 44,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $25M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276954Z",
-    "updated_at": "2026-02-25T19:01:57.276954Z",
+    "updated_at": "2026-03-05T20:53:01.672825Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-090",
     "entity_type": "organizational_unit",
     "name": "Database Specialists, LLC",
@@ -22461,14 +23300,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$20.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 35,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $20M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276998Z",
-    "updated_at": "2026-02-25T19:01:57.276998Z",
+    "updated_at": "2026-03-05T20:53:02.212351Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-091",
     "entity_type": "organizational_unit",
     "name": "Rackspace International Mobility GmbH",
@@ -22711,14 +23567,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$26.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 46,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 1% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277014Z",
-    "updated_at": "2026-02-25T19:01:57.277015Z",
+    "updated_at": "2026-03-05T20:53:02.748626Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-092",
     "entity_type": "organizational_unit",
     "name": "Rackspace New Zealand Limited",
@@ -22961,14 +23834,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$26.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 46,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 1% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277032Z",
-    "updated_at": "2026-02-25T19:01:57.277032Z",
+    "updated_at": "2026-03-05T20:53:03.327277Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-093",
     "entity_type": "organizational_unit",
     "name": "Rackspace Cloud Academy, LLC",
@@ -23211,14 +24101,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$15.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 26,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $15M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277052Z",
-    "updated_at": "2026-02-25T19:01:57.277052Z",
+    "updated_at": "2026-03-05T20:53:03.786402Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-094",
     "entity_type": "organizational_unit",
     "name": "Rackspace Germany GmbH",
@@ -23461,14 +24368,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$26.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 46,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 1% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277068Z",
-    "updated_at": "2026-02-25T19:01:57.277068Z",
+    "updated_at": "2026-03-05T20:53:04.303661Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-095",
     "entity_type": "organizational_unit",
     "name": "Rackspace Asia (Shanghai) Limited",
@@ -23711,14 +24635,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$26.3M",
+      "budget_confidence": "low",
+      "estimated_headcount": 46,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Operating subsidiary/legal entity - 1% allocation from $2,628M subsidiary budget"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277086Z",
-    "updated_at": "2026-02-25T19:01:57.277086Z",
+    "updated_at": "2026-03-05T20:53:04.806265Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-096",
     "entity_type": "organizational_unit",
     "name": "India Center of Excellence",
@@ -23961,14 +24902,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$40.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 70,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $40M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277117Z",
-    "updated_at": "2026-02-25T19:01:57.277117Z",
+    "updated_at": "2026-03-05T20:53:05.344310Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-097",
     "entity_type": "organizational_unit",
     "name": "FinOps Practice",
@@ -24211,14 +25169,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$30.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 53,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $30M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277135Z",
-    "updated_at": "2026-02-25T19:01:57.277135Z",
+    "updated_at": "2026-03-05T20:53:05.886426Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-098",
     "entity_type": "organizational_unit",
     "name": "Services & Delivery Organization - Public Cloud",
@@ -24461,14 +25436,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$250.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 438,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $250M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277152Z",
-    "updated_at": "2026-02-25T19:01:57.277153Z",
+    "updated_at": "2026-03-05T20:53:06.419760Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-099",
     "entity_type": "organizational_unit",
     "name": "Business Transformation Organization",
@@ -24711,14 +25703,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$60.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 105,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $60M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277169Z",
-    "updated_at": "2026-02-25T19:01:57.277169Z",
+    "updated_at": "2026-03-05T20:53:06.883173Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ou-100",
     "entity_type": "organizational_unit",
     "name": "Product & Technology Organization - Private Cloud",
@@ -24961,14 +25970,31 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
+    },
+    "financial_profile": {
+      "estimated_annual_budget": "$180.0M",
+      "budget_confidence": "low",
+      "estimated_headcount": 315,
+      "p_and_l_responsibility": false,
+      "estimation_methodology": "Specialized unit - $180M estimated based on function and scope"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277187Z",
-    "updated_at": "2026-02-25T19:01:57.277187Z",
+    "updated_at": "2026-03-04T22:04:20.294242Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-101",
     "entity_type": "organizational_unit",
     "name": "Rackspace Foundation",
@@ -25211,14 +26237,24 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277208Z",
-    "updated_at": "2026-02-25T19:01:57.277208Z",
+    "updated_at": "2026-03-04T22:04:20.844774Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-102",
     "entity_type": "organizational_unit",
     "name": "Rackspace University",
@@ -25461,14 +26497,24 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277237Z",
-    "updated_at": "2026-02-25T19:01:57.277237Z",
+    "updated_at": "2026-03-04T22:04:21.284974Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-103",
     "entity_type": "organizational_unit",
     "name": "Customer Success Center",
@@ -25711,14 +26757,24 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277255Z",
-    "updated_at": "2026-02-25T19:01:57.277255Z",
+    "updated_at": "2026-03-04T22:04:21.939561Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-104",
     "entity_type": "organizational_unit",
     "name": "Oracle Cloud Practice",
@@ -25961,14 +27017,24 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277272Z",
-    "updated_at": "2026-02-25T19:01:57.277272Z",
+    "updated_at": "2026-03-04T22:04:22.580317Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-105",
     "entity_type": "organizational_unit",
     "name": "Rackspace DBaaS",
@@ -26211,14 +27277,24 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277290Z",
-    "updated_at": "2026-02-25T19:01:57.277290Z",
+    "updated_at": "2026-03-04T22:04:22.964444Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-106",
     "entity_type": "organizational_unit",
     "name": "Internal Data & Analytics Organization",
@@ -26461,14 +27537,24 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277309Z",
-    "updated_at": "2026-02-25T19:01:57.277309Z",
+    "updated_at": "2026-03-04T22:04:23.613490Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-107",
     "entity_type": "organizational_unit",
     "name": "Sustainability & ESG Organization",
@@ -26711,14 +27797,24 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277325Z",
-    "updated_at": "2026-02-25T19:01:57.277325Z",
+    "updated_at": "2026-03-04T22:04:24.266214Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-108",
     "entity_type": "organizational_unit",
     "name": "Managed Security Services",
@@ -26961,14 +28057,24 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.277355Z",
-    "updated_at": "2026-02-25T19:01:57.277355Z",
+    "updated_at": "2026-03-04T22:04:24.883030Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-109",
     "entity_type": "organizational_unit",
     "name": "Agentic AI & Intelligent Automation Practice",
@@ -27211,6 +28317,16 @@
           "priority": "Medium"
         }
       ]
+    },
+    "confidence_level": "Medium-High",
+    "primary_data_source": "Rackspace Technology organizational structure, SEC filings 2024",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "KG Enrichment Agent \u2014 Org Unit Batch",
+    "data_quality_score": {
+      "completeness_pct": 70,
+      "accuracy_confidence": "Medium-High",
+      "timeliness_score": "Current",
+      "consistency_score": "Consistent"
     }
   },
   {

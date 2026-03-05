@@ -52,24 +52,6 @@
     }
   },
   {
-    "created_at": "2026-02-25T19:27:34.136189Z",
-    "updated_at": "2026-02-25T19:27:34.136189Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "32c91add-9258-4664-b37d-392e5950b424",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-037",
-    "target_id": "vnd-026",
-    "weight": 1.0,
-    "confidence": 0.9,
-    "properties": {
-      "source": "sys-037 description: Powered by Akamai CDN partnership",
-      "date_discovered": "2026-02-25",
-      "rationale": "Cloud Files CDN Edge Network (sys-037) explicitly documented as powered by Akamai CDN, making Akamai the supply-side technology vendor for this system"
-    }
-  },
-  {
     "created_at": "2026-02-25T19:27:34.135988Z",
     "updated_at": "2026-02-25T19:27:34.135989Z",
     "valid_from": null,
@@ -85,24 +67,6 @@
       "source": "rDNS 72.3.128.0/24; int-0367",
       "date_discovered": "2026-02-25",
       "rationale": "Arbor Networks appliances are the DDoS scrubbing hardware in sys-043 DDoS Mitigation Cluster, confirmed by rDNS hostname arbor-dfw.dfw3.rackspace.net"
-    }
-  },
-  {
-    "created_at": "2026-02-25T19:27:34.136165Z",
-    "updated_at": "2026-02-25T19:27:34.136165Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "68a6f466-7bfd-4e9d-adbb-fdd40aefc4d1",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-043",
-    "target_id": "vnd-017",
-    "weight": 1.0,
-    "confidence": 0.9,
-    "properties": {
-      "source": "rDNS 72.3.128.0/24: cisco-guard2-3.dfw1.rackspace.net; int-0367",
-      "date_discovered": "2026-02-25",
-      "rationale": "Cisco Guard appliances are the secondary DDoS mitigation platform in sys-043, confirmed by rDNS hostnames cisco-guard2-3.dfw1.rackspace.net alongside Arbor appliances"
     }
   },
   {
@@ -155,38 +119,6 @@
     }
   },
   {
-    "created_at": "2026-03-04T08:49:45.555487Z",
-    "updated_at": "2026-03-04T08:49:45.555487Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "4801ba0b-09da-4954-bd8b-76c15944a425",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-055",
-    "target_id": "vnd-015",
-    "weight": 0.9,
-    "confidence": 0.85,
-    "properties": {
-      "rationale": "Site Firewall Clusters (sys-055) include Palo Alto NGFWs \u2014 role-061 Network Security Engineer explicitly names Palo Alto alongside Fortinet and Cisco ASA as firewall platforms. Source: role-061 job description"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555533Z",
-    "updated_at": "2026-03-04T08:49:45.555533Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "cd30d828-7939-4567-a74c-c4897e310bfa",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-055",
-    "target_id": "vnd-017",
-    "weight": 0.9,
-    "confidence": 0.85,
-    "properties": {
-      "rationale": "Site Firewall Clusters include Cisco ASA appliances \u2014 role-061 Network Security Engineer lists Cisco ASA explicitly; ctl-020 references Cisco ACS for TACACS network device access control. Source: role-061, ctl-020"
-    }
-  },
-  {
     "created_at": "2026-02-25T19:32:26.969381Z",
     "updated_at": "2026-02-25T19:32:26.969383Z",
     "valid_from": null,
@@ -216,22 +148,6 @@
     "confidence": 0.9,
     "properties": {
       "rationale": "AI Business Platform runs on HPE ProLiant servers with NVIDIA GPUs. Source: rackspace.com/newsroom AI Business Mar 2025"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555240Z",
-    "updated_at": "2026-03-04T08:49:45.555243Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "dedfb5f1-3d0a-483f-acee-2bf0aac01dd5",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-065",
-    "target_id": "vnd-018",
-    "weight": 1.0,
-    "confidence": 0.98,
-    "properties": {
-      "rationale": "Splunk Enterprise Security SIEM (sys-065) is the Splunk product \u2014 explicit named product from vendor. Source: SOC 3 FY2024 SIEM reference, int-0337/0342/0343 Splunk ingestion integrations, ctl-050 Splunk SIEM control"
     }
   },
   {
@@ -332,103 +248,6 @@
     "confidence": 0.95,
     "properties": {
       "rationale": "Zerto IT Resilience Platform (sys-113) is Zerto software. Confirmed via docs.rackspace.com/docs/zerto-disaster-recovery"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555409Z",
-    "updated_at": "2026-03-04T08:49:45.555409Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "cb8f2660-66b6-4455-afba-fbc3607652f9",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-115",
-    "target_id": "vnd-005",
-    "weight": 1.0,
-    "confidence": 0.98,
-    "properties": {
-      "rationale": "VMware vCenter Server is a VMware/Broadcom product. Source: docs.rackspace.com/docs/add-ons (VVD/WLD architecture)"
-    }
-  },
-  {
-    "created_at": "2026-03-04T17:15:19.813839Z",
-    "updated_at": "2026-03-04T17:15:19.813841Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "305e53a0-29f9-46cf-9942-cdefc2121346",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-116",
-    "target_id": "vnd-003",
-    "weight": 1.0,
-    "confidence": 1.0,
-    "properties": {
-      "stage": "6.3-6.4",
-      "description": "VMware vSphere system supplied by Broadcom (post-acquisition Nov 2023, pricing increases 200-300%)"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555376Z",
-    "updated_at": "2026-03-04T08:49:45.555377Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "a06e2240-9bae-4218-a1ae-5557fc1f0601",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-117",
-    "target_id": "vnd-005",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "rationale": "VMware vSphere Replication is a VMware/Broadcom product used in SDDC DR architecture. Source: docs.rackspace.com/docs/add-ons"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555341Z",
-    "updated_at": "2026-03-04T08:49:45.555342Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "eb8bfccb-3e84-44fe-9a5c-278ffddc9697",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-120",
-    "target_id": "vnd-005",
-    "weight": 1.0,
-    "confidence": 0.9,
-    "properties": {
-      "rationale": "VMware vRealize Operations is a VMware/Broadcom product for SDDC performance monitoring. Source: docs.rackspace.com SDDC product docs"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555360Z",
-    "updated_at": "2026-03-04T08:49:45.555361Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "d7728c5f-b53e-4645-82bc-f320ce061a96",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-121",
-    "target_id": "vnd-005",
-    "weight": 1.0,
-    "confidence": 0.9,
-    "properties": {
-      "rationale": "VMware vRealize Log Insight is a VMware/Broadcom log management product for SDDC. Source: docs.rackspace.com SDDC product docs"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555425Z",
-    "updated_at": "2026-03-04T08:49:45.555425Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "deef363c-8513-484d-a7a5-329e753260c4",
-    "relationship_type": "supplied_by",
-    "source_id": "sys-126",
-    "target_id": "vnd-005",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "rationale": "VMware NSX Network Virtualization is a VMware/Broadcom product \u2014 core to SDDC WLD architecture. Source: docs.rackspace.com/docs/add-ons"
     }
   },
   {
