@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.236591Z",
-    "updated_at": "2026-02-25T19:01:57.236591Z",
+    "updated_at": "2026-03-04T08:43:35.685849Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "loc-001",
     "entity_type": "location",
     "name": "Global Headquarters - RidgeWood Plaza II",
@@ -21,28 +21,43 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "10-K FY2024, TPR",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.236597Z",
-    "updated_at": "2026-02-25T19:01:57.236597Z",
+    "updated_at": "2026-03-04T08:43:36.412724Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "loc-002",
     "entity_type": "location",
     "name": "Reston Office",
@@ -59,28 +74,43 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.236599Z",
-    "updated_at": "2026-02-25T19:01:57.236599Z",
+    "updated_at": "2026-03-04T08:43:56.214410Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "loc-003",
     "entity_type": "location",
     "name": "Austin Office",
@@ -97,28 +127,43 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.236601Z",
-    "updated_at": "2026-02-25T19:01:57.236601Z",
+    "updated_at": "2026-03-04T08:43:57.107675Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "loc-004",
     "entity_type": "location",
     "name": "DFW3 - Dallas/Fort Worth Data Center",
@@ -135,20 +180,35 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "baxtel",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -173,20 +233,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "Wikipedia (Windsor Park Mall)",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "Wikipedia (Windsor Park Mall); Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -211,20 +286,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -249,20 +339,35 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -287,20 +392,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "cloudandcolocation",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "cloudandcolocation; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -325,20 +445,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "cloudandcolocation",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "cloudandcolocation; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -363,20 +498,35 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -401,20 +551,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -439,20 +604,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "cloudandcolocation",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "cloudandcolocation; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -477,20 +657,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "baxtel",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "baxtel; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -515,20 +710,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -553,20 +763,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -591,20 +816,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -629,20 +869,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -667,20 +922,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -705,20 +975,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -743,20 +1028,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -781,20 +1081,35 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -819,20 +1134,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -857,20 +1187,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -895,20 +1240,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -933,20 +1293,35 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -971,20 +1346,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1009,20 +1399,35 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1047,20 +1452,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1085,20 +1505,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1123,20 +1558,35 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "baxtel",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "baxtel; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1161,20 +1611,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1199,20 +1664,35 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "docs",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "docs; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1237,20 +1717,35 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1275,20 +1770,35 @@
     "is_primary": true,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1313,20 +1823,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1351,20 +1876,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1389,20 +1929,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1427,20 +1982,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1465,20 +2035,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1503,20 +2088,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1541,20 +2141,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1579,20 +2194,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1617,20 +2247,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1655,20 +2300,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1693,20 +2353,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "capedge",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "capedge; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   },
   {
@@ -1731,20 +2406,35 @@
     "is_primary": false,
     "security_level": "standard",
     "has_physical_security": true,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 55.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "datacenterlocations; Rackspace Technology 10-K FY2024 Properties section; data center specifications",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "coordinates",
+          "gap_description": "Geographic coordinates not populated",
+          "remediation_plan": "Geocode from address data",
+          "priority": "Low"
+        }
+      ]
     }
   }
 ]

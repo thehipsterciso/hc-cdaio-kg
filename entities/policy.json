@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.240293Z",
-    "updated_at": "2026-02-25T19:01:57.240294Z",
+    "updated_at": "2026-03-04T08:42:07.310041Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-001",
     "entity_type": "policy",
     "name": "Information Security Management Policy",
@@ -88,26 +88,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_scope",
+          "gap_description": "Policy scope field is empty",
+          "remediation_plan": "Fill from policy documentation",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240312Z",
-    "updated_at": "2026-02-25T19:01:57.240312Z",
+    "updated_at": "2026-03-04T08:42:35.402546Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-002",
     "entity_type": "policy",
     "name": "Code of Conduct and Business Ethics",
@@ -191,26 +198,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_status",
+          "gap_description": "Policy status field is empty",
+          "remediation_plan": "Fill policy_status from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240321Z",
-    "updated_at": "2026-02-25T19:01:57.240321Z",
+    "updated_at": "2026-03-04T08:42:37.009276Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-003",
     "entity_type": "policy",
     "name": "Corporate Governance Guidelines",
@@ -294,26 +308,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_owner",
+          "gap_description": "Policy owner assignment is missing",
+          "remediation_plan": "Fill policy_owner from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240343Z",
-    "updated_at": "2026-02-25T19:01:57.240343Z",
+    "updated_at": "2026-03-04T08:42:38.275625Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-004",
     "entity_type": "policy",
     "name": "Global Speak Up Policy",
@@ -397,26 +418,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "approving_authority",
+          "gap_description": "Approving authority is not documented",
+          "remediation_plan": "Fill approving_authority from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240350Z",
-    "updated_at": "2026-02-25T19:01:57.240350Z",
+    "updated_at": "2026-03-04T08:42:39.834010Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-005",
     "entity_type": "policy",
     "name": "Acceptable Use Policy",
@@ -500,26 +528,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "approval_date",
+          "gap_description": "Approval date is missing",
+          "remediation_plan": "Fill approval_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240358Z",
-    "updated_at": "2026-02-25T19:01:57.240358Z",
+    "updated_at": "2026-03-04T08:42:41.498245Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-006",
     "entity_type": "policy",
     "name": "Privacy Notice",
@@ -603,26 +638,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "last_reviewed_date",
+          "gap_description": "Last review date is missing",
+          "remediation_plan": "Fill last_reviewed_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240364Z",
-    "updated_at": "2026-02-25T19:01:57.240364Z",
+    "updated_at": "2026-03-04T08:42:42.914737Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-007",
     "entity_type": "policy",
     "name": "Customer Data Processing Addendum",
@@ -706,26 +748,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "next_review_date",
+          "gap_description": "Next review date is missing",
+          "remediation_plan": "Fill next_review_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240371Z",
-    "updated_at": "2026-02-25T19:01:57.240371Z",
+    "updated_at": "2026-03-04T08:42:44.537847Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-008",
     "entity_type": "policy",
     "name": "UK Tax Strategy",
@@ -809,26 +858,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Enforcement mechanism details are incomplete",
+          "remediation_plan": "Fill enforcement_mechanism from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240390Z",
-    "updated_at": "2026-02-25T19:01:57.240390Z",
+    "updated_at": "2026-03-04T08:42:46.026158Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-009",
     "entity_type": "policy",
     "name": "Security Vulnerability Reporting Policy",
@@ -912,26 +968,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "compliance_measurement",
+          "gap_description": "Compliance measurement criteria are not defined",
+          "remediation_plan": "Fill compliance_measurement from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240397Z",
-    "updated_at": "2026-02-25T19:01:57.240397Z",
+    "updated_at": "2026-03-04T08:42:47.453209Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-010",
     "entity_type": "policy",
     "name": "Law Enforcement Request Policy",
@@ -1015,26 +1078,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "framework_alignment",
+          "gap_description": "Framework alignment documentation is incomplete",
+          "remediation_plan": "Fill framework_alignment from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240404Z",
-    "updated_at": "2026-02-25T19:01:57.240404Z",
+    "updated_at": "2026-03-04T08:42:51.179486Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-011",
     "entity_type": "policy",
     "name": "Access Control Policy",
@@ -1118,26 +1188,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_scope",
+          "gap_description": "Policy scope field is empty",
+          "remediation_plan": "Fill policy_scope from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240410Z",
-    "updated_at": "2026-02-25T19:01:57.240410Z",
+    "updated_at": "2026-03-04T08:42:52.233208Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-012",
     "entity_type": "policy",
     "name": "Incident Response Policy",
@@ -1221,26 +1298,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_status",
+          "gap_description": "Policy status field is empty",
+          "remediation_plan": "Fill policy_status from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240417Z",
-    "updated_at": "2026-02-25T19:01:57.240418Z",
+    "updated_at": "2026-03-04T08:42:53.677176Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-013",
     "entity_type": "policy",
     "name": "Physical Security Policy",
@@ -1324,26 +1408,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_owner",
+          "gap_description": "Policy owner assignment is missing",
+          "remediation_plan": "Fill policy_owner from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240424Z",
-    "updated_at": "2026-02-25T19:01:57.240425Z",
+    "updated_at": "2026-03-04T08:42:55.047632Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-014",
     "entity_type": "policy",
     "name": "Human Resources Security Policy",
@@ -1427,26 +1518,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "approving_authority",
+          "gap_description": "Approving authority is not documented",
+          "remediation_plan": "Fill approving_authority from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240432Z",
-    "updated_at": "2026-02-25T19:01:57.240432Z",
+    "updated_at": "2026-03-04T08:42:56.725457Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-015",
     "entity_type": "policy",
     "name": "Critical Infrastructure Protection Policy",
@@ -1530,26 +1628,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "approval_date",
+          "gap_description": "Approval date is missing",
+          "remediation_plan": "Fill approval_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240438Z",
-    "updated_at": "2026-02-25T19:01:57.240438Z",
+    "updated_at": "2026-03-04T08:42:58.206072Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-016",
     "entity_type": "policy",
     "name": "Data Classification Policy",
@@ -1633,26 +1738,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "last_reviewed_date",
+          "gap_description": "Last review date is missing",
+          "remediation_plan": "Fill last_reviewed_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240444Z",
-    "updated_at": "2026-02-25T19:01:57.240444Z",
+    "updated_at": "2026-03-04T08:42:59.625810Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-017",
     "entity_type": "policy",
     "name": "Cryptographic Controls and Key Management Policy",
@@ -1736,26 +1848,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "next_review_date",
+          "gap_description": "Next review date is missing",
+          "remediation_plan": "Fill next_review_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240451Z",
-    "updated_at": "2026-02-25T19:01:57.240451Z",
+    "updated_at": "2026-03-04T08:43:01.051287Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-018",
     "entity_type": "policy",
     "name": "Network Security Policy",
@@ -1839,26 +1958,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Enforcement mechanism details are incomplete",
+          "remediation_plan": "Fill enforcement_mechanism from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240457Z",
-    "updated_at": "2026-02-25T19:01:57.240457Z",
+    "updated_at": "2026-03-04T08:43:02.762971Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-019",
     "entity_type": "policy",
     "name": "Change Management Policy",
@@ -1942,26 +2068,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ISO 27001:2022 Annex A, PCI DSS v4",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "compliance_measurement",
+          "gap_description": "Compliance measurement criteria are not defined",
+          "remediation_plan": "Fill compliance_measurement from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240463Z",
-    "updated_at": "2026-02-25T19:01:57.240463Z",
+    "updated_at": "2026-03-04T08:43:04.028637Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-020",
     "entity_type": "policy",
     "name": "Business Continuity and Disaster Recovery Policy",
@@ -2045,26 +2178,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "10-K FY2024, ISO 27001:2022 Annex A, NIST 800-53 CP",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "framework_alignment",
+          "gap_description": "Framework alignment documentation is incomplete",
+          "remediation_plan": "Fill framework_alignment from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240471Z",
-    "updated_at": "2026-02-25T19:01:57.240471Z",
+    "updated_at": "2026-03-04T08:43:08.492384Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-021",
     "entity_type": "policy",
     "name": "Vulnerability Management Policy",
@@ -2148,26 +2288,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_scope",
+          "gap_description": "Policy scope field is empty",
+          "remediation_plan": "Fill policy_scope from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240477Z",
-    "updated_at": "2026-02-25T19:01:57.240477Z",
+    "updated_at": "2026-03-04T08:43:09.612425Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-022",
     "entity_type": "policy",
     "name": "Logging and Monitoring Policy",
@@ -2251,26 +2398,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_status",
+          "gap_description": "Policy status field is empty",
+          "remediation_plan": "Fill policy_status from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240494Z",
-    "updated_at": "2026-02-25T19:01:57.240495Z",
+    "updated_at": "2026-03-04T17:29:06.898239Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "pol-023",
     "entity_type": "policy",
     "name": "Asset Management Policy",
@@ -2356,24 +2510,24 @@
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "ISO 27001:2022 Annex A, NIST 800-53",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.control_constraints.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240502Z",
-    "updated_at": "2026-02-25T19:01:57.240502Z",
+    "updated_at": "2026-03-04T08:43:11.857395Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-024",
     "entity_type": "policy",
     "name": "Third-Party Risk Management Policy",
@@ -2457,26 +2611,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "10-K FY2024 Item 1C, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "approving_authority",
+          "gap_description": "Approving authority is not documented",
+          "remediation_plan": "Fill approving_authority from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240509Z",
-    "updated_at": "2026-02-25T19:01:57.240509Z",
+    "updated_at": "2026-03-04T08:43:13.433649Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-025",
     "entity_type": "policy",
     "name": "Security Awareness and Training Policy",
@@ -2560,26 +2721,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "10-K FY2024 Item 1C, ISO 27001:2022 Annex A, NIST 800-53 AT",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "approval_date",
+          "gap_description": "Approval date is missing",
+          "remediation_plan": "Fill approval_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240516Z",
-    "updated_at": "2026-02-25T19:01:57.240516Z",
+    "updated_at": "2026-03-04T08:43:15.072579Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-026",
     "entity_type": "policy",
     "name": "Data Retention and Disposal Policy",
@@ -2663,26 +2831,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "last_reviewed_date",
+          "gap_description": "Last review date is missing",
+          "remediation_plan": "Fill last_reviewed_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240523Z",
-    "updated_at": "2026-02-25T19:01:57.240523Z",
+    "updated_at": "2026-03-04T08:43:16.639611Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-027",
     "entity_type": "policy",
     "name": "Breach Notification Policy",
@@ -2766,26 +2941,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "GDPR Art 33-34, SEC Cyber Rule, TX ITEPA \u00a7521",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "next_review_date",
+          "gap_description": "Next review date is missing",
+          "remediation_plan": "Fill next_review_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240531Z",
-    "updated_at": "2026-02-25T19:01:57.240531Z",
+    "updated_at": "2026-03-04T08:43:18.001945Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-028",
     "entity_type": "policy",
     "name": "Cybersecurity Risk Management Policy",
@@ -2869,26 +3051,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "10-K FY2024 Item 1C, 10-K FY2023 Item 1C",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Enforcement mechanism details are incomplete",
+          "remediation_plan": "Fill enforcement_mechanism from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240538Z",
-    "updated_at": "2026-02-25T19:01:57.240538Z",
+    "updated_at": "2026-03-04T08:43:19.054924Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-029",
     "entity_type": "policy",
     "name": "Endpoint Security Policy",
@@ -2972,26 +3161,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "compliance_measurement",
+          "gap_description": "Compliance measurement criteria are not defined",
+          "remediation_plan": "Fill compliance_measurement from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240546Z",
-    "updated_at": "2026-02-25T19:01:57.240546Z",
+    "updated_at": "2026-03-04T08:43:20.098300Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-030",
     "entity_type": "policy",
     "name": "Secure Development Lifecycle Policy",
@@ -3075,26 +3271,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "framework_alignment",
+          "gap_description": "Framework alignment documentation is incomplete",
+          "remediation_plan": "Fill framework_alignment from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240552Z",
-    "updated_at": "2026-02-25T19:01:57.240552Z",
+    "updated_at": "2026-03-04T08:43:38.924483Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-031",
     "entity_type": "policy",
     "name": "Identity and Authentication Management Policy",
@@ -3178,26 +3381,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "NIST 800-53 IA family, PCI DSS v4",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_scope",
+          "gap_description": "Policy scope field is empty",
+          "remediation_plan": "Fill policy_scope from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240560Z",
-    "updated_at": "2026-02-25T19:01:57.240560Z",
+    "updated_at": "2026-03-04T08:43:40.297771Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-032",
     "entity_type": "policy",
     "name": "Cloud Security Policy",
@@ -3281,26 +3491,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_status",
+          "gap_description": "Policy status field is empty",
+          "remediation_plan": "Fill policy_status from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240568Z",
-    "updated_at": "2026-02-25T19:01:57.240568Z",
+    "updated_at": "2026-03-04T08:43:41.759655Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-033",
     "entity_type": "policy",
     "name": "Media Handling and Disposal Policy",
@@ -3384,26 +3601,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ISO 27001:2022 Annex A, NIST 800-53 MP",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_owner",
+          "gap_description": "Policy owner assignment is missing",
+          "remediation_plan": "Fill policy_owner from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240574Z",
-    "updated_at": "2026-02-25T19:01:57.240575Z",
+    "updated_at": "2026-03-04T08:43:43.042076Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-034",
     "entity_type": "policy",
     "name": "Backup and Recovery Policy",
@@ -3487,26 +3711,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "docs",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "approving_authority",
+          "gap_description": "Approving authority is not documented",
+          "remediation_plan": "Fill approving_authority from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240582Z",
-    "updated_at": "2026-02-25T19:01:57.240582Z",
+    "updated_at": "2026-03-04T08:43:44.084244Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-035",
     "entity_type": "policy",
     "name": "Threat Intelligence Policy",
@@ -3590,26 +3821,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "approval_date",
+          "gap_description": "Approval date is missing",
+          "remediation_plan": "Fill approval_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240589Z",
-    "updated_at": "2026-02-25T19:01:57.240589Z",
+    "updated_at": "2026-03-04T08:43:45.163973Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-036",
     "entity_type": "policy",
     "name": "Configuration Management Policy",
@@ -3693,26 +3931,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ISO 27001:2022 A",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "last_reviewed_date",
+          "gap_description": "Last review date is missing",
+          "remediation_plan": "Fill last_reviewed_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240608Z",
-    "updated_at": "2026-02-25T19:01:57.240608Z",
+    "updated_at": "2026-03-04T08:43:46.361069Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-037",
     "entity_type": "policy",
     "name": "Data Leak Prevention Policy",
@@ -3796,26 +4041,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ISO 27001:2022 A",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "next_review_date",
+          "gap_description": "Next review date is missing",
+          "remediation_plan": "Fill next_review_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240616Z",
-    "updated_at": "2026-02-25T19:01:57.240616Z",
+    "updated_at": "2026-03-04T08:43:47.473839Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-038",
     "entity_type": "policy",
     "name": "Export Control and Sanctions Compliance Policy",
@@ -3899,26 +4151,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Enforcement mechanism details are incomplete",
+          "remediation_plan": "Fill enforcement_mechanism from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240623Z",
-    "updated_at": "2026-02-25T19:01:57.240623Z",
+    "updated_at": "2026-03-04T08:43:48.746322Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-039",
     "entity_type": "policy",
     "name": "Internal Audit and Compliance Monitoring Policy",
@@ -4002,26 +4261,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "compliance_measurement",
+          "gap_description": "Compliance measurement criteria are not defined",
+          "remediation_plan": "Fill compliance_measurement from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240630Z",
-    "updated_at": "2026-02-25T19:01:57.240630Z",
+    "updated_at": "2026-03-04T08:43:49.673427Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-040",
     "entity_type": "policy",
     "name": "Data Privacy Impact Assessment Policy",
@@ -4105,26 +4371,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "GDPR Art 35, UK Data Protection Act 2018",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "framework_alignment",
+          "gap_description": "Framework alignment documentation is incomplete",
+          "remediation_plan": "Fill framework_alignment from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240638Z",
-    "updated_at": "2026-02-25T19:01:57.240638Z",
+    "updated_at": "2026-03-04T08:44:06.387297Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-041",
     "entity_type": "policy",
     "name": "Insider Threat Policy",
@@ -4208,26 +4481,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "NIST 800-53 PM-12, CMMC Level 2",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_scope",
+          "gap_description": "Policy scope field is empty",
+          "remediation_plan": "Fill policy_scope from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240644Z",
-    "updated_at": "2026-02-25T19:01:57.240645Z",
+    "updated_at": "2026-03-04T08:44:07.423790Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-042",
     "entity_type": "policy",
     "name": "Controlled Unclassified Information Handling Policy",
@@ -4311,26 +4591,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "DFARS 252",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_status",
+          "gap_description": "Policy status field is empty",
+          "remediation_plan": "Fill policy_status from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240651Z",
-    "updated_at": "2026-02-25T19:01:57.240651Z",
+    "updated_at": "2026-03-04T08:44:08.541330Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-043",
     "entity_type": "policy",
     "name": "Environmental and Sustainability Policy",
@@ -4414,26 +4701,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "policy_owner",
+          "gap_description": "Policy owner assignment is missing",
+          "remediation_plan": "Fill policy_owner from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240657Z",
-    "updated_at": "2026-02-25T19:01:57.240658Z",
+    "updated_at": "2026-03-04T08:44:09.418753Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-044",
     "entity_type": "policy",
     "name": "PCI Cardholder Data Environment Policy",
@@ -4517,26 +4811,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "approving_authority",
+          "gap_description": "Approving authority is not documented",
+          "remediation_plan": "Fill approving_authority from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240665Z",
-    "updated_at": "2026-02-25T19:01:57.240665Z",
+    "updated_at": "2026-03-04T08:44:10.068814Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-045",
     "entity_type": "policy",
     "name": "HIPAA Security and Privacy Policy",
@@ -4620,26 +4921,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "approval_date",
+          "gap_description": "Approval date is missing",
+          "remediation_plan": "Fill approval_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240672Z",
-    "updated_at": "2026-02-25T19:01:57.240672Z",
+    "updated_at": "2026-03-04T08:44:10.702287Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-046",
     "entity_type": "policy",
     "name": "FedRAMP Continuous Monitoring Policy",
@@ -4723,26 +5031,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "last_reviewed_date",
+          "gap_description": "Last review date is missing",
+          "remediation_plan": "Fill last_reviewed_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240681Z",
-    "updated_at": "2026-02-25T19:01:57.240681Z",
+    "updated_at": "2026-03-04T08:44:11.184984Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-047",
     "entity_type": "policy",
     "name": "Artificial Intelligence Governance Policy",
@@ -4826,26 +5141,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "Regulation (EU) 2024/1689, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "next_review_date",
+          "gap_description": "Next review date is missing",
+          "remediation_plan": "Fill next_review_date from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240687Z",
-    "updated_at": "2026-02-25T19:01:57.240687Z",
+    "updated_at": "2026-03-04T08:44:12.144658Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-048",
     "entity_type": "policy",
     "name": "Supplier Data Processing Agreement Policy",
@@ -4929,26 +5251,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "Rackspace Supplier DPA (docecity",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Enforcement mechanism details are incomplete",
+          "remediation_plan": "Fill enforcement_mechanism from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240695Z",
-    "updated_at": "2026-02-25T19:01:57.240695Z",
+    "updated_at": "2026-03-04T08:44:12.924832Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-049",
     "entity_type": "policy",
     "name": "Patch Management Policy",
@@ -5032,26 +5361,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "PCI DSS v4",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "compliance_measurement",
+          "gap_description": "Compliance measurement criteria are not defined",
+          "remediation_plan": "Fill compliance_measurement from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.240701Z",
-    "updated_at": "2026-02-25T19:01:57.240702Z",
+    "updated_at": "2026-03-04T08:44:13.792732Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-050",
     "entity_type": "policy",
     "name": "Cross-Border Data Transfer Policy",
@@ -5135,18 +5471,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones, AI Enrichment Service",
+      "assessment_methodology": "SEC filings analysis, framework alignment verification",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "framework_alignment",
+          "gap_description": "Framework alignment documentation is incomplete",
+          "remediation_plan": "Fill framework_alignment from policy documentation and approval records",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
@@ -5238,18 +5581,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SOX Section 802, SEC Record Retention Rules",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5341,18 +5691,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "10-K FY2024 Item 1C, SEC Release 33-11216",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5444,18 +5801,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5547,18 +5911,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5650,18 +6021,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5753,18 +6131,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5856,18 +6241,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "zerotaxjobs",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "zerotaxjobs; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5959,18 +6351,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6062,18 +6461,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6165,18 +6571,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SDM job posting, ITIL 4 Service Catalog Management",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6268,18 +6681,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6371,18 +6791,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6474,18 +6901,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6577,18 +7011,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6680,18 +7121,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "AICPA SOC 2 Trust Services Criteria A1",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6783,18 +7231,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "ISO 27001:2022 Clause 10, ITIL 4 Continual Improvement",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6886,18 +7341,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "10-K FY2024 (Rackspace Fabric description), industry standard for technology companies",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6989,18 +7451,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ISO 27001:2022 A",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "ISO 27001:2022 A; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7092,26 +7561,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "docs",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "docs; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.241048Z",
-    "updated_at": "2026-02-25T19:01:57.241048Z",
+    "updated_at": "2026-03-04T17:29:07.503620Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-070",
     "entity_type": "policy",
     "name": "Source Code Management and Intellectual Property Policy",
@@ -7197,24 +7673,24 @@
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "SOX Section 404, trade secret law",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.control_constraints.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.241055Z",
-    "updated_at": "2026-02-25T19:01:57.241055Z",
+    "updated_at": "2026-03-04T17:29:08.248185Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pol-071",
     "entity_type": "policy",
     "name": "Data Governance Policy",
@@ -7300,14 +7776,14 @@
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.control_constraints.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
@@ -7401,18 +7877,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Industry best practice, SOX financial data integrity requirements",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7504,18 +7987,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Industry best practice for enterprise data management",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7607,18 +8097,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Rackspace managed database service portfolio",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7710,18 +8207,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SOX Section 302/404, PCAOB AS 2201",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7813,18 +8317,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Exchange Act Section 16, SEC Rule 10b-5",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7916,18 +8427,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "ASC 606, 10-K FY2024 Note 2 (Revenue Recognition)",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8019,18 +8537,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SOX Section 302, SEC Regulation FD",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8122,18 +8647,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SOX Section 404 internal controls, industry standard",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8225,18 +8757,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SOX Section 404, industry best practice",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8328,18 +8867,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "2021 ESG Report, HRC Corporate Equality Index",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8431,18 +8977,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "2021 ESG Report, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "2021 ESG Report, rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8534,18 +9087,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Title VII, state employment laws, industry standard for 9,000+ employee enterprise",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8637,18 +9197,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "2021 ESG Report, Parents@Work recognition",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8740,18 +9307,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ISO 27001:2022 Annex A",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "ISO 27001:2022 Annex A; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8843,18 +9417,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "FCPA, UK Bribery Act 2010, Code of Conduct",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8946,18 +9527,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "10-K FY2024, DEF 14A proxy statement",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9049,18 +9637,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9152,18 +9747,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9255,18 +9857,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9358,18 +9967,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9461,18 +10077,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Industry standard for NASDAQ-listed company, SEC Regulation FD considerations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9564,18 +10187,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9667,18 +10297,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Industry standard for global enterprise brand management",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9770,18 +10407,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "ADA Title III, Section 508, WCAG 2",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9873,18 +10517,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9976,18 +10627,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10079,18 +10737,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Industry standard for enterprise legal operations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10182,18 +10847,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10285,18 +10957,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10388,18 +11067,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10491,18 +11177,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "2021 ESG Report, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "2021 ESG Report, rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10594,18 +11287,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10697,18 +11397,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SOX Section 802, IRS document retention requirements",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10800,18 +11507,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Industry standard, post-incident lessons learned",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10903,18 +11617,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11006,18 +11727,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SOX Section 404 internal controls",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11109,18 +11837,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SEC Regulation S-K Item 404, SOX",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11212,18 +11947,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11315,18 +12057,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11418,18 +12167,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "docs",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "docs; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11521,18 +12277,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Rackspace Fanatical Experience brand, service delivery model",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11624,18 +12387,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "10-K FY2024 (data center operations), industry standard for colocation/hosting provider",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11727,18 +12497,989 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ISO 27001:2022 A",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "ISO 27001:2022 A; Rackspace internal policy framework aligned to ISO 27001/NIST CSF; rackspace.com/security compliance documentation",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "enforcement_mechanism",
+          "gap_description": "Policy enforcement mechanism, compliance measurement, and training requirements not populated",
+          "remediation_plan": "Align with GRC platform policy management module during next review cycle",
+          "priority": "Medium"
+        }
+      ]
+    }
+  },
+  {
+    "created_at": "2026-03-04T17:15:15.170561Z",
+    "updated_at": "2026-03-04T17:15:15.170563Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "d7429305-8f31-4180-bbc4-0ced26bcdb00",
+    "entity_type": "policy",
+    "name": "SBTi Science-Based Targets Initiative Validation",
+    "description": "Rackspace obtained SBTi validation of near-term (50% reduction by 2032) and long-term (90% by 2045, net-zero by 2045) GHG targets. Required for UK government procurement eligibility >\u00a35M contracts. Requires 5-year revalidation.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.esg_operating_constraints.json; stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.capital_and_deal_blockers.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "enforcer": "SBTi",
+    "revalidation_years": 5,
+    "uk_procurement_threshold_gbp_m": 5,
+    "near_term_target_pct": 50,
+    "long_term_target_pct": 90
+  },
+  {
+    "created_at": "2026-03-04T17:15:17.028339Z",
+    "updated_at": "2026-03-04T17:15:17.028341Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8b299ecf-6362-4064-aac6-9240a9ef136f",
+    "entity_type": "policy",
+    "name": "UK Procurement Policy Note 06/21 - Carbon Reduction Plans",
+    "description": "Mandatory Carbon Reduction Plan (CRP) for UK public sector suppliers bidding contracts >\u00a35M annually. Must demonstrate net-zero commitment, baseline emissions, reduction targets, and planned actions. Non-compliance = automatic disqualification.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
       "assessment_methodology": "",
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "jurisdiction": "UK",
+    "enforcer": "UK_Cabinet_Office",
+    "threshold_gbp_m": 5,
+    "requirement_type": "MANDATORY_PREQUALIFICATION",
+    "update_frequency": "ANNUAL"
+  },
+  {
+    "created_at": "2026-03-04T17:15:18.308172Z",
+    "updated_at": "2026-03-04T17:15:18.308173Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ec667e1a-57e9-40e9-90c2-878d1fd1d30d",
+    "entity_type": "policy",
+    "name": "UK Procurement Act 2023 - Environmental Misconduct Exclusion",
+    "description": "Effective February 24, 2025. Allows UK public sector procuring authorities to exclude suppliers for poor environmental performance. Enables retroactive enforcement against existing contractors if ESG metrics regress or commitments unmet.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": "2025-02-24",
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "UK",
+    "exclusion_trigger": "poor_environmental_performance",
+    "enforcement": "RETROACTIVE",
+    "scope": "existing_contracts"
+  },
+  {
+    "created_at": "2026-03-04T17:15:20.066963Z",
+    "updated_at": "2026-03-04T17:15:20.066965Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "980780b9-a659-4aea-8454-0a8f710752ff",
+    "entity_type": "policy",
+    "name": "FedRAMP Continuous Monitoring Authorization",
+    "description": "Requires US citizen security team for 800+ NIST 800-53 controls. Continuous monitoring with critical findings 1 hour, high findings 24 hours reporting. Change of control invalidates immediately. Government revenue $270-410M depends on active authorization.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "FedRAMP",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "us_citizen_requirement": true,
+    "controls_monitored": 800,
+    "critical_reporting_sla_hours": 1,
+    "invalidation_trigger": "change_of_control"
+  },
+  {
+    "created_at": "2026-03-04T17:15:21.620529Z",
+    "updated_at": "2026-03-04T17:15:21.620531Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7606c54a-5370-4987-9a51-48666ef4d303",
+    "entity_type": "policy",
+    "name": "Minnesota Data Center Environmental Regulations (2024-2025)",
+    "description": "Requires data center developers to partner with Minnesota Department of Natural Resources BEFORE construction. Mandatory closed-loop cooling systems. Water supply verification required. Blocks construction permits without compliance.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "Minnesota",
+    "enforcer": "MN_Department_Natural_Resources",
+    "requirement": "closed_loop_cooling",
+    "trigger": "new_construction_or_major_expansion"
+  },
+  {
+    "created_at": "2026-03-04T17:15:22.800500Z",
+    "updated_at": "2026-03-04T17:15:22.800502Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "0b5e9860-2e8a-439a-bb52-aa5746cfe9be",
+    "entity_type": "policy",
+    "name": "California SB 58 Data Center Sustainability Tax Credits (January 2025)",
+    "description": "Provides tax credits for data centers adopting sustainable practices: 70%+ carbon-free energy, water-efficient cooling systems. Rackspace operating CA data centers may qualify for credits if meeting thresholds.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": "2025-01-01",
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.esg_operating_constraints.json; stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.capital_and_deal_blockers.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "California",
+    "carbon_free_requirement_pct": 70,
+    "incentive_type": "tax_credit"
+  },
+  {
+    "created_at": "2026-03-04T17:15:24.481469Z",
+    "updated_at": "2026-03-04T17:15:24.481471Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "77a74242-f252-40a5-b188-78fb9d66e7f8",
+    "entity_type": "policy",
+    "name": "AIM Act - HFC Refrigerant Phasedown 2036",
+    "description": "Federal mandate: 85% phasedown of high-GWP HFC refrigerants by 2036. Cooling system retrofits or replacements required. SNAP program identifies 70 prohibited/restricted cooling substances. Affects data center cooling systems across US.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "scope": "US_Federal",
+    "phasedown_deadline": 2036,
+    "phasedown_pct": 85,
+    "affected_systems": "data_center_cooling"
+  },
+  {
+    "created_at": "2026-03-04T17:15:27.299194Z",
+    "updated_at": "2026-03-04T17:15:27.299196Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "33ddc681-7229-463f-ad74-e5a307fc5d00",
+    "entity_type": "policy",
+    "name": "FCA ESG Disclosure Rules and PRA Climate Risk Requirements",
+    "description": "UK regulated financial services firms (FCA/PRA) must report supply chain sustainability and financed emissions. Creates pass-through enforcement: customer's ESG compliance depends on supplier (Rackspace) sustainability. Affects UK Sovereign financial services customers.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.esg_operating_constraints.json; stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.capital_and_deal_blockers.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "UK",
+    "enforcer": "FCA_PRA",
+    "scope": "regulated_financial_services",
+    "requirement": "supply_chain_sustainability_reporting"
+  },
+  {
+    "created_at": "2026-03-04T17:15:28.922329Z",
+    "updated_at": "2026-03-04T17:15:28.922331Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8e260f41-453b-4aba-a716-3e6ab5edc41f",
+    "entity_type": "policy",
+    "name": "EU CSRD Corporate Sustainability Reporting Directive",
+    "description": "Corporate Sustainability Reporting Directive requires supply chain due diligence. EU customers must report Scope 3 (supply chain) emissions. EU data centers 20-30% of Rackspace revenue. Sustainability audit enforcement via customer compliance requirements.",
+    "tags": [],
+    "metadata": {},
+    "policy_type": "",
+    "framework": "",
+    "control_id": "",
+    "severity": "medium",
+    "is_enforced": true,
+    "review_frequency_days": 365,
+    "owner_id": null,
+    "applicable_systems": [],
+    "policy_id": "",
+    "policy_scope": "",
+    "policy_status": "",
+    "policy_owner": "",
+    "policy_author": "",
+    "approving_authority": "",
+    "approval_date": null,
+    "effective_date": null,
+    "review_cadence": "",
+    "last_reviewed_date": null,
+    "next_review_date": null,
+    "current_version": {
+      "version": "",
+      "effective_date": null,
+      "change_summary": "",
+      "retired_date": null
+    },
+    "version_history": [],
+    "driven_by_regulations": [],
+    "driven_by_risks": [],
+    "policy_requirements": [],
+    "applies_to": {
+      "org_units": [],
+      "roles": [],
+      "systems": [],
+      "data_domains": [],
+      "locations": [],
+      "products": [],
+      "vendors": [],
+      "capabilities": [],
+      "customer_segments": []
+    },
+    "exceptions": [],
+    "enforcement_mechanism": {
+      "mechanism_type": "",
+      "description": "",
+      "automated": false
+    },
+    "compliance_measurement": {
+      "metric": "",
+      "target": "",
+      "current_value": "",
+      "measurement_method": "",
+      "frequency": ""
+    },
+    "training_requirement": {
+      "required": false,
+      "training_program": "",
+      "completion_target_pct": null,
+      "current_completion_pct": null,
+      "recertification_frequency": ""
+    },
+    "communication_plan": {
+      "last_communicated": null,
+      "communication_channel": "",
+      "acknowledgment_required": false,
+      "acknowledgment_rate_pct": null
+    },
+    "related_policies": [],
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.esg_operating_constraints.json; stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.capital_and_deal_blockers.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
+    "jurisdiction": "EU",
+    "scope": "supply_chain_due_diligence",
+    "reporting_requirement": "scope_3_emissions",
+    "customer_audit_trigger": true
   }
 ]

@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.274965Z",
-    "updated_at": "2026-02-25T23:19:02.378660Z",
+    "updated_at": "2026-03-04T17:27:04.436719Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "ou-001",
     "entity_type": "organizational_unit",
     "name": "Public Cloud Business Unit",
@@ -228,16 +228,16 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 95.0,
+        "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "10-K FY2024, Q4 2024 and Q3 2025 earnings calls, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "Stage 2.2 Revenue Model Structure; Stage 2.3 Value Flow; Stage 3.4 Competitive Positioning; Stage 6.5 Hyperscaler Lock-in",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -249,10 +249,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.275020Z",
-    "updated_at": "2026-02-25T23:19:06.541956Z",
+    "updated_at": "2026-03-04T17:27:57.869791Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "ou-002",
     "entity_type": "organizational_unit",
     "name": "Private Cloud Business Unit",
@@ -478,14 +478,14 @@
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "10-K FY2024, Q4 2024 and Q3 2025 earnings calls, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "primary_data_source": "Stage 2.1 Revenue Structure; Stage 2.2 Private Cloud Business Model; Stage 3.4 Market Positioning; Stage 5.3 Margin Analysis",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessment_methodology": "",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -496,10 +496,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.275044Z",
-    "updated_at": "2026-02-25T19:01:57.275044Z",
+    "updated_at": "2026-03-04T17:27:58.732771Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-003",
     "entity_type": "organizational_unit",
     "name": "Office of the Chief Executive Officer",
@@ -725,14 +725,14 @@
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "8-K Sep 2, 2025; ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Stage 1.4 Government Business; Stage 2.4 Government Customer Segment; Stage 2.2 Revenue Structure",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
@@ -966,18 +966,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1209,18 +1216,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1452,18 +1466,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1695,18 +1716,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1938,18 +1966,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2181,18 +2216,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2424,18 +2466,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Comparably, Bloomberg profile, 10-K FY2022-FY2024, Gainsight partnership page",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     },
     "bu_fy2025_goals": null,
     "bu_fy2025_kpis": null,
@@ -2670,18 +2719,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     },
     "bu_fy2025_revenue_growth_target_pct": null,
     "bu_fy2025_goals": null,
@@ -2917,18 +2973,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     },
     "bu_fy2025_revenue_target_usd": null,
     "bu_fy2025_goals": null,
@@ -3164,18 +3227,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Comparably executive team, SEC insider filings, 10-K FY2024",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3407,26 +3477,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Comparably, SEC insider filings, Companies House UK, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275294Z",
-    "updated_at": "2026-02-25T19:01:57.275295Z",
+    "updated_at": "2026-03-04T17:30:31.981203Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-015",
     "entity_type": "organizational_unit",
     "name": "Asia Pacific & Japan Region",
@@ -3652,24 +3729,24 @@
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "Comparably, SEC insider filings, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.5-jurisdictional-licensing-compliance/1.5.structural_lock_ins.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275313Z",
-    "updated_at": "2026-02-25T19:01:57.275314Z",
+    "updated_at": "2026-03-04T17:29:03.274699Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-016",
     "entity_type": "organizational_unit",
     "name": "Board of Directors",
@@ -3895,14 +3972,14 @@
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.entities.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
@@ -4136,18 +4213,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4379,18 +4463,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4622,18 +4713,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -4865,18 +4963,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5108,18 +5213,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5351,18 +5463,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5594,18 +5713,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -5837,18 +5963,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6080,18 +6213,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6323,18 +6463,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6566,18 +6713,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -6809,18 +6963,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7052,18 +7213,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "10-K FY2024, SEC filings",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "10-K FY2024, SEC filings; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7295,18 +7463,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "Rackspace US, Inc",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace US, Inc; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7538,18 +7713,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "Companies House UK, L00-site",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "Companies House UK, L00-site; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -7781,18 +7963,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "RocketReach executive data, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8024,18 +8213,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8267,18 +8463,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8510,18 +8713,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8753,18 +8963,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -8996,18 +9213,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9239,26 +9463,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.275768Z",
-    "updated_at": "2026-02-25T19:01:57.275769Z",
+    "updated_at": "2026-03-04T17:29:13.883083Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-039",
     "entity_type": "organizational_unit",
     "name": "Private Equity Practice",
@@ -9484,14 +9715,14 @@
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.2-ownership-control-entitlement/1.2.control_reality.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
@@ -9725,18 +9956,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -9968,18 +10206,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "10-K FY2024, rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "10-K FY2024, rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10211,18 +10456,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10454,18 +10706,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "L00-site",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "L00-site; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10697,18 +10956,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -10940,18 +11206,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11183,18 +11456,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "10-K FY2024, SEC insider filings (wallmine",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11426,18 +11706,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11669,18 +11956,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -11912,18 +12206,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -12155,18 +12456,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -12398,18 +12706,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "wikipedia",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "wikipedia; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -12641,26 +12956,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276227Z",
-    "updated_at": "2026-02-25T19:01:57.276228Z",
+    "updated_at": "2026-03-04T17:30:32.609618Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-053",
     "entity_type": "organizational_unit",
     "name": "Rackspace Hosting Australia Pty Ltd",
@@ -12886,14 +13208,14 @@
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.5-jurisdictional-licensing-compliance/1.5.structural_lock_ins.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
@@ -13127,18 +13449,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -13370,18 +13699,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -13613,18 +13949,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -13856,18 +14199,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -14099,18 +14449,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -14342,18 +14699,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -14585,18 +14949,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -14828,18 +15199,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -15071,18 +15449,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -15314,18 +15699,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -15557,18 +15949,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "10-K FY2023 Item 1C Cybersecurity, board-cybersecurity",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -15800,18 +16199,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -16043,18 +16449,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -16286,18 +16699,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -16529,18 +16949,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -16772,18 +17199,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -17015,18 +17449,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -17258,18 +17699,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -17501,18 +17949,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -17744,18 +18199,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -17987,18 +18449,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -18230,18 +18699,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -18473,18 +18949,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -18716,18 +19199,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -18959,26 +19449,33 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.276752Z",
-    "updated_at": "2026-02-25T19:01:57.276753Z",
+    "updated_at": "2026-03-04T17:29:02.698173Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ou-079",
     "entity_type": "organizational_unit",
     "name": "Rackspace Technology Global, Inc.",
@@ -19204,14 +19701,14 @@
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.entities.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
@@ -19445,18 +19942,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -19688,18 +20192,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -19931,18 +20442,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "10-K FY2023 Item 1C cybersecurity disclosure (PSN/Cyber Essentials mentioned), L00-site",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
       "assessment_methodology": "SEC filings analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -20174,18 +20692,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -20417,18 +20942,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -20660,18 +21192,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -20903,18 +21442,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -21146,18 +21692,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -21389,18 +21942,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -21632,18 +22192,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -21875,18 +22442,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -22118,18 +22692,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -22361,18 +22942,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -22604,18 +23192,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -22847,18 +23442,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -23090,18 +23692,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "sec",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "sec; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -23333,18 +23942,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -23576,18 +24192,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "aws",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "aws; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -23819,18 +24442,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -24062,18 +24692,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -24305,18 +24942,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "globenewswire",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "globenewswire; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -24548,18 +25192,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -24791,18 +25442,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -25034,18 +25692,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -25277,18 +25942,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -25520,18 +26192,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -25763,18 +26442,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -26006,18 +26692,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -26249,18 +26942,25 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "rackspace",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "rackspace; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -26492,16 +27192,509 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 48.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
-      "primary_data_source": "ir",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "ir; Rackspace Technology organizational structure; 10-K FY2024 segment reporting",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "budget_allocation",
+          "gap_description": "Budget allocation and cost center mapping not populated",
+          "remediation_plan": "Sync with financial planning system",
+          "priority": "Medium"
+        }
+      ]
+    }
+  },
+  {
+    "created_at": "2026-03-04T17:10:18.342234Z",
+    "updated_at": "2026-03-04T17:10:18.342238Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "caa93584-8f44-4c64-9932-0d9ffc370ef8",
+    "entity_type": "organizational_unit",
+    "name": "Rackspace Government Solutions, Inc.",
+    "description": "Separate legal entity for U.S. federal government cloud services. Holds FedRAMP Joint Authorization Board (JAB) authorization since 2015, DoD Impact Level 4 authorization, and DFARS compliance. Serves 40+ federal, state, and local government agencies. Security Services for Government Clouds team consists of 100% U.S. citizens based in continental U.S. locations (requirement for government contracts). FedRAMP authorization is entity-specific and cannot be transferred to other entities without complete re-authorization (12-18 month process). Change of control or entity restructuring would trigger immediate loss of authorization and government customer churn.\", \"properties\": {\"unit_type\": \"Legal Entity\", \"jurisdiction\": \"United States\", \"compliance_certifications\": [\"FedRAMP Moderate JAB P-ATO\", \"DoD SRG IL4\", \"DFARS\", \"CMMC\"], \"government_customers\": \"40+\", \"founded\": 2015}",
+    "tags": [],
+    "metadata": {},
+    "unit_id": "",
+    "unit_type": "",
+    "unit_subtype": "",
+    "unit_description_extended": "",
+    "unit_name_local": [],
+    "unit_name_former": [],
+    "functional_domain_primary": "",
+    "functional_domain_secondary": [],
+    "operating_model": "",
+    "hierarchy_memberships": [],
+    "matrix_relationships": [],
+    "origin": "",
+    "acquisition_source": {
+      "source_entity_name": "",
+      "acquisition_date": null,
+      "deal_reference": "",
+      "integration_status": ""
+    },
+    "formation_date": null,
+    "taxonomy_lineage": [],
+    "operational_status": "",
+    "operational_status_rationale": "",
+    "operational_status_effective_date": null,
+    "employee_count": {
+      "fte": null,
+      "contractor": null,
+      "vendor_fte": null,
+      "total": null,
+      "as_of_date": null
+    },
+    "employee_count_by_location": [],
+    "geographic_scope": "",
+    "geographic_presence": [],
+    "operating_hours": {
+      "timezone_primary": "",
+      "timezones_all": [],
+      "operating_model": ""
+    },
+    "language_primary": "",
+    "languages_supported": [],
+    "culture_integration_status": "",
+    "organizational_health_score": {
+      "score": null,
+      "methodology": "",
+      "dimensions": [],
+      "assessed_date": null,
+      "sample_size": null,
+      "response_rate_pct": null
+    },
+    "attrition_rate": {
+      "annual_total_pct": null,
+      "voluntary_pct": null,
+      "involuntary_pct": null,
+      "regrettable_pct": null,
+      "as_of_date": null,
+      "benchmark_comparison": ""
+    },
+    "span_of_control": {
+      "average_direct_reports": null,
+      "min_direct_reports": null,
+      "max_direct_reports": null
+    },
+    "management_layers": null,
+    "pl_accountability": false,
+    "revenue_attribution": {
+      "annual_revenue": null,
+      "currency": "USD",
+      "fiscal_year": "",
+      "revenue_type": ""
+    },
+    "cost_structure": {
+      "annual_opex": null,
+      "annual_capex": null,
+      "total_annual_cost": null,
+      "currency": "USD",
+      "fiscal_year": ""
+    },
+    "cost_breakdown": [],
+    "budget_authority": {
+      "approval_limit": null,
+      "currency": "USD",
+      "delegation_level": "",
+      "hiring_authority": false,
+      "contract_authority": false
+    },
+    "intercompany_relationships": [],
+    "cost_center_id": "",
+    "profit_center_id": "",
+    "financial_consolidation_entity": "",
+    "tax_jurisdictions": [],
+    "statutory_reporting_obligations": [],
+    "audit_scope": "",
+    "strategic_role": "",
+    "strategic_role_rationale": "",
+    "strategic_alignment": [],
+    "business_criticality": "",
+    "criticality_justification": "",
+    "market_position": {
+      "position_description": "",
+      "competitive_rank": null,
+      "market_share_pct": null,
+      "market_size_tam": null,
+      "market_size_sam": null,
+      "currency": "USD",
+      "as_of_date": null
+    },
+    "transformation_stage": "",
+    "divestiture_candidacy": "",
+    "unit_leader": "",
+    "unit_leader_title": "",
+    "leadership_team": [],
+    "governing_board": {
+      "board_name": "",
+      "board_type": "",
+      "member_count": null,
+      "independent_member_count": null,
+      "meeting_frequency": "",
+      "charter_reference": ""
+    },
+    "governance_cadence": "",
+    "parent_reporting_relationship": {
+      "reports_to_unit_id": "",
+      "reports_to_leader": "",
+      "reporting_cadence": "",
+      "reporting_format": ""
+    },
+    "delegation_of_authority": {
+      "financial_limit": null,
+      "hiring_authority": false,
+      "contract_authority": false,
+      "policy_authority": false,
+      "technology_authority": false
+    },
+    "compliance_officer": "",
+    "data_protection_officer": "",
+    "charter_document": {
+      "document_reference": "",
+      "document_date": null,
+      "last_reviewed_date": null,
+      "approval_authority": ""
+    },
+    "risk_exposure_inherent": "",
+    "risk_exposure_residual": "",
+    "risk_factors": [],
+    "regulatory_environment": [],
+    "control_environment_maturity": {
+      "overall_score": null,
+      "dimensions": [],
+      "assessed_date": null,
+      "assessed_by": ""
+    },
+    "audit_findings": [],
+    "litigation_exposure": {
+      "active_matters_count": null,
+      "severity_assessment": "",
+      "materiality_flag": false,
+      "total_exposure_estimate": null,
+      "currency": "USD"
+    },
+    "sanctions_screening_status": "",
+    "business_continuity_tier": "",
+    "key_person_dependencies": [],
+    "legal_entity_details": {
+      "jurisdiction": "",
+      "registration_id": "",
+      "entity_type_legal": "",
+      "incorporation_date": null,
+      "registered_address": "",
+      "registered_capital": null,
+      "ultimate_parent_entity": "",
+      "ownership_percentage": null,
+      "minority_interests": [],
+      "statutory_directors": []
+    },
+    "shared_service_details": {
+      "service_catalog": [],
+      "chargeback_model": "",
+      "client_units": []
+    },
+    "center_of_excellence_details": {
+      "expertise_domains": [],
+      "standards_published": [],
+      "adoption_metrics": {
+        "enterprise_adoption_pct": null,
+        "units_engaged": null,
+        "units_total": null
+      }
+    },
+    "joint_venture_details": {
+      "partner_entities": [],
+      "ownership_split": {
+        "enterprise_pct": null,
+        "partner_pct": null
+      },
+      "governance_agreement_reference": "",
+      "jv_term_years": null,
+      "renewal_provisions": "",
+      "exit_triggers": [],
+      "buyout_mechanisms": ""
+    },
+    "integration_management_office_details": {
+      "integration_target": "",
+      "start_date": null,
+      "target_end_date": null,
+      "sunset_criteria": [],
+      "transition_plan_reference": ""
+    },
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
       "assessment_methodology": "",
       "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    }
+  },
+  {
+    "created_at": "2026-03-04T17:10:25.509813Z",
+    "updated_at": "2026-03-04T17:10:25.509814Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "5bda49ca-3d49-44ac-937d-4661bb852ade",
+    "entity_type": "organizational_unit",
+    "name": "Rackspace UK Sovereign Services",
+    "description": "UK-based sovereign cloud services for UK government, NHS, police, and regulated financial services/pharma customers. Launched March 2024. VMware Sovereign Cloud certified January 2026. Architecturally isolated from global Rackspace network. Separate multi-tenant PODs for UK healthcare (Class V risk data), government, police, and regulated industries. Data residency locked to UK borders per post-Brexit data sovereignty requirements and UK FCA/PRA regulations. Platforms and support teams isolated from global network. Partnership with BT for sovereign communications. Change of location outside UK or consolidation with non-UK operations would violate regulatory requirements.\", \"properties\": {\"unit_type\": \"Legal Entity\", \"jurisdiction\": \"United Kingdom\", \"established\": \"2024-03-27\", \"compliance_certifications\": [\"VMware Sovereign Cloud\", \"UK Sovereignty Requirements\"], \"regulated_sectors\": [\"Government\", \"NHS Healthcare\", \"Financial Services\", \"Pharmaceutical\"]}",
+    "tags": [],
+    "metadata": {},
+    "unit_id": "",
+    "unit_type": "",
+    "unit_subtype": "",
+    "unit_description_extended": "",
+    "unit_name_local": [],
+    "unit_name_former": [],
+    "functional_domain_primary": "",
+    "functional_domain_secondary": [],
+    "operating_model": "",
+    "hierarchy_memberships": [],
+    "matrix_relationships": [],
+    "origin": "",
+    "acquisition_source": {
+      "source_entity_name": "",
+      "acquisition_date": null,
+      "deal_reference": "",
+      "integration_status": ""
+    },
+    "formation_date": null,
+    "taxonomy_lineage": [],
+    "operational_status": "",
+    "operational_status_rationale": "",
+    "operational_status_effective_date": null,
+    "employee_count": {
+      "fte": null,
+      "contractor": null,
+      "vendor_fte": null,
+      "total": null,
+      "as_of_date": null
+    },
+    "employee_count_by_location": [],
+    "geographic_scope": "",
+    "geographic_presence": [],
+    "operating_hours": {
+      "timezone_primary": "",
+      "timezones_all": [],
+      "operating_model": ""
+    },
+    "language_primary": "",
+    "languages_supported": [],
+    "culture_integration_status": "",
+    "organizational_health_score": {
+      "score": null,
+      "methodology": "",
+      "dimensions": [],
+      "assessed_date": null,
+      "sample_size": null,
+      "response_rate_pct": null
+    },
+    "attrition_rate": {
+      "annual_total_pct": null,
+      "voluntary_pct": null,
+      "involuntary_pct": null,
+      "regrettable_pct": null,
+      "as_of_date": null,
+      "benchmark_comparison": ""
+    },
+    "span_of_control": {
+      "average_direct_reports": null,
+      "min_direct_reports": null,
+      "max_direct_reports": null
+    },
+    "management_layers": null,
+    "pl_accountability": false,
+    "revenue_attribution": {
+      "annual_revenue": null,
+      "currency": "USD",
+      "fiscal_year": "",
+      "revenue_type": ""
+    },
+    "cost_structure": {
+      "annual_opex": null,
+      "annual_capex": null,
+      "total_annual_cost": null,
+      "currency": "USD",
+      "fiscal_year": ""
+    },
+    "cost_breakdown": [],
+    "budget_authority": {
+      "approval_limit": null,
+      "currency": "USD",
+      "delegation_level": "",
+      "hiring_authority": false,
+      "contract_authority": false
+    },
+    "intercompany_relationships": [],
+    "cost_center_id": "",
+    "profit_center_id": "",
+    "financial_consolidation_entity": "",
+    "tax_jurisdictions": [],
+    "statutory_reporting_obligations": [],
+    "audit_scope": "",
+    "strategic_role": "",
+    "strategic_role_rationale": "",
+    "strategic_alignment": [],
+    "business_criticality": "",
+    "criticality_justification": "",
+    "market_position": {
+      "position_description": "",
+      "competitive_rank": null,
+      "market_share_pct": null,
+      "market_size_tam": null,
+      "market_size_sam": null,
+      "currency": "USD",
+      "as_of_date": null
+    },
+    "transformation_stage": "",
+    "divestiture_candidacy": "",
+    "unit_leader": "",
+    "unit_leader_title": "",
+    "leadership_team": [],
+    "governing_board": {
+      "board_name": "",
+      "board_type": "",
+      "member_count": null,
+      "independent_member_count": null,
+      "meeting_frequency": "",
+      "charter_reference": ""
+    },
+    "governance_cadence": "",
+    "parent_reporting_relationship": {
+      "reports_to_unit_id": "",
+      "reports_to_leader": "",
+      "reporting_cadence": "",
+      "reporting_format": ""
+    },
+    "delegation_of_authority": {
+      "financial_limit": null,
+      "hiring_authority": false,
+      "contract_authority": false,
+      "policy_authority": false,
+      "technology_authority": false
+    },
+    "compliance_officer": "",
+    "data_protection_officer": "",
+    "charter_document": {
+      "document_reference": "",
+      "document_date": null,
+      "last_reviewed_date": null,
+      "approval_authority": ""
+    },
+    "risk_exposure_inherent": "",
+    "risk_exposure_residual": "",
+    "risk_factors": [],
+    "regulatory_environment": [],
+    "control_environment_maturity": {
+      "overall_score": null,
+      "dimensions": [],
+      "assessed_date": null,
+      "assessed_by": ""
+    },
+    "audit_findings": [],
+    "litigation_exposure": {
+      "active_matters_count": null,
+      "severity_assessment": "",
+      "materiality_flag": false,
+      "total_exposure_estimate": null,
+      "currency": "USD"
+    },
+    "sanctions_screening_status": "",
+    "business_continuity_tier": "",
+    "key_person_dependencies": [],
+    "legal_entity_details": {
+      "jurisdiction": "",
+      "registration_id": "",
+      "entity_type_legal": "",
+      "incorporation_date": null,
+      "registered_address": "",
+      "registered_capital": null,
+      "ultimate_parent_entity": "",
+      "ownership_percentage": null,
+      "minority_interests": [],
+      "statutory_directors": []
+    },
+    "shared_service_details": {
+      "service_catalog": [],
+      "chargeback_model": "",
+      "client_units": []
+    },
+    "center_of_excellence_details": {
+      "expertise_domains": [],
+      "standards_published": [],
+      "adoption_metrics": {
+        "enterprise_adoption_pct": null,
+        "units_engaged": null,
+        "units_total": null
+      }
+    },
+    "joint_venture_details": {
+      "partner_entities": [],
+      "ownership_split": {
+        "enterprise_pct": null,
+        "partner_pct": null
+      },
+      "governance_agreement_reference": "",
+      "jv_term_years": null,
+      "renewal_provisions": "",
+      "exit_triggers": [],
+      "buyout_mechanisms": ""
+    },
+    "integration_management_office_details": {
+      "integration_target": "",
+      "start_date": null,
+      "target_end_date": null,
+      "sunset_criteria": [],
+      "transition_plan_reference": ""
+    },
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 85.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }

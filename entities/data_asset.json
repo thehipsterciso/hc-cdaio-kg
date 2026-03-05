@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.270441Z",
-    "updated_at": "2026-02-28T18:16:24.480679Z",
+    "updated_at": "2026-03-04T17:28:05.110707Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "da-001",
     "entity_type": "data_asset",
     "name": "Splunk Enterprise Security Index Cluster",
@@ -358,7 +358,12 @@
           "priority": "Medium"
         }
       ]
-    }
+    },
+    "primary_data_source": "stage-8-risk-security-regulatory/8.1-cybersecurity-control-failure",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+    "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+    "confidence_level": "High"
   },
   {
     "created_at": "2026-02-25T19:01:57.270502Z",
@@ -7625,10 +7630,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.271178Z",
-    "updated_at": "2026-02-28T18:30:54.616039Z",
+    "updated_at": "2026-03-04T17:29:30.026242Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "da-024",
     "entity_type": "data_asset",
     "name": "Rackspace Email Mailbox Store",
@@ -7953,31 +7958,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 62.0,
-        "accuracy_confidence": "Medium",
-        "timeliness_score": "Current",
-        "consistency_score": "High"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "Rackspace Email product documentation, emailsrvr.com platform specs, eDiscovery compliance documentation",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "volume.current_size",
-          "gap_description": "800 TB estimated; actual requires storage platform metrics from email infrastructure",
-          "remediation_plan": "Query email platform storage utilization dashboards",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "record_count_detail",
-          "gap_description": "Total mailbox count and message count not documented",
-          "remediation_plan": "Query email platform admin API for aggregate mailbox statistics",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "attestation_status": null
   },
@@ -10932,10 +10924,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.271409Z",
-    "updated_at": "2026-02-28T17:57:13.102769Z",
+    "updated_at": "2026-03-04T17:28:05.844956Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "da-034",
     "entity_type": "data_asset",
     "name": "Hosted Exchange PST Archive (Breach Forensic Evidence)",
@@ -11266,14 +11258,19 @@
           "priority": "Medium"
         }
       ]
-    }
+    },
+    "primary_data_source": "stage-8-risk-security-regulatory/8.1-cybersecurity-control-failure",
+    "last_assessed_date": "2026-03-04",
+    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+    "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+    "confidence_level": "High"
   },
   {
     "created_at": "2026-02-25T19:01:57.271429Z",
-    "updated_at": "2026-02-28T18:33:31.591517Z",
+    "updated_at": "2026-03-04T17:29:04.044608Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "da-035",
     "entity_type": "data_asset",
     "name": "Customer Management Service Database",
@@ -11596,25 +11593,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 63.0,
-        "accuracy_confidence": "Medium-High",
-        "timeliness_score": "Current",
-        "consistency_score": "High"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "Rackspace Customer Management Service API v4.24 documentation, customer data management procedures",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium-High",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.entities.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "record_count_detail",
-          "gap_description": "Total customer profile count not documented in KG",
-          "remediation_plan": "Query CMS API for aggregate customer statistics",
-          "priority": "Low"
-        }
-      ]
+      "known_data_gaps": []
     },
     "attestation_status": null
   },
@@ -30210,10 +30200,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.272906Z",
-    "updated_at": "2026-02-28T18:48:05.626410Z",
+    "updated_at": "2026-03-04T17:29:46.273123Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "da-091",
     "entity_type": "data_asset",
     "name": "Rackspace Email Hosted Mailbox Store",
@@ -30531,31 +30521,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 50.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "High"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "Rackspace Email product documentation, Cloud Office Control Panel docs, OSINT",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "CDAIO KG Enrichment Process",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "record_count_detail",
-          "gap_description": "Total mailbox count and aggregate storage utilization not available",
-          "remediation_plan": "Query Cloud Office admin API for mailbox statistics",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "financial_profile",
-          "gap_description": "Per-mailbox infrastructure cost not tracked at asset level",
-          "remediation_plan": "Derive from $10/mailbox/month pricing model",
-          "priority": "Low"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
@@ -31597,10 +31574,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.272998Z",
-    "updated_at": "2026-02-28T18:56:01.278556Z",
+    "updated_at": "2026-03-04T17:29:46.777154Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "da-095",
     "entity_type": "data_asset",
     "name": "Cloud Office Email and Apps Administration Store",
@@ -31914,31 +31891,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 52.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "High"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "Cloud Office API documentation, Rackspace email services architecture, OSINT",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "CDAIO KG Enrichment Process",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "record_count_detail",
-          "gap_description": "Total mailbox and domain counts not available",
-          "remediation_plan": "Query Cloud Office admin API for provisioning statistics",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "financial_profile",
-          "gap_description": "Platform operating costs not attributed at asset level",
-          "remediation_plan": "Include in Cloud Office infrastructure cost model",
-          "priority": "Low"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
@@ -33363,10 +33327,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273115Z",
-    "updated_at": "2026-02-28T18:57:24.162794Z",
+    "updated_at": "2026-03-04T17:29:47.415792Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "da-100",
     "entity_type": "data_asset",
     "name": "Cloud Office Control Panel Administration Store",
@@ -33672,31 +33636,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 50.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "High"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "Cloud Office Control Panel documentation, Rackspace email services architecture, OSINT",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "CDAIO KG Enrichment Process",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "record_count_detail",
-          "gap_description": "Domain, mailbox, and admin user counts not available",
-          "remediation_plan": "Query Cloud Office admin system for provisioning statistics",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "financial_profile",
-          "gap_description": "Control panel infrastructure costs not attributed at asset level",
-          "remediation_plan": "Include in Cloud Office infrastructure cost model",
-          "priority": "Low"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
@@ -36461,10 +36412,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273322Z",
-    "updated_at": "2026-02-28T18:09:41.341275Z",
+    "updated_at": "2026-03-04T17:29:29.510141Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "da-109",
     "entity_type": "data_asset",
     "name": "Infrastructure Automation Toolbox Terraform State Store",
@@ -36771,25 +36722,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 72.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "High"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "Rackspace Infrastructure Automation Toolbox documentation, GCR container registry, Terraform module architecture",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "CDAIO KG Enrichment",
-      "assessment_methodology": "Hybrid \u2014 toolbox documentation, IaC architecture review, cloud engineering practices",
-      "confidence_level": "Medium",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "record_count_detail",
-          "gap_description": "State file counts across customer accounts not aggregated",
-          "remediation_plan": "Query state backend metrics",
-          "priority": "Low"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
@@ -38847,10 +38791,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273483Z",
-    "updated_at": "2026-02-28T18:10:48.604201Z",
+    "updated_at": "2026-03-04T17:29:04.380936Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "da-116",
     "entity_type": "data_asset",
     "name": "Corporate Restructuring and Transformation Program Data",
@@ -39178,31 +39122,18 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 72.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "Medium"
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "Rackspace SEC filings, corporate development records, investor relations materials",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "CDAIO KG Enrichment",
-      "assessment_methodology": "Hybrid \u2014 SEC filings, corporate governance documentation, restructuring program review",
-      "confidence_level": "Medium",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.entities.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "record_count_detail",
-          "gap_description": "Document counts are MNPI-sensitive",
-          "remediation_plan": "Obtain from corporate secretary with MNPI controls",
-          "priority": "Low"
-        },
-        {
-          "attribute_name": "quality_dimensions",
-          "gap_description": "Historical records from multiple corporate phases may have inconsistent formatting",
-          "remediation_plan": "Standardize document taxonomy",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
@@ -49521,12 +49452,25 @@
         "consistency_score": "High"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2024-01-01",
     "last_review_date": "2025-10-01",
@@ -49796,12 +49740,25 @@
         "consistency_score": "High"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2024-01-01",
     "last_review_date": "2025-10-01",
@@ -50070,12 +50027,25 @@
         "consistency_score": "High"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2024-01-01",
     "last_review_date": "2025-10-01",
@@ -50355,12 +50325,25 @@
         "consistency_score": "High"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2024-01-01",
     "last_review_date": "2025-10-01",
@@ -50671,12 +50654,25 @@
         "consistency_score": "Medium"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2024-06-01",
     "last_review_date": "2025-10-01",
@@ -50972,12 +50968,25 @@
         "consistency_score": "Medium"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2024-06-01",
     "last_review_date": "2025-10-01",
@@ -51282,12 +51291,25 @@
         "consistency_score": "Medium"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2024-06-01",
     "last_review_date": "2025-10-01",
@@ -51615,12 +51637,25 @@
         "consistency_score": "High"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2024-06-01",
     "last_review_date": "2025-10-01",
@@ -51925,12 +51960,25 @@
         "consistency_score": "High"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2024-06-01",
     "last_review_date": "2025-10-01",
@@ -52221,12 +52269,25 @@
         "consistency_score": "Medium"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2024-06-01",
     "last_review_date": "2025-10-01",
@@ -52556,12 +52617,25 @@
         "consistency_score": "High"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "storage_utilization",
+          "gap_description": "Actual current size, growth rate, and retention compliance not measured",
+          "remediation_plan": "Query from data management or storage systems",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        }
+      ]
     },
     "effective_date": "2023-01-01",
     "last_review_date": "2025-10-01",
@@ -52863,12 +52937,25 @@
         "consistency_score": "High"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2020-01-01",
     "last_review_date": "2025-10-01",
@@ -53155,12 +53242,25 @@
         "consistency_score": "Medium"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2018-01-01",
     "last_review_date": "2025-10-01",
@@ -53442,12 +53542,25 @@
         "consistency_score": "Medium"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "storage_utilization",
+          "gap_description": "Actual current size, growth rate, and retention compliance not measured",
+          "remediation_plan": "Query from data management or storage systems",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        }
+      ]
     },
     "effective_date": "2022-01-01",
     "last_review_date": "2025-10-01",
@@ -53759,12 +53872,25 @@
         "consistency_score": "Medium"
       },
       "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "data_quality_metrics",
+          "gap_description": "Data completeness, accuracy, and freshness metrics not quantified",
+          "remediation_plan": "Implement data quality monitoring framework",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "access_governance",
+          "gap_description": "Access controls, audit trails, and user provisioning status not documented",
+          "remediation_plan": "Source from IAM/access governance platforms",
+          "priority": "High"
+        }
+      ]
     },
     "effective_date": "2020-01-01",
     "last_review_date": "2025-10-01",

@@ -2597,281 +2597,6 @@
     }
   },
   {
-    "created_at": "2026-03-02T21:54:22.465108Z",
-    "updated_at": "2026-03-02T21:54:22.465108Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "48a17c58-6ee8-4ca3-a7db-b56789effaaa",
-    "relationship_type": "stores",
-    "source_id": "sys-027",
-    "target_id": "55f83917-5b71-4a4f-b950-44788d5aae5e",
-    "weight": 0.65,
-    "confidence": 0.65,
-    "properties": {
-      "attestation": "KG-Analysis-Inferred",
-      "review_required": true,
-      "rationale": "Nautobot DCIM/IPAM is the network source of truth. sys-027 (DC Management Plane DCIM/IPMI) is the closest existing system entity covering data center infrastructure management. No standalone Nautobot system entity exists in the graph.",
-      "assumption": "Nautobot may be a component of or co-located with the DC Management Plane infrastructure. Relationship is a proxy until a dedicated Nautobot system entity is created.",
-      "inferred_date": "2026-03-02",
-      "data_sensitivity": "restricted"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:47:24.305964Z",
-    "updated_at": "2026-02-28T17:47:24.305964Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "275f0555-0bb3-4f7c-aecd-a0bb3c27cfb6",
-    "relationship_type": "stores",
-    "source_id": "sys-061",
-    "target_id": "14f103f1-13be-49b3-a4da-150c1c94dfa8",
-    "weight": 1.0,
-    "confidence": 0.85,
-    "properties": {
-      "description": "AI Business Platform stores ICE impact calculation and scoring data"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:49:57.496658Z",
-    "updated_at": "2026-02-28T17:49:57.496659Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "54da0bf2-284b-4a4e-bf6f-70377a8d6448",
-    "relationship_type": "stores",
-    "source_id": "sys-064",
-    "target_id": "e81dbc6d-fe4e-4009-af57-979491bda9c1",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "description": "Atlassian Confluence stores enterprise knowledge base content"
-    }
-  },
-  {
-    "created_at": "2026-03-02T21:54:22.465169Z",
-    "updated_at": "2026-03-02T21:54:22.465170Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "9c9626bd-b219-4282-980c-1d3011e4db97",
-    "relationship_type": "stores",
-    "source_id": "sys-068",
-    "target_id": "434e5ec6-d21d-4978-bcfe-3eb817a40fe2",
-    "weight": 0.72,
-    "confidence": 0.72,
-    "properties": {
-      "attestation": "KG-Analysis-Inferred",
-      "review_required": true,
-      "rationale": "Power BI is a Microsoft cloud service that stores datasets, dataflows, and semantic models in the Power BI Service (Premium capacity). Microsoft 365 Suite (sys-068) is the Microsoft platform umbrella covering Rackspace's Microsoft SaaS services. No dedicated Power BI system entity exists in the graph.",
-      "assumption": "Power BI Service is included within or adjacent to the Rackspace Microsoft 365 enterprise agreement. Relationship is a proxy until a dedicated Power BI system entity is created.",
-      "inferred_date": "2026-03-02",
-      "data_sensitivity": "confidential"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:42:46.589767Z",
-    "updated_at": "2026-02-28T17:42:46.589767Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "c41ec3a9-7b1f-43d3-9e10-56ab841307c5",
-    "relationship_type": "stores",
-    "source_id": "sys-070",
-    "target_id": "aa30ff88-bfe7-43b4-b565-4e9947aae6da",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "description": "CrowdStrike Falcon stores EDR telemetry data"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:42:46.589787Z",
-    "updated_at": "2026-02-28T17:42:46.589787Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "e2befc84-9362-46d8-8e27-a3e350602151",
-    "relationship_type": "stores",
-    "source_id": "sys-077",
-    "target_id": "bf0caba3-bfb8-4eaf-a021-578d5f379874",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "description": "Microsoft Defender VMDR stores vulnerability findings"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:42:46.589821Z",
-    "updated_at": "2026-02-28T17:42:46.589822Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "9c5d1c76-8714-4211-a926-473b178ff098",
-    "relationship_type": "stores",
-    "source_id": "sys-081",
-    "target_id": "cf8bba21-7cf4-40e8-abb4-ee57685c4ee7",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "description": "Microsoft Purview DLP stores policy and violation data"
-    }
-  },
-  {
-    "created_at": "2026-03-02T21:54:22.464748Z",
-    "updated_at": "2026-03-02T21:54:22.464757Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "f8f6e2f7-cabf-4cf9-8f5e-70ec31a79c79",
-    "relationship_type": "stores",
-    "source_id": "sys-085",
-    "target_id": "fa98ed99-e781-4859-b0d5-a80758b72e71",
-    "weight": 1.0,
-    "confidence": 0.97,
-    "properties": {
-      "attestation": "KG-Analysis-Inferred",
-      "review_required": false,
-      "rationale": "etcd is the embedded key-value store of the Kubernetes control plane. sys-085 (Kubernetes Clusters) is the direct host system for the etcd cluster state store \u2014 architectural certainty.",
-      "assumption": "None \u2014 etcd is intrinsic to Kubernetes; sys-085 is the Kubespray-managed cluster that runs etcd",
-      "inferred_date": "2026-03-02",
-      "data_sensitivity": "restricted"
-    }
-  },
-  {
-    "created_at": "2026-03-02T21:54:22.465071Z",
-    "updated_at": "2026-03-02T21:54:22.465072Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "1d9a9880-b8f9-470e-84a4-98c7af38e3e9",
-    "relationship_type": "stores",
-    "source_id": "sys-085",
-    "target_id": "52acabe7-750f-4704-b191-88362e29aa86",
-    "weight": 0.9,
-    "confidence": 0.9,
-    "properties": {
-      "attestation": "KG-Analysis-Inferred",
-      "review_required": false,
-      "rationale": "Argo Workflows persists execution state as Kubernetes CRDs in etcd. sys-085 (Kubernetes Clusters) is the host platform for the Argo Workflows engine and its state store.",
-      "assumption": "Argo Workflows deployed into the same Genestack Kubernetes cluster (sys-085) that runs Genestack CI/CD automation",
-      "inferred_date": "2026-03-02",
-      "data_sensitivity": "confidential"
-    }
-  },
-  {
-    "created_at": "2026-03-02T21:54:22.465130Z",
-    "updated_at": "2026-03-02T21:54:22.465131Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "13f8d943-98b0-4ab9-9f1a-66ab283c4c72",
-    "relationship_type": "stores",
-    "source_id": "sys-085",
-    "target_id": "1167c817-10d8-4832-bd1d-470add2eca64",
-    "weight": 0.88,
-    "confidence": 0.88,
-    "properties": {
-      "attestation": "KG-Analysis-Inferred",
-      "review_required": false,
-      "rationale": "Dex OIDC Identity Provider runs as a Kubernetes workload with state persisted as CRDs in etcd or embedded storage within the K8s cluster. sys-085 (Kubernetes Clusters) hosts Dex as part of the Genestack SSO stack.",
-      "assumption": "Dex is deployed into the Genestack Kubernetes cluster as a namespace-scoped workload providing SSO for Argo UI, Grafana, and kubectl",
-      "inferred_date": "2026-03-02",
-      "data_sensitivity": "restricted"
-    }
-  },
-  {
-    "created_at": "2026-03-02T21:54:22.465149Z",
-    "updated_at": "2026-03-02T21:54:22.465149Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "70bbdf2b-5ac7-4302-8f26-a47d61b2cb8e",
-    "relationship_type": "stores",
-    "source_id": "sys-085",
-    "target_id": "a0cf41b3-0da0-42cf-afcd-30d97106e29a",
-    "weight": 0.82,
-    "confidence": 0.82,
-    "properties": {
-      "attestation": "KG-Analysis-Inferred",
-      "review_required": false,
-      "rationale": "OpenSearch is deployed as part of the Genestack observability stack, running as a StatefulSet workload within the Kubernetes cluster. Persistent storage backed by Rook Ceph via PVCs. sys-085 (Kubernetes Clusters) is the host platform.",
-      "assumption": "OpenSearch is deployed into the Genestack Kubernetes cluster (sys-085) alongside Fluent Bit (sys-123) and Grafana (sys-096) as the logging backend",
-      "inferred_date": "2026-03-02",
-      "data_sensitivity": "confidential"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:36:40.292787Z",
-    "updated_at": "2026-02-28T17:36:40.292787Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "8e08f119-d6ee-446f-ae3e-0173d0e1ed00",
-    "relationship_type": "stores",
-    "source_id": "sys-092",
-    "target_id": "59d5d9df-4f2d-4a23-ae68-1940c6c37f45",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "context": "Harbor Container Registry stores all container images and metadata"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:42:46.589644Z",
-    "updated_at": "2026-02-28T17:42:46.589646Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "23f996d1-4f50-4fcc-964e-9e2af371adc5",
-    "relationship_type": "stores",
-    "source_id": "sys-095",
-    "target_id": "b81cde4c-7175-4419-a026-e24e7db87ce7",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "description": "Prometheus stores time-series metrics data"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:42:46.589727Z",
-    "updated_at": "2026-02-28T17:42:46.589728Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "088304b7-e629-434c-9663-2bc5c2d63363",
-    "relationship_type": "stores",
-    "source_id": "sys-096",
-    "target_id": "325bfbb1-49aa-4a20-ac80-39251ba294f4",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "description": "Grafana stores dashboard and alert state data"
-    }
-  },
-  {
-    "created_at": "2026-03-02T21:54:22.465210Z",
-    "updated_at": "2026-03-02T21:54:22.465211Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "94104073-ffb0-48e6-aa28-bece05ef7bf7",
-    "relationship_type": "stores",
-    "source_id": "sys-140",
-    "target_id": "ab3f41be-1c6d-4a70-8f15-516198ad6fb7",
-    "weight": 0.75,
-    "confidence": 0.75,
-    "properties": {
-      "attestation": "KG-Analysis-Inferred",
-      "review_required": true,
-      "rationale": "Rackspace Public API Usage and Metering Data is stored by 'Rackspace API Gateway and Metering Infrastructure' per the asset's storage_technology field. OpenStack Ceilometer Telemetry (sys-140) is the metering/telemetry service that collects and stores API usage metrics for OpenStack services.",
-      "assumption": "Ceilometer handles the metering data for public-facing Rackspace cloud APIs. A dedicated API Gateway system entity may need to be created for full accuracy.",
-      "inferred_date": "2026-03-02",
-      "data_sensitivity": "confidential"
-    }
-  },
-  {
     "created_at": "2026-02-28T17:29:29.340077Z",
     "updated_at": "2026-02-28T17:29:29.340080Z",
     "valid_from": null,
@@ -3048,6 +2773,22 @@
     }
   },
   {
+    "created_at": "2026-02-28T17:33:30.690907Z",
+    "updated_at": "2026-02-28T17:33:30.690907Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "65780af5-e24a-47af-b755-f69e8ce2f211",
+    "relationship_type": "stores",
+    "source_id": "sys-183",
+    "target_id": "6df226e2-0940-42d6-ac9b-4d02c7e66c08",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "Memcached cluster stores Keystone token and session cache"
+    }
+  },
+  {
     "created_at": "2026-02-28T17:33:54.225165Z",
     "updated_at": "2026-02-28T17:33:54.225172Z",
     "valid_from": null,
@@ -3061,6 +2802,287 @@
     "confidence": 0.95,
     "properties": {
       "context": "RabbitMQ cluster hosts all OpenStack inter-service AMQP message queues"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.464748Z",
+    "updated_at": "2026-03-02T21:54:22.464757Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "f8f6e2f7-cabf-4cf9-8f5e-70ec31a79c79",
+    "relationship_type": "stores",
+    "source_id": "sys-085",
+    "target_id": "fa98ed99-e781-4859-b0d5-a80758b72e71",
+    "weight": 1.0,
+    "confidence": 0.97,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": false,
+      "rationale": "etcd is the embedded key-value store of the Kubernetes control plane. sys-085 (Kubernetes Clusters) is the direct host system for the etcd cluster state store \u2014 architectural certainty.",
+      "assumption": "None \u2014 etcd is intrinsic to Kubernetes; sys-085 is the Kubespray-managed cluster that runs etcd",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "restricted"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:36:40.292652Z",
+    "updated_at": "2026-02-28T17:36:40.292656Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e51fdeda-c1f5-407f-b988-662b4f35b4d8",
+    "relationship_type": "stores",
+    "source_id": "sys-185",
+    "target_id": "f7c5965f-325f-421c-98f4-210a79a92ece",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "Longhorn distributed storage manages all Kubernetes persistent volumes"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:36:40.292733Z",
+    "updated_at": "2026-02-28T17:36:40.292734Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "905e35f7-6025-4833-b30a-8b3ec69631a0",
+    "relationship_type": "stores",
+    "source_id": "52689b4c-1e13-4305-bd64-0e86234f4009",
+    "target_id": "4e375ae8-6991-4ad1-bda2-c2d2d6406f16",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "Vault Enterprise stores and manages all secrets, PKI, and encryption keys"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:36:40.292767Z",
+    "updated_at": "2026-02-28T17:36:40.292768Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "2142d22d-fb49-47bc-9956-4fe92aea3747",
+    "relationship_type": "stores",
+    "source_id": "sys-186",
+    "target_id": "98a221b9-8930-4402-8210-a933e9255e7f",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "cert-manager manages TLS certificates stored as K8s Secrets"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:36:40.292787Z",
+    "updated_at": "2026-02-28T17:36:40.292787Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "8e08f119-d6ee-446f-ae3e-0173d0e1ed00",
+    "relationship_type": "stores",
+    "source_id": "sys-092",
+    "target_id": "59d5d9df-4f2d-4a23-ae68-1940c6c37f45",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "context": "Harbor Container Registry stores all container images and metadata"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465071Z",
+    "updated_at": "2026-03-02T21:54:22.465072Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "1d9a9880-b8f9-470e-84a4-98c7af38e3e9",
+    "relationship_type": "stores",
+    "source_id": "sys-085",
+    "target_id": "52acabe7-750f-4704-b191-88362e29aa86",
+    "weight": 0.9,
+    "confidence": 0.9,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": false,
+      "rationale": "Argo Workflows persists execution state as Kubernetes CRDs in etcd. sys-085 (Kubernetes Clusters) is the host platform for the Argo Workflows engine and its state store.",
+      "assumption": "Argo Workflows deployed into the same Genestack Kubernetes cluster (sys-085) that runs Genestack CI/CD automation",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "confidential"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465108Z",
+    "updated_at": "2026-03-02T21:54:22.465108Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "48a17c58-6ee8-4ca3-a7db-b56789effaaa",
+    "relationship_type": "stores",
+    "source_id": "sys-027",
+    "target_id": "55f83917-5b71-4a4f-b950-44788d5aae5e",
+    "weight": 0.65,
+    "confidence": 0.65,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": true,
+      "rationale": "Nautobot DCIM/IPAM is the network source of truth. sys-027 (DC Management Plane DCIM/IPMI) is the closest existing system entity covering data center infrastructure management. No standalone Nautobot system entity exists in the graph.",
+      "assumption": "Nautobot may be a component of or co-located with the DC Management Plane infrastructure. Relationship is a proxy until a dedicated Nautobot system entity is created.",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "restricted"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465130Z",
+    "updated_at": "2026-03-02T21:54:22.465131Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "13f8d943-98b0-4ab9-9f1a-66ab283c4c72",
+    "relationship_type": "stores",
+    "source_id": "sys-085",
+    "target_id": "1167c817-10d8-4832-bd1d-470add2eca64",
+    "weight": 0.88,
+    "confidence": 0.88,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": false,
+      "rationale": "Dex OIDC Identity Provider runs as a Kubernetes workload with state persisted as CRDs in etcd or embedded storage within the K8s cluster. sys-085 (Kubernetes Clusters) hosts Dex as part of the Genestack SSO stack.",
+      "assumption": "Dex is deployed into the Genestack Kubernetes cluster as a namespace-scoped workload providing SSO for Argo UI, Grafana, and kubectl",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "restricted"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589644Z",
+    "updated_at": "2026-02-28T17:42:46.589646Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "23f996d1-4f50-4fcc-964e-9e2af371adc5",
+    "relationship_type": "stores",
+    "source_id": "sys-095",
+    "target_id": "b81cde4c-7175-4419-a026-e24e7db87ce7",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Prometheus stores time-series metrics data"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465149Z",
+    "updated_at": "2026-03-02T21:54:22.465149Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "70bbdf2b-5ac7-4302-8f26-a47d61b2cb8e",
+    "relationship_type": "stores",
+    "source_id": "sys-085",
+    "target_id": "a0cf41b3-0da0-42cf-afcd-30d97106e29a",
+    "weight": 0.82,
+    "confidence": 0.82,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": false,
+      "rationale": "OpenSearch is deployed as part of the Genestack observability stack, running as a StatefulSet workload within the Kubernetes cluster. Persistent storage backed by Rook Ceph via PVCs. sys-085 (Kubernetes Clusters) is the host platform.",
+      "assumption": "OpenSearch is deployed into the Genestack Kubernetes cluster (sys-085) alongside Fluent Bit (sys-123) and Grafana (sys-096) as the logging backend",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "confidential"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589727Z",
+    "updated_at": "2026-02-28T17:42:46.589728Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "088304b7-e629-434c-9663-2bc5c2d63363",
+    "relationship_type": "stores",
+    "source_id": "sys-096",
+    "target_id": "325bfbb1-49aa-4a20-ac80-39251ba294f4",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Grafana stores dashboard and alert state data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589749Z",
+    "updated_at": "2026-02-28T17:42:46.589749Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "a8b3d01e-00a0-4e71-8e78-4988cd1cd1ce",
+    "relationship_type": "stores",
+    "source_id": "sys-181",
+    "target_id": "bbd79b19-31b0-42fc-b220-4ff2ae59c496",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Microsoft Sentinel stores SIEM data lake"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589767Z",
+    "updated_at": "2026-02-28T17:42:46.589767Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "c41ec3a9-7b1f-43d3-9e10-56ab841307c5",
+    "relationship_type": "stores",
+    "source_id": "sys-070",
+    "target_id": "aa30ff88-bfe7-43b4-b565-4e9947aae6da",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "CrowdStrike Falcon stores EDR telemetry data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589787Z",
+    "updated_at": "2026-02-28T17:42:46.589787Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "e2befc84-9362-46d8-8e27-a3e350602151",
+    "relationship_type": "stores",
+    "source_id": "sys-077",
+    "target_id": "bf0caba3-bfb8-4eaf-a021-578d5f379874",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Microsoft Defender VMDR stores vulnerability findings"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589806Z",
+    "updated_at": "2026-02-28T17:42:46.589806Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "40fac3cf-c758-4362-be01-9f70410cdbee",
+    "relationship_type": "stores",
+    "source_id": "sys-187",
+    "target_id": "c19f3c7e-d008-429c-8d79-e8e61f727d03",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Prometheus AlertManager stores alert state data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:42:46.589821Z",
+    "updated_at": "2026-02-28T17:42:46.589822Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "9c5d1c76-8714-4211-a926-473b178ff098",
+    "relationship_type": "stores",
+    "source_id": "sys-081",
+    "target_id": "cf8bba21-7cf4-40e8-abb4-ee57685c4ee7",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Microsoft Purview DLP stores policy and violation data"
     }
   },
   {
@@ -3096,6 +3118,22 @@
     }
   },
   {
+    "created_at": "2026-02-28T17:47:24.305912Z",
+    "updated_at": "2026-02-28T17:47:24.305912Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "29f8438e-b1f5-45cb-af0f-ba2a1c961d41",
+    "relationship_type": "stores",
+    "source_id": "sys-180",
+    "target_id": "c75b22d3-9966-47e0-aec6-76b8f7e4de9d",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "AI Anywhere Private Cloud stores customer GPU workload data"
+    }
+  },
+  {
     "created_at": "2026-02-28T17:47:24.305931Z",
     "updated_at": "2026-02-28T17:47:24.305931Z",
     "valid_from": null,
@@ -3128,131 +3166,19 @@
     }
   },
   {
-    "created_at": "2026-02-28T17:47:24.305912Z",
-    "updated_at": "2026-02-28T17:47:24.305912Z",
+    "created_at": "2026-02-28T17:47:24.305964Z",
+    "updated_at": "2026-02-28T17:47:24.305964Z",
     "valid_from": null,
     "valid_until": null,
     "version": 1,
-    "id": "29f8438e-b1f5-45cb-af0f-ba2a1c961d41",
+    "id": "275f0555-0bb3-4f7c-aecd-a0bb3c27cfb6",
     "relationship_type": "stores",
-    "source_id": "sys-180",
-    "target_id": "c75b22d3-9966-47e0-aec6-76b8f7e4de9d",
+    "source_id": "sys-061",
+    "target_id": "14f103f1-13be-49b3-a4da-150c1c94dfa8",
     "weight": 1.0,
-    "confidence": 0.95,
+    "confidence": 0.85,
     "properties": {
-      "description": "AI Anywhere Private Cloud stores customer GPU workload data"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:42:46.589749Z",
-    "updated_at": "2026-02-28T17:42:46.589749Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "a8b3d01e-00a0-4e71-8e78-4988cd1cd1ce",
-    "relationship_type": "stores",
-    "source_id": "sys-181",
-    "target_id": "bbd79b19-31b0-42fc-b220-4ff2ae59c496",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "description": "Microsoft Sentinel stores SIEM data lake"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:33:30.690907Z",
-    "updated_at": "2026-02-28T17:33:30.690907Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "65780af5-e24a-47af-b755-f69e8ce2f211",
-    "relationship_type": "stores",
-    "source_id": "sys-183",
-    "target_id": "6df226e2-0940-42d6-ac9b-4d02c7e66c08",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "context": "Memcached cluster stores Keystone token and session cache"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:36:40.292652Z",
-    "updated_at": "2026-02-28T17:36:40.292656Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "e51fdeda-c1f5-407f-b988-662b4f35b4d8",
-    "relationship_type": "stores",
-    "source_id": "sys-185",
-    "target_id": "f7c5965f-325f-421c-98f4-210a79a92ece",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "context": "Longhorn distributed storage manages all Kubernetes persistent volumes"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:36:40.292767Z",
-    "updated_at": "2026-02-28T17:36:40.292768Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "2142d22d-fb49-47bc-9956-4fe92aea3747",
-    "relationship_type": "stores",
-    "source_id": "sys-186",
-    "target_id": "98a221b9-8930-4402-8210-a933e9255e7f",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "context": "cert-manager manages TLS certificates stored as K8s Secrets"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:42:46.589806Z",
-    "updated_at": "2026-02-28T17:42:46.589806Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "40fac3cf-c758-4362-be01-9f70410cdbee",
-    "relationship_type": "stores",
-    "source_id": "sys-187",
-    "target_id": "c19f3c7e-d008-429c-8d79-e8e61f727d03",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "description": "Prometheus AlertManager stores alert state data"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:36:40.292733Z",
-    "updated_at": "2026-02-28T17:36:40.292734Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "905e35f7-6025-4833-b30a-8b3ec69631a0",
-    "relationship_type": "stores",
-    "source_id": "52689b4c-1e13-4305-bd64-0e86234f4009",
-    "target_id": "4e375ae8-6991-4ad1-bda2-c2d2d6406f16",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "context": "Vault Enterprise stores and manages all secrets, PKI, and encryption keys"
-    }
-  },
-  {
-    "created_at": "2026-02-28T17:49:57.496636Z",
-    "updated_at": "2026-02-28T17:49:57.496637Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "7f8216e2-8802-4f01-b117-89fc37d17c9e",
-    "relationship_type": "stores",
-    "source_id": "1731a51c-58b1-43d2-b3bd-8d7884cd10f9",
-    "target_id": "ff45a6ab-5064-4db9-b36f-2bdbf7b140c7",
-    "weight": 1.0,
-    "confidence": 0.95,
-    "properties": {
-      "description": "PagerDuty Operations Cloud stores incident and on-call operations data"
+      "description": "AI Business Platform stores ICE impact calculation and scoring data"
     }
   },
   {
@@ -3272,6 +3198,59 @@
     }
   },
   {
+    "created_at": "2026-02-28T17:49:57.496636Z",
+    "updated_at": "2026-02-28T17:49:57.496637Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "7f8216e2-8802-4f01-b117-89fc37d17c9e",
+    "relationship_type": "stores",
+    "source_id": "1731a51c-58b1-43d2-b3bd-8d7884cd10f9",
+    "target_id": "ff45a6ab-5064-4db9-b36f-2bdbf7b140c7",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "PagerDuty Operations Cloud stores incident and on-call operations data"
+    }
+  },
+  {
+    "created_at": "2026-02-28T17:49:57.496658Z",
+    "updated_at": "2026-02-28T17:49:57.496659Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "54da0bf2-284b-4a4e-bf6f-70377a8d6448",
+    "relationship_type": "stores",
+    "source_id": "sys-064",
+    "target_id": "e81dbc6d-fe4e-4009-af57-979491bda9c1",
+    "weight": 1.0,
+    "confidence": 0.95,
+    "properties": {
+      "description": "Atlassian Confluence stores enterprise knowledge base content"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465169Z",
+    "updated_at": "2026-03-02T21:54:22.465170Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "9c9626bd-b219-4282-980c-1d3011e4db97",
+    "relationship_type": "stores",
+    "source_id": "sys-068",
+    "target_id": "434e5ec6-d21d-4978-bcfe-3eb817a40fe2",
+    "weight": 0.72,
+    "confidence": 0.72,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": true,
+      "rationale": "Power BI is a Microsoft cloud service that stores datasets, dataflows, and semantic models in the Power BI Service (Premium capacity). Microsoft 365 Suite (sys-068) is the Microsoft platform umbrella covering Rackspace's Microsoft SaaS services. No dedicated Power BI system entity exists in the graph.",
+      "assumption": "Power BI Service is included within or adjacent to the Rackspace Microsoft 365 enterprise agreement. Relationship is a proxy until a dedicated Power BI system entity is created.",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "confidential"
+    }
+  },
+  {
     "created_at": "2026-03-02T21:54:22.465190Z",
     "updated_at": "2026-03-02T21:54:22.465190Z",
     "valid_from": null,
@@ -3288,6 +3267,27 @@
       "review_required": false,
       "rationale": "The NPS/CSAT data asset description explicitly states it 'Feeds into Snowflake analytics for churn signal detection and customer health scoring'. Snowflake (0a67c1bc) is the analytics platform storing and processing this survey data.",
       "assumption": "NPS/CSAT survey responses are staged and stored in Snowflake for analytics processing. The upstream survey SaaS platform (Qualtrics/Medallia/Momentive) has no entity in the graph.",
+      "inferred_date": "2026-03-02",
+      "data_sensitivity": "confidential"
+    }
+  },
+  {
+    "created_at": "2026-03-02T21:54:22.465210Z",
+    "updated_at": "2026-03-02T21:54:22.465211Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "94104073-ffb0-48e6-aa28-bece05ef7bf7",
+    "relationship_type": "stores",
+    "source_id": "sys-140",
+    "target_id": "ab3f41be-1c6d-4a70-8f15-516198ad6fb7",
+    "weight": 0.75,
+    "confidence": 0.75,
+    "properties": {
+      "attestation": "KG-Analysis-Inferred",
+      "review_required": true,
+      "rationale": "Rackspace Public API Usage and Metering Data is stored by 'Rackspace API Gateway and Metering Infrastructure' per the asset's storage_technology field. OpenStack Ceilometer Telemetry (sys-140) is the metering/telemetry service that collects and stores API usage metrics for OpenStack services.",
+      "assumption": "Ceilometer handles the metering data for public-facing Rackspace cloud APIs. A dedicated API Gateway system entity may need to be created for full accuracy.",
       "inferred_date": "2026-03-02",
       "data_sensitivity": "confidential"
     }

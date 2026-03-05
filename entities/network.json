@@ -18,20 +18,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "peering_relationships",
+          "gap_description": "BGP peer configurations and traffic engineering policies not documented",
+          "remediation_plan": "Export from network management systems or BGP configuration repositories",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -53,20 +74,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bigdatacloud",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -88,20 +130,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bigdatacloud",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -123,20 +186,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bigdatacloud",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -158,20 +242,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bigdatacloud",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -193,20 +298,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "stat",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -228,20 +354,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bgp",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -263,20 +410,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -298,20 +466,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -333,20 +522,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "peering_relationships",
+          "gap_description": "BGP peer configurations and traffic engineering policies not documented",
+          "remediation_plan": "Export from network management systems or BGP configuration repositories",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -368,20 +578,41 @@
     "dns_servers": [],
     "is_monitored": false,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bigdatacloud",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -403,20 +634,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bigdatacloud",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "peering_relationships",
+          "gap_description": "BGP peer configurations and traffic engineering policies not documented",
+          "remediation_plan": "Export from network management systems or BGP configuration repositories",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -438,20 +690,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bigdatacloud",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "peering_relationships",
+          "gap_description": "BGP peer configurations and traffic engineering policies not documented",
+          "remediation_plan": "Export from network management systems or BGP configuration repositories",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -473,20 +746,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bigdatacloud",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "peering_relationships",
+          "gap_description": "BGP peer configurations and traffic engineering policies not documented",
+          "remediation_plan": "Export from network management systems or BGP configuration repositories",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -508,20 +802,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bigdatacloud",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "peering_relationships",
+          "gap_description": "BGP peer configurations and traffic engineering policies not documented",
+          "remediation_plan": "Export from network management systems or BGP configuration repositories",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -543,28 +858,49 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bigdatacloud",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "peering_relationships",
+          "gap_description": "BGP peer configurations and traffic engineering policies not documented",
+          "remediation_plan": "Export from network management systems or BGP configuration repositories",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246074Z",
-    "updated_at": "2026-02-25T19:01:57.246074Z",
+    "updated_at": "2026-03-04T17:30:27.814840Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "net-017",
     "entity_type": "network",
     "name": "AS396479 Mailgun Technologies Inc",
@@ -578,18 +914,26 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "bigdatacloud",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
@@ -613,20 +957,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -648,20 +1013,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -683,20 +1069,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -718,20 +1125,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -753,20 +1181,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -788,20 +1237,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -823,20 +1293,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -858,20 +1349,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -893,20 +1405,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -928,20 +1461,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -963,20 +1517,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -998,20 +1573,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1033,20 +1629,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1068,20 +1685,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1103,20 +1741,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1138,20 +1797,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1173,20 +1853,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "peeringdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1208,10 +1909,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -1219,9 +1928,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1243,10 +1965,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -1254,17 +1984,30 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246119Z",
-    "updated_at": "2026-02-25T19:01:57.246119Z",
+    "updated_at": "2026-03-04T17:29:52.582985Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "net-037",
     "entity_type": "network",
     "name": "Rackspace Cloud Office DNS (name-services.com)",
@@ -1278,18 +2021,26 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "docs",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
@@ -1313,10 +2064,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -1324,9 +2083,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1348,10 +2120,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -1359,17 +2139,30 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "peering_relationships",
+          "gap_description": "BGP peer configurations and traffic engineering policies not documented",
+          "remediation_plan": "Export from network management systems or BGP configuration repositories",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "encryption_standards",
+          "gap_description": "VPN protocols, key management, and encryption cipher suites not specified",
+          "remediation_plan": "Source from network configuration management database",
+          "priority": "High"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246126Z",
-    "updated_at": "2026-02-25T19:01:57.246126Z",
+    "updated_at": "2026-03-04T17:30:47.359964Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "net-040",
     "entity_type": "network",
     "name": "RackConnect Megaport APAC Exchange Fabric",
@@ -1383,18 +2176,26 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
         "accuracy_confidence": "",
-        "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "datacenterlocations",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.5-jurisdictional-licensing-compliance/1.5.structural_lock_ins.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     }
@@ -1418,20 +2219,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "datacenterlocations",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1453,20 +2275,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "datacenterlocations",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1488,20 +2331,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "datacenterlocations",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1523,20 +2387,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "datacenterlocations",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1558,10 +2443,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -1569,9 +2462,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "DNS reconnaissance",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1593,10 +2499,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -1604,9 +2518,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "DNS reconnaissance",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1628,20 +2555,41 @@
     "dns_servers": [],
     "is_monitored": false,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "DNS A records rackspace",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1663,20 +2611,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SPF chain rackspace",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1698,20 +2667,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SPF chain rackspace",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1733,20 +2723,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "SPF chain rackspace",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1768,10 +2779,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -1779,9 +2798,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "DNS reconnaissance",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1803,10 +2835,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -1814,9 +2854,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "DNS reconnaissance",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "encryption_standards",
+          "gap_description": "VPN protocols, key management, and encryption cipher suites not specified",
+          "remediation_plan": "Source from network configuration management database",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1838,10 +2891,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -1849,9 +2910,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "DNS reconnaissance",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "encryption_standards",
+          "gap_description": "VPN protocols, key management, and encryption cipher suites not specified",
+          "remediation_plan": "Source from network configuration management database",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1873,10 +2947,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -1884,9 +2966,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "DNS reconnaissance",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1908,20 +3003,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "DNS objectrocket",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1943,20 +3059,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bgp",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "encryption_standards",
+          "gap_description": "VPN protocols, key management, and encryption cipher suites not specified",
+          "remediation_plan": "Source from network configuration management database",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -1978,20 +3115,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bgpview",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2013,20 +3171,41 @@
     "dns_servers": [],
     "is_monitored": false,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bgpview",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "peering_relationships",
+          "gap_description": "BGP peer configurations and traffic engineering policies not documented",
+          "remediation_plan": "Export from network management systems or BGP configuration repositories",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2048,20 +3227,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bgpview",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2083,10 +3283,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -2094,9 +3302,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2118,10 +3339,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -2129,9 +3358,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "encryption_standards",
+          "gap_description": "VPN protocols, key management, and encryption cipher suites not specified",
+          "remediation_plan": "Source from network configuration management database",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2153,20 +3395,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rDNS evidence from net-052 (IAD block), NIST 800-53 SC-7, Rackspace SOC2/FedRAMP compliance disclosures",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2188,20 +3451,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rDNS evidence from net-051 (DFW block), FedRAMP CA-3/SC-5 control requirements, PCI DSS Req 1",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2222,7 +3506,43 @@
     "gateway": "",
     "dns_servers": [],
     "is_monitored": true,
-    "location_id": null
+    "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "peering_relationships",
+          "gap_description": "BGP peer configurations and traffic engineering policies not documented",
+          "remediation_plan": "Export from network management systems or BGP configuration repositories",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "encryption_standards",
+          "gap_description": "VPN protocols, key management, and encryption cipher suites not specified",
+          "remediation_plan": "Source from network configuration management database",
+          "priority": "High"
+        }
+      ]
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.246175Z",
@@ -2243,10 +3563,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -2254,9 +3582,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2278,10 +3619,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -2289,9 +3638,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2313,20 +3675,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "networksdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2348,20 +3731,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Rackspace FedRAMP Moderate authorization (Rackspace Private Cloud), NIST 800-53 Rev5 SC-7, AS398699 analysis (net-056)",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2383,20 +3787,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "Rackspace PCI DSS Level 1 AOC (Attestation of Compliance), PCI DSS v4",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2418,20 +3843,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "networksdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "encryption_standards",
+          "gap_description": "VPN protocols, key management, and encryption cipher suites not specified",
+          "remediation_plan": "Source from network configuration management database",
+          "priority": "High"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2453,20 +3899,41 @@
     "dns_servers": [],
     "is_monitored": false,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bgp",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2488,10 +3955,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -2499,9 +3974,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2523,20 +4011,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "docs-ospc",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2557,7 +4066,43 @@
     "gateway": "",
     "dns_servers": [],
     "is_monitored": true,
-    "location_id": null
+    "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.246195Z",
@@ -2578,20 +4123,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "networksdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2613,20 +4179,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "networksdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2648,10 +4235,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -2659,9 +4254,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2683,20 +4291,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "networksdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2718,20 +4347,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "networksdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2753,20 +4403,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "networksdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2788,20 +4459,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "networksdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2823,20 +4515,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "networksdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2858,10 +4571,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -2869,9 +4590,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2893,10 +4627,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -2904,9 +4646,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2928,10 +4683,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -2939,9 +4702,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2963,20 +4739,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "docs-ospc",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -2998,20 +4795,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "docs-ospc",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3033,20 +4851,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "docs-ospc",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3068,10 +4907,18 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
@@ -3079,9 +4926,22 @@
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
       "assessment_methodology": "Public documentation analysis",
-      "confidence_level": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3103,20 +4963,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "networksdb",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3138,20 +5019,41 @@
     "dns_servers": [],
     "is_monitored": true,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "bgp",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3173,20 +5075,41 @@
     "dns_servers": [],
     "is_monitored": false,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3208,20 +5131,41 @@
     "dns_servers": [],
     "is_monitored": false,
     "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Verified"
       },
       "primary_data_source": "rackspace",
       "last_assessed_date": "2026-02-25",
       "assessed_by": "Thomas Jones",
-      "assessment_methodology": "",
-      "confidence_level": "",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
       "attestation_status": null,
-      "known_data_gaps": []
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
     }
   },
   {
@@ -3242,6 +5186,42 @@
     "gateway": "",
     "dns_servers": [],
     "is_monitored": false,
-    "location_id": null
+    "location_id": null,
+    "temporal": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance": {
+      "data_quality_score": {
+        "completeness_pct": 45.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
+      },
+      "primary_data_source": "",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessment_methodology": "Hybrid",
+      "confidence_level": "Medium",
+      "attestation_status": null,
+      "known_data_gaps": [
+        {
+          "attribute_name": "network_topology_details",
+          "gap_description": "Detailed topology maps, redundancy paths, and failover mechanisms not documented",
+          "remediation_plan": "Create from network design documentation and tool exports",
+          "priority": "Medium"
+        },
+        {
+          "attribute_name": "traffic_flow_metrics",
+          "gap_description": "Bandwidth utilization, traffic patterns, and growth trends not captured",
+          "remediation_plan": "Source from NetFlow/sFlow collectors or network analytics platforms",
+          "priority": "Medium"
+        }
+      ]
+    }
   }
 ]

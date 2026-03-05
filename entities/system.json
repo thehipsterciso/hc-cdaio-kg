@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.246250Z",
-    "updated_at": "2026-02-28T15:26:33.855401Z",
+    "updated_at": "2026-03-04T08:41:15.665596Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "3",
+    "version": "4",
     "id": "sys-001",
     "entity_type": "system",
     "name": "Rackspace Customer Portal (Fabric)",
@@ -346,50 +346,22 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 38.0,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "docs.rackspace.com, DNS records, SOC 3 FY2024, KG relationship inference",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent (supervised by Thomas Jones)",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-05-28"
-      },
+      "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "availability_sla",
-          "gap_description": "Actual SLA targets and measured uptime unavailable \u2014 requires internal SLA documentation",
-          "remediation_plan": "Source from internal SLA management system or customer contracts",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data \u2014 requires integration with scanning platform",
-          "remediation_plan": "Integrate with CrowdStrike Falcon or Qualys scan export",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "total_cost_of_ownership",
-          "gap_description": "No cost data available \u2014 requires finance/FinOps data source",
-          "remediation_plan": "Source from IT financial management system",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "current_users",
-          "gap_description": "User count and growth data unavailable \u2014 requires application telemetry",
-          "remediation_plan": "Source from application analytics or IAM system",
-          "priority": "Medium"
-        },
-        {
           "attribute_name": "patch_compliance",
-          "gap_description": "No patch compliance data \u2014 requires integration with patch management",
-          "remediation_plan": "Source from WSUS, SCCM, or equivalent patch management platform",
+          "gap_description": "No patch compliance data \u2014 requires integration with patch management platform",
+          "remediation_plan": "Source from WSUS, SCCM, or equivalent patch management system",
           "priority": "Critical"
         }
       ]
@@ -398,10 +370,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246326Z",
-    "updated_at": "2026-02-28T15:34:07.931929Z",
+    "updated_at": "2026-03-04T08:41:16.418919Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "3",
+    "version": "4",
     "id": "sys-002",
     "entity_type": "system",
     "name": "Cloud Control Panel",
@@ -757,45 +729,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 34.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "docs.rackspace.com/docs/introducing-the-rackspace-cloud-control-panel, docs.rackspace.com/docs/manage-a-cloud-server",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Claude (automated enrichment)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "High",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-06-28"
-      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
+      "attestation_status": null,
       "known_data_gaps": [
         {
           "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for primary customer-facing portal. Critical attack surface.",
-          "remediation_plan": "Integrate with vulnerability management platform scan exports",
+          "gap_description": "No vulnerability scan data \u2014 requires integration with scanning platform",
+          "remediation_plan": "Integrate with CrowdStrike Falcon or Qualys scan export",
           "priority": "Critical"
-        },
-        {
-          "attribute_name": "current_users",
-          "gap_description": "No data on provisioned or active customer accounts using the control panel.",
-          "remediation_plan": "Source from Cloud Identity (sys-005) user provisioning data",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "penetration_test_status",
-          "gap_description": "No pen test data for critical internet-facing customer portal.",
-          "remediation_plan": "Source from annual pen test program records",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "change_velocity",
-          "gap_description": "No deployment frequency or change failure rate data.",
-          "remediation_plan": "Extract from CI/CD pipeline metrics or change management records in Jira (sys-063)",
-          "priority": "Medium"
         }
       ]
     },
@@ -803,10 +753,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246357Z",
-    "updated_at": "2026-02-28T15:44:29.728445Z",
+    "updated_at": "2026-03-04T08:41:17.744424Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "3",
+    "version": "4",
     "id": "sys-003",
     "entity_type": "system",
     "name": "Cloud Office Control Panel",
@@ -1154,28 +1104,22 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace Cloud Office documentation, DNS records",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_users",
-          "gap_description": "No admin user count or customer metrics",
-          "remediation_plan": "Query Cloud Office provisioning system",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data",
-          "remediation_plan": "Integrate with vulnerability management platform",
+          "attribute_name": "total_cost_of_ownership",
+          "gap_description": "No cost data available \u2014 requires finance/FinOps data source",
+          "remediation_plan": "Source from IT financial management system",
           "priority": "High"
         }
       ]
@@ -1184,10 +1128,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246385Z",
-    "updated_at": "2026-02-28T15:44:38.355702Z",
+    "updated_at": "2026-03-04T08:41:18.921130Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "3",
+    "version": "4",
     "id": "sys-004",
     "entity_type": "system",
     "name": "Cloud Office Webmail Portal",
@@ -1533,29 +1477,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace Cloud Office documentation, DNS records",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
           "attribute_name": "current_users",
-          "gap_description": "No active webmail user metrics",
-          "remediation_plan": "Query webmail analytics/session data",
+          "gap_description": "User count and growth data unavailable \u2014 requires application telemetry",
+          "remediation_plan": "Source from application analytics or IAM system",
           "priority": "Medium"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for web application",
-          "remediation_plan": "Web application vulnerability scan",
-          "priority": "High"
         }
       ]
     },
@@ -1563,10 +1501,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246413Z",
-    "updated_at": "2026-02-28T15:34:24.877317Z",
+    "updated_at": "2026-03-04T08:41:20.282794Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "3",
+    "version": "4",
     "id": "sys-005",
     "entity_type": "system",
     "name": "Cloud Identity Service (Keystone)",
@@ -1923,50 +1861,22 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 35.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "docs.rackspace.com/reference/identity-concepts, OpenStack Keystone documentation",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Claude (automated enrichment)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "High",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-06-28"
-      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
+      "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for foundational authentication service. Compromise here is catastrophic.",
-          "remediation_plan": "Integrate with vulnerability management platform - highest priority scan target",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "penetration_test_status",
-          "gap_description": "No pen test data for the single most critical infrastructure component.",
-          "remediation_plan": "Source from annual pen test program - should be mandatory scope",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "current_version_info",
-          "gap_description": "No OpenStack Keystone version tracked. Critical for CVE correlation.",
-          "remediation_plan": "Extract from CMDB or infrastructure team version inventory",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "No patch compliance data for internet-facing authentication infrastructure.",
-          "remediation_plan": "Extract from patch management system or vulnerability scanner compliance reports",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "incident_history",
-          "gap_description": "No incident data for foundational service. Authentication outages have cascading impact.",
-          "remediation_plan": "Extract from ServiceNow ITSM incident records filtered by CI",
+          "attribute_name": "availability_sla",
+          "gap_description": "Actual SLA targets and measured uptime unavailable \u2014 requires internal SLA documentation",
+          "remediation_plan": "Source from internal SLA management system or customer contracts",
           "priority": "High"
         }
       ]
@@ -1975,10 +1885,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246456Z",
-    "updated_at": "2026-02-28T15:27:44.577640Z",
+    "updated_at": "2026-03-04T08:41:21.994344Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-006",
     "entity_type": "system",
     "name": "Cloud Servers API (Nova)",
@@ -2327,45 +2237,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 36.0,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "docs.rackspace.com/docs/cloud-servers, OpenStack Nova documentation, KG relationship inference",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent (supervised by Thomas Jones)",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-05-28"
-      },
+      "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "availability_sla",
-          "gap_description": "Rackspace Cloud SLA target percentages and actual uptime unavailable \u2014 requires internal SLA reporting",
-          "remediation_plan": "Source from Rackspace SLA management system or customer-facing SLA documentation",
+          "attribute_name": "performance_sla",
+          "gap_description": "Performance targets not documented \u2014 requires service level agreement documentation",
+          "remediation_plan": "Source from SLA documentation or service management system",
           "priority": "High"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "OpenStack component vulnerability data unavailable \u2014 requires integration with scanning platform",
-          "remediation_plan": "Include Nova API servers in CrowdStrike Falcon and infrastructure vulnerability scanning",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "total_cost_of_ownership",
-          "gap_description": "Compute infrastructure cost attribution unavailable",
-          "remediation_plan": "Source from FinOps or cloud cost management platform",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "current_version_info",
-          "gap_description": "OpenStack Nova release version and patch level not documented",
-          "remediation_plan": "Query Nova API version endpoint and document release train",
-          "priority": "Medium"
         }
       ]
     },
@@ -2373,10 +2261,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246483Z",
-    "updated_at": "2026-02-28T15:39:46.270828Z",
+    "updated_at": "2026-03-04T08:41:23.135740Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-007",
     "entity_type": "system",
     "name": "Cloud Files Object Storage (Swift)",
@@ -2727,45 +2615,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 32.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "docs.rackspace.com/docs/cloud-files, OpenStack Swift documentation",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Claude (automated enrichment)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "High",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-06-28"
-      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
+      "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for critical object storage infrastructure.",
-          "remediation_plan": "Integrate with vulnerability management platform scan exports",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "current_users",
-          "gap_description": "No data on stored object count, container count, or active API consumers.",
-          "remediation_plan": "Source from Swift cluster metrics or billing data",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "current_version_info",
-          "gap_description": "No OpenStack Swift version tracked.",
-          "remediation_plan": "Extract from CMDB or infrastructure team version inventory",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "capacity_current",
-          "gap_description": "No storage utilization data for object storage clusters.",
-          "remediation_plan": "Extract from Swift cluster monitoring metrics",
-          "priority": "High"
+          "attribute_name": "change_velocity",
+          "gap_description": "Release metrics unavailable \u2014 requires deployment tracking system data",
+          "remediation_plan": "Source from CI/CD pipeline metrics or change management system",
+          "priority": "Medium"
         }
       ]
     },
@@ -2773,10 +2639,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246506Z",
-    "updated_at": "2026-02-28T15:44:52.764490Z",
+    "updated_at": "2026-03-04T08:41:24.420011Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-008",
     "entity_type": "system",
     "name": "Cloud DNS API",
@@ -3124,29 +2990,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "High",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace Cloud DNS API documentation, DNS architecture docs",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "High",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_users",
-          "gap_description": "No zone count or API call volume data",
-          "remediation_plan": "Query DNS API usage metrics",
+          "attribute_name": "capacity_current",
+          "gap_description": "Current capacity metrics unavailable \u2014 requires infrastructure monitoring",
+          "remediation_plan": "Source from monitoring platform or cloud provider metrics",
           "priority": "Medium"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data",
-          "remediation_plan": "Integrate with vulnerability management platform",
-          "priority": "High"
         }
       ]
     },
@@ -3154,10 +3014,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246532Z",
-    "updated_at": "2026-02-28T15:45:04.334829Z",
+    "updated_at": "2026-03-04T08:41:25.687308Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-009",
     "entity_type": "system",
     "name": "Cloud Databases API",
@@ -3505,28 +3365,22 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace Cloud Databases API documentation",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "open_source_components",
-          "gap_description": "MySQL/MariaDB/Percona/PostgreSQL versions unknown",
-          "remediation_plan": "Query supported version matrix from product team",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for API or managed instances",
-          "remediation_plan": "Integrate with vulnerability management",
+          "attribute_name": "incident_history",
+          "gap_description": "Incident metrics unavailable \u2014 requires incident tracking system",
+          "remediation_plan": "Source from incident management system or event logs",
           "priority": "High"
         }
       ]
@@ -3535,10 +3389,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246567Z",
-    "updated_at": "2026-02-28T15:45:14.892689Z",
+    "updated_at": "2026-03-04T08:41:26.659470Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-010",
     "entity_type": "system",
     "name": "Cloud Load Balancers API",
@@ -3886,29 +3740,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace Cloud Load Balancers API documentation",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_users",
-          "gap_description": "No LB instance count or API usage metrics",
-          "remediation_plan": "Query Cloud LB provisioning metrics",
+          "attribute_name": "technical_fitness",
+          "gap_description": "Technical fitness assessment unavailable \u2014 requires detailed architectural review",
+          "remediation_plan": "Conduct technical fitness assessment against baseline criteria",
           "priority": "Medium"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data",
-          "remediation_plan": "Integrate with vulnerability management",
-          "priority": "High"
         }
       ]
     },
@@ -3916,10 +3764,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246591Z",
-    "updated_at": "2026-02-28T15:45:26.602736Z",
+    "updated_at": "2026-03-04T08:41:32.069558Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-011",
     "entity_type": "system",
     "name": "Cloud Networking API (Neutron)",
@@ -4269,29 +4117,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace Cloud Networks API documentation, OpenStack Neutron documentation",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_version_info",
-          "gap_description": "Unknown OpenStack Neutron release version",
-          "remediation_plan": "Query OpenStack version from cloud platform team",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for Neutron API",
-          "remediation_plan": "Integrate with vulnerability management",
-          "priority": "High"
+          "attribute_name": "business_fitness",
+          "gap_description": "Business fitness assessment unavailable \u2014 requires capability alignment review",
+          "remediation_plan": "Conduct business fitness assessment against strategic objectives",
+          "priority": "Medium"
         }
       ]
     },
@@ -4299,10 +4141,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246614Z",
-    "updated_at": "2026-02-28T15:36:19.153899Z",
+    "updated_at": "2026-03-04T08:41:33.393042Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-012",
     "entity_type": "system",
     "name": "Rackspace Monitoring API",
@@ -4650,45 +4492,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 32.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "docs.rackspace.com/docs/cloud-monitoring, API endpoint documentation",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Claude (automated enrichment)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "High",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-06-28"
-      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
+      "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for internet-facing monitoring API.",
-          "remediation_plan": "Integrate with vulnerability management platform scan exports",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "current_users",
-          "gap_description": "No data on API consumers or monitored entity count.",
-          "remediation_plan": "Source from API usage analytics or billing data",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "incident_history",
-          "gap_description": "No incident data for monitoring platform. Monitoring outages have cascading blind spot impact.",
-          "remediation_plan": "Extract from ServiceNow ITSM incident records",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "penetration_test_status",
-          "gap_description": "No pen test data for internet-facing API.",
-          "remediation_plan": "Source from annual pen test program records",
-          "priority": "High"
+          "attribute_name": "license_details",
+          "gap_description": "License inventory data unavailable \u2014 requires license management system",
+          "remediation_plan": "Source from SAM system or vendor license portal",
+          "priority": "Medium"
         }
       ]
     },
@@ -4696,10 +4516,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246638Z",
-    "updated_at": "2026-02-28T15:33:53.899721Z",
+    "updated_at": "2026-03-04T08:41:34.706546Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-013",
     "entity_type": "system",
     "name": "Mailgun Transactional Email Platform",
@@ -5048,44 +4868,22 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 33.0,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Mailgun public documentation, DNS reconnaissance (MX/SPF/DKIM), Rackspace product pages",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Claude (automated enrichment)",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-06-28"
-      },
+      "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for internet-facing email platform. High-value target for abuse and compromise.",
-          "remediation_plan": "Integrate with vulnerability management platform scan exports",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "current_users",
-          "gap_description": "No customer count or API usage data for revenue-generating product.",
-          "remediation_plan": "Source from Mailgun product analytics or finance revenue reports",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "No patch compliance data for internet-facing SMTP infrastructure.",
-          "remediation_plan": "Extract from patch management system or vulnerability scanner compliance reports",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "penetration_test_status",
-          "gap_description": "No pen test data for critical internet-facing email platform.",
-          "remediation_plan": "Source from annual pen test program records",
+          "attribute_name": "contract_details",
+          "gap_description": "Contract data unavailable \u2014 requires contract management system",
+          "remediation_plan": "Source from procurement system or vendor contracts",
           "priority": "High"
         }
       ]
@@ -5094,10 +4892,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246662Z",
-    "updated_at": "2026-02-28T15:45:57.230197Z",
+    "updated_at": "2026-03-04T08:41:36.156639Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-014",
     "entity_type": "system",
     "name": "ObjectRocket DBaaS Platform",
@@ -5443,29 +5241,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "ObjectRocket product documentation, DNS records, acquisition records",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_users",
-          "gap_description": "No customer or instance count data",
-          "remediation_plan": "Query ObjectRocket billing/provisioning system",
+          "attribute_name": "maintenance_windows",
+          "gap_description": "Maintenance schedule unavailable \u2014 requires change management system",
+          "remediation_plan": "Source from change management or maintenance calendars",
           "priority": "Medium"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for platform or managed instances",
-          "remediation_plan": "Integrate with vulnerability management",
-          "priority": "High"
         }
       ]
     },
@@ -5473,10 +5265,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246698Z",
-    "updated_at": "2026-02-28T15:40:01.116236Z",
+    "updated_at": "2026-03-04T08:41:39.745313Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-016",
     "entity_type": "system",
     "name": "AS12200 BGP Edge Router Cluster",
@@ -5817,44 +5609,22 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 28.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "ARIN WHOIS, PeeringDB AS12200, BGP routing table analysis",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Claude (automated enrichment)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "High",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-06-28"
-      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
+      "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for BGP edge routers. Router compromise enables BGP hijacking.",
-          "remediation_plan": "Integrate with network device vulnerability scanner",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "current_version_info",
-          "gap_description": "No router OS/firmware version tracked. Critical for CVE correlation.",
-          "remediation_plan": "Extract from CMDB or network team inventory",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "No firmware patch compliance for network infrastructure.",
-          "remediation_plan": "Extract from network management platform",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "penetration_test_status",
-          "gap_description": "No pen test data for backbone routing infrastructure.",
-          "remediation_plan": "Source from annual infrastructure pen test program",
+          "attribute_name": "access_review_status",
+          "gap_description": "Access review data unavailable \u2014 requires IAM audit trails",
+          "remediation_plan": "Source from IAM system audit logs or access review program",
           "priority": "High"
         }
       ]
@@ -5863,10 +5633,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246722Z",
-    "updated_at": "2026-02-28T15:46:12.279071Z",
+    "updated_at": "2026-03-04T08:41:41.696736Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-017",
     "entity_type": "system",
     "name": "AS33070 DFW Edge Routers",
@@ -6212,29 +5982,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "ARIN WHOIS, PeeringDB AS33070, network architecture inference",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
           "attribute_name": "current_version_info",
-          "gap_description": "Unknown router vendor, model, and firmware version",
-          "remediation_plan": "Query CMDB/network inventory",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "No firmware patch compliance data",
-          "remediation_plan": "Integrate with network device patching process",
-          "priority": "High"
+          "gap_description": "Version and patch information unavailable \u2014 requires software inventory system",
+          "remediation_plan": "Source from CMDB or software asset management system",
+          "priority": "Medium"
         }
       ]
     },
@@ -6242,10 +6006,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246748Z",
-    "updated_at": "2026-02-28T15:46:20.695105Z",
+    "updated_at": "2026-03-04T08:41:43.710520Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-018",
     "entity_type": "system",
     "name": "AS27357 IAD Edge Routers",
@@ -6591,29 +6355,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "ARIN WHOIS, PeeringDB AS27357, network architecture inference",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_version_info",
-          "gap_description": "Unknown router vendor, model, and firmware version",
-          "remediation_plan": "Query CMDB/network inventory",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "No firmware patch compliance data",
-          "remediation_plan": "Integrate with network device patching process",
-          "priority": "High"
+          "attribute_name": "containerized",
+          "gap_description": "Container deployment status unclear \u2014 requires infrastructure documentation",
+          "remediation_plan": "Source from container registry or infrastructure documentation",
+          "priority": "Medium"
         }
       ]
     },
@@ -6621,10 +6379,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246775Z",
-    "updated_at": "2026-02-28T15:46:28.610885Z",
+    "updated_at": "2026-03-04T08:41:45.647157Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-019",
     "entity_type": "system",
     "name": "AS19994 ORD Edge Routers",
@@ -6970,29 +6728,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "ARIN WHOIS, PeeringDB AS19994, network architecture inference",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_version_info",
-          "gap_description": "Unknown router vendor, model, and firmware version",
-          "remediation_plan": "Query CMDB/network inventory",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "No firmware patch compliance data",
-          "remediation_plan": "Integrate with network device patching process",
-          "priority": "High"
+          "attribute_name": "infrastructure_as_code",
+          "gap_description": "IaC tooling and coverage unavailable \u2014 requires infrastructure documentation",
+          "remediation_plan": "Source from infrastructure repository or documentation system",
+          "priority": "Medium"
         }
       ]
     },
@@ -7000,10 +6752,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246801Z",
-    "updated_at": "2026-02-28T15:46:37.108176Z",
+    "updated_at": "2026-03-04T08:41:47.665321Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-020",
     "entity_type": "system",
     "name": "AS15395 LON Edge Routers",
@@ -7349,28 +7101,22 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "ARIN WHOIS, RIPE DB, network architecture inference",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_version_info",
-          "gap_description": "Unknown router vendor, model, and firmware version",
-          "remediation_plan": "Query CMDB/network inventory",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "No firmware patch compliance data",
-          "remediation_plan": "Integrate with network device patching process",
+          "attribute_name": "open_source_components",
+          "gap_description": "Open source inventory and SBOM unavailable \u2014 requires SBOM generation",
+          "remediation_plan": "Generate SBOM using Syft, Cyclone DX, or equivalent tool",
           "priority": "High"
         }
       ]
@@ -7379,10 +7125,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246838Z",
-    "updated_at": "2026-02-28T15:40:14.259490Z",
+    "updated_at": "2026-03-04T08:42:01.548058Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-021",
     "entity_type": "system",
     "name": "Authoritative DNS Cluster (Anycast)",
@@ -7723,45 +7469,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 30.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "DNS dig records (ns.rackspace.com, ns2.rackspace.com)",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Claude (automated enrichment)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "High",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-06-28"
-      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
+      "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for authoritative DNS. DNS poisoning/hijacking is catastrophic.",
-          "remediation_plan": "Integrate with DNS-specific vulnerability scanning",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "current_version_info",
-          "gap_description": "No DNS server software version tracked (BIND, NSD, etc.). Critical for CVE correlation.",
-          "remediation_plan": "Extract from CMDB or DNS team inventory",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "penetration_test_status",
-          "gap_description": "No pen test data for DNS infrastructure.",
-          "remediation_plan": "Source from annual pen test program - DNS testing should be in scope",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "No patch compliance data for DNS servers.",
-          "remediation_plan": "Extract from patch management system",
-          "priority": "Critical"
+          "attribute_name": "maintenance_windows",
+          "gap_description": "Maintenance schedule unavailable \u2014 requires change management system",
+          "remediation_plan": "Source from change management or maintenance calendars",
+          "priority": "Medium"
         }
       ]
     },
@@ -7769,10 +7493,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246863Z",
-    "updated_at": "2026-02-28T15:46:48.474012Z",
+    "updated_at": "2026-03-04T08:42:02.742089Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-022",
     "entity_type": "system",
     "name": "Cloud DNS Resolvers (stabletransit.com)",
@@ -8112,28 +7836,22 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "DNS dig records, infrastructure architecture inference",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "KG Enrichment Agent",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_version_info",
-          "gap_description": "Unknown DNS resolver software and version (BIND/Unbound/PowerDNS)",
-          "remediation_plan": "Query DNS server inventory",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for DNS infrastructure",
-          "remediation_plan": "Integrate with vulnerability management",
+          "attribute_name": "penetration_test_status",
+          "gap_description": "Penetration test data unavailable \u2014 requires security testing program records",
+          "remediation_plan": "Source from security assessment program or vendor reports",
           "priority": "High"
         }
       ]
@@ -8142,10 +7860,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246888Z",
-    "updated_at": "2026-02-28T15:48:38.768392Z",
+    "updated_at": "2026-03-04T08:42:04.435961Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-023",
     "entity_type": "system",
     "name": "Cloud Office DNS (name-services.com)",
@@ -8491,34 +8209,22 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "DNS dig records, WHOIS, Cloud Office documentation",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for DNS infrastructure",
-          "remediation_plan": "Integrate DNS infrastructure into vulnerability scanning program",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "current_version_info",
-          "gap_description": "DNS server software versions unknown",
-          "remediation_plan": "Document DNS platform and version details",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "availability_sla",
-          "gap_description": "No formal SLA metrics for DNS resolution",
-          "remediation_plan": "Establish DNS SLA with resolution time targets",
+          "attribute_name": "access_review_status",
+          "gap_description": "Access review data unavailable \u2014 requires IAM audit trails",
+          "remediation_plan": "Source from IAM system audit logs or access review program",
           "priority": "High"
         }
       ]
@@ -8527,10 +8233,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246910Z",
-    "updated_at": "2026-02-28T15:40:26.102908Z",
+    "updated_at": "2026-03-04T08:42:06.117822Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-024",
     "entity_type": "system",
     "name": "RackConnect Global MPLS Control Plane",
@@ -8871,44 +8577,22 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 28.0,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "docs.rackspace.com/docs/rackconnect, Equinix/Megaport peering data",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Claude (automated enrichment)",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-06-28"
-      },
+      "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for MPLS control plane equipment.",
-          "remediation_plan": "Integrate with network device vulnerability scanner",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "current_version_info",
-          "gap_description": "No network device firmware version tracked.",
-          "remediation_plan": "Extract from CMDB or network team inventory",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "current_users",
-          "gap_description": "No data on connected circuits or customer count.",
-          "remediation_plan": "Source from network provisioning system or billing data",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "contract_details",
-          "gap_description": "No Equinix/Megaport contract details.",
-          "remediation_plan": "Source from procurement/vendor management",
+          "attribute_name": "security_architecture_review",
+          "gap_description": "Security review findings unavailable \u2014 requires security architecture assessment program",
+          "remediation_plan": "Conduct security architecture review per NIST/CIS guidance",
           "priority": "Medium"
         }
       ]
@@ -8917,10 +8601,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246944Z",
-    "updated_at": "2026-02-28T15:48:53.633358Z",
+    "updated_at": "2026-03-04T08:42:08.009760Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-025",
     "entity_type": "system",
     "name": "RackConnect Megaport Exchange Gateways",
@@ -9272,41 +8956,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "Low",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "RackConnect documentation, Megaport architecture references",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Low",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_version_info",
-          "gap_description": "Network OS and firmware versions unknown",
-          "remediation_plan": "Document gateway device firmware and SDN controller versions",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No network device vulnerability scan data",
-          "remediation_plan": "Include exchange gateways in network vulnerability scanning",
+          "attribute_name": "cyber_exposure",
+          "gap_description": "Cyber exposure assessment unavailable \u2014 requires threat modeling analysis",
+          "remediation_plan": "Conduct cyber exposure assessment using threat intelligence platform",
           "priority": "High"
-        },
-        {
-          "attribute_name": "contract_details",
-          "gap_description": "Megaport exchange contract details unknown",
-          "remediation_plan": "Obtain Megaport contract from procurement",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "scalability_profile",
-          "gap_description": "Port capacity and throughput limits undocumented",
-          "remediation_plan": "Document exchange port speeds and capacity planning",
-          "priority": "Medium"
         }
       ]
     },
@@ -9314,10 +8980,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246967Z",
-    "updated_at": "2026-02-28T15:49:04.064111Z",
+    "updated_at": "2026-03-04T08:42:10.090662Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-026",
     "entity_type": "system",
     "name": "RackConnect Equinix Exchange Gateways",
@@ -9669,41 +9335,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "Low",
+        "completeness_pct": 40.0,
+        "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "RackConnect documentation, Equinix Fabric architecture references",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Low",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_version_info",
-          "gap_description": "Network OS and firmware versions unknown",
-          "remediation_plan": "Document gateway device firmware and SDN controller versions",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No network device vulnerability scan data",
-          "remediation_plan": "Include exchange gateways in network vulnerability scanning",
+          "attribute_name": "backup_status",
+          "gap_description": "Backup metrics unavailable \u2014 requires backup management system data",
+          "remediation_plan": "Source from backup platform (Commvault, Cohesity, Veeam)",
           "priority": "High"
-        },
-        {
-          "attribute_name": "contract_details",
-          "gap_description": "Equinix exchange contract details unknown",
-          "remediation_plan": "Obtain Equinix contract from procurement",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "scalability_profile",
-          "gap_description": "Port capacity and throughput limits undocumented",
-          "remediation_plan": "Document exchange port speeds and capacity planning",
-          "priority": "Medium"
         }
       ]
     },
@@ -9711,10 +9359,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.246995Z",
-    "updated_at": "2026-02-28T15:40:40.529265Z",
+    "updated_at": "2026-03-04T08:42:11.456558Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-027",
     "entity_type": "system",
     "name": "DC Management Plane (DCIM/IPMI)",
@@ -10061,45 +9709,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 26.0,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "rackspace.com/about/data-centers, DC management architecture inference",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Claude (automated enrichment)",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
-      "attestation_status": {
-        "attested_by": "",
-        "attestation_date": null,
-        "next_attestation_date": "2026-06-28"
-      },
+      "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No vulnerability scan data for IPMI/BMC firmware. BMC vulnerabilities are high-severity and persistent.",
-          "remediation_plan": "Integrate BMC firmware scanning - dedicated OT/ICS vulnerability assessment",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "current_version_info",
-          "gap_description": "No BMC firmware or DCIM software version tracked.",
-          "remediation_plan": "Extract from DCIM inventory or hardware management platform",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "No BMC firmware patch compliance. IPMI vulnerabilities are well-documented attack vectors.",
-          "remediation_plan": "Establish BMC firmware patch tracking program",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "access_review_status",
-          "gap_description": "No access review data for IPMI credentials across 27+ DCs.",
-          "remediation_plan": "Implement IPMI credential rotation audit and access review program",
-          "priority": "Critical"
+          "attribute_name": "replacement_candidate",
+          "gap_description": "Lifecycle planning data unavailable \u2014 requires enterprise architecture repository",
+          "remediation_plan": "Source from application portfolio management system or architecture repo",
+          "priority": "Medium"
         }
       ]
     },
@@ -10107,10 +9733,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.247022Z",
-    "updated_at": "2026-02-28T15:49:22.219390Z",
+    "updated_at": "2026-03-04T08:42:12.868061Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-028",
     "entity_type": "system",
     "name": "Physical Security Systems (PACS)",
@@ -10463,41 +10089,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "SOC 3 FY2024 report, Rackspace data center compliance documentation",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_version_info",
-          "gap_description": "PACS software and firmware versions unknown",
-          "remediation_plan": "Inventory all PACS controllers and reader firmware versions",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No OT/ICS vulnerability assessment for PACS",
-          "remediation_plan": "Conduct OT-specific vulnerability assessment of PACS infrastructure",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "contract_details",
-          "gap_description": "PACS vendor contract details unknown",
-          "remediation_plan": "Obtain PACS vendor contract from facilities procurement",
+          "attribute_name": "technical_fitness",
+          "gap_description": "Technical fitness assessment unavailable \u2014 requires detailed architectural review",
+          "remediation_plan": "Conduct technical fitness assessment against baseline criteria",
           "priority": "Medium"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "PACS firmware patching cadence undocumented",
-          "remediation_plan": "Establish OT patching policy and compliance tracking for PACS",
-          "priority": "High"
         }
       ]
     },
@@ -10505,10 +10113,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.247048Z",
-    "updated_at": "2026-02-28T15:49:38.375943Z",
+    "updated_at": "2026-03-04T08:42:13.507420Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "3",
     "id": "sys-029",
     "entity_type": "system",
     "name": "Environmental Monitoring (BMS)",
@@ -10856,41 +10464,23 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 40.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Rackspace data center specifications, SOC compliance documentation",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "Hybrid",
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
       "confidence_level": "Medium",
       "attestation_status": null,
       "known_data_gaps": [
         {
-          "attribute_name": "current_version_info",
-          "gap_description": "BMS software and controller firmware versions unknown",
-          "remediation_plan": "Inventory all BMS controllers across 27+ facilities",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No OT/ICS vulnerability assessment for BMS/SCADA",
-          "remediation_plan": "Conduct OT-specific vulnerability assessment of BMS infrastructure",
-          "priority": "Critical"
-        },
-        {
-          "attribute_name": "encryption_profile",
-          "gap_description": "Legacy BACnet/Modbus protocols may lack encryption",
-          "remediation_plan": "Assess BMS protocol encryption coverage and upgrade path for legacy segments",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "patch_compliance",
-          "gap_description": "BMS/SCADA patching cadence undocumented",
-          "remediation_plan": "Establish OT patching policy for BMS controllers and sensors",
-          "priority": "High"
+          "attribute_name": "business_fitness",
+          "gap_description": "Business fitness assessment unavailable \u2014 requires capability alignment review",
+          "remediation_plan": "Conduct business fitness assessment against strategic objectives",
+          "priority": "Medium"
         }
       ]
     },
@@ -10898,10 +10488,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.247087Z",
-    "updated_at": "2026-02-28T15:53:03.680315Z",
+    "updated_at": "2026-03-04T17:29:28.898611Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "2",
+    "version": "4",
     "id": "sys-030",
     "entity_type": "system",
     "name": "Rackspace Infrastructure Automation Toolbox",
@@ -11242,36 +10832,17 @@
     "provenance": {
       "data_quality_score": {
         "completeness_pct": null,
-        "accuracy_confidence": "Medium",
-        "timeliness_score": "Current",
-        "consistency_score": "Consistent"
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
       },
-      "primary_data_source": "GitHub rackspace-infrastructure-automation, GCR",
-      "last_assessed_date": "2026-02-28",
-      "assessed_by": "Thomas Jones",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
+      "confidence_level": "High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "current_version_info",
-          "gap_description": "Container image version tags and update frequency unknown",
-          "remediation_plan": "Document image versioning strategy and bundled tool versions",
-          "priority": "Medium"
-        },
-        {
-          "attribute_name": "open_source_components",
-          "gap_description": "No SBOM for container image; bundled tool versions undocumented",
-          "remediation_plan": "Generate SBOM from container image; document Terraform, Ansible, and CLI versions",
-          "priority": "High"
-        },
-        {
-          "attribute_name": "vulnerability_profile",
-          "gap_description": "No container image vulnerability scanning data",
-          "remediation_plan": "Enable container image scanning in GCR or integrate with Trivy/Snyk",
-          "priority": "High"
-        }
-      ]
+      "known_data_gaps": []
     },
     "lifecycle_stage": "production"
   },
@@ -11627,7 +11198,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -12014,7 +11585,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -12400,7 +11971,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -12788,7 +12359,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -13557,7 +13128,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -13943,7 +13514,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -14328,7 +13899,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -14714,7 +14285,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -15099,7 +14670,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Low",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -15484,7 +15055,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -15869,7 +15440,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -16260,7 +15831,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -16645,7 +16216,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -17426,7 +16997,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -17804,7 +17375,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Low",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -18585,7 +18156,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Low",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -18977,7 +18548,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Low",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -19375,7 +18946,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Low",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -19765,7 +19336,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -20150,7 +19721,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -20536,7 +20107,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -20921,7 +20492,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -21306,7 +20877,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -22106,7 +21677,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -22497,7 +22068,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -23280,7 +22851,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -24450,7 +24021,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -25235,7 +24806,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -25622,7 +25193,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -26009,7 +25580,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -26395,7 +25966,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -26781,7 +26352,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -27167,7 +26738,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -27962,7 +27533,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -28342,7 +27913,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -28729,7 +28300,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -29114,7 +28685,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Minor Inconsistencies"
@@ -29506,7 +29077,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Minor Inconsistencies"
@@ -29906,7 +29477,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -30306,7 +29877,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -30700,7 +30271,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -31094,7 +30665,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -31493,7 +31064,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -31891,7 +31462,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -32282,7 +31853,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -32675,7 +32246,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -33062,7 +32633,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Minor Inconsistencies"
@@ -33442,7 +33013,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -33824,7 +33395,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -34212,7 +33783,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -34594,7 +34165,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -34977,7 +34548,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -35371,7 +34942,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -36150,7 +35721,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Low",
         "timeliness_score": "Current",
         "consistency_score": "Major Inconsistencies"
@@ -36543,7 +36114,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -36941,7 +36512,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -37333,7 +36904,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Low",
         "timeliness_score": "Current",
         "consistency_score": "Minor Inconsistencies"
@@ -37732,7 +37303,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -38136,7 +37707,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Recent",
         "consistency_score": "Consistent"
@@ -38534,7 +38105,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -38932,7 +38503,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -39319,7 +38890,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -39703,7 +39274,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -40081,7 +39652,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -40462,7 +40033,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -40849,7 +40420,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -41236,7 +40807,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -41610,7 +41181,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -41991,7 +41562,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -42365,7 +41936,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -42735,7 +42306,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -43103,7 +42674,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -43478,7 +43049,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -43858,7 +43429,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -44242,7 +43813,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -44618,7 +44189,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -45000,7 +44571,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -45382,7 +44953,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -45756,7 +45327,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -46137,7 +45708,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -46519,7 +46090,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -46902,7 +46473,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -47285,7 +46856,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -47673,7 +47244,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -48054,7 +47625,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -48430,7 +48001,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -48805,7 +48376,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -49186,7 +48757,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -49578,7 +49149,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -49964,7 +49535,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -50351,7 +49922,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Minor Inconsistencies"
@@ -50732,7 +50303,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -51109,7 +50680,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -51488,7 +51059,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -51867,7 +51438,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -52242,7 +51813,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -52615,7 +52186,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -52996,7 +52567,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -53371,7 +52942,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -53746,7 +53317,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -54115,7 +53686,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -54484,7 +54055,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -54867,7 +54438,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -55247,7 +54818,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Minor Inconsistencies"
@@ -55620,7 +55191,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -55987,7 +55558,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -56358,7 +55929,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -56733,7 +56304,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -57103,7 +56674,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -57476,7 +57047,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -57845,7 +57416,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -58220,7 +57791,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -58589,7 +58160,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -58972,7 +58543,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "Medium",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -59361,7 +58932,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -59737,7 +59308,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -60112,7 +59683,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -60487,7 +60058,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -60856,7 +60427,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -61231,7 +60802,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -61609,7 +61180,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -61998,7 +61569,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -62381,7 +61952,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -62767,7 +62338,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
@@ -63144,7 +62715,7 @@
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
+        "completeness_pct": 45.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
