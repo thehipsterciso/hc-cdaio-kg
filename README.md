@@ -21,6 +21,7 @@ entities/              26 per-type JSON files (3,000+ entities)
 relationships/         40 per-type JSON files (7,600+ relationships)
 docs/deliverable-1-due-diligence/   10-stage structured analysis (401 JSON documents)
 docs/deliverable-2-data-maturity/   DCAM v2 data maturity assessment and capability deep-dives
+docs/due-diligence-prompts/         Execution prompt library (79 prompts across 10 stages)
 docs/ledgers/          OSINT research session logs and methodology
 scripts/               Sync, build, and quality automation
 ```
