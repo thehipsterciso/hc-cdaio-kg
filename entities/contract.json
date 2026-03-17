@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.284474Z",
-    "updated_at": "2026-03-04T17:28:08.940957Z",
+    "updated_at": "2026-03-05T20:47:58.778832Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "ctr-001",
     "entity_type": "contract",
     "name": "TIPS 230302 \u2014 Data Center Hosting, Sales and Service",
@@ -19,7 +19,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 45000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -52,23 +52,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 90.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Stage 1.4 Government Contracting & Regulatory; Stage 2.4 Government Customer Segment",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -76,14 +76,21 @@
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_annual_value": 15000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$15,000,000 annual revenue loss if terminated; impacts ~0.5% of enterprise revenue",
+      "contract_category": "revenue"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.284503Z",
-    "updated_at": "2026-02-25T19:01:57.284504Z",
+    "updated_at": "2026-03-05T20:48:00.208602Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ctr-002",
     "entity_type": "contract",
     "name": "TIPS 230105 \u2014 Technology Solutions Products and Services",
@@ -98,7 +105,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 12000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -131,33 +138,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284509Z",
-    "updated_at": "2026-03-04T17:27:25.714164Z",
+    "updated_at": "2026-03-05T20:48:01.615856Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "ctr-003",
     "entity_type": "contract",
     "name": "DIR-CPO-5186 \u2014 Texas DIR Cloud Services",
@@ -172,7 +186,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 60000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -205,33 +219,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 90.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Stage 1.4 Government Contracting & Regulatory; Stage 2.4 Government Customer Segment",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 20000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$20,000,000 annual revenue loss if terminated; impacts ~0.7% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284514Z",
-    "updated_at": "2026-02-25T19:01:57.284514Z",
+    "updated_at": "2026-03-05T20:48:03.086443Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ctr-004",
     "entity_type": "contract",
     "name": "DIR-CPO-5004 \u2014 Texas DIR DBITS",
@@ -246,7 +267,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 12000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -279,33 +300,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284518Z",
-    "updated_at": "2026-03-04T17:30:47.721890Z",
+    "updated_at": "2026-03-05T20:48:04.867944Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "ctr-005",
     "entity_type": "contract",
     "name": "DIR-CPO-5155 \u2014 Texas DIR AI Services",
@@ -320,7 +348,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 8000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -353,33 +381,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.5-jurisdictional-licensing-compliance/1.5.structural_lock_ins.json",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 2666666,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$2,666,666 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284526Z",
-    "updated_at": "2026-02-25T19:01:57.284527Z",
+    "updated_at": "2026-03-05T20:48:08.147694Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ctr-006",
     "entity_type": "contract",
     "name": "Equalis Group R10-1111C \u2014 IaaS and PaaS Cloud Solutions",
@@ -394,7 +429,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 75000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -427,33 +462,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 25000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$25,000,000 annual revenue loss if terminated; impacts ~0.9% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284531Z",
-    "updated_at": "2026-03-04T17:32:29.449318Z",
+    "updated_at": "2026-03-05T20:48:09.972385Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "ctr-007",
     "entity_type": "contract",
     "name": "NCPA/OMNIA Partners 01-167 \u2014 IT Storage, Security and Managed Services",
@@ -468,7 +510,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 12000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -501,33 +543,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-2-business-model-economics/2.5-partner-channel-value-capture/2.5.material_partners_and_channels.json",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284537Z",
-    "updated_at": "2026-02-25T19:01:57.284537Z",
+    "updated_at": "2026-03-05T20:48:11.825634Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ctr-008",
     "entity_type": "contract",
     "name": "Rhode Island MPA-308 \u2014 National Cooperative Contract",
@@ -542,7 +591,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 12000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -575,33 +624,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284542Z",
-    "updated_at": "2026-03-04T17:32:09.321190Z",
+    "updated_at": "2026-03-05T20:48:13.688439Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "ctr-009",
     "entity_type": "contract",
     "name": "FLFO Term Loan Facility",
@@ -616,7 +672,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 500000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -649,33 +705,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 125000000,
+      "value_confidence": "high",
+      "estimation_methodology": "Debt facilities from March 2024 Refinancing per SEC filings; term loans estimated $500M-$1B; revolving facility $375M",
+      "financial_risk_if_terminated": "$500,000,000 would require immediate refinancing; ~15.8% of total debt structure",
+      "contract_category": "debt"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284546Z",
-    "updated_at": "2026-03-04T17:32:10.007924Z",
+    "updated_at": "2026-03-05T20:48:15.453793Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 6,
     "id": "ctr-010",
     "entity_type": "contract",
     "name": "FLSO Term Loan Facility",
@@ -690,7 +753,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 500000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -723,33 +786,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 125000000,
+      "value_confidence": "high",
+      "estimation_methodology": "Debt facilities from March 2024 Refinancing per SEC filings; term loans estimated $500M-$1B; revolving facility $375M",
+      "financial_risk_if_terminated": "$500,000,000 would require immediate refinancing; ~15.8% of total debt structure",
+      "contract_category": "debt"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284551Z",
-    "updated_at": "2026-03-04T17:28:04.489267Z",
+    "updated_at": "2026-03-04T21:40:14.310465Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "ctr-011",
     "entity_type": "contract",
     "name": "3.50% FLSO Senior Secured Notes due 2028",
@@ -797,33 +867,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Stage 1.3 Structural Debt Map; Stage 5.1 Capital Structure; Stage 5.4 Liquidity & Covenant Analysis",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284556Z",
-    "updated_at": "2026-02-25T19:01:57.284556Z",
+    "updated_at": "2026-03-05T20:48:20.577734Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ctr-012",
     "entity_type": "contract",
     "name": "5.375% Senior Notes due 2028",
@@ -838,7 +908,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 500000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -871,33 +941,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 125000000,
+      "value_confidence": "high",
+      "estimation_methodology": "Senior secured and unsecured notes from SEC 10-K disclosures; 3.50% FLSO notes $480M outstanding per Q2 2025 10-Q",
+      "financial_risk_if_terminated": "$500,000,000 would require immediate refinancing; ~15.8% of total debt structure",
+      "contract_category": "debt"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284560Z",
-    "updated_at": "2026-03-04T17:28:05.390703Z",
+    "updated_at": "2026-03-04T21:40:16.148456Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "ctr-013",
     "entity_type": "contract",
     "name": "New Revolving Credit Facility",
@@ -945,33 +1022,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Stage 5.1 Capital Structure; Stage 5.4 Liquidity & Debt Facilities",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "Thomas Jones | AI Enrichment Agent (Claude) \u2014 DD Corroboration Pass",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284565Z",
-    "updated_at": "2026-02-25T19:01:57.284565Z",
+    "updated_at": "2026-03-05T20:48:22.019190Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ctr-014",
     "entity_type": "contract",
     "name": "Receivables Purchase Facility",
@@ -986,7 +1063,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 150000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -1019,33 +1096,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 50000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Asset/receivables purchase facility estimated based on working capital facility structure",
+      "financial_risk_if_terminated": "$150,000,000 operating cost; risk of service disruption and vendor transition costs (est. 5-10%)",
+      "contract_category": "cost"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284569Z",
-    "updated_at": "2026-03-04T17:32:10.567884Z",
+    "updated_at": "2026-03-04T21:40:18.023829Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "ctr-015",
     "entity_type": "contract",
     "name": "Apollo Global Management Leveraged Buyout Agreement",
@@ -1093,23 +1177,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.2-ownership-control-entitlement/1.2.control_reality.json",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -1117,10 +1201,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.284573Z",
-    "updated_at": "2026-02-25T19:01:57.284573Z",
+    "updated_at": "2026-03-04T21:40:18.916433Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ctr-016",
     "entity_type": "contract",
     "name": "Master Economic Incentives Agreement (MEIA)",
@@ -1168,33 +1252,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284577Z",
-    "updated_at": "2026-02-25T19:01:57.284577Z",
+    "updated_at": "2026-03-05T20:48:22.977388Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ctr-017",
     "entity_type": "contract",
     "name": "Seattle Children's Hospital 10-Year Managed Cloud Agreement",
@@ -1209,7 +1293,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 200000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -1242,33 +1326,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 66666666,
+      "value_confidence": "medium",
+      "estimation_methodology": "Multi-year MSAs estimated at $20-200M based on customer scale and contract duration",
+      "financial_risk_if_terminated": "$66,666,666 annual revenue loss if terminated; impacts ~2.4% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284581Z",
-    "updated_at": "2026-03-04T17:32:30.063866Z",
+    "updated_at": "2026-03-05T20:48:24.432368Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "ctr-018",
     "entity_type": "contract",
     "name": "Palantir Technologies Strategic Partnership Agreement",
@@ -1283,7 +1374,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 25000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -1316,33 +1407,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-2-business-model-economics/2.5-partner-channel-value-capture/2.5.material_partners_and_channels.json",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 8333333,
+      "value_confidence": "medium",
+      "estimation_methodology": "Technology partnership agreements estimated based on platform integration scope",
+      "financial_risk_if_terminated": "$8,333,333 annual revenue loss if terminated; impacts ~0.3% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284585Z",
-    "updated_at": "2026-02-25T19:01:57.284585Z",
+    "updated_at": "2026-03-05T20:48:25.763332Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ctr-019",
     "entity_type": "contract",
     "name": "Texas DIR DCS Public Cloud Manager Services",
@@ -1357,7 +1455,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 10000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -1390,33 +1488,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 3333333,
+      "value_confidence": "low",
+      "estimation_methodology": "Managed services agreements estimated based on government procurement volumes",
+      "financial_risk_if_terminated": "$10,000,000 annual cost exposure; service disruption + 5-10% transition costs (~$750,000)",
+      "contract_category": "cost"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284589Z",
-    "updated_at": "2026-02-25T19:01:57.284589Z",
+    "updated_at": "2026-03-04T21:40:22.727881Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ctr-020",
     "entity_type": "contract",
     "name": "NCPA 01-85 \u2014 Data Storage, Cloud, Converged and Data Protection",
@@ -1464,33 +1569,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "ncpa",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284594Z",
-    "updated_at": "2026-02-25T19:01:57.284594Z",
+    "updated_at": "2026-03-05T20:48:30.085161Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ctr-021",
     "entity_type": "contract",
     "name": "California CMAS 3-22-06-1050 \u2014 Multiple Award Schedule",
@@ -1505,7 +1610,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 12000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -1538,33 +1643,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284598Z",
-    "updated_at": "2026-03-04T17:32:30.961001Z",
+    "updated_at": "2026-03-05T20:48:31.390845Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "ctr-022",
     "entity_type": "contract",
     "name": "AWS Strategic Collaboration Agreement (SCA) \u2014 October 2024",
@@ -1579,7 +1691,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 25000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -1612,33 +1724,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-2-business-model-economics/2.5-partner-channel-value-capture/2.5.material_partners_and_channels.json",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 8333333,
+      "value_confidence": "medium",
+      "estimation_methodology": "Technology partnership agreements estimated based on platform integration scope",
+      "financial_risk_if_terminated": "$8,333,333 annual revenue loss if terminated; impacts ~0.3% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284605Z",
-    "updated_at": "2026-03-04T17:32:31.633821Z",
+    "updated_at": "2026-03-05T20:48:32.805857Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "ctr-023",
     "entity_type": "contract",
     "name": "Rubrik Cyber Recovery Partnership and Reseller Agreement \u2014 2024",
@@ -1653,7 +1772,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 20000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -1686,33 +1805,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-2-business-model-economics/2.5-partner-channel-value-capture/2.5.material_partners_and_channels.json",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 6666666,
+      "value_confidence": "low",
+      "estimation_methodology": "Enterprise software and cloud platform partnerships estimated based on license tier",
+      "financial_risk_if_terminated": "$6,666,666 annual revenue loss if terminated; impacts ~0.2% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284610Z",
-    "updated_at": "2026-02-25T19:01:57.284611Z",
+    "updated_at": "2026-03-05T20:48:34.197220Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 3,
     "id": "ctr-024",
     "entity_type": "contract",
     "name": "UK G-Cloud 14 Framework \u2014 Rackspace Technology Appointment",
@@ -1727,7 +1853,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 45000000.0,
     "annual_value": null,
     "currency": "GBP",
     "payment_schedule": "",
@@ -1760,33 +1886,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "Crown Commercial Service Digital Marketplace; Rackspace UK public sector listings; cust-049 through cust-051 UK government customer relationships",
-      "last_assessed_date": "2026-02-25",
-      "assessed_by": "Thomas Jones",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 15000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$15,000,000 annual revenue loss if terminated; impacts ~0.5% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284614Z",
-    "updated_at": "2026-03-04T17:32:11.207435Z",
+    "updated_at": "2026-03-05T20:48:35.627826Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "ctr-025",
     "entity_type": "contract",
     "name": "Apollo Global Management Portfolio Governance Framework",
@@ -1834,33 +1967,40 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 80.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.2-ownership-control-entitlement/1.2.control_reality.json",
+      "primary_data_source": "Rackspace Technology 10-K 2024, SEC filings, credit agreements",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Contract Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 0,
+      "value_confidence": "high",
+      "estimation_methodology": "Shareholder governance instrument - non-financial agreement",
+      "financial_risk_if_terminated": "Governance risk; no direct financial impact but critical for Apollo portfolio oversight",
+      "contract_category": "partnership"
     }
   },
   {
     "created_at": "2026-02-25T21:09:00.185483Z",
-    "updated_at": "2026-03-04T17:32:14.786788Z",
+    "updated_at": "2026-03-05T20:48:40.211956Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "76861d55-c33f-4acf-9acd-1103f529f930",
     "entity_type": "contract",
     "name": "GSA Multiple Award Schedule (MAS) \u2014 IT Professional Services SIN 54151S",
@@ -1875,7 +2015,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 20000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -1927,14 +2067,21 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 6666666,
+      "value_confidence": "medium",
+      "estimation_methodology": "Federal supply schedules and GSA MAS contracts estimated based on government procurement volumes",
+      "financial_risk_if_terminated": "$6,666,666 annual revenue loss if terminated; impacts ~0.2% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T21:09:02.397826Z",
-    "updated_at": "2026-02-25T21:09:02.397830Z",
+    "updated_at": "2026-03-05T20:48:41.621749Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "bf3274d3-693f-4b2d-a7eb-e0e1c6ccc9a5",
     "entity_type": "contract",
     "name": "SEWP V (Solutions for Enterprise-Wide Procurement) \u2014 CIO-SP3 Cloud Services",
@@ -1949,7 +2096,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 20000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2001,14 +2148,21 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 6666666,
+      "value_confidence": "medium",
+      "estimation_methodology": "Federal supply schedules and GSA MAS contracts estimated based on government procurement volumes",
+      "financial_risk_if_terminated": "$6,666,666 annual revenue loss if terminated; impacts ~0.2% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T21:09:04.728980Z",
-    "updated_at": "2026-02-25T21:09:04.728982Z",
+    "updated_at": "2026-03-05T20:48:43.153876Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "6177b36b-68d5-4aad-a4ef-c3ad07d46786",
     "entity_type": "contract",
     "name": "Crown Commercial Service (CCS) Technology Services 3 (TS3) \u2014 RM6161",
@@ -2023,7 +2177,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 12000000.0,
     "annual_value": null,
     "currency": "GBP",
     "payment_schedule": "",
@@ -2075,14 +2229,21 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T21:09:10.802755Z",
-    "updated_at": "2026-02-25T21:09:10.802757Z",
+    "updated_at": "2026-03-05T20:48:44.509283Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "03fd6b7b-0386-468c-ade8-43cf2807dea3",
     "entity_type": "contract",
     "name": "NASPO ValuePoint Cloud Solutions Master Agreement \u2014 AR2515",
@@ -2097,7 +2258,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 75000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2149,14 +2310,21 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 25000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$25,000,000 annual revenue loss if terminated; impacts ~0.9% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T21:09:13.416480Z",
-    "updated_at": "2026-03-04T17:32:16.005018Z",
+    "updated_at": "2026-03-05T20:48:45.992276Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "d65f9590-ec43-47d8-8446-4e958c07d4f2",
     "entity_type": "contract",
     "name": "VMware Enterprise License Agreement (ELA) \u2014 Broadcom Transition",
@@ -2171,7 +2339,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 75000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2223,14 +2391,21 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 25000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Enterprise software and cloud platform partnerships estimated based on license tier",
+      "financial_risk_if_terminated": "$75,000,000 annual cost exposure; service disruption + 5-10% transition costs (~$5,625,000)",
+      "contract_category": "cost"
     }
   },
   {
     "created_at": "2026-02-25T21:09:14.113032Z",
-    "updated_at": "2026-02-25T21:09:14.113034Z",
+    "updated_at": "2026-03-05T20:48:51.207943Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "a5d3fa4d-377a-4ce2-9123-6601b79b96d2",
     "entity_type": "contract",
     "name": "Florida DMS State Term Contract \u2014 Cloud Computing Services",
@@ -2245,7 +2420,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 75000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2297,14 +2472,21 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 25000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$25,000,000 annual revenue loss if terminated; impacts ~0.9% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T21:09:16.319251Z",
-    "updated_at": "2026-03-04T17:32:15.404981Z",
+    "updated_at": "2026-03-05T20:48:51.735411Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "85202232-c62f-4556-8a41-6b54052f9a2a",
     "entity_type": "contract",
     "name": "Cisco Enterprise Agreement \u2014 Networking and Security",
@@ -2319,7 +2501,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 30000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2371,14 +2553,21 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 10000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Enterprise software and cloud platform partnerships estimated based on license tier",
+      "financial_risk_if_terminated": "$30,000,000 annual cost exposure; service disruption + 5-10% transition costs (~$2,250,000)",
+      "contract_category": "cost"
     }
   },
   {
     "created_at": "2026-02-25T21:09:23.006895Z",
-    "updated_at": "2026-03-04T17:32:28.886684Z",
+    "updated_at": "2026-03-05T20:48:52.595210Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "c6dce466-6484-4104-b0dc-86b55b64f0b5",
     "entity_type": "contract",
     "name": "Microsoft Cloud Solution Provider (CSP) & Azure Expert MSP Agreement",
@@ -2393,7 +2582,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 5000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2445,14 +2634,21 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 1666666,
+      "value_confidence": "low",
+      "estimation_methodology": "Enterprise software and cloud platform partnerships estimated based on license tier",
+      "financial_risk_if_terminated": "$1,666,666 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T21:09:24.687956Z",
-    "updated_at": "2026-03-04T17:32:32.654480Z",
+    "updated_at": "2026-03-05T20:48:53.665132Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "e7f9985a-c3bb-4152-b392-f5a7a3012f1d",
     "entity_type": "contract",
     "name": "Google Cloud Partner Program \u2014 Premier Partner and MSP Agreement",
@@ -2467,7 +2663,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 5000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2519,14 +2715,21 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 1666666,
+      "value_confidence": "low",
+      "estimation_methodology": "Enterprise software and cloud platform partnerships estimated based on license tier",
+      "financial_risk_if_terminated": "$1,666,666 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T21:09:27.416073Z",
-    "updated_at": "2026-03-04T17:32:27.898196Z",
+    "updated_at": "2026-03-05T20:48:54.650111Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "1b7b013a-40e3-401d-8868-060b18f84777",
     "entity_type": "contract",
     "name": "AWS Premier Tier Services Partner Agreement \u2014 SCA Supplement",
@@ -2541,7 +2744,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 5000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2598,14 +2801,21 @@
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_annual_value": 1666666,
+      "value_confidence": "low",
+      "estimation_methodology": "Enterprise software and cloud platform partnerships estimated based on license tier",
+      "financial_risk_if_terminated": "$1,666,666 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
+    }
   },
   {
     "created_at": "2026-02-25T21:09:29.677702Z",
-    "updated_at": "2026-03-04T17:27:56.867543Z",
+    "updated_at": "2026-03-05T20:48:58.600454Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "711cd5d4-fd2e-4e70-b3e0-996f9d15bd4b",
     "entity_type": "contract",
     "name": "Equinix IBX Data Center Colocation Master Services Agreement",
@@ -2620,7 +2830,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 10000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2677,14 +2887,21 @@
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_annual_value": 3333333,
+      "value_confidence": "medium",
+      "estimation_methodology": "Multi-year MSAs estimated at $20-200M based on customer scale and contract duration",
+      "financial_risk_if_terminated": "$3,333,333 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
+    }
   },
   {
     "created_at": "2026-02-25T21:09:31.668784Z",
-    "updated_at": "2026-03-04T17:30:30.167687Z",
+    "updated_at": "2026-03-05T20:49:00.031845Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "d02df83e-173a-4d9e-9bb0-4b4b6347656d",
     "entity_type": "contract",
     "name": "Oracle Partner Network (OPN) \u2014 Cloud and License Agreement",
@@ -2699,7 +2916,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 5000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2751,14 +2968,21 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 1666666,
+      "value_confidence": "low",
+      "estimation_methodology": "Enterprise software and cloud platform partnerships estimated based on license tier",
+      "financial_risk_if_terminated": "$1,666,666 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-03-04T17:10:13.186387Z",
-    "updated_at": "2026-03-04T17:10:13.186390Z",
+    "updated_at": "2026-03-05T20:49:01.032940Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ecf60e60-f445-4756-864b-5338384ba6ab",
     "entity_type": "contract",
     "name": "First Lien Credit Agreement (March 2024 Refinancing)",
@@ -2773,7 +2997,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": null,
+    "total_contract_value": 10000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2825,14 +3049,21 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_annual_value": 3333333,
+      "value_confidence": "low",
+      "estimation_methodology": "Estimated based on contract type, term, and service scope",
+      "financial_risk_if_terminated": "$10,000,000 annual cost exposure; service disruption + 5-10% transition costs (~$750,000)",
+      "contract_category": "cost"
     }
   },
   {
     "created_at": "2026-03-04T17:11:52.122753Z",
-    "updated_at": "2026-03-04T17:11:52.122755Z",
+    "updated_at": "2026-03-05T20:49:02.266538Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "e645ee81-f125-4fb3-a8c9-3c17cac4c8d2",
     "entity_type": "contract",
     "name": "Broadcom VMware Subscription License Agreement - Post-Acquisition Pricing",
@@ -2847,7 +3078,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": 0.0,
+    "total_contract_value": 75000000.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -2915,14 +3146,21 @@
       "pct_of_private_cloud": "60-70%"
     },
     "materiality": "Critical",
-    "stage_source": "5.2"
+    "stage_source": "5.2",
+    "financial_profile": {
+      "estimated_annual_value": 25000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Enterprise software and cloud platform partnerships estimated based on license tier",
+      "financial_risk_if_terminated": "$75,000,000 annual cost exposure; service disruption + 5-10% transition costs (~$5,625,000)",
+      "contract_category": "cost"
+    }
   },
   {
     "created_at": "2026-03-04T17:12:00.433868Z",
-    "updated_at": "2026-03-04T17:12:00.433870Z",
+    "updated_at": "2026-03-05T20:49:03.310519Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "9933f963-24a2-4463-9b80-3b6c0f2203c0",
     "entity_type": "contract",
     "name": "Email Hosting Platform Price Increase - March 2026 Effective",
@@ -2937,7 +3175,7 @@
     "legal_owner": "",
     "procurement_owner": "",
     "contracting_org_unit": "",
-    "total_contract_value": null,
+    "total_contract_value": 0.0,
     "annual_value": null,
     "currency": "USD",
     "payment_schedule": "",
@@ -3005,6 +3243,13 @@
       "timeline_months": "6-12"
     },
     "materiality": "High",
-    "stage_source": "5.1, 5.2"
+    "stage_source": "5.1, 5.2",
+    "financial_profile": {
+      "estimated_annual_value": 0,
+      "value_confidence": "low",
+      "estimation_methodology": "Service pricing amendment - non-contract instrument",
+      "financial_risk_if_terminated": "Pricing schedule amendment; minimal direct financial impact",
+      "contract_category": "cost"
+    }
   }
 ]

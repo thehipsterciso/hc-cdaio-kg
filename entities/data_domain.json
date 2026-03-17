@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.273663Z",
-    "updated_at": "2026-03-04T17:27:00.425768Z",
+    "updated_at": "2026-03-05T21:35:29.497162Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-001",
     "entity_type": "data_domain",
     "name": "Customer Account Data",
@@ -64,45 +64,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.1-data-domain-authoritativeness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 1500000,
+      "estimation_methodology": "Core business domain with customer PII and compliance requirements"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273683Z",
-    "updated_at": "2026-03-04T17:27:01.167543Z",
+    "updated_at": "2026-03-05T21:35:30.182077Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-002",
     "entity_type": "data_domain",
     "name": "Revenue and Billing Data",
@@ -162,45 +159,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.1-data-domain-authoritativeness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 2000000,
+      "estimation_methodology": "Revenue domain with financial materiality and audit oversight"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273691Z",
-    "updated_at": "2026-03-04T17:30:48.225717Z",
+    "updated_at": "2026-03-05T21:35:30.809289Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 7,
     "id": "dd-003",
     "entity_type": "data_domain",
     "name": "Employee and Workforce Data",
@@ -260,23 +254,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.5-jurisdictional-licensing-compliance/1.5.structural_lock_ins.json",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -284,14 +278,18 @@
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 800000,
+      "estimation_methodology": "Employee data with labor compliance and privacy regulations"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273698Z",
-    "updated_at": "2026-03-04T17:27:02.344327Z",
+    "updated_at": "2026-03-05T21:35:31.785672Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-004",
     "entity_type": "data_domain",
     "name": "Sales and Pipeline Data",
@@ -351,45 +349,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.1-data-domain-authoritativeness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 1200000,
+      "estimation_methodology": "Business critical sales domain with forecast and pipeline data"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273708Z",
-    "updated_at": "2026-03-04T17:27:02.760884Z",
+    "updated_at": "2026-03-05T21:35:32.342626Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-005",
     "entity_type": "data_domain",
     "name": "Contract and Legal Agreement Data",
@@ -449,45 +444,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.2-data-lineage-meaning-drift",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 900000,
+      "estimation_methodology": "Legal agreements requiring contract management and compliance review"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273715Z",
-    "updated_at": "2026-03-04T17:27:06.907163Z",
+    "updated_at": "2026-03-05T21:35:33.189848Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-006",
     "entity_type": "data_domain",
     "name": "Intellectual Property Data",
@@ -547,45 +539,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.1-data-domain-authoritativeness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 1100000,
+      "estimation_methodology": "IP data requiring security controls and licensing compliance"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273721Z",
-    "updated_at": "2026-03-04T17:27:07.564033Z",
+    "updated_at": "2026-03-05T21:35:34.345968Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-007",
     "entity_type": "data_domain",
     "name": "SEC Financial Reporting Data",
@@ -645,45 +634,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.1-data-domain-authoritativeness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 1800000,
+      "estimation_methodology": "SEC reporting with regulatory oversight and audit requirements"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273727Z",
-    "updated_at": "2026-03-04T17:29:27.418288Z",
+    "updated_at": "2026-03-05T21:35:35.964721Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 7,
     "id": "dd-008",
     "entity_type": "data_domain",
     "name": "Accounting and General Ledger Data",
@@ -743,23 +729,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -767,14 +753,18 @@
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 1600000,
+      "estimation_methodology": "Financial reporting with SOX compliance and auditor access"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273734Z",
-    "updated_at": "2026-03-04T17:27:08.665188Z",
+    "updated_at": "2026-03-05T21:35:46.560163Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-009",
     "entity_type": "data_domain",
     "name": "Debt Instrument and Treasury Data",
@@ -834,45 +824,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.1-data-domain-authoritativeness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 700000,
+      "estimation_methodology": "Debt and treasury data with covenant and disclosure compliance"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273741Z",
-    "updated_at": "2026-03-04T17:27:09.291966Z",
+    "updated_at": "2026-03-05T21:35:48.699728Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-010",
     "entity_type": "data_domain",
     "name": "Insider and Equity Compensation Data",
@@ -932,45 +919,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.5-data-access-privilege-asymmetry",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 650000,
+      "estimation_methodology": "Equity data with SEC disclosure and audit controls"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273762Z",
-    "updated_at": "2026-03-04T17:27:10.200950Z",
+    "updated_at": "2026-03-05T21:35:50.311744Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-011",
     "entity_type": "data_domain",
     "name": "Customer-Hosted Cloud Workload Data",
@@ -1030,45 +1014,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.2-data-lineage-meaning-drift",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 1400000,
+      "estimation_methodology": "Customer workload data with security and compliance controls"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273770Z",
-    "updated_at": "2026-03-04T17:29:49.719510Z",
+    "updated_at": "2026-03-05T21:35:51.841537Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 7,
     "id": "dd-012",
     "entity_type": "data_domain",
     "name": "Customer Email and Collaboration Data",
@@ -1128,23 +1109,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -1152,14 +1133,18 @@
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 950000,
+      "estimation_methodology": "Customer communications with eDiscovery and retention governance"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273776Z",
-    "updated_at": "2026-03-04T17:27:11.256605Z",
+    "updated_at": "2026-03-05T21:35:53.636631Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-013",
     "entity_type": "data_domain",
     "name": "Customer Database and Application Data",
@@ -1219,45 +1204,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.3-data-quality-error-tolerance",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 1100000,
+      "estimation_methodology": "Customer database with backup and disaster recovery controls"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273786Z",
-    "updated_at": "2026-03-04T17:27:11.876162Z",
+    "updated_at": "2026-03-05T21:35:55.186322Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-014",
     "entity_type": "data_domain",
     "name": "Customer Data Lake and Warehouse Data",
@@ -1317,45 +1299,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.3-data-quality-error-tolerance",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 950000,
+      "estimation_methodology": "Data lake with analytics governance and access controls"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273793Z",
-    "updated_at": "2026-03-04T17:27:12.530312Z",
+    "updated_at": "2026-03-05T21:35:56.726454Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-015",
     "entity_type": "data_domain",
     "name": "Personal Information (Privacy-Regulated Data)",
@@ -1415,45 +1394,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.6-data-flow-latency-timeliness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 1300000,
+      "estimation_methodology": "PII with GDPR, CCPA, and privacy regulation compliance"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273799Z",
-    "updated_at": "2026-03-04T17:27:16.098344Z",
+    "updated_at": "2026-03-05T21:35:58.807657Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-016",
     "entity_type": "data_domain",
     "name": "Cardholder Data Environment",
@@ -1513,45 +1489,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.6-data-flow-latency-timeliness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 1000000,
+      "estimation_methodology": "Cardholder data under PCI-DSS compliance regime"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273806Z",
-    "updated_at": "2026-03-04T17:27:16.704188Z",
+    "updated_at": "2026-03-05T21:36:01.412933Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-017",
     "entity_type": "data_domain",
     "name": "Protected Health Information",
@@ -1611,45 +1584,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.5-data-access-privilege-asymmetry",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 900000,
+      "estimation_methodology": "PHI with HIPAA security and privacy rule compliance"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273813Z",
-    "updated_at": "2026-03-04T17:27:17.336514Z",
+    "updated_at": "2026-03-05T21:36:04.008204Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-018",
     "entity_type": "data_domain",
     "name": "Controlled Unclassified Information",
@@ -1709,45 +1679,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.5-data-access-privilege-asymmetry",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 850000,
+      "estimation_methodology": "Controlled data with NIST 800-171 and CMMC compliance"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273821Z",
-    "updated_at": "2026-03-04T17:27:17.983432Z",
+    "updated_at": "2026-03-05T21:36:06.509175Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-019",
     "entity_type": "data_domain",
     "name": "ITAR-Controlled Technical Data",
@@ -1807,45 +1774,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.5-data-access-privilege-asymmetry",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 950000,
+      "estimation_methodology": "ITAR-controlled data with export control and licensing"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273827Z",
-    "updated_at": "2026-03-04T17:27:18.821585Z",
+    "updated_at": "2026-03-05T21:36:09.079348Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-020",
     "entity_type": "data_domain",
     "name": "Cross-Border Transfer Data",
@@ -1905,45 +1869,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.4-data-stewardship-accountability",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 700000,
+      "estimation_methodology": "Cross-border data with localization and transfer rules"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273833Z",
-    "updated_at": "2026-03-04T17:27:19.758198Z",
+    "updated_at": "2026-03-05T21:36:11.593898Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-021",
     "entity_type": "data_domain",
     "name": "Security Event and Log Data",
@@ -2003,45 +1964,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.6-data-flow-latency-timeliness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 450000,
+      "estimation_methodology": "Security logs with retention and forensic analysis needs"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273839Z",
-    "updated_at": "2026-03-04T17:27:20.432512Z",
+    "updated_at": "2026-03-05T21:36:14.069598Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-022",
     "entity_type": "data_domain",
     "name": "Identity and Access Management Data",
@@ -2101,45 +2059,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.5-data-access-privilege-asymmetry",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 550000,
+      "estimation_methodology": "IAM data with access controls and governance oversight"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273845Z",
-    "updated_at": "2026-03-04T17:27:21.022434Z",
+    "updated_at": "2026-03-05T21:36:16.594091Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-023",
     "entity_type": "data_domain",
     "name": "Vulnerability and Threat Intelligence Data",
@@ -2199,45 +2154,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.3-data-quality-error-tolerance",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 500000,
+      "estimation_methodology": "Threat intelligence with classification and sharing controls"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273851Z",
-    "updated_at": "2026-03-04T17:27:21.333801Z",
+    "updated_at": "2026-03-05T21:36:18.755024Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-024",
     "entity_type": "data_domain",
     "name": "Physical Security and Surveillance Data",
@@ -2297,45 +2249,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.6-data-flow-latency-timeliness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 350000,
+      "estimation_methodology": "Surveillance data with privacy and retention governance"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273858Z",
-    "updated_at": "2026-03-04T17:27:21.787212Z",
+    "updated_at": "2026-03-05T21:36:20.781595Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-025",
     "entity_type": "data_domain",
     "name": "Incident Response and Forensic Data",
@@ -2395,45 +2344,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.7-epistemic-coherence-contradictions",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 400000,
+      "estimation_methodology": "Forensic data with chain of custody and legal hold"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273865Z",
-    "updated_at": "2026-03-04T17:27:28.777700Z",
+    "updated_at": "2026-03-05T21:36:22.941442Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-026",
     "entity_type": "data_domain",
     "name": "Data Center Environmental Data",
@@ -2493,45 +2439,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.6-data-flow-latency-timeliness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 250000,
+      "estimation_methodology": "Environmental data with monitoring and SLA compliance"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273870Z",
-    "updated_at": "2026-03-04T17:27:29.520945Z",
+    "updated_at": "2026-03-05T21:36:24.892849Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-027",
     "entity_type": "data_domain",
     "name": "Network Infrastructure Data",
@@ -2591,45 +2534,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.2-data-lineage-meaning-drift",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 350000,
+      "estimation_methodology": "Network data with operational and security monitoring"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273876Z",
-    "updated_at": "2026-03-04T17:27:30.034192Z",
+    "updated_at": "2026-03-05T21:36:26.996059Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-028",
     "entity_type": "data_domain",
     "name": "Compute and Storage Provisioning Data",
@@ -2689,45 +2629,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.3-data-quality-error-tolerance",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 300000,
+      "estimation_methodology": "Provisioning data with capacity and cost management"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273881Z",
-    "updated_at": "2026-03-04T17:27:30.562934Z",
+    "updated_at": "2026-03-05T21:36:29.663978Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-029",
     "entity_type": "data_domain",
     "name": "Configuration and Change Management Data",
@@ -2787,45 +2724,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.4-data-stewardship-accountability",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 280000,
+      "estimation_methodology": "Configuration data with change tracking and audit"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273899Z",
-    "updated_at": "2026-03-04T17:27:30.885751Z",
+    "updated_at": "2026-03-05T21:36:32.195499Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 6,
     "id": "dd-030",
     "entity_type": "data_domain",
     "name": "Service Management and Ticketing Data",
@@ -2885,45 +2819,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.6-data-flow-latency-timeliness",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_governance_cost": 320000,
+      "estimation_methodology": "Service management with SLA and operational governance"
+    }
   },
   {
     "created_at": "2026-02-25T19:01:57.273906Z",
-    "updated_at": "2026-03-04T17:27:31.467657Z",
+    "updated_at": "2026-03-04T22:06:07.258819Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-031",
     "entity_type": "data_domain",
     "name": "AI Model Training and Inference Data",
@@ -2983,32 +2914,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.2-data-lineage-meaning-drift",
     "last_assessed_date": "2026-03-04",
@@ -3018,10 +2942,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273913Z",
-    "updated_at": "2026-03-04T17:27:32.228082Z",
+    "updated_at": "2026-03-04T22:06:07.879739Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-032",
     "entity_type": "data_domain",
     "name": "Business Intelligence and Reporting Data",
@@ -3081,32 +3005,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.1-data-domain-authoritativeness",
     "last_assessed_date": "2026-03-04",
@@ -3116,10 +3033,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273919Z",
-    "updated_at": "2026-03-04T17:27:32.936428Z",
+    "updated_at": "2026-03-04T22:06:08.512068Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-033",
     "entity_type": "data_domain",
     "name": "Data Pipeline and ETL Orchestration Data",
@@ -3179,32 +3096,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.2-data-lineage-meaning-drift",
     "last_assessed_date": "2026-03-04",
@@ -3214,10 +3124,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273925Z",
-    "updated_at": "2026-03-04T17:27:33.639461Z",
+    "updated_at": "2026-03-04T22:06:09.326478Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-034",
     "entity_type": "data_domain",
     "name": "Website Analytics and Tracking Data",
@@ -3277,32 +3187,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.3-data-quality-error-tolerance",
     "last_assessed_date": "2026-03-04",
@@ -3312,10 +3215,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273931Z",
-    "updated_at": "2026-03-04T17:27:34.343292Z",
+    "updated_at": "2026-03-04T22:06:09.984556Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-035",
     "entity_type": "data_domain",
     "name": "Marketing Automation and Lead Data",
@@ -3375,32 +3278,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.4-data-stewardship-accountability",
     "last_assessed_date": "2026-03-04",
@@ -3410,10 +3306,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273937Z",
-    "updated_at": "2026-03-04T17:27:38.481463Z",
+    "updated_at": "2026-03-04T22:06:10.585599Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-036",
     "entity_type": "data_domain",
     "name": "SOC Attestation and Audit Data",
@@ -3473,32 +3369,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.4-data-stewardship-accountability",
     "last_assessed_date": "2026-03-04",
@@ -3508,10 +3397,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273943Z",
-    "updated_at": "2026-03-04T17:27:39.434233Z",
+    "updated_at": "2026-03-04T22:06:11.242351Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-037",
     "entity_type": "data_domain",
     "name": "ISO Certification and Management System Data",
@@ -3571,32 +3460,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.4-data-stewardship-accountability",
     "last_assessed_date": "2026-03-04",
@@ -3606,10 +3488,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273948Z",
-    "updated_at": "2026-03-04T17:27:40.689293Z",
+    "updated_at": "2026-03-04T22:06:11.944876Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-038",
     "entity_type": "data_domain",
     "name": "FedRAMP Continuous Monitoring Data",
@@ -3669,32 +3551,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.4-data-stewardship-accountability",
     "last_assessed_date": "2026-03-04",
@@ -3704,10 +3579,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273954Z",
-    "updated_at": "2026-03-04T17:27:41.752463Z",
+    "updated_at": "2026-03-04T22:06:12.705703Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-039",
     "entity_type": "data_domain",
     "name": "Subprocessor Data Flows",
@@ -3767,32 +3642,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.1-data-domain-authoritativeness",
     "last_assessed_date": "2026-03-04",
@@ -3802,10 +3670,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273960Z",
-    "updated_at": "2026-03-04T17:27:43.271962Z",
+    "updated_at": "2026-03-04T22:06:13.505696Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-040",
     "entity_type": "data_domain",
     "name": "Partner Ecosystem and Alliance Data",
@@ -3865,32 +3733,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.2-data-lineage-meaning-drift",
     "last_assessed_date": "2026-03-04",
@@ -3900,10 +3761,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273966Z",
-    "updated_at": "2026-03-04T17:29:04.978892Z",
+    "updated_at": "2026-03-04T22:06:17.279911Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 6,
     "id": "dd-041",
     "entity_type": "data_domain",
     "name": "Law Enforcement Request Data",
@@ -3963,23 +3824,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.entities.json",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -3991,10 +3852,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273974Z",
-    "updated_at": "2026-03-04T17:27:45.749262Z",
+    "updated_at": "2026-03-04T22:06:18.111072Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-042",
     "entity_type": "data_domain",
     "name": "Litigation and Legal Hold Data",
@@ -4054,32 +3915,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.4-data-stewardship-accountability",
     "last_assessed_date": "2026-03-04",
@@ -4089,10 +3943,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273980Z",
-    "updated_at": "2026-03-04T17:29:05.616195Z",
+    "updated_at": "2026-03-04T22:06:18.888167Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 6,
     "id": "dd-043",
     "entity_type": "data_domain",
     "name": "Board and Corporate Governance Data",
@@ -4152,23 +4006,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.entities.json",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -4180,10 +4034,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273985Z",
-    "updated_at": "2026-03-04T17:27:47.640289Z",
+    "updated_at": "2026-03-04T22:06:19.383165Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-044",
     "entity_type": "data_domain",
     "name": "Enterprise Risk Management Data",
@@ -4243,32 +4097,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.1-data-domain-authoritativeness",
     "last_assessed_date": "2026-03-04",
@@ -4278,10 +4125,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273991Z",
-    "updated_at": "2026-03-04T17:27:48.232431Z",
+    "updated_at": "2026-03-04T22:06:20.231142Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-045",
     "entity_type": "data_domain",
     "name": "Environmental and Sustainability Data",
@@ -4341,32 +4188,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.3-data-quality-error-tolerance",
     "last_assessed_date": "2026-03-04",
@@ -4376,10 +4216,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.273998Z",
-    "updated_at": "2026-03-04T17:27:49.159509Z",
+    "updated_at": "2026-03-04T22:06:20.847373Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-046",
     "entity_type": "data_domain",
     "name": "Supply Chain and Procurement Data",
@@ -4439,32 +4279,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.2-data-lineage-meaning-drift",
     "last_assessed_date": "2026-03-04",
@@ -4474,10 +4307,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.274004Z",
-    "updated_at": "2026-03-04T17:27:49.737762Z",
+    "updated_at": "2026-03-04T22:06:21.486508Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-047",
     "entity_type": "data_domain",
     "name": "Encryption Key and Certificate Data",
@@ -4537,32 +4370,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.5-data-access-privilege-asymmetry",
     "last_assessed_date": "2026-03-04",
@@ -4572,10 +4398,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.274010Z",
-    "updated_at": "2026-03-04T17:27:50.302619Z",
+    "updated_at": "2026-03-04T22:06:22.116671Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-048",
     "entity_type": "data_domain",
     "name": "Backup and Disaster Recovery Data",
@@ -4635,32 +4461,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.4-data-stewardship-accountability",
     "last_assessed_date": "2026-03-04",
@@ -4670,10 +4489,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.274016Z",
-    "updated_at": "2026-03-04T17:29:28.296772Z",
+    "updated_at": "2026-03-04T22:06:22.987411Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 6,
     "id": "dd-049",
     "entity_type": "data_domain",
     "name": "Tax Compliance Data",
@@ -4733,23 +4552,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -4761,10 +4580,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.274223Z",
-    "updated_at": "2026-03-04T17:27:50.969992Z",
+    "updated_at": "2026-03-04T22:06:23.388914Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-050",
     "entity_type": "data_domain",
     "name": "Anti-Bribery and Sanctions Compliance Data",
@@ -4824,32 +4643,25 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     },
     "primary_data_source": "stage-7-data-information-epistemic/7.3-data-quality-error-tolerance",
     "last_assessed_date": "2026-03-04",
@@ -4859,10 +4671,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.274230Z",
-    "updated_at": "2026-02-25T23:46:33.653236Z",
+    "updated_at": "2026-03-04T22:06:27.246751Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-051",
     "entity_type": "data_domain",
     "name": "Customer Portal and API Access Data",
@@ -4922,40 +4734,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274236Z",
-    "updated_at": "2026-02-25T23:46:43.893802Z",
+    "updated_at": "2026-03-04T22:06:28.632616Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-052",
     "entity_type": "data_domain",
     "name": "Rackspace Fabric Automation Data",
@@ -5015,40 +4820,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274243Z",
-    "updated_at": "2026-03-04T17:29:06.241829Z",
+    "updated_at": "2026-03-04T22:06:28.967622Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-053",
     "entity_type": "data_domain",
     "name": "Acquisition and Corporate Development Data",
@@ -5108,33 +4906,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.1-corporate-legal-existence/1.1.entities.json",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274250Z",
-    "updated_at": "2026-02-25T23:47:03.159732Z",
+    "updated_at": "2026-03-04T22:06:29.284720Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-054",
     "entity_type": "data_domain",
     "name": "Restructuring and Transformation Data",
@@ -5194,40 +4992,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274257Z",
-    "updated_at": "2026-02-25T23:47:12.413124Z",
+    "updated_at": "2026-03-04T22:06:30.141662Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-055",
     "entity_type": "data_domain",
     "name": "UK Public Services Network Data",
@@ -5287,40 +5078,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274263Z",
-    "updated_at": "2026-02-25T23:47:21.579945Z",
+    "updated_at": "2026-03-04T22:06:30.771532Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-056",
     "entity_type": "data_domain",
     "name": "IRAP-Assessed Data",
@@ -5380,40 +5164,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274269Z",
-    "updated_at": "2026-02-25T23:56:36.332404Z",
+    "updated_at": "2026-03-04T22:06:31.403992Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-057",
     "entity_type": "data_domain",
     "name": "Cloud Usage Metering and Billing Data",
@@ -5473,40 +5250,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274276Z",
-    "updated_at": "2026-02-25T23:56:40.333437Z",
+    "updated_at": "2026-03-04T22:06:32.052023Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-058",
     "entity_type": "data_domain",
     "name": "Cloud Feeds Audit and Event Data",
@@ -5566,40 +5336,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274282Z",
-    "updated_at": "2026-02-25T23:56:43.832076Z",
+    "updated_at": "2026-03-04T22:06:32.922069Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-059",
     "entity_type": "data_domain",
     "name": "Cloud Monitoring Telemetry Data",
@@ -5659,40 +5422,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274288Z",
-    "updated_at": "2026-02-25T23:56:47.414477Z",
+    "updated_at": "2026-03-04T22:06:33.318445Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-060",
     "entity_type": "data_domain",
     "name": "Cloud Object Storage and CDN Data",
@@ -5752,40 +5508,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274295Z",
-    "updated_at": "2026-02-25T23:56:51.393953Z",
+    "updated_at": "2026-03-04T22:06:37.612070Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-061",
     "entity_type": "data_domain",
     "name": "Customer Identity and Authentication Data",
@@ -5845,40 +5594,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274301Z",
-    "updated_at": "2026-02-25T23:56:55.303176Z",
+    "updated_at": "2026-03-04T22:06:38.365082Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-062",
     "entity_type": "data_domain",
     "name": "Customer Management and Offer Data",
@@ -5938,40 +5680,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274307Z",
-    "updated_at": "2026-02-25T23:56:58.457665Z",
+    "updated_at": "2026-03-04T22:06:38.971270Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-063",
     "entity_type": "data_domain",
     "name": "Ticketing and Support Interaction Data",
@@ -6031,40 +5766,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274314Z",
-    "updated_at": "2026-02-25T23:57:01.655500Z",
+    "updated_at": "2026-03-04T22:06:39.924746Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-064",
     "entity_type": "data_domain",
     "name": "Cloud Orchestration and Infrastructure-as-Code Data",
@@ -6124,40 +5852,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274320Z",
-    "updated_at": "2026-02-25T23:57:48.415518Z",
+    "updated_at": "2026-03-04T22:06:40.338142Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-065",
     "entity_type": "data_domain",
     "name": "Rackspace Metrics Time-Series Data",
@@ -6217,40 +5938,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274327Z",
-    "updated_at": "2026-02-25T23:57:51.985532Z",
+    "updated_at": "2026-03-04T22:06:40.995462Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-066",
     "entity_type": "data_domain",
     "name": "Load Balancer Configuration and Traffic Data",
@@ -6310,40 +6024,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274334Z",
-    "updated_at": "2026-02-25T23:57:55.669944Z",
+    "updated_at": "2026-03-04T22:06:41.622800Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-067",
     "entity_type": "data_domain",
     "name": "Rackspace Inheritable Security Controls Data",
@@ -6403,40 +6110,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274341Z",
-    "updated_at": "2026-02-25T23:57:59.961720Z",
+    "updated_at": "2026-03-04T22:06:42.453842Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-068",
     "entity_type": "data_domain",
     "name": "Open-Source Platform and Community Data",
@@ -6496,40 +6196,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274359Z",
-    "updated_at": "2026-02-25T23:58:03.641128Z",
+    "updated_at": "2026-03-04T22:06:43.097003Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-069",
     "entity_type": "data_domain",
     "name": "Data Center Migration and Colocation Data",
@@ -6589,40 +6282,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274365Z",
-    "updated_at": "2026-03-04T17:29:50.496504Z",
+    "updated_at": "2026-03-04T22:06:43.601885Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-070",
     "entity_type": "data_domain",
     "name": "Rackspace Email Platform Data",
@@ -6682,33 +6368,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274370Z",
-    "updated_at": "2026-02-25T23:58:09.519592Z",
+    "updated_at": "2026-03-04T22:06:47.838036Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-071",
     "entity_type": "data_domain",
     "name": "Auto Scale Configuration Data",
@@ -6768,40 +6454,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274375Z",
-    "updated_at": "2026-02-25T23:58:12.972832Z",
+    "updated_at": "2026-03-04T22:06:48.382911Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-072",
     "entity_type": "data_domain",
     "name": "Cloud Queues Message Data",
@@ -6861,40 +6540,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274381Z",
-    "updated_at": "2026-02-25T23:59:03.206053Z",
+    "updated_at": "2026-03-04T22:06:49.432085Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-073",
     "entity_type": "data_domain",
     "name": "Managed Security Alert and Detection Data",
@@ -6954,40 +6626,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274387Z",
-    "updated_at": "2026-02-25T23:59:06.662184Z",
+    "updated_at": "2026-03-04T22:06:49.918139Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-074",
     "entity_type": "data_domain",
     "name": "OpenStack Flex Telemetry and Billing Data",
@@ -7047,40 +6712,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274394Z",
-    "updated_at": "2026-02-25T23:59:10.631716Z",
+    "updated_at": "2026-03-04T22:06:50.490250Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-075",
     "entity_type": "data_domain",
     "name": "FinOps and Cloud Cost Optimization Data",
@@ -7140,40 +6798,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274399Z",
-    "updated_at": "2026-02-25T23:59:14.595290Z",
+    "updated_at": "2026-03-04T22:06:51.195075Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-076",
     "entity_type": "data_domain",
     "name": "Rackspace Logbook Audit Trail Data",
@@ -7233,40 +6884,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274406Z",
-    "updated_at": "2026-02-25T23:59:19.281916Z",
+    "updated_at": "2026-03-04T22:06:51.990710Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-077",
     "entity_type": "data_domain",
     "name": "Rackspace Fabric Service Management Data",
@@ -7326,40 +6970,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274411Z",
-    "updated_at": "2026-03-04T17:29:50.884096Z",
+    "updated_at": "2026-03-04T22:06:52.596602Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 5,
     "id": "dd-078",
     "entity_type": "data_domain",
     "name": "Email Archiving and eDiscovery Data",
@@ -7419,33 +7056,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274416Z",
-    "updated_at": "2026-02-25T23:59:29.388534Z",
+    "updated_at": "2026-03-04T22:06:53.225864Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-079",
     "entity_type": "data_domain",
     "name": "Ethics and Compliance Reporting Data",
@@ -7505,40 +7142,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274422Z",
-    "updated_at": "2026-02-25T23:59:34.113996Z",
+    "updated_at": "2026-03-04T22:06:54.011121Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-080",
     "entity_type": "data_domain",
     "name": "Security Vulnerability Disclosure Data",
@@ -7598,40 +7228,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274427Z",
-    "updated_at": "2026-02-26T00:00:22.099944Z",
+    "updated_at": "2026-03-04T22:06:57.968983Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-081",
     "entity_type": "data_domain",
     "name": "Workforce Compensation and Pay Equity Data",
@@ -7691,40 +7314,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274434Z",
-    "updated_at": "2026-02-26T00:00:25.742691Z",
+    "updated_at": "2026-03-04T22:06:58.574158Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-082",
     "entity_type": "data_domain",
     "name": "Rackspace Spot Kubernetes and Infrastructure Auction Data",
@@ -7784,40 +7400,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274440Z",
-    "updated_at": "2026-02-26T00:00:29.305664Z",
+    "updated_at": "2026-03-04T22:06:59.420494Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-083",
     "entity_type": "data_domain",
     "name": "Open Cloud Platform Configuration Data",
@@ -7877,40 +7486,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274445Z",
-    "updated_at": "2026-02-26T00:00:32.552299Z",
+    "updated_at": "2026-03-04T22:07:00.178129Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-084",
     "entity_type": "data_domain",
     "name": "Rackspace Anywhere Hybrid Cloud Data",
@@ -7970,40 +7572,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274450Z",
-    "updated_at": "2026-02-26T00:00:37.399414Z",
+    "updated_at": "2026-03-04T22:07:00.795461Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-085",
     "entity_type": "data_domain",
     "name": "Cyber Recovery and Resilience Data",
@@ -8063,40 +7658,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274456Z",
-    "updated_at": "2026-02-26T00:00:41.658407Z",
+    "updated_at": "2026-03-04T22:07:01.314033Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-086",
     "entity_type": "data_domain",
     "name": "Sovereign Cloud Compliance Data",
@@ -8156,40 +7744,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274462Z",
-    "updated_at": "2026-02-26T00:00:46.515143Z",
+    "updated_at": "2026-03-04T22:07:02.230819Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-087",
     "entity_type": "data_domain",
     "name": "Customer Sales Bookings and Pipeline Data",
@@ -8249,40 +7830,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.274467Z",
-    "updated_at": "2026-02-26T00:00:50.755436Z",
+    "updated_at": "2026-03-04T22:07:02.870374Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 4,
     "id": "dd-088",
     "entity_type": "data_domain",
     "name": "Market Research and Industry Survey Data",
@@ -8342,40 +7916,33 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 45.0,
-        "accuracy_confidence": "Medium",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise data governance taxonomy; data stewardship program documentation",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
-      "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
+      "assessment_methodology": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
-      "known_data_gaps": [
-        {
-          "attribute_name": "data_lineage",
-          "gap_description": "Data lineage and upstream/downstream dependencies not mapped",
-          "remediation_plan": "Complete data lineage mapping with data governance tool",
-          "priority": "Medium"
-        }
-      ]
+      "known_data_gaps": []
     }
   },
   {
     "created_at": "2026-03-04T17:14:42.140783Z",
-    "updated_at": "2026-03-04T17:14:42.140784Z",
+    "updated_at": "2026-03-04T22:07:04.054248Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "60c44c43-b30d-43b9-a100-fa428c5c0ae8",
     "entity_type": "data_domain",
     "name": "Deal Profitability Truth (CRM vs Delivery vs Finance Contradiction)",
@@ -8435,27 +8002,27 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
-    "confidence": 1.0,
+    "confidence": 1,
     "evidence_stage": "7.1, 7.7",
     "data_steward": "CEO (reactive, post-Q4 2024)",
     "prior_steward": "orphaned pre-Q4 2024",
@@ -8465,10 +8032,10 @@
   },
   {
     "created_at": "2026-03-04T17:14:44.480797Z",
-    "updated_at": "2026-03-04T17:14:44.480800Z",
+    "updated_at": "2026-03-04T22:07:04.904326Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "a70cf957-680a-4913-812d-bbc619d3f509",
     "entity_type": "data_domain",
     "name": "Customer Satisfaction Ground Truth (Internal Absence vs External Platforms)",
@@ -8528,23 +8095,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace data governance framework, DCAM assessment, data catalog",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Data Domain Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },

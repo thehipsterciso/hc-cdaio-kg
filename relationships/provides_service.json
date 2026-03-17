@@ -169,38 +169,6 @@
     }
   },
   {
-    "created_at": "2026-03-04T08:49:45.555299Z",
-    "updated_at": "2026-03-04T08:49:45.555300Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "59f699b3-6b34-463c-969a-7898cfece1db",
-    "relationship_type": "provides_service",
-    "source_id": "vnd-018",
-    "target_id": "dept-043",
-    "weight": 0.95,
-    "confidence": 0.95,
-    "properties": {
-      "rationale": "Splunk SIEM is the primary platform for Information Security (dept-043) SOC operations \u2014 threat detection, alert correlation, 13-month log retention. Source: SOC 3 FY2024, ctl-050"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555503Z",
-    "updated_at": "2026-03-04T08:49:45.555503Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "edb719d1-5c42-4b35-b253-83fad06b2905",
-    "relationship_type": "provides_service",
-    "source_id": "vnd-015",
-    "target_id": "dept-043",
-    "weight": 0.85,
-    "confidence": 0.85,
-    "properties": {
-      "rationale": "Palo Alto Prisma and NGFW provide threat prevention capabilities consumed by Information Security (dept-043) for SOC monitoring and incident response. Source: rackspace.com/security"
-    }
-  },
-  {
     "created_at": "2026-02-25T19:27:34.135952Z",
     "updated_at": "2026-02-25T19:27:34.135952Z",
     "valid_from": null,
@@ -318,70 +286,6 @@
     }
   },
   {
-    "created_at": "2026-03-04T08:49:45.555323Z",
-    "updated_at": "2026-03-04T08:49:45.555323Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "6a54fda3-bf05-4d9d-b727-0aef27c7ab56",
-    "relationship_type": "provides_service",
-    "source_id": "vnd-018",
-    "target_id": "dept-049",
-    "weight": 0.9,
-    "confidence": 0.9,
-    "properties": {
-      "rationale": "Splunk ingests network device logs for Network Security (dept-049) \u2014 firewall logs, IDS/IPS feeds per int-0337 SIEM ingestion from network devices. Source: SOC 3 FY2024"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555471Z",
-    "updated_at": "2026-03-04T08:49:45.555472Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "ae0202d2-3087-4779-b5dd-5d9ab791d35e",
-    "relationship_type": "provides_service",
-    "source_id": "vnd-026",
-    "target_id": "dept-049",
-    "weight": 0.85,
-    "confidence": 0.88,
-    "properties": {
-      "rationale": "Akamai CDN partnership expanded Oct 2021 to include Elastic Engineering for security services \u2014 Akamai WAF and DDoS mitigation used by Network Security dept. Source: rackspace.com/blog/rackspace-technology-akamai-technologies-elastic-engineering-security"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555518Z",
-    "updated_at": "2026-03-04T08:49:45.555518Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "911fe079-0656-4e79-98cd-f19876ee50fe",
-    "relationship_type": "provides_service",
-    "source_id": "vnd-015",
-    "target_id": "dept-049",
-    "weight": 0.9,
-    "confidence": 0.88,
-    "properties": {
-      "rationale": "Palo Alto Networks NGFW is the perimeter security platform managed by Network Security (dept-049). Source: role-061 description, SOC 3 FY2024 perimeter control references"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555563Z",
-    "updated_at": "2026-03-04T08:49:45.555564Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "028a0b84-af82-4cbd-a861-172b3bedd0dc",
-    "relationship_type": "provides_service",
-    "source_id": "vnd-017",
-    "target_id": "dept-049",
-    "weight": 0.85,
-    "confidence": 0.85,
-    "properties": {
-      "rationale": "Cisco ASA firewalls and Cisco ACS TACACS provide network access control managed by Network Security (dept-049). Source: ctl-020 TACACS Cisco ACS reference, role-061"
-    }
-  },
-  {
     "created_at": "2026-02-25T19:47:15.578930Z",
     "updated_at": "2026-02-25T19:47:15.578930Z",
     "valid_from": null,
@@ -465,54 +369,6 @@
     "properties": {
       "rationale": "Network Engineering (dept-058) deploys and manages Fortinet network security infrastructure as part of enterprise network operations",
       "source": "L04-role.json role-061; rackspace.com/about/channel-partners"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555456Z",
-    "updated_at": "2026-03-04T08:49:45.555456Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "5855f008-6c35-49e1-9656-a015d5599ba2",
-    "relationship_type": "provides_service",
-    "source_id": "vnd-026",
-    "target_id": "dept-058",
-    "weight": 0.9,
-    "confidence": 0.92,
-    "properties": {
-      "rationale": "Akamai manages 200+ CDN edge PoPs on behalf of Rackspace \u2014 Network Engineering (dept-058) owns peering and CDN integration architecture. Source: docs.rackspace.com/docs/getting-started-with-cloud-files-and-cdn, net-077 description"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555548Z",
-    "updated_at": "2026-03-04T08:49:45.555548Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "47676d16-f9b1-4f27-86dd-edd2e4bfc037",
-    "relationship_type": "provides_service",
-    "source_id": "vnd-017",
-    "target_id": "dept-058",
-    "weight": 0.9,
-    "confidence": 0.9,
-    "properties": {
-      "rationale": "Cisco switching/routing is the backbone network infrastructure managed by Network Engineering (dept-058) \u2014 BGP, OSPF, RackConnect Global underpinned by Cisco hardware. Source: dept-058 description, role-042 Network Engineer Cisco skillset"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555440Z",
-    "updated_at": "2026-03-04T08:49:45.555440Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "5ac61c02-40cb-47f2-9864-d100dda1f3a3",
-    "relationship_type": "provides_service",
-    "source_id": "vnd-005",
-    "target_id": "dept-116",
-    "weight": 0.95,
-    "confidence": 0.95,
-    "properties": {
-      "rationale": "Elastic Engineering for VMware (dept-116) is dedicated exclusively to VMware workload modernization \u2014 VMware is its primary technology platform. Source: dept-116 description, rackspace.com/cloud/vmware"
     }
   },
   {
@@ -680,22 +536,6 @@
     "properties": {
       "rationale": "Private Cloud Product Engineering (dept-151) uses Grafana dashboards as observability layer for Genestack OpenStack Private Cloud platform engineering",
       "source": "sys-096; docs.rackspacecloud.com"
-    }
-  },
-  {
-    "created_at": "2026-03-04T08:49:45.555393Z",
-    "updated_at": "2026-03-04T08:49:45.555393Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "ca74ae72-499d-4f12-8698-ad874645b71f",
-    "relationship_type": "provides_service",
-    "source_id": "vnd-005",
-    "target_id": "dept-151",
-    "weight": 1.0,
-    "confidence": 0.98,
-    "properties": {
-      "rationale": "VMware (Broadcom) is the primary technology supplier for Private Cloud Product Engineering (dept-151) \u2014 15+ new products built on VMware Cloud Foundation. Source: 10-K FY2024 Q3 2024 product launch stats"
     }
   },
   {
@@ -1248,6 +1088,38 @@
       "attestation": "KG-Analysis-Inferred",
       "inferred_date": "2026-02-27",
       "review_required": true
+    }
+  },
+  {
+    "created_at": "2026-03-04T08:49:45.555471Z",
+    "updated_at": "2026-03-04T08:49:45.555472Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "ae0202d2-3087-4779-b5dd-5d9ab791d35e",
+    "relationship_type": "provides_service",
+    "source_id": "vnd-026",
+    "target_id": "dept-049",
+    "weight": 0.85,
+    "confidence": 0.88,
+    "properties": {
+      "rationale": "Akamai CDN partnership expanded Oct 2021 to include Elastic Engineering for security services \u2014 Akamai WAF and DDoS mitigation used by Network Security dept. Source: rackspace.com/blog/rackspace-technology-akamai-technologies-elastic-engineering-security"
+    }
+  },
+  {
+    "created_at": "2026-03-04T08:49:45.555456Z",
+    "updated_at": "2026-03-04T08:49:45.555456Z",
+    "valid_from": null,
+    "valid_until": null,
+    "version": 1,
+    "id": "5855f008-6c35-49e1-9656-a015d5599ba2",
+    "relationship_type": "provides_service",
+    "source_id": "vnd-026",
+    "target_id": "dept-058",
+    "weight": 0.9,
+    "confidence": 0.92,
+    "properties": {
+      "rationale": "Akamai manages 200+ CDN edge PoPs on behalf of Rackspace \u2014 Network Engineering (dept-058) owns peering and CDN integration architecture. Source: docs.rackspace.com/docs/getting-started-with-cloud-files-and-cdn, net-077 description"
     }
   }
 ]

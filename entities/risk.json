@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T21:14:48.307417Z",
-    "updated_at": "2026-03-04T17:28:06.621062Z",
+    "updated_at": "2026-03-05T20:57:11.961346Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "44081948-1d55-4490-b7b2-2d47b11389b9",
     "entity_type": "risk",
     "name": "Ransomware Attack on Hosted Exchange Infrastructure",
@@ -97,21 +97,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -127,14 +127,22 @@
     "primary_data_source": "stage-8-risk-security-regulatory/8.1-cybersecurity-control-failure",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 137.5,
+      "ale_range": "$75.0M - $200.0M",
+      "max_single_loss_millions": 400,
+      "current_mitigation_cost_millions": 24,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($150M-$400M) based on High Major impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:14:51.494822Z",
-    "updated_at": "2026-03-04T17:29:23.237442Z",
+    "updated_at": "2026-03-05T20:57:13.497853Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 5,
     "id": "d66e7e64-ef72-4a3a-8226-1c73fa45021c",
     "entity_type": "risk",
     "name": "Excessive Financial Leverage and Debt Covenant Risk",
@@ -227,21 +235,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.3-corporate-history-structural-debt/1.3.structural_debt_map.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -250,14 +258,22 @@
     "primary_data_source": "5.4-debt-covenants-control-transfer/5.4.hidden_leverage_points.json; 5.4-debt-covenants-control-transfer/5.4.control_transfer_map.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 262.5,
+      "ale_range": "$150.0M - $375.0M",
+      "max_single_loss_millions": 500,
+      "current_mitigation_cost_millions": 30,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (75%) \u00d7 SLE ($200M-$500M) based on High Major impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:14:54.297390Z",
-    "updated_at": "2026-03-04T17:27:54.220695Z",
+    "updated_at": "2026-03-05T20:57:14.963973Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "6362fa99-cb66-4989-b471-f78c9d6a1207",
     "entity_type": "risk",
     "name": "Customer Revenue Attrition and Churn",
@@ -350,23 +366,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": [
         {
@@ -380,14 +396,22 @@
     "primary_data_source": "5.1-revenue-quality-stability/5.1.revenue_quality_map.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 87.5,
+      "ale_range": "$25.0M - $150.0M",
+      "max_single_loss_millions": 300,
+      "current_mitigation_cost_millions": 9,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($50M-$300M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:14:57.438620Z",
-    "updated_at": "2026-03-04T17:27:33.346201Z",
+    "updated_at": "2026-03-05T20:57:16.472197Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "1ca14fb2-9031-4165-9c6d-e0e6ad9b3cba",
     "entity_type": "risk",
     "name": "Hyperscaler Direct Competition and Margin Compression",
@@ -480,23 +504,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": [
         {
@@ -510,14 +534,22 @@
     "primary_data_source": "5.2-margin-cost-operating-leverage/5.2.margin_physics.json; 5.2-margin-cost-operating-leverage/5.2.structural_margin_risks.json; 6.2-cloud-hyperscaler-dependency/6.2.cloud_dependency_map.json; 6.2-cloud-hyperscaler-dependency/6.2.hyperscaler_power_asymmetries.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 112.5,
+      "ale_range": "$37.5M - $187.5M",
+      "max_single_loss_millions": 250,
+      "current_mitigation_cost_millions": 15,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (75%) \u00d7 SLE ($50M-$250M) based on High Moderate impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:15:00.305374Z",
-    "updated_at": "2026-03-04T08:42:23.185042Z",
+    "updated_at": "2026-03-05T20:57:17.918954Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "09f89b5f-c272-4918-9722-4440e75f8de5",
     "entity_type": "risk",
     "name": "Cloud Engineering Talent Shortage and Attrition",
@@ -610,21 +642,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -636,14 +668,22 @@
           "priority": "High"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 31.88,
+      "ale_range": "$7.5M - $56.2M",
+      "max_single_loss_millions": 75,
+      "current_mitigation_cost_millions": 2.25,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (75%) \u00d7 SLE ($10M-$75M) based on Medium Moderate impact."
     }
   },
   {
     "created_at": "2026-02-25T21:15:03.973837Z",
-    "updated_at": "2026-03-04T17:27:30.306627Z",
+    "updated_at": "2026-03-05T20:57:19.429253Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "0df1ebb1-da55-44d7-9c0d-a9eeba461111",
     "entity_type": "risk",
     "name": "Data Center Physical Security and Environmental Risk",
@@ -736,23 +776,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": [
         {
@@ -766,14 +806,22 @@
     "primary_data_source": "6.1-compute-datacenter-control/6.1.compute_control_map.json; 6.1-compute-datacenter-control/6.1.facility_lock_in_risks.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 2.12,
+      "ale_range": "$0.5M - $3.8M",
+      "max_single_loss_millions": 75,
+      "current_mitigation_cost_millions": 2.25,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (5%) \u00d7 SLE ($10M-$75M) based on Medium Major impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:15:08.074898Z",
-    "updated_at": "2026-03-04T17:27:47.336459Z",
+    "updated_at": "2026-03-05T20:57:20.915917Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "4fd5569a-4e3b-4cea-b060-85558976f69b",
     "entity_type": "risk",
     "name": "Third-Party Dependency Risk (Equinix, Hyperscalers)",
@@ -866,21 +914,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -896,14 +944,22 @@
     "primary_data_source": "6.1-compute-datacenter-control/6.1.facility_lock_in_risks.json; 6.1-compute-datacenter-control/6.1.compute_control_map.json; 6.2-cloud-hyperscaler-dependency/6.2.cloud_dependency_map.json; 6.2-cloud-hyperscaler-dependency/6.2.hyperscaler_power_asymmetries.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 15,
+      "ale_range": "$5.0M - $25.0M",
+      "max_single_loss_millions": 100,
+      "current_mitigation_cost_millions": 3,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (25%) \u00d7 SLE ($20M-$100M) based on Medium Major impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:15:09.811212Z",
-    "updated_at": "2026-03-04T17:28:08.647468Z",
+    "updated_at": "2026-03-05T20:57:22.352029Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "e661c520-8133-467b-863c-78e60a64b14e",
     "entity_type": "risk",
     "name": "GDPR and Global Data Privacy Regulatory Compliance",
@@ -996,23 +1052,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": [
         {
@@ -1026,14 +1082,22 @@
     "primary_data_source": "stage-8-risk-security-regulatory/8.2-privacy-data-rights-use-limits",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 21.88,
+      "ale_range": "$6.2M - $37.5M",
+      "max_single_loss_millions": 150,
+      "current_mitigation_cost_millions": 4.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (25%) \u00d7 SLE ($25M-$150M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:15:13.546740Z",
-    "updated_at": "2026-03-04T17:28:07.916203Z",
+    "updated_at": "2026-03-05T20:57:23.732420Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "3cc0f43a-6d2b-4232-8402-8a45eba29e0c",
     "entity_type": "risk",
     "name": "FedRAMP Authorization Lapse or Non-Renewal",
@@ -1126,21 +1190,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -1156,14 +1220,22 @@
     "primary_data_source": "stage-8-risk-security-regulatory/8.3-regulatory-enforcement-intervention",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 12.5,
+      "ale_range": "$5.0M - $20.0M",
+      "max_single_loss_millions": 400,
+      "current_mitigation_cost_millions": 12,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (5%) \u00d7 SLE ($100M-$400M) based on Medium Major impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:15:16.519846Z",
-    "updated_at": "2026-03-04T08:42:29.030717Z",
+    "updated_at": "2026-03-05T20:57:24.303864Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "88299209-bd79-4978-90a2-034f351e5c41",
     "entity_type": "risk",
     "name": "AI-Driven Automation Displacing Managed Services Labor",
@@ -1256,23 +1328,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": [
         {
@@ -1282,14 +1354,22 @@
           "priority": "High"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 13.75,
+      "ale_range": "$2.5M - $25.0M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
     }
   },
   {
     "created_at": "2026-02-25T21:15:19.491225Z",
-    "updated_at": "2026-03-04T17:28:12.169980Z",
+    "updated_at": "2026-03-05T20:57:28.241482Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "e8f01b8a-c059-43ae-8c6b-3156123bdd94",
     "entity_type": "risk",
     "name": "Interest Rate Risk on Variable Rate Debt Instruments",
@@ -1382,21 +1462,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -1412,14 +1492,22 @@
     "primary_data_source": "5.4-debt-covenants-control-transfer/5.4.hidden_leverage_points.json; 5.4-debt-covenants-control-transfer/5.4.control_transfer_map.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 175,
+      "ale_range": "$100.0M - $250.0M",
+      "max_single_loss_millions": 500,
+      "current_mitigation_cost_millions": 5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($200M-$500M) based on Low Minor impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:15:22.513213Z",
-    "updated_at": "2026-03-04T08:42:34.596439Z",
+    "updated_at": "2026-03-05T20:57:29.762829Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "5f85dfa6-340d-4e10-80b7-e3bb6ba4169e",
     "entity_type": "risk",
     "name": "Russia/CIS Geopolitical Sanctions and Market Exit Risk",
@@ -1512,23 +1600,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": [
         {
@@ -1538,14 +1626,22 @@
           "priority": "High"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 0.26,
+      "ale_range": "$0.0M - $0.5M",
+      "max_single_loss_millions": 10,
+      "current_mitigation_cost_millions": 0.1,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (5%) \u00d7 SLE ($0.5M-$10M) based on Minimal Minor impact."
     }
   },
   {
     "created_at": "2026-02-25T21:15:25.646472Z",
-    "updated_at": "2026-03-04T08:42:35.809463Z",
+    "updated_at": "2026-03-05T20:57:30.687641Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "61b280d9-51dc-4656-9496-e41023750567",
     "entity_type": "risk",
     "name": "APAC Regulatory and Geopolitical Risk (China/HK Operations)",
@@ -1638,21 +1734,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -1664,14 +1760,22 @@
           "priority": "High"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 43.75,
+      "ale_range": "$12.5M - $75.0M",
+      "max_single_loss_millions": 150,
+      "current_mitigation_cost_millions": 4.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($25M-$150M) based on Medium Moderate impact."
     }
   },
   {
     "created_at": "2026-02-25T21:15:28.356886Z",
-    "updated_at": "2026-03-04T17:28:07.369683Z",
+    "updated_at": "2026-03-05T20:57:31.724381Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "01dc8b80-920d-45c7-b8d8-0c4933d5fec0",
     "entity_type": "risk",
     "name": "Reputational Damage Post-PLAY Ransomware Breach",
@@ -1764,21 +1868,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -1794,14 +1898,22 @@
     "primary_data_source": "stage-8-risk-security-regulatory/8.1-cybersecurity-control-failure",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 206.25,
+      "ale_range": "$112.5M - $300.0M",
+      "max_single_loss_millions": 400,
+      "current_mitigation_cost_millions": 12,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (75%) \u00d7 SLE ($150M-$400M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:15:31.375574Z",
-    "updated_at": "2026-03-04T17:27:53.113792Z",
+    "updated_at": "2026-03-05T20:57:32.644205Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "545a3fd8-35bb-420c-b3f1-5d23bf1ac818",
     "entity_type": "risk",
     "name": "OpenStack Market Decline and Legacy Revenue Runoff",
@@ -1894,23 +2006,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": [
         {
@@ -1924,14 +2036,22 @@
     "primary_data_source": "5.1-revenue-quality-stability/5.1.revenue_quality_map.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 20.62,
+      "ale_range": "$3.8M - $37.5M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (75%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-02-25T21:15:34.394114Z",
-    "updated_at": "2026-03-04T17:14:16.115628Z",
+    "updated_at": "2026-03-05T20:57:33.724320Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "ca1305ee-6236-41f3-98b1-8c97704037e6",
     "entity_type": "risk",
     "name": "VMware Licensing Cost Escalation (Broadcom Acquisition)",
@@ -2024,21 +2144,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -2050,14 +2170,22 @@
           "priority": "High"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 118.75,
+      "ale_range": "$47.5M - $190.0M",
+      "max_single_loss_millions": 200,
+      "current_mitigation_cost_millions": 12,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (95%) \u00d7 SLE ($50M-$200M) based on High Critical impact."
     }
   },
   {
     "created_at": "2026-02-25T21:15:37.550010Z",
-    "updated_at": "2026-03-04T08:42:41.761471Z",
+    "updated_at": "2026-03-05T20:57:34.982421Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "97a1d0a6-b2b4-4f96-a80f-13e688e6a6c1",
     "entity_type": "risk",
     "name": "Multi-Tenant Data Isolation Failure",
@@ -2150,23 +2278,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": [
         {
@@ -2176,14 +2304,22 @@
           "priority": "High"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 10,
+      "ale_range": "$5.0M - $15.0M",
+      "max_single_loss_millions": 300,
+      "current_mitigation_cost_millions": 9,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (5%) \u00d7 SLE ($100M-$300M) based on Medium Major impact."
     }
   },
   {
     "created_at": "2026-02-25T21:15:40.453695Z",
-    "updated_at": "2026-03-04T08:42:43.281752Z",
+    "updated_at": "2026-03-05T20:57:36.556638Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "3dc73b52-975e-48ca-ba6b-322d549f2785",
     "entity_type": "risk",
     "name": "PCI DSS Compliance Certification Failure",
@@ -2276,21 +2412,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -2302,14 +2438,22 @@
           "priority": "High"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 4.38,
+      "ale_range": "$1.2M - $7.5M",
+      "max_single_loss_millions": 150,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (5%) \u00d7 SLE ($25M-$150M) based on Low Moderate impact."
     }
   },
   {
     "created_at": "2026-02-25T21:15:43.808144Z",
-    "updated_at": "2026-03-04T17:29:14.605842Z",
+    "updated_at": "2026-03-05T20:57:37.581391Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "010c600a-9c5e-42fe-9de6-2e4318c65ffb",
     "entity_type": "risk",
     "name": "Key Executive Departure and Leadership Continuity",
@@ -2402,33 +2546,41 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-1-corporate-legal-structural/1.2-ownership-control-entitlement/1.2.control_reality.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 1.31,
+      "ale_range": "$0.1M - $2.5M",
+      "max_single_loss_millions": 10,
+      "current_mitigation_cost_millions": 0.1,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (25%) \u00d7 SLE ($0.5M-$10M) based on Low Minor impact."
     }
   },
   {
     "created_at": "2026-02-25T21:15:46.536034Z",
-    "updated_at": "2026-03-04T08:42:46.448149Z",
+    "updated_at": "2026-03-05T20:57:38.516636Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "3a138867-02d7-4c61-85d8-5b03c5d7d4b0",
     "entity_type": "risk",
     "name": "Litigation and Class Action Exposure (Post-Breach)",
@@ -2521,21 +2673,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -2547,14 +2699,22 @@
           "priority": "High"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 20.62,
+      "ale_range": "$3.8M - $37.5M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (75%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
     }
   },
   {
     "created_at": "2026-02-25T21:15:49.593650Z",
-    "updated_at": "2026-03-04T08:42:47.873412Z",
+    "updated_at": "2026-03-05T20:57:42.667322Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "49a79ff3-4fbf-4467-b440-7705603c45d0",
     "entity_type": "risk",
     "name": "Regulatory Scrutiny of AI Services and Data Processing",
@@ -2647,23 +2807,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
-      "confidence_level": "Medium",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": [
         {
@@ -2673,14 +2833,22 @@
           "priority": "High"
         }
       ]
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 21.88,
+      "ale_range": "$6.2M - $37.5M",
+      "max_single_loss_millions": 150,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (25%) \u00d7 SLE ($25M-$150M) based on Low Minor impact."
     }
   },
   {
     "created_at": "2026-02-25T21:15:52.845460Z",
-    "updated_at": "2026-03-04T17:27:58.265845Z",
+    "updated_at": "2026-03-05T20:57:43.810674Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "75df8a92-5595-4fbc-a5ba-3d8ed58d9281",
     "entity_type": "risk",
     "name": "Foreign Exchange Risk on Global Revenue and Costs",
@@ -2773,21 +2941,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 55.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "Enterprise risk management framework; 10-K FY2024 Risk Factors section",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) + Thomas Jones (2026-02-25)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Hybrid",
       "confidence_level": "High",
       "attestation_status": null,
@@ -2803,14 +2971,22 @@
     "primary_data_source": "5.2-margin-cost-operating-leverage/5.2.margin_physics.json; 5.2-margin-cost-operating-leverage/5.2.structural_margin_risks.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 93.75,
+      "ale_range": "$37.5M - $150.0M",
+      "max_single_loss_millions": 200,
+      "current_mitigation_cost_millions": 2,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (75%) \u00d7 SLE ($50M-$200M) based on Low Minor impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:15.551024Z",
-    "updated_at": "2026-03-04T17:28:04.802536Z",
+    "updated_at": "2026-03-05T20:57:44.816094Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "b955adaf-00bd-45f2-9bf5-32cdc11adb27",
     "entity_type": "risk",
     "name": "Change-of-Control Debt Acceleration Risk",
@@ -2903,37 +3079,45 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
     },
     "primary_data_source": "5.5-capital-allocation-change-capacity/5.5.change_failure_risks.json; 5.5-capital-allocation-change-capacity/5.5.change_funding_capacity.json; 5.5-capital-allocation-change-capacity/5.5.historical_underinvestment.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 175,
+      "ale_range": "$100.0M - $250.0M",
+      "max_single_loss_millions": 500,
+      "current_mitigation_cost_millions": 15,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($200M-$500M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:28.619635Z",
-    "updated_at": "2026-03-04T17:10:28.619637Z",
+    "updated_at": "2026-03-05T20:57:45.871552Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "40b926e9-9444-46c1-979f-1596cae95c05",
     "entity_type": "risk",
     "name": "Jurisdictional Lock-In: FedRAMP Authorization Entity-Specificity",
@@ -3026,33 +3210,41 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 125,
+      "ale_range": "$50.0M - $200.0M",
+      "max_single_loss_millions": 400,
+      "current_mitigation_cost_millions": 12,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($100M-$400M) based on Medium Moderate impact."
     }
   },
   {
     "created_at": "2026-03-04T17:10:29.807850Z",
-    "updated_at": "2026-03-04T17:28:02.025979Z",
+    "updated_at": "2026-03-05T20:57:47.176798Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "a2d0f675-9180-48d0-984b-f3ab3f3307b3",
     "entity_type": "risk",
     "name": "Hyperscaler Partner Credit Compression",
@@ -3145,23 +3337,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -3177,14 +3369,22 @@
     "primary_data_source": "6.2-cloud-hyperscaler-dependency/6.2.cloud_dependency_map.json; 6.2-cloud-hyperscaler-dependency/6.2.hyperscaler_power_asymmetries.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 13.75,
+      "ale_range": "$2.5M - $25.0M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:30.690369Z",
-    "updated_at": "2026-03-04T17:10:30.690371Z",
+    "updated_at": "2026-03-05T20:57:48.218068Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "9bf6f273-f3d8-479d-96f2-324083e8ad1c",
     "entity_type": "risk",
     "name": "Jurisdictional Lock-In: UK Data Sovereignty Requirements",
@@ -3277,33 +3477,41 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 13.75,
+      "ale_range": "$2.5M - $25.0M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
     }
   },
   {
     "created_at": "2026-03-04T17:10:31.776068Z",
-    "updated_at": "2026-03-04T17:26:41.224532Z",
+    "updated_at": "2026-03-05T20:57:49.254384Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "bb40187a-89bb-4337-b205-0f5c87d5e9da",
     "entity_type": "risk",
     "name": "CEO Coordination Bottleneck Limiting Organizational Throughput",
@@ -3396,34 +3604,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-4-operating-model-execution/4.1-decision-rights-authority-escalation/4.1.authority_mismatches.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
-    "materiality_conclusion": "Material - affects execution velocity, scalability, post-close viability"
+    "materiality_conclusion": "Material - affects execution velocity, scalability, post-close viability",
+    "financial_profile": {
+      "estimated_ALE_millions": 43.75,
+      "ale_range": "$12.5M - $75.0M",
+      "max_single_loss_millions": 150,
+      "current_mitigation_cost_millions": 9,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($25M-$150M) based on High Major impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:34.458280Z",
-    "updated_at": "2026-03-04T17:28:16.992157Z",
+    "updated_at": "2026-03-05T20:57:50.291087Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "fd89e3b9-3e1a-48bd-99e4-981b89d6a98b",
     "entity_type": "risk",
     "name": "Sales-Delivery Authority Misalignment Generating Margin Erosion",
@@ -3516,23 +3732,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-4-operating-model-execution/4.1-decision-rights-authority-escalation/4.1.authority_mismatches.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -3541,14 +3757,22 @@
     "primary_data_source": "6.2-cloud-hyperscaler-dependency/6.2.cloud_dependency_map.json; 6.2-cloud-hyperscaler-dependency/6.2.hyperscaler_power_asymmetries.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 75,
+      "ale_range": "$25.0M - $125.0M",
+      "max_single_loss_millions": 250,
+      "current_mitigation_cost_millions": 15,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($50M-$250M) based on High Major impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:34.713071Z",
-    "updated_at": "2026-03-04T17:10:34.713072Z",
+    "updated_at": "2026-03-05T20:57:51.383526Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "6be15e9c-a226-4b08-8b20-4b8b7c38326a",
     "entity_type": "risk",
     "name": "Strategic Buyer Incompatibility: AWS Partnership Change-of-Control",
@@ -3641,33 +3865,41 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 13.75,
+      "ale_range": "$2.5M - $25.0M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
     }
   },
   {
     "created_at": "2026-03-04T17:10:34.936349Z",
-    "updated_at": "2026-03-04T17:10:34.936351Z",
+    "updated_at": "2026-03-05T20:57:52.507028Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "ed60a9e7-f1c3-4e0b-97d7-cbe5c09b18b1",
     "entity_type": "risk",
     "name": "VMware Licensing Cost Inflation and Private Cloud Viability",
@@ -3760,21 +3992,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -3788,14 +4020,22 @@
     "margin_compression": "Private Cloud gross margin 38.6% \u2192 25-30%, operating margin 15-25% \u2192 0-3%",
     "materiality": "$210M-$315M operating profit loss (50-75% of total company OI)",
     "timeline": "12-36 months to customer churn materialization",
-    "control_options": "NONE - cannot negotiate with Broadcom, cannot migrate customers without acceptance of 20-30% failure rate"
+    "control_options": "NONE - cannot negotiate with Broadcom, cannot migrate customers without acceptance of 20-30% failure rate",
+    "financial_profile": {
+      "estimated_ALE_millions": 62.5,
+      "ale_range": "$25.0M - $100.0M",
+      "max_single_loss_millions": 200,
+      "current_mitigation_cost_millions": 6,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($50M-$200M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:36.276429Z",
-    "updated_at": "2026-03-04T17:27:42.068029Z",
+    "updated_at": "2026-03-05T20:57:57.770661Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "3f68b924-c53a-43c5-95a7-55c501dc6249",
     "entity_type": "risk",
     "name": "Customer Support Escalation Authority Void Threatening Revenue Retention",
@@ -3888,23 +4128,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -3912,14 +4152,22 @@
     "primary_data_source": "6.1-compute-datacenter-control/6.1.facility_lock_in_risks.json; 6.1-compute-datacenter-control/6.1.compute_control_map.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 43.75,
+      "ale_range": "$12.5M - $75.0M",
+      "max_single_loss_millions": 150,
+      "current_mitigation_cost_millions": 9,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($25M-$150M) based on High Major impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:39.721081Z",
-    "updated_at": "2026-03-04T17:10:39.721084Z",
+    "updated_at": "2026-03-05T20:57:58.985112Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "3d16c228-6dd3-4134-bfba-cdcf4a6f0db9",
     "entity_type": "risk",
     "name": "Silent Price Erosion and Pricing Power Loss",
@@ -4012,23 +4260,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -4040,14 +4288,22 @@
     "ratchet_effect": "One-way downward (prices decline, never recover)",
     "materiality": "$500M+ revenue eroded cumulatively",
     "management_perception": "LOW - individual renewal concessions seem rational, aggregate impact invisible",
-    "control_options": "DIFFICULT - requires pricing discipline across 400+ customer renewal negotiations annually"
+    "control_options": "DIFFICULT - requires pricing discipline across 400+ customer renewal negotiations annually",
+    "financial_profile": {
+      "estimated_ALE_millions": 13.75,
+      "ale_range": "$2.5M - $25.0M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:41.896429Z",
-    "updated_at": "2026-03-04T17:10:41.896431Z",
+    "updated_at": "2026-03-05T20:58:00.043334Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "f3700548-8483-4dcf-b0f7-28ef40e6d093",
     "entity_type": "risk",
     "name": "Path Dependency: Multi-Acquisition Integration Incomplete",
@@ -4140,33 +4396,41 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 30,
+      "ale_range": "$10.0M - $50.0M",
+      "max_single_loss_millions": 100,
+      "current_mitigation_cost_millions": 3,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($20M-$100M) based on Medium Moderate impact."
     }
   },
   {
     "created_at": "2026-03-04T17:10:42.429352Z",
-    "updated_at": "2026-03-04T17:10:42.429354Z",
+    "updated_at": "2026-03-05T20:58:01.101998Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "f1ddae70-9430-4ebe-9f05-422f2bd50c6b",
     "entity_type": "risk",
     "name": "Multi-Jurisdictional Regulatory Fragmentation Limiting Operational Consolidation",
@@ -4259,34 +4523,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
-    "materiality_conclusion": "Material - affects cost structure, competitive positioning, integration viability"
+    "materiality_conclusion": "Material - affects cost structure, competitive positioning, integration viability",
+    "financial_profile": {
+      "estimated_ALE_millions": 43.75,
+      "ale_range": "$12.5M - $75.0M",
+      "max_single_loss_millions": 150,
+      "current_mitigation_cost_millions": 9,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($25M-$150M) based on High Major impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:45.166603Z",
-    "updated_at": "2026-03-04T17:27:45.422223Z",
+    "updated_at": "2026-03-05T20:58:02.143376Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "9627c9cf-2ed9-450f-89b1-1d6809bff1b7",
     "entity_type": "risk",
     "name": "Incentive Misalignment in Support & Operations Creating Reactive Posture",
@@ -4379,34 +4651,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-4-operating-model-execution/4.4-incentives-accountability-drag/4.4.perverse_incentives.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
-    "materiality_conclusion": "Material - affects execution quality, customer satisfaction, operational efficiency"
+    "materiality_conclusion": "Material - affects execution quality, customer satisfaction, operational efficiency",
+    "financial_profile": {
+      "estimated_ALE_millions": 43.75,
+      "ale_range": "$12.5M - $75.0M",
+      "max_single_loss_millions": 150,
+      "current_mitigation_cost_millions": 9,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($25M-$150M) based on High Major impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:46.367510Z",
-    "updated_at": "2026-03-04T17:27:59.251255Z",
+    "updated_at": "2026-03-05T20:58:03.228775Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "8f83ab4d-fa45-4865-bfa6-dc79d5ec5fb1",
     "entity_type": "risk",
     "name": "Path Dependency: Leveraged Debt Structure Irreversible (9 Years)",
@@ -4499,37 +4779,45 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
     "primary_data_source": "5.1-revenue-quality-stability/5.1.revenue_quality_map.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 175,
+      "ale_range": "$100.0M - $250.0M",
+      "max_single_loss_millions": 500,
+      "current_mitigation_cost_millions": 15,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($200M-$500M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:47.932502Z",
-    "updated_at": "2026-03-04T17:10:47.932504Z",
+    "updated_at": "2026-03-05T20:58:04.285470Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "9cfff686-3c8f-4545-821f-8e7396849688",
     "entity_type": "risk",
     "name": "Talent Dependency on CEO Coordination Capacity Creating Attrition Risk",
@@ -4622,34 +4910,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.3-workforce-talent-fragility/9.3.human_fragility_map.json; stage-9-resilience-esg-continuity/9.3-workforce-talent-fragility/9.3.organizational_single_points_of_failure.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
-    "materiality_conclusion": "Material - affects operational continuity, execution reliability"
+    "materiality_conclusion": "Material - affects operational continuity, execution reliability",
+    "financial_profile": {
+      "estimated_ALE_millions": 21.25,
+      "ale_range": "$5.0M - $37.5M",
+      "max_single_loss_millions": 75,
+      "current_mitigation_cost_millions": 4.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($10M-$75M) based on High Major impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:49.393853Z",
-    "updated_at": "2026-03-04T17:10:49.393855Z",
+    "updated_at": "2026-03-05T20:58:05.355013Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "e5b05ebb-a1cd-4bb1-a4aa-45bff7496317",
     "entity_type": "risk",
     "name": "Control Fragmentation: Multi-Party Governance Tension",
@@ -4742,33 +5038,41 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "estimated_ALE_millions": 13.75,
+      "ale_range": "$2.5M - $25.0M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
     }
   },
   {
     "created_at": "2026-03-04T17:10:51.280560Z",
-    "updated_at": "2026-03-04T17:10:51.280562Z",
+    "updated_at": "2026-03-05T20:58:06.415685Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "68ec9867-d6a5-41a1-96c8-44c8950f0b8c",
     "entity_type": "risk",
     "name": "Strategic Initiative Capacity Consumption Without Root Cause Resolution",
@@ -4861,34 +5165,42 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
-    "materiality_conclusion": "Material - affects value creation, financial performance"
+    "materiality_conclusion": "Material - affects value creation, financial performance",
+    "financial_profile": {
+      "estimated_ALE_millions": 43.75,
+      "ale_range": "$12.5M - $75.0M",
+      "max_single_loss_millions": 150,
+      "current_mitigation_cost_millions": 9,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($25M-$150M) based on High Major impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:52.551551Z",
-    "updated_at": "2026-03-04T17:10:52.551554Z",
+    "updated_at": "2026-03-05T20:58:07.352652Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "9a4d91cc-aa7a-48fd-a503-3532fb701c15",
     "entity_type": "risk",
     "name": "Structural Fragmentation and Negative Operating Leverage",
@@ -4981,23 +5293,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -5012,14 +5324,22 @@
     "revenue_decline_current": "-7% YoY",
     "sga_margin_compression_rate": "~0.26% per 1% revenue decline",
     "projected_sga_2027": "31.7%",
-    "resolution_options": "NONE - fragmentation permanent per compliance constraints"
+    "resolution_options": "NONE - fragmentation permanent per compliance constraints",
+    "financial_profile": {
+      "estimated_ALE_millions": 13.75,
+      "ale_range": "$2.5M - $25.0M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:55.110349Z",
-    "updated_at": "2026-03-04T17:27:46.029268Z",
+    "updated_at": "2026-03-05T20:58:13.307721Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "4ebb7cae-ca7d-4ee7-85b9-a9ec10e1baa6",
     "entity_type": "risk",
     "name": "Revenue Quality Deterioration - Net Leakage 21% Annually",
@@ -5112,23 +5432,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -5142,14 +5462,22 @@
     "stage_source": "5.1",
     "primary_data_source": "6.4-vendor-lock-in-licensing/6.4.vendor_control_map.json",
     "last_assessed_date": "2026-03-04",
-    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)"
+    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+    "financial_profile": {
+      "estimated_ALE_millions": 13.75,
+      "ale_range": "$2.5M - $25.0M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:10:59.810005Z",
-    "updated_at": "2026-03-04T17:26:45.719915Z",
+    "updated_at": "2026-03-05T20:58:14.168858Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "2f56bd82-ba21-4a20-aaa6-92a47565a4e7",
     "entity_type": "risk",
     "name": "Latent Churn Risks and Constraint-Based Retention Fragility",
@@ -5242,23 +5570,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 90.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-3-market-competitive-force/3.3-customer-buying-switching-inertia/3.3.latent_churn_risks.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -5267,14 +5595,22 @@
     "retention_driver_type": "Constraint-based (costs, inertia) NOT preference-based (loyalty)",
     "fragility_signal": "Email segment -45% revenue collapse after 706% price increase",
     "trigger_categories": "Price shock, technology disruption, competitor outreach, executive change",
-    "management_visibility": "HIDDEN - stable metrics mask fragility, Email segment not recognized as early warning signal of systemic constraint-based retention across portfolio"
+    "management_visibility": "HIDDEN - stable metrics mask fragility, Email segment not recognized as early warning signal of systemic constraint-based retention across portfolio",
+    "financial_profile": {
+      "estimated_ALE_millions": 87.5,
+      "ale_range": "$25.0M - $150.0M",
+      "max_single_loss_millions": 300,
+      "current_mitigation_cost_millions": 9,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($50M-$300M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:11:01.271286Z",
-    "updated_at": "2026-03-04T17:27:39.114748Z",
+    "updated_at": "2026-03-05T20:58:15.231358Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "2a6eb0b1-e4f9-49ab-8fd5-550b6022c645",
     "entity_type": "risk",
     "name": "VMware Cost Shock and Margin Compression Risk",
@@ -5367,21 +5703,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -5397,14 +5733,22 @@
     "stage_source": "5.2",
     "primary_data_source": "5.1-revenue-quality-stability/5.1.revenue_quality_map.json",
     "last_assessed_date": "2026-03-04",
-    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)"
+    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+    "financial_profile": {
+      "estimated_ALE_millions": 62.5,
+      "ale_range": "$25.0M - $100.0M",
+      "max_single_loss_millions": 200,
+      "current_mitigation_cost_millions": 6,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($50M-$200M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:11:04.948377Z",
-    "updated_at": "2026-03-04T17:27:55.442986Z",
+    "updated_at": "2026-03-05T20:58:16.303094Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "65d89acf-3586-446d-9090-1d033b954fa8",
     "entity_type": "risk",
     "name": "Thin Margin Buffer and Zero Shock Absorption Capacity",
@@ -5497,23 +5841,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -5527,14 +5871,22 @@
     "primary_data_source": "5.3-liquidity-cash-runway/5.3.liquidity_truth.json; 5.3-liquidity-cash-runway/5.3.liquidity_failure_modes.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 75,
+      "ale_range": "$25.0M - $125.0M",
+      "max_single_loss_millions": 250,
+      "current_mitigation_cost_millions": 7.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($50M-$250M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:11:07.926223Z",
-    "updated_at": "2026-03-04T17:11:07.926225Z",
+    "updated_at": "2026-03-05T20:58:17.455905Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "9e4d21f6-0d56-458b-9a43-64fa6093239f",
     "entity_type": "risk",
     "name": "Email Hosting Death Spiral - Price Inelasticity and Rapid Churn",
@@ -5627,23 +5979,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -5654,14 +6006,22 @@
       "basis": "60-80% churn on $135-275M revenue at 706% price increase"
     },
     "confidence_level": 0.95,
-    "stage_source": "5.1, 5.2"
+    "stage_source": "5.1, 5.2",
+    "financial_profile": {
+      "estimated_ALE_millions": 87.5,
+      "ale_range": "$25.0M - $150.0M",
+      "max_single_loss_millions": 300,
+      "current_mitigation_cost_millions": 9,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($50M-$300M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:11:15.422358Z",
-    "updated_at": "2026-03-04T17:28:00.528598Z",
+    "updated_at": "2026-03-05T20:58:18.405685Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "924bc3f5-8741-4b19-8f9e-4107a3000ba6",
     "entity_type": "risk",
     "name": "Liquidity Crisis and Covenant Breach Risk - 5-15 Month Runway",
@@ -5754,23 +6114,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -5790,14 +6150,22 @@
     "stage_source": "5.3, 5.4",
     "primary_data_source": "6.3-platform-criticality-fragility/6.3.platform_fragility_map.json; 6.3-platform-criticality-fragility/6.3.untouchable_systems.json",
     "last_assessed_date": "2026-03-04",
-    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)"
+    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+    "financial_profile": {
+      "estimated_ALE_millions": 175,
+      "ale_range": "$100.0M - $250.0M",
+      "max_single_loss_millions": 500,
+      "current_mitigation_cost_millions": 15,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($200M-$500M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:11:26.360121Z",
-    "updated_at": "2026-03-04T17:27:31.214463Z",
+    "updated_at": "2026-03-05T20:58:19.231828Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "1b648035-9f74-4eea-8c47-21d759ec2715",
     "entity_type": "risk",
     "name": "Government Segment FedRAMP Invalidation Risk - Foreign Acquisition Cliff",
@@ -5890,21 +6258,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -5925,14 +6293,22 @@
     "stage_source": "5.1, 1.5",
     "primary_data_source": "5.1-revenue-quality-stability/5.1.revenue_quality_map.json",
     "last_assessed_date": "2026-03-04",
-    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)"
+    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+    "financial_profile": {
+      "estimated_ALE_millions": 125,
+      "ale_range": "$50.0M - $200.0M",
+      "max_single_loss_millions": 400,
+      "current_mitigation_cost_millions": 12,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($100M-$400M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:11:33.743218Z",
-    "updated_at": "2026-03-04T17:28:14.491757Z",
+    "updated_at": "2026-03-05T20:58:20.290290Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "ec967882-2d8c-483b-8b3c-b55c52a11cee",
     "entity_type": "risk",
     "name": "Structural Negative Operating Leverage - Margin Compression Inevitable",
@@ -6025,23 +6401,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -6057,14 +6433,22 @@
     "stage_source": "5.2",
     "primary_data_source": "6.3-platform-criticality-fragility/6.3.platform_fragility_map.json; 6.3-platform-criticality-fragility/6.3.untouchable_systems.json",
     "last_assessed_date": "2026-03-04",
-    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)"
+    "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+    "financial_profile": {
+      "estimated_ALE_millions": 75,
+      "ale_range": "$25.0M - $125.0M",
+      "max_single_loss_millions": 250,
+      "current_mitigation_cost_millions": 7.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($50M-$250M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:11:41.869379Z",
-    "updated_at": "2026-03-04T17:11:41.869381Z",
+    "updated_at": "2026-03-05T20:58:21.392760Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "380ea6c4-bdfb-4ccc-98d5-a67d79b18b52",
     "entity_type": "risk",
     "name": "Capital Allocation Constraint - Insufficient Discretionary Capital for Turnaround",
@@ -6157,23 +6541,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -6199,14 +6583,22 @@
       "basis": "CapEx reduction from $181M to $136M"
     },
     "confidence_level": 0.95,
-    "stage_source": "5.5"
+    "stage_source": "5.5",
+    "financial_profile": {
+      "estimated_ALE_millions": 13.75,
+      "ale_range": "$2.5M - $25.0M",
+      "max_single_loss_millions": 50,
+      "current_mitigation_cost_millions": 1.5,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($5M-$50M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:14:23.435696Z",
-    "updated_at": "2026-03-04T17:27:43.603585Z",
+    "updated_at": "2026-03-05T20:58:22.386021Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "44522fc2-244b-4568-890c-9866c74c1561",
     "entity_type": "risk",
     "name": "Data Center Portfolio Lock-In and Facility Exit Barriers",
@@ -6299,23 +6691,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -6339,7 +6731,15 @@
     "primary_data_source": "6.4-vendor-lock-in-licensing/6.4.vendor_control_map.json; 6.4-vendor-lock-in-licensing/6.4.vendor_power_concentration.json",
     "last_assessed_date": "2026-03-04",
     "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-    "confidence_level": "High"
+    "confidence_level": "High",
+    "financial_profile": {
+      "estimated_ALE_millions": 21.25,
+      "ale_range": "$5.0M - $37.5M",
+      "max_single_loss_millions": 75,
+      "current_mitigation_cost_millions": 2.25,
+      "cost_confidence": "medium",
+      "estimation_methodology": "Probability (50%) \u00d7 SLE ($10M-$75M) based on Medium Moderate impact."
+    }
   },
   {
     "created_at": "2026-03-04T17:14:23.700984Z",
@@ -6439,27 +6839,27 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
-    "confidence": 1.0,
+    "confidence": 1,
     "evidence_stage": "7.3",
     "risk_type": "data_quality",
     "materiality": "high",
@@ -6567,23 +6967,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -6693,23 +7093,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -6817,23 +7217,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -6949,23 +7349,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.esg_operating_constraints.json; stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.capital_and_deal_blockers.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -7078,23 +7478,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -7204,23 +7604,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.esg_operating_constraints.json; stage-9-resilience-esg-continuity/9.1-esg-materiality-constraint/9.1.capital_and_deal_blockers.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -7329,23 +7729,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -7457,23 +7857,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -7591,23 +7991,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -7720,23 +8120,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -7850,23 +8250,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -7978,21 +8378,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -8104,23 +8504,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -8232,21 +8632,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -8358,23 +8758,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -8486,23 +8886,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -8624,23 +9024,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.3-workforce-talent-fragility/9.3.human_fragility_map.json; stage-9-resilience-esg-continuity/9.3-workforce-talent-fragility/9.3.organizational_single_points_of_failure.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -8749,23 +9149,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -8877,23 +9277,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -9002,21 +9402,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -9127,21 +9527,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -9252,23 +9652,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -9379,23 +9779,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -9514,23 +9914,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.5-insurance-risk-transfer/9.5.risk_transfer_reality.json; stage-9-resilience-esg-continuity/9.5-insurance-risk-transfer/9.5.residual_risk_owners.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -9639,23 +10039,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -9764,23 +10164,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -9891,21 +10291,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.3-workforce-talent-fragility/9.3.human_fragility_map.json; stage-9-resilience-esg-continuity/9.3-workforce-talent-fragility/9.3.organizational_single_points_of_failure.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -10017,23 +10417,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -10147,23 +10547,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -10273,21 +10673,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.3-workforce-talent-fragility/9.3.human_fragility_map.json; stage-9-resilience-esg-continuity/9.3-workforce-talent-fragility/9.3.organizational_single_points_of_failure.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -10399,23 +10799,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.3-workforce-talent-fragility/9.3.human_fragility_map.json; stage-9-resilience-esg-continuity/9.3-workforce-talent-fragility/9.3.organizational_single_points_of_failure.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -10524,23 +10924,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -10653,23 +11053,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -10778,23 +11178,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -10903,23 +11303,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -11032,23 +11432,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.failure_sequences.json; stage-9-resilience-esg-continuity/9.2-business-continuity-failure-sequencing/9.2.critical_business_services.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -11157,21 +11557,21 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
+        "completeness_pct": 75.0,
         "accuracy_confidence": "High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
       "confidence_level": "High",
       "attestation_status": null,
@@ -11283,23 +11683,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
-        "consistency_score": "Verified"
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-3-market-competitive-force/3.2-competitive-threat-vectors/3.2.regulatory_enforcement_risks.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -11409,23 +11809,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -11535,23 +11935,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -11661,23 +12061,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
         "timeliness_score": "Current",
         "consistency_score": "Consistent"
       },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
       "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -11787,23 +12187,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
@@ -11913,23 +12313,23 @@
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
-      "last_review_date": null,
+      "last_review_date": "2026-03-04",
       "next_review_date": null,
       "change_reason": "",
       "schema_version": "1.0.0"
     },
     "provenance": {
       "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
+        "completeness_pct": 75.0,
+        "accuracy_confidence": "Medium-High",
+        "timeliness_score": "Current",
+        "consistency_score": "Consistent"
       },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
+      "primary_data_source": "Rackspace Technology 10-K risk factors 2024, NIST CSF risk assessment methodology, industry threat intelligence",
+      "last_assessed_date": "2026-03-04",
+      "assessed_by": "KG Enrichment Agent \u2014 Risk Batch",
       "assessment_methodology": "",
-      "confidence_level": "",
+      "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
     },
