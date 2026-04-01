@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.284908Z",
-    "updated_at": "2026-03-05T21:36:54.238189Z",
+    "updated_at": "2026-04-01T22:39:36.734146Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "pf-001",
     "entity_type": "product_portfolio",
     "name": "Private Cloud",
@@ -82,15 +82,19 @@
       "revenue_contribution_usd": 1055000000,
       "gross_margin_pct": 0.386,
       "year_over_year_change_pct": -0.13,
-      "strategic_risk_level": "CRITICAL"
+      "gross_profit_usd": 407200000,
+      "estimation_rationale": "SEC-reported segment aggregate",
+      "confidence_tier": "T1-audited",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284917Z",
-    "updated_at": "2026-03-05T21:36:54.824208Z",
+    "updated_at": "2026-04-01T22:39:37.572252Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "pf-002",
     "entity_type": "product_portfolio",
     "name": "Public Cloud",
@@ -169,15 +173,19 @@
       "revenue_contribution_usd": 1683000000,
       "gross_margin_pct": 0.104,
       "year_over_year_change_pct": -0.03,
-      "strategic_risk_level": "CRITICAL"
+      "gross_profit_usd": 175000000,
+      "estimation_rationale": "SEC-reported segment aggregate",
+      "confidence_tier": "T1-audited",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284921Z",
-    "updated_at": "2026-03-05T21:36:55.289060Z",
+    "updated_at": "2026-04-01T22:39:38.636756Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-003",
     "entity_type": "product_portfolio",
     "name": "Foundry for AI by Rackspace (FAIR)",
@@ -246,17 +254,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "revenue_contribution_usd": null,
-      "portfolio_stage": "Growth",
-      "note": "Foundry for AI: Pre-revenue/early growth, 500+ identified use cases"
-    }
+      "revenue_contribution_usd": 5000000,
+      "gross_margin_pct": 0.22,
+      "year_over_year_change_pct": 1.2,
+      "gross_profit_usd": 1100000,
+      "estimation_rationale": "70% of FAIR on hyperscalers.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 5000000,
+    "margin_contribution": 0.22
   },
   {
     "created_at": "2026-02-25T19:01:57.284925Z",
-    "updated_at": "2026-03-05T21:36:55.842073Z",
+    "updated_at": "2026-04-01T22:39:39.842634Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-004",
     "entity_type": "product_portfolio",
     "name": "Rackspace Elastic Engineering",
@@ -325,17 +340,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "revenue_per_employee_usd": 500000,
-      "portfolio_stage": "Growth",
-      "note": "Elastic Engineering: Launched Apr 2021, high-margin services"
-    }
+      "revenue_contribution_usd": 30900000,
+      "gross_margin_pct": 0.43,
+      "year_over_year_change_pct": 0.05,
+      "gross_profit_usd": 13300000,
+      "estimation_rationale": "EE pods serving PC and Pub combined.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Multi-Segment",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 30900000,
+    "margin_contribution": 0.43
   },
   {
     "created_at": "2026-02-25T19:01:57.284929Z",
-    "updated_at": "2026-03-05T21:36:56.382640Z",
+    "updated_at": "2026-04-01T22:39:41.006792Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-005",
     "entity_type": "product_portfolio",
     "name": "Rackspace Elastic Engineering for Security",
@@ -411,17 +433,25 @@
       "notes": "Elastic Engineering for Security - high-touch services"
     },
     "financial_profile": {
-      "portfolio_stage": "Growth",
-      "certifications": 800,
-      "note": "Security Elastic Engineering: 800+ certifications, 100+ cloud security certs"
-    }
+      "revenue_contribution_usd": 4600000,
+      "gross_margin_pct": 0.44,
+      "year_over_year_change_pct": 0.15,
+      "gross_profit_usd": 2000000,
+      "estimation_rationale": "Security EE pods. 800+ certs.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-004"
+    },
+    "revenue_attribution": 4600000,
+    "margin_contribution": 0.44
   },
   {
     "created_at": "2026-02-25T19:01:57.284934Z",
-    "updated_at": "2026-03-05T21:36:56.856967Z",
+    "updated_at": "2026-04-01T22:39:42.083086Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-006",
     "entity_type": "product_portfolio",
     "name": "Rackspace Elastic Engineering for VMware",
@@ -490,16 +520,25 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Maturity",
-      "note": "VMware Elastic Engineering: VCSP Pinnacle partner"
-    }
+      "revenue_contribution_usd": 3700000,
+      "gross_margin_pct": 0.4,
+      "year_over_year_change_pct": -0.1,
+      "gross_profit_usd": 1500000,
+      "estimation_rationale": "VMware EE. Declining.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-004"
+    },
+    "revenue_attribution": 3700000,
+    "margin_contribution": 0.4
   },
   {
     "created_at": "2026-02-25T19:01:57.284938Z",
-    "updated_at": "2026-03-05T21:36:57.385412Z",
+    "updated_at": "2026-04-01T22:39:42.862078Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-007",
     "entity_type": "product_portfolio",
     "name": "Rackspace Elastic Engineering for Microsoft 365",
@@ -575,17 +614,25 @@
       "notes": "Elastic Engineering for Microsoft 365 - $100M+ portfolio"
     },
     "financial_profile": {
-      "portfolio_stage": "Growth",
-      "partnership_tenure_years": 25,
-      "note": "M365 Elastic Engineering: 25-year Microsoft partnership"
-    }
+      "revenue_contribution_usd": 3100000,
+      "gross_margin_pct": 0.4,
+      "year_over_year_change_pct": 0.03,
+      "gross_profit_usd": 1200000,
+      "estimation_rationale": "M365 EE. 25yr MSFT.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-004"
+    },
+    "revenue_attribution": 3100000,
+    "margin_contribution": 0.4
   },
   {
     "created_at": "2026-02-25T19:01:57.284942Z",
-    "updated_at": "2026-03-05T21:36:58.464635Z",
+    "updated_at": "2026-04-01T22:39:45.986423Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-008",
     "entity_type": "product_portfolio",
     "name": "Rackspace Elastic Engineering for Government",
@@ -654,17 +701,25 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Growth",
-      "compliance_level": "FedRAMP-authorized",
-      "note": "Government Elastic Engineering"
-    }
+      "revenue_contribution_usd": 1900000,
+      "gross_margin_pct": 0.38,
+      "year_over_year_change_pct": 0.1,
+      "gross_profit_usd": 700000,
+      "estimation_rationale": "Gov EE. Growing.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-004"
+    },
+    "revenue_attribution": 1900000,
+    "margin_contribution": 0.38
   },
   {
     "created_at": "2026-02-25T19:01:57.284945Z",
-    "updated_at": "2026-03-05T21:36:59.581430Z",
+    "updated_at": "2026-04-01T22:39:47.107458Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-009",
     "entity_type": "product_portfolio",
     "name": "Rackspace Modern Operations",
@@ -733,17 +788,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Maturity",
-      "framework": "ITIL/ServiceNow",
-      "note": "Modern Operations: 24x7x365 managed services"
-    }
+      "revenue_contribution_usd": 53700000,
+      "gross_margin_pct": 0.19,
+      "year_over_year_change_pct": -0.05,
+      "gross_profit_usd": 10800000,
+      "estimation_rationale": "24x7 ServiceNow/ITIL. PC and Pub combined.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Multi-Segment",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 53700000,
+    "margin_contribution": 0.19
   },
   {
     "created_at": "2026-02-25T19:01:57.284949Z",
-    "updated_at": "2026-03-05T21:37:00.594429Z",
+    "updated_at": "2026-04-01T22:39:47.901363Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-010",
     "entity_type": "product_portfolio",
     "name": "Rackspace Managed Cloud",
@@ -812,17 +874,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Maturity",
-      "framework": "ITIL/ServiceNow",
-      "note": "Managed Cloud: Fully outsourced management"
-    }
+      "revenue_contribution_usd": 39900000,
+      "gross_margin_pct": 0.165,
+      "year_over_year_change_pct": -0.08,
+      "gross_profit_usd": 7100000,
+      "estimation_rationale": "Full outsource. PC and Pub combined.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Multi-Segment",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 39900000,
+    "margin_contribution": 0.165
   },
   {
     "created_at": "2026-02-25T19:01:57.284952Z",
-    "updated_at": "2026-03-05T21:37:01.629532Z",
+    "updated_at": "2026-04-01T22:39:48.985748Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-011",
     "entity_type": "product_portfolio",
     "name": "Cloud Adoption and Migration Services",
@@ -891,17 +960,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Growth",
-      "strategic_agreement": "AWS SCA Oct 2024",
-      "note": "Migration Services: Multi-year AWS Strategic Collaboration Agreement"
-    }
+      "revenue_contribution_usd": 13500000,
+      "gross_margin_pct": 0.28,
+      "year_over_year_change_pct": 0.05,
+      "gross_profit_usd": 3800000,
+      "estimation_rationale": "Migration incl RRMO.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 13500000,
+    "margin_contribution": 0.28
   },
   {
     "created_at": "2026-02-25T19:01:57.284955Z",
-    "updated_at": "2026-03-05T21:37:02.782352Z",
+    "updated_at": "2026-04-01T22:39:49.825982Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-012",
     "entity_type": "product_portfolio",
     "name": "Cloud Optimization and FinOps Services",
@@ -970,17 +1046,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Growth",
-      "value_model": "GainShare/guaranteed savings",
-      "note": "FinOps: Cloud cost optimization"
-    }
+      "revenue_contribution_usd": 5000000,
+      "gross_margin_pct": 0.38,
+      "year_over_year_change_pct": 0.2,
+      "gross_profit_usd": 1900000,
+      "estimation_rationale": "Optimizer+GainShare.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 5000000,
+    "margin_contribution": 0.38
   },
   {
     "created_at": "2026-02-25T19:01:57.284959Z",
-    "updated_at": "2026-03-05T21:37:03.317188Z",
+    "updated_at": "2026-04-01T22:39:50.904937Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-013",
     "entity_type": "product_portfolio",
     "name": "Rackspace SDDC Solutions",
@@ -1049,17 +1132,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Maturity",
-      "partnership_status": "VCSP Pinnacle",
-      "note": "SDDC: 5 variants, VMware Cloud Foundation"
-    }
+      "revenue_contribution_usd": 358700000,
+      "gross_margin_pct": 0.36,
+      "year_over_year_change_pct": -0.08,
+      "gross_profit_usd": 129100000,
+      "estimation_rationale": "Largest PC. VMware VCF 5 variants. Broadcom compressing.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 358700000,
+    "margin_contribution": 0.36
   },
   {
     "created_at": "2026-02-25T19:01:57.284962Z",
-    "updated_at": "2026-03-05T21:37:03.879705Z",
+    "updated_at": "2026-04-01T22:39:51.930742Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-014",
     "entity_type": "product_portfolio",
     "name": "Rackspace OpenStack Private Cloud",
@@ -1128,17 +1218,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Maturity",
-      "uptime_guarantee": "99.99%",
-      "note": "OpenStack: Co-founded with NASA 2010, 1B+ server hours"
-    }
+      "revenue_contribution_usd": 84400000,
+      "gross_margin_pct": 0.48,
+      "year_over_year_change_pct": -0.05,
+      "gross_profit_usd": 40500000,
+      "estimation_rationale": "No VMware license. NASA co-founded. Stable niche.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 84400000,
+    "margin_contribution": 0.48
   },
   {
     "created_at": "2026-02-25T19:01:57.284980Z",
-    "updated_at": "2026-03-05T21:37:04.443329Z",
+    "updated_at": "2026-04-01T22:39:52.635431Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-015",
     "entity_type": "product_portfolio",
     "name": "Rackspace Managed Hosting",
@@ -1207,17 +1304,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Decline",
-      "compliance": "PCI-DSS, HIPAA, FISMA",
-      "note": "Managed Hosting: Legacy declining revenue"
-    }
+      "revenue_contribution_usd": 211000000,
+      "gross_margin_pct": 0.32,
+      "year_over_year_change_pct": -0.18,
+      "gross_profit_usd": 67500000,
+      "estimation_rationale": "Legacy bare metal. Declining fast.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 211000000,
+    "margin_contribution": 0.32
   },
   {
     "created_at": "2026-02-25T19:01:57.284984Z",
-    "updated_at": "2026-03-05T21:37:05.003044Z",
+    "updated_at": "2026-04-01T22:39:55.640963Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-016",
     "entity_type": "product_portfolio",
     "name": "Rackspace Colocation Services",
@@ -1286,18 +1390,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Maturity",
-      "carrier_density": "8 carriers avg",
-      "analyst_rating": "IDC Major Player",
-      "note": "Colocation: Global across 10+ data centers"
-    }
+      "revenue_contribution_usd": 105500000,
+      "gross_margin_pct": 0.58,
+      "year_over_year_change_pct": -0.03,
+      "gross_profit_usd": 61200000,
+      "estimation_rationale": "Facility+power. Highest PC margin. Sticky.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 105500000,
+    "margin_contribution": 0.58
   },
   {
     "created_at": "2026-02-25T19:01:57.284988Z",
-    "updated_at": "2026-03-05T21:37:05.578643Z",
+    "updated_at": "2026-04-01T22:39:56.534489Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-017",
     "entity_type": "product_portfolio",
     "name": "RackConnect Global",
@@ -1366,17 +1476,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Maturity",
-      "uptime_guarantee": "99.95%",
-      "note": "RackConnect Global: Private network connectivity"
-    }
+      "revenue_contribution_usd": 15800000,
+      "gross_margin_pct": 0.68,
+      "year_over_year_change_pct": -0.02,
+      "gross_profit_usd": 10700000,
+      "estimation_rationale": "Network fabric. Tiny, very high margin.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 15800000,
+    "margin_contribution": 0.68
   },
   {
     "created_at": "2026-02-25T19:01:57.284991Z",
-    "updated_at": "2026-03-05T21:37:06.076866Z",
+    "updated_at": "2026-04-01T22:39:57.539251Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-018",
     "entity_type": "product_portfolio",
     "name": "Rackspace Data Storage",
@@ -1445,17 +1562,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Maturity",
-      "service_types": "Block, Object, NAS, Backup",
-      "note": "Data Storage: Multi-modal storage"
-    }
+      "revenue_contribution_usd": 40100000,
+      "gross_margin_pct": 0.42,
+      "year_over_year_change_pct": -0.06,
+      "gross_profit_usd": 16800000,
+      "estimation_rationale": "Block/object/backup. Declining to cloud-native.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 40100000,
+    "margin_contribution": 0.42
   },
   {
     "created_at": "2026-02-25T19:01:57.284996Z",
-    "updated_at": "2026-03-05T21:37:06.641722Z",
+    "updated_at": "2026-04-01T22:39:58.373815Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-019",
     "entity_type": "product_portfolio",
     "name": "Rackspace Government Cloud",
@@ -1524,18 +1648,24 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "portfolio_stage": "Growth",
-      "compliance": "FedRAMP",
-      "cost_savings": "70%",
-      "note": "Government Cloud: FedRAMP-authorized PaaS"
-    }
+      "revenue_contribution_usd": 5000000,
+      "gross_margin_pct": 0.28,
+      "year_over_year_change_pct": 0.08,
+      "gross_profit_usd": 1400000,
+      "estimation_rationale": "FedRAMP PaaS.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 5000000,
+    "margin_contribution": 0.28
   },
   {
     "created_at": "2026-02-25T19:01:57.284999Z",
-    "updated_at": "2026-03-05T21:37:07.226312Z",
+    "updated_at": "2026-04-01T22:39:59.304751Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "pf-020",
     "entity_type": "product_portfolio",
     "name": "Rackspace Spot",
@@ -1611,17 +1741,24 @@
       "notes": "Rackspace Spot - cloud cost management and RI optimization"
     },
     "financial_profile": {
-      "portfolio_stage": "Introduction",
-      "product_type": "Managed Kubernetes",
-      "note": "Rackspace Spot: Cloud auction marketplace"
-    }
+      "revenue_contribution_usd": 800000,
+      "gross_margin_pct": 0.1,
+      "year_over_year_change_pct": 1,
+      "gross_profit_usd": 100000,
+      "estimation_rationale": "Cloud auction. Experimental.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 800000,
+    "margin_contribution": 0.1
   },
   {
     "created_at": "2026-02-25T19:01:57.285002Z",
-    "updated_at": "2026-03-04T19:47:12.615235Z",
+    "updated_at": "2026-04-01T22:40:00.181184Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-021",
     "entity_type": "product_portfolio",
     "name": "Rackspace Private Cloud AI",
@@ -1688,14 +1825,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 12700000,
+      "gross_margin_pct": 0.22,
+      "year_over_year_change_pct": 0.8,
+      "gross_profit_usd": 2800000,
+      "estimation_rationale": "AI Anywhere+Business. Explosive growth from tiny base.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 12700000,
+    "margin_contribution": 0.22
   },
   {
     "created_at": "2026-02-25T19:01:57.285006Z",
-    "updated_at": "2026-03-04T19:47:12.615235Z",
+    "updated_at": "2026-04-01T22:40:01.172739Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-022",
     "entity_type": "product_portfolio",
     "name": "AWS Managed and Professional Services",
@@ -1762,14 +1911,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 799400000,
+      "gross_margin_pct": 0.08,
+      "year_over_year_change_pct": -0.01,
+      "gross_profit_usd": 64000000,
+      "estimation_rationale": "Largest product. SCA Oct24. Pass-through dominates.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 799400000,
+    "margin_contribution": 0.08
   },
   {
     "created_at": "2026-02-25T19:01:57.285009Z",
-    "updated_at": "2026-03-04T19:47:12.615236Z",
+    "updated_at": "2026-04-01T22:40:02.032349Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-023",
     "entity_type": "product_portfolio",
     "name": "Microsoft Azure Managed and Professional Services",
@@ -1836,14 +1997,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 451000000,
+      "gross_margin_pct": 0.096,
+      "year_over_year_change_pct": 0.03,
+      "gross_profit_usd": 43300000,
+      "estimation_rationale": "Bright Skies. Growing. More managed mix.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 451000000,
+    "margin_contribution": 0.096
   },
   {
     "created_at": "2026-02-25T19:01:57.285013Z",
-    "updated_at": "2026-03-04T19:47:12.615237Z",
+    "updated_at": "2026-04-01T22:40:05.708979Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-024",
     "entity_type": "product_portfolio",
     "name": "Google Cloud Managed and Professional Services",
@@ -1910,14 +2083,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 185100000,
+      "gross_margin_pct": 0.088,
+      "year_over_year_change_pct": 0.08,
+      "gross_profit_usd": 16300000,
+      "estimation_rationale": "First Premier MSP. Fastest growing hyperscaler.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 185100000,
+    "margin_contribution": 0.088
   },
   {
     "created_at": "2026-02-25T19:01:57.285017Z",
-    "updated_at": "2026-03-04T19:47:12.615238Z",
+    "updated_at": "2026-04-01T22:40:06.761602Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-025",
     "entity_type": "product_portfolio",
     "name": "Oracle Cloud Infrastructure (OCI) Services",
@@ -1984,14 +2169,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 53900000,
+      "gross_margin_pct": 0.125,
+      "year_over_year_change_pct": 0.12,
+      "gross_profit_usd": 6700000,
+      "estimation_rationale": "Oracle CSP. Specialist premium.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 53900000,
+    "margin_contribution": 0.125
   },
   {
     "created_at": "2026-02-25T19:01:57.285020Z",
-    "updated_at": "2026-03-04T19:47:12.615239Z",
+    "updated_at": "2026-04-01T22:40:07.591096Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-026",
     "entity_type": "product_portfolio",
     "name": "VMware Solutions",
@@ -2058,14 +2255,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 73900000,
+      "gross_margin_pct": 0.3,
+      "year_over_year_change_pct": -0.15,
+      "gross_profit_usd": 22200000,
+      "estimation_rationale": "VMware managed. Broadcom worst impact.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 73900000,
+    "margin_contribution": 0.3
   },
   {
     "created_at": "2026-02-25T19:01:57.285024Z",
-    "updated_at": "2026-03-05T21:36:52.079143Z",
+    "updated_at": "2026-04-01T22:40:08.439924Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-027",
     "entity_type": "product_portfolio",
     "name": "Dell Technologies Alliance Solutions",
@@ -2139,14 +2348,26 @@
       "impact_tier": "High",
       "business_criticality": "Dell Technologies alliance solutions delivery",
       "notes": "Strategic alliance portfolio - Dell infrastructure"
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 5000000,
+      "gross_margin_pct": 0.13,
+      "year_over_year_change_pct": 0.1,
+      "gross_profit_usd": 700000,
+      "estimation_rationale": "Dell GenAI. Hardware pass-through.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 5000000,
+    "margin_contribution": 0.13
   },
   {
     "created_at": "2026-02-25T19:01:57.285028Z",
-    "updated_at": "2026-03-04T19:47:12.615240Z",
+    "updated_at": "2026-04-01T22:40:09.300343Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-028",
     "entity_type": "product_portfolio",
     "name": "Application Modernization Services",
@@ -2213,14 +2434,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 6700000,
+      "gross_margin_pct": 0.3,
+      "year_over_year_change_pct": 0.08,
+      "gross_profit_usd": 2000000,
+      "estimation_rationale": "App transformation.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 6700000,
+    "margin_contribution": 0.3
   },
   {
     "created_at": "2026-02-25T19:01:57.285031Z",
-    "updated_at": "2026-03-04T19:47:12.615241Z",
+    "updated_at": "2026-04-01T22:40:10.117764Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-029",
     "entity_type": "product_portfolio",
     "name": "Cloud Native Services",
@@ -2287,14 +2520,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 3400000,
+      "gross_margin_pct": 0.28,
+      "year_over_year_change_pct": 0.15,
+      "gross_profit_usd": 1000000,
+      "estimation_rationale": "Containers/serverless.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 3400000,
+    "margin_contribution": 0.28
   },
   {
     "created_at": "2026-02-25T19:01:57.285035Z",
-    "updated_at": "2026-03-04T19:47:12.615242Z",
+    "updated_at": "2026-04-01T22:40:10.753685Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-030",
     "entity_type": "product_portfolio",
     "name": "IoT and Edge Computing Services",
@@ -2361,14 +2606,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.24,
+      "year_over_year_change_pct": 0.12,
+      "gross_profit_usd": 400000,
+      "estimation_rationale": "Hardware+cloud.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.24
   },
   {
     "created_at": "2026-02-25T19:01:57.285038Z",
-    "updated_at": "2026-03-05T21:37:02.219361Z",
+    "updated_at": "2026-04-01T22:40:11.616103Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-031",
     "entity_type": "product_portfolio",
     "name": "Application Operations Services",
@@ -2442,14 +2699,26 @@
       "impact_tier": "Critical",
       "business_criticality": "Application operations services - core service delivery",
       "notes": "AppOps portfolio - applications monitoring and optimization"
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 11800000,
+      "gross_margin_pct": 0.17,
+      "year_over_year_change_pct": -0.02,
+      "gross_profit_usd": 2000000,
+      "estimation_rationale": "Ongoing app ops. Mature.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 11800000,
+    "margin_contribution": 0.17
   },
   {
     "created_at": "2026-02-25T19:01:57.285045Z",
-    "updated_at": "2026-03-04T19:47:12.615244Z",
+    "updated_at": "2026-04-01T22:40:15.207638Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-032",
     "entity_type": "product_portfolio",
     "name": "Microsoft 365 and Productivity Services",
@@ -2516,14 +2785,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 10100000,
+      "gross_margin_pct": 0.14,
+      "year_over_year_change_pct": 0.01,
+      "gross_profit_usd": 1400000,
+      "estimation_rationale": "M365+Copilot. MSFT pass-through.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 10100000,
+    "margin_contribution": 0.14
   },
   {
     "created_at": "2026-02-25T19:01:57.285048Z",
-    "updated_at": "2026-03-04T19:47:12.615245Z",
+    "updated_at": "2026-04-01T22:40:16.285289Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-033",
     "entity_type": "product_portfolio",
     "name": "Rackspace Email",
@@ -2590,14 +2871,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 26400000,
+      "gross_margin_pct": 0.62,
+      "year_over_year_change_pct": -0.08,
+      "gross_profit_usd": 16400000,
+      "estimation_rationale": "2007 Webmail.us SaaS. Terminal decline.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 26400000,
+    "margin_contribution": 0.62
   },
   {
     "created_at": "2026-02-25T19:01:57.285052Z",
-    "updated_at": "2026-03-05T21:36:59.096698Z",
+    "updated_at": "2026-04-01T22:40:16.951314Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-034",
     "entity_type": "product_portfolio",
     "name": "ERP Services",
@@ -2671,14 +2964,26 @@
       "impact_tier": "High",
       "business_criticality": "ERP services portfolio operations and management",
       "notes": "Enterprise Resource Planning services - critical for customers"
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 3400000,
+      "gross_margin_pct": 0.21,
+      "year_over_year_change_pct": 0.02,
+      "gross_profit_usd": 700000,
+      "estimation_rationale": "SAP/Oracle/Dynamics.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 3400000,
+    "margin_contribution": 0.21
   },
   {
     "created_at": "2026-02-25T19:01:57.285055Z",
-    "updated_at": "2026-03-04T19:47:12.615246Z",
+    "updated_at": "2026-04-01T22:40:17.843856Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-035",
     "entity_type": "product_portfolio",
     "name": "CRM Services",
@@ -2745,14 +3050,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.23,
+      "year_over_year_change_pct": 0.03,
+      "gross_profit_usd": 400000,
+      "estimation_rationale": "Dynamics+Salesforce.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.23
   },
   {
     "created_at": "2026-02-25T19:01:57.285060Z",
-    "updated_at": "2026-03-04T19:47:12.615247Z",
+    "updated_at": "2026-04-01T22:40:18.655707Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-036",
     "entity_type": "product_portfolio",
     "name": "Digital Experience Services",
@@ -2819,14 +3136,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.25,
+      "year_over_year_change_pct": -0.02,
+      "gross_profit_usd": 400000,
+      "estimation_rationale": "Adobe AEM/Sitecore.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.25
   },
   {
     "created_at": "2026-02-25T19:01:57.285064Z",
-    "updated_at": "2026-03-04T19:47:12.615247Z",
+    "updated_at": "2026-04-01T22:40:19.582303Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-037",
     "entity_type": "product_portfolio",
     "name": "Data Modernization Services",
@@ -2893,14 +3222,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 3400000,
+      "gross_margin_pct": 0.31,
+      "year_over_year_change_pct": 0.18,
+      "gross_profit_usd": 1100000,
+      "estimation_rationale": "DataOps. Just Analytics.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 3400000,
+    "margin_contribution": 0.31
   },
   {
     "created_at": "2026-02-25T19:01:57.285067Z",
-    "updated_at": "2026-03-04T19:47:12.615248Z",
+    "updated_at": "2026-04-01T22:40:20.392215Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-038",
     "entity_type": "product_portfolio",
     "name": "AI and Machine Learning Services",
@@ -2967,14 +3308,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.27,
+      "year_over_year_change_pct": 0.35,
+      "gross_profit_usd": 500000,
+      "estimation_rationale": "ML ops. Separate from FAIR.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.27
   },
   {
     "created_at": "2026-02-25T19:01:57.285070Z",
-    "updated_at": "2026-03-05T21:36:57.919646Z",
+    "updated_at": "2026-04-01T22:40:20.928285Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-039",
     "entity_type": "product_portfolio",
     "name": "Data Strategy and Governance Services",
@@ -3048,14 +3401,26 @@
       "impact_tier": "High",
       "business_criticality": "Data strategy and governance portfolio via Fabric",
       "notes": "Data Strategy and Governance Services - critical for customer data management"
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.39,
+      "year_over_year_change_pct": 0.22,
+      "gross_profit_usd": 700000,
+      "estimation_rationale": "Governance advisory.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.39
   },
   {
     "created_at": "2026-02-25T19:01:57.285074Z",
-    "updated_at": "2026-03-04T19:47:12.615250Z",
+    "updated_at": "2026-04-01T22:40:36.572665Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-040",
     "entity_type": "product_portfolio",
     "name": "Database Platform Services",
@@ -3122,14 +3487,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 8400000,
+      "gross_margin_pct": 0.18,
+      "year_over_year_change_pct": -0.03,
+      "gross_profit_usd": 1500000,
+      "estimation_rationale": "Oracle/SQL/MongoDB. Mature.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 8400000,
+    "margin_contribution": 0.18
   },
   {
     "created_at": "2026-02-25T19:01:57.285077Z",
-    "updated_at": "2026-03-04T19:47:12.615250Z",
+    "updated_at": "2026-04-01T22:40:37.387826Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-041",
     "entity_type": "product_portfolio",
     "name": "Next-Gen Data Platform Services",
@@ -3196,14 +3573,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.29,
+      "year_over_year_change_pct": 0.2,
+      "gross_profit_usd": 500000,
+      "estimation_rationale": "Snowflake+cloud data.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.29
   },
   {
     "created_at": "2026-02-25T19:01:57.285080Z",
-    "updated_at": "2026-03-04T19:47:12.615251Z",
+    "updated_at": "2026-04-01T22:40:38.231272Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-042",
     "entity_type": "product_portfolio",
     "name": "Analytics Platform Services",
@@ -3270,14 +3659,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.27,
+      "year_over_year_change_pct": 0.08,
+      "gross_profit_usd": 500000,
+      "estimation_rationale": "Data lakes, BI.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.27
   },
   {
     "created_at": "2026-02-25T19:01:57.285084Z",
-    "updated_at": "2026-03-04T19:47:12.615252Z",
+    "updated_at": "2026-04-01T22:40:40.528669Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-043",
     "entity_type": "product_portfolio",
     "name": "Cyber Recovery Services",
@@ -3344,14 +3745,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.27,
+      "year_over_year_change_pct": 0.15,
+      "gross_profit_usd": 500000,
+      "estimation_rationale": "Rubrik.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.27
   },
   {
     "created_at": "2026-02-25T19:01:57.285087Z",
-    "updated_at": "2026-03-04T19:47:12.615253Z",
+    "updated_at": "2026-04-01T22:40:43.330679Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-044",
     "entity_type": "product_portfolio",
     "name": "Cyber Recovery Cloud powered by Rubrik",
@@ -3418,14 +3831,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 800000,
+      "gross_margin_pct": 0.17,
+      "year_over_year_change_pct": 0.5,
+      "gross_profit_usd": 100000,
+      "estimation_rationale": "New. Rubrik partnership.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 800000,
+    "margin_contribution": 0.17
   },
   {
     "created_at": "2026-02-25T19:01:57.285091Z",
-    "updated_at": "2026-03-04T19:47:12.615253Z",
+    "updated_at": "2026-04-01T22:40:45.171505Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-045",
     "entity_type": "product_portfolio",
     "name": "Security Strategy Services",
@@ -3492,14 +3917,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.37,
+      "year_over_year_change_pct": 0.12,
+      "gross_profit_usd": 600000,
+      "estimation_rationale": "Posture assessment.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.37
   },
   {
     "created_at": "2026-02-25T19:01:57.285099Z",
-    "updated_at": "2026-03-04T19:47:12.615254Z",
+    "updated_at": "2026-04-01T22:40:49.271661Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-046",
     "entity_type": "product_portfolio",
     "name": "Detection and Response Services",
@@ -3566,14 +4003,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.29,
+      "year_over_year_change_pct": 0.15,
+      "gross_profit_usd": 500000,
+      "estimation_rationale": "24x7 SOC.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.29
   },
   {
     "created_at": "2026-02-25T19:01:57.285102Z",
-    "updated_at": "2026-03-05T21:36:49.847649Z",
+    "updated_at": "2026-04-01T22:40:52.850988Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-047",
     "entity_type": "product_portfolio",
     "name": "Cloud Native Security Services",
@@ -3647,14 +4096,26 @@
       "impact_tier": "Critical",
       "business_criticality": "Cloud native security services platform operations",
       "notes": "Cloud Native Security Services - container/K8s security"
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 800000,
+      "gross_margin_pct": 0.31,
+      "year_over_year_change_pct": 0.18,
+      "gross_profit_usd": 200000,
+      "estimation_rationale": "DevSecOps.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 800000,
+    "margin_contribution": 0.31
   },
   {
     "created_at": "2026-02-25T19:01:57.285105Z",
-    "updated_at": "2026-03-04T19:47:12.615256Z",
+    "updated_at": "2026-04-01T22:40:56.364170Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-048",
     "entity_type": "product_portfolio",
     "name": "Application Security Services",
@@ -3721,14 +4182,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 800000,
+      "gross_margin_pct": 0.34,
+      "year_over_year_change_pct": 0.1,
+      "gross_profit_usd": 300000,
+      "estimation_rationale": "Pen testing.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 800000,
+    "margin_contribution": 0.34
   },
   {
     "created_at": "2026-02-25T19:01:57.285109Z",
-    "updated_at": "2026-03-04T19:47:12.615257Z",
+    "updated_at": "2026-04-01T22:40:57.007375Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-049",
     "entity_type": "product_portfolio",
     "name": "Zero Trust Services",
@@ -3795,14 +4268,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 800000,
+      "gross_margin_pct": 0.29,
+      "year_over_year_change_pct": 0.2,
+      "gross_profit_usd": 200000,
+      "estimation_rationale": "ZT architecture.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 800000,
+    "margin_contribution": 0.29
   },
   {
     "created_at": "2026-02-25T19:01:57.285112Z",
-    "updated_at": "2026-03-04T19:47:12.615257Z",
+    "updated_at": "2026-04-01T22:40:57.876785Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-050",
     "entity_type": "product_portfolio",
     "name": "Network Security Services",
@@ -3869,14 +4354,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 3400000,
+      "gross_margin_pct": 0.31,
+      "year_over_year_change_pct": 0,
+      "gross_profit_usd": 1100000,
+      "estimation_rationale": "Firewalls/DDoS.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 3400000,
+    "margin_contribution": 0.31
   },
   {
     "created_at": "2026-02-25T19:01:57.285115Z",
-    "updated_at": "2026-03-04T19:47:12.615258Z",
+    "updated_at": "2026-04-01T22:40:58.688490Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-051",
     "entity_type": "product_portfolio",
     "name": "Data Protection Services",
@@ -3943,14 +4440,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1700000,
+      "gross_margin_pct": 0.29,
+      "year_over_year_change_pct": 0.08,
+      "gross_profit_usd": 500000,
+      "estimation_rationale": "DLP/encryption.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 1700000,
+    "margin_contribution": 0.29
   },
   {
     "created_at": "2026-02-25T19:01:57.285119Z",
-    "updated_at": "2026-03-04T19:47:12.615259Z",
+    "updated_at": "2026-04-01T22:40:59.623047Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-052",
     "entity_type": "product_portfolio",
     "name": "On-Premises Security Services",
@@ -4017,14 +4526,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 8400000,
+      "gross_margin_pct": 0.36,
+      "year_over_year_change_pct": -0.04,
+      "gross_profit_usd": 3000000,
+      "estimation_rationale": "On-prem security. Small, stable.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 8400000,
+    "margin_contribution": 0.36
   },
   {
     "created_at": "2026-02-25T19:01:57.285123Z",
-    "updated_at": "2026-03-04T19:47:12.615260Z",
+    "updated_at": "2026-04-01T22:41:00.576514Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-053",
     "entity_type": "product_portfolio",
     "name": "FAIR Ideate",
@@ -4091,14 +4612,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1500000,
+      "gross_margin_pct": 0.35,
+      "year_over_year_change_pct": 0.8,
+      "gross_profit_usd": 500000,
+      "estimation_rationale": "Phase 1: advisory.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-003"
+    },
+    "revenue_attribution": 1500000,
+    "margin_contribution": 0.35
   },
   {
     "created_at": "2026-02-25T19:01:57.285144Z",
-    "updated_at": "2026-03-04T19:47:12.615260Z",
+    "updated_at": "2026-04-01T22:41:01.408208Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-054",
     "entity_type": "product_portfolio",
     "name": "FAIR Incubate",
@@ -4165,14 +4699,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1800000,
+      "gross_margin_pct": 0.25,
+      "year_over_year_change_pct": 0.8,
+      "gross_profit_usd": 500000,
+      "estimation_rationale": "Phase 2: build.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-003"
+    },
+    "revenue_attribution": 1800000,
+    "margin_contribution": 0.25
   },
   {
     "created_at": "2026-02-25T19:01:57.285149Z",
-    "updated_at": "2026-03-04T19:47:12.615261Z",
+    "updated_at": "2026-04-01T22:41:01.956949Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-055",
     "entity_type": "product_portfolio",
     "name": "FAIR Industrialize",
@@ -4239,14 +4786,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1800000,
+      "gross_margin_pct": 0.18,
+      "year_over_year_change_pct": 0.8,
+      "gross_profit_usd": 300000,
+      "estimation_rationale": "Phase 3: production.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-003"
+    },
+    "revenue_attribution": 1800000,
+    "margin_contribution": 0.18
   },
   {
     "created_at": "2026-02-25T19:01:57.285153Z",
-    "updated_at": "2026-03-04T19:47:12.615262Z",
+    "updated_at": "2026-04-01T22:41:04.953057Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-056",
     "entity_type": "product_portfolio",
     "name": "Agentic AI Solution (FAIR plus Sema4.ai)",
@@ -4313,14 +4873,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 200000,
+      "gross_margin_pct": 0.2,
+      "year_over_year_change_pct": 2,
+      "gross_profit_usd": 0,
+      "estimation_rationale": "Jun 2025. New.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-003"
+    },
+    "revenue_attribution": 200000,
+    "margin_contribution": 0.2
   },
   {
     "created_at": "2026-02-25T19:01:57.285156Z",
-    "updated_at": "2026-03-04T19:47:12.615263Z",
+    "updated_at": "2026-04-01T22:41:06.021199Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-057",
     "entity_type": "product_portfolio",
     "name": "Consulting and Advisory Services",
@@ -4387,14 +4960,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 8400000,
+      "gross_margin_pct": 0.36,
+      "year_over_year_change_pct": 0.04,
+      "gross_profit_usd": 3000000,
+      "estimation_rationale": "TCO, strategy, roadmaps.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 8400000,
+    "margin_contribution": 0.36
   },
   {
     "created_at": "2026-02-25T19:01:57.285161Z",
-    "updated_at": "2026-03-04T19:47:12.615263Z",
+    "updated_at": "2026-04-01T22:41:06.853398Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-058",
     "entity_type": "product_portfolio",
     "name": "Professional Services",
@@ -4461,14 +5046,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 10100000,
+      "gross_margin_pct": 0.3,
+      "year_over_year_change_pct": 0.03,
+      "gross_profit_usd": 3000000,
+      "estimation_rationale": "Sprint-based delivery.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 10100000,
+    "margin_contribution": 0.3
   },
   {
     "created_at": "2026-02-25T19:01:57.285164Z",
-    "updated_at": "2026-03-04T19:47:12.615264Z",
+    "updated_at": "2026-04-01T22:41:07.488283Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-059",
     "entity_type": "product_portfolio",
     "name": "Rackspace Fabric",
@@ -4535,14 +5132,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 0,
+      "gross_margin_pct": 0,
+      "year_over_year_change_pct": 0,
+      "gross_profit_usd": 0,
+      "estimation_rationale": "No direct revenue attribution",
+      "confidence_tier": "N/A",
+      "sec_segment": "Internal",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 0,
+    "margin_contribution": 0
   },
   {
     "created_at": "2026-02-25T19:01:57.285168Z",
-    "updated_at": "2026-03-04T19:47:12.615265Z",
+    "updated_at": "2026-04-01T22:41:08.114180Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-060",
     "entity_type": "product_portfolio",
     "name": "Fanatical Experience",
@@ -4609,14 +5218,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 0,
+      "gross_margin_pct": 0,
+      "year_over_year_change_pct": 0,
+      "gross_profit_usd": 0,
+      "estimation_rationale": "No direct revenue attribution",
+      "confidence_tier": "N/A",
+      "sec_segment": "Internal",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 0,
+    "margin_contribution": 0
   },
   {
     "created_at": "2026-02-25T19:01:57.285171Z",
-    "updated_at": "2026-03-04T19:47:12.615266Z",
+    "updated_at": "2026-04-01T22:41:08.951060Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-061",
     "entity_type": "product_portfolio",
     "name": "Disaster Recovery as a Service (DRaaS)",
@@ -4683,14 +5304,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 23200000,
+      "gross_margin_pct": 0.4,
+      "year_over_year_change_pct": 0.02,
+      "gross_profit_usd": 9300000,
+      "estimation_rationale": "Zerto-powered. Compliance-driven.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 23200000,
+    "margin_contribution": 0.4
   },
   {
     "created_at": "2026-02-25T19:01:57.285178Z",
-    "updated_at": "2026-03-05T21:36:47.727590Z",
+    "updated_at": "2026-04-01T22:41:10.021770Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "pf-062",
     "entity_type": "product_portfolio",
     "name": "Rackspace Managed Platform for Kubernetes (MPK)",
@@ -4764,14 +5397,26 @@
       "impact_tier": "Critical",
       "business_criticality": "K8s managed platform portfolio - enabled through Fabric",
       "notes": "Rackspace Managed Platform for Kubernetes (MPK) - $22M revenue"
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 3400000,
+      "gross_margin_pct": 0.22,
+      "year_over_year_change_pct": 0.25,
+      "gross_profit_usd": 700000,
+      "estimation_rationale": "Platform9 K8s.",
+      "confidence_tier": "T2-T3",
+      "sec_segment": "Public_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 3400000,
+    "margin_contribution": 0.22
   },
   {
     "created_at": "2026-02-25T19:01:57.285181Z",
-    "updated_at": "2026-03-04T19:47:12.615267Z",
+    "updated_at": "2026-04-01T22:41:10.662645Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-063",
     "entity_type": "product_portfolio",
     "name": "Rackspace Data Freedom",
@@ -4838,14 +5483,26 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 10600000,
+      "gross_margin_pct": 0.55,
+      "year_over_year_change_pct": 0.05,
+      "gross_profit_usd": 5800000,
+      "estimation_rationale": "Data adjacency. Small, growing.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 10600000,
+    "margin_contribution": 0.55
   },
   {
     "created_at": "2026-02-25T19:01:57.285184Z",
-    "updated_at": "2026-03-04T19:47:12.615268Z",
+    "updated_at": "2026-04-01T22:41:14.148049Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-064",
     "entity_type": "product_portfolio",
     "name": "Intelligent Co-worker for the Enterprise (ICE)",
@@ -4912,14 +5569,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 100000,
+      "gross_margin_pct": 0.15,
+      "year_over_year_change_pct": 3,
+      "gross_profit_usd": 0,
+      "estimation_rationale": "Oct 2024.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-003"
+    },
+    "revenue_attribution": 100000,
+    "margin_contribution": 0.15
   },
   {
     "created_at": "2026-02-25T19:01:57.285188Z",
-    "updated_at": "2026-03-04T19:47:12.615269Z",
+    "updated_at": "2026-04-01T22:41:14.947885Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-065",
     "entity_type": "product_portfolio",
     "name": "Rackspace Intelligent Technology Assistant (RITA)",
@@ -4986,14 +5656,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 100000,
+      "gross_margin_pct": 0.15,
+      "year_over_year_change_pct": 2,
+      "gross_profit_usd": 0,
+      "estimation_rationale": "Internal-origin.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-003"
+    },
+    "revenue_attribution": 100000,
+    "margin_contribution": 0.15
   },
   {
     "created_at": "2026-02-25T19:01:57.285191Z",
-    "updated_at": "2026-03-04T19:47:12.615269Z",
+    "updated_at": "2026-04-01T22:41:15.897684Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-066",
     "entity_type": "product_portfolio",
     "name": "Rackspace Rapid Migration Offer (RRMO)",
@@ -5060,14 +5743,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 3900000,
+      "gross_margin_pct": 0.3,
+      "year_over_year_change_pct": 0.08,
+      "gross_profit_usd": 1200000,
+      "estimation_rationale": "AWS Marketplace.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-011"
+    },
+    "revenue_attribution": 3900000,
+    "margin_contribution": 0.3
   },
   {
     "created_at": "2026-02-25T19:01:57.285194Z",
-    "updated_at": "2026-03-04T19:47:12.615270Z",
+    "updated_at": "2026-04-01T22:41:16.449969Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-067",
     "entity_type": "product_portfolio",
     "name": "Optimizer+",
@@ -5134,14 +5830,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 3000000,
+      "gross_margin_pct": 0.42,
+      "year_over_year_change_pct": 0.22,
+      "gross_profit_usd": 1300000,
+      "estimation_rationale": "SaaS platform.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-012"
+    },
+    "revenue_attribution": 3000000,
+    "margin_contribution": 0.42
   },
   {
     "created_at": "2026-02-25T19:01:57.285197Z",
-    "updated_at": "2026-03-04T19:47:12.615271Z",
+    "updated_at": "2026-04-01T22:41:17.531394Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-068",
     "entity_type": "product_portfolio",
     "name": "FAIR on AWS",
@@ -5208,14 +5917,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 2000000,
+      "gross_margin_pct": 0.22,
+      "year_over_year_change_pct": 1,
+      "gross_profit_usd": 400000,
+      "estimation_rationale": "SageMaker/Bedrock.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-003"
+    },
+    "revenue_attribution": 2000000,
+    "margin_contribution": 0.22
   },
   {
     "created_at": "2026-02-25T19:01:57.285201Z",
-    "updated_at": "2026-03-04T19:47:12.615271Z",
+    "updated_at": "2026-04-01T22:41:18.159405Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-069",
     "entity_type": "product_portfolio",
     "name": "FAIR on Google Cloud",
@@ -5282,14 +6004,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1000000,
+      "gross_margin_pct": 0.22,
+      "year_over_year_change_pct": 1,
+      "gross_profit_usd": 200000,
+      "estimation_rationale": "Vertex AI.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-003"
+    },
+    "revenue_attribution": 1000000,
+    "margin_contribution": 0.22
   },
   {
     "created_at": "2026-02-25T19:01:57.285204Z",
-    "updated_at": "2026-03-04T19:47:12.615272Z",
+    "updated_at": "2026-04-01T22:41:18.768495Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "pf-070",
     "entity_type": "product_portfolio",
     "name": "FAIR on Microsoft Azure",
@@ -5356,14 +6091,27 @@
       "confidence_level": "High",
       "attestation_status": null,
       "known_data_gaps": []
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 1200000,
+      "gross_margin_pct": 0.22,
+      "year_over_year_change_pct": 1,
+      "gross_profit_usd": 300000,
+      "estimation_rationale": "Azure OpenAI.",
+      "confidence_tier": "T3",
+      "sec_segment": "L3_Child",
+      "fiscal_year": "FY2024",
+      "parent_product_id": "pf-003"
+    },
+    "revenue_attribution": 1200000,
+    "margin_contribution": 0.22
   },
   {
     "created_at": "2026-02-25T20:57:36.687515Z",
-    "updated_at": "2026-03-05T21:37:00.147691Z",
+    "updated_at": "2026-04-01T22:39:35.751500Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "a8b1b81b-091f-44c1-8195-e135853faf16",
     "entity_type": "product_portfolio",
     "name": "Cloud Office",
@@ -5437,6 +6185,18 @@
       "impact_tier": "High",
       "business_criticality": "Cloud Office productivity services portfolio",
       "notes": "Cloud Office - bundled collaboration services"
-    }
+    },
+    "financial_profile": {
+      "revenue_contribution_usd": 5300000,
+      "gross_margin_pct": 0.55,
+      "year_over_year_change_pct": -0.1,
+      "gross_profit_usd": 2900000,
+      "estimation_rationale": "Email+productivity. SaaS. Sharp decline.",
+      "confidence_tier": "T2",
+      "sec_segment": "Private_Cloud",
+      "fiscal_year": "FY2024"
+    },
+    "revenue_attribution": 5300000,
+    "margin_contribution": 0.55
   }
 ]
