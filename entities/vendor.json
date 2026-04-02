@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:35:29.584395Z",
-    "updated_at": "2026-03-05T20:48:31.862029Z",
+    "updated_at": "2026-04-02T16:02:24.457198Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "01c01d95-dd25-48e8-b0eb-49a122f85514",
     "entity_type": "vendor",
     "name": "Tenable Holdings, Inc.",
@@ -141,20 +141,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 4000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.146,
-      "estimation_methodology": "Vulnerability management - scanning and compliance",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 3.5,
+          "spend_pct_of_revenue_pct": 0.13,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 3,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:31:47.020924Z",
-    "updated_at": "2026-03-05T20:48:23.465176Z",
+    "updated_at": "2026-04-02T16:03:17.853759Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "06f09685-4a72-412b-bbf2-3071986c2265",
     "entity_type": "vendor",
     "name": "NVIDIA Corporation",
@@ -301,20 +313,32 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - NVIDIA GPUs are critical for customer AI/ML workloads and internal GPU infrastructure. Loss would require alternative accelerators (AMD, Intel, TPUs). 3-6 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 25000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.914,
-      "estimation_methodology": "AI/ML infrastructure - NVIDIA GPUs for AI workloads",
-      "cost_category": "hardware",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 28,
+          "spend_pct_of_revenue_pct": 1.02,
+          "cost_pool": "CAPEX_GPU",
+          "switching_cost_usd_m": 40,
+          "switching_timeline_months": 18,
+          "concentration_risk": "High",
+          "strategic_threat": "High",
+          "contract_leverage_position": "Weak",
+          "confidence": "T2-T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:45:57.251990Z",
-    "updated_at": "2026-03-05T20:48:43.638950Z",
+    "updated_at": "2026-04-02T16:02:22.155141Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "337b7c35-dda0-487f-a338-66b1c4ce547b",
     "entity_type": "vendor",
     "name": "Pure Storage, Inc.",
@@ -451,20 +475,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 18000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.658,
-      "estimation_methodology": "Storage infrastructure - Pure Storage for all-flash arrays",
-      "cost_category": "hardware",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 4,
+          "spend_pct_of_revenue_pct": 0.15,
+          "cost_pool": "COGS_Infrastructure",
+          "switching_cost_usd_m": 6,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:35:26.897723Z",
-    "updated_at": "2026-03-05T20:48:30.488004Z",
+    "updated_at": "2026-04-02T16:03:00.245874Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "3fee8617-84c1-4b19-ad5b-91c1ee835d32",
     "entity_type": "vendor",
     "name": "Qualys, Inc.",
@@ -601,12 +637,24 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 4000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.146,
-      "estimation_methodology": "Vulnerability management - scanning and compliance",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 2.5,
+          "spend_pct_of_revenue_pct": 0.09,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 2,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
@@ -920,10 +968,10 @@
   },
   {
     "created_at": "2026-02-25T19:45:37.454412Z",
-    "updated_at": "2026-03-05T20:48:39.268539Z",
+    "updated_at": "2026-04-02T16:03:54.904806Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "5a344d61-ef1a-42f3-bb64-b8d8fedde3bc",
     "entity_type": "vendor",
     "name": "GitHub, Inc. (Microsoft)",
@@ -1066,20 +1114,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 18000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.658,
-      "estimation_methodology": "Developer platform - GitHub for source code and CI/CD",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 5,
+          "spend_pct_of_revenue_pct": 0.18,
+          "cost_pool": "SGA_ITSM",
+          "switching_cost_usd_m": 8,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:45:44.606206Z",
-    "updated_at": "2026-03-05T20:48:40.681090Z",
+    "updated_at": "2026-04-02T16:03:15.832556Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "6010c0b3-7071-4f20-b5ea-9fc9fd9bd03f",
     "entity_type": "vendor",
     "name": "GitLab Inc.",
@@ -1216,159 +1276,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 12000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.439,
-      "estimation_methodology": "DevSecOps platform - GitLab for complete DevOps lifecycle",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 2,
+          "spend_pct_of_revenue_pct": 0.07,
+          "cost_pool": "SGA_ITSM",
+          "switching_cost_usd_m": 4,
+          "switching_timeline_months": 9,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
-    "created_at": "2026-03-04T17:15:09.285097Z",
-    "updated_at": "2026-03-04T17:15:09.285099Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "6368f3b9-5a03-47e5-a807-061bf7f59ce7",
-    "entity_type": "vendor",
-    "name": "Google Cloud Platform",
-    "description": "Hyperscaler providing $150-350M annual revenue. Triopoly partner with AWS/Azure. Partner credits model similar. Rackspace has zero leverage in negotiations.",
-    "tags": [],
-    "metadata": {},
-    "vendor_type": "",
-    "contract_value": null,
-    "risk_tier": "medium",
-    "has_data_access": false,
-    "data_classification_access": [],
-    "compliance_certifications": [],
-    "contract_expiry": null,
-    "primary_contact": "",
-    "sla_uptime": null,
-    "vendor_id": "",
-    "vendor_name_common": "",
-    "vendor_name_former": [],
-    "vendor_category": "",
-    "vendor_subcategory": "",
-    "industry_classification": null,
-    "headquarters_location": "",
-    "vendor_locations": [],
-    "vendor_size": null,
-    "ownership_structure": "",
-    "origin": "",
-    "diversity_classification": null,
-    "parent_company": "",
-    "subsidiaries": [],
-    "relationship_status": "",
-    "relationship_start_date": "",
-    "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
-    "vendor_manager": "",
-    "executive_sponsor": "",
-    "governance_cadence": null,
-    "total_annual_spend": null,
-    "spend_by_category": [],
-    "spend_by_business_unit": [],
-    "spend_concentration_risk": null,
-    "payment_terms": null,
-    "cost_trend": null,
-    "cost_benchmark": null,
-    "savings_realized": null,
-    "performance_scorecard": null,
-    "performance_dimensions": [],
-    "sla_compliance": null,
-    "quality_metrics": null,
-    "delivery_performance": null,
-    "incident_history": null,
-    "escalation_history": [],
-    "innovation_contribution": null,
-    "vendor_risk_profile": null,
-    "financial_stability": null,
-    "cybersecurity_assessment": null,
-    "business_continuity": null,
-    "vendor_compliance_certifications": [],
-    "regulatory_applicability": [],
-    "sanctions_screening": null,
-    "data_processing": null,
-    "insurance_coverage": null,
-    "audit_findings": [],
-    "supply_chain_role": "",
-    "substitutability": null,
-    "geographic_concentration": null,
-    "dependency_on_vendor": [],
-    "vendor_dependencies": null,
-    "force_majeure_exposure": null,
-    "partnership_structure": "",
-    "joint_governance": null,
-    "shared_ip": null,
-    "co_investment": null,
-    "exclusivity": null,
-    "holds_contracts": [],
-    "supplies_products": [],
-    "managed_by_org_unit": "",
-    "vendor_management_roles": [],
-    "operates_from_locations": [],
-    "provides_systems": [],
-    "provides_data": [],
-    "serves_customers_through": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "revenue_dependency_usd_m": 250,
-    "partner_status": "Partner",
-    "partner_credits_pct": 12,
-    "relationship_leverage": "ZERO"
-  },
-  {
     "created_at": "2026-02-25T19:35:23.250233Z",
-    "updated_at": "2026-03-05T20:48:29.114484Z",
+    "updated_at": "2026-04-02T16:02:35.693814Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "63bfcfe8-0b67-4052-a301-b7836539992e",
     "entity_type": "vendor",
     "name": "Proofpoint, Inc.",
@@ -1505,169 +1438,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 8000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.292,
-      "estimation_methodology": "Email/cloud security - Proofpoint for threat protection",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
-    }
-  },
-  {
-    "created_at": "2026-03-04T17:10:22.027086Z",
-    "updated_at": "2026-03-05T20:48:47.413378Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 2,
-    "id": "66c19120-e13a-4a66-837c-592e119f5bcf",
-    "entity_type": "vendor",
-    "name": "Broadcom Corporation (VMware Owner)",
-    "description": "Software infrastructure conglomerate that acquired VMware in February 2024. Broadcom implemented 200-300% VMware price increases post-acquisition as part of profit-maximization strategy targeting captive customer base (Rackspace, enterprises). Stage 2.5 documents $100-210M annual cost impact to Rackspace from Broadcom pricing strategy. Strategic approach accepts 20-30% customer attrition while maximizing profit extraction from remaining customers, deliberately trading customer relationships for short-term cash flow ('squeeze the lemon' acquisition strategy).",
-    "tags": [],
-    "metadata": {},
-    "vendor_type": "",
-    "contract_value": null,
-    "risk_tier": "medium",
-    "has_data_access": false,
-    "data_classification_access": [],
-    "compliance_certifications": [],
-    "contract_expiry": null,
-    "primary_contact": "",
-    "sla_uptime": null,
-    "vendor_id": "",
-    "vendor_name_common": "",
-    "vendor_name_former": [],
-    "vendor_category": "",
-    "vendor_subcategory": "",
-    "industry_classification": null,
-    "headquarters_location": "",
-    "vendor_locations": [],
-    "vendor_size": null,
-    "ownership_structure": "",
-    "origin": "",
-    "diversity_classification": null,
-    "parent_company": "",
-    "subsidiaries": [],
-    "relationship_status": "",
-    "relationship_start_date": "",
-    "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
-    "vendor_manager": "",
-    "executive_sponsor": "",
-    "governance_cadence": null,
-    "total_annual_spend": null,
-    "spend_by_category": [],
-    "spend_by_business_unit": [],
-    "spend_concentration_risk": null,
-    "payment_terms": null,
-    "cost_trend": null,
-    "cost_benchmark": null,
-    "savings_realized": null,
-    "performance_scorecard": null,
-    "performance_dimensions": [],
-    "sla_compliance": null,
-    "quality_metrics": null,
-    "delivery_performance": null,
-    "incident_history": null,
-    "escalation_history": [],
-    "innovation_contribution": null,
-    "vendor_risk_profile": null,
-    "financial_stability": null,
-    "cybersecurity_assessment": null,
-    "business_continuity": null,
-    "vendor_compliance_certifications": [],
-    "regulatory_applicability": [],
-    "sanctions_screening": null,
-    "data_processing": null,
-    "insurance_coverage": null,
-    "audit_findings": [],
-    "supply_chain_role": "",
-    "substitutability": null,
-    "geographic_concentration": null,
-    "dependency_on_vendor": [],
-    "vendor_dependencies": null,
-    "force_majeure_exposure": null,
-    "partnership_structure": "",
-    "joint_governance": null,
-    "shared_ip": null,
-    "co_investment": null,
-    "exclusivity": null,
-    "holds_contracts": [],
-    "supplies_products": [],
-    "managed_by_org_unit": "",
-    "vendor_management_roles": [],
-    "operates_from_locations": [],
-    "provides_systems": [],
-    "provides_data": [],
-    "serves_customers_through": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "Consistent"
-      },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
-      "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "acquisition_date": "2024-02-01",
-    "pricing_change": "200-300% increase",
-    "annual_cost_impact_to_rackspace": "$100M-$210M",
-    "customer_attrition_acceptance": "20-30%",
-    "estimated_margin_loss_rackspace": "$30M-$105M (30-50% absorption)",
-    "strategic_intent": "Monopoly rent extraction from technical lock-in",
-    "financial_profile": {
-      "estimated_annual_spend": 120000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 4.387,
-      "estimation_methodology": "Broadcom/VMware - major infrastructure vendor",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 3,
+          "spend_pct_of_revenue_pct": 0.11,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 4,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:46:11.507216Z",
-    "updated_at": "2026-03-05T20:48:46.443648Z",
+    "updated_at": "2026-04-02T16:03:12.000512Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "6d0ecaed-0cd7-4043-b8d8-a2592fbb25a8",
     "entity_type": "vendor",
     "name": "Grafana Labs",
@@ -1810,20 +1606,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 3000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.11,
-      "estimation_methodology": "Metrics visualization - Grafana for monitoring dashboards",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 2,
+          "spend_pct_of_revenue_pct": 0.07,
+          "cost_pool": "Mixed_Observability",
+          "switching_cost_usd_m": 2,
+          "switching_timeline_months": 4,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:25:35.183731Z",
-    "updated_at": "2026-03-05T20:48:14.564783Z",
+    "updated_at": "2026-04-02T16:03:08.581970Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "78078aea-61e2-44c9-a9f3-49177279283b",
     "entity_type": "vendor",
     "name": "Trend Micro Incorporated",
@@ -1970,12 +1778,24 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - Trend Micro endpoint/cloud security protects customer and internal infrastructure. Loss would require migration to McAfee, Kaspersky, or Microsoft Defender. 1-2 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 3000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.11,
-      "estimation_methodology": "Endpoint security - Trend Micro protection",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 2,
+          "spend_pct_of_revenue_pct": 0.07,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 2,
+          "switching_timeline_months": 4,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
@@ -2128,10 +1948,10 @@
   },
   {
     "created_at": "2026-02-25T19:32:37.263274Z",
-    "updated_at": "2026-03-05T20:48:24.848899Z",
+    "updated_at": "2026-04-02T16:02:58.725753Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "82ae1b55-80dc-4e1c-a187-ec663a0df68f",
     "entity_type": "vendor",
     "name": "Hewlett Packard Enterprise (HPE)",
@@ -2278,12 +2098,24 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - HPE servers and storage are alternative to Dell for on-premises infrastructure. Loss would consolidate to Dell or Lenovo. 3-6 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 80000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 2.925,
-      "estimation_methodology": "Private cloud infrastructure - HPE hardware and services",
-      "cost_category": "hardware",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 156,
+          "spend_pct_of_revenue_pct": 5.7,
+          "cost_pool": "COGS_SaaS",
+          "switching_cost_usd_m": 25,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T2",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
@@ -2426,290 +2258,11 @@
     "replacement_timeline_months": 24
   },
   {
-    "created_at": "2026-03-04T17:15:10.954150Z",
-    "updated_at": "2026-03-04T17:27:39.743586Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 2,
-    "id": "9291c35d-4dbc-4104-baa4-c7b4497feeb6",
-    "entity_type": "vendor",
-    "name": "Broadcom VMware",
-    "description": "VMware owner (acquired 2023). Controls Private Cloud $1,055M revenue. Already exercised pricing power (200-300% increase = $100-210M annual cost). Vendor hostage situation - exit cost exceeds staying despite shock.",
-    "tags": [],
-    "metadata": {},
-    "vendor_type": "",
-    "contract_value": null,
-    "risk_tier": "medium",
-    "has_data_access": false,
-    "data_classification_access": [],
-    "compliance_certifications": [],
-    "contract_expiry": null,
-    "primary_contact": "",
-    "sla_uptime": null,
-    "vendor_id": "",
-    "vendor_name_common": "",
-    "vendor_name_former": [],
-    "vendor_category": "",
-    "vendor_subcategory": "",
-    "industry_classification": null,
-    "headquarters_location": "",
-    "vendor_locations": [],
-    "vendor_size": null,
-    "ownership_structure": "",
-    "origin": "",
-    "diversity_classification": null,
-    "parent_company": "",
-    "subsidiaries": [],
-    "relationship_status": "",
-    "relationship_start_date": "",
-    "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
-    "vendor_manager": "",
-    "executive_sponsor": "",
-    "governance_cadence": null,
-    "total_annual_spend": null,
-    "spend_by_category": [],
-    "spend_by_business_unit": [],
-    "spend_concentration_risk": null,
-    "payment_terms": null,
-    "cost_trend": null,
-    "cost_benchmark": null,
-    "savings_realized": null,
-    "performance_scorecard": null,
-    "performance_dimensions": [],
-    "sla_compliance": null,
-    "quality_metrics": null,
-    "delivery_performance": null,
-    "incident_history": null,
-    "escalation_history": [],
-    "innovation_contribution": null,
-    "vendor_risk_profile": null,
-    "financial_stability": null,
-    "cybersecurity_assessment": null,
-    "business_continuity": null,
-    "vendor_compliance_certifications": [],
-    "regulatory_applicability": [],
-    "sanctions_screening": null,
-    "data_processing": null,
-    "insurance_coverage": null,
-    "audit_findings": [],
-    "supply_chain_role": "",
-    "substitutability": null,
-    "geographic_concentration": null,
-    "dependency_on_vendor": [],
-    "vendor_dependencies": null,
-    "force_majeure_exposure": null,
-    "partnership_structure": "",
-    "joint_governance": null,
-    "shared_ip": null,
-    "co_investment": null,
-    "exclusivity": null,
-    "holds_contracts": [],
-    "supplies_products": [],
-    "managed_by_org_unit": "",
-    "vendor_management_roles": [],
-    "operates_from_locations": [],
-    "provides_systems": [],
-    "provides_data": [],
-    "serves_customers_through": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": 85.0,
-        "accuracy_confidence": "High",
-        "timeliness_score": "Current",
-        "consistency_score": "Consistent"
-      },
-      "primary_data_source": "stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.ecosystem_concentration_risks.json; stage-9-resilience-esg-continuity/9.4-vendor-ecosystem-shock-propagation/9.4.shock_propagation_paths.json",
-      "last_assessed_date": "2026-03-04",
-      "assessed_by": "AI Enrichment Agent (Claude) \u2014 DD Integration Pass 2 (Provenance Remediation)",
-      "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
-      "confidence_level": "High",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "revenue_dependency_usd_m": 1055,
-    "pricing_increase_pct": 250,
-    "annual_cost_increase_usd_m": 155,
-    "relationship_leverage": "ZERO",
-    "vendor_hostage": true
-  },
-  {
-    "created_at": "2026-03-04T17:15:13.362777Z",
-    "updated_at": "2026-03-04T17:15:13.362779Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "9330e4ef-9586-4d25-9146-a396960fde12",
-    "entity_type": "vendor",
-    "name": "BT (British Telecom)",
-    "description": "UK Sovereign Services partnership for sovereign communications infrastructure. Non-transferable partnership. Failure/termination forces 6-12 month rebuild. Nascent segment cannot absorb disruption.",
-    "tags": [],
-    "metadata": {},
-    "vendor_type": "",
-    "contract_value": null,
-    "risk_tier": "medium",
-    "has_data_access": false,
-    "data_classification_access": [],
-    "compliance_certifications": [],
-    "contract_expiry": null,
-    "primary_contact": "",
-    "sla_uptime": null,
-    "vendor_id": "",
-    "vendor_name_common": "",
-    "vendor_name_former": [],
-    "vendor_category": "",
-    "vendor_subcategory": "",
-    "industry_classification": null,
-    "headquarters_location": "",
-    "vendor_locations": [],
-    "vendor_size": null,
-    "ownership_structure": "",
-    "origin": "",
-    "diversity_classification": null,
-    "parent_company": "",
-    "subsidiaries": [],
-    "relationship_status": "",
-    "relationship_start_date": "",
-    "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
-    "vendor_manager": "",
-    "executive_sponsor": "",
-    "governance_cadence": null,
-    "total_annual_spend": null,
-    "spend_by_category": [],
-    "spend_by_business_unit": [],
-    "spend_concentration_risk": null,
-    "payment_terms": null,
-    "cost_trend": null,
-    "cost_benchmark": null,
-    "savings_realized": null,
-    "performance_scorecard": null,
-    "performance_dimensions": [],
-    "sla_compliance": null,
-    "quality_metrics": null,
-    "delivery_performance": null,
-    "incident_history": null,
-    "escalation_history": [],
-    "innovation_contribution": null,
-    "vendor_risk_profile": null,
-    "financial_stability": null,
-    "cybersecurity_assessment": null,
-    "business_continuity": null,
-    "vendor_compliance_certifications": [],
-    "regulatory_applicability": [],
-    "sanctions_screening": null,
-    "data_processing": null,
-    "insurance_coverage": null,
-    "audit_findings": [],
-    "supply_chain_role": "",
-    "substitutability": null,
-    "geographic_concentration": null,
-    "dependency_on_vendor": [],
-    "vendor_dependencies": null,
-    "force_majeure_exposure": null,
-    "partnership_structure": "",
-    "joint_governance": null,
-    "shared_ip": null,
-    "co_investment": null,
-    "exclusivity": null,
-    "holds_contracts": [],
-    "supplies_products": [],
-    "managed_by_org_unit": "",
-    "vendor_management_roles": [],
-    "operates_from_locations": [],
-    "provides_systems": [],
-    "provides_data": [],
-    "serves_customers_through": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "segment": "UK_Sovereign_Services",
-    "criticality": "ESSENTIAL",
-    "partnership_type": "EXCLUSIVE",
-    "segment_revenue_usd_m": 135
-  },
-  {
     "created_at": "2026-02-25T19:25:49.863465Z",
-    "updated_at": "2026-03-05T20:48:17.797769Z",
+    "updated_at": "2026-04-02T16:03:56.839763Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "93a06a5b-323c-4e10-a3ca-ddd8d3f3e25c",
     "entity_type": "vendor",
     "name": "F5, Inc.",
@@ -2856,20 +2409,32 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - F5 application delivery controller (ADC) and DDoS protection is critical for customer web services. Loss would require Citrix ADC, A10, or cloud-native alternatives. 2-3 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 10000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.366,
-      "estimation_methodology": "Network infrastructure - F5 load balancing and app delivery",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 4.5,
+          "spend_pct_of_revenue_pct": 0.16,
+          "cost_pool": "COGS_Infrastructure",
+          "switching_cost_usd_m": 5,
+          "switching_timeline_months": 9,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:25:35.615683Z",
-    "updated_at": "2026-03-05T20:48:16.379090Z",
+    "updated_at": "2026-04-02T16:02:41.240183Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "952b6bd3-a618-4757-ae43-2358765de44c",
     "entity_type": "vendor",
     "name": "Citrix Systems, Inc. (Cloud Software Group)",
@@ -3016,20 +2581,32 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - Citrix virtual desktop/app delivery platform is critical for customer VDI/DaaS services. Loss would require migration to VMware Horizon, Microsoft AVD, or similar. 3-6 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 15000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.548,
-      "estimation_methodology": "Network/security - Citrix DaaS and networking",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 3,
+          "spend_pct_of_revenue_pct": 0.11,
+          "cost_pool": "COGS_Software",
+          "switching_cost_usd_m": 8,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:45:21.916077Z",
-    "updated_at": "2026-03-05T20:48:33.263546Z",
+    "updated_at": "2026-04-02T16:03:03.432345Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "95f4ea39-e18a-45ac-94ed-39801c208232",
     "entity_type": "vendor",
     "name": "PagerDuty, Inc.",
@@ -3166,20 +2743,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 5000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.183,
-      "estimation_methodology": "Incident response - PagerDuty for on-call and alerting",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 2.5,
+          "spend_pct_of_revenue_pct": 0.09,
+          "cost_pool": "SGA_ITSM",
+          "switching_cost_usd_m": 3,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:33:00.738255Z",
-    "updated_at": "2026-03-05T20:48:28.125237Z",
+    "updated_at": "2026-04-02T16:03:43.001328Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "9e062d8d-7cf1-4dbd-8cac-a4d179cf2fb8",
     "entity_type": "vendor",
     "name": "Juniper Networks, Inc.",
@@ -3322,20 +2911,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 12000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.439,
-      "estimation_methodology": "Network infrastructure - Juniper routing and switching",
-      "cost_category": "hardware",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 6,
+          "spend_pct_of_revenue_pct": 0.22,
+          "cost_pool": "COGS_Infrastructure",
+          "switching_cost_usd_m": 8,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:32:55.726959Z",
-    "updated_at": "2026-03-05T20:48:27.148241Z",
+    "updated_at": "2026-04-02T16:03:38.206144Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "9e651731-012d-4d54-8937-2307a06cf294",
     "entity_type": "vendor",
     "name": "Red Hat, Inc. (IBM)",
@@ -3478,20 +3079,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 75000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 2.742,
-      "estimation_methodology": "Private cloud infrastructure - Red Hat/IBM Linux and container tech",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 10,
+          "spend_pct_of_revenue_pct": 0.37,
+          "cost_pool": "COGS_Software",
+          "switching_cost_usd_m": 15,
+          "switching_timeline_months": 18,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Medium",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T2-T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:45:29.493134Z",
-    "updated_at": "2026-03-05T20:48:34.701828Z",
+    "updated_at": "2026-04-02T16:03:55.828821Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "ce30320e-d0b8-449b-8103-ebb65a37f4a4",
     "entity_type": "vendor",
     "name": "HashiCorp, Inc. (IBM)",
@@ -3634,167 +3247,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 8000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.292,
-      "estimation_methodology": "Infrastructure automation - HashiCorp for IaC and secrets",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
-    }
-  },
-  {
-    "created_at": "2026-03-04T17:15:07.460953Z",
-    "updated_at": "2026-03-05T20:48:50.235753Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 2,
-    "id": "ceb2a87b-be08-4394-a2b7-5d31bda6bd28",
-    "entity_type": "vendor",
-    "name": "AWS (Amazon Web Services)",
-    "description": "Hyperscaler providing $500-700M annual revenue via Advanced Partner program. Rackspace Public Cloud depends 100% on AWS infrastructure. Partner credits 10-15% of revenue. Zero leverage in relationship.",
-    "tags": [],
-    "metadata": {},
-    "vendor_type": "",
-    "contract_value": null,
-    "risk_tier": "medium",
-    "has_data_access": false,
-    "data_classification_access": [],
-    "compliance_certifications": [],
-    "contract_expiry": null,
-    "primary_contact": "",
-    "sla_uptime": null,
-    "vendor_id": "",
-    "vendor_name_common": "",
-    "vendor_name_former": [],
-    "vendor_category": "",
-    "vendor_subcategory": "",
-    "industry_classification": null,
-    "headquarters_location": "",
-    "vendor_locations": [],
-    "vendor_size": null,
-    "ownership_structure": "",
-    "origin": "",
-    "diversity_classification": null,
-    "parent_company": "",
-    "subsidiaries": [],
-    "relationship_status": "",
-    "relationship_start_date": "",
-    "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
-    "vendor_manager": "",
-    "executive_sponsor": "",
-    "governance_cadence": null,
-    "total_annual_spend": null,
-    "spend_by_category": [],
-    "spend_by_business_unit": [],
-    "spend_concentration_risk": null,
-    "payment_terms": null,
-    "cost_trend": null,
-    "cost_benchmark": null,
-    "savings_realized": null,
-    "performance_scorecard": null,
-    "performance_dimensions": [],
-    "sla_compliance": null,
-    "quality_metrics": null,
-    "delivery_performance": null,
-    "incident_history": null,
-    "escalation_history": [],
-    "innovation_contribution": null,
-    "vendor_risk_profile": null,
-    "financial_stability": null,
-    "cybersecurity_assessment": null,
-    "business_continuity": null,
-    "vendor_compliance_certifications": [],
-    "regulatory_applicability": [],
-    "sanctions_screening": null,
-    "data_processing": null,
-    "insurance_coverage": null,
-    "audit_findings": [],
-    "supply_chain_role": "",
-    "substitutability": null,
-    "geographic_concentration": null,
-    "dependency_on_vendor": [],
-    "vendor_dependencies": null,
-    "force_majeure_exposure": null,
-    "partnership_structure": "",
-    "joint_governance": null,
-    "shared_ip": null,
-    "co_investment": null,
-    "exclusivity": null,
-    "holds_contracts": [],
-    "supplies_products": [],
-    "managed_by_org_unit": "",
-    "vendor_management_roles": [],
-    "operates_from_locations": [],
-    "provides_systems": [],
-    "provides_data": [],
-    "serves_customers_through": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "revenue_dependency_usd_m": 600,
-    "partner_status": "Advanced_Partner",
-    "partner_credits_pct": 12,
-    "relationship_leverage": "ZERO",
-    "financial_profile": {
-      "estimated_annual_spend": 350000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 12.788,
-      "estimation_methodology": "Hyperscale Cloud Platform - AWS dominance in Rackspace portfolio",
-      "cost_category": "cloud_infrastructure",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 5,
+          "spend_pct_of_revenue_pct": 0.18,
+          "cost_pool": "COGS_Software",
+          "switching_cost_usd_m": 12,
+          "switching_timeline_months": 18,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Medium",
+          "contract_leverage_position": "Locked",
+          "confidence": "T2-T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:25:55.609710Z",
-    "updated_at": "2026-03-05T20:48:19.194164Z",
+    "updated_at": "2026-04-02T16:03:10.170049Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "d31d8a26-09ac-4021-be8d-c8095317739c",
     "entity_type": "vendor",
     "name": "NETSCOUT Systems, Inc. (Arbor Networks)",
@@ -3941,20 +3419,32 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - NETSCOUT Arbor DDoS/network analytics protects customer infrastructure. Loss would require Radcom, Ixia, or cloud-native DDoS services. 1-2 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 4000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.146,
-      "estimation_methodology": "Network operations - DDoS and network visibility",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 2,
+          "spend_pct_of_revenue_pct": 0.07,
+          "cost_pool": "COGS_Infrastructure",
+          "switching_cost_usd_m": 2,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:46:04.233248Z",
-    "updated_at": "2026-03-05T20:48:45.043211Z",
+    "updated_at": "2026-04-02T16:04:02.090851Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "d5209450-117f-4d62-837f-5d9602fb9405",
     "entity_type": "vendor",
     "name": "Dynatrace, Inc.",
@@ -4097,20 +3587,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 14000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.512,
-      "estimation_methodology": "Observability/AIOps - Dynatrace for application monitoring",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 4,
+          "spend_pct_of_revenue_pct": 0.15,
+          "cost_pool": "Mixed_Observability",
+          "switching_cost_usd_m": 6,
+          "switching_timeline_months": 9,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:45:50.868072Z",
-    "updated_at": "2026-03-05T20:48:42.166424Z",
+    "updated_at": "2026-04-02T16:03:53.091934Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 2,
+    "version": 3,
     "id": "ea1fa78a-b48f-47ff-a80f-83b3252cb9e7",
     "entity_type": "vendor",
     "name": "Fortinet, Inc.",
@@ -4247,159 +3749,32 @@
       ]
     },
     "financial_profile": {
-      "estimated_annual_spend": 8000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.292,
-      "estimation_methodology": "Network security - Fortinet firewalls and NGFW",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 5.5,
+          "spend_pct_of_revenue_pct": 0.2,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 5,
+          "switching_timeline_months": 9,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
-    "created_at": "2026-03-04T17:15:08.410099Z",
-    "updated_at": "2026-03-04T17:15:08.410101Z",
-    "valid_from": null,
-    "valid_until": null,
-    "version": 1,
-    "id": "ffa48c3f-e242-4894-90fd-bf59a3a508fa",
-    "entity_type": "vendor",
-    "name": "Microsoft Azure",
-    "description": "Hyperscaler providing $500-700M annual revenue via CSP 2-Tier Distributor program. Double intermediation reduces control. Partner credits 10-15%. Prioritizes direct enterprise customers during capacity constraints.",
-    "tags": [],
-    "metadata": {},
-    "vendor_type": "",
-    "contract_value": null,
-    "risk_tier": "medium",
-    "has_data_access": false,
-    "data_classification_access": [],
-    "compliance_certifications": [],
-    "contract_expiry": null,
-    "primary_contact": "",
-    "sla_uptime": null,
-    "vendor_id": "",
-    "vendor_name_common": "",
-    "vendor_name_former": [],
-    "vendor_category": "",
-    "vendor_subcategory": "",
-    "industry_classification": null,
-    "headquarters_location": "",
-    "vendor_locations": [],
-    "vendor_size": null,
-    "ownership_structure": "",
-    "origin": "",
-    "diversity_classification": null,
-    "parent_company": "",
-    "subsidiaries": [],
-    "relationship_status": "",
-    "relationship_start_date": "",
-    "relationship_tenure_years": null,
-    "strategic_importance": "",
-    "engagement_model": "",
-    "vendor_manager": "",
-    "executive_sponsor": "",
-    "governance_cadence": null,
-    "total_annual_spend": null,
-    "spend_by_category": [],
-    "spend_by_business_unit": [],
-    "spend_concentration_risk": null,
-    "payment_terms": null,
-    "cost_trend": null,
-    "cost_benchmark": null,
-    "savings_realized": null,
-    "performance_scorecard": null,
-    "performance_dimensions": [],
-    "sla_compliance": null,
-    "quality_metrics": null,
-    "delivery_performance": null,
-    "incident_history": null,
-    "escalation_history": [],
-    "innovation_contribution": null,
-    "vendor_risk_profile": null,
-    "financial_stability": null,
-    "cybersecurity_assessment": null,
-    "business_continuity": null,
-    "vendor_compliance_certifications": [],
-    "regulatory_applicability": [],
-    "sanctions_screening": null,
-    "data_processing": null,
-    "insurance_coverage": null,
-    "audit_findings": [],
-    "supply_chain_role": "",
-    "substitutability": null,
-    "geographic_concentration": null,
-    "dependency_on_vendor": [],
-    "vendor_dependencies": null,
-    "force_majeure_exposure": null,
-    "partnership_structure": "",
-    "joint_governance": null,
-    "shared_ip": null,
-    "co_investment": null,
-    "exclusivity": null,
-    "holds_contracts": [],
-    "supplies_products": [],
-    "managed_by_org_unit": "",
-    "vendor_management_roles": [],
-    "operates_from_locations": [],
-    "provides_systems": [],
-    "provides_data": [],
-    "serves_customers_through": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "temporal": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
-    "revenue_dependency_usd_m": 600,
-    "partner_status": "CSP_2_Tier_Distributor",
-    "partner_credits_pct": 12,
-    "intermediation_level": "DOUBLE"
-  },
-  {
     "created_at": "2026-02-25T19:01:57.308868Z",
-    "updated_at": "2026-03-05T20:47:34.867258Z",
+    "updated_at": "2026-04-02T16:02:38.683104Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "vnd-001",
     "entity_type": "vendor",
     "name": "Amazon Web Services, Inc.",
@@ -4539,20 +3914,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 350000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 12.788,
-      "estimation_methodology": "Hyperscale Cloud Platform - AWS dominance in Rackspace portfolio",
-      "cost_category": "cloud_infrastructure",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 631,
+          "spend_pct_of_revenue_pct": 23.05,
+          "cost_pool": "COGS_Hyperscaler",
+          "switching_cost_usd_m": 150,
+          "switching_timeline_months": 36,
+          "concentration_risk": "Critical",
+          "strategic_threat": "High",
+          "contract_leverage_position": "Dependent",
+          "confidence": "T2",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308884Z",
-    "updated_at": "2026-03-05T20:47:35.739735Z",
+    "updated_at": "2026-04-02T16:02:43.590220Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "vnd-002",
     "entity_type": "vendor",
     "name": "Microsoft Corporation",
@@ -4692,20 +4079,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 300000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 10.966,
-      "estimation_methodology": "Hyperscale Cloud Platform - Azure critical for enterprise cloud",
-      "cost_category": "cloud_infrastructure",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 485,
+          "spend_pct_of_revenue_pct": 17.79,
+          "cost_pool": "COGS_Hyperscaler",
+          "switching_cost_usd_m": 120,
+          "switching_timeline_months": 24,
+          "concentration_risk": "High",
+          "strategic_threat": "High",
+          "contract_leverage_position": "Dependent",
+          "confidence": "T2",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308892Z",
-    "updated_at": "2026-03-05T20:47:36.725003Z",
+    "updated_at": "2026-04-02T16:02:48.106729Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "vnd-003",
     "entity_type": "vendor",
     "name": "Google LLC (Google Cloud)",
@@ -4845,20 +4244,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 250000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 9.138,
-      "estimation_methodology": "Hyperscale Cloud Platform - GCP secondary cloud provider",
-      "cost_category": "cloud_infrastructure",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 385,
+          "spend_pct_of_revenue_pct": 14.1,
+          "cost_pool": "COGS_Hyperscaler",
+          "switching_cost_usd_m": 95,
+          "switching_timeline_months": 18,
+          "concentration_risk": "High",
+          "strategic_threat": "Medium",
+          "contract_leverage_position": "Dependent",
+          "confidence": "T2",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308897Z",
-    "updated_at": "2026-03-05T20:47:37.721710Z",
+    "updated_at": "2026-04-02T16:03:01.724700Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "vnd-004",
     "entity_type": "vendor",
     "name": "Oracle Corporation",
@@ -4998,20 +4409,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 150000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 5.483,
-      "estimation_methodology": "Hyperscale Cloud Platform - Oracle Cloud for specialized workloads",
-      "cost_category": "cloud_infrastructure",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 175,
+          "spend_pct_of_revenue_pct": 6.41,
+          "cost_pool": "COGS_SaaS",
+          "switching_cost_usd_m": 30,
+          "switching_timeline_months": 8,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T2",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308903Z",
-    "updated_at": "2026-03-05T20:47:39.027331Z",
+    "updated_at": "2026-04-02T16:02:52.020059Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "vnd-005",
     "entity_type": "vendor",
     "name": "Broadcom Inc. (VMware)",
@@ -5151,20 +4574,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 120000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 4.387,
-      "estimation_methodology": "Critical cloud infrastructure - VMware dominates private cloud",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 280,
+          "spend_pct_of_revenue_pct": 10.27,
+          "cost_pool": "COGS_Hyperscaler",
+          "switching_cost_usd_m": 60,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Medium",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T2",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308912Z",
-    "updated_at": "2026-03-05T20:47:40.395051Z",
+    "updated_at": "2026-04-02T16:02:56.288012Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "vnd-006",
     "entity_type": "vendor",
     "name": "Dell Technologies Inc.",
@@ -5304,20 +4739,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 100000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 3.655,
-      "estimation_methodology": "Critical hardware infrastructure - Dell/EMC storage and servers",
-      "cost_category": "hardware",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 210,
+          "spend_pct_of_revenue_pct": 7.71,
+          "cost_pool": "COGS_SaaS",
+          "switching_cost_usd_m": 40,
+          "switching_timeline_months": 9,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T2",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308922Z",
-    "updated_at": "2026-03-05T20:47:41.765523Z",
+    "updated_at": "2026-04-02T16:03:26.078615Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "vnd-007",
     "entity_type": "vendor",
     "name": "Palantir Technologies Inc.",
@@ -5457,20 +4904,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 12000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.439,
-      "estimation_methodology": "AI/Analytics platform - Palantir for advanced analytics",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 1.5,
+          "spend_pct_of_revenue_pct": 0.05,
+          "cost_pool": "SGA_Enterprise",
+          "switching_cost_usd_m": 5,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308927Z",
-    "updated_at": "2026-03-05T20:47:42.749458Z",
+    "updated_at": "2026-04-02T16:03:14.121651Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "vnd-008",
     "entity_type": "vendor",
     "name": "Sema4.ai Inc.",
@@ -5610,20 +5069,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 2000000,
-      "spend_confidence": "low",
-      "spend_as_pct_of_revenue": 0.073,
-      "estimation_methodology": "AI platform - niche analytics vendor",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 2,
+          "spend_pct_of_revenue_pct": 0.07,
+          "cost_pool": "SGA_Enterprise",
+          "switching_cost_usd_m": 3,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308932Z",
-    "updated_at": "2026-03-05T20:47:43.725657Z",
+    "updated_at": "2026-04-02T16:03:41.954273Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "vnd-009",
     "entity_type": "vendor",
     "name": "Rubrik, Inc.",
@@ -5763,20 +5234,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 12000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.439,
-      "estimation_methodology": "Data protection - Rubrik for backup and data management",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 7,
+          "spend_pct_of_revenue_pct": 0.26,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 10,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T2-T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308951Z",
-    "updated_at": "2026-03-05T20:47:44.599851Z",
+    "updated_at": "2026-04-02T16:03:34.378617Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 7,
     "id": "vnd-010",
     "entity_type": "vendor",
     "name": "SMPL-C",
@@ -5929,20 +5412,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 2500000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.091,
-      "estimation_methodology": "Compliance automation - regulatory compliance automation",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 1,
+          "spend_pct_of_revenue_pct": 0.04,
+          "cost_pool": "SGA_ITSM",
+          "switching_cost_usd_m": 1,
+          "switching_timeline_months": 3,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308957Z",
-    "updated_at": "2026-03-05T20:47:48.483130Z",
+    "updated_at": "2026-04-02T16:03:32.227828Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 7,
     "id": "vnd-011",
     "entity_type": "vendor",
     "name": "ServiceNow, Inc.",
@@ -6095,20 +5590,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 25000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.914,
-      "estimation_methodology": "Enterprise SaaS - ServiceNow ITSM central to operations",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 12,
+          "spend_pct_of_revenue_pct": 0.44,
+          "cost_pool": "SGA_ITSM",
+          "switching_cost_usd_m": 25,
+          "switching_timeline_months": 24,
+          "concentration_risk": "High",
+          "strategic_threat": "Medium",
+          "contract_leverage_position": "Locked",
+          "confidence": "T2",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308967Z",
-    "updated_at": "2026-03-05T20:47:49.363175Z",
+    "updated_at": "2026-04-02T16:03:40.878729Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 7,
     "id": "vnd-012",
     "entity_type": "vendor",
     "name": "Equinix, Inc.",
@@ -6261,20 +5768,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 35000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 1.279,
-      "estimation_methodology": "Data center interconnection - Equinix critical for global edge presence",
-      "cost_category": "professional_services",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 8,
+          "spend_pct_of_revenue_pct": 0.29,
+          "cost_pool": "COGS_Infrastructure",
+          "switching_cost_usd_m": 15,
+          "switching_timeline_months": 18,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Locked",
+          "confidence": "T2-T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308972Z",
-    "updated_at": "2026-03-05T20:47:50.320862Z",
+    "updated_at": "2026-04-02T16:02:26.456884Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 7,
     "id": "vnd-013",
     "entity_type": "vendor",
     "name": "Megaport Limited",
@@ -6427,20 +5946,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 8000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.292,
-      "estimation_methodology": "Network services - Megaport for virtual cross-connects",
-      "cost_category": "professional_services",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 3.5,
+          "spend_pct_of_revenue_pct": 0.13,
+          "cost_pool": "COGS_Infrastructure",
+          "switching_cost_usd_m": 4,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308982Z",
-    "updated_at": "2026-03-05T20:47:51.279526Z",
+    "updated_at": "2026-04-02T16:03:28.130266Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 7,
     "id": "vnd-014",
     "entity_type": "vendor",
     "name": "CrowdStrike Holdings, Inc.",
@@ -6593,20 +6124,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 15000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.548,
-      "estimation_methodology": "Security SaaS - CrowdStrike endpoint protection critical",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 12,
+          "spend_pct_of_revenue_pct": 0.44,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 15,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T2-T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308987Z",
-    "updated_at": "2026-03-05T20:47:52.254989Z",
+    "updated_at": "2026-04-02T16:03:23.590056Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 7,
     "id": "vnd-015",
     "entity_type": "vendor",
     "name": "Palo Alto Networks, Inc.",
@@ -6759,20 +6302,32 @@
     "financial_assessment_date": "2026-03-05",
     "assessed_by": "Financial Enrichment Agent \u2014 Wave 1B Vendors",
     "financial_profile": {
-      "estimated_annual_spend": 20000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.731,
-      "estimation_methodology": "Security vendor - Palo Alto Networks for comprehensive protection",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 18,
+          "spend_pct_of_revenue_pct": 0.66,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 12,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T2-T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.308994Z",
-    "updated_at": "2026-03-05T20:47:53.626479Z",
+    "updated_at": "2026-04-02T16:03:39.627574Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 5,
     "id": "vnd-016",
     "entity_type": "vendor",
     "name": "Cloudflare, Inc.",
@@ -6919,20 +6474,32 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - Cloudflare CDN/DDoS/WAF is critical for web performance and security. Loss would force migration to Akamai, Fastly, or AWS CloudFront. 1-2 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 5000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.183,
-      "estimation_methodology": "Security SaaS - Cloudflare for DDoS and WAF",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 8,
+          "spend_pct_of_revenue_pct": 0.29,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 6,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309000Z",
-    "updated_at": "2026-03-05T20:47:55.082830Z",
+    "updated_at": "2026-04-02T16:03:04.440624Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 5,
     "id": "vnd-017",
     "entity_type": "vendor",
     "name": "Cisco Systems, Inc.",
@@ -7079,12 +6646,24 @@
     "spend_tier": "Major",
     "contract_risk_financial_impact": "Significant - Cisco networking (routers, switches, firewalls) is critical for data center and colocation infrastructure. Loss would force migration to Juniper, Arista, or cloud-native networking.",
     "financial_profile": {
-      "estimated_annual_spend": 45000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 1.645,
-      "estimation_methodology": "Network infrastructure - Cisco dominates networking and security",
-      "cost_category": "hardware",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 145,
+          "spend_pct_of_revenue_pct": 5.32,
+          "cost_pool": "COGS_SaaS",
+          "switching_cost_usd_m": 20,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T2",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
@@ -7249,10 +6828,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.309010Z",
-    "updated_at": "2026-02-25T19:01:57.309010Z",
+    "updated_at": "2026-04-02T16:04:00.473618Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "vnd-019",
     "entity_type": "vendor",
     "name": "Atlassian Corporation",
@@ -7380,14 +6959,34 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 4,
+          "spend_pct_of_revenue_pct": 0.15,
+          "cost_pool": "SGA_ITSM",
+          "switching_cost_usd_m": 5,
+          "switching_timeline_months": 9,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309015Z",
-    "updated_at": "2026-02-25T19:01:57.309015Z",
+    "updated_at": "2026-04-02T16:03:35.971656Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "vnd-020",
     "entity_type": "vendor",
     "name": "Salesforce, Inc.",
@@ -7515,14 +7114,34 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 10,
+          "spend_pct_of_revenue_pct": 0.37,
+          "cost_pool": "SGA_Enterprise",
+          "switching_cost_usd_m": 12,
+          "switching_timeline_months": 15,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T2-T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309023Z",
-    "updated_at": "2026-02-25T19:01:57.309024Z",
+    "updated_at": "2026-04-02T16:03:50.783023Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "vnd-021",
     "entity_type": "vendor",
     "name": "Datadog, Inc.",
@@ -7650,14 +7269,34 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 6,
+          "spend_pct_of_revenue_pct": 0.22,
+          "cost_pool": "Mixed_Observability",
+          "switching_cost_usd_m": 8,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309028Z",
-    "updated_at": "2026-02-25T19:01:57.309028Z",
+    "updated_at": "2026-04-02T16:02:16.867910Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "vnd-022",
     "entity_type": "vendor",
     "name": "Snowflake Inc.",
@@ -7785,14 +7424,34 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 4,
+          "spend_pct_of_revenue_pct": 0.15,
+          "cost_pool": "SGA_Enterprise",
+          "switching_cost_usd_m": 12,
+          "switching_timeline_months": 18,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309033Z",
-    "updated_at": "2026-02-25T19:01:57.309033Z",
+    "updated_at": "2026-04-02T16:02:29.813382Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "vnd-023",
     "entity_type": "vendor",
     "name": "Databricks, Inc.",
@@ -7920,14 +7579,34 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 3.5,
+          "spend_pct_of_revenue_pct": 0.13,
+          "cost_pool": "SGA_Enterprise",
+          "switching_cost_usd_m": 8,
+          "switching_timeline_months": 15,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309038Z",
-    "updated_at": "2026-02-25T19:01:57.309038Z",
+    "updated_at": "2026-04-02T16:02:32.309888Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "vnd-024",
     "entity_type": "vendor",
     "name": "Armor Defense Inc.",
@@ -8055,14 +7734,34 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 3,
+          "spend_pct_of_revenue_pct": 0.11,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 2,
+          "switching_timeline_months": 4,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309046Z",
-    "updated_at": "2026-02-25T19:01:57.309047Z",
+    "updated_at": "2026-04-02T16:02:57.589190Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "vnd-025",
     "entity_type": "vendor",
     "name": "Securiti, Inc.",
@@ -8190,14 +7889,34 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 2.5,
+          "spend_pct_of_revenue_pct": 0.09,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 3,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309052Z",
-    "updated_at": "2026-02-25T19:01:57.309053Z",
+    "updated_at": "2026-04-02T16:03:58.536463Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "vnd-026",
     "entity_type": "vendor",
     "name": "Akamai Technologies, Inc.",
@@ -8325,14 +8044,34 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 4,
+          "spend_pct_of_revenue_pct": 0.15,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 3,
+          "switching_timeline_months": 6,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309057Z",
-    "updated_at": "2026-02-25T19:01:57.309057Z",
+    "updated_at": "2026-04-02T16:03:51.790007Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 1,
+    "version": 2,
     "id": "vnd-027",
     "entity_type": "vendor",
     "name": "SAP SE",
@@ -8460,14 +8199,34 @@
       "confidence_level": "",
       "attestation_status": null,
       "known_data_gaps": []
+    },
+    "financial_profile": {
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 6,
+          "spend_pct_of_revenue_pct": 0.22,
+          "cost_pool": "SGA_Enterprise",
+          "switching_cost_usd_m": 15,
+          "switching_timeline_months": 24,
+          "concentration_risk": "Medium",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Locked",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309062Z",
-    "updated_at": "2026-03-05T20:47:57.337814Z",
+    "updated_at": "2026-04-02T16:03:06.792338Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 5,
     "id": "vnd-028",
     "entity_type": "vendor",
     "name": "BeyondTrust Corporation (Bomgar)",
@@ -8614,20 +8373,32 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - BeyondTrust privileged access management (PAM/Bomgar) is critical for secure remote access. Loss would require CyberArk, Delinea, or manual SSH key management. 1-2 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 3500000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.128,
-      "estimation_methodology": "PAM/Remote access - BeyondTrust privileged access",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 2,
+          "spend_pct_of_revenue_pct": 0.07,
+          "cost_pool": "SGA_Security",
+          "switching_cost_usd_m": 4,
+          "switching_timeline_months": 9,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309067Z",
-    "updated_at": "2026-03-05T20:47:58.358155Z",
+    "updated_at": "2026-04-02T16:02:54.221484Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 5,
     "id": "vnd-029",
     "entity_type": "vendor",
     "name": "BT Group plc",
@@ -8774,20 +8545,32 @@
     "spend_tier": "Major",
     "contract_risk_financial_impact": "Significant - BT Group (British Telecom) provides global network backbone/WAN services. Loss would require consolidation to Lumen, Zayo, or other telecom carriers. 3-6 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 30000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 1.096,
-      "estimation_methodology": "Telecom services - estimated based on global operations",
-      "cost_category": "professional_services",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 3,
+          "spend_pct_of_revenue_pct": 0.11,
+          "cost_pool": "COGS_Infrastructure",
+          "switching_cost_usd_m": 4,
+          "switching_timeline_months": 9,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309091Z",
-    "updated_at": "2026-03-05T20:48:03.949703Z",
+    "updated_at": "2026-04-02T16:02:50.104732Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 5,
     "id": "vnd-030",
     "entity_type": "vendor",
     "name": "Just Analytics Pte. Ltd.",
@@ -8928,20 +8711,32 @@
     "spend_tier": "Minor",
     "contract_risk_financial_impact": "Low - Just Analytics provides specialized analytics services/consulting. Loss would shift to competitor analytics consulting firms. Minimal operational impact.",
     "financial_profile": {
-      "estimated_annual_spend": 800000,
-      "spend_confidence": "low",
-      "spend_as_pct_of_revenue": 0.029,
-      "estimation_methodology": "Analytics niche vendor - specialized use case",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 3,
+          "spend_pct_of_revenue_pct": 0.11,
+          "cost_pool": "SGA_Enterprise",
+          "switching_cost_usd_m": 2,
+          "switching_timeline_months": 4,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309097Z",
-    "updated_at": "2026-03-05T20:48:05.766633Z",
+    "updated_at": "2026-04-02T16:02:45.771907Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 5,
     "id": "vnd-031",
     "entity_type": "vendor",
     "name": "ScienceLogic, Inc.",
@@ -9094,20 +8889,32 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - ScienceLogic observability/AIOps platform monitors infrastructure and applications. Loss would require migration to New Relic, Datadog, or Dynatrace. 2-3 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 12000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.439,
-      "estimation_methodology": "AIOps platform - ScienceLogic critical for infrastructure monitoring",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 3,
+          "spend_pct_of_revenue_pct": 0.11,
+          "cost_pool": "Mixed_Observability",
+          "switching_cost_usd_m": 5,
+          "switching_timeline_months": 9,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309102Z",
-    "updated_at": "2026-03-05T20:48:07.190873Z",
+    "updated_at": "2026-04-02T16:03:05.706750Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "vnd-032",
     "entity_type": "vendor",
     "name": "Platform9 Systems, Inc.",
@@ -9248,20 +9055,32 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - Platform9 hybrid cloud/OpenStack management enables customer hybrid cloud strategies. Loss would shift to Canonical, Red Hat, or pure cloud platforms. 2-3 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 5000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.183,
-      "estimation_methodology": "Kubernetes platform - managed Kubernetes infrastructure",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 2.5,
+          "spend_pct_of_revenue_pct": 0.09,
+          "cost_pool": "COGS_Software",
+          "switching_cost_usd_m": 6,
+          "switching_timeline_months": 12,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309106Z",
-    "updated_at": "2026-03-05T20:48:09.059506Z",
+    "updated_at": "2026-04-02T16:02:19.561773Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "vnd-033",
     "entity_type": "vendor",
     "name": "Workday, Inc.",
@@ -9402,20 +9221,32 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - Workday HCM/Finance is core platform for HR and Finance operations. Loss would require costly migration to SuccessFactors, ADP, or Paychex. 6-12 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 22000000,
-      "spend_confidence": "high",
-      "spend_as_pct_of_revenue": 0.804,
-      "estimation_methodology": "HR/Finance SaaS - Workday for HR and financial management",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "high"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 4,
+          "spend_pct_of_revenue_pct": 0.15,
+          "cost_pool": "SGA_Enterprise",
+          "switching_cost_usd_m": 8,
+          "switching_timeline_months": 18,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Balanced",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309113Z",
-    "updated_at": "2026-03-05T20:48:10.954104Z",
+    "updated_at": "2026-04-02T16:03:20.138578Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "vnd-034",
     "entity_type": "vendor",
     "name": "Moogsoft Inc. (IBM AIOps)",
@@ -9549,20 +9380,32 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - Moogsoft AIOps (IBM integration) provides alert aggregation and correlation for SOC. Loss would require Splunk, DataDog, or manual tooling. 1-2 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 8000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.292,
-      "estimation_methodology": "AIOps platform - Moogsoft for incident intelligence",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "medium"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 1.5,
+          "spend_pct_of_revenue_pct": 0.05,
+          "cost_pool": "Mixed_Observability",
+          "switching_cost_usd_m": 2,
+          "switching_timeline_months": 4,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.309118Z",
-    "updated_at": "2026-03-05T20:48:12.731697Z",
+    "updated_at": "2026-04-02T16:03:30.346009Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 3,
+    "version": 4,
     "id": "vnd-035",
     "entity_type": "vendor",
     "name": "Everbridge, Inc.",
@@ -9703,12 +9546,24 @@
     "spend_tier": "Significant",
     "contract_risk_financial_impact": "Significant - Everbridge critical event management platform is essential for emergency response and incident management. Loss would require migration to Alertus, OnSolve, or manual escalation. 1-2 month ramp.",
     "financial_profile": {
-      "estimated_annual_spend": 4000000,
-      "spend_confidence": "medium",
-      "spend_as_pct_of_revenue": 0.146,
-      "estimation_methodology": "Incident management - Everbridge crisis management",
-      "cost_category": "software_license",
-      "strategic_financial_risk": "low"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Estimated",
+          "currency_iso": "USD",
+          "annual_spend_usd_m": 1,
+          "spend_pct_of_revenue_pct": 0.04,
+          "cost_pool": "SGA_ITSM",
+          "switching_cost_usd_m": 1,
+          "switching_timeline_months": 3,
+          "concentration_risk": "Low",
+          "strategic_threat": "Low",
+          "contract_leverage_position": "Strong",
+          "confidence": "T3",
+          "source": "ds13_vendor_spend_procurement"
+        }
+      ]
     }
   }
 ]
