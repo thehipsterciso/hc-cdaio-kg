@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.284908Z",
-    "updated_at": "2026-03-05T21:36:54.238189Z",
+    "updated_at": "2026-04-02T14:44:15.654457Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "pf-001",
     "entity_type": "product_portfolio",
     "name": "Private Cloud",
@@ -26,6 +26,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -56,18 +79,79 @@
     "margin_compression": "38.6% gross \u2192 25-30% estimated from VMware costs",
     "latent_churn_risk": "$90M-$150M over 3 years",
     "financial_profile": {
-      "revenue_contribution_usd": 1055000000,
-      "gross_margin_pct": 0.386,
-      "year_over_year_change_pct": -0.13,
-      "strategic_risk_level": "CRITICAL"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2023",
+          "period_type": "Audited",
+          "currency_iso": "USD",
+          "revenue_usd_m": 1210,
+          "cost_of_revenue_usd_m": 774,
+          "gross_profit_usd_m": 436,
+          "gross_margin_pct": 36,
+          "confidence": "T1-T2",
+          "source": "ds02_segment_revenue_decomposition"
+        },
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Audited",
+          "currency_iso": "USD",
+          "revenue_usd_m": 1055,
+          "cost_of_revenue_usd_m": 648,
+          "gross_profit_usd_m": 407,
+          "gross_margin_pct": 38.6,
+          "confidence": "T1-audited",
+          "source": "ds02_segment_revenue_decomposition"
+        },
+        {
+          "fiscal_year": "FY2025",
+          "period_type": "Audited",
+          "currency_iso": "USD",
+          "revenue_usd_m": 990,
+          "cost_of_revenue_usd_m": 594,
+          "gross_profit_usd_m": 396,
+          "gross_margin_pct": 40,
+          "confidence": "T1-T2",
+          "source": "ds02_segment_revenue_decomposition"
+        },
+        {
+          "fiscal_year": "FY2026",
+          "period_type": "Guidance",
+          "currency_iso": "USD",
+          "revenue_usd_m": 1050,
+          "cost_of_revenue_usd_m": 614,
+          "gross_profit_usd_m": 436,
+          "gross_margin_pct": 41.5,
+          "guidance_range": {
+            "revenue_usd_m": [
+              1025,
+              1075
+            ],
+            "cost_of_revenue_usd_m": [
+              605,
+              624
+            ],
+            "gross_profit_usd_m": [
+              420,
+              452
+            ],
+            "gross_margin_pct": [
+              41,
+              42
+            ]
+          },
+          "confidence": "T2",
+          "source": "ds02_segment_revenue_decomposition"
+        }
+      ]
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284917Z",
-    "updated_at": "2026-03-05T21:36:54.824208Z",
+    "updated_at": "2026-04-02T14:44:20.099390Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "pf-002",
     "entity_type": "product_portfolio",
     "name": "Public Cloud",
@@ -89,6 +173,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -120,10 +227,71 @@
     "supplier_dependency": "61% of total revenue dependent on AWS partnership",
     "latent_churn_risk": "$40M-$110M from hyperscaler competitive targeting",
     "financial_profile": {
-      "revenue_contribution_usd": 1683000000,
-      "gross_margin_pct": 0.104,
-      "year_over_year_change_pct": -0.03,
-      "strategic_risk_level": "CRITICAL"
+      "currency": "USD",
+      "periods": [
+        {
+          "fiscal_year": "FY2023",
+          "period_type": "Audited",
+          "currency_iso": "USD",
+          "revenue_usd_m": 1747,
+          "cost_of_revenue_usd_m": 1581,
+          "gross_profit_usd_m": 166,
+          "gross_margin_pct": 9.5,
+          "confidence": "T1-T2",
+          "source": "ds02_segment_revenue_decomposition"
+        },
+        {
+          "fiscal_year": "FY2024",
+          "period_type": "Audited",
+          "currency_iso": "USD",
+          "revenue_usd_m": 1683,
+          "cost_of_revenue_usd_m": 1508,
+          "gross_profit_usd_m": 175,
+          "gross_margin_pct": 10.4,
+          "confidence": "T1-audited",
+          "source": "ds02_segment_revenue_decomposition"
+        },
+        {
+          "fiscal_year": "FY2025",
+          "period_type": "Audited",
+          "currency_iso": "USD",
+          "revenue_usd_m": 1696,
+          "cost_of_revenue_usd_m": 1509,
+          "gross_profit_usd_m": 187,
+          "gross_margin_pct": 11,
+          "confidence": "T1-T2",
+          "source": "ds02_segment_revenue_decomposition"
+        },
+        {
+          "fiscal_year": "FY2026",
+          "period_type": "Guidance",
+          "currency_iso": "USD",
+          "revenue_usd_m": 1600,
+          "cost_of_revenue_usd_m": 1411,
+          "gross_profit_usd_m": 189,
+          "gross_margin_pct": 11.8,
+          "guidance_range": {
+            "revenue_usd_m": [
+              1575,
+              1625
+            ],
+            "cost_of_revenue_usd_m": [
+              1394,
+              1430
+            ],
+            "gross_profit_usd_m": [
+              181,
+              195
+            ],
+            "gross_margin_pct": [
+              11.5,
+              12
+            ]
+          },
+          "confidence": "T2",
+          "source": "ds02_segment_revenue_decomposition"
+        }
+      ]
     }
   },
   {
@@ -153,6 +321,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -209,6 +400,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -265,6 +479,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -328,6 +565,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -383,6 +643,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -446,6 +729,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -502,6 +808,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -558,6 +887,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -614,6 +966,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -670,6 +1045,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -726,6 +1124,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -782,6 +1203,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -838,6 +1282,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -894,6 +1361,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -951,6 +1441,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1007,6 +1520,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1063,6 +1599,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1120,6 +1679,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1183,6 +1765,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1234,6 +1839,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1285,6 +1913,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1336,6 +1987,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1387,6 +2061,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1438,6 +2135,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1489,6 +2209,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1547,6 +2290,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1598,6 +2364,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1649,6 +2438,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1700,6 +2512,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1758,6 +2593,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1809,6 +2667,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1860,6 +2741,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1918,6 +2822,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1969,6 +2896,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2020,6 +2970,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2071,6 +3044,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2122,6 +3118,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2180,6 +3199,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2231,6 +3273,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2282,6 +3347,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2333,6 +3421,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2384,6 +3495,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2435,6 +3569,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2486,6 +3643,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2537,6 +3717,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2595,6 +3798,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2646,6 +3872,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2697,6 +3946,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2748,6 +4020,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2799,6 +4094,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2850,6 +4168,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2901,6 +4242,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2952,6 +4316,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3003,6 +4390,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3054,6 +4464,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3105,6 +4538,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3156,6 +4612,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3207,6 +4686,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3258,6 +4760,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3309,6 +4834,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3367,6 +4915,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3418,6 +4989,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3469,6 +5063,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3520,6 +5137,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3571,6 +5211,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3622,6 +5285,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3673,6 +5359,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3724,6 +5433,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3775,6 +5507,29 @@
     "market_position": null,
     "contains_products": [],
     "managed_by_org_unit": "",
+    "temporal_and_versioning": {
+      "effective_date": null,
+      "expiration_date": null,
+      "last_review_date": null,
+      "next_review_date": null,
+      "change_reason": "",
+      "schema_version": "1.0.0"
+    },
+    "provenance_and_confidence": {
+      "data_quality_score": {
+        "completeness_pct": null,
+        "accuracy_confidence": "",
+        "timeliness_score": "",
+        "consistency_score": ""
+      },
+      "primary_data_source": "",
+      "last_assessed_date": null,
+      "assessed_by": "",
+      "assessment_methodology": "",
+      "confidence_level": "",
+      "attestation_status": null,
+      "known_data_gaps": []
+    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
