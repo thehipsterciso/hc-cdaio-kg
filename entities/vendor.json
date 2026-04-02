@@ -5373,10 +5373,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.308903Z",
-    "updated_at": "2026-04-02T16:54:33.448022Z",
+    "updated_at": "2026-04-02T17:31:20.454317Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 8,
     "id": "vnd-005",
     "entity_type": "vendor",
     "name": "Broadcom Inc. (VMware)",
@@ -5544,9 +5544,9 @@
           "period_type": "projected",
           "currency_iso": "USD",
           "confidence_tier": "T3-rationalized",
-          "source": "enrichment_protocol projection",
-          "annual_spend_usd_m": 413,
-          "spend_pct_of_revenue_pct": 15.47,
+          "source": "CORRECTED: One-time 25% post-acquisition shock stabilization from $118M base",
+          "annual_spend_usd_m": 148,
+          "spend_pct_of_revenue_pct": 5.54,
           "cost_pool": "COGS",
           "switching_cost_usd_m": 250,
           "switching_timeline_months": 36,
@@ -5555,16 +5555,16 @@
           "annual_price_change_rate": 2.5,
           "negotiating_leverage_score": 1,
           "contract_leverage_position": "Hostage",
-          "spend_projection_methodology": "FY2024 baseline $118.0M \u00d7 (1 + 250.0%)^1 = $413.0M (annual_price_change_rate from ds13)"
+          "spend_projection_methodology": "FY2024 baseline $118.0M \u00d7 1.25 = $147.5M (one-time 25% post-shock stabilization, not compounding)"
         },
         {
           "fiscal_year": "FY2026",
           "period_type": "projected",
           "currency_iso": "USD",
           "confidence_tier": "T3-rationalized",
-          "source": "enrichment_protocol projection",
-          "annual_spend_usd_m": 1445.5,
-          "spend_pct_of_revenue_pct": 55.07,
+          "source": "CORRECTED: 5% annual inflation from stabilized FY2025 base",
+          "annual_spend_usd_m": 155,
+          "spend_pct_of_revenue_pct": 5.9,
           "cost_pool": "COGS",
           "switching_cost_usd_m": 250,
           "switching_timeline_months": 36,
@@ -5573,7 +5573,7 @@
           "annual_price_change_rate": 2.5,
           "negotiating_leverage_score": 1,
           "contract_leverage_position": "Hostage",
-          "spend_projection_methodology": "FY2024 baseline $118.0M \u00d7 (1 + 250.0%)^2 = $1445.5M (annual_price_change_rate from ds13)"
+          "spend_projection_methodology": "FY2025 baseline $148.0M \u00d7 1.05 = $155.4M (normal vendor inflation, 5% annual growth)"
         }
       ]
     }

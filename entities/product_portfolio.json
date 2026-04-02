@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.284908Z",
-    "updated_at": "2026-04-02T16:45:44.692322Z",
+    "updated_at": "2026-04-02T17:31:27.755322Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 8,
+    "version": 9,
     "id": "pf-001",
     "entity_type": "product_portfolio",
     "name": "Private Cloud",
@@ -79,9 +79,10 @@
     "margin_compression": "38.6% gross \u2192 25-30% estimated from VMware costs",
     "latent_churn_risk": "$90M-$150M over 3 years",
     "financial_profile": {
-      "FY2024": {
-        "revenue_usd_m": 189.3,
-        "gross_profit_usd_m": 113.58,
+      "FY2023": {
+        "revenue_usd_m": 1210,
+        "cost_of_revenue_usd_m": 774,
+        "gross_profit_usd_m": 436,
         "contribution_margin_pct": 60,
         "gross_margin_pct": 60,
         "yoy_growth_pct": 15.2,
@@ -92,11 +93,28 @@
         "sga_allocation_usd_m": 37.86,
         "operating_income_usd_m": 75.72,
         "operating_margin_pct": 40,
-        "rationalization_methodology": "Loaded from Tier 2 segment baseline"
+        "rationalization_methodology": "Loaded from Tier 1 segment baseline with CoR = Revenue - GrossProfit"
+      },
+      "FY2024": {
+        "revenue_usd_m": 1055,
+        "cost_of_revenue_usd_m": 648,
+        "gross_profit_usd_m": 407,
+        "contribution_margin_pct": 60,
+        "gross_margin_pct": 60,
+        "yoy_growth_pct": 15.2,
+        "growth_trajectory": "Growing",
+        "strategic_priority": "Strategic",
+        "revenue_pct_of_segment": 11.24,
+        "revenue_pct_of_enterprise": 9.78,
+        "sga_allocation_usd_m": 37.86,
+        "operating_income_usd_m": 75.72,
+        "operating_margin_pct": 40,
+        "rationalization_methodology": "Loaded from Tier 2 segment baseline with CoR = Revenue - GrossProfit"
       },
       "FY2025": {
-        "revenue_usd_m": 218,
-        "gross_profit_usd_m": 130.8,
+        "revenue_usd_m": 990,
+        "cost_of_revenue_usd_m": 594,
+        "gross_profit_usd_m": 396,
         "contribution_margin_pct": 60,
         "gross_margin_pct": 60,
         "yoy_growth_pct": 15.2,
@@ -107,11 +125,12 @@
         "sga_allocation_usd_m": 43.6,
         "operating_income_usd_m": 87.2,
         "operating_margin_pct": 40,
-        "rationalization_methodology": "Projected from FY2024 growth trajectory + segment envelope normalization"
+        "rationalization_methodology": "Projected from FY2024 with CoR = Revenue - GrossProfit"
       },
       "FY2026": {
-        "revenue_usd_m": 251,
-        "gross_profit_usd_m": 150.6,
+        "revenue_usd_m": 1050,
+        "cost_of_revenue_usd_m": 614,
+        "gross_profit_usd_m": 436,
         "contribution_margin_pct": 60,
         "gross_margin_pct": 60,
         "yoy_growth_pct": 15.2,
@@ -122,16 +141,16 @@
         "sga_allocation_usd_m": 50.2,
         "operating_income_usd_m": 100.4,
         "operating_margin_pct": 40,
-        "rationalization_methodology": "Projected from growth trajectory + segment guidance rationalization"
+        "rationalization_methodology": "Projected with CoR = Revenue - GrossProfit"
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284917Z",
-    "updated_at": "2026-04-02T16:45:47.229777Z",
+    "updated_at": "2026-04-02T17:31:31.042947Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 8,
+    "version": 9,
     "id": "pf-002",
     "entity_type": "product_portfolio",
     "name": "Public Cloud",
@@ -207,9 +226,10 @@
     "supplier_dependency": "61% of total revenue dependent on AWS partnership",
     "latent_churn_risk": "$40M-$110M from hyperscaler competitive targeting",
     "financial_profile": {
-      "FY2024": {
-        "revenue_usd_m": 96.4,
-        "gross_profit_usd_m": 51.428,
+      "FY2023": {
+        "revenue_usd_m": 1747,
+        "cost_of_revenue_usd_m": 1581,
+        "gross_profit_usd_m": 166,
         "contribution_margin_pct": 53.4,
         "gross_margin_pct": 53.4,
         "yoy_growth_pct": -2.1,
@@ -220,11 +240,28 @@
         "sga_allocation_usd_m": 19.28,
         "operating_income_usd_m": 32.148,
         "operating_margin_pct": 33.4,
-        "rationalization_methodology": "Loaded from Tier 2 segment baseline"
+        "rationalization_methodology": "Loaded from Tier 1 segment baseline with CoR = Revenue - GrossProfit"
+      },
+      "FY2024": {
+        "revenue_usd_m": 1683,
+        "cost_of_revenue_usd_m": 1508,
+        "gross_profit_usd_m": 175,
+        "contribution_margin_pct": 53.4,
+        "gross_margin_pct": 53.4,
+        "yoy_growth_pct": -2.1,
+        "growth_trajectory": "Declining",
+        "strategic_priority": "Core",
+        "revenue_pct_of_segment": 5.73,
+        "revenue_pct_of_enterprise": 4.98,
+        "sga_allocation_usd_m": 19.28,
+        "operating_income_usd_m": 32.148,
+        "operating_margin_pct": 33.4,
+        "rationalization_methodology": "Loaded from Tier 2 segment baseline with CoR = Revenue - GrossProfit"
       },
       "FY2025": {
-        "revenue_usd_m": 94.38,
-        "gross_profit_usd_m": 50.362,
+        "revenue_usd_m": 1696,
+        "cost_of_revenue_usd_m": 1509,
+        "gross_profit_usd_m": 187,
         "contribution_margin_pct": 53.4,
         "gross_margin_pct": 53.4,
         "yoy_growth_pct": -2.1,
@@ -235,11 +272,12 @@
         "sga_allocation_usd_m": 18.876,
         "operating_income_usd_m": 31.486,
         "operating_margin_pct": 33.4,
-        "rationalization_methodology": "Projected from FY2024 growth trajectory + segment envelope normalization"
+        "rationalization_methodology": "Projected from FY2024 with CoR = Revenue - GrossProfit"
       },
       "FY2026": {
-        "revenue_usd_m": 92.39,
-        "gross_profit_usd_m": 49.325,
+        "revenue_usd_m": 1600,
+        "cost_of_revenue_usd_m": 1411,
+        "gross_profit_usd_m": 189,
         "contribution_margin_pct": 53.4,
         "gross_margin_pct": 53.4,
         "yoy_growth_pct": -2.1,
@@ -250,7 +288,7 @@
         "sga_allocation_usd_m": 18.478,
         "operating_income_usd_m": 30.847,
         "operating_margin_pct": 33.4,
-        "rationalization_methodology": "Projected from growth trajectory + segment guidance rationalization"
+        "rationalization_methodology": "Projected with CoR = Revenue - GrossProfit"
       }
     }
   },

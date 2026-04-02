@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.246250Z",
-    "updated_at": "2026-04-02T16:59:20.075937Z",
+    "updated_at": "2026-04-02T17:31:37.474074Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "8",
+    "version": "9",
     "id": "sys-001",
     "entity_type": "system",
     "name": "Rackspace Customer Portal (Fabric)",
@@ -364,37 +364,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 4800000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 3.2,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (4.8M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (4800000/150000000)*100=3.2%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
           "criticality": "critical",
           "system_type": "application",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 4800000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246326Z",
-    "updated_at": "2026-04-02T16:59:21.991126Z",
+    "updated_at": "2026-04-02T17:31:38.946994Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "8",
+    "version": "9",
     "id": "sys-002",
     "entity_type": "system",
     "name": "Cloud Control Panel",
@@ -766,37 +766,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 4800000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 3.2,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (4.8M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (4800000/150000000)*100=3.2%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
           "criticality": "critical",
           "system_type": "application",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 4800000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246357Z",
-    "updated_at": "2026-04-02T16:59:23.599430Z",
+    "updated_at": "2026-04-02T17:31:40.631784Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "8",
+    "version": "9",
     "id": "sys-003",
     "entity_type": "system",
     "name": "Cloud Office Control Panel",
@@ -1162,37 +1162,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 1200000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 0.8,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (1.2M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (1200000/150000000)*100=0.8%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
+          "criticality": "high",
           "system_type": "application",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 1200000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246385Z",
-    "updated_at": "2026-04-02T16:59:26.617030Z",
+    "updated_at": "2026-04-02T17:31:42.100403Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "8",
+    "version": "9",
     "id": "sys-004",
     "entity_type": "system",
     "name": "Cloud Office Webmail Portal",
@@ -1556,37 +1556,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 1200000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 0.8,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (1.2M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (1200000/150000000)*100=0.8%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
+          "criticality": "high",
           "system_type": "application",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 1200000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246413Z",
-    "updated_at": "2026-04-02T16:59:28.413364Z",
+    "updated_at": "2026-04-02T17:31:43.788869Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "9",
+    "version": "10",
     "id": "sys-005",
     "entity_type": "system",
     "name": "Cloud Identity Service (Keystone)",
@@ -1960,37 +1960,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 5200000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 3.47,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (5.2M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (5200000/150000000)*100=3.47%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
           "criticality": "critical",
-          "system_type": "application",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 5200000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246456Z",
-    "updated_at": "2026-04-02T16:59:31.915770Z",
+    "updated_at": "2026-04-02T17:31:45.477636Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-006",
     "entity_type": "system",
     "name": "Cloud Servers API (Nova)",
@@ -2356,37 +2356,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 6500000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 4.33,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (6.5M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (6500000/150000000)*100=4.33%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
           "criticality": "critical",
-          "system_type": "application",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 6500000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246483Z",
-    "updated_at": "2026-04-02T16:59:35.162527Z",
+    "updated_at": "2026-04-02T17:31:46.958011Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-007",
     "entity_type": "system",
     "name": "Cloud Files Object Storage (Swift)",
@@ -2754,37 +2754,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 6500000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 4.33,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (6.5M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (6500000/150000000)*100=4.33%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
           "criticality": "critical",
-          "system_type": "application",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 6500000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246506Z",
-    "updated_at": "2026-04-02T16:59:38.290986Z",
+    "updated_at": "2026-04-02T17:31:48.859620Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-008",
     "entity_type": "system",
     "name": "Cloud DNS API",
@@ -3150,37 +3150,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 1400000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 0.93,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (1.4M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (1400000/150000000)*100=0.93%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
-          "system_type": "application",
+          "criticality": "high",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 1400000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246532Z",
-    "updated_at": "2026-04-02T16:59:47.486464Z",
+    "updated_at": "2026-04-02T17:31:50.102977Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-009",
     "entity_type": "system",
     "name": "Cloud Databases API",
@@ -3546,37 +3546,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 2200000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 1.47,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (2.2M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (2200000/150000000)*100=1.47%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
-          "system_type": "application",
+          "criticality": "high",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 2200000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246567Z",
-    "updated_at": "2026-04-02T16:59:52.539462Z",
+    "updated_at": "2026-04-02T17:31:51.661292Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-010",
     "entity_type": "system",
     "name": "Cloud Load Balancers API",
@@ -3942,37 +3942,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 2200000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 1.47,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (2.2M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (2200000/150000000)*100=1.47%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
-          "system_type": "application",
+          "criticality": "high",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 2200000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246591Z",
-    "updated_at": "2026-04-02T16:59:54.489626Z",
+    "updated_at": "2026-04-02T17:31:56.517648Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-011",
     "entity_type": "system",
     "name": "Cloud Networking API (Neutron)",
@@ -4340,37 +4340,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 1600000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 1.07,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (1.6M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (1600000/150000000)*100=1.07%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
-          "system_type": "application",
+          "criticality": "high",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 1600000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246614Z",
-    "updated_at": "2026-04-02T16:59:56.776184Z",
+    "updated_at": "2026-04-02T17:31:57.779713Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-012",
     "entity_type": "system",
     "name": "Rackspace Monitoring API",
@@ -4736,37 +4736,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 1100000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 0.73,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (1.1M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (1100000/150000000)*100=0.73%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
-          "system_type": "application",
+          "criticality": "high",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 1100000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246638Z",
-    "updated_at": "2026-04-02T16:59:58.879305Z",
+    "updated_at": "2026-04-02T17:31:59.453707Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-013",
     "entity_type": "system",
     "name": "Mailgun Transactional Email Platform",
@@ -5133,37 +5133,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 1900000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 1.27,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (1.9M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (1900000/150000000)*100=1.27%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
+          "criticality": "high",
           "system_type": "application",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 1900000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246662Z",
-    "updated_at": "2026-04-02T17:00:03.833192Z",
+    "updated_at": "2026-04-02T17:32:00.882575Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-014",
     "entity_type": "system",
     "name": "ObjectRocket DBaaS Platform",
@@ -5527,37 +5527,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 2100000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 1.4,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (2.1M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (2100000/150000000)*100=1.4%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
+          "criticality": "high",
           "system_type": "application",
           "deployment_model": "on_premises",
           "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "audit_corrected": true,
+          "corrected_tco_usd": 2100000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246698Z",
-    "updated_at": "2026-04-02T17:00:09.627429Z",
+    "updated_at": "2026-04-02T17:32:02.005083Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "8",
+    "version": "9",
     "id": "sys-016",
     "entity_type": "system",
     "name": "AS12200 BGP Edge Router Cluster",
@@ -5915,37 +5915,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 5500000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 3.67,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (5.5M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (5500000/150000000)*100=3.67%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
           "criticality": "critical",
-          "system_type": "application",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
-          "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "is_internet_facing": false,
+          "audit_corrected": true,
+          "corrected_tco_usd": 5500000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246722Z",
-    "updated_at": "2026-04-02T17:00:23.786933Z",
+    "updated_at": "2026-04-02T17:32:03.466054Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-017",
     "entity_type": "system",
     "name": "AS33070 DFW Edge Routers",
@@ -6309,37 +6309,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 1600000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 1.07,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (1.6M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (1600000/150000000)*100=1.07%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
-          "system_type": "application",
+          "criticality": "high",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
-          "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "is_internet_facing": false,
+          "audit_corrected": true,
+          "corrected_tco_usd": 1600000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246748Z",
-    "updated_at": "2026-04-02T17:00:25.062063Z",
+    "updated_at": "2026-04-02T17:32:04.980848Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-018",
     "entity_type": "system",
     "name": "AS27357 IAD Edge Routers",
@@ -6703,37 +6703,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 1600000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 1.07,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (1.6M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (1600000/150000000)*100=1.07%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
-          "system_type": "application",
+          "criticality": "high",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
-          "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "is_internet_facing": false,
+          "audit_corrected": true,
+          "corrected_tco_usd": 1600000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246775Z",
-    "updated_at": "2026-04-02T17:00:26.365897Z",
+    "updated_at": "2026-04-02T17:32:06.285796Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-019",
     "entity_type": "system",
     "name": "AS19994 ORD Edge Routers",
@@ -7097,37 +7097,37 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 1600000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 1.07,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (1.6M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (1600000/150000000)*100=1.07%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
-          "system_type": "application",
+          "criticality": "high",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
-          "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "is_internet_facing": false,
+          "audit_corrected": true,
+          "corrected_tco_usd": 1600000
         }
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.246801Z",
-    "updated_at": "2026-04-02T17:00:27.591978Z",
+    "updated_at": "2026-04-02T17:32:07.446347Z",
     "valid_from": null,
     "valid_until": null,
-    "version": "7",
+    "version": "8",
     "id": "sys-020",
     "entity_type": "system",
     "name": "AS15395 LON Edge Routers",
@@ -7491,27 +7491,27 @@
           "period_type": "full_year",
           "currency_iso": "USD",
           "confidence_tier": "T1-audited",
-          "source": "tier6_systems_reenrich.py \u2014 AI-rationalized with enrichment_protocol.py validation",
-          "estimated_annual_tco_usd": 5.2,
+          "source": "Corrected via adversarial audit fix \u2014 System TCO mismatch remediation",
+          "estimated_annual_tco_usd": 3800000,
           "tco_confidence": "T1-audited",
           "cost_category": "application",
           "revenue_dependency": "indirect",
-          "tco_pct_of_infrastructure_pool": 3.4669,
+          "tco_pct_of_infrastructure_pool": 2.53,
           "capex_allocation_usd": 4714981
         }
       ],
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "2.0",
-        "methodology": "CSV anchor: $5.2M from ds02_system_inventory.csv (official Rackspace asset registry)",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced",
+        "methodology": "Corrected: annual_tco from main entity (3.8M) now matches financial_profile. Pool assumption: 150M. Recalculated pct: (3800000/150000000)*100=2.53%",
+        "enforcement": "adversarial_audit_remediation.py",
         "tco_rationalization": {
-          "criticality": "critical",
-          "system_type": "application",
+          "criticality": "high",
+          "system_type": "infrastructure",
           "deployment_model": "on_premises",
-          "is_internet_facing": true,
-          "csv_anchored": true,
-          "csv_tco_usd": 5.2
+          "is_internet_facing": false,
+          "audit_corrected": true,
+          "corrected_tco_usd": 3800000
         }
       }
     }

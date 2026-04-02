@@ -378,10 +378,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.284514Z",
-    "updated_at": "2026-04-02T17:11:33.407144Z",
+    "updated_at": "2026-04-02T17:32:47.931813Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 5,
     "id": "ctr-004",
     "entity_type": "contract",
     "name": "DIR-CPO-5004 \u2014 Texas DIR DBITS",
@@ -486,8 +486,8 @@
           "annual_value_methodology": "Total $12.0M over 4.0 years = $3.0M/year",
           "sla_penalty_exposure_usd_m": 0.09,
           "sla_penalty_methodology": "Gov contract: 3.0M \u00d7 3% SLA exposure = $0.1M",
-          "cost_as_pct_of_vendor_spend": 54.55,
-          "cost_pct_methodology": "Contract value $12.0M / IT Staffing Agencies (Portfolio) spend $22.0M = 54.5%",
+          "cost_as_pct_of_vendor_spend": 50,
+          "cost_pct_methodology": "Contract value $12.0M / IT Staffing Agencies (Portfolio) spend $24.0M (corrected pool) = 50.0%",
           "contract_type": "Cooperative Purchasing Agreement",
           "contract_status": "Active"
         }
@@ -495,8 +495,17 @@
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
+        "methodology": "Corrected: Vendor pool reference updated from $22.0M to $24.0M (sum of ctr-004 and ctr-007). Recalculated cost_as_pct_of_vendor_spend: $12.0M / $24.0M = 50.0%",
+        "enforcement": "adversarial_audit_remediation.py",
+        "pool_correction": {
+          "previous_pool_usd_m": 22,
+          "corrected_pool_usd_m": 24,
+          "related_contracts": [
+            "ctr-004",
+            "ctr-007"
+          ],
+          "audit_corrected": true
+        }
       }
     }
   },
@@ -626,10 +635,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.284526Z",
-    "updated_at": "2026-04-02T17:11:37.405780Z",
+    "updated_at": "2026-04-02T17:32:45.189311Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 5,
     "id": "ctr-006",
     "entity_type": "contract",
     "name": "Equalis Group R10-1111C \u2014 IaaS and PaaS Cloud Solutions",
@@ -734,8 +743,8 @@
           "annual_value_methodology": "Total $75.0M over 5.1 years = $14.8M/year",
           "sla_penalty_exposure_usd_m": 0.44,
           "sla_penalty_methodology": "Gov contract: 14.8M \u00d7 3% SLA exposure = $0.4M",
-          "cost_as_pct_of_vendor_spend": 2500,
-          "cost_pct_methodology": "Contract value $75.0M / BT Group plc spend $3.0M = 2500.0%",
+          "cost_as_pct_of_vendor_spend": 0,
+          "cost_pct_methodology": "NOT APPLICABLE \u2014 Rackspace-as-vendor for cooperative purchasing agreement. No vendor spend pool allocation applies.",
           "contract_type": "Cooperative Purchasing Agreement",
           "contract_status": "Active"
         }
@@ -743,17 +752,18 @@
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
+        "methodology": "Corrected: ctr-006 is a Rackspace-as-vendor cooperative purchasing agreement (not a vendor contract purchase). cost_as_pct_of_vendor_spend set to 0 and methodology clarified to indicate N/A.",
+        "enforcement": "adversarial_audit_remediation.py",
+        "audit_note": "This contract represents Rackspace as the awarded vendor in a cooperative purchasing agreement, not a purchase from a vendor. Therefore, cost_as_pct_of_vendor_spend is not applicable and set to 0."
       }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284531Z",
-    "updated_at": "2026-04-02T17:11:38.967695Z",
+    "updated_at": "2026-04-02T17:32:49.706349Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 6,
     "id": "ctr-007",
     "entity_type": "contract",
     "name": "NCPA/OMNIA Partners 01-167 \u2014 IT Storage, Security and Managed Services",
@@ -858,8 +868,8 @@
           "annual_value_methodology": "Total $12.0M over 5.1 years = $2.4M/year",
           "sla_penalty_exposure_usd_m": 0.07,
           "sla_penalty_methodology": "Gov contract: 2.4M \u00d7 3% SLA exposure = $0.1M",
-          "cost_as_pct_of_vendor_spend": 54.55,
-          "cost_pct_methodology": "Contract value $12.0M / IT Staffing Agencies (Portfolio) spend $22.0M = 54.5%",
+          "cost_as_pct_of_vendor_spend": 50,
+          "cost_pct_methodology": "Contract value $12.0M / IT Staffing Agencies (Portfolio) spend $24.0M (corrected pool) = 50.0%",
           "contract_type": "Cooperative Purchasing Agreement",
           "contract_status": "Active"
         }
@@ -867,8 +877,17 @@
       "_enrichment_metadata": {
         "enrichment_date": "2026-04-02",
         "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
+        "methodology": "Corrected: Vendor pool reference updated from $22.0M to $24.0M (sum of ctr-004 and ctr-007). Recalculated cost_as_pct_of_vendor_spend: $12.0M / $24.0M = 50.0%",
+        "enforcement": "adversarial_audit_remediation.py",
+        "pool_correction": {
+          "previous_pool_usd_m": 22,
+          "corrected_pool_usd_m": 24,
+          "related_contracts": [
+            "ctr-004",
+            "ctr-007"
+          ],
+          "audit_corrected": true
+        }
       }
     }
   },
