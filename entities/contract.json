@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.284474Z",
-    "updated_at": "2026-04-02T17:11:28.480673Z",
+    "updated_at": "2026-03-05T20:47:58.778832Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "ctr-001",
     "entity_type": "contract",
     "name": "TIPS 230302 \u2014 Data Center Hosting, Sales and Service",
@@ -49,29 +49,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -101,39 +78,19 @@
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
     "confidence_level": "High",
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 14.78,
-          "annual_value_methodology": "Total $45.0M over 3.0 years = $14.8M/year",
-          "sla_penalty_exposure_usd_m": 0.44,
-          "sla_penalty_methodology": "Gov contract: 14.8M \u00d7 3% SLA exposure = $0.4M",
-          "cost_as_pct_of_vendor_spend": 47.37,
-          "cost_pct_methodology": "Contract value $45.0M / Data Center Facility Lessors (Portfolio) spend $95.0M = 47.4%",
-          "contract_type": "Cooperative Purchasing Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 15000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$15,000,000 annual revenue loss if terminated; impacts ~0.5% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284503Z",
-    "updated_at": "2026-04-02T17:11:30.056995Z",
+    "updated_at": "2026-03-05T20:48:00.208602Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 3,
     "id": "ctr-002",
     "entity_type": "contract",
     "name": "TIPS 230105 \u2014 Technology Solutions Products and Services",
@@ -178,29 +135,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -225,39 +159,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 3.94,
-          "annual_value_methodology": "Total $12.0M over 3.0 years = $3.9M/year",
-          "sla_penalty_exposure_usd_m": 0.12,
-          "sla_penalty_methodology": "Gov contract: 3.9M \u00d7 3% SLA exposure = $0.1M",
-          "cost_as_pct_of_vendor_spend": 0.62,
-          "cost_pct_methodology": "Contract value $12.0M / total vendor spend $1935.5M = 0.6%",
-          "contract_type": "Cooperative Purchasing Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284509Z",
-    "updated_at": "2026-04-02T17:11:31.889222Z",
+    "updated_at": "2026-03-05T20:48:01.615856Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "ctr-003",
     "entity_type": "contract",
     "name": "DIR-CPO-5186 \u2014 Texas DIR Cloud Services",
@@ -302,29 +216,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -349,39 +240,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 15.01,
-          "annual_value_methodology": "Total $60.0M over 4.0 years = $15.0M/year",
-          "sla_penalty_exposure_usd_m": 0.45,
-          "sla_penalty_methodology": "Gov contract: 15.0M \u00d7 3% SLA exposure = $0.5M",
-          "cost_as_pct_of_vendor_spend": 3.1,
-          "cost_pct_methodology": "Contract value $60.0M / total vendor spend $1935.5M = 3.1%",
-          "contract_type": "Cooperative Purchasing Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 20000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$20,000,000 annual revenue loss if terminated; impacts ~0.7% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284514Z",
-    "updated_at": "2026-04-02T17:32:47.931813Z",
+    "updated_at": "2026-03-05T20:48:03.086443Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 3,
     "id": "ctr-004",
     "entity_type": "contract",
     "name": "DIR-CPO-5004 \u2014 Texas DIR DBITS",
@@ -426,29 +297,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -473,48 +321,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 2.98,
-          "annual_value_methodology": "Total $12.0M over 4.0 years = $3.0M/year",
-          "sla_penalty_exposure_usd_m": 0.09,
-          "sla_penalty_methodology": "Gov contract: 3.0M \u00d7 3% SLA exposure = $0.1M",
-          "cost_as_pct_of_vendor_spend": 50,
-          "cost_pct_methodology": "Contract value $12.0M / IT Staffing Agencies (Portfolio) spend $24.0M (corrected pool) = 50.0%",
-          "contract_type": "Cooperative Purchasing Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Corrected: Vendor pool reference updated from $22.0M to $24.0M (sum of ctr-004 and ctr-007). Recalculated cost_as_pct_of_vendor_spend: $12.0M / $24.0M = 50.0%",
-        "enforcement": "adversarial_audit_remediation.py",
-        "pool_correction": {
-          "previous_pool_usd_m": 22,
-          "corrected_pool_usd_m": 24,
-          "related_contracts": [
-            "ctr-004",
-            "ctr-007"
-          ],
-          "audit_corrected": true
-        }
-      }
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284518Z",
-    "updated_at": "2026-04-02T17:11:35.485744Z",
+    "updated_at": "2026-03-05T20:48:04.867944Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "ctr-005",
     "entity_type": "contract",
     "name": "DIR-CPO-5155 \u2014 Texas DIR AI Services",
@@ -559,29 +378,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -606,39 +402,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 3.95,
-          "annual_value_methodology": "Total $8.0M over 2.0 years = $3.9M/year",
-          "sla_penalty_exposure_usd_m": 0.12,
-          "sla_penalty_methodology": "Gov contract: 4.0M \u00d7 3% SLA exposure = $0.1M",
-          "cost_as_pct_of_vendor_spend": 0.41,
-          "cost_pct_methodology": "Contract value $8.0M / total vendor spend $1935.5M = 0.4%",
-          "contract_type": "Cooperative Purchasing Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 2666666,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$2,666,666 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284526Z",
-    "updated_at": "2026-04-02T17:32:45.189311Z",
+    "updated_at": "2026-03-05T20:48:08.147694Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 3,
     "id": "ctr-006",
     "entity_type": "contract",
     "name": "Equalis Group R10-1111C \u2014 IaaS and PaaS Cloud Solutions",
@@ -683,29 +459,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -730,40 +483,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 14.79,
-          "annual_value_methodology": "Total $75.0M over 5.1 years = $14.8M/year",
-          "sla_penalty_exposure_usd_m": 0.44,
-          "sla_penalty_methodology": "Gov contract: 14.8M \u00d7 3% SLA exposure = $0.4M",
-          "cost_as_pct_of_vendor_spend": 0,
-          "cost_pct_methodology": "NOT APPLICABLE \u2014 Rackspace-as-vendor for cooperative purchasing agreement. No vendor spend pool allocation applies.",
-          "contract_type": "Cooperative Purchasing Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Corrected: ctr-006 is a Rackspace-as-vendor cooperative purchasing agreement (not a vendor contract purchase). cost_as_pct_of_vendor_spend set to 0 and methodology clarified to indicate N/A.",
-        "enforcement": "adversarial_audit_remediation.py",
-        "audit_note": "This contract represents Rackspace as the awarded vendor in a cooperative purchasing agreement, not a purchase from a vendor. Therefore, cost_as_pct_of_vendor_spend is not applicable and set to 0."
-      }
+      "estimated_annual_value": 25000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$25,000,000 annual revenue loss if terminated; impacts ~0.9% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284531Z",
-    "updated_at": "2026-04-02T17:32:49.706349Z",
+    "updated_at": "2026-03-05T20:48:09.972385Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 4,
     "id": "ctr-007",
     "entity_type": "contract",
     "name": "NCPA/OMNIA Partners 01-167 \u2014 IT Storage, Security and Managed Services",
@@ -808,29 +540,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -855,48 +564,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 2.36,
-          "annual_value_methodology": "Total $12.0M over 5.1 years = $2.4M/year",
-          "sla_penalty_exposure_usd_m": 0.07,
-          "sla_penalty_methodology": "Gov contract: 2.4M \u00d7 3% SLA exposure = $0.1M",
-          "cost_as_pct_of_vendor_spend": 50,
-          "cost_pct_methodology": "Contract value $12.0M / IT Staffing Agencies (Portfolio) spend $24.0M (corrected pool) = 50.0%",
-          "contract_type": "Cooperative Purchasing Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Corrected: Vendor pool reference updated from $22.0M to $24.0M (sum of ctr-004 and ctr-007). Recalculated cost_as_pct_of_vendor_spend: $12.0M / $24.0M = 50.0%",
-        "enforcement": "adversarial_audit_remediation.py",
-        "pool_correction": {
-          "previous_pool_usd_m": 22,
-          "corrected_pool_usd_m": 24,
-          "related_contracts": [
-            "ctr-004",
-            "ctr-007"
-          ],
-          "audit_corrected": true
-        }
-      }
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284537Z",
-    "updated_at": "2026-04-02T17:11:41.055858Z",
+    "updated_at": "2026-03-05T20:48:11.825634Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 3,
     "id": "ctr-008",
     "entity_type": "contract",
     "name": "Rhode Island MPA-308 \u2014 National Cooperative Contract",
@@ -941,29 +621,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -988,39 +645,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 2.37,
-          "annual_value_methodology": "Total $12.0M over 5.1 years = $2.4M/year",
-          "sla_penalty_exposure_usd_m": 0.07,
-          "sla_penalty_methodology": "Gov contract: 2.4M \u00d7 3% SLA exposure = $0.1M",
-          "cost_as_pct_of_vendor_spend": 0.62,
-          "cost_pct_methodology": "Contract value $12.0M / total vendor spend $1935.5M = 0.6%",
-          "contract_type": "Cooperative Purchasing Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284542Z",
-    "updated_at": "2026-04-02T17:11:55.564473Z",
+    "updated_at": "2026-03-05T20:48:13.688439Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "ctr-009",
     "entity_type": "contract",
     "name": "FLFO Term Loan Facility",
@@ -1065,29 +702,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1112,39 +726,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 123.2,
-          "annual_value_methodology": "Total $500.0M over 4.1 years = $123.2M/year",
-          "sla_penalty_exposure_usd_m": 0,
-          "sla_penalty_methodology": "Financing contract; no SLA penalties",
-          "cost_as_pct_of_vendor_spend": 25.83,
-          "cost_pct_methodology": "Contract value $500.0M / total vendor spend $1935.5M = 25.8%",
-          "contract_type": "Credit Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 125000000,
+      "value_confidence": "high",
+      "estimation_methodology": "Debt facilities from March 2024 Refinancing per SEC filings; term loans estimated $500M-$1B; revolving facility $375M",
+      "financial_risk_if_terminated": "$500,000,000 would require immediate refinancing; ~15.8% of total debt structure",
+      "contract_category": "debt"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284546Z",
-    "updated_at": "2026-04-02T17:11:56.872997Z",
+    "updated_at": "2026-03-05T20:48:15.453793Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "ctr-010",
     "entity_type": "contract",
     "name": "FLSO Term Loan Facility",
@@ -1189,29 +783,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1236,39 +807,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 123.2,
-          "annual_value_methodology": "Total $500.0M over 4.1 years = $123.2M/year",
-          "sla_penalty_exposure_usd_m": 0,
-          "sla_penalty_methodology": "Financing contract; no SLA penalties",
-          "cost_as_pct_of_vendor_spend": 25.83,
-          "cost_pct_methodology": "Contract value $500.0M / total vendor spend $1935.5M = 25.8%",
-          "contract_type": "Credit Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 125000000,
+      "value_confidence": "high",
+      "estimation_methodology": "Debt facilities from March 2024 Refinancing per SEC filings; term loans estimated $500M-$1B; revolving facility $375M",
+      "financial_risk_if_terminated": "$500,000,000 would require immediate refinancing; ~15.8% of total debt structure",
+      "contract_category": "debt"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284551Z",
-    "updated_at": "2026-04-02T17:11:58.426611Z",
+    "updated_at": "2026-03-04T21:40:14.310465Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 3,
     "id": "ctr-011",
     "entity_type": "contract",
     "name": "3.50% FLSO Senior Secured Notes due 2028",
@@ -1313,29 +864,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1358,41 +886,14 @@
       "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 98.46,
-          "annual_value_methodology": "Total $480.0M over 4.9 years = $98.5M/year",
-          "sla_penalty_exposure_usd_m": 1.97,
-          "sla_penalty_methodology": "Default contract: 98.5M \u00d7 2% SLA exposure = $2.0M",
-          "cost_as_pct_of_vendor_spend": 24.8,
-          "cost_pct_methodology": "Contract value $480.0M / total vendor spend $1935.5M = 24.8%",
-          "contract_type": "Indenture",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284556Z",
-    "updated_at": "2026-04-02T17:12:00.000829Z",
+    "updated_at": "2026-03-05T20:48:20.577734Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 3,
     "id": "ctr-012",
     "entity_type": "contract",
     "name": "5.375% Senior Notes due 2028",
@@ -1437,29 +938,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1484,39 +962,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 61.6,
-          "annual_value_methodology": "Total $500.0M over 8.1 years = $61.6M/year",
-          "sla_penalty_exposure_usd_m": 1.23,
-          "sla_penalty_methodology": "Default contract: 61.6M \u00d7 2% SLA exposure = $1.2M",
-          "cost_as_pct_of_vendor_spend": 25.83,
-          "cost_pct_methodology": "Contract value $500.0M / total vendor spend $1935.5M = 25.8%",
-          "contract_type": "Indenture",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 125000000,
+      "value_confidence": "high",
+      "estimation_methodology": "Senior secured and unsecured notes from SEC 10-K disclosures; 3.50% FLSO notes $480M outstanding per Q2 2025 10-Q",
+      "financial_risk_if_terminated": "$500,000,000 would require immediate refinancing; ~15.8% of total debt structure",
+      "contract_category": "debt"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284560Z",
-    "updated_at": "2026-04-02T17:12:04.581689Z",
+    "updated_at": "2026-03-04T21:40:16.148456Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 3,
     "id": "ctr-013",
     "entity_type": "contract",
     "name": "New Revolving Credit Facility",
@@ -1561,29 +1019,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1606,41 +1041,14 @@
       "confidence_level": "Medium-High",
       "attestation_status": null,
       "known_data_gaps": []
-    },
-    "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 92.4,
-          "annual_value_methodology": "Total $375.0M over 4.1 years = $92.4M/year",
-          "sla_penalty_exposure_usd_m": 0,
-          "sla_penalty_methodology": "Financing contract; no SLA penalties",
-          "cost_as_pct_of_vendor_spend": 19.37,
-          "cost_pct_methodology": "Contract value $375.0M / total vendor spend $1935.5M = 19.4%",
-          "contract_type": "Credit Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284565Z",
-    "updated_at": "2026-04-02T17:12:06.028826Z",
+    "updated_at": "2026-03-05T20:48:22.019190Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 3,
     "id": "ctr-014",
     "entity_type": "contract",
     "name": "Receivables Purchase Facility",
@@ -1685,29 +1093,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1732,31 +1117,11 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 49.27,
-          "annual_value_methodology": "Total $150.0M over 3.0 years = $49.3M/year",
-          "sla_penalty_exposure_usd_m": 0.99,
-          "sla_penalty_methodology": "Default contract: 49.3M \u00d7 2% SLA exposure = $1.0M",
-          "cost_as_pct_of_vendor_spend": 7.75,
-          "cost_pct_methodology": "Contract value $150.0M / total vendor spend $1935.5M = 7.7%",
-          "contract_type": "Purchase Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 50000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Asset/receivables purchase facility estimated based on working capital facility structure",
+      "financial_risk_if_terminated": "$150,000,000 operating cost; risk of service disruption and vendor transition costs (est. 5-10%)",
+      "contract_category": "cost"
     }
   },
   {
@@ -1809,29 +1174,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1907,29 +1249,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1956,10 +1275,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.284577Z",
-    "updated_at": "2026-04-02T17:12:08.148497Z",
+    "updated_at": "2026-03-05T20:48:22.977388Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 3,
     "id": "ctr-017",
     "entity_type": "contract",
     "name": "Seattle Children's Hospital 10-Year Managed Cloud Agreement",
@@ -2004,29 +1323,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2051,39 +1347,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 19.72,
-          "annual_value_methodology": "Total $200.0M over 10.1 years = $19.7M/year",
-          "sla_penalty_exposure_usd_m": 0.99,
-          "sla_penalty_methodology": "MSA/Services: 19.7M \u00d7 5% SLA exposure = $1.0M",
-          "cost_as_pct_of_vendor_spend": 10.33,
-          "cost_pct_methodology": "Contract value $200.0M / total vendor spend $1935.5M = 10.3%",
-          "contract_type": "Master Services Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 66666666,
+      "value_confidence": "medium",
+      "estimation_methodology": "Multi-year MSAs estimated at $20-200M based on customer scale and contract duration",
+      "financial_risk_if_terminated": "$66,666,666 annual revenue loss if terminated; impacts ~2.4% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284581Z",
-    "updated_at": "2026-04-02T17:12:09.906053Z",
+    "updated_at": "2026-03-05T20:48:24.432368Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "ctr-018",
     "entity_type": "contract",
     "name": "Palantir Technologies Strategic Partnership Agreement",
@@ -2128,29 +1404,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2175,39 +1428,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 8.21,
-          "annual_value_methodology": "Total $25.0M over 3.0 years = $8.2M/year",
-          "sla_penalty_exposure_usd_m": 0.41,
-          "sla_penalty_methodology": "MSA/Services: 8.2M \u00d7 5% SLA exposure = $0.4M",
-          "cost_as_pct_of_vendor_spend": 40.32,
-          "cost_pct_methodology": "Contract value $25.0M / Dell Technologies Inc. spend $62.0M = 40.3%",
-          "contract_type": "Strategic Partnership Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 8333333,
+      "value_confidence": "medium",
+      "estimation_methodology": "Technology partnership agreements estimated based on platform integration scope",
+      "financial_risk_if_terminated": "$8,333,333 annual revenue loss if terminated; impacts ~0.3% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284585Z",
-    "updated_at": "2026-04-02T17:12:20.885166Z",
+    "updated_at": "2026-03-05T20:48:25.763332Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 3,
     "id": "ctr-019",
     "entity_type": "contract",
     "name": "Texas DIR DCS Public Cloud Manager Services",
@@ -2252,29 +1485,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2299,31 +1509,11 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 1.64,
-          "annual_value_methodology": "Total $10.0M over 6.1 years = $1.6M/year",
-          "sla_penalty_exposure_usd_m": 0.08,
-          "sla_penalty_methodology": "MSA/Services: 1.6M \u00d7 5% SLA exposure = $0.1M",
-          "cost_as_pct_of_vendor_spend": 0.52,
-          "cost_pct_methodology": "Contract value $10.0M / total vendor spend $1935.5M = 0.5%",
-          "contract_type": "Managed Services Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 3333333,
+      "value_confidence": "low",
+      "estimation_methodology": "Managed services agreements estimated based on government procurement volumes",
+      "financial_risk_if_terminated": "$10,000,000 annual cost exposure; service disruption + 5-10% transition costs (~$750,000)",
+      "contract_category": "cost"
     }
   },
   {
@@ -2376,29 +1566,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2425,10 +1592,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.284594Z",
-    "updated_at": "2026-04-02T17:12:22.368642Z",
+    "updated_at": "2026-03-05T20:48:30.085161Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 3,
     "id": "ctr-021",
     "entity_type": "contract",
     "name": "California CMAS 3-22-06-1050 \u2014 Multiple Award Schedule",
@@ -2473,29 +1640,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2520,39 +1664,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 2.37,
-          "annual_value_methodology": "Total $12.0M over 5.1 years = $2.4M/year",
-          "sla_penalty_exposure_usd_m": 0.07,
-          "sla_penalty_methodology": "Gov contract: 2.4M \u00d7 3% SLA exposure = $0.1M",
-          "cost_as_pct_of_vendor_spend": 0.62,
-          "cost_pct_methodology": "Contract value $12.0M / total vendor spend $1935.5M = 0.6%",
-          "contract_type": "Cooperative Purchasing Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 4000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$4,000,000 annual revenue loss if terminated; impacts ~0.1% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284598Z",
-    "updated_at": "2026-04-02T17:12:24.433890Z",
+    "updated_at": "2026-03-05T20:48:31.390845Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "ctr-022",
     "entity_type": "contract",
     "name": "AWS Strategic Collaboration Agreement (SCA) \u2014 October 2024",
@@ -2597,29 +1721,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2644,39 +1745,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 6.16,
-          "annual_value_methodology": "Total $25.0M over 4.1 years = $6.2M/year",
-          "sla_penalty_exposure_usd_m": 0.31,
-          "sla_penalty_methodology": "MSA/Services: 6.2M \u00d7 5% SLA exposure = $0.3M",
-          "cost_as_pct_of_vendor_spend": 1.29,
-          "cost_pct_methodology": "Contract value $25.0M / total vendor spend $1935.5M = 1.3%",
-          "contract_type": "Strategic Collaboration Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 8333333,
+      "value_confidence": "medium",
+      "estimation_methodology": "Technology partnership agreements estimated based on platform integration scope",
+      "financial_risk_if_terminated": "$8,333,333 annual revenue loss if terminated; impacts ~0.3% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284605Z",
-    "updated_at": "2026-04-02T17:12:27.278127Z",
+    "updated_at": "2026-03-05T20:48:32.805857Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "ctr-023",
     "entity_type": "contract",
     "name": "Rubrik Cyber Recovery Partnership and Reseller Agreement \u2014 2024",
@@ -2721,29 +1802,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2768,39 +1826,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 6.58,
-          "annual_value_methodology": "Total $20.0M over 3.0 years = $6.6M/year",
-          "sla_penalty_exposure_usd_m": 0.13,
-          "sla_penalty_methodology": "Default contract: 6.6M \u00d7 2% SLA exposure = $0.1M",
-          "cost_as_pct_of_vendor_spend": 1.03,
-          "cost_pct_methodology": "Contract value $20.0M / total vendor spend $1935.5M = 1.0%",
-          "contract_type": "Reseller and Partnership Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 6666666,
+      "value_confidence": "low",
+      "estimation_methodology": "Enterprise software and cloud platform partnerships estimated based on license tier",
+      "financial_risk_if_terminated": "$6,666,666 annual revenue loss if terminated; impacts ~0.2% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284610Z",
-    "updated_at": "2026-04-02T17:12:29.635287Z",
+    "updated_at": "2026-03-05T20:48:34.197220Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 4,
+    "version": 3,
     "id": "ctr-024",
     "entity_type": "contract",
     "name": "UK G-Cloud 14 Framework \u2014 Rackspace Technology Appointment",
@@ -2845,29 +1883,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2892,39 +1907,19 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T2-estimated",
-          "source": "ds04_contract_register.csv",
-          "annual_value_usd_m": 22.16,
-          "annual_value_methodology": "Total $45.0M over 2.0 years = $22.2M/year",
-          "sla_penalty_exposure_usd_m": 0.44,
-          "sla_penalty_methodology": "Default contract: 22.2M \u00d7 2% SLA exposure = $0.4M",
-          "cost_as_pct_of_vendor_spend": 2.32,
-          "cost_pct_methodology": "Contract value $45.0M / total vendor spend $1935.5M = 2.3%",
-          "contract_type": "Framework Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 15000000,
+      "value_confidence": "medium",
+      "estimation_methodology": "Government purchasing agreements estimated based on service type (data center/cloud $15M+/year; tech services $10-12M/year)",
+      "financial_risk_if_terminated": "$15,000,000 annual revenue loss if terminated; impacts ~0.5% of enterprise revenue",
+      "contract_category": "revenue"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.284614Z",
-    "updated_at": "2026-04-02T17:12:31.925513Z",
+    "updated_at": "2026-03-05T20:48:35.627826Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "ctr-025",
     "entity_type": "contract",
     "name": "Apollo Global Management Portfolio Governance Framework",
@@ -2969,29 +1964,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3016,31 +1988,11 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "KG attributes + enterprise pools",
-          "annual_value_usd_m": 0,
-          "annual_value_methodology": "No contract value available; using $0M",
-          "sla_penalty_exposure_usd_m": 0,
-          "sla_penalty_methodology": "Default contract: 0.0M \u00d7 2% SLA exposure = $0.0M",
-          "cost_as_pct_of_vendor_spend": 0,
-          "cost_pct_methodology": "Contract value $0.0M / total vendor spend $1935.5M = 0.0%",
-          "contract_type": "Shareholder Governance Agreement",
-          "contract_status": "Active"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "v3",
-        "methodology": "Tier 7 contract rationalization",
-        "enforcement": "tier7_reenrich.py"
-      }
+      "estimated_annual_value": 0,
+      "value_confidence": "high",
+      "estimation_methodology": "Shareholder governance instrument - non-financial agreement",
+      "financial_risk_if_terminated": "Governance risk; no direct financial impact but critical for Apollo portfolio oversight",
+      "contract_category": "partnership"
     }
   },
   {
@@ -3093,29 +2045,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3197,29 +2126,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3301,29 +2207,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3405,29 +2288,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3509,29 +2369,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3613,29 +2450,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3717,29 +2531,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3821,29 +2612,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3925,29 +2693,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -4029,29 +2774,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -4138,29 +2860,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -4247,29 +2946,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -4351,29 +3027,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -4455,29 +3108,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -4575,29 +3205,6 @@
     "covers_systems": [],
     "covers_data": [],
     "covers_products": [],
-    "temporal_and_versioning": {
-      "effective_date": null,
-      "expiration_date": null,
-      "last_review_date": null,
-      "next_review_date": null,
-      "change_reason": "",
-      "schema_version": "1.0.0"
-    },
-    "provenance_and_confidence": {
-      "data_quality_score": {
-        "completeness_pct": null,
-        "accuracy_confidence": "",
-        "timeliness_score": "",
-        "consistency_score": ""
-      },
-      "primary_data_source": "",
-      "last_assessed_date": null,
-      "assessed_by": "",
-      "assessment_methodology": "",
-      "confidence_level": "",
-      "attestation_status": null,
-      "known_data_gaps": []
-    },
     "temporal": {
       "effective_date": null,
       "expiration_date": null,

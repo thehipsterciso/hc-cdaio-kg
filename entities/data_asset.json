@@ -1,10 +1,10 @@
 [
   {
     "created_at": "2026-02-25T19:01:57.270441Z",
-    "updated_at": "2026-04-02T17:06:58.088159Z",
+    "updated_at": "2026-03-05T21:35:35.431013Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 8,
+    "version": 7,
     "id": "da-001",
     "entity_type": "data_asset",
     "name": "Splunk Enterprise Security Index Cluster",
@@ -323,17 +323,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -363,38 +352,17 @@
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
     "confidence_level": "High",
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 856858.8,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 81100.8,
-          "processing_cost_usd": 775758,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 2.1421,
-          "rationalization_methodology": "Storage: 112,640 GB @ $0.7200/GB/year (location: on-prem) = $81,101 | Processing: 110.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $775,758 | Total estimated annual cost: $856,859 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 300000,
+      "business_value": "high",
+      "estimation_methodology": "3TB/day ingestion, enterprise SIEM criticality"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270502Z",
-    "updated_at": "2026-04-02T17:06:58.981140Z",
+    "updated_at": "2026-03-05T21:35:37.106614Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-002",
     "entity_type": "data_asset",
     "name": "Splunk PCI Compliance Data Store",
@@ -652,17 +620,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -687,38 +644,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 62817.4,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 3686.4,
-          "processing_cost_usd": 59131,
-          "business_value_tier": "High",
-          "cost_pct_of_data_infrastructure_pool": 0.157,
-          "rationalization_methodology": "Storage: 5,120 GB @ $0.7200/GB/year (location: on-prem) = $3,686 | Processing: 5.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,006 (PII management) = $59,131 | Total estimated annual cost: $62,817 | Classification: restricted \u2192 Business Value: High | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 200000,
+      "business_value": "high",
+      "estimation_methodology": "Compliance audit logs, regulatory requirement"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270525Z",
-    "updated_at": "2026-04-02T17:07:00.240276Z",
+    "updated_at": "2026-03-05T21:35:38.148025Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-003",
     "entity_type": "data_asset",
     "name": "Cloud Feeds CADF Event Store",
@@ -1021,17 +957,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1056,38 +981,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 2341203.25,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 289203.25,
-          "processing_cost_usd": 2052000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 5.853,
-          "rationalization_methodology": "Storage: 401,560 GB @ $0.7200/GB/year (location: on-prem) = $289,203 | Processing: 410.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,002 (PII management) = $2,052,000 | Total estimated annual cost: $2,341,203 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 150000,
+      "business_value": "high",
+      "estimation_methodology": "CADF audit events, multi-tenant tracking"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270563Z",
-    "updated_at": "2026-04-02T17:07:01.676807Z",
+    "updated_at": "2026-03-05T21:35:39.323789Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-004",
     "entity_type": "data_asset",
     "name": "Cloud Feeds Archive Container",
@@ -1382,17 +1286,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1417,38 +1310,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 534812.6,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 42012.6,
-          "processing_cost_usd": 492800,
-          "business_value_tier": "High",
-          "cost_pct_of_data_infrastructure_pool": 1.337,
-          "rationalization_methodology": "Storage: 58,350 GB @ $0.7200/GB/year (location: on-prem) = $42,013 | Processing: 98.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $492,800 | Total estimated annual cost: $534,813 | Classification: restricted \u2192 Business Value: High | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 50000,
+      "business_value": "medium",
+      "estimation_methodology": "Archive storage, lower access frequency"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270583Z",
-    "updated_at": "2026-04-02T17:07:03.336343Z",
+    "updated_at": "2026-03-05T21:35:40.308885Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-005",
     "entity_type": "data_asset",
     "name": "Rackspace Monitoring Time-Series Database",
@@ -1732,17 +1604,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -1767,38 +1628,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 3987423.5,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 501423.5,
-          "processing_cost_usd": 3486000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 9.969,
-          "rationalization_methodology": "Storage: 696,310 GB @ $0.7200/GB/year (location: on-prem) = $501,424 | Processing: 697.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $3,486,000 | Total estimated annual cost: $3,987,424 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 120000,
+      "business_value": "high",
+      "estimation_methodology": "Time-series metrics, operational monitoring"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270603Z",
-    "updated_at": "2026-04-02T17:07:05.024988Z",
+    "updated_at": "2026-03-05T21:35:41.360257Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-006",
     "entity_type": "data_asset",
     "name": "Rackspace Fabric Ticketing Database",
@@ -2119,17 +1959,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2154,38 +1983,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 145623.8,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 8423.8,
-          "processing_cost_usd": 137200,
-          "business_value_tier": "Medium",
-          "cost_pct_of_data_infrastructure_pool": 0.364,
-          "rationalization_methodology": "Storage: 11,700 GB @ $0.7200/GB/year (location: on-prem) = $8,424 | Processing: 27.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $137,200 | Total estimated annual cost: $145,624 | Classification: internal \u2192 Business Value: Medium | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 250000,
+      "business_value": "high",
+      "estimation_methodology": "Customer ticket data, critical support operations"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270625Z",
-    "updated_at": "2026-04-02T17:07:06.712085Z",
+    "updated_at": "2026-03-05T21:35:42.462448Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-007",
     "entity_type": "data_asset",
     "name": "Rackspace Fabric Billing Data Store",
@@ -2473,17 +2281,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2508,38 +2305,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 1203456.2,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 156456.2,
-          "processing_cost_usd": 1047000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 3.009,
-          "rationalization_methodology": "Storage: 217,300 GB @ $0.7200/GB/year (location: on-prem) = $156,456 | Processing: 209.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $1,047,000 | Total estimated annual cost: $1,203,456 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 350000,
+      "business_value": "high",
+      "estimation_methodology": "Revenue-critical billing data, business intelligence"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270643Z",
-    "updated_at": "2026-04-02T17:07:08.182236Z",
+    "updated_at": "2026-03-05T21:35:44.054316Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-008",
     "entity_type": "data_asset",
     "name": "Rackspace Fabric Automation State Store",
@@ -2826,17 +2602,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -2861,38 +2626,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 423987.65,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 52987.65,
-          "processing_cost_usd": 371000,
-          "business_value_tier": "High",
-          "cost_pct_of_data_infrastructure_pool": 1.06,
-          "rationalization_methodology": "Storage: 73,590 GB @ $0.7200/GB/year (location: on-prem) = $52,988 | Processing: 74.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $371,000 | Total estimated annual cost: $423,988 | Classification: confidential \u2192 Business Value: High | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 100000,
+      "business_value": "high",
+      "estimation_methodology": "Automation state, operational orchestration"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270845Z",
-    "updated_at": "2026-04-02T17:07:13.377899Z",
+    "updated_at": "2026-03-05T21:36:33.283620Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 8,
+    "version": 7,
     "id": "da-009",
     "entity_type": "data_asset",
     "name": "Moogsoft AIOps Event Correlation Store",
@@ -3190,17 +2934,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3225,30 +2958,9 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 5000000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 625000,
-          "processing_cost_usd": 4375000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 12.5,
-          "rationalization_methodology": "Storage: 868,055 GB @ $0.7200/GB/year (location: on-prem) = $625,000 | Processing: 875.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $4,375,000 | Total estimated annual cost: $5,000,000 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 180000,
+      "business_value": "high",
+      "estimation_methodology": "Event correlation, AIOps processing engine"
     },
     "dependency_financial_impact": {
       "critical_system": "sys-001 (Customer Portal)",
@@ -3260,10 +2972,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.270866Z",
-    "updated_at": "2026-04-02T17:07:15.256450Z",
+    "updated_at": "2026-03-05T21:35:47.674765Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-010",
     "entity_type": "data_asset",
     "name": "AWS Systems Manager VM Inventory",
@@ -3559,17 +3271,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3594,38 +3295,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 287654.3,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 37654.3,
-          "processing_cost_usd": 250000,
-          "business_value_tier": "Medium",
-          "cost_pct_of_data_infrastructure_pool": 0.719,
-          "rationalization_methodology": "Storage: 52,298 GB @ $0.7200/GB/year (location: on-prem) = $37,654 | Processing: 50.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,000 (PII management) = $250,000 | Total estimated annual cost: $287,654 | Classification: restricted \u2192 Business Value: Medium | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 75000,
+      "business_value": "medium",
+      "estimation_methodology": "VM inventory, compliance tracking"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270886Z",
-    "updated_at": "2026-04-02T17:07:16.956614Z",
+    "updated_at": "2026-03-05T21:35:54.082284Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-011",
     "entity_type": "data_asset",
     "name": "Cloud Files Object Store",
@@ -3921,17 +3601,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -3956,38 +3625,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 1876543.2,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 234543.2,
-          "processing_cost_usd": 1642000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 4.691,
-          "rationalization_methodology": "Storage: 325,755 GB @ $0.7200/GB/year (location: on-prem) = $234,543 | Processing: 328.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,004 (PII management) = $1,642,000 | Total estimated annual cost: $1,876,543 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 280000,
+      "business_value": "high",
+      "estimation_methodology": "Multi-tenant customer object store, revenue-critical"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270906Z",
-    "updated_at": "2026-04-02T17:07:18.632811Z",
+    "updated_at": "2026-03-05T21:35:55.649969Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-012",
     "entity_type": "data_asset",
     "name": "Rackspace Object Storage (Dell ECS)",
@@ -4291,17 +3939,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -4326,38 +3963,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 654321.1,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 81321.1,
-          "processing_cost_usd": 573000,
-          "business_value_tier": "High",
-          "cost_pct_of_data_infrastructure_pool": 1.636,
-          "rationalization_methodology": "Storage: 112,946 GB @ $0.7200/GB/year (location: on-prem) = $81,321 | Processing: 114.60 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $573,000 | Total estimated annual cost: $654,321 | Classification: restricted \u2192 Business Value: High | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 270000,
+      "business_value": "high",
+      "estimation_methodology": "S3-compatible enterprise storage, large-scale"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270925Z",
-    "updated_at": "2026-04-02T17:07:20.303733Z",
+    "updated_at": "2026-03-05T21:35:57.716460Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-013",
     "entity_type": "data_asset",
     "name": "Cloud Databases Instance Store",
@@ -4655,17 +4271,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -4690,38 +4295,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 432765.8,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 53765.8,
-          "processing_cost_usd": 379000,
-          "business_value_tier": "Medium",
-          "cost_pct_of_data_infrastructure_pool": 1.082,
-          "rationalization_methodology": "Storage: 74,674 GB @ $0.7200/GB/year (location: on-prem) = $53,766 | Processing: 75.80 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,006 (PII management) = $379,000 | Total estimated annual cost: $432,766 | Classification: internal \u2192 Business Value: Medium | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 260000,
+      "business_value": "high",
+      "estimation_methodology": "Managed database instances, customer-facing"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270944Z",
-    "updated_at": "2026-04-02T17:07:21.986611Z",
+    "updated_at": "2026-03-05T21:35:59.902791Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-014",
     "entity_type": "data_asset",
     "name": "Cloud Block Storage Volume Store",
@@ -5017,17 +4601,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -5052,38 +4625,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 765432.4,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 95432.4,
-          "processing_cost_usd": 670000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 1.914,
-          "rationalization_methodology": "Storage: 132,545 GB @ $0.7200/GB/year (location: on-prem) = $95,432 | Processing: 134.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $670,000 | Total estimated annual cost: $765,432 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 250000,
+      "business_value": "high",
+      "estimation_methodology": "Block storage volumes, customer-critical"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270975Z",
-    "updated_at": "2026-04-02T17:07:23.711912Z",
+    "updated_at": "2026-03-05T21:36:02.398040Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-015",
     "entity_type": "data_asset",
     "name": "Cloud Backup Vault",
@@ -5380,17 +4932,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -5415,38 +4956,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 543210.7,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 67210.7,
-          "processing_cost_usd": 476000,
-          "business_value_tier": "High",
-          "cost_pct_of_data_infrastructure_pool": 1.358,
-          "rationalization_methodology": "Storage: 93,348 GB @ $0.7200/GB/year (location: on-prem) = $67,211 | Processing: 95.20 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $476,000 | Total estimated annual cost: $543,211 | Classification: restricted \u2192 Business Value: High | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 200000,
+      "business_value": "medium",
+      "estimation_methodology": "Backup vault, archival function"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.270996Z",
-    "updated_at": "2026-04-02T17:07:25.187101Z",
+    "updated_at": "2026-03-05T21:36:05.042611Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-016",
     "entity_type": "data_asset",
     "name": "Cloud Queues Message Store",
@@ -5714,17 +5234,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -5749,38 +5258,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 789456.5,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 98456.5,
-          "processing_cost_usd": 691000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 1.974,
-          "rationalization_methodology": "Storage: 136,747 GB @ $0.7200/GB/year (location: on-prem) = $98,457 | Processing: 138.20 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $691,000 | Total estimated annual cost: $789,457 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 150000,
+      "business_value": "high",
+      "estimation_methodology": "Message queue store, operational backbone"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271015Z",
-    "updated_at": "2026-04-02T17:07:46.478607Z",
+    "updated_at": "2026-03-05T21:36:07.484269Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-017",
     "entity_type": "data_asset",
     "name": "Mailgun Event Log Store",
@@ -6084,17 +5572,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -6119,38 +5596,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 3806148,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 475148,
-          "processing_cost_usd": 3331000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 9.515,
-          "rationalization_methodology": "Storage: 659,650 GB @ $0.7200/GB/year (location: on-prem) = $475,148 | Processing: 666.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $3,331,000 | Total estimated annual cost: $3,806,148 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 180000,
+      "business_value": "high",
+      "estimation_methodology": "Email event logs, transaction tracking"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271036Z",
-    "updated_at": "2026-04-02T17:07:48.166098Z",
+    "updated_at": "2026-03-05T21:36:10.159187Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-018",
     "entity_type": "data_asset",
     "name": "Mailgun Metrics and Analytics Store",
@@ -6421,17 +5877,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -6456,38 +5901,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 63114,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 7914,
-          "processing_cost_usd": 55200,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.158,
-          "rationalization_methodology": "Storage: 10,992 GB @ $0.7200/GB/year (location: on-prem) = $7,914 | Processing: 11.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $55,200 | Total estimated annual cost: $63,114 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 140000,
+      "business_value": "medium",
+      "estimation_methodology": "Deliverability metrics, analytics storage"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271057Z",
-    "updated_at": "2026-04-02T17:07:50.023836Z",
+    "updated_at": "2026-03-05T21:36:12.542973Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-019",
     "entity_type": "data_asset",
     "name": "Datadog Infrastructure Monitoring Data",
@@ -6791,17 +6215,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -6826,38 +6239,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 1537462,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 191462,
-          "processing_cost_usd": 1346000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 3.844,
-          "rationalization_methodology": "Storage: 265,920 GB @ $0.7200/GB/year (location: on-prem) = $191,462 | Processing: 269.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,004 (PII management) = $1,346,000 | Total estimated annual cost: $1,537,462 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 160000,
+      "business_value": "high",
+      "estimation_methodology": "Third-party monitoring telemetry data"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271092Z",
-    "updated_at": "2026-04-02T17:07:51.550524Z",
+    "updated_at": "2026-03-05T21:36:15.043601Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 8,
+    "version": 7,
     "id": "da-020",
     "entity_type": "data_asset",
     "name": "Cloud Identity Token and Credential Store",
@@ -7124,17 +6516,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -7159,30 +6540,9 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 29954.5,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 3754.5,
-          "processing_cost_usd": 26200,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.075,
-          "rationalization_methodology": "Storage: 5,212 GB @ $0.7200/GB/year (location: on-prem) = $3,755 | Processing: 5.24 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $26,200 | Total estimated annual cost: $29,955 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 220000,
+      "business_value": "high",
+      "estimation_methodology": "Identity tokens/credentials, critical security"
     },
     "dependency_financial_impact": {
       "critical_system": "sys-005 (Cloud Identity Service)",
@@ -7194,10 +6554,10 @@
   },
   {
     "created_at": "2026-02-25T19:01:57.271112Z",
-    "updated_at": "2026-04-02T17:07:53.382361Z",
+    "updated_at": "2026-03-05T21:36:23.377256Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-021",
     "entity_type": "data_asset",
     "name": "ServiceNow ITSM Data Store",
@@ -7517,17 +6877,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -7552,38 +6901,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 39207.8,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 4907.8,
-          "processing_cost_usd": 34300,
-          "business_value_tier": "Medium",
-          "cost_pct_of_data_infrastructure_pool": 0.098,
-          "rationalization_methodology": "Storage: 6,817 GB @ $0.7200/GB/year (location: on-prem) = $4,908 | Processing: 6.86 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,004 (PII management) = $34,300 | Total estimated annual cost: $39,208 | Classification: restricted \u2192 Business Value: Medium | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 190000,
+      "business_value": "high",
+      "estimation_methodology": "ITSM data, critical operations tracking"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271133Z",
-    "updated_at": "2026-04-02T17:07:55.442687Z",
+    "updated_at": "2026-03-05T21:36:25.531210Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-022",
     "entity_type": "data_asset",
     "name": "RGC FedRAMP Continuous Monitoring Data Store",
@@ -7847,17 +7175,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -7882,38 +7199,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 27845.56,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 3485.56,
-          "processing_cost_usd": 24360,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.07,
-          "rationalization_methodology": "Storage: 4,841 GB @ $0.7200/GB/year (location: on-prem) = $3,486 | Processing: 4.87 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,002 (PII management) = $24,360 | Total estimated annual cost: $27,846 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 130000,
+      "business_value": "high",
+      "estimation_methodology": "FedRAMP compliance, regulatory requirement"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271153Z",
-    "updated_at": "2026-04-02T17:07:57.400823Z",
+    "updated_at": "2026-03-05T21:36:27.611991Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-023",
     "entity_type": "data_asset",
     "name": "ObjectRocket Managed Database Store",
@@ -8205,17 +7501,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -8240,38 +7525,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 734896,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 91696,
-          "processing_cost_usd": 643200,
-          "business_value_tier": "High",
-          "cost_pct_of_data_infrastructure_pool": 1.837,
-          "rationalization_methodology": "Storage: 127,333 GB @ $0.7200/GB/year (location: on-prem) = $91,696 | Processing: 128.64 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $643,200 | Total estimated annual cost: $734,896 | Classification: restricted \u2192 Business Value: High | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 240000,
+      "business_value": "high",
+      "estimation_methodology": "Managed NoSQL/SQL databases, customer-critical"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271178Z",
-    "updated_at": "2026-04-02T17:07:59.329507Z",
+    "updated_at": "2026-03-05T21:36:30.189373Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-024",
     "entity_type": "data_asset",
     "name": "Rackspace Email Mailbox Store",
@@ -8586,17 +7850,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -8622,38 +7875,17 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 5000000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 625000,
-          "processing_cost_usd": 4375000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 12.5,
-          "rationalization_methodology": "Storage: 868,055 GB @ $0.7200/GB/year (location: on-prem) = $625,000 | Processing: 875.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $4,375,000 | Total estimated annual cost: $5,000,000 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 210000,
+      "business_value": "high",
+      "estimation_methodology": "Customer email mailbox store, business-critical"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271210Z",
-    "updated_at": "2026-04-02T17:08:10.711762Z",
+    "updated_at": "2026-03-05T21:36:32.739329Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-025",
     "entity_type": "data_asset",
     "name": "MyRackspace Portal Session and Account Store",
@@ -8966,17 +8198,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -9002,38 +8223,17 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 32929.6,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 4129.6,
-          "processing_cost_usd": 28800,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.082,
-          "rationalization_methodology": "Storage: 5,736 GB @ $0.7200/GB/year (location: on-prem) = $4,130 | Processing: 5.76 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $28,800 | Total estimated annual cost: $32,930 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 140000,
+      "business_value": "medium",
+      "estimation_methodology": "Portal session data, customer-facing"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271231Z",
-    "updated_at": "2026-04-02T17:08:12.783244Z",
+    "updated_at": "2026-03-05T21:36:34.306137Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 7,
+    "version": 6,
     "id": "da-026",
     "entity_type": "data_asset",
     "name": "RackConnect Network Configuration Store",
@@ -9284,17 +8484,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -9319,38 +8508,17 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 693.25,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 86.65,
-          "processing_cost_usd": 606.6,
-          "business_value_tier": "Minimal",
-          "cost_pct_of_data_infrastructure_pool": 0.002,
-          "rationalization_methodology": "Storage: 120 GB @ $0.7200/GB/year (location: on-prem) = $87 | Processing: 0.12 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $607 | Total estimated annual cost: $693 | Classification: internal \u2192 Business Value: Minimal | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 110000,
+      "business_value": "high",
+      "estimation_methodology": "Network configuration, critical infrastructure"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271252Z",
-    "updated_at": "2026-04-02T17:08:14.442089Z",
+    "updated_at": "2026-03-05T21:36:35.936451Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-027",
     "entity_type": "data_asset",
     "name": "Corporate Syslog Aggregation Store",
@@ -9646,17 +8814,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -9682,38 +8839,17 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 781234,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 97434,
-          "processing_cost_usd": 683800,
-          "business_value_tier": "High",
-          "cost_pct_of_data_infrastructure_pool": 1.953,
-          "rationalization_methodology": "Storage: 135,325 GB @ $0.7200/GB/year (location: on-prem) = $97,434 | Processing: 136.76 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $683,800 | Total estimated annual cost: $781,234 | Classification: restricted \u2192 Business Value: High | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 120000,
+      "business_value": "medium",
+      "estimation_methodology": "Syslog aggregation, operational logging"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271277Z",
-    "updated_at": "2026-04-02T17:08:16.445533Z",
+    "updated_at": "2026-03-05T21:36:37.531656Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-028",
     "entity_type": "data_asset",
     "name": "Cloud Server Image Repository",
@@ -10008,17 +9144,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -10044,38 +9169,17 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 519856,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 64856,
-          "processing_cost_usd": 455000,
-          "business_value_tier": "Medium",
-          "cost_pct_of_data_infrastructure_pool": 1.3,
-          "rationalization_methodology": "Storage: 90,077 GB @ $0.7200/GB/year (location: on-prem) = $64,856 | Processing: 91.00 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $455,000 | Total estimated annual cost: $519,856 | Classification: restricted \u2192 Business Value: Medium | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 95000,
+      "business_value": "high",
+      "estimation_methodology": "VM image repository, infrastructure foundation"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271298Z",
-    "updated_at": "2026-04-02T17:08:18.030711Z",
+    "updated_at": "2026-03-05T21:36:39.140076Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-029",
     "entity_type": "data_asset",
     "name": "Cloud DNS Zone Database",
@@ -10370,17 +9474,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -10406,38 +9499,17 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 29952.5,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 3742.5,
-          "processing_cost_usd": 26210,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.075,
-          "rationalization_methodology": "Storage: 5,198 GB @ $0.7200/GB/year (location: on-prem) = $3,743 | Processing: 5.24 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $26,210 | Total estimated annual cost: $29,953 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 85000,
+      "business_value": "high",
+      "estimation_methodology": "DNS zone database, critical infrastructure"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271318Z",
-    "updated_at": "2026-04-02T17:08:19.666235Z",
+    "updated_at": "2026-03-05T21:36:40.673698Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-030",
     "entity_type": "data_asset",
     "name": "OpenStack Flex Metering and Billing Store",
@@ -10754,17 +9826,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -10790,38 +9851,17 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 44802,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 5602,
-          "processing_cost_usd": 39200,
-          "business_value_tier": "Medium",
-          "cost_pct_of_data_infrastructure_pool": 0.112,
-          "rationalization_methodology": "Storage: 7,780 GB @ $0.7200/GB/year (location: on-prem) = $5,602 | Processing: 7.84 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $39,200 | Total estimated annual cost: $44,802 | Classification: restricted \u2192 Business Value: Medium | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 170000,
+      "business_value": "high",
+      "estimation_methodology": "Cloud metering/billing integration, revenue-linked"
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271352Z",
-    "updated_at": "2026-04-02T17:08:21.317912Z",
+    "updated_at": "2026-03-05T21:00:34.348809Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-031",
     "entity_type": "data_asset",
     "name": "Multicloud Build Document Repository",
@@ -11087,17 +10127,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -11122,38 +10151,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 11974.56,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 1494.56,
-          "processing_cost_usd": 10480,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.03,
-          "rationalization_methodology": "Storage: 2,075 GB @ $0.7200/GB/year (location: on-prem) = $1,495 | Processing: 2.10 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $10,480 | Total estimated annual cost: $11,975 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 100000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271372Z",
-    "updated_at": "2026-04-02T17:08:22.814335Z",
+    "updated_at": "2026-03-05T21:00:34.825608Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-032",
     "entity_type": "data_asset",
     "name": "TACACS+ Authentication Log Store",
@@ -11426,17 +10435,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -11461,38 +10459,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 32104.9,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 4014.9,
-          "processing_cost_usd": 28090,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.08,
-          "rationalization_methodology": "Storage: 5,576 GB @ $0.7200/GB/year (location: on-prem) = $4,015 | Processing: 5.62 TB \u00d7 $5000/TB (tier: transactional) |   \u00d7 1.05x (encryption) \u00d7 1.3x (replication) |   + $25,008 (PII management) = $28,090 | Total estimated annual cost: $32,105 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 120000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271391Z",
-    "updated_at": "2026-04-02T17:10:06.607596Z",
+    "updated_at": "2026-03-05T21:00:35.383832Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-033",
     "entity_type": "data_asset",
     "name": "Rackspace Fabric Governance and Tagging Store",
@@ -11770,17 +10748,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -11805,38 +10772,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 5000000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 900000,
-          "processing_cost_usd": 4100000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 12.5,
-          "rationalization_methodology": "Storage: 1,250,000 GB @ $0.7200/GB/year (location: cloud) = $900,000 | Processing: 800.00 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $50,000 (PII management) = $4,100,000 | Total estimated annual cost: $5,000,000 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 100000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271409Z",
-    "updated_at": "2026-04-02T17:10:08.296623Z",
+    "updated_at": "2026-03-05T21:00:35.917887Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-034",
     "entity_type": "data_asset",
     "name": "Hosted Exchange PST Archive (Breach Forensic Evidence)",
@@ -12132,17 +11079,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -12172,38 +11108,18 @@
     "assessment_methodology": "Due diligence file analysis \u2014 structured JSON extraction and entity attribution",
     "confidence_level": "High",
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 1250000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 225000,
-          "processing_cost_usd": 1025000,
-          "business_value_tier": "Critical",
-          "cost_pct_of_data_infrastructure_pool": 3.125,
-          "rationalization_methodology": "Storage: 312,500 GB @ $0.7200/GB/year (location: cloud) = $225,000 | Processing: 200.00 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $25,000 (PII management) = $1,025,000 | Total estimated annual cost: $1,250,000 | Classification: confidential \u2192 Business Value: Critical | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 180000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271429Z",
-    "updated_at": "2026-04-02T17:10:09.754646Z",
+    "updated_at": "2026-03-05T21:00:36.484841Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-035",
     "entity_type": "data_asset",
     "name": "Customer Management Service Database",
@@ -12516,17 +11432,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -12552,38 +11457,18 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 750000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 135000,
-          "processing_cost_usd": 615000,
-          "business_value_tier": "High",
-          "cost_pct_of_data_infrastructure_pool": 1.875,
-          "rationalization_methodology": "Storage: 187,500 GB @ $0.7200/GB/year (location: cloud) = $135,000 | Processing: 120.00 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $15,000 (PII management) = $615,000 | Total estimated annual cost: $750,000 | Classification: confidential \u2192 Business Value: High | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 150000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271460Z",
-    "updated_at": "2026-04-02T17:10:11.731620Z",
+    "updated_at": "2026-03-05T21:00:37.517719Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-036",
     "entity_type": "data_asset",
     "name": "Logbook Audit Trail Store",
@@ -12895,17 +11780,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -12930,38 +11804,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 520000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 93600,
-          "processing_cost_usd": 426400,
-          "business_value_tier": "High",
-          "cost_pct_of_data_infrastructure_pool": 1.3,
-          "rationalization_methodology": "Storage: 130,000 GB @ $0.7200/GB/year (location: on-prem) = $93,600 | Processing: 85.00 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $6,400 (PII management) = $426,400 | Total estimated annual cost: $520,000 | Classification: confidential \u2192 Business Value: High | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 120000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271478Z",
-    "updated_at": "2026-04-02T17:10:13.745323Z",
+    "updated_at": "2026-03-05T21:00:38.654784Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-037",
     "entity_type": "data_asset",
     "name": "Cloud Load Balancer Access Log Archive",
@@ -13257,17 +12111,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -13293,38 +12136,18 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 380000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 68400,
-          "processing_cost_usd": 311600,
-          "business_value_tier": "High",
-          "cost_pct_of_data_infrastructure_pool": 0.95,
-          "rationalization_methodology": "Storage: 95,000 GB @ $0.7200/GB/year (location: on-prem) = $68,400 | Processing: 62.00 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $6,200 (PII management) = $311,600 | Total estimated annual cost: $380,000 | Classification: confidential \u2192 Business Value: High | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 120000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271498Z",
-    "updated_at": "2026-04-02T17:10:15.645945Z",
+    "updated_at": "2026-03-05T21:00:39.218259Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-038",
     "entity_type": "data_asset",
     "name": "Rackspace CDN Analytics Store",
@@ -13596,17 +12419,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -13631,38 +12443,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 290000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 52200,
-          "processing_cost_usd": 237800,
-          "business_value_tier": "Medium",
-          "cost_pct_of_data_infrastructure_pool": 0.725,
-          "rationalization_methodology": "Storage: 72,500 GB @ $0.7200/GB/year (location: on-prem) = $52,200 | Processing: 47.00 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $4,800 (PII management) = $237,800 | Total estimated annual cost: $290,000 | Classification: confidential \u2192 Business Value: Medium | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 100000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271515Z",
-    "updated_at": "2026-04-02T17:10:17.669789Z",
+    "updated_at": "2026-03-05T21:00:39.713827Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-039",
     "entity_type": "data_asset",
     "name": "Physical Access Control Log Store",
@@ -13962,17 +12754,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -13997,38 +12778,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 195000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 35100,
-          "processing_cost_usd": 159900,
-          "business_value_tier": "Medium",
-          "cost_pct_of_data_infrastructure_pool": 0.4875,
-          "rationalization_methodology": "Storage: 48,750 GB @ $0.7200/GB/year (location: on-prem) = $35,100 | Processing: 31.00 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $3,200 (PII management) = $159,900 | Total estimated annual cost: $195,000 | Classification: confidential \u2192 Business Value: Medium | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 120000,
+      "estimated_business_value": "medium",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271535Z",
-    "updated_at": "2026-04-02T17:10:19.658199Z",
+    "updated_at": "2026-03-05T21:00:40.255984Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-040",
     "entity_type": "data_asset",
     "name": "Data Center Surveillance Video Archive",
@@ -14318,17 +13079,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -14353,38 +13103,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 142000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 25560,
-          "processing_cost_usd": 116440,
-          "business_value_tier": "Medium",
-          "cost_pct_of_data_infrastructure_pool": 0.355,
-          "rationalization_methodology": "Storage: 35,500 GB @ $0.7200/GB/year (location: on-prem) = $25,560 | Processing: 22.50 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $2,310 (PII management) = $116,440 | Total estimated annual cost: $142,000 | Classification: restricted \u2192 Business Value: Medium | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 180000,
+      "estimated_business_value": "medium",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271565Z",
-    "updated_at": "2026-04-02T17:10:25.870836Z",
+    "updated_at": "2026-03-05T21:00:44.703325Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-041",
     "entity_type": "data_asset",
     "name": "Building Management System Telemetry Store",
@@ -14667,17 +13397,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -14702,38 +13421,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 98000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 17640,
-          "processing_cost_usd": 80360,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.245,
-          "rationalization_methodology": "Storage: 24,500 GB @ $0.7200/GB/year (location: on-prem) = $17,640 | Processing: 15.50 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $1,560 (PII management) = $80,360 | Total estimated annual cost: $98,000 | Classification: restricted \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 100000,
+      "estimated_business_value": "medium",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271585Z",
-    "updated_at": "2026-04-02T17:10:27.299351Z",
+    "updated_at": "2026-03-05T21:00:45.295322Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-042",
     "entity_type": "data_asset",
     "name": "DCIM Asset and Capacity Database",
@@ -15034,17 +13733,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -15070,38 +13758,18 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 72000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 12960,
-          "processing_cost_usd": 59040,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.18,
-          "rationalization_methodology": "Storage: 18,000 GB @ $0.7200/GB/year (location: on-prem) = $12,960 | Processing: 11.50 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $1,040 (PII management) = $59,040 | Total estimated annual cost: $72,000 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 100000,
+      "estimated_business_value": "medium",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271604Z",
-    "updated_at": "2026-04-02T17:10:29.359344Z",
+    "updated_at": "2026-03-05T21:00:45.964373Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-043",
     "entity_type": "data_asset",
     "name": "Vulnerability Scan Results Store",
@@ -15416,17 +14084,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -15451,38 +14108,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 55000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 9900,
-          "processing_cost_usd": 45100,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.1375,
-          "rationalization_methodology": "Storage: 13,750 GB @ $0.7200/GB/year (location: cloud) = $9,900 | Processing: 9.00 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $900 (PII management) = $45,100 | Total estimated annual cost: $55,000 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 100000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271623Z",
-    "updated_at": "2026-04-02T17:10:31.417044Z",
+    "updated_at": "2026-03-05T21:00:46.443762Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-044",
     "entity_type": "data_asset",
     "name": "DDoS Mitigation Event and Flow Store",
@@ -15777,17 +14414,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -15813,38 +14439,18 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 42000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 7560,
-          "processing_cost_usd": 34440,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.105,
-          "rationalization_methodology": "Storage: 10,500 GB @ $0.7200/GB/year (location: on-prem) = $7,560 | Processing: 7.00 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $720 (PII management) = $34,440 | Total estimated annual cost: $42,000 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 100000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271642Z",
-    "updated_at": "2026-04-02T17:10:32.942965Z",
+    "updated_at": "2026-03-05T21:00:47.013555Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-045",
     "entity_type": "data_asset",
     "name": "Bomgar Remote Support Session Archive",
@@ -16147,17 +14753,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -16182,38 +14777,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 32000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 5760,
-          "processing_cost_usd": 26240,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.08,
-          "rationalization_methodology": "Storage: 8,000 GB @ $0.7200/GB/year (location: cloud) = $5,760 | Processing: 5.50 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $480 (PII management) = $26,240 | Total estimated annual cost: $32,000 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 180000,
+      "estimated_business_value": "medium",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271661Z",
-    "updated_at": "2026-04-02T17:10:35.087915Z",
+    "updated_at": "2026-03-05T21:00:47.578931Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-046",
     "entity_type": "data_asset",
     "name": "Bastion Host Session Log Store",
@@ -16516,17 +15091,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -16551,38 +15115,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 23000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 4140,
-          "processing_cost_usd": 18860,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.0575,
-          "rationalization_methodology": "Storage: 5,750 GB @ $0.7200/GB/year (location: on-prem) = $4,140 | Processing: 4.00 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $360 (PII management) = $18,860 | Total estimated annual cost: $23,000 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 120000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271692Z",
-    "updated_at": "2026-04-02T17:10:36.945076Z",
+    "updated_at": "2026-03-05T21:00:48.135654Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-047",
     "entity_type": "data_asset",
     "name": "VPN Gateway Connection Log Store",
@@ -16886,17 +15430,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -16921,38 +15454,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 16000,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 2880,
-          "processing_cost_usd": 13120,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.04,
-          "rationalization_methodology": "Storage: 4,000 GB @ $0.7200/GB/year (location: on-prem) = $2,880 | Processing: 2.75 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $240 (PII management) = $13,120 | Total estimated annual cost: $16,000 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 120000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271712Z",
-    "updated_at": "2026-04-02T17:10:38.610999Z",
+    "updated_at": "2026-03-05T21:00:48.705563Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-048",
     "entity_type": "data_asset",
     "name": "Site Firewall Rule and Session Log Store",
@@ -17254,17 +15767,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -17289,38 +15791,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 8500,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 1530,
-          "processing_cost_usd": 6970,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.02125,
-          "rationalization_methodology": "Storage: 2,125 GB @ $0.7200/GB/year (location: on-prem) = $1,530 | Processing: 1.50 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $170 (PII management) = $6,970 | Total estimated annual cost: $8,500 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 120000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271731Z",
-    "updated_at": "2026-04-02T17:10:45.051636Z",
+    "updated_at": "2026-03-05T21:00:49.262675Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 6,
+    "version": 5,
     "id": "da-049",
     "entity_type": "data_asset",
     "name": "RackWatch Network Monitoring Data Store",
@@ -17594,17 +16076,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -17629,38 +16100,18 @@
       "known_data_gaps": []
     },
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 4100,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 738,
-          "processing_cost_usd": 3362,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.01025,
-          "rationalization_methodology": "Storage: 1,025 GB @ $0.7200/GB/year (location: on-prem) = $738 | Processing: 0.75 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $85 (PII management) = $3,362 | Total estimated annual cost: $4,100 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 120000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
     "created_at": "2026-02-25T19:01:57.271749Z",
-    "updated_at": "2026-04-02T17:10:46.392235Z",
+    "updated_at": "2026-03-05T21:00:49.744557Z",
     "valid_from": null,
     "valid_until": null,
-    "version": 5,
+    "version": 4,
     "id": "da-050",
     "entity_type": "data_asset",
     "name": "Antivirus Detection and Quarantine Store",
@@ -17944,17 +16395,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -17980,30 +16420,10 @@
     },
     "attestation_status": null,
     "financial_profile": {
-      "schema_version": "v3",
-      "currency": "USD",
-      "periods": [
-        {
-          "fiscal_year": "FY2024",
-          "period_type": "annual",
-          "currency_iso": "USD",
-          "confidence_tier": "T3-rationalized",
-          "source": "T3-rationalized from KG attributes + enterprise cost pools",
-          "estimated_annual_cost_usd": 2500,
-          "cost_confidence": "T3-rationalized",
-          "storage_cost_usd": 450,
-          "processing_cost_usd": 2050,
-          "business_value_tier": "Low",
-          "cost_pct_of_data_infrastructure_pool": 0.00625,
-          "rationalization_methodology": "Storage: 625 GB @ $0.7200/GB/year (location: cloud) = $450 | Processing: 0.50 TB \u00d7 $5000/TB (tier: transactional) \u00d7 1.05x (encryption) \u00d7 1.3x (replication) + $50 (PII management) = $2,050 | Total estimated annual cost: $2,500 | Classification: internal \u2192 Business Value: Low | Confidence: T3-rationalized (AI inference from KG attributes, storage characteristics, enterprise cost pools)"
-        }
-      ],
-      "_enrichment_metadata": {
-        "enrichment_date": "2026-04-02",
-        "protocol_version": "2.0",
-        "methodology": "AI-rationalized with adversarial validation",
-        "enforcement": "enrichment_protocol.py \u2014 completeness gates enforced"
-      }
+      "estimated_annual_storage_cost": 100000,
+      "estimated_business_value": "high",
+      "cost_confidence": "low",
+      "estimation_methodology": "Cost estimated based on asset type, scale, and revenue dependency; values range $50K-$180K annually."
     }
   },
   {
@@ -18282,17 +16702,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -18601,17 +17010,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -18936,17 +17334,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -19246,17 +17633,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -19570,17 +17946,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -19886,17 +18251,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -20218,17 +18572,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -20564,17 +18907,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -20888,17 +19220,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -21212,17 +19533,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -21535,17 +19845,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -21881,17 +20180,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -22224,17 +20512,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -22560,17 +20837,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -22939,17 +21205,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -23271,17 +21526,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -23608,17 +21852,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -23941,17 +22174,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -24279,17 +22501,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -24610,17 +22821,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -24965,17 +23165,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -25304,17 +23493,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -25651,17 +23829,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -26002,17 +24169,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -26353,17 +24509,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -26727,17 +24872,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -27059,17 +25193,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -27397,17 +25520,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -27743,17 +25855,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -28057,17 +26158,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -28417,17 +26507,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -28784,17 +26863,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -29140,17 +27208,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -29473,17 +27530,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -29792,17 +27838,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -30113,17 +28148,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -30463,17 +28487,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -30787,17 +28800,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -31137,17 +29139,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -31473,17 +29464,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -31821,17 +29801,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -32148,17 +30117,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -32519,17 +30477,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -32852,17 +30799,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -33196,17 +31132,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -33554,17 +31479,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -33910,17 +31824,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -34238,17 +32141,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -34608,17 +32500,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -34944,17 +32825,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -35295,17 +33165,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -35659,17 +33518,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -36007,17 +33855,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -36363,17 +34200,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -36713,17 +34539,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -37030,17 +34845,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -37356,17 +35160,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -37694,17 +35487,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -38031,17 +35813,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -38376,17 +36147,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -38712,17 +36472,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -39062,17 +36811,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -39404,17 +37142,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -39765,17 +37492,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -40090,17 +37806,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -40448,17 +38153,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -40788,17 +38482,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -41134,17 +38817,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -41472,17 +39144,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -41841,17 +39502,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -42190,17 +39840,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -42567,17 +40206,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -42913,17 +40541,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -43203,17 +40820,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -43491,17 +41097,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -43779,17 +41374,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -44067,17 +41651,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -44355,17 +41928,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -44649,17 +42211,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -44982,17 +42533,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -45304,17 +42844,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -45637,17 +43166,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -45957,17 +43475,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -46277,17 +43784,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -46592,17 +44088,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -46889,17 +44374,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -47234,17 +44708,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -47545,17 +45008,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -47890,17 +45342,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -48207,17 +45648,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -48509,17 +45939,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -48804,17 +46223,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -49126,17 +46534,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -49431,17 +46828,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -49747,17 +47133,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -50056,17 +47431,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -50372,17 +47736,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -50722,17 +48075,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2024-01-01",
       "expiration_date": null,
@@ -51032,17 +48374,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -51331,17 +48662,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -51629,17 +48949,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -51938,17 +49247,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -52278,17 +49576,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -52603,17 +49890,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -52937,17 +50213,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -53294,17 +50559,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -53628,17 +50882,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -53948,17 +51191,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -54307,17 +51539,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -54638,17 +51859,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -54954,17 +52164,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -55265,17 +52464,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -55606,17 +52794,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": null,
       "expiration_date": null,
@@ -55959,17 +53136,6 @@
       "annual_total": null,
       "currency": "USD"
     },
-    "economic_value_method": "",
-    "estimated_economic_value": null,
-    "economic_value_currency": "USD",
-    "monetization_status": "",
-    "value_realization_pct": null,
-    "data_product_eligible": null,
-    "ai_readiness_assessed": null,
-    "ai_readiness_score": null,
-    "bias_risk_level": "",
-    "training_eligible": null,
-    "labeling_quality": "",
     "temporal": {
       "effective_date": "2010-01-01",
       "expiration_date": null,
