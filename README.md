@@ -108,7 +108,7 @@ Developed as part of the **Carnegie Mellon University Heinz College Chief Data &
 | Name | Role |
 |------|------|
 | Thomas Jones | CDAIO Candidate |
-| *[Team Member]* | CDAIO Candidate |
+| hsuo-lang | CDAIO Candidate |
 | *[Team Member]* | CDAIO Candidate |
 | *[Team Member]* | CDAIO Candidate |
 
