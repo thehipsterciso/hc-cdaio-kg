@@ -1,0 +1,244 @@
+PHASE 2.5 — PORTFOLIO HIERARCHY RATIONALIZATION PROOF
+==============================================================================
+
+TOP-OF-HOUSE T1 ANCHORS (from SEC 10-K):
+  ou-029  Rackspace Technology, Inc.  FY2023 recurring_revenue = $2,957M (T1)
+    ou-001  Public Cloud Business Unit  $1,747M (T1)
+      pf-002  Public Cloud (L1 portfolio, equals BU)  $1,747M
+    ou-002  Private Cloud Business Unit  $1,210M (T1)
+      pf-001  Private Cloud (L1 portfolio, equals BU)  $1,210M
+
+SUM CHECK: 1,747 + 1,210 = 2,957  ✓  (matches ou-029)
+
+==============================================================================
+L2 PORTFOLIOS — PUBLIC CLOUD (children of pf-002)
+==============================================================================
+count: 58
+
+  [pf-003]  Foundry for AI by Rackspace (FAIR)
+      rationale: FAIR is Rackspace's AI services practice delivered primarily across hyperscaler platforms (AWS/Google/Azure); service revenue flows through Public Cloud segment.
+
+  [pf-004]  Rackspace Elastic Engineering
+      rationale: Elastic Engineering is the flagship Public Cloud professional services delivery model; dedicated pods wrap services revenue that bills through Public Cloud.
+
+  [pf-005]  Rackspace Elastic Engineering for Security
+      rationale: Elastic Engineering for Security is an EE variant; same delivery model and revenue treatment as core EE.
+
+  [pf-006]  Rackspace Elastic Engineering for VMware
+      rationale: Elastic Engineering for VMware is an EE variant (dedicated pods for VMware workload modernization, typically toward cloud); EE model bills through Public Cloud services.
+
+  [pf-007]  Rackspace Elastic Engineering for Microsoft 365
+      rationale: Elastic Engineering for Microsoft 365 is an EE variant; Microsoft 365 is a Public Cloud SaaS layer.
+
+  [pf-008]  Rackspace Elastic Engineering for Government
+      rationale: Elastic Engineering for Government targets government cloud professionals on FedRAMP-authorized platforms; Public Cloud services.
+
+  [pf-009]  Rackspace Modern Operations
+      rationale: Modern Operations provides 24x7 managed operations for cloud environments (multicloud scope); Public Cloud managed services.
+
+  [pf-010]  Rackspace Managed Cloud
+      rationale: Rackspace Managed Cloud is end-to-end outsourced management of enterprise cloud environments; Public Cloud managed services (ITIL-based).
+
+  [pf-011]  Cloud Adoption and Migration Services
+      rationale: Cloud Adoption and Migration Services (including RRMO on AWS Marketplace) is classic Public Cloud migration services.
+
+  [pf-012]  Cloud Optimization and FinOps Services
+      rationale: Cloud FinOps and Optimization targets hyperscaler cost management; Public Cloud services.
+
+  [pf-019]  Rackspace Government Cloud
+      rationale: Rackspace Government Cloud is a FedRAMP-authorized PaaS; deployed on hyperscaler government regions (AWS GovCloud etc.); Public Cloud segment for revenue reporting.
+
+  [pf-020]  Rackspace Spot
+      rationale: Rackspace Spot is a managed Kubernetes auction market — cloud-native infrastructure-as-a-service; Public Cloud.
+
+  [pf-022]  AWS Managed and Professional Services
+      rationale: AWS Managed and Professional Services backed by the October 2024 Strategic Collaboration Agreement; core Public Cloud hyperscaler services.
+
+  [pf-023]  Microsoft Azure Managed and Professional Services
+      rationale: Azure Managed and Professional Services; hyperscaler services under Public Cloud segment.
+
+  [pf-024]  Google Cloud Managed and Professional Services
+      rationale: Google Cloud Premier Managed Services Partner; Public Cloud hyperscaler services.
+
+  [pf-025]  Oracle Cloud Infrastructure (OCI) Services
+      rationale: Oracle Cloud Infrastructure (OCI) is a hyperscaler; OCI managed services billed through Public Cloud.
+
+  [pf-027]  Dell Technologies Alliance Solutions
+      rationale: Dell Alliance delivers Dell Generative AI Solutions powered by FAIR with NVIDIA; revenue flows through FAIR/Public Cloud AI services, not Dell infrastructure resale.
+
+  [pf-028]  Application Modernization Services
+      rationale: Application Modernization Services targets cloud-native transformation; Public Cloud.
+
+  [pf-029]  Cloud Native Services
+      rationale: Cloud Native Services covers containers, service mesh, serverless; Public Cloud.
+
+  [pf-030]  IoT and Edge Computing Services
+      rationale: IoT and Edge Computing Services including hardware-to-cloud pipelines; Public Cloud.
+
+  [pf-031]  Application Operations Services
+      rationale: Application Operations Services for cloud-based applications in production; Public Cloud.
+
+  [pf-032]  Microsoft 365 and Productivity Services
+      rationale: Microsoft 365 and Productivity Services — Microsoft 365 is Public Cloud SaaS.
+
+  [pf-033]  Rackspace Email
+      rationale: Rackspace Email (2007 acquisition origin) is SaaS-layer hosted email — Cloud Office segment within Public Cloud.
+
+  [pf-034]  ERP Services
+      rationale: ERP Services (SAP, etc.) as managed cloud ERP; Public Cloud.
+
+  [pf-035]  CRM Services
+      rationale: CRM Services for Microsoft Dynamics 365 and Salesforce; SaaS-layer cloud services, Public Cloud.
+
+  [pf-036]  Digital Experience Services
+      rationale: Digital Experience Services for Adobe Experience Manager and Sitecore; SaaS/cloud application services, Public Cloud.
+
+  [pf-037]  Data Modernization Services
+      rationale: Data Modernization Services for cloud data platform implementation; Public Cloud.
+
+  [pf-038]  AI and Machine Learning Services
+      rationale: AI/ML Services for model development, training, deployment; Public Cloud (overlaps with FAIR but distinct offering).
+
+  [pf-039]  Data Strategy and Governance Services
+      rationale: Data Strategy and Governance Services for cloud-era data classification and lifecycle; Public Cloud professional services.
+
+  [pf-040]  Database Platform Services
+      rationale: Database Platform Services across cloud databases (Oracle/MSSQL/NoSQL on hyperscalers); Public Cloud.
+
+  [pf-041]  Next-Gen Data Platform Services
+      rationale: Next-Gen Data Platform Services spans AWS/GCP/Azure Data plus Snowflake; Public Cloud by definition.
+
+  [pf-042]  Analytics Platform Services
+      rationale: Analytics Platform Services for data lakes/warehouses/BI on cloud platforms; Public Cloud.
+
+  [pf-043]  Cyber Recovery Services
+      rationale: Cyber Recovery Services with Rubrik-powered cloud recovery; Public Cloud.
+
+  [pf-044]  Cyber Recovery Cloud powered by Rubrik
+      rationale: Cyber Recovery Cloud powered by Rubrik — managed cloud recovery platform; Public Cloud.
+
+  [pf-045]  Security Strategy Services
+      rationale: Security Strategy Services — cross-cloud advisory, positioned within Public Cloud services practice.
+
+  [pf-046]  Detection and Response Services
+      rationale: Detection and Response Services for cloud vulnerability detection and response; Public Cloud.
+
+  [pf-047]  Cloud Native Security Services
+      rationale: Cloud Native Security Services — explicitly cloud-native; Public Cloud.
+
+  [pf-048]  Application Security Services
+      rationale: Application Security Services for web applications — cloud app security; Public Cloud.
+
+  [pf-049]  Zero Trust Services
+      rationale: Zero Trust Services; cloud-first architecture, Public Cloud services.
+
+  [pf-051]  Data Protection Services
+      rationale: Data Protection Services with cross-cloud DLP; Public Cloud services.
+
+  [pf-053]  FAIR Ideate
+      rationale: FAIR Ideate — phase one of FAIR delivery methodology; rolls up under FAIR/Public Cloud.
+
+  [pf-054]  FAIR Incubate
+      rationale: FAIR Incubate — phase two of FAIR delivery methodology; rolls up under FAIR/Public Cloud.
+
+  [pf-055]  FAIR Industrialize
+      rationale: FAIR Industrialize — phase three of FAIR delivery methodology; rolls up under FAIR/Public Cloud.
+
+  [pf-056]  Agentic AI Solution (FAIR plus Sema4.ai)
+      rationale: Agentic AI Solution (FAIR plus Sema4.ai) — joint AI agent offering; rolls up under FAIR/Public Cloud.
+
+  [pf-057]  Consulting and Advisory Services
+      rationale: Consulting and Advisory Services — multicloud strategy/TCO/transformation advisory; Public Cloud.
+
+  [pf-058]  Professional Services
+      rationale: Professional Services — cloud-agnostic application/data/security/cloud professional services; Public Cloud.
+
+  [pf-059]  Rackspace Fabric
+      rationale: Rackspace Fabric — unified multicloud management platform; Public Cloud (cross-cloud governance layer).
+
+  [pf-060]  Fanatical Experience
+      rationale: Fanatical Experience is a customer-experience methodology brand wrapping all services; assigned to Public Cloud as the dominant-revenue segment where the methodology is applied.
+
+  [pf-061]  Disaster Recovery as a Service (DRaaS)
+      rationale: DRaaS (Zerto-powered) positioned as managed DR for multicloud environments; Public Cloud managed services.
+
+  [pf-062]  Rackspace Managed Platform for Kubernetes (MPK)
+      rationale: Managed Platform for Kubernetes (Platform9 MPK); cloud-native managed Kubernetes, Public Cloud.
+
+  [pf-064]  Intelligent Co-worker for the Enterprise (ICE)
+      rationale: ICE is a FAIR GenAI accelerator product announced as part of October 2024 AWS SCA; rolls up under FAIR/Public Cloud.
+
+  [pf-065]  Rackspace Intelligent Technology Assistant (RITA)
+      rationale: RITA is a FAIR GenAI accelerator product announced alongside ICE; rolls up under FAIR/Public Cloud.
+
+  [pf-066]  Rackspace Rapid Migration Offer (RRMO)
+      rationale: RRMO (Rapid Migration Offer to AWS) — AWS Marketplace migration product; Public Cloud.
+
+  [pf-067]  Optimizer+
+      rationale: Optimizer+ is the FinOps/optimization platform for hyperscaler cost management; Public Cloud.
+
+  [pf-068]  FAIR on AWS
+      rationale: FAIR on AWS is the hyperscaler-specific FAIR implementation; part of Public Cloud FAIR practice. (Also implements pf-003.)
+
+  [pf-069]  FAIR on Google Cloud
+      rationale: FAIR on Google Cloud — hyperscaler-specific FAIR implementation; Public Cloud.
+
+  [pf-070]  FAIR on Microsoft Azure
+      rationale: FAIR on Microsoft Azure — hyperscaler-specific FAIR implementation; Public Cloud.
+
+  [a8b1b81b-091f-44c1-8195-e135853faf16]  Cloud Office
+      rationale: Cloud Office is the hosted email / M365 SaaS reseller portfolio (Rackspace Email + M365 + Cloud Office Control Panel); sits in Applications & Cross-Platform within Public Cloud segment.
+
+==============================================================================
+L2 PORTFOLIOS — PRIVATE CLOUD (children of pf-001)
+==============================================================================
+count: 11
+
+  [pf-013]  Rackspace SDDC Solutions
+      rationale: VMware Cloud Foundation-based SDDC is Rackspace-dedicated private cloud infrastructure; this is the flagship Private Cloud product line.
+
+  [pf-014]  Rackspace OpenStack Private Cloud
+      rationale: Rackspace-OpenStack dedicated private cloud infrastructure, co-founded with NASA in 2010; foundational Private Cloud offering.
+
+  [pf-015]  Rackspace Managed Hosting
+      rationale: Dedicated bare metal hosting is the original Rackspace managed hosting business; Private Cloud segment by SEC reporting.
+
+  [pf-016]  Rackspace Colocation Services
+      rationale: Colocation in Rackspace data centers is Private Cloud infrastructure revenue (physical facilities, carrier-neutral).
+
+  [pf-017]  RackConnect Global
+      rationale: RackConnect Global connects Rackspace dedicated hosting environments to other data center locations; private networking for Private Cloud.
+
+  [pf-018]  Rackspace Data Storage
+      rationale: Rackspace Data Storage portfolio (SAS/SAN/NAS/custom dedicated storage) is dedicated infrastructure revenue; Private Cloud.
+
+  [pf-021]  Rackspace Private Cloud AI
+      rationale: Rackspace Private Cloud AI is explicitly private cloud by name; enables AI/ML workloads in secure dedicated environments (Private Cloud infrastructure with AI overlay).
+
+  [pf-026]  VMware Solutions
+      rationale: VMware Solutions as VCSP Pinnacle partner encompasses the SDDC Solutions product line; this is VMware-on-Rackspace-dedicated-infrastructure revenue, Private Cloud.
+
+  [pf-050]  Network Security Services
+      rationale: Network Security Services covers firewalls, custom switches, load balancers, DDoS — dedicated/colocation network infrastructure add-ons; Private Cloud.
+
+  [pf-052]  On-Premises Security Services
+      rationale: On-Premises Security Services explicitly targets on-prem deployments; Private Cloud segment.
+
+  [pf-063]  Rackspace Data Freedom
+      rationale: Rackspace Data Freedom positions dedicated storage 'adjacent to' public cloud to eliminate egress fees; this is dedicated storage infrastructure economics, Private Cloud.
+
+==============================================================================
+SUMMARY
+==============================================================================
+  Total product_portfolios:        71
+  L1 (anchor) portfolios:          2  (pf-001, pf-002)
+  L2 children of Public Cloud:     58
+  L2 children of Private Cloud:    11
+  Total parent edges added:        73
+
+RECONCILIATION POSTCONDITION:
+  When the L2 populations are complete, the sum of all 58 Public Cloud L2
+  children must equal pf-002 = $1,747M (FY2023), and the sum of all 11
+  Private Cloud L2 children must equal pf-001 = $1,210M (FY2023). Any
+  residual at reconciliation is either an unpopulated child or a placement
+  error — both must be resolved before Phase 3 can be declared done.

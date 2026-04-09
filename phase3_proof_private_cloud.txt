@@ -1,0 +1,757 @@
+PHASE 3 — PRIVATE CLOUD L2 POPULATION PROOF
+==============================================================================
+Parent: pf-001 Private Cloud (L1)
+Children: 11 L2 portfolios
+
+RECONCILIATION SUMMARY (SUM OF 11 CHILDREN vs pf-001 CAP):
+
+year           rec_sum       rec_cap    ok        nrr_sum     nrr_cap    ok          cor_sum       cor_cap          diff
+FY2023         1210.0M       1210.0M   YES          24.2M       24.2M   YES           741.9M        749.1M         -7.2M
+FY2024         1055.0M       1055.0M   YES          21.1M       21.1M   YES           642.9M        646.8M         -3.9M
+FY2025          990.0M        990.0M   YES          19.8M       19.8M   YES           742.9M        737.3M         +5.6M
+FY2026         1010.0M       1010.0M   YES          20.2M       20.2M   YES           726.7M        720.0M         +6.7M
+
+Note on COR reconciliation: COR is computed per-entity from a reasoned
+COR% × entity revenue. The sum approximates pf-001's reported COR but is
+not forced to match exactly — doing so would require smearing the residual
+into one entity arbitrarily. Residuals < 5% of cap are acceptable; larger
+residuals indicate the per-entity COR% distribution needs revisiting.
+
+==============================================================================
+PER-ENTITY ALLOCATION TABLE ($M recurring revenue)
+==============================================================================
+id        name                                        FY2023    FY2024    FY2025    FY2026
+pf-015    Rackspace Managed Hosting                     430M      358M      323M      327M
+pf-013    Rackspace SDDC Solutions                      270M      235M      225M      230M
+pf-026    VMware Solutions                              125M      110M      100M       95M
+pf-016    Rackspace Colocation Services                  95M       88M       83M       80M
+pf-014    Rackspace OpenStack Private Cloud              80M       75M       75M       82M
+pf-018    Rackspace Data Storage                         65M       55M       50M       50M
+pf-050    Network Security Services                      55M       48M       45M       45M
+pf-017    RackConnect Global                             35M       30M       27M       25M
+pf-052    On-Premises Security Services                  30M       27M       26M       26M
+pf-063    Rackspace Data Freedom                         15M       16M       18M       22M
+pf-021    Rackspace Private Cloud AI                     10M       13M       18M       28M
+
+==============================================================================
+PER-ENTITY PER-YEAR POPULATED FIELD DUMP
+==============================================================================
+
+------------------------------------------------------------------------------
+pf-015  Rackspace Managed Hosting
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $430.00M  tier=T3  method=ALLOCATED
+       source: Legacy dedicated bare metal hosting — Rackspace's original business. Largest Private Cloud L2 portfolio. Declines as customers migrate workloads to hyperscalers or modernize to VCF. FY2024 -17% reflec
+    non_recurring_revenue: $8.60M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $8.6M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $276.32M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 63%. Legacy dedicated bare metal hosting — Rackspace's original business. Largest Private Cloud L2 portfolio. Declines as customers migrate workloads to hyperscalers or modernize
+    gross_profit: $162.28M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $60.20M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 14% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $102.08M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $358.00M  tier=T3  method=ALLOCATED
+       source: Legacy dedicated bare metal hosting — Rackspace's original business. Largest Private Cloud L2 portfolio. Declines as customers migrate workloads to hyperscalers or modernize to VCF. FY2024 -17% reflec
+    non_recurring_revenue: $7.20M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $7.2M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $226.42M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 62%. Legacy dedicated bare metal hosting — Rackspace's original business. Largest Private Cloud L2 portfolio. Declines as customers migrate workloads to hyperscalers or modernize
+    gross_profit: $138.78M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $50.12M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 14% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $88.66M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $323.00M  tier=T3  method=ALLOCATED
+       source: Legacy dedicated bare metal hosting — Rackspace's original business. Largest Private Cloud L2 portfolio. Declines as customers migrate workloads to hyperscalers or modernize to VCF. FY2024 -17% reflec
+    non_recurring_revenue: $6.50M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $6.5M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $237.24M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 72%. Legacy dedicated bare metal hosting — Rackspace's original business. Largest Private Cloud L2 portfolio. Declines as customers migrate workloads to hyperscalers or modernize
+    gross_profit: $92.26M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $45.22M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 14% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $47.04M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $327.00M  tier=T3  method=ALLOCATED
+       source: Legacy dedicated bare metal hosting — Rackspace's original business. Largest Private Cloud L2 portfolio. Declines as customers migrate workloads to hyperscalers or modernize to VCF. FY2024 -17% reflec
+    non_recurring_revenue: $6.50M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $6.5M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $236.78M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 71%. Legacy dedicated bare metal hosting — Rackspace's original business. Largest Private Cloud L2 portfolio. Declines as customers migrate workloads to hyperscalers or modernize
+    gross_profit: $96.72M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $45.78M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 14% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $50.94M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+------------------------------------------------------------------------------
+pf-013  Rackspace SDDC Solutions
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $270.00M  tier=T3  method=ALLOCATED
+       source: VMware Cloud Foundation-based SDDC product line. Second largest Private Cloud L2. FY2023-2024 relatively stable as modernization path for VMware customers. FY2025 absorbs the majority of the Broadcom 
+    non_recurring_revenue: $6.50M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $6.5M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $171.43M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 62%. VMware Cloud Foundation-based SDDC product line. Second largest Private Cloud L2. FY2023-2024 relatively stable as modernization path for VMware customers. FY2025 absorbs th
+    gross_profit: $105.07M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $43.20M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 16% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $61.87M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $235.00M  tier=T3  method=ALLOCATED
+       source: VMware Cloud Foundation-based SDDC product line. Second largest Private Cloud L2. FY2023-2024 relatively stable as modernization path for VMware customers. FY2025 absorbs the majority of the Broadcom 
+    non_recurring_revenue: $5.60M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $5.6M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $149.17M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 62%. VMware Cloud Foundation-based SDDC product line. Second largest Private Cloud L2. FY2023-2024 relatively stable as modernization path for VMware customers. FY2025 absorbs th
+    gross_profit: $91.43M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $37.60M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 16% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $53.83M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $225.00M  tier=T3  method=ALLOCATED
+       source: VMware Cloud Foundation-based SDDC product line. Second largest Private Cloud L2. FY2023-2024 relatively stable as modernization path for VMware customers. FY2025 absorbs the majority of the Broadcom 
+    non_recurring_revenue: $5.30M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $5.3M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $214.18M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 93%. VMware Cloud Foundation-based SDDC product line. Second largest Private Cloud L2. FY2023-2024 relatively stable as modernization path for VMware customers. FY2025 absorbs th
+    gross_profit: $16.12M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $36.00M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 16% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $-19.88M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $230.00M  tier=T3  method=ALLOCATED
+       source: VMware Cloud Foundation-based SDDC product line. Second largest Private Cloud L2. FY2023-2024 relatively stable as modernization path for VMware customers. FY2025 absorbs the majority of the Broadcom 
+    non_recurring_revenue: $5.40M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $5.4M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $202.44M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 86%. VMware Cloud Foundation-based SDDC product line. Second largest Private Cloud L2. FY2023-2024 relatively stable as modernization path for VMware customers. FY2025 absorbs th
+    gross_profit: $32.96M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $36.80M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 16% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $-3.84M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+------------------------------------------------------------------------------
+pf-026  VMware Solutions
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $125.00M  tier=T3  method=ALLOCATED
+       source: Non-SDDC VMware managed services wrapper. Shrinks as VMware customers either consolidate on SDDC or churn out of VMware entirely post-Broadcom. FY2025 COR% jumps to 75% reflecting VMware license pass-
+    non_recurring_revenue: $2.00M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $2.0M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $68.58M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 54%. Non-SDDC VMware managed services wrapper. Shrinks as VMware customers either consolidate on SDDC or churn out of VMware entirely post-Broadcom. FY2025 COR% jumps to 75% refl
+    gross_profit: $58.42M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $18.75M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 15% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $39.67M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $110.00M  tier=T3  method=ALLOCATED
+       source: Non-SDDC VMware managed services wrapper. Shrinks as VMware customers either consolidate on SDDC or churn out of VMware entirely post-Broadcom. FY2025 COR% jumps to 75% reflecting VMware license pass-
+    non_recurring_revenue: $1.80M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $1.8M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $60.37M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 54%. Non-SDDC VMware managed services wrapper. Shrinks as VMware customers either consolidate on SDDC or churn out of VMware entirely post-Broadcom. FY2025 COR% jumps to 75% refl
+    gross_profit: $51.43M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $16.50M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 15% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $34.93M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $100.00M  tier=T3  method=ALLOCATED
+       source: Non-SDDC VMware managed services wrapper. Shrinks as VMware customers either consolidate on SDDC or churn out of VMware entirely post-Broadcom. FY2025 COR% jumps to 75% reflecting VMware license pass-
+    non_recurring_revenue: $1.60M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $1.6M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $83.31M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 82%. Non-SDDC VMware managed services wrapper. Shrinks as VMware customers either consolidate on SDDC or churn out of VMware entirely post-Broadcom. FY2025 COR% jumps to 75% refl
+    gross_profit: $18.29M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $15.00M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 15% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $3.29M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $95.00M  tier=T3  method=ALLOCATED
+       source: Non-SDDC VMware managed services wrapper. Shrinks as VMware customers either consolidate on SDDC or churn out of VMware entirely post-Broadcom. FY2025 COR% jumps to 75% reflecting VMware license pass-
+    non_recurring_revenue: $1.50M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $1.5M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $73.34M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 76%. Non-SDDC VMware managed services wrapper. Shrinks as VMware customers either consolidate on SDDC or churn out of VMware entirely post-Broadcom. FY2025 COR% jumps to 75% refl
+    gross_profit: $23.16M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $14.25M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 15% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $8.91M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+------------------------------------------------------------------------------
+pf-016  Rackspace Colocation Services
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $95.00M  tier=T3  method=ALLOCATED
+       source: Colocation in Rackspace data centers. Physical DC space is sticky — customers don't move hardware casually. Slow decline ~5-7%/yr as contracts expire and some customers exit DC footprint entirely. FY2
+    non_recurring_revenue: $2.80M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $2.8M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $65.53M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 67%. Colocation in Rackspace data centers. Physical DC space is sticky — customers don't move hardware casually. Slow decline ~5-7%/yr as contracts expire and some customers exit
+    gross_profit: $32.27M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $11.40M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 12% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $20.87M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $88.00M  tier=T3  method=ALLOCATED
+       source: Colocation in Rackspace data centers. Physical DC space is sticky — customers don't move hardware casually. Slow decline ~5-7%/yr as contracts expire and some customers exit DC footprint entirely. FY2
+    non_recurring_revenue: $2.50M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $2.5M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $60.63M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 67%. Colocation in Rackspace data centers. Physical DC space is sticky — customers don't move hardware casually. Slow decline ~5-7%/yr as contracts expire and some customers exit
+    gross_profit: $29.86M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $10.56M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 12% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $19.30M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $83.00M  tier=T3  method=ALLOCATED
+       source: Colocation in Rackspace data centers. Physical DC space is sticky — customers don't move hardware casually. Slow decline ~5-7%/yr as contracts expire and some customers exit DC footprint entirely. FY2
+    non_recurring_revenue: $2.40M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $2.4M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $58.93M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 69%. Colocation in Rackspace data centers. Physical DC space is sticky — customers don't move hardware casually. Slow decline ~5-7%/yr as contracts expire and some customers exit
+    gross_profit: $26.47M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $9.96M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 12% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $16.51M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $80.00M  tier=T3  method=ALLOCATED
+       source: Colocation in Rackspace data centers. Physical DC space is sticky — customers don't move hardware casually. Slow decline ~5-7%/yr as contracts expire and some customers exit DC footprint entirely. FY2
+    non_recurring_revenue: $2.30M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $2.3M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $55.96M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 68%. Colocation in Rackspace data centers. Physical DC space is sticky — customers don't move hardware casually. Slow decline ~5-7%/yr as contracts expire and some customers exit
+    gross_profit: $26.34M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $9.60M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 12% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $16.74M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+------------------------------------------------------------------------------
+pf-014  Rackspace OpenStack Private Cloud
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $80.00M  tier=T3  method=ALLOCATED
+       source: Rackspace-hosted OpenStack private cloud. Niche but benefits from post-Broadcom VMware repatriation narrative — some VMware customers evaluate OpenStack as an alternative. Roughly flat FY2024-2025, mo
+    non_recurring_revenue: $1.20M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $1.2M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $40.60M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 50%. Rackspace-hosted OpenStack private cloud. Niche but benefits from post-Broadcom VMware repatriation narrative — some VMware customers evaluate OpenStack as an alternative. R
+    gross_profit: $40.60M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $14.40M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 18% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $26.20M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $75.00M  tier=T3  method=ALLOCATED
+       source: Rackspace-hosted OpenStack private cloud. Niche but benefits from post-Broadcom VMware repatriation narrative — some VMware customers evaluate OpenStack as an alternative. Roughly flat FY2024-2025, mo
+    non_recurring_revenue: $1.10M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $1.1M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $38.05M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 50%. Rackspace-hosted OpenStack private cloud. Niche but benefits from post-Broadcom VMware repatriation narrative — some VMware customers evaluate OpenStack as an alternative. R
+    gross_profit: $38.05M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $13.50M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 18% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $24.55M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $75.00M  tier=T3  method=ALLOCATED
+       source: Rackspace-hosted OpenStack private cloud. Niche but benefits from post-Broadcom VMware repatriation narrative — some VMware customers evaluate OpenStack as an alternative. Roughly flat FY2024-2025, mo
+    non_recurring_revenue: $1.10M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $1.1M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $38.81M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 51%. Rackspace-hosted OpenStack private cloud. Niche but benefits from post-Broadcom VMware repatriation narrative — some VMware customers evaluate OpenStack as an alternative. R
+    gross_profit: $37.29M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $13.50M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 18% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $23.79M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $82.00M  tier=T3  method=ALLOCATED
+       source: Rackspace-hosted OpenStack private cloud. Niche but benefits from post-Broadcom VMware repatriation narrative — some VMware customers evaluate OpenStack as an alternative. Roughly flat FY2024-2025, mo
+    non_recurring_revenue: $1.20M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $1.2M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $41.60M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 50%. Rackspace-hosted OpenStack private cloud. Niche but benefits from post-Broadcom VMware repatriation narrative — some VMware customers evaluate OpenStack as an alternative. R
+    gross_profit: $41.60M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $14.76M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 18% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $26.84M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+------------------------------------------------------------------------------
+pf-018  Rackspace Data Storage
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $65.00M  tier=T3  method=ALLOCATED
+       source: Dedicated storage (SAS/SAN/NAS/custom). Tied to Managed Hosting trajectory — dedicated storage is sold alongside dedicated compute. Declines roughly in line with pf-015. FY2023 allocated $65M from par
+    non_recurring_revenue: $0.90M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.9M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $40.86M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 62%. Dedicated storage (SAS/SAN/NAS/custom). Tied to Managed Hosting trajectory — dedicated storage is sold alongside dedicated compute. Declines roughly in line with pf-015.
+    gross_profit: $25.04M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $9.10M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 14% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $15.94M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $55.00M  tier=T3  method=ALLOCATED
+       source: Dedicated storage (SAS/SAN/NAS/custom). Tied to Managed Hosting trajectory — dedicated storage is sold alongside dedicated compute. Declines roughly in line with pf-015. FY2024 allocated $55M from par
+    non_recurring_revenue: $0.80M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.8M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $34.60M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 62%. Dedicated storage (SAS/SAN/NAS/custom). Tied to Managed Hosting trajectory — dedicated storage is sold alongside dedicated compute. Declines roughly in line with pf-015.
+    gross_profit: $21.20M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $7.70M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 14% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $13.50M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $50.00M  tier=T3  method=ALLOCATED
+       source: Dedicated storage (SAS/SAN/NAS/custom). Tied to Managed Hosting trajectory — dedicated storage is sold alongside dedicated compute. Declines roughly in line with pf-015. FY2025 allocated $50M from par
+    non_recurring_revenue: $0.70M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.7M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $33.46M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 66%. Dedicated storage (SAS/SAN/NAS/custom). Tied to Managed Hosting trajectory — dedicated storage is sold alongside dedicated compute. Declines roughly in line with pf-015.
+    gross_profit: $17.24M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $7.00M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 14% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $10.24M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $50.00M  tier=T3  method=ALLOCATED
+       source: Dedicated storage (SAS/SAN/NAS/custom). Tied to Managed Hosting trajectory — dedicated storage is sold alongside dedicated compute. Declines roughly in line with pf-015. FY2026 allocated $50M from par
+    non_recurring_revenue: $0.70M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.7M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $32.95M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 65%. Dedicated storage (SAS/SAN/NAS/custom). Tied to Managed Hosting trajectory — dedicated storage is sold alongside dedicated compute. Declines roughly in line with pf-015.
+    gross_profit: $17.75M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $7.00M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 14% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $10.74M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+------------------------------------------------------------------------------
+pf-050  Network Security Services
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $55.00M  tier=T3  method=ALLOCATED
+       source: Network security services — firewalls, DDoS, custom switches, load balancers for dedicated/colo environments. Labor-heavy so COR% is lower (~50%). Slow decline. FY2023 allocated $55M from parent pf-00
+    non_recurring_revenue: $0.80M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.8M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $26.78M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 48%. Network security services — firewalls, DDoS, custom switches, load balancers for dedicated/colo environments. Labor-heavy so COR% is lower (~50%). Slow decline.
+    gross_profit: $29.02M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $9.35M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 17% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $19.67M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $48.00M  tier=T3  method=ALLOCATED
+       source: Network security services — firewalls, DDoS, custom switches, load balancers for dedicated/colo environments. Labor-heavy so COR% is lower (~50%). Slow decline. FY2024 allocated $48M from parent pf-00
+    non_recurring_revenue: $0.70M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.7M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $23.38M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 48%. Network security services — firewalls, DDoS, custom switches, load balancers for dedicated/colo environments. Labor-heavy so COR% is lower (~50%). Slow decline.
+    gross_profit: $25.32M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $8.16M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 17% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $17.16M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $45.00M  tier=T3  method=ALLOCATED
+       source: Network security services — firewalls, DDoS, custom switches, load balancers for dedicated/colo environments. Labor-heavy so COR% is lower (~50%). Slow decline. FY2025 allocated $45M from parent pf-00
+    non_recurring_revenue: $0.60M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.6M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $22.80M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 50%. Network security services — firewalls, DDoS, custom switches, load balancers for dedicated/colo environments. Labor-heavy so COR% is lower (~50%). Slow decline.
+    gross_profit: $22.80M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $7.65M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 17% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $15.15M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $45.00M  tier=T3  method=ALLOCATED
+       source: Network security services — firewalls, DDoS, custom switches, load balancers for dedicated/colo environments. Labor-heavy so COR% is lower (~50%). Slow decline. FY2026 allocated $45M from parent pf-00
+    non_recurring_revenue: $0.60M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.6M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $22.34M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 49%. Network security services — firewalls, DDoS, custom switches, load balancers for dedicated/colo environments. Labor-heavy so COR% is lower (~50%). Slow decline.
+    gross_profit: $23.26M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $7.65M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 17% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $15.61M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+------------------------------------------------------------------------------
+pf-017  RackConnect Global
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $35.00M  tier=T3  method=ALLOCATED
+       source: RackConnect Global — private network connectivity for Rackspace dedicated hosting environments. Tied directly to Managed Hosting volume. Declines with pf-015. FY2023 allocated $35M from parent pf-001 
+    non_recurring_revenue: $0.70M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.7M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $19.64M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 55%. RackConnect Global — private network connectivity for Rackspace dedicated hosting environments. Tied directly to Managed Hosting volume. Declines with pf-015.
+    gross_profit: $16.07M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $4.55M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 13% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $11.52M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $30.00M  tier=T3  method=ALLOCATED
+       source: RackConnect Global — private network connectivity for Rackspace dedicated hosting environments. Tied directly to Managed Hosting volume. Declines with pf-015. FY2024 allocated $30M from parent pf-001 
+    non_recurring_revenue: $0.60M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.6M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $16.83M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 55%. RackConnect Global — private network connectivity for Rackspace dedicated hosting environments. Tied directly to Managed Hosting volume. Declines with pf-015.
+    gross_profit: $13.77M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $3.90M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 13% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $9.87M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $27.00M  tier=T3  method=ALLOCATED
+       source: RackConnect Global — private network connectivity for Rackspace dedicated hosting environments. Tied directly to Managed Hosting volume. Declines with pf-015. FY2025 allocated $27M from parent pf-001 
+    non_recurring_revenue: $0.50M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.5M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $15.68M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 57%. RackConnect Global — private network connectivity for Rackspace dedicated hosting environments. Tied directly to Managed Hosting volume. Declines with pf-015.
+    gross_profit: $11.82M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $3.51M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 13% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $8.31M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $25.00M  tier=T3  method=ALLOCATED
+       source: RackConnect Global — private network connectivity for Rackspace dedicated hosting environments. Tied directly to Managed Hosting volume. Declines with pf-015. FY2026 allocated $25M from parent pf-001 
+    non_recurring_revenue: $0.50M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.5M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $14.28M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 56%. RackConnect Global — private network connectivity for Rackspace dedicated hosting environments. Tied directly to Managed Hosting volume. Declines with pf-015.
+    gross_profit: $11.22M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $3.25M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 13% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $7.97M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+------------------------------------------------------------------------------
+pf-052  On-Premises Security Services
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $30.00M  tier=T3  method=ALLOCATED
+       source: On-Premises Security Services — managed security for on-prem deployments. Niche, compliance-driven, stable with slow decline. FY2023 allocated $30M from parent pf-001 cap ($1210M T1).
+    non_recurring_revenue: $0.40M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.4M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $15.81M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 52%. On-Premises Security Services — managed security for on-prem deployments. Niche, compliance-driven, stable with slow decline.
+    gross_profit: $14.59M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $5.10M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 17% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $9.49M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $27.00M  tier=T3  method=ALLOCATED
+       source: On-Premises Security Services — managed security for on-prem deployments. Niche, compliance-driven, stable with slow decline. FY2024 allocated $27M from parent pf-001 cap ($1055M T1).
+    non_recurring_revenue: $0.40M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.4M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $14.25M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 52%. On-Premises Security Services — managed security for on-prem deployments. Niche, compliance-driven, stable with slow decline.
+    gross_profit: $13.15M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $4.59M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 17% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $8.56M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $26.00M  tier=T3  method=ALLOCATED
+       source: On-Premises Security Services — managed security for on-prem deployments. Niche, compliance-driven, stable with slow decline. FY2025 allocated $26M from parent pf-001 cap ($990M T1).
+    non_recurring_revenue: $0.40M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.4M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $14.26M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 54%. On-Premises Security Services — managed security for on-prem deployments. Niche, compliance-driven, stable with slow decline.
+    gross_profit: $12.14M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $4.42M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 17% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $7.72M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $26.00M  tier=T3  method=ALLOCATED
+       source: On-Premises Security Services — managed security for on-prem deployments. Niche, compliance-driven, stable with slow decline. FY2026 allocated $26M from parent pf-001 cap ($1010M T1).
+    non_recurring_revenue: $0.40M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.4M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $13.99M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 53%. On-Premises Security Services — managed security for on-prem deployments. Niche, compliance-driven, stable with slow decline.
+    gross_profit: $12.41M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $4.42M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 17% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $7.99M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+------------------------------------------------------------------------------
+pf-063  Rackspace Data Freedom
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $15.00M  tier=T3  method=ALLOCATED
+       source: Rackspace Data Freedom — anti-egress storage pitch. Stores data adjacent to public cloud to eliminate egress fees. Small but growing as cloud cost sensitivity strengthens the narrative. FY2026 +22% ac
+    non_recurring_revenue: $0.10M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.1M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $9.06M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 60%. Rackspace Data Freedom — anti-egress storage pitch. Stores data adjacent to public cloud to eliminate egress fees. Small but growing as cloud cost sensitivity strengthens th
+    gross_profit: $6.04M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $3.30M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 22% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $2.74M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $16.00M  tier=T3  method=ALLOCATED
+       source: Rackspace Data Freedom — anti-egress storage pitch. Stores data adjacent to public cloud to eliminate egress fees. Small but growing as cloud cost sensitivity strengthens the narrative. FY2026 +22% ac
+    non_recurring_revenue: $0.10M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.1M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $9.66M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 60%. Rackspace Data Freedom — anti-egress storage pitch. Stores data adjacent to public cloud to eliminate egress fees. Small but growing as cloud cost sensitivity strengthens th
+    gross_profit: $6.44M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $3.52M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 22% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $2.92M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $18.00M  tier=T3  method=ALLOCATED
+       source: Rackspace Data Freedom — anti-egress storage pitch. Stores data adjacent to public cloud to eliminate egress fees. Small but growing as cloud cost sensitivity strengthens the narrative. FY2026 +22% ac
+    non_recurring_revenue: $0.20M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.2M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $11.10M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 61%. Rackspace Data Freedom — anti-egress storage pitch. Stores data adjacent to public cloud to eliminate egress fees. Small but growing as cloud cost sensitivity strengthens th
+    gross_profit: $7.10M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $3.96M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 22% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $3.14M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $22.00M  tier=T3  method=ALLOCATED
+       source: Rackspace Data Freedom — anti-egress storage pitch. Stores data adjacent to public cloud to eliminate egress fees. Small but growing as cloud cost sensitivity strengthens the narrative. FY2026 +22% ac
+    non_recurring_revenue: $0.30M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.3M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $13.38M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 60%. Rackspace Data Freedom — anti-egress storage pitch. Stores data adjacent to public cloud to eliminate egress fees. Small but growing as cloud cost sensitivity strengthens th
+    gross_profit: $8.92M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $4.84M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 22% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $4.08M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+------------------------------------------------------------------------------
+pf-021  Rackspace Private Cloud AI
+------------------------------------------------------------------------------
+  hierarchy: parent=pf-001 level=2 consolidation=STANDALONE
+
+  [FY2023]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $10.00M  tier=T3  method=ALLOCATED
+       source: Rackspace Private Cloud AI — launched 2023 suite of AI offerings for private cloud including Rackspace AI Anywhere. Small base but fastest Private Cloud growth rate. GPU-heavy COR (~70%+). FY2026 +56%
+    non_recurring_revenue: $0.20M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.2M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $7.34M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 72%. Rackspace Private Cloud AI — launched 2023 suite of AI offerings for private cloud including Rackspace AI Anywhere. Small base but fastest Private Cloud growth rate. GPU-hea
+    gross_profit: $2.86M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $2.80M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 28% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $0.06M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2024]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $13.00M  tier=T3  method=ALLOCATED
+       source: Rackspace Private Cloud AI — launched 2023 suite of AI offerings for private cloud including Rackspace AI Anywhere. Small base but fastest Private Cloud growth rate. GPU-heavy COR (~70%+). FY2026 +56%
+    non_recurring_revenue: $0.30M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.3M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $9.58M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 72%. Rackspace Private Cloud AI — launched 2023 suite of AI offerings for private cloud including Rackspace AI Anywhere. Small base but fastest Private Cloud growth rate. GPU-hea
+    gross_profit: $3.72M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $3.64M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 28% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $0.08M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2025]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $18.00M  tier=T3  method=ALLOCATED
+       source: Rackspace Private Cloud AI — launched 2023 suite of AI offerings for private cloud including Rackspace AI Anywhere. Small base but fastest Private Cloud growth rate. GPU-heavy COR (~70%+). FY2026 +56%
+    non_recurring_revenue: $0.50M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.5M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $13.13M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 71%. Rackspace Private Cloud AI — launched 2023 suite of AI offerings for private cloud including Rackspace AI Anywhere. Small base but fastest Private Cloud growth rate. GPU-hea
+    gross_profit: $5.37M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $5.04M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 28% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $0.33M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+  [FY2026]
+    period_type=fiscal_year  tier=T3  alloc_method=ALLOCATED_PRO_RATA_WITH_ENTITY_TILT
+    recurring_revenue: $28.00M  tier=T3  method=ALLOCATED
+       source: Rackspace Private Cloud AI — launched 2023 suite of AI offerings for private cloud including Rackspace AI Anywhere. Small base but fastest Private Cloud growth rate. GPU-heavy COR (~70%+). FY2026 +56%
+    non_recurring_revenue: $0.80M  tier=T3  method=ALLOCATED
+       source: Non-recurring (setup/install/one-time) allocated $0.8M. Higher ratio for setup-fee-heavy offerings (hosting, SDDC, colo); lower for subscription-like.
+    cost_of_revenue: $19.58M  tier=T3  method=DERIVED
+       source: COR = total_revenue * 68%. Rackspace Private Cloud AI — launched 2023 suite of AI offerings for private cloud including Rackspace AI Anywhere. Small base but fastest Private Cloud growth rate. GPU-hea
+    gross_profit: $9.22M  tier=T3  method=DERIVED
+       source: gross_profit = (recurring + non_recurring) - cost_of_revenue
+    operating_expense: $7.84M  tier=T4  method=ALLOCATED
+       source: Opex allocated at 28% of recurring_revenue — legacy/efficient portfolios at lower %, newer growth-investment portfolios (Data Freedom, Private Cloud AI) at higher %. T4 because opex rarely disclosed a
+    operating_income: $1.38M  tier=T4  method=DERIVED
+       source: operating_income = gross_profit - operating_expense
+
+==============================================================================
+END OF PROOF
+==============================================================================

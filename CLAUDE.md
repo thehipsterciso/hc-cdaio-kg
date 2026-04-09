@@ -10,6 +10,17 @@
 - If `get_statistics` returns "No graph loaded," inform the user that the graph needs to be loaded on their end. **Do not** attempt to find or load graph files yourself.
 - **Never** use Desktop Commander, Bash, Glob, or any file search tools to hunt for graph.json or any KG data files. The MCP server manages its own state.
 
+## Interaction Style
+- **Never** tell the user what to do. Do not prescribe next steps, suggest actions, or offer unsolicited recommendations. Execute what is asked. Report what happened. Stop.
+
+## Financial Profile Population — Mandatory Preflight
+These rules apply to any work that touches `financial_profile` on any entity, any `phase<N>_payload.py` or `apply_phase<N>.py` script, any statement about entity counts or phase scope, or any write to `graph.json`.
+- **Before the first tool call that writes anything**, read `docs/POPULATION_PREFLIGHT.md` in full. No exceptions.
+- POPULATION_PREFLIGHT defines seven mechanical gates: (1) verify scope against the real graph, (2) confirm minimum viable ask, (3) per-field reasoning not template math, (4) tier honesty, (5) NULL bar confirmation, (6) proof plan before merge, (7) document creation gate.
+- On loading the checklist, state "Preflight: Gates 1–7 loaded." in the reply so the acknowledgment is explicit.
+- If any gate fails, report the failure and stop. Do not work around gates.
+- The gates exist because each one corresponds to a specific failure mode that has already cost Thomas time in this repo. They are not aspirational.
+
 ## General MCP Tool Usage
 - When an MCP server is available, use its tools directly. Do not try to manage, configure, or troubleshoot MCP server internals.
 - If an MCP tool returns an error, report it to the user. Do not attempt workarounds involving file system access unless explicitly asked.
